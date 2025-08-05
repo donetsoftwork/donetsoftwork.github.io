@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ConfigurationBase 类
+ | 简单对象Emit工具 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ConfigurationBase 类
+ | 简单对象Emit工具 ">
+      
+      <meta name="description" content="Emit配置">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyEmit/new/main/apiSpec/new?filename=PocoEmit_Configuration_ConfigurationBase.md&amp;value=---%0Auid%3A%20PocoEmit.Configuration.ConfigurationBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MyEmit">
+            MyEmit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PocoEmit.Configuration.ConfigurationBase">
+
+
+
+  <h1 id="PocoEmit_Configuration_ConfigurationBase" data-uid="PocoEmit.Configuration.ConfigurationBase" class="text-break">
+ConfigurationBase 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.Frozen.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="PocoEmit.html">PocoEmit</a>.<a class="xref" href="PocoEmit.Configuration.html">Configuration</a></dd></dl>
+  <dl><dt>程序集</dt><dd>PocoEmit.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Emit配置</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ConfigurationBase : IPocoOptions, IPoco, IConfigure&lt;MapTypeKey, IEmitConverter&gt;, ICacher&lt;MapTypeKey, IEmitConverter&gt;, IStore&lt;MapTypeKey, IEmitConverter&gt;, ICacher&lt;Type, MemberBundle&gt;, IStore&lt;Type, MemberBundle&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">ConfigurationBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="PocoEmit.Configuration.IPocoOptions.html">IPocoOptions</a></div>
+      <div><a class="xref" href="PocoEmit.IPoco.html">IPoco</a></div>
+      <div><a class="xref" href="PocoEmit.Collections.IConfigure-2.html">IConfigure</a>&lt;<a class="xref" href="PocoEmit.Configuration.MapTypeKey.html">MapTypeKey</a>, <a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a>&gt;</div>
+      <div><a class="xref" href="PocoEmit.Collections.ICacher-2.html">ICacher</a>&lt;<a class="xref" href="PocoEmit.Configuration.MapTypeKey.html">MapTypeKey</a>, <a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a>&gt;</div>
+      <div><a class="xref" href="PocoEmit.Collections.IStore-2.html">IStore</a>&lt;<a class="xref" href="PocoEmit.Configuration.MapTypeKey.html">MapTypeKey</a>, <a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a>&gt;</div>
+      <div><a class="xref" href="PocoEmit.Collections.ICacher-2.html">ICacher</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="PocoEmit.Collections.MemberBundle.html">MemberBundle</a>&gt;</div>
+      <div><a class="xref" href="PocoEmit.Collections.IStore-2.html">IStore</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="PocoEmit.Collections.MemberBundle.html">MemberBundle</a>&gt;</div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>衍生</dt>
+    <dd>
+      <div><a class="xref" href="PocoEmit.Configuration.MapperConfigurationBase.html">MapperConfigurationBase</a></div>
+      <div><a class="xref" href="PocoEmit.Poco.html">Poco</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_SetStringConvert__1___0_">PocoEmitServices.SetStringConvert&lt;TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseConverter__1___0_System_Object_">PocoEmitServices.UseConverter&lt;TConfiguration&gt;(TConfiguration, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseStaticConverter__1___0_System_Type_">PocoEmitServices.UseStaticConverter&lt;TConfiguration&gt;(TConfiguration, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseSystemConvert__1___0_">PocoEmitServices.UseSystemConvert&lt;TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckInstanceType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberReader__System_Type_">PocoEmitServices.CheckInstanceType(IPoco, ref IEmitMemberReader, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckInstanceType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter__System_Type_">PocoEmitServices.CheckInstanceType(IPoco, ref IEmitMemberWriter, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberReader__System_Type_System_Type_">PocoEmitServices.CheckType(IPoco, ref IEmitMemberReader, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter__System_Type_System_Type_">PocoEmitServices.CheckType(IPoco, ref IEmitMemberWriter, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckValueType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberReader__System_Type_">PocoEmitServices.CheckValueType(IPoco, ref IEmitMemberReader, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckValueType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter__System_Type_">PocoEmitServices.CheckValueType(IPoco, ref IEmitMemberWriter, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Convert__2_PocoEmit_IPoco___0_">PocoEmitServices.Convert&lt;TSource, TDest&gt;(IPoco, TSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetConvertFunc__2_PocoEmit_IPoco_">PocoEmitServices.GetConvertFunc&lt;TSource, TDest&gt;(IPoco)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetConverter__2_PocoEmit_IPoco_">PocoEmitServices.GetConverter&lt;TSource, TDest&gt;(IPoco)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetEmitConverter_PocoEmit_IPoco_System_Type_System_Type_">PocoEmitServices.GetEmitConverter(IPoco, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberReader__2_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberReader_">PocoEmitServices.GetMemberReader&lt;TInstance, TValue&gt;(IPoco, IEmitMemberReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberReader__2_PocoEmit_IPoco_System_Reflection_MemberInfo_">PocoEmitServices.GetMemberReader&lt;TInstance, TValue&gt;(IPoco, MemberInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberReader__2_PocoEmit_IPoco_System_String_">PocoEmitServices.GetMemberReader&lt;TInstance, TValue&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberWriter__2_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter_">PocoEmitServices.GetMemberWriter&lt;TInstance, TValue&gt;(IPoco, IEmitMemberWriter)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberWriter__2_PocoEmit_IPoco_System_Reflection_MemberInfo_">PocoEmitServices.GetMemberWriter&lt;TInstance, TValue&gt;(IPoco, MemberInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberWriter__2_PocoEmit_IPoco_System_String_">PocoEmitServices.GetMemberWriter&lt;TInstance, TValue&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetObjectConverter_PocoEmit_IPoco_System_Type_System_Type_">PocoEmitServices.GetObjectConverter(IPoco, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetReadFunc__2_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberReader_">PocoEmitServices.GetReadFunc&lt;TInstance, TValue&gt;(IPoco, IEmitMemberReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetReadFunc__2_PocoEmit_IPoco_System_Reflection_MemberInfo_">PocoEmitServices.GetReadFunc&lt;TInstance, TValue&gt;(IPoco, MemberInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetReadFunc__2_PocoEmit_IPoco_System_String_">PocoEmitServices.GetReadFunc&lt;TInstance, TValue&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetWriteAction__2_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter_">PocoEmitServices.GetWriteAction&lt;TInstance, TValue&gt;(IPoco, IEmitMemberWriter)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetWriteAction__2_PocoEmit_IPoco_System_Reflection_MemberInfo_">PocoEmitServices.GetWriteAction&lt;TInstance, TValue&gt;(IPoco, MemberInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetWriteAction__2_PocoEmit_IPoco_System_String_">PocoEmitServices.GetWriteAction&lt;TInstance, TValue&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseConvertFunc__2_PocoEmit_IPoco_System_Func___0___1__">PocoEmitServices.UseConvertFunc&lt;TSource, TDest&gt;(IPoco, Func&lt;TSource, TDest&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseStaticConverter__1_PocoEmit_IPoco_">PocoEmitServices.UseStaticConverter&lt;TConverter&gt;(IPoco)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_IPoco_System_Type_System_String_">ReflectionHelper.GetEmitReader(IPoco, Type, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader__1_PocoEmit_IPoco_System_String_">ReflectionHelper.GetEmitReader&lt;TInstance&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_IPoco_System_Type_System_String_">ReflectionHelper.GetEmitWriter(IPoco, Type, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter__1_PocoEmit_IPoco_System_String_">ReflectionHelper.GetEmitWriter&lt;TInstance&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_IPoco_System_Type_System_String_">ReflectionHelper.GetReadMember(IPoco, Type, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember__1_PocoEmit_IPoco_System_String_">ReflectionHelper.GetReadMember&lt;TInstance&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetTypeMembers_PocoEmit_IPoco_System_Type_">ReflectionHelper.GetTypeMembers(IPoco, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetTypeMembers__1_PocoEmit_IPoco_">ReflectionHelper.GetTypeMembers&lt;TInstance&gt;(IPoco)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_IPoco_System_Type_System_String_">ReflectionHelper.GetWriteMember(IPoco, Type, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember__1_PocoEmit_IPoco_System_String_">ReflectionHelper.GetWriteMember&lt;TInstance&gt;(IPoco, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="PocoEmit_Configuration_ConfigurationBase__ctor_" data-uid="PocoEmit.Configuration.ConfigurationBase.#ctor*"></a>
+
+  <h3 id="PocoEmit_Configuration_ConfigurationBase__ctor_PocoEmit_Reflection_IReflectionMember_" data-uid="PocoEmit.Configuration.ConfigurationBase.#ctor(PocoEmit.Reflection.IReflectionMember)">
+  ConfigurationBase(IReflectionMember)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Emit配置</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigurationBase(IReflectionMember reflectionMember)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>reflectionMember</code> <a class="xref" href="PocoEmit.Reflection.IReflectionMember.html">IReflectionMember</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="PocoEmit_Configuration_ConfigurationBase_ConvertBuilder_" data-uid="PocoEmit.Configuration.ConfigurationBase.ConvertBuilder*"></a>
+
+  <h3 id="PocoEmit_Configuration_ConfigurationBase_ConvertBuilder" data-uid="PocoEmit.Configuration.ConfigurationBase.ConvertBuilder">
+  ConvertBuilder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>转换器构造器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConvertBuilder ConvertBuilder { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Builders.IConvertBuilder.html">IConvertBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Configuration_ConfigurationBase_Converters_" data-uid="PocoEmit.Configuration.ConfigurationBase.Converters*"></a>
+
+  <h3 id="PocoEmit_Configuration_ConfigurationBase_Converters" data-uid="PocoEmit.Configuration.ConfigurationBase.Converters">
+  Converters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>转换器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IEmitConverter&gt; Converters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Configuration_ConfigurationBase_MemberCacher_" data-uid="PocoEmit.Configuration.ConfigurationBase.MemberCacher*"></a>
+
+  <h3 id="PocoEmit_Configuration_ConfigurationBase_MemberCacher" data-uid="PocoEmit.Configuration.ConfigurationBase.MemberCacher">
+  MemberCacher
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>成员缓存器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeMemberCacher MemberCacher { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Collections.TypeMemberCacher.html">TypeMemberCacher</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Configuration_ConfigurationBase_ReflectionMember_" data-uid="PocoEmit.Configuration.ConfigurationBase.ReflectionMember*"></a>
+
+  <h3 id="PocoEmit_Configuration_ConfigurationBase_ReflectionMember" data-uid="PocoEmit.Configuration.ConfigurationBase.ReflectionMember">
+  ReflectionMember
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>反射获取成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReflectionMember ReflectionMember { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Reflection.IReflectionMember.html">IReflectionMember</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="PocoEmit_Configuration_ConfigurationBase_GetEmitConverter_" data-uid="PocoEmit.Configuration.ConfigurationBase.GetEmitConverter*"></a>
+
+  <h3 id="PocoEmit_Configuration_ConfigurationBase_GetEmitConverter_PocoEmit_Configuration_MapTypeKey_" data-uid="PocoEmit.Configuration.ConfigurationBase.GetEmitConverter(PocoEmit.Configuration.MapTypeKey)">
+  GetEmitConverter(MapTypeKey)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取Emit类型转化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEmitConverter GetEmitConverter(MapTypeKey key)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="PocoEmit.Configuration.MapTypeKey.html">MapTypeKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Configuration_ConfigurationBase_GetReadFunc_" data-uid="PocoEmit.Configuration.ConfigurationBase.GetReadFunc*"></a>
+
+  <h3 id="PocoEmit_Configuration_ConfigurationBase_GetReadFunc_System_Reflection_MemberInfo_" data-uid="PocoEmit.Configuration.ConfigurationBase.GetReadFunc(System.Reflection.MemberInfo)">
+  GetReadFunc(MemberInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>读成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Func&lt;object, object&gt; GetReadFunc(MemberInfo member)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">object</span>, <span class="xref">object</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Configuration_ConfigurationBase_GetWriteAction_" data-uid="PocoEmit.Configuration.ConfigurationBase.GetWriteAction*"></a>
+
+  <h3 id="PocoEmit_Configuration_ConfigurationBase_GetWriteAction_System_Reflection_MemberInfo_" data-uid="PocoEmit.Configuration.ConfigurationBase.GetWriteAction(System.Reflection.MemberInfo)">
+  GetWriteAction(MemberInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>写成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Action&lt;object, object&gt; GetWriteAction(MemberInfo member)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span class="xref">object</span>, <span class="xref">object</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Configuration_ConfigurationBase_SetConvertSetting_" data-uid="PocoEmit.Configuration.ConfigurationBase.SetConvertSetting*"></a>
+
+  <h3 id="PocoEmit_Configuration_ConfigurationBase_SetConvertSetting_PocoEmit_Configuration_MapTypeKey_PocoEmit_Converters_IEmitConverter_" data-uid="PocoEmit.Configuration.ConfigurationBase.SetConvertSetting(PocoEmit.Configuration.MapTypeKey,PocoEmit.Converters.IEmitConverter)">
+  SetConvertSetting(MapTypeKey, IEmitConverter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConvertSetting(MapTypeKey key, IEmitConverter converter)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="PocoEmit.Configuration.MapTypeKey.html">MapTypeKey</a></dt>
+    <dd></dd>
+    <dt><code>converter</code> <a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Configuration/ConfigurationBase.Frozen.cs/#L15" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) MyEmit All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

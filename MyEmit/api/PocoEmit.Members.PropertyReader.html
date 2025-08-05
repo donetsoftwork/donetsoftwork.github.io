@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PropertyReader 类
+ | 简单对象Emit工具 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PropertyReader 类
+ | 简单对象Emit工具 ">
+      
+      <meta name="description" content="读取属性">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyEmit/new/main/apiSpec/new?filename=PocoEmit_Members_PropertyReader.md&amp;value=---%0Auid%3A%20PocoEmit.Members.PropertyReader%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MyEmit">
+            MyEmit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PocoEmit.Members.PropertyReader">
+
+
+
+  <h1 id="PocoEmit_Members_PropertyReader" data-uid="PocoEmit.Members.PropertyReader" class="text-break">
+PropertyReader 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Members/PropertyReader.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="PocoEmit.html">PocoEmit</a>.<a class="xref" href="PocoEmit.Members.html">Members</a></dd></dl>
+  <dl><dt>程序集</dt><dd>PocoEmit.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>读取属性</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PropertyReader : MemberAccessor&lt;PropertyInfo&gt;, IEmitMemberReader, IMember, IEmitReader, ICompileInfo</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="PocoEmit.Members.MemberAccessor-1.html">MemberAccessor</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a>&gt;</div>
+      <div><span class="xref">PropertyReader</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="PocoEmit.Members.IEmitMemberReader.html">IEmitMemberReader</a></div>
+      <div><a class="xref" href="PocoEmit.Members.IMember.html">IMember</a></div>
+      <div><a class="xref" href="PocoEmit.Members.IEmitReader.html">IEmitReader</a></div>
+      <div><a class="xref" href="PocoEmit.Configuration.ICompileInfo.html">ICompileInfo</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_InstanceType">MemberAccessor&lt;PropertyInfo&gt;.InstanceType</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__member">MemberAccessor&lt;PropertyInfo&gt;._member</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__valueType">MemberAccessor&lt;PropertyInfo&gt;._valueType</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Member">MemberAccessor&lt;PropertyInfo&gt;.Member</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Name">MemberAccessor&lt;PropertyInfo&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_ValueType">MemberAccessor&lt;PropertyInfo&gt;.ValueType</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Compile__2_PocoEmit_Members_IEmitMemberReader_">PocoEmitServices.Compile&lt;TInstance, TValue&gt;(IEmitMemberReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Compile__2_PocoEmit_Members_IEmitMemberReader_System_Linq_Expressions_ParameterExpression_">PocoEmitServices.Compile&lt;TInstance, TValue&gt;(IEmitMemberReader, ParameterExpression)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="PocoEmit_Members_PropertyReader__ctor_" data-uid="PocoEmit.Members.PropertyReader.#ctor*"></a>
+
+  <h3 id="PocoEmit_Members_PropertyReader__ctor_System_Reflection_PropertyInfo_" data-uid="PocoEmit.Members.PropertyReader.#ctor(System.Reflection.PropertyInfo)">
+  PropertyReader(PropertyInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Members/PropertyReader.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>读取属性</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyReader(PropertyInfo property)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="PocoEmit_Members_PropertyReader_Read_" data-uid="PocoEmit.Members.PropertyReader.Read*"></a>
+
+  <h3 id="PocoEmit_Members_PropertyReader_Read_System_Linq_Expressions_Expression_" data-uid="PocoEmit.Members.PropertyReader.Read(System.Linq.Expressions.Expression)">
+  Read(Expression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Members/PropertyReader.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>读取</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Expression Read(Expression instance)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Members/PropertyReader.cs/#L12" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) MyEmit All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
