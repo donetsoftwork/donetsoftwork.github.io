@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>JoinOnVisitor 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="JoinOnVisitor 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="联表表查询表达式解析">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_Expressions_VisitSource_JoinOnVisitor.md&amp;value=---%0Auid%3A%20ShadowSql.Expressions.VisitSource.JoinOnVisitor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor">
+
+
+
+  <h1 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor" class="text-break">
+JoinOnVisitor 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.Expressions.html">Expressions</a>.<a class="xref" href="ShadowSql.Expressions.VisitSource.html">VisitSource</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.Expressions.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>联表表查询表达式解析</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JoinOnVisitor : VisitSourceBase, IFieldProvider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html">VisitSourceBase</a></div>
+      <div><span class="xref">JoinOnVisitor</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Expressions.Visit.IFieldProvider.html">IFieldProvider</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase__entity">VisitSourceBase._entity</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_Entity">VisitSourceBase.Entity</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_GetFieldsByExpression_System_Linq_Expressions_Expression_">VisitSourceBase.GetFieldsByExpression(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_GetFieldByMember_System_Linq_Expressions_MemberExpression_">VisitSourceBase.GetFieldByMember(MemberExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_GetFieldByExpression_System_Linq_Expressions_Expression_">VisitSourceBase.GetFieldByExpression(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_SelectFieldsByAssignment_System_Linq_Expressions_Expression_System_Reflection_MemberInfo_">VisitSourceBase.SelectFieldsByAssignment(Expression, MemberInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_SelectFieldsByMember_System_Linq_Expressions_MemberExpression_">VisitSourceBase.SelectFieldsByMember(MemberExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_GetCompareFieldByExpression_System_Linq_Expressions_Expression_">VisitSourceBase.GetCompareFieldByExpression(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_GetCompareFieldByMethodCall_System_Linq_Expressions_MethodCallExpression_">VisitSourceBase.GetCompareFieldByMethodCall(MethodCallExpression)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="ShadowSql_Expressions_VisitSource_JoinOnVisitor__ctor_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.#ctor*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor__ctor_ShadowSql_Join_IJoinOn_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.#ctor(ShadowSql.Join.IJoinOn,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)">
+  JoinOnVisitor(IJoinOn, Expression, Expression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>联表表查询表达式解析</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JoinOnVisitor(IJoinOn joinOn, Expression leftEntity, Expression rightEntity)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>joinOn</code> <a class="xref" href="ShadowSql.Join.IJoinOn.html">IJoinOn</a></dt>
+    <dd><p>联接</p>
+</dd>
+    <dt><code>leftEntity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+    <dt><code>rightEntity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_Fields_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.Fields*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_Fields" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.Fields">
+  Fields
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>所有字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IField&gt; Fields { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_JoinOn_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.JoinOn*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_JoinOn" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.JoinOn">
+  JoinOn
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>联表对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IJoinOn JoinOn { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Join.IJoinOn.html">IJoinOn</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_LeftEntity_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.LeftEntity*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_LeftEntity" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.LeftEntity">
+  LeftEntity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>左对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Expression LeftEntity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_LeftTable_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.LeftTable*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_LeftTable" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.LeftTable">
+  LeftTable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>左表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAliasTable LeftTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_RightTable_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.RightTable*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_RightTable" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.RightTable">
+  RightTable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>右表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAliasTable RightTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_GetFieldByName_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.GetFieldByName*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_GetFieldByName_System_String_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.GetFieldByName(System.String)">
+  GetFieldByName(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IField? GetFieldByName(string fieldName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_GetFieldsByExpression_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.GetFieldsByExpression*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_GetFieldsByExpression__3_ShadowSql_Join_IJoinOn_System_Linq_Expressions_Expression_System_Func___0___1___2___" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.GetFieldsByExpression``3(ShadowSql.Join.IJoinOn,System.Linq.Expressions.Expression{System.Func{``0,``1,``2}})">
+  GetFieldsByExpression&lt;TLeft, TRight, TField&gt;(IJoinOn, Expression&lt;Func&lt;TLeft, TRight, TField&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IField&gt; GetFieldsByExpression&lt;TLeft, TRight, TField&gt;(IJoinOn joinOn, Expression&lt;Func&lt;TLeft, TRight, TField&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>joinOn</code> <a class="xref" href="ShadowSql.Join.IJoinOn.html">IJoinOn</a></dt>
+    <dd><p>联接</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TLeft, TRight, TField&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TLeft</code></dt>
+    <dd></dd>
+    <dt><code>TRight</code></dt>
+    <dd></dd>
+    <dt><code>TField</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_GetFieldsByMember_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.GetFieldsByMember*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_GetFieldsByMember_System_Linq_Expressions_MemberExpression_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.GetFieldsByMember(System.Linq.Expressions.MemberExpression)">
+  GetFieldsByMember(MemberExpression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IField&gt; GetFieldsByMember(MemberExpression member)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.memberexpression">MemberExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_On_" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.On*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_JoinOnVisitor_On__2_ShadowSql_Join_IJoinOn_ShadowSql_Logics_Logic_System_Linq_Expressions_Expression_System_Func___0___1_System_Boolean___" data-uid="ShadowSql.Expressions.VisitSource.JoinOnVisitor.On``2(ShadowSql.Join.IJoinOn,ShadowSql.Logics.Logic,System.Linq.Expressions.Expression{System.Func{``0,``1,System.Boolean}})">
+  On&lt;TLeft, TRight&gt;(IJoinOn, Logic, Expression&lt;Func&lt;TLeft, TRight, bool&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析联表表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LogicVisitor On&lt;TLeft, TRight&gt;(IJoinOn joinOn, Logic logic, Expression&lt;Func&lt;TLeft, TRight, bool&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>joinOn</code> <a class="xref" href="ShadowSql.Join.IJoinOn.html">IJoinOn</a></dt>
+    <dd><p>联接</p>
+</dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TLeft, TRight, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.LogicVisitor.html">LogicVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TLeft</code></dt>
+    <dd></dd>
+    <dt><code>TRight</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/JoinOnVisitor.cs/#L17" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

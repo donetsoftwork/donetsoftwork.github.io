@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>逻辑简介 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="逻辑简介 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/logic/index.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="逻辑简介">逻辑简介</h1>
+
+<blockquote>
+<ul>
+<li>查询条件基于逻辑运算,而非简单字符串拼接</li>
+<li>逻辑运算又可以分为狭义逻辑和广义逻辑</li>
+</ul>
+</blockquote>
+<h2 id="一狭义逻辑">一、狭义逻辑</h2>
+<blockquote>
+<ul>
+<li>狭义逻辑由原子逻辑、逻辑</li>
+<li>这里的原子逻辑是指继承抽象类AtomicLogic的对象</li>
+<li>这里的逻辑是指继承抽象类Logic的对象</li>
+<li>逻辑分为AND逻辑和OR逻辑</li>
+<li>狭义逻辑用于实现<a href="../query/index.html">逻辑查询</a></li>
+</ul>
+</blockquote>
+<h3 id="1-原子逻辑">1. 原子逻辑</h3>
+<blockquote>
+<ul>
+<li>原子逻辑是继承抽象类AtomicLogic的对象</li>
+<li>原子逻辑作为AND和OR运算的基本组成元素</li>
+<li>参看<a href="atomic.html">原子逻辑</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class AtomicLogic : ISqlLogic;
+</code></pre>
+<h4 id="11-比较逻辑">1.1 比较逻辑</h4>
+<blockquote>
+<ul>
+<li>比较逻辑是最常用的原子逻辑</li>
+<li>参看<a href="compare.html">比较逻辑</a></li>
+</ul>
+</blockquote>
+<h4 id="12-比较运算符">1.2 比较运算符</h4>
+<blockquote>
+<ul>
+<li>比较逻辑由字段和比较运算符组成</li>
+<li>参看<a href="symbol.html">比较运算符</a></li>
+</ul>
+</blockquote>
+<h3 id="2-逻辑基类">2. 逻辑基类</h3>
+<blockquote>
+<ul>
+<li>逻辑基类用来定义逻辑运算的规范</li>
+<li>用来实现<a href="and.html">AND逻辑</a>和<a href="or.html">OR逻辑</a></li>
+<li>参看<a href="logic.html">逻辑基类</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class Logic : ISqlLogic;
+</code></pre>
+<h3 id="3-and逻辑">3. AND逻辑</h3>
+<blockquote>
+<ul>
+<li>AND逻辑可以由AND连接原子逻辑组成</li>
+<li>AND复合逻辑可以包含嵌套的OR逻辑</li>
+<li>参看<a href="and.html">AND逻辑</a></li>
+</ul>
+</blockquote>
+<h3 id="4-or逻辑">4. OR逻辑</h3>
+<blockquote>
+<ul>
+<li>OR逻辑可以由OR连接原子逻辑组成</li>
+<li>OR复合逻辑可以包含嵌套的AND逻辑</li>
+<li>参看<a href="or.html">OR逻辑</a></li>
+</ul>
+</blockquote>
+<h2 id="二广义逻辑">二、广义逻辑</h2>
+<blockquote>
+<ul>
+<li>广义逻辑是继承接口ISqlLogic的对象</li>
+<li>狭义逻辑的对象都符合广义逻辑</li>
+</ul>
+</blockquote>
+<h3 id="1原生sql条件">1.原生sql条件</h3>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Logics.SqlConditionLogic.html">SqlConditionLogic</a>用来支持原生sql条件</li>
+<li>参看<a href="condition.html">原生sql条件</a></li>
+</ul>
+</blockquote>
+<h3 id="2-sql逻辑">2. sql逻辑</h3>
+<blockquote>
+<ul>
+<li>sql逻辑是复合逻辑+SqlConditionLogic</li>
+<li>参看<a href="sqlquery.html">sql逻辑</a></li>
+</ul>
+</blockquote>
+<h2 id="三-其他相关功能">三. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>参看<a href="atomic.html">原子逻辑</a></li>
+<li>参看<a href="and.html">AND逻辑</a></li>
+<li>参看<a href="or.html">OR逻辑</a></li>
+<li>参看<a href="condition.html">原生sql条件</a></li>
+<li>参看<a href="sqlquery.html">sql逻辑</a></li>
+<li>参看<a href="../query/index.html">逻辑查询</a></li>
+<li>参看<a href="../sqlquery/index.html">sql查询</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/logic/index.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

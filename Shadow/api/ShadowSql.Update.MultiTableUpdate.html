@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>MultiTableUpdate 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="MultiTableUpdate 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="多表(联表)修改">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_Update_MultiTableUpdate.md&amp;value=---%0Auid%3A%20ShadowSql.Update.MultiTableUpdate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.Update.MultiTableUpdate">
+
+
+
+  <h1 id="ShadowSql_Update_MultiTableUpdate" data-uid="ShadowSql.Update.MultiTableUpdate" class="text-break">
+MultiTableUpdate 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Update/MultiTableUpdate.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.Update.html">Update</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>多表(联表)修改</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MultiTableUpdate : UpdateBase, IUpdate, IExecuteSql, ISqlEntity</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Update.UpdateBase.html">UpdateBase</a></div>
+      <div><span class="xref">MultiTableUpdate</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Update.IUpdate.html">IUpdate</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.IExecuteSql.html">IExecuteSql</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>衍生</dt>
+    <dd>
+      <div><a class="xref" href="Dapper.Shadow.Update.DapperMultiTableUpdate.html">DapperMultiTableUpdate</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ShadowSql.Update.UpdateBase.html#ShadowSql_Update_UpdateBase_AssignInfos">UpdateBase.AssignInfos</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Update.UpdateBase.html#ShadowSql_Update_UpdateBase_WriteCore_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">UpdateBase.WriteCore(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Update.UpdateBase.html#ShadowSql_Update_UpdateBase_WriteSet_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">UpdateBase.WriteSet(ISqlEngine, StringBuilder)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Execute_ShadowSql_Fragments_IExecuteSql_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.Execute(IExecuteSql, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_ExecuteAsync_ShadowSql_Fragments_IExecuteSql_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.ExecuteAsync(IExecuteSql, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_Set__1_ShadowSql_Update_MultiTableUpdate_System_Linq_Expressions_Expression_System_Func___0___0___">ShadowSqlServices.Set&lt;TEntity&gt;(MultiTableUpdate, Expression&lt;Func&lt;TEntity, TEntity&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_SetAssign__1___0_System_String_System_String_">ShadowSqlCoreServices.SetAssign&lt;TUpdate&gt;(TUpdate, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_SetFields__1___0_System_Collections_Generic_IEnumerable_ShadowSql_Identifiers_IAssignView__">ShadowSqlCoreServices.SetFields&lt;TUpdate&gt;(TUpdate, params IEnumerable&lt;IAssignView&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_SetRaw__1___0_System_String_">ShadowSqlCoreServices.SetRaw&lt;TUpdate&gt;(TUpdate, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_SetSelfFields__1___0_">ShadowSqlCoreServices.SetSelfFields&lt;TUpdate&gt;(TUpdate)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_SetValue__2___0_System_String___1_">ShadowSqlCoreServices.SetValue&lt;TUpdate, TValue&gt;(TUpdate, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_SetValue__2___0_System_String___1_System_String_">ShadowSqlCoreServices.SetValue&lt;TUpdate, TValue&gt;(TUpdate, string, TValue, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Set__1___0_ShadowSql_Assigns_IAssignInfo_">ShadowSqlCoreServices.Set&lt;TUpdate&gt;(TUpdate, IAssignInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Set__1___0_ShadowSql_Identifiers_IAssignView_System_String_">ShadowSqlCoreServices.Set&lt;TUpdate&gt;(TUpdate, IAssignView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Set__1___0_System_String_System_String_System_String_">ShadowSqlCoreServices.Set&lt;TUpdate&gt;(TUpdate, string, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Update__1___0_ShadowSql_Identifiers_IAliasTable_ShadowSql_Identifiers_ITable__">ShadowSqlCoreServices.Update&lt;TMultiUpdate&gt;(TMultiUpdate, IAliasTable&lt;ITable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Update__1___0_System_String_">ShadowSqlCoreServices.Update&lt;TMultiUpdate&gt;(TMultiUpdate, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="ShadowSql_Update_MultiTableUpdate__ctor_" data-uid="ShadowSql.Update.MultiTableUpdate.#ctor*"></a>
+
+  <h3 id="ShadowSql_Update_MultiTableUpdate__ctor_ShadowSql_Identifiers_IMultiView_" data-uid="ShadowSql.Update.MultiTableUpdate.#ctor(ShadowSql.Identifiers.IMultiView)">
+  MultiTableUpdate(IMultiView)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Update/MultiTableUpdate.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>多表(联表)修改</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MultiTableUpdate(IMultiView multiTable)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>multiTable</code> <a class="xref" href="ShadowSql.Identifiers.IMultiView.html">IMultiView</a></dt>
+    <dd><p>多表(联表)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="ShadowSql_Update_MultiTableUpdate_MultiTable_" data-uid="ShadowSql.Update.MultiTableUpdate.MultiTable*"></a>
+
+  <h3 id="ShadowSql_Update_MultiTableUpdate_MultiTable" data-uid="ShadowSql.Update.MultiTableUpdate.MultiTable">
+  MultiTable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Update/MultiTableUpdate.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>多表(联表)视图</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMultiView MultiTable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.IMultiView.html">IMultiView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Update_MultiTableUpdate_Table_" data-uid="ShadowSql.Update.MultiTableUpdate.Table*"></a>
+
+  <h3 id="ShadowSql_Update_MultiTableUpdate_Table" data-uid="ShadowSql.Update.MultiTableUpdate.Table">
+  Table
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Update/MultiTableUpdate.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>被删除的表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAliasTable&lt;ITable&gt; Table { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.IAliasTable-1.html">IAliasTable</a>&lt;<a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_Update_MultiTableUpdate_Set_" data-uid="ShadowSql.Update.MultiTableUpdate.Set*"></a>
+
+  <h3 id="ShadowSql_Update_MultiTableUpdate_Set__1_System_Func___0_ShadowSql_Assigns_IAssignInfo__" data-uid="ShadowSql.Update.MultiTableUpdate.Set``1(System.Func{``0,ShadowSql.Assigns.IAssignInfo})">
+  Set&lt;TAliasTable&gt;(Func&lt;TAliasTable, IAssignInfo&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Update/MultiTableUpdate.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>修改</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MultiTableUpdate Set&lt;TAliasTable&gt;(Func&lt;TAliasTable, IAssignInfo&gt; operation) where TAliasTable : IAliasTable</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>operation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TAliasTable, <a class="xref" href="ShadowSql.Assigns.IAssignInfo.html">IAssignInfo</a>&gt;</dt>
+    <dd><p>操作</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Update.MultiTableUpdate.html">MultiTableUpdate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TAliasTable</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Update_MultiTableUpdate_WriteSource_" data-uid="ShadowSql.Update.MultiTableUpdate.WriteSource*"></a>
+
+  <h3 id="ShadowSql_Update_MultiTableUpdate_WriteSource_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_" data-uid="ShadowSql.Update.MultiTableUpdate.WriteSource(ShadowSql.Engines.ISqlEngine,System.Text.StringBuilder)">
+  WriteSource(ISqlEngine, StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Update/MultiTableUpdate.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>拼写数据源</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteSource(ISqlEngine engine, StringBuilder sql)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>engine</code> <a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></dt>
+    <dd><p>数据库引擎</p>
+</dd>
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>sql</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Update_MultiTableUpdate_WriteUpdate_" data-uid="ShadowSql.Update.MultiTableUpdate.WriteUpdate*"></a>
+
+  <h3 id="ShadowSql_Update_MultiTableUpdate_WriteUpdate_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_" data-uid="ShadowSql.Update.MultiTableUpdate.WriteUpdate(ShadowSql.Engines.ISqlEngine,System.Text.StringBuilder)">
+  WriteUpdate(ISqlEngine, StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Update/MultiTableUpdate.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>拼写Update子句</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteUpdate(ISqlEngine engine, StringBuilder sql)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>engine</code> <a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></dt>
+    <dd><p>数据库引擎</p>
+</dd>
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>sql</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Update/MultiTableUpdate.cs/#L14" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

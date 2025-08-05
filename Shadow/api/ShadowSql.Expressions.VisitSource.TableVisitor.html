@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>TableVisitor 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="TableVisitor 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="表查询表达式解析">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_Expressions_VisitSource_TableVisitor.md&amp;value=---%0Auid%3A%20ShadowSql.Expressions.VisitSource.TableVisitor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.Expressions.VisitSource.TableVisitor">
+
+
+
+  <h1 id="ShadowSql_Expressions_VisitSource_TableVisitor" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor" class="text-break">
+TableVisitor 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.Expressions.html">Expressions</a>.<a class="xref" href="ShadowSql.Expressions.VisitSource.html">VisitSource</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.Expressions.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>表查询表达式解析</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TableVisitor : VisitSourceBase, IFieldProvider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html">VisitSourceBase</a></div>
+      <div><span class="xref">TableVisitor</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Expressions.Visit.IFieldProvider.html">IFieldProvider</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase__entity">VisitSourceBase._entity</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_Entity">VisitSourceBase.Entity</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_GetFieldsByExpression_System_Linq_Expressions_Expression_">VisitSourceBase.GetFieldsByExpression(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_GetFieldByMember_System_Linq_Expressions_MemberExpression_">VisitSourceBase.GetFieldByMember(MemberExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_GetFieldByExpression_System_Linq_Expressions_Expression_">VisitSourceBase.GetFieldByExpression(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_SelectFieldsByAssignment_System_Linq_Expressions_Expression_System_Reflection_MemberInfo_">VisitSourceBase.SelectFieldsByAssignment(Expression, MemberInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_SelectFieldsByMember_System_Linq_Expressions_MemberExpression_">VisitSourceBase.SelectFieldsByMember(MemberExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_GetCompareFieldByExpression_System_Linq_Expressions_Expression_">VisitSourceBase.GetCompareFieldByExpression(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.VisitSource.VisitSourceBase.html#ShadowSql_Expressions_VisitSource_VisitSourceBase_GetCompareFieldByMethodCall_System_Linq_Expressions_MethodCallExpression_">VisitSourceBase.GetCompareFieldByMethodCall(MethodCallExpression)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor__ctor_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.#ctor*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor__ctor_ShadowSql_Identifiers_IAliasTable_System_Linq_Expressions_Expression_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.#ctor(ShadowSql.Identifiers.IAliasTable,System.Linq.Expressions.Expression)">
+  TableVisitor(IAliasTable, Expression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析别名表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableVisitor(IAliasTable table, Expression entity)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>entity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor__ctor_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.#ctor*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor__ctor_ShadowSql_Identifiers_ITable_System_Linq_Expressions_Expression_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.#ctor(ShadowSql.Identifiers.ITable,System.Linq.Expressions.Expression)">
+  TableVisitor(ITable, Expression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableVisitor(ITable table, Expression entity)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>entity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_Fields_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Fields*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_Fields" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Fields">
+  Fields
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>所有字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IField&gt; Fields { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_Table_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Table*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_Table" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Table">
+  Table
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>表视图</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITableView Table { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.ITableView.html">ITableView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_GetField_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetField*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_GetField_System_Collections_Generic_IEnumerable_ShadowSql_Identifiers_IField__" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetField(System.Collections.Generic.IEnumerable{ShadowSql.Identifiers.IField})">
+  GetField(IEnumerable&lt;IField&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IField? GetField(IEnumerable&lt;IField&gt; list)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldByExpression_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldByExpression*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldByExpression__2_ShadowSql_Identifiers_IAliasTable_System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldByExpression``2(ShadowSql.Identifiers.IAliasTable,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+  GetFieldByExpression&lt;TEntity, T&gt;(IAliasTable, Expression&lt;Func&lt;TEntity, T&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IField? GetFieldByExpression&lt;TEntity, T&gt;(IAliasTable table, Expression&lt;Func&lt;TEntity, T&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, T&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldByExpression_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldByExpression*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldByExpression__2_ShadowSql_Identifiers_ITable_System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldByExpression``2(ShadowSql.Identifiers.ITable,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+  GetFieldByExpression&lt;TEntity, T&gt;(ITable, Expression&lt;Func&lt;TEntity, T&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IField? GetFieldByExpression&lt;TEntity, T&gt;(ITable table, Expression&lt;Func&lt;TEntity, T&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, T&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldByName_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldByName*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldByName_System_String_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldByName(System.String)">
+  GetFieldByName(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IField? GetFieldByName(string fieldName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldsByExpression_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldsByExpression*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldsByExpression__2_ShadowSql_Identifiers_IAliasTable_System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldsByExpression``2(ShadowSql.Identifiers.IAliasTable,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+  GetFieldsByExpression&lt;TEntity, T&gt;(IAliasTable, Expression&lt;Func&lt;TEntity, T&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IField&gt; GetFieldsByExpression&lt;TEntity, T&gt;(IAliasTable table, Expression&lt;Func&lt;TEntity, T&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, T&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldsByExpression_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldsByExpression*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldsByExpression__2_ShadowSql_Identifiers_ITable_System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldsByExpression``2(ShadowSql.Identifiers.ITable,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+  GetFieldsByExpression&lt;TEntity, T&gt;(ITable, Expression&lt;Func&lt;TEntity, T&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IField&gt; GetFieldsByExpression&lt;TEntity, T&gt;(ITable table, Expression&lt;Func&lt;TEntity, T&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, T&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldsByMember_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldsByMember*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_GetFieldsByMember_System_Linq_Expressions_MemberExpression_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.GetFieldsByMember(System.Linq.Expressions.MemberExpression)">
+  GetFieldsByMember(MemberExpression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IField&gt; GetFieldsByMember(MemberExpression member)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.memberexpression">MemberExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_OrderBy_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.OrderBy*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_OrderBy__2_ShadowSql_Identifiers_IAliasTable_System_Collections_Generic_List_ShadowSql_Identifiers_IOrderAsc__System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.OrderBy``2(ShadowSql.Identifiers.IAliasTable,System.Collections.Generic.List{ShadowSql.Identifiers.IOrderAsc},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+  OrderBy&lt;TEntity, TOrder&gt;(IAliasTable, List&lt;IOrderAsc&gt;, Expression&lt;Func&lt;TEntity, TOrder&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OrderByVisitor OrderBy&lt;TEntity, TOrder&gt;(IAliasTable table, List&lt;IOrderAsc&gt; fields, Expression&lt;Func&lt;TEntity, TOrder&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>fields</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IOrderAsc.html">IOrderAsc</a>&gt;</dt>
+    <dd><p>字段</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, TOrder&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.OrderByVisitor.html">OrderByVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>TOrder</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_OrderBy_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.OrderBy*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_OrderBy__2_ShadowSql_Identifiers_ITable_System_Collections_Generic_List_ShadowSql_Identifiers_IOrderAsc__System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.OrderBy``2(ShadowSql.Identifiers.ITable,System.Collections.Generic.List{ShadowSql.Identifiers.IOrderAsc},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+  OrderBy&lt;TEntity, TOrder&gt;(ITable, List&lt;IOrderAsc&gt;, Expression&lt;Func&lt;TEntity, TOrder&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OrderByVisitor OrderBy&lt;TEntity, TOrder&gt;(ITable table, List&lt;IOrderAsc&gt; fields, Expression&lt;Func&lt;TEntity, TOrder&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>fields</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IOrderAsc.html">IOrderAsc</a>&gt;</dt>
+    <dd><p>字段</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, TOrder&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.OrderByVisitor.html">OrderByVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>TOrder</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_Select_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Select*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_Select__2_ShadowSql_Expressions_Select_TableSelect___0__System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Select``2(ShadowSql.Expressions.Select.TableSelect{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+  Select&lt;TEntity, T&gt;(TableSelect&lt;TEntity&gt;, Expression&lt;Func&lt;TEntity, T&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectVisitor Select&lt;TEntity, T&gt;(TableSelect&lt;TEntity&gt; select, Expression&lt;Func&lt;TEntity, T&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>select</code> <a class="xref" href="ShadowSql.Expressions.Select.TableSelect-1.html">TableSelect</a>&lt;TEntity&gt;</dt>
+    <dd><p>筛选</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, T&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.SelectVisitor.html">SelectVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_Select_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Select*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_Select__2_ShadowSql_Identifiers_IAliasTable_System_Collections_Generic_List_ShadowSql_Identifiers_IFieldView__System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Select``2(ShadowSql.Identifiers.IAliasTable,System.Collections.Generic.List{ShadowSql.Identifiers.IFieldView},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+  Select&lt;TEntity, T&gt;(IAliasTable, List&lt;IFieldView&gt;, Expression&lt;Func&lt;TEntity, T&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectVisitor Select&lt;TEntity, T&gt;(IAliasTable table, List&lt;IFieldView&gt; fields, Expression&lt;Func&lt;TEntity, T&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>fields</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IFieldView.html">IFieldView</a>&gt;</dt>
+    <dd><p>字段</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, T&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.SelectVisitor.html">SelectVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_Select_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Select*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_Select__2_ShadowSql_Identifiers_ITable_System_Collections_Generic_List_ShadowSql_Identifiers_IFieldView__System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Select``2(ShadowSql.Identifiers.ITable,System.Collections.Generic.List{ShadowSql.Identifiers.IFieldView},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+  Select&lt;TEntity, T&gt;(ITable, List&lt;IFieldView&gt;, Expression&lt;Func&lt;TEntity, T&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectVisitor Select&lt;TEntity, T&gt;(ITable table, List&lt;IFieldView&gt; fields, Expression&lt;Func&lt;TEntity, T&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>fields</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IFieldView.html">IFieldView</a>&gt;</dt>
+    <dd><p>字段</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, T&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.SelectVisitor.html">SelectVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_Where_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Where*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_Where__1_ShadowSql_Identifiers_IAliasTable_ShadowSql_Logics_Logic_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Where``1(ShadowSql.Identifiers.IAliasTable,ShadowSql.Logics.Logic,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+  Where&lt;TEntity&gt;(IAliasTable, Logic, Expression&lt;Func&lt;TEntity, bool&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LogicVisitor Where&lt;TEntity&gt;(IAliasTable table, Logic logic, Expression&lt;Func&lt;TEntity, bool&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.LogicVisitor.html">LogicVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_Where_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Where*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_Where__1_ShadowSql_Identifiers_ITable_ShadowSql_Logics_Logic_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Where``1(ShadowSql.Identifiers.ITable,ShadowSql.Logics.Logic,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+  Where&lt;TEntity&gt;(ITable, Logic, Expression&lt;Func&lt;TEntity, bool&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LogicVisitor Where&lt;TEntity&gt;(ITable table, Logic logic, Expression&lt;Func&lt;TEntity, bool&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.LogicVisitor.html">LogicVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_Where_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Where*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_Where__2_ShadowSql_Identifiers_IAliasTable_ShadowSql_Logics_Logic_System_Linq_Expressions_Expression_System_Func___0___1_System_Boolean___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Where``2(ShadowSql.Identifiers.IAliasTable,ShadowSql.Logics.Logic,System.Linq.Expressions.Expression{System.Func{``0,``1,System.Boolean}})">
+  Where&lt;TEntity, TParameter&gt;(IAliasTable, Logic, Expression&lt;Func&lt;TEntity, TParameter, bool&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LogicVisitor Where&lt;TEntity, TParameter&gt;(IAliasTable table, Logic logic, Expression&lt;Func&lt;TEntity, TParameter, bool&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TEntity, TParameter, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.LogicVisitor.html">LogicVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>TParameter</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_VisitSource_TableVisitor_Where_" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Where*"></a>
+
+  <h3 id="ShadowSql_Expressions_VisitSource_TableVisitor_Where__2_ShadowSql_Identifiers_ITable_ShadowSql_Logics_Logic_System_Linq_Expressions_Expression_System_Func___0___1_System_Boolean___" data-uid="ShadowSql.Expressions.VisitSource.TableVisitor.Where``2(ShadowSql.Identifiers.ITable,ShadowSql.Logics.Logic,System.Linq.Expressions.Expression{System.Func{``0,``1,System.Boolean}})">
+  Where&lt;TEntity, TParameter&gt;(ITable, Logic, Expression&lt;Func&lt;TEntity, TParameter, bool&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LogicVisitor Where&lt;TEntity, TParameter&gt;(ITable table, Logic logic, Expression&lt;Func&lt;TEntity, TParameter, bool&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TEntity, TParameter, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;&gt;</dt>
+    <dd><p>表达式</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.LogicVisitor.html">LogicVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>TParameter</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/VisitSource/TableVisitor.cs/#L15" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

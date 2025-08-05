@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>GroupBySelectBase&lt;TSource, TGroupSource&gt; 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="GroupBySelectBase&lt;TSource, TGroupSource&gt; 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="分组筛选基类">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_Expressions_Select_GroupBySelectBase_2.md&amp;value=---%0Auid%3A%20ShadowSql.Expressions.Select.GroupBySelectBase%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2">
+
+
+
+  <h1 id="ShadowSql_Expressions_Select_GroupBySelectBase_2" data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2" class="text-break">
+GroupBySelectBase&lt;TSource, TGroupSource&gt; 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Select/GroupBySelectBase.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.Expressions.html">Expressions</a>.<a class="xref" href="ShadowSql.Expressions.Select.html">Select</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.Expressions.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>分组筛选基类</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GroupBySelectBase&lt;TSource, TGroupSource&gt; : SelectBase&lt;TSource, IGroupByView&gt;, IGroupBySelect, ISelect, ISelectFields, ISqlEntity where TSource : ITableView where TGroupSource : ITableView</code></pre>
+  </div>
+
+
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TGroupSource</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html">GetFieldBase</a></div>
+      <div><a class="xref" href="ShadowSql.SelectFields.SelectFieldsBase.html">SelectFieldsBase</a></div>
+      <div><a class="xref" href="ShadowSql.Expressions.Select.SelectBase-2.html">SelectBase</a>&lt;TSource, <a class="xref" href="ShadowSql.Identifiers.IGroupByView.html">IGroupByView</a>&gt;</div>
+      <div><span class="xref">GroupBySelectBase&lt;TSource, TGroupSource&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Expressions.Select.IGroupBySelect.html">IGroupBySelect</a></div>
+      <div><a class="xref" href="ShadowSql.Select.ISelect.html">ISelect</a></div>
+      <div><a class="xref" href="ShadowSql.SelectFields.ISelectFields.html">ISelectFields</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>衍生</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Expressions.CursorSelect.GroupCursorBySelectBase-1.html">GroupCursorBySelectBase&lt;TGroupSource&gt;</a></div>
+      <div><a class="xref" href="ShadowSql.Expressions.Select.GroupByMultiSelectBase-1.html">GroupByMultiSelectBase&lt;TSource&gt;</a></div>
+      <div><a class="xref" href="ShadowSql.Expressions.Select.GroupByTableSelect-2.html">GroupByTableSelect&lt;TKey, TEntity&gt;</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.Select.SelectBase-2.html#ShadowSql_Expressions_Select_SelectBase_2__source">SelectBase&lt;TSource, IGroupByView&gt;._source</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.Select.SelectBase-2.html#ShadowSql_Expressions_Select_SelectBase_2_Source">SelectBase&lt;TSource, IGroupByView&gt;.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.Select.SelectBase-2.html#ShadowSql_Expressions_Select_SelectBase_2_Target">SelectBase&lt;TSource, IGroupByView&gt;.Target</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.Select.SelectBase-2.html#ShadowSql_Expressions_Select_SelectBase_2_GetFields">SelectBase&lt;TSource, IGroupByView&gt;.GetFields()</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.Select.SelectBase-2.html#ShadowSql_Expressions_Select_SelectBase_2_GetField_System_String_">SelectBase&lt;TSource, IGroupByView&gt;.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.Select.SelectBase-2.html#ShadowSql_Expressions_Select_SelectBase_2_NewField_System_String_">SelectBase&lt;TSource, IGroupByView&gt;.NewField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Expressions.Select.SelectBase-2.html#ShadowSql_Expressions_Select_SelectBase_2_WriteCore_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">SelectBase&lt;TSource, IGroupByView&gt;.WriteCore(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.SelectFields.SelectFieldsBase.html#ShadowSql_SelectFields_SelectFieldsBase_Selected">SelectFieldsBase.Selected</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.SelectFields.SelectFieldsBase.html#ShadowSql_SelectFields_SelectFieldsBase_WriteSelectFields_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_ShadowSql_Identifiers_IFieldView__System_Boolean_">SelectFieldsBase.WriteSelectFields(ISqlEngine, StringBuilder, IEnumerable&lt;IFieldView&gt;, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.SelectFields.SelectFieldsBase.html#ShadowSql_SelectFields_SelectFieldsBase_ToColumnsCore">SelectFieldsBase.ToColumnsCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html#ShadowSql_Identifiers_GetFieldBase_GetFields">GetFieldBase.GetFields()</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html#ShadowSql_Identifiers_GetFieldBase_GetField_System_String_">GetFieldBase.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html#ShadowSql_Identifiers_GetFieldBase_NewField_System_String_">GetFieldBase.NewField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html#ShadowSql_Identifiers_GetFieldBase_WriteCore_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">GetFieldBase.WriteCore(ISqlEngine, StringBuilder)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServicess.html#ShadowSql_Expressions_ShadowSqlServicess_SelectCount__1___0_System_String_">ShadowSqlServicess.SelectCount&lt;TSelect&gt;(TSelect, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServicess.html#ShadowSql_Expressions_ShadowSqlServicess_SelectKey__1___0_">ShadowSqlServicess.SelectKey&lt;TSelect&gt;(TSelect)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Alias__1___0_ShadowSql_SingleSelect_ISingleSelect_System_String_">ShadowSqlCoreServices.Alias&lt;TSelectFields&gt;(TSelectFields, ISingleSelect, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Alias__1___0_System_String_System_String_">ShadowSqlCoreServices.Alias&lt;TSelectFields&gt;(TSelectFields, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_SelectSelfColumns__1___0_">ShadowSqlCoreServices.SelectSelfColumns&lt;TSelectFields&gt;(TSelectFields)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Select__1___0_ShadowSql_SingleSelect_ISingleSelect_">ShadowSqlCoreServices.Select&lt;TSelectFields&gt;(TSelectFields, ISingleSelect)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Select__1___0_System_Collections_Generic_IEnumerable_ShadowSql_Identifiers_IFieldView__">ShadowSqlCoreServices.Select&lt;TSelectFields&gt;(TSelectFields, params IEnumerable&lt;IFieldView&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Select__1___0_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlCoreServices.Select&lt;TSelectFields&gt;(TSelectFields, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServicess.html#ShadowSql_ShadowSqlServicess_Apply__1___0_System_Action___0__">ShadowSqlServicess.Apply&lt;TSelect&gt;(TSelect, Action&lt;TSelect&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Count_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.Count(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_CountAsync_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.CountAsync(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_FirstAsync__1_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.FirstAsync&lt;T&gt;(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_First__1_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.First&lt;T&gt;(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_GetAsync__1_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.GetAsync&lt;T&gt;(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Get__1_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.Get&lt;T&gt;(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCount_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCount(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCountAsync_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCountAsync(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowServices.html#Dapper_Shadow_DapperShadowServices_DapperInsertTo__1_ShadowSql_Select_ISelect___0_">DapperShadowServices.DapperInsertTo&lt;TTable&gt;(ISelect, TTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_InsertTo_ShadowSql_Select_ISelect_System_String_">ShadowSqlServices.InsertTo(ISelect, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_InsertTo__1_ShadowSql_Select_ISelect___0_">ShadowSqlServices.InsertTo&lt;TTable&gt;(ISelect, TTable)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="ShadowSql_Expressions_Select_GroupBySelectBase_2__ctor_" data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2.#ctor*"></a>
+
+  <h3 id="ShadowSql_Expressions_Select_GroupBySelectBase_2__ctor__0_ShadowSql_Identifiers_IGroupByView__1_" data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2.#ctor(`0,ShadowSql.Identifiers.IGroupByView,`1)">
+  GroupBySelectBase(TSource, IGroupByView, TGroupSource)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Select/GroupBySelectBase.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>分组筛选基类</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GroupBySelectBase(TSource view, IGroupByView groupBy, TGroupSource groupSource)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>view</code> <span class="xref">TSource</span></dt>
+    <dd></dd>
+    <dt><code>groupBy</code> <a class="xref" href="ShadowSql.Identifiers.IGroupByView.html">IGroupByView</a></dt>
+    <dd><p>分组查询</p>
+</dd>
+    <dt><code>groupSource</code> <span class="xref">TGroupSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">字段
+</h2>
+
+
+
+  <h3 id="ShadowSql_Expressions_Select_GroupBySelectBase_2__groupSource" data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2._groupSource">
+  _groupSource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Select/GroupBySelectBase.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>分组数据源</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TGroupSource _groupSource</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">字段值</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TGroupSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="ShadowSql_Expressions_Select_GroupBySelectBase_2_GroupSource_" data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2.GroupSource*"></a>
+
+  <h3 id="ShadowSql_Expressions_Select_GroupBySelectBase_2_GroupSource" data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2.GroupSource">
+  GroupSource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Select/GroupBySelectBase.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>分组数据源</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TGroupSource GroupSource { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TGroupSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_Expressions_Select_GroupBySelectBase_2_SelectAggregateCore_" data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2.SelectAggregateCore*"></a>
+
+  <h3 id="ShadowSql_Expressions_Select_GroupBySelectBase_2_SelectAggregateCore_System_Func__1_ShadowSql_Aggregates_IAggregateFieldAlias__" data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2.SelectAggregateCore(System.Func{`1,ShadowSql.Aggregates.IAggregateFieldAlias})">
+  SelectAggregateCore(Func&lt;TGroupSource, IAggregateFieldAlias&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Select/GroupBySelectBase.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>筛选列</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SelectAggregateCore(Func&lt;TGroupSource, IAggregateFieldAlias&gt; select)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>select</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TGroupSource, <a class="xref" href="ShadowSql.Aggregates.IAggregateFieldAlias.html">IAggregateFieldAlias</a>&gt;</dt>
+    <dd><p>筛选</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_Select_GroupBySelectBase_2_WriteSelectedCore_" data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2.WriteSelectedCore*"></a>
+
+  <h3 id="ShadowSql_Expressions_Select_GroupBySelectBase_2_WriteSelectedCore_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_System_Boolean_" data-uid="ShadowSql.Expressions.Select.GroupBySelectBase`2.WriteSelectedCore(ShadowSql.Engines.ISqlEngine,System.Text.StringBuilder,System.Boolean)">
+  WriteSelectedCore(ISqlEngine, StringBuilder, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Select/GroupBySelectBase.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>拼写筛选字段列表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool WriteSelectedCore(ISqlEngine engine, StringBuilder sql, bool appended)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>engine</code> <a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></dt>
+    <dd><p>数据库引擎</p>
+</dd>
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>sql</p>
+</dd>
+    <dt><code>appended</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Select/GroupBySelectBase.cs/#L18" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

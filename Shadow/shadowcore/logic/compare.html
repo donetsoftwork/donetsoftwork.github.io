@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>比较逻辑 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="比较逻辑 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/logic/compare.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="比较逻辑">比较逻辑</h1>
+
+<blockquote>
+<ul>
+<li>比较逻辑由字段和比较运算符组成</li>
+<li>依赖<a href="symbol.html">比较运算符</a></li>
+<li>依赖<a class="xref" href="../../api/ShadowSql.Identifiers.ICompareView.html">ICompareView</a></li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Logics.ISqlLogic.html">ISqlLogic</a></li>
+</ul>
+</blockquote>
+<h2 id="2-基类">2. 基类</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></li>
+<li><a class="xref" href="../../api/ShadowSql.CompareLogics.CompareLogicBase.html">CompareLogicBase</a></li>
+</ul>
+</blockquote>
+<h2 id="3-comparelogic">3. CompareLogic</h2>
+<blockquote>
+<ul>
+<li>普通比较逻辑</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.CompareLogics.CompareLogic.html">CompareLogic</a></li>
+</ul>
+</blockquote>
+<h3 id="31-comparelogic类">3.1 CompareLogic类</h3>
+<blockquote>
+<ul>
+<li>由字段、比较运算符及数据库值构成</li>
+<li>数据库值也可以是字段</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Identifiers.ICompareView.html">ICompareView</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class CompareLogic(ICompareView field, CompareSymbol op, ISqlValue value);
+</code></pre>
+<h3 id="32-字段参数化比较">3.2 字段参数化比较</h3>
+<pre><code class="lang-csharp">AtomicLogic Compare(this ICompareField column, string op, string parameter = &quot;&quot;);
+AtomicLogic Equal(this ICompareField column, string parameter = &quot;&quot;)；
+AtomicLogic NotEqual(this ICompareField column, string parameter = &quot;&quot;);
+AtomicLogic Greater(this ICompareField column, string parameter = &quot;&quot;);
+AtomicLogic Less(this ICompareField column, string parameter = &quot;&quot;);
+AtomicLogic GreaterEqual(this ICompareField column, string parameter = &quot;&quot;);
+AtomicLogic LessEqual(this ICompareField column, string parameter = &quot;&quot;);
+AtomicLogic Like(this ICompareField column, string parameter = &quot;&quot;);
+AtomicLogic NotLike(this ICompareField column, string parameter = &quot;&quot;);
+AtomicLogic In(this ICompareField column, string parameter = &quot;&quot;);
+AtomicLogic NotIn(this ICompareField column, string parameter = &quot;&quot;);
+AtomicLogic Between(this ICompareField column, string begin = &quot;&quot;, string end = &quot;&quot;);
+AtomicLogic NotBetween(this ICompareField column, string begin = &quot;&quot;, string end = &quot;&quot;);
+</code></pre>
+<blockquote>
+<p>注:以上返回类型为AtomicLogic,也是CompareLogic的实例</p>
+</blockquote>
+<h3 id="33-字段值比较">3.3 字段值比较</h3>
+<pre><code class="lang-csharp">AtomicLogic CompareValue&lt;TValue&gt;(this ICompareView column, string op, TValue value);
+AtomicLogic EqualValue&lt;TValue&gt;(this ICompareView column, TValue value);
+AtomicLogic NotEqualValue&lt;TValue&gt;(this ICompareView column, TValue value);
+AtomicLogic GreaterValue&lt;TValue&gt;(this ICompareView column, TValue value);
+AtomicLogic LessValue&lt;TValue&gt;(this ICompareView column, TValue value)；
+AtomicLogic GreaterEqualValue&lt;TValue&gt;(this ICompareView column, TValue value);
+AtomicLogic LessEqualValue&lt;TValue&gt;(this ICompareView column, TValue value);
+AtomicLogic LikeValue(this ICompareView column, string value);
+AtomicLogic NotLikeValue(this ICompareView column, string value);
+AtomicLogic InValue&lt;TValue&gt;(this ICompareView column, params TValue[] values);
+AtomicLogic NotInValue&lt;TValue&gt;(this ICompareView column, params TValue[] values);
+AtomicLogic BetweenValue&lt;TValue&gt;(this ICompareView column, TValue begin, TValue end);
+AtomicLogic NotBetweenValue&lt;TValue&gt;(this ICompareView column, TValue begin, TValue end);
+</code></pre>
+<blockquote>
+<p>注:以上返回类型为AtomicLogic,也是CompareLogic的实例</p>
+</blockquote>
+<h3 id="34-字段数据库值比较">3.4 字段数据库值比较</h3>
+<blockquote>
+<ul>
+<li>常用于与字段进行比较</li>
+<li>参看<a href="xheef:ShadowSql.SqlVales.ISqlValue">ISqlValue</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">AtomicLogic Equal(this ICompareView column, ISqlValue right);
+AtomicLogic NotEqual(this ICompareView column, ISqlValue right);
+AtomicLogic Greater(this ICompareView column, ISqlValue right);
+AtomicLogic Less(this ICompareView column, ISqlValue right);
+AtomicLogic GreaterEqual(this ICompareView column, ISqlValue right);
+AtomicLogic LessEqual(this ICompareView column, ISqlValue right);
+AtomicLogic BetweenValue(this ICompareView column, ISqlValue begin, ISqlValue end);
+AtomicLogic NotBetweenValue(this ICompareView column, ISqlValue begin, ISqlValue end);
+</code></pre>
+<blockquote>
+<p>注:以上返回类型为AtomicLogic,也是CompareLogic的实例</p>
+</blockquote>
+<h3 id="35-聚合参数化比较">3.5 聚合参数化比较</h3>
+<pre><code class="lang-csharp">AtomicLogic Compare(this IAggregateField column, string op, string parameter = &quot;&quot;);
+AtomicLogic Equal(this IAggregateField column, string parameter = &quot;&quot;)；
+AtomicLogic NotEqual(this IAggregateField column, string parameter = &quot;&quot;);
+AtomicLogic Greater(this IAggregateField column, string parameter = &quot;&quot;);
+AtomicLogic Less(this IAggregateField column, string parameter = &quot;&quot;);
+AtomicLogic GreaterEqual(this IAggregateField column, string parameter = &quot;&quot;);
+AtomicLogic LessEqual(this IAggregateField column, string parameter = &quot;&quot;);
+AtomicLogic Like(this IAggregateField column, string parameter = &quot;&quot;);
+AtomicLogic NotLike(this IAggregateField column, string parameter = &quot;&quot;);
+AtomicLogic In(this IAggregateField column, string parameter = &quot;&quot;);
+AtomicLogic NotIn(this IAggregateField column, string parameter = &quot;&quot;);
+AtomicLogic Between(this IAggregateField column, string begin = &quot;&quot;, string end = &quot;&quot;);
+AtomicLogic NotBetween(this IAggregateField column, string begin = &quot;&quot;, string end = &quot;&quot;);
+</code></pre>
+<blockquote>
+<ul>
+<li>注:以上返回类型为AtomicLogic,也是CompareLogic的实例</li>
+<li>注:IAggregateField继承接口ICompareView,没必要单独定义与值和数据库值比较的方法</li>
+</ul>
+</blockquote>
+<h2 id="4-betweenlogic">4. BetweenLogic</h2>
+<blockquote>
+<ul>
+<li>三元运算,在...之间</li>
+<li>是CompareLogic的特殊情况之一</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.CompareLogics.BetweenLogic.html">BetweenLogic</a></li>
+</ul>
+</blockquote>
+<h3 id="41-betweenlogic类">4.1 BetweenLogic类</h3>
+<blockquote>
+<ul>
+<li>由字段、两个数据库值构成</li>
+<li>数据库值也可以是字段</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class BetweenLogic : CompareLogic;
+</code></pre>
+<h3 id="42-betweenlogic扩展方法">4.2 BetweenLogic扩展方法</h3>
+<pre><code class="lang-csharp">AtomicLogic Between(this ICompareField column, string begin = &quot;&quot;, string end = &quot;&quot;);
+AtomicLogic Between(this IAggregateField column, string begin = &quot;&quot;, string end = &quot;&quot;);
+AtomicLogic BetweenValue&lt;TValue&gt;(this ICompareView column, TValue begin, TValue end);
+AtomicLogic BetweenValue(this ICompareView column, ISqlValue begin, ISqlValue end);
+</code></pre>
+<blockquote>
+<p>注:以上返回类型为AtomicLogic,也是BetweenLogic的实例</p>
+</blockquote>
+<h2 id="5-notbetweenlogic">5. NotBetweenLogic</h2>
+<blockquote>
+<ul>
+<li>三元运算,不在...之间</li>
+<li>是CompareLogic的特殊情况之一</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.CompareLogics.NotBetweenLogic.html">NotBetweenLogic</a></li>
+</ul>
+</blockquote>
+<h3 id="51-notbetweenlogic类">5.1 NotBetweenLogic类</h3>
+<blockquote>
+<ul>
+<li>由字段、两个数据库值构成</li>
+<li>数据库值也可以是字段</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class NotBetweenLogic : CompareLogic;
+</code></pre>
+<h3 id="52-notbetweenlogic扩展方法">5.2 NotBetweenLogic扩展方法</h3>
+<pre><code class="lang-csharp">AtomicLogic NotBetween(this ICompareField column, string begin = &quot;&quot;, string end = &quot;&quot;);
+AtomicLogic NotBetween(this IAggregateField column, string begin = &quot;&quot;, string end = &quot;&quot;);
+AtomicLogic NotBetweenValue&lt;TValue&gt;(this ICompareView column, TValue begin, TValue end);
+AtomicLogic NotBetweenValue(this ICompareView column, ISqlValue begin, ISqlValue end);
+</code></pre>
+<blockquote>
+<p>注:以上返回类型为AtomicLogic,也是NotBetweenLogic的实例</p>
+</blockquote>
+<h2 id="6-isnulllogic">6. IsNullLogic</h2>
+<blockquote>
+<ul>
+<li>一元运算,是否为NULL</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.CompareLogics.IsNullLogic.html">IsNullLogic</a></li>
+</ul>
+</blockquote>
+<h3 id="61-isnulllogic类">6.1 IsNullLogic类</h3>
+<blockquote>
+<ul>
+<li>只含字段</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class IsNullLogic(ICompareView field)
+    : CompareLogicBase;
+</code></pre>
+<h3 id="62-isnulllogic扩展方法">6.2 IsNullLogic扩展方法</h3>
+<pre><code class="lang-csharp">AtomicLogic IsNull(this ICompareView column);
+</code></pre>
+<blockquote>
+<p>注:以上返回类型为AtomicLogic,也是IsNullLogic的实例</p>
+</blockquote>
+<h2 id="7-notnulllogic">7. NotNullLogic</h2>
+<blockquote>
+<ul>
+<li>一元运算,是否为NULL</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.CompareLogics.IsNullLogic.html">IsNullLogic</a></li>
+</ul>
+</blockquote>
+<h3 id="71-notnulllogic类">7.1 NotNullLogic类</h3>
+<blockquote>
+<ul>
+<li>只含字段</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">NotNullLogic(ICompareView field)
+    : CompareLogicBase;
+</code></pre>
+<h3 id="72-notnulllogic扩展方法">7.2 NotNullLogic扩展方法</h3>
+<pre><code class="lang-csharp">AtomicLogic NotNull(this ICompareView column);
+</code></pre>
+<blockquote>
+<p>注:以上返回类型为AtomicLogic,也是NotNullLogic的实例</p>
+</blockquote>
+<h2 id="8-其他相关功能">8. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>参看<a href="index.html">逻辑简介</a></li>
+<li>参看<a href="symbol.html">比较运算符</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/logic/compare.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

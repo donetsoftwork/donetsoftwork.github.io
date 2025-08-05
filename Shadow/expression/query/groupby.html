@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>逻辑分组查询 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="逻辑分组查询 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/expression/query/groupby.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="逻辑分组查询">逻辑分组查询</h1>
+
+<blockquote>
+<ul>
+<li>按列分组并查询</li>
+<li>sql的GROUP BY和HAVING部分</li>
+<li>按And、Or来操作</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IGroupByView.html">IGroupByView</a></li>
+</ul>
+</blockquote>
+<h2 id="2-基类">2. 基类</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.GroupBy.GroupByBase.html">GroupByBase</a></li>
+</ul>
+</blockquote>
+<h2 id="3-类">3. 类</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Expressions.GroupBy.GroupByTableQuery-2.html">GroupByTableQuery&lt;TKey, TEntity&gt;</a></li>
+</ul>
+</blockquote>
+<h2 id="4-groupby">4. GroupBy</h2>
+<blockquote>
+<p>创建<a class="xref" href="../../api/ShadowSql.Expressions.GroupBy.GroupByTableQuery-2.html">GroupByTableQuery&lt;TKey, TEntity&gt;</a></p>
+</blockquote>
+<h3 id="41-groupby扩展方法">4.1 GroupBy扩展方法</h3>
+<blockquote>
+<ul>
+<li>从表创建<a class="xref" href="../../api/ShadowSql.Expressions.GroupBy.GroupByTableQuery-2.html">GroupByTableQuery&lt;TKey, TEntity&gt;</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">GroupByTableQuery&lt;TKey, TEntity&gt; GroupBy&lt;TKey, TEntity&gt;(this ITable table, Expression&lt;Func&lt;TEntity, TKey&gt;&gt; select);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;UserRoles&quot;)
+    .GroupBy&lt;int, UserRole&gt;(u =&gt; u.UserId);
+// SELECT * FROM [UserRoles] GROUP BY [UserId]
+</code></pre>
+<h3 id="42-groupby重载扩展方法">4.2 GroupBy重载扩展方法</h3>
+<blockquote>
+<ul>
+<li>从表和逻辑表达式创建<a class="xref" href="../../api/ShadowSql.Expressions.GroupBy.GroupByTableQuery-2.html">GroupByTableQuery&lt;TKey, TEntity&gt;</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">GroupByTableQuery&lt;TKey, TEntity&gt; GroupBy&lt;TKey, TEntity&gt;(this ITable table, Expression&lt;Func&lt;TEntity, bool&gt;&gt; where, Expression&lt;Func&lt;TEntity, TKey&gt;&gt; select);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;UserRoles&quot;)
+    .GroupBy&lt;int, UserRole&gt;(u =&gt; u.Score &gt;= 60, u =&gt; u.UserId);
+// SELECT * FROM [UserRoles] WHERE [Score]&gt;=60 GROUP BY [UserId]
+</code></pre>
+<h3 id="43-groupby重载扩展方法">4.3 GroupBy重载扩展方法</h3>
+<blockquote>
+<ul>
+<li>从<a class="xref" href="../../api/ShadowSql.Expressions.Tables.TableQuery-1.html">TableQuery&lt;TEntity&gt;</a>创建<a class="xref" href="../../api/ShadowSql.Expressions.GroupBy.GroupByTableQuery-2.html">GroupByTableQuery&lt;TTable&gt;</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">GroupByTableQuery&lt;TKey, TEntity&gt; GroupBy&lt;TKey, TEntity&gt;(this TableQuery&lt;TEntity&gt; Query, Expression&lt;Func&lt;TEntity, TKey&gt;&gt; select);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;UserRoles&quot;)
+    .ToQuery&lt;UserRole&gt;()
+    .And(u =&gt; u.Score &gt;= 60)
+    .GroupBy(u =&gt; u.UserId);
+// SELECT * FROM [UserRoles] WHERE [Score]&gt;=60 GROUP BY [UserId]
+</code></pre>
+<h2 id="5-and方法">5. And方法</h2>
+<pre><code class="lang-csharp">GroupByTableQuery&lt;TKey, TEntity&gt; And(Expression&lt;Func&lt;IGrouping&lt;TKey, TEntity&gt;, bool&gt;&gt; query);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;UserRoles&quot;)
+    .GroupBy&lt;int, UserRole&gt;(u =&gt; u.UserId)
+    .And(g =&gt; g.Average(r =&gt; r.Score) &gt; 60);
+// SELECT * FROM [UserRoles] GROUP BY [UserId] HAVING AVG([Score])&gt;60
+</code></pre>
+<h2 id="6-or方法">6. Or方法</h2>
+<pre><code class="lang-csharp">GroupByTableQuery&lt;TKey, TEntity&gt; Or(Expression&lt;Func&lt;IGrouping&lt;TKey, TEntity&gt;, bool&gt;&gt; query);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;Users&quot;)
+    .GroupBy&lt;string?, User&gt;(u =&gt; u.Belief)
+    .Or(g =&gt; g.Min(r =&gt; r.Age) &lt; 18 || g.Max(r =&gt; r.Age) &gt; 60);
+// SELECT * FROM [Users] GROUP BY [Belief] HAVING MIN([Age])&lt;18 OR MAX([Age])&gt;60
+</code></pre>
+<h2 id="7-其他相关功能">7. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>本组件并非只有以上功能,其他功能参看以下文档:</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Expressions.GroupBy.GroupByTableQuery-2.html">GroupByTableQuery&lt;TKey, TEntity&gt;</a>的方法和扩展方法部分</li>
+<li>参看<a href="index.html">逻辑查询简介</a></li>
+<li>参看<a href="../../shadowcore/query/groupby.html">ShadowSqlCore相关文档</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/expression/query/groupby.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

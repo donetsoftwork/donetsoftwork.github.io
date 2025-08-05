@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>AliasTable 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="AliasTable 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="表别名">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_AliasTables_AliasTable.md&amp;value=---%0Auid%3A%20ShadowSql.AliasTables.AliasTable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.AliasTables.AliasTable">
+
+
+
+  <h1 id="ShadowSql_AliasTables_AliasTable" data-uid="ShadowSql.AliasTables.AliasTable" class="text-break">
+AliasTable 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/AliasTables/AliasTable.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.AliasTables.html">AliasTables</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>表别名</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AliasTable : TableAlias&lt;Table&gt;, IAliasTable&lt;Table&gt;, IAliasTable, IView, IMatch, ITableView, ISqlEntity</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.IdentifierBase.html">IdentifierBase</a></div>
+      <div><a class="xref" href="ShadowSql.Variants.SqlAlias-1.html">SqlAlias</a>&lt;<a class="xref" href="ShadowSql.Identifiers.Table.html">Table</a>&gt;</div>
+      <div><a class="xref" href="ShadowSql.Variants.TableAlias-1.html">TableAlias</a>&lt;<a class="xref" href="ShadowSql.Identifiers.Table.html">Table</a>&gt;</div>
+      <div><span class="xref">AliasTable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Identifiers.IAliasTable-1.html">IAliasTable</a>&lt;<a class="xref" href="ShadowSql.Identifiers.Table.html">Table</a>&gt;</div>
+      <div><a class="xref" href="ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.IView.html">IView</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.IMatch.html">IMatch</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.ITableView.html">ITableView</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ShadowSql.Variants.TableAlias-1.html#ShadowSql_Variants_TableAlias_1_PrefixFields">TableAlias&lt;Table&gt;.PrefixFields</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Variants.TableAlias-1.html#ShadowSql_Variants_TableAlias_1_AddColumn_ShadowSql_Identifiers_IColumn_">TableAlias&lt;Table&gt;.AddColumn(IColumn)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Variants.SqlAlias-1.html#ShadowSql_Variants_SqlAlias_1_Target">SqlAlias&lt;Table&gt;.Target</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Variants.SqlAlias-1.html#ShadowSql_Variants_SqlAlias_1_Alias">SqlAlias&lt;Table&gt;.Alias</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.IdentifierBase.html#ShadowSql_Identifiers_IdentifierBase__name">IdentifierBase._name</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.IdentifierBase.html#ShadowSql_Identifiers_IdentifierBase_Name">IdentifierBase.Name</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlExtendServices.html#ShadowSql_ShadowSqlExtendServices_Join__2___0___1_">ShadowSqlExtendServices.Join&lt;TLeft, TRight&gt;(TLeft, TRight)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlExtendServices.html#ShadowSql_ShadowSqlExtendServices_SqlJoin__2___0___1_">ShadowSqlExtendServices.SqlJoin&lt;TLeft, TRight&gt;(TLeft, TRight)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlExtendServices.html#ShadowSql_Expressions_ShadowSqlExtendServices_Join__2_ShadowSql_Identifiers_IAliasTable_ShadowSql_Identifiers_IAliasTable_">ShadowSqlExtendServices.Join&lt;TLeft, TRight&gt;(IAliasTable, IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlExtendServices.html#ShadowSql_Expressions_ShadowSqlExtendServices_SqlJoin__2_ShadowSql_Identifiers_IAliasTable_ShadowSql_Identifiers_IAliasTable_">ShadowSqlExtendServices.SqlJoin&lt;TLeft, TRight&gt;(IAliasTable, IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_GroupBy__2_ShadowSql_Identifiers_IAliasTable_System_Linq_Expressions_Expression_System_Func___1_System_Boolean___System_Linq_Expressions_Expression_System_Func___1___0___">ShadowSqlServices.GroupBy&lt;TKey, TEntity&gt;(IAliasTable, Expression&lt;Func&lt;TEntity, bool&gt;&gt;, Expression&lt;Func&lt;TEntity, TKey&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_GroupBy__2_ShadowSql_Identifiers_IAliasTable_System_Linq_Expressions_Expression_System_Func___1___0___">ShadowSqlServices.GroupBy&lt;TKey, TEntity&gt;(IAliasTable, Expression&lt;Func&lt;TEntity, TKey&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_SqlGroupBy__2_ShadowSql_Identifiers_IAliasTable_System_Linq_Expressions_Expression_System_Func___1_System_Boolean___System_Linq_Expressions_Expression_System_Func___1___0___">ShadowSqlServices.SqlGroupBy&lt;TKey, TEntity&gt;(IAliasTable, Expression&lt;Func&lt;TEntity, bool&gt;&gt;, Expression&lt;Func&lt;TEntity, TKey&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_SqlGroupBy__2_ShadowSql_Identifiers_IAliasTable_System_Linq_Expressions_Expression_System_Func___1___0___">ShadowSqlServices.SqlGroupBy&lt;TKey, TEntity&gt;(IAliasTable, Expression&lt;Func&lt;TEntity, TKey&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_Take__1_ShadowSql_Identifiers_IAliasTable_ShadowSql_Logics_ISqlLogic_System_Int32_System_Int32_">ShadowSqlServices.Take&lt;TEntity&gt;(IAliasTable, ISqlLogic, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_Take__1_ShadowSql_Identifiers_IAliasTable_System_Int32_System_Int32_">ShadowSqlServices.Take&lt;TEntity&gt;(IAliasTable, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_ToCursor__1_ShadowSql_Identifiers_IAliasTable_ShadowSql_Logics_ISqlLogic_System_Int32_System_Int32_">ShadowSqlServices.ToCursor&lt;TEntity&gt;(IAliasTable, ISqlLogic, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_ToCursor__1_ShadowSql_Identifiers_IAliasTable_System_Int32_System_Int32_">ShadowSqlServices.ToCursor&lt;TEntity&gt;(IAliasTable, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_ToDelete__1_ShadowSql_Identifiers_IAliasTable_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___">ShadowSqlServices.ToDelete&lt;TEntity&gt;(IAliasTable, Expression&lt;Func&lt;TEntity, bool&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_ToDelete__2_ShadowSql_Identifiers_IAliasTable_System_Linq_Expressions_Expression_System_Func___0___1_System_Boolean___">ShadowSqlServices.ToDelete&lt;TEntity, TParameter&gt;(IAliasTable, Expression&lt;Func&lt;TEntity, TParameter, bool&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_ToOrQuery__1_ShadowSql_Identifiers_IAliasTable_">ShadowSqlServices.ToOrQuery&lt;TEntity&gt;(IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_ToQuery__1_ShadowSql_Identifiers_IAliasTable_">ShadowSqlServices.ToQuery&lt;TEntity&gt;(IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_ToSelect__1_ShadowSql_Identifiers_IAliasTable_">ShadowSqlServices.ToSelect&lt;TEntity&gt;(IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_ToSelect__1_ShadowSql_Identifiers_IAliasTable_ShadowSql_Logics_ISqlLogic_">ShadowSqlServices.ToSelect&lt;TEntity&gt;(IAliasTable, ISqlLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_ToSqlOrQuery__1_ShadowSql_Identifiers_IAliasTable_">ShadowSqlServices.ToSqlOrQuery&lt;TEntity&gt;(IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_ToSqlQuery__1_ShadowSql_Identifiers_IAliasTable_">ShadowSqlServices.ToSqlQuery&lt;TEntity&gt;(IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_Where__1_ShadowSql_Identifiers_IAliasTable_">ShadowSqlServices.Where&lt;TEntity&gt;(IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Prefix_ShadowSql_Identifiers_IAliasTable_ShadowSql_Identifiers_IColumn_">ShadowSqlCoreServices.Prefix(IAliasTable, IColumn)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Prefix_ShadowSql_Identifiers_IAliasTable_System_String_">ShadowSqlCoreServices.Prefix(IAliasTable, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_ToDelete_ShadowSql_Identifiers_IAliasTable_ShadowSql_Logics_ISqlLogic_">ShadowSqlCoreServices.ToDelete(IAliasTable, ISqlLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_Multi_ShadowSql_Identifiers_IAliasTable_ShadowSql_Identifiers_IAliasTable_">ShadowSqlServices.Multi(IAliasTable, IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_SqlMulti_ShadowSql_Identifiers_IAliasTable_ShadowSql_Identifiers_IAliasTable_">ShadowSqlServices.SqlMulti(IAliasTable, IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Identifiers_IAliasTable_ShadowSql_Identifiers_IFieldView_">ShadowSqlServices.ToSingle(IAliasTable, IFieldView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Identifiers_IAliasTable_ShadowSql_Logics_ISqlLogic_ShadowSql_Identifiers_IFieldView_">ShadowSqlServices.ToSingle(IAliasTable, ISqlLogic, IFieldView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Identifiers_IAliasTable_ShadowSql_Logics_ISqlLogic_System_String_">ShadowSqlServices.ToSingle(IAliasTable, ISqlLogic, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Identifiers_IAliasTable_System_String_">ShadowSqlServices.ToSingle(IAliasTable, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowServices.html#Dapper_Shadow_DapperShadowServices_ToDapperSelect__1_ShadowSql_Identifiers_IAliasTable___0__Dapper_Shadow_IExecutor_">DapperShadowServices.ToDapperSelect&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, IExecutor)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowServices.html#Dapper_Shadow_DapperShadowServices_ToDapperSelect__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Logics_ISqlLogic_Dapper_Shadow_IExecutor_">DapperShadowServices.ToDapperSelect&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, ISqlLogic, IExecutor)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.Expressions.ShadowSqlServices.html#ShadowSql_Expressions_ShadowSqlServices_GetAssignFields__1_ShadowSql_Identifiers_IAliasTable___0__">ShadowSqlServices.GetAssignFields&lt;TTable&gt;(IAliasTable&lt;TTable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_GetAssignField__1_ShadowSql_Identifiers_IAliasTable___0__System_String_">ShadowSqlCoreServices.GetAssignField&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Prefix__1_ShadowSql_Identifiers_IAliasTable___0__System_Func___0_ShadowSql_Identifiers_IColumn__">ShadowSqlCoreServices.Prefix&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, Func&lt;TTable, IColumn&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_GetAssignFields__1_ShadowSql_Identifiers_IAliasTable___0__">ShadowSqlServices.GetAssignFields&lt;TTable&gt;(IAliasTable&lt;TTable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_GroupBy__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Identifiers_IField___">ShadowSqlServices.GroupBy&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, params IField[])</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_GroupBy__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Logics_ISqlLogic_ShadowSql_Identifiers_IField___">ShadowSqlServices.GroupBy&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, ISqlLogic, params IField[])</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_GroupBy__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Logics_ISqlLogic_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlServices.GroupBy&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, ISqlLogic, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_GroupBy__1_ShadowSql_Identifiers_IAliasTable___0__System_Collections_Generic_IEnumerable_System_String__">ShadowSqlServices.GroupBy&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_GroupBy__1_ShadowSql_Identifiers_IAliasTable___0__System_Func___0_ShadowSql_Identifiers_IColumn____">ShadowSqlServices.GroupBy&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, Func&lt;TTable, IColumn[]&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_SqlGroupBy__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Identifiers_IField___">ShadowSqlServices.SqlGroupBy&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, params IField[])</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_SqlGroupBy__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Logics_ISqlLogic_ShadowSql_Identifiers_IField___">ShadowSqlServices.SqlGroupBy&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, ISqlLogic, params IField[])</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_SqlGroupBy__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Logics_ISqlLogic_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlServices.SqlGroupBy&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, ISqlLogic, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_SqlGroupBy__1_ShadowSql_Identifiers_IAliasTable___0__System_Collections_Generic_IEnumerable_System_String__">ShadowSqlServices.SqlGroupBy&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_SqlGroupBy__1_ShadowSql_Identifiers_IAliasTable___0__System_Func___0_ShadowSql_Identifiers_IColumn____">ShadowSqlServices.SqlGroupBy&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, Func&lt;TTable, IColumn[]&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_Take__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Logics_ISqlLogic_System_Int32_System_Int32_">ShadowSqlServices.Take&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, ISqlLogic, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_Take__1_ShadowSql_Identifiers_IAliasTable___0__System_Int32_System_Int32_">ShadowSqlServices.Take&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToCursor__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Logics_ISqlLogic_System_Int32_System_Int32_">ShadowSqlServices.ToCursor&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, ISqlLogic, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToCursor__1_ShadowSql_Identifiers_IAliasTable___0__System_Int32_System_Int32_">ShadowSqlServices.ToCursor&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToOrQuery__1_ShadowSql_Identifiers_IAliasTable___0__">ShadowSqlServices.ToOrQuery&lt;TTable&gt;(IAliasTable&lt;TTable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToQuery__1_ShadowSql_Identifiers_IAliasTable___0__">ShadowSqlServices.ToQuery&lt;TTable&gt;(IAliasTable&lt;TTable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSelect__1_ShadowSql_Identifiers_IAliasTable___0__">ShadowSqlServices.ToSelect&lt;TTable&gt;(IAliasTable&lt;TTable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSelect__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Logics_ISqlLogic_">ShadowSqlServices.ToSelect&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, ISqlLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle__1_ShadowSql_Identifiers_IAliasTable___0__ShadowSql_Logics_ISqlLogic_System_Func___0_ShadowSql_Identifiers_IColumn__">ShadowSqlServices.ToSingle&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, ISqlLogic, Func&lt;TTable, IColumn&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle__1_ShadowSql_Identifiers_IAliasTable___0__System_Func___0_ShadowSql_Identifiers_IColumn__">ShadowSqlServices.ToSingle&lt;TTable&gt;(IAliasTable&lt;TTable&gt;, Func&lt;TTable, IColumn&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSqlOrQuery__1_ShadowSql_Identifiers_IAliasTable___0__">ShadowSqlServices.ToSqlOrQuery&lt;TTable&gt;(IAliasTable&lt;TTable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSqlQuery__1_ShadowSql_Identifiers_IAliasTable___0__">ShadowSqlServices.ToSqlQuery&lt;TTable&gt;(IAliasTable&lt;TTable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_Where__1_ShadowSql_Identifiers_IAliasTable___0__">ShadowSqlServices.Where&lt;TTable&gt;(IAliasTable&lt;TTable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Count_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.Count(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_CountAsync_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.CountAsync(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCount_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCount(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCountAsync_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCountAsync(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_AsExists_ShadowSql_Identifiers_ITableView_">ShadowSqlCoreServices.AsExists(ITableView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_AsNotExists_ShadowSql_Identifiers_ITableView_">ShadowSqlCoreServices.AsNotExists(ITableView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Field_ShadowSql_Identifiers_ITableView_System_String_">ShadowSqlCoreServices.Field(ITableView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Fields_ShadowSql_Identifiers_ITableView_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlCoreServices.Fields(ITableView, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Strict_ShadowSql_Identifiers_ITableView_System_String_">ShadowSqlCoreServices.Strict(ITableView, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="ShadowSql_AliasTables_AliasTable__ctor_" data-uid="ShadowSql.AliasTables.AliasTable.#ctor*"></a>
+
+  <h3 id="ShadowSql_AliasTables_AliasTable__ctor_ShadowSql_Identifiers_Table_System_String_" data-uid="ShadowSql.AliasTables.AliasTable.#ctor(ShadowSql.Identifiers.Table,System.String)">
+  AliasTable(Table, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/AliasTables/AliasTable.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>表别名</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AliasTable(Table target, string tableAlias)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="ShadowSql.Identifiers.Table.html">Table</a></dt>
+    <dd></dd>
+    <dt><code>tableAlias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/AliasTables/AliasTable.cs/#L7" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

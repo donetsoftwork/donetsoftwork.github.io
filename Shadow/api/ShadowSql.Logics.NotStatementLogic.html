@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>NotStatementLogic 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="NotStatementLogic 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="语句否定逻辑">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.Logics.NotStatementLogic">
+
+
+
+  <h1 id="ShadowSql_Logics_NotStatementLogic" data-uid="ShadowSql.Logics.NotStatementLogic" class="text-break">
+NotStatementLogic 类
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.Logics.html">Logics</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>语句否定逻辑</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NotStatementLogic : AtomicLogic, ISqlLogic, ISqlFragment</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></div>
+      <div><span class="xref">NotStatementLogic</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Logics.ISqlLogic.html">ISqlLogic</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlFragment.html">ISqlFragment</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_AndLogic_">ShadowSqlCoreServices.And(AtomicLogic, AndLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_AtomicLogic_">ShadowSqlCoreServices.And(AtomicLogic, AtomicLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_ComplexAndLogic_">ShadowSqlCoreServices.And(AtomicLogic, ComplexAndLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_ComplexOrLogic_">ShadowSqlCoreServices.And(AtomicLogic, ComplexOrLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_EmptyLogic_">ShadowSqlCoreServices.And(AtomicLogic, EmptyLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_Logic_">ShadowSqlCoreServices.And(AtomicLogic, Logic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_OrLogic_">ShadowSqlCoreServices.And(AtomicLogic, OrLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_AndLogic_">ShadowSqlCoreServices.Or(AtomicLogic, AndLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_AtomicLogic_">ShadowSqlCoreServices.Or(AtomicLogic, AtomicLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_ComplexAndLogic_">ShadowSqlCoreServices.Or(AtomicLogic, ComplexAndLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_ComplexOrLogic_">ShadowSqlCoreServices.Or(AtomicLogic, ComplexOrLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_EmptyLogic_">ShadowSqlCoreServices.Or(AtomicLogic, EmptyLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_Logic_">ShadowSqlCoreServices.Or(AtomicLogic, Logic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_OrLogic_">ShadowSqlCoreServices.Or(AtomicLogic, OrLogic)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_Logics_NotStatementLogic_CheckNotLength_" data-uid="ShadowSql.Logics.NotStatementLogic.CheckNotLength*"></a>
+
+  <h3 id="ShadowSql_Logics_NotStatementLogic_CheckNotLength_System_String_" data-uid="ShadowSql.Logics.NotStatementLogic.CheckNotLength(System.String)">
+  CheckNotLength(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/NotStatementLogic.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>检查是否含Not(返回长度以便切除)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CheckNotLength(string statement)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>statement</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_NotStatementLogic_CreateLogic_" data-uid="ShadowSql.Logics.NotStatementLogic.CreateLogic*"></a>
+
+  <h3 id="ShadowSql_Logics_NotStatementLogic_CreateLogic_System_String_" data-uid="ShadowSql.Logics.NotStatementLogic.CreateLogic(System.String)">
+  CreateLogic(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/NotStatementLogic.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>构造否定逻辑(not开头负负得正)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtomicLogic CreateLogic(string statement)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>statement</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_NotStatementLogic_Not_" data-uid="ShadowSql.Logics.NotStatementLogic.Not*"></a>
+
+  <h3 id="ShadowSql_Logics_NotStatementLogic_Not" data-uid="ShadowSql.Logics.NotStatementLogic.Not">
+  Not()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/NotStatementLogic.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>否定逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AtomicLogic Not()</code></pre>
+  </div>
+
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_NotStatementLogic_NotRegex_" data-uid="ShadowSql.Logics.NotStatementLogic.NotRegex*"></a>
+
+  <h3 id="ShadowSql_Logics_NotStatementLogic_NotRegex" data-uid="ShadowSql.Logics.NotStatementLogic.NotRegex">
+  NotRegex()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/NotStatementLogic.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GeneratedRegex(&quot;^\\W*NOT\\W+&quot;, RegexOptions.IgnoreCase)]
+public static Regex NotRegex()</code></pre>
+  </div>
+
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.regularexpressions.regex">Regex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_Logics_NotStatementLogic_NotRegex_remarks">备注</h4>
+  <div class="markdown level1 remarks"><p>Pattern explanation:<br></p>
+<pre><code class="lang-csharp">○ Match if at the beginning of the string.
+○ Match any character other than a word character atomically any number of times.
+○ Match a character in the set [Nn].
+○ Match a character in the set [Oo].
+○ Match a character in the set [Tt].
+○ Match any character other than a word character atomically at least once.</code></pre>
+</div>
+
+
+
+
+  <a id="ShadowSql_Logics_NotStatementLogic_TryWrite_" data-uid="ShadowSql.Logics.NotStatementLogic.TryWrite*"></a>
+
+  <h3 id="ShadowSql_Logics_NotStatementLogic_TryWrite_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_" data-uid="ShadowSql.Logics.NotStatementLogic.TryWrite(ShadowSql.Engines.ISqlEngine,System.Text.StringBuilder)">
+  TryWrite(ISqlEngine, StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/NotStatementLogic.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>拼写sql</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryWrite(ISqlEngine engine, StringBuilder sql)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>engine</code> <a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></dt>
+    <dd><p>数据库引擎</p>
+</dd>
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>sql</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

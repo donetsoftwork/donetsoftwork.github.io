@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>sql查询简介 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="sql查询简介 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/sqlquery/index.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="sql查询简介">sql查询简介</h1>
+
+<blockquote>
+<ul>
+<li>基于<a class="xref" href="../../api/ShadowSql.Queries.SqlQuery.html">SqlQuery</a>的实现类SqlAndQuery和SqlOrQuery</li>
+<li><a class="xref" href="../../api/ShadowSql.Queries.SqlAndQuery.html">SqlAndQuery</a>实现AND连接查询</li>
+<li><a class="xref" href="../../api/ShadowSql.Queries.SqlOrQuery.html">SqlOrQuery</a>实现OR连接查询</li>
+<li>ToOr从AND切换到OR</li>
+<li>ToAnd从OR切换到AND</li>
+<li>按sql关键字where、having、on来操作</li>
+<li>支持按原生sql查询</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.Queries.IDataSqlQuery.html">IDataSqlQuery</a></p>
+</blockquote>
+<h2 id="2-where查询">2. Where查询</h2>
+<blockquote>
+<ul>
+<li>Where扩展方法</li>
+<li>与sql关键字where相同,用于对表、多表、联表等进行查询</li>
+<li>用于实现了IWhere接口的类</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">Query Where&lt;Query&gt;(this Query query, params IEnumerable&lt;string&gt; conditions)
+	where Query : IDataSqlQuery, IWhere;
+Query Where&lt;Query&gt;(this Query query, AtomicLogic logic)
+	where Query : IDataSqlQuery, IWhere;
+Query Where&lt;Query&gt;(this Query query, Func&lt;ITableView, AtomicLogic&gt; logic)
+	where Query : IDataSqlQuery, IWhere;
+Query Where&lt;Query&gt;(this Query query, Func&lt;SqlQuery, SqlQuery&gt; where)
+	where Query : IDataSqlQuery, IWhere;
+</code></pre>
+<h2 id="3-having查询">3. Having查询</h2>
+<blockquote>
+<ul>
+<li>Having扩展方法</li>
+<li>与sql关键字having相同,用于分组查询</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TGroupBy Having&lt;TGroupBy&gt;(this TGroupBy groupBy, params IEnumerable&lt;string&gt; conditions)
+	where TGroupBy : GroupByBase, IDataSqlQuery;
+TGroupBy Having&lt;TGroupBy&gt;(this TGroupBy groupBy, AtomicLogic logic)
+	where TGroupBy : GroupByBase, IDataSqlQuery;
+TGroupBy Having&lt;TGroupBy&gt;(this TGroupBy groupBy, Func&lt;IGroupByView, AtomicLogic&gt; query)
+	where TGroupBy : GroupByBase, IDataSqlQuery;
+TGroupBy Having&lt;TGroupBy&gt;(this TGroupBy groupBy, Func&lt;SqlQuery, SqlQuery&gt; query)
+	where TGroupBy : GroupByBase, IDataSqlQuery;
+TGroupBy Having&lt;TGroupBy&gt;(this TGroupBy groupBy, Func&lt;IGroupByView, SqlQuery, SqlQuery&gt; query)
+	where TGroupBy : GroupByBase, IDataSqlQuery;
+TGroupBy HavingAggregate&lt;TGroupBy&gt;(this TGroupBy groupBy, Func&lt;IGroupByView, IAggregateField&gt; select, Func&lt;IAggregateField, AtomicLogic&gt; query)
+	where TGroupBy : GroupByBase, IDataSqlQuery;
+TGroupBy HavingAggregate&lt;TGroupBy&gt;(this TGroupBy groupBy, string aggregate, string columnName, Func&lt;IAggregateField, AtomicLogic&gt; query)
+	where TGroupBy : GroupByBase, IDataSqlQuery;
+</code></pre>
+<h2 id="4-on查询">4. On查询</h2>
+<blockquote>
+<p>与sql关键字on相同,用于联表Join On查询</p>
+</blockquote>
+<h3 id="41-on扩展方法">4.1 On扩展方法</h3>
+<pre><code class="lang-csharp">TJoinOn On&lt;TJoinOn&gt;(this TJoinOn joinOn, params IEnumerable&lt;string&gt; conditions)
+	where TJoinOn : JoinOnBase, IDataSqlQuery;
+TjoinOn On&lt;TjoinOn&gt;(this TjoinOn joinOn, AtomicLogic logic)
+	where TjoinOn : JoinOnBase, IDataSqlQuery;
+TjoinOn On&lt;TjoinOn&gt;(this TjoinOn joinOn, Func&lt;IJoinOn, AtomicLogic&gt; query)
+	where TjoinOn : JoinOnBase, IJoinOn, IDataSqlQuery;
+TjoinOn On&lt;TjoinOn&gt;(this TjoinOn joinOn, Func&lt;IAliasTable, IAliasTable, AtomicLogic&gt; query)
+	where TjoinOn : JoinOnBase, IJoinOn, IDataSqlQuery;
+TJoinOn On&lt;TJoinOn&gt;(this TJoinOn joinOn, Func&lt;SqlQuery, SqlQuery&gt; query)
+	where TJoinOn : JoinOnBase, IDataSqlQuery;
+TJoinOn On&lt;TJoinOn&gt;(this TJoinOn joinOn, Func&lt;IJoinOn, SqlQuery, SqlQuery&gt; query)
+	where TJoinOn : JoinOnBase, IDataSqlQuery, IJoinOn;
+TJoinOn On&lt;TJoinOn&gt;(this TJoinOn joinOn, IPrefixField left, IPrefixField right)
+	where TJoinOn : JoinOnBase, IJoinOn, IDataSqlQuery;
+TJoinOn On&lt;TJoinOn&gt;(this TJoinOn joinOn, IPrefixField left, CompareSymbol compare, IPrefixField right)
+	where TJoinOn : JoinOnBase, IJoinOn, IDataSqlQuery;
+TJoinOn On&lt;TJoinOn&gt;(this TJoinOn joinOn, IColumn left, IColumn right)
+	where TJoinOn : JoinOnBase, IJoinOn, IDataSqlQuery;
+TJoinOn On&lt;TJoinOn&gt;(this TJoinOn joinOn, IColumn left, CompareSymbol compare, IColumn right)
+	where TJoinOn : JoinOnBase, IJoinOn, IDataSqlQuery;
+</code></pre>
+<h3 id="42-oncolumn扩展方法">4.2 OnColumn扩展方法</h3>
+<pre><code class="lang-csharp">TJoinOn OnColumn&lt;TJoinOn&gt;(this TJoinOn joinOn, string leftColumn, string rightColumn)
+	where TJoinOn : JoinOnBase, IJoinOn, IDataSqlQuery;
+TJoinOn OnColumn&lt;TJoinOn&gt;(this TJoinOn joinOn, string leftColumn, string op, string rightColumn)
+	where TJoinOn : JoinOnBase, IJoinOn, IDataSqlQuery;
+</code></pre>
+<h2 id="5-andor查询">5. AND/OR查询</h2>
+<blockquote>
+<ul>
+<li>实现AND/OR切换</li>
+<li>实现AND/OR嵌套</li>
+</ul>
+</blockquote>
+<h2 id="51-toor扩展方法">5.1 ToOr扩展方法</h2>
+<blockquote>
+<ul>
+<li>用于切换为Or</li>
+<li>用于Or嵌套And</li>
+<li>如果前面是And连接,调用ToOr后切换为Or</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">Query ToOr&lt;Query&gt;(this Query query)
+	where Query : IDataSqlQuery;
+</code></pre>
+<h2 id="52-toand扩展方法">5.2 ToAnd扩展方法</h2>
+<blockquote>
+<ul>
+<li>用于切换为And</li>
+<li>用于And嵌套Or</li>
+<li>如果前面是Or连接,调用ToAnd后切换为And</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">Query And&lt;Query&gt;(this Query query, AtomicLogic logic)
+	where Query : FilterBase, IDataQuery;
+</code></pre>
+<h2 id="6-apply扩展方法">6. Apply扩展方法</h2>
+<blockquote>
+<ul>
+<li>操作SqlQuery的高阶函数</li>
+<li>也可称开窗函数,把Query内部成员ITableView和SqlQuery开放给用户直接使用</li>
+<li>以便于使用更直接、通用的逻辑来查询</li>
+<li>查询子函数标记static性能更好</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">Query Apply&lt;Query&gt;(this Query query, Func&lt;SqlQuery, SqlQuery&gt; where)
+	where Query : IDataSqlQuery;
+Query Apply&lt;Query&gt;(this Query query, Func&lt;ITableView, SqlQuery, SqlQuery&gt; where)
+	where Query : IDataSqlQuery;
+TMultiTable Apply&lt;TMultiTable&gt;(this TMultiTable multiTable, Func&lt;SqlQuery, IMultiView, SqlQuery&gt; query)
+        where TMultiTable : MultiTableBase, IDataSqlQuery;
+TMultiTable Apply&lt;TMultiTable&gt;(this TMultiTable multiTable, string tableName, Func&lt;SqlQuery, IAliasTable, SqlQuery&gt; query)
+        where TMultiTable : MultiTableBase, IDataSqlQuery;
+TJoinOn Apply&lt;TJoinOn&gt;(this TJoinOn joinOn, Func&lt;SqlQuery, IJoinOn, SqlQuery&gt; query)
+        where TJoinOn : JoinOnBase, IDataSqlQuery, IJoinOn;
+JoinOnSqlQuery Apply(this JoinOnSqlQuery query, Func&lt;SqlQuery, IAliasTable, IAliasTable,  SqlQuery&gt; on);
+TGroupBy Apply&lt;TGroupBy&gt;(this TGroupBy groupBy, Func&lt;SqlQuery, IGroupByView, SqlQuery&gt; query)
+        where TGroupBy : GroupByBase, IDataSqlQuery;
+</code></pre>
+<pre><code class="lang-csharp">var query = new TableSqlQuery(&quot;Users&quot;)
+    .Apply(static (u, q) =&gt; q
+        .And(u.Field(&quot;Id&quot;).Less(&quot;LastId&quot;))
+        .And(u.Field(&quot;Status&quot;).EqualValue(true))
+    );
+// SELECT * FROM [Users] WHERE [Id]=@Id AND [Status]=1
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/sqlquery/index.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

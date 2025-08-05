@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>严格查询 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="严格查询 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadow/sqlquery/columnquery.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="严格查询">严格查询</h1>
+
+<blockquote>
+<ul>
+<li>按字段名严格查询扩展</li>
+<li>校验字段,如果字段不存在抛异常</li>
+<li>无需校验请使用<a href="fieldquery.html">按字段查询</a></li>
+<li>using ShadowSql.StrictQueries后即可使用</li>
+</ul>
+</blockquote>
+<h2 id="1-strictparameter扩展方法">1. StrictParameter扩展方法</h2>
+<pre><code class="lang-csharp">TQuery StrictParameter&lt;TQuery&gt;(this TQuery query, string columnName, string op = &quot;=&quot;, string parameter = &quot;&quot;)
+	where TQuery : IDataSqlQuery;
+TQuery StrictEqual&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictNotEqual&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictGreater&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictLess&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictGreaterEqual&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictLessEqual&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictIn&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictNotIn&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictLike&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictNotLike&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictBetween&lt;TQuery&gt;(this TQuery query, string columnName, string begin = &quot;&quot;, string end = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+TQuery StrictNotBetween&lt;TQuery&gt;(this TQuery query, string columnName, string begin = &quot;&quot;, string end = &quot;&quot;)
+        where TQuery : IDataSqlQuery;
+</code></pre>
+<pre><code class="lang-csharp">var userTable = new Table(&quot;Users&quot;)
+    .DefineColumns(&quot;Id&quot;, &quot;Status&quot;);
+var query = userTable.ToSqlQuery()
+    .StrictParameter(&quot;Id&quot;, &quot;&lt;&quot;, &quot;LastId&quot;)
+    .StrictParameter(&quot;Status&quot;, &quot;=&quot;, &quot;state&quot;);
+</code></pre>
+<blockquote>
+<p>SELECT * FROM [Users] WHERE [Id]&lt;@LastId AND [Status]=@state</p>
+</blockquote>
+<h2 id="2-strictvalue扩展方法">2. StrictValue扩展方法</h2>
+<pre><code class="lang-csharp">TQuery StrictValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value, string op = &quot;=&quot;)
+	where TQuery : IDataSqlQuery;
+TQuery StrictEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery StrictNotEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery StrictGreaterValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery StrictLessValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery StrictGreaterEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery StrictLessEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery StrictInValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, params TValue[] values)
+        where TQuery : IDataSqlQuery;
+TQuery StrictNotInValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, params TValue[] values)
+        where TQuery : IDataSqlQuery;
+TQuery StrictLikeValue&lt;TQuery&gt;(this TQuery query, string columnName, string value)
+        where TQuery : IDataSqlQuery;
+TQuery StrictNotLikeValue&lt;TQuery&gt;(this TQuery query, string columnName, string value)
+        where TQuery : IDataSqlQuery;
+TQuery StrictBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue begin, TValue end)
+        where TQuery : IDataSqlQuery;
+TQuery StrictNotBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue begin, TValue end)
+        where TQuery : IDataSqlQuery;
+</code></pre>
+<pre><code class="lang-csharp">var userTable = new Table(&quot;Users&quot;)
+    .DefineColumns(&quot;Id&quot;, &quot;Status&quot;);
+var query = userTable.ToSqlOrQuery()
+    .StrictValue(&quot;Id&quot;, 100, &quot;&lt;&quot;)
+    .StrictValue(&quot;Status&quot;, true);
+</code></pre>
+<blockquote>
+<p>SELECT * FROM [Users] WHERE [Id]&lt;100 OR [Status]=1</p>
+</blockquote>
+<h2 id="3-strictisnull扩展方法">3. StrictIsNull扩展方法</h2>
+<pre><code class="lang-csharp">TQuery StrictIsNull&lt;TQuery&gt;(this TQuery query, string columnName)
+        where TQuery : IDataSqlQuery;
+</code></pre>
+<h2 id="4-strictisnotnull扩展方法">4. StrictIsNotNull扩展方法</h2>
+<pre><code class="lang-csharp">TQuery StrictNotNull&lt;TQuery&gt;(this TQuery query, string columnName)
+        where TQuery : IDataSqlQuery;
+</code></pre>
+<h2 id="5-tablestrictparameter扩展方法">5. TableStrictParameter扩展方法</h2>
+<blockquote>
+<p>该方法适用MultiTableSqlQuery和JoinTableSqlQuery</p>
+</blockquote>
+<pre><code class="lang-csharp">TQuery TableStrictParameter&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string op = &quot;=&quot;, string parameter = &quot;&quot;)
+        where TQuery : IMultiView, IDataSqlQuery;
+TQuery TableStrictEqual&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictNotEqual&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictGreater&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictLess&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictGreaterEqual&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictLessEqual&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictIn&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictNotIn&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictLike&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictNotLike&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictBetween&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string begin = &quot;&quot;, string end = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictNotBetween&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string begin = &quot;&quot;, string end = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+</code></pre>
+<pre><code class="lang-csharp">var query = commentTable.SqlJoin(postTable)
+    .OnColumn(&quot;PostId&quot;, &quot;Id&quot;)
+    .Root            
+    .TableStrictParameter(&quot;Comments&quot;, &quot;Pick&quot;, &quot;=&quot;, &quot;PickState&quot;)
+    .TableStrictParameter(&quot;Posts&quot;, &quot;Author&quot;);
+</code></pre>
+<blockquote>
+<p>SELECT * FROM [Comments] AS t1 INNER JOIN [Posts] AS t2 ON t1.[PostId]=t2.[Id] WHERE t1.[Pick]=@PickState AND t2.[Author]=@Author</p>
+</blockquote>
+<h2 id="6-tablestrictvalue扩展方法">6. TableStrictValue扩展方法</h2>
+<blockquote>
+<p>该方法适用MultiTableSqlQuery和JoinTableSqlQuery</p>
+</blockquote>
+<pre><code class="lang-csharp">TQuery TableStrictValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value, string op = &quot;=&quot;)
+        where TQuery : IMultiView, IDataSqlQuery;
+TQuery TableStrictEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictNotEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictGreaterValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictLessValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictGreaterEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictLessEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictInValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, params TValue[] values)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictNotInValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, params TValue[] values)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictLikeValue&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictNotLikeValue&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue begin, TValue end)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableStrictNotBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue begin, TValue end)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+</code></pre>
+<pre><code class="lang-csharp">var query = commentTable.SqlMulti(postTable)
+    .Where(&quot;t1.PostId=t2.Id&quot;)
+    .TableStrictValue(&quot;Comments&quot;, &quot;Pick&quot;, false)
+    .TableStrictValue(&quot;Posts&quot;, &quot;Author&quot;, &quot;张三&quot;);
+</code></pre>
+<blockquote>
+<p>SELECT * FROM [Comments] AS t1,[Posts] AS t2 WHERE t1.[Pick]=0 AND t2.[Author]='张三' AND t1.PostId=t2.Id</p>
+</blockquote>
+<h2 id="7-tablestrictisnull">7. TableStrictIsNull</h2>
+<pre><code class="lang-csharp">TQuery TableStrictIsNull&lt;TQuery&gt;(this TQuery query, string tableName, string columnName)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+</code></pre>
+<h2 id="8-tablestrictisnull">8. TableStrictIsNull</h2>
+<pre><code class="lang-csharp">TQuery TableStrictNotNull&lt;TQuery&gt;(this TQuery query, string tableName, string columnName)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+</code></pre>
+<h2 id="9-使用strict扩展方法">9. 使用Strict扩展方法</h2>
+<pre><code class="lang-csharp">IField Strict(this ITableView view, string columnName);
+</code></pre>
+<pre><code class="lang-csharp">var u = new Table(&quot;Users&quot;)
+    .DefineColumns(&quot;Id&quot;, &quot;Status&quot;);
+var query = u.ToSqlQuery()
+    .Where(u.Strict(&quot;Id&quot;).GreaterEqual(&quot;LastId&quot;))
+    .Where(u =&gt; u.Strict(&quot;Status&quot;).EqualValue(true));
+// SELECT * FROM [Users] WHERE [Id]&gt;=@LastId AND [Status]=1
+</code></pre>
+<pre><code class="lang-csharp">var commentTable = new Table(&quot;Comments&quot;)
+    .DefineColumns(&quot;PostId&quot;, &quot;Pick&quot;);
+var postTable = new Table(&quot;Posts&quot;)
+    .DefineColumns(&quot;Id&quot;, &quot;Author&quot;);
+var query = commentTable.SqlJoin(postTable)
+    .OnColumn(&quot;PostId&quot;, &quot;Id&quot;)
+    .Root
+    .Where(join =&gt; join.From(&quot;Comments&quot;).Strict(&quot;Pick&quot;).Equal())
+    .Where(&quot;t2&quot;, p =&gt; p.Strict(&quot;Author&quot;).EqualValue(&quot;张三&quot;));
+// SELECT * FROM [Comments] AS t1 INNER JOIN [Posts] AS t2 ON t1.[PostId]=t2.[Id] WHERE t1.[Pick]=@Pick AND t2.[Author]='张三'
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadow/sqlquery/columnquery.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PrefixField | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PrefixField | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/fields/prefix.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="prefixfield">PrefixField</h1>
+
+<blockquote>
+<ul>
+<li>用于自定义别名表结构</li>
+<li>映射sql中带表前缀的列</li>
+<li>带表前缀的列影子(占位符)</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IPrefixField.html">IPrefixField</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IField.html">IField</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IFieldView.html">IFieldView</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.ICompareField.html">ICompareField</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IOrderField.html">IOrderField</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IOrderAsc.html">IOrderAsc</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IOrderView.html">IOrderView</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IAssignView.html">IAssignView</a></li>
+</ul>
+</blockquote>
+<h2 id="2-prefixfield类型">2. PrefixField类型</h2>
+<blockquote>
+<ul>
+<li>参看<a class="xref" href="../../api/ShadowSql.Variants.PrefixField.html">PrefixField</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class PrefixField(IColumn column, params string[] prefix) : IPrefixField;
+</code></pre>
+<h2 id="3-prefix扩展方法">3. Prefix扩展方法</h2>
+<blockquote>
+<ul>
+<li>构造及获取<a class="xref" href="../../api/ShadowSql.Identifiers.IPrefixField.html">IPrefixField</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">PrefixField Prefix(this IColumn column, string tableName);
+IPrefixField Prefix(this IColumn column, IAliasTable table);
+IPrefixField Prefix(this IAliasTable table, string columnName);
+IPrefixField Prefix(this IAliasTable table, IColumn column);
+IPrefixField Prefix(this IJoinOn join, IColumn column);
+IPrefixField Prefix(this IJoinOn join, string columnName);
+IPrefixField Prefix&lt;TTable&gt;(this IAliasTable&lt;TTable&gt; table, Func&lt;TTable, IColumn&gt; query);
+</code></pre>
+<h2 id="4-其他相关功能">4. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>本组件并非只有以上功能,其他功能参看以下文档:</li>
+<li><a href="index.html">字段简介</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/fields/prefix.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

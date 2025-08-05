@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>简介 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="简介 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/introduction.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="简介">简介</h1>
+
+<blockquote>
+<ul>
+<li>Shadow这里是影子的意思</li>
+<li>通过表和字段的影子来编程,来拼接sql</li>
+<li>sql是基于逻辑运算的,而非简单字符串拼接</li>
+</ul>
+</blockquote>
+<h2 id="1-查询支持逻辑">1. 查询支持逻辑</h2>
+<h3 id="11-逻辑查询">1.1 逻辑查询</h3>
+<blockquote>
+<ul>
+<li>基于列进行AND和OR逻辑运算来查询</li>
+<li>所有的查询条件都由原子逻辑(AtomicLogic)构成</li>
+<li>通过AND、OR、NOT及其嵌套可以实现复杂逻辑</li>
+<li>参看<a href="shadow/query/index.html">逻辑查询</a></li>
+</ul>
+</blockquote>
+<h3 id="12-sql查询">1.2 Sql查询</h3>
+<blockquote>
+<ul>
+<li>在逻辑运算的基础上增加原生sql的支持</li>
+<li>参看<a href="shadow/sqlquery/index.html">sql查询</a></li>
+</ul>
+</blockquote>
+<h2 id="2-更新支持逻辑">2. 更新支持逻辑</h2>
+<h3 id="21-赋值操作符">2.1 赋值操作符</h3>
+<blockquote>
+<ul>
+<li>赋值运算符用于实现赋值操作逻辑</li>
+<li>参看<a href="shadowcore/assign/symbol.html">赋值运算符</a></li>
+</ul>
+</blockquote>
+<h3 id="22-赋值逻辑">2.2 赋值逻辑</h3>
+<blockquote>
+<ul>
+<li>由字段、赋值运算符和值组成</li>
+<li>值也可以是另一个字段</li>
+<li>参看<a href="shadowcore/assign/operation.html">赋值逻辑</a></li>
+</ul>
+</blockquote>
+<h2 id="3-影子编程">3. 影子编程</h2>
+<h3 id="31-使用表达式树作为影子">3.1 使用表达式树作为影子</h3>
+<blockquote>
+<ul>
+<li>参看<a href="expression/index.html">表达式版</a></li>
+</ul>
+</blockquote>
+<h3 id="32-使用自定义表作为影子">3.2 使用自定义表作为影子</h3>
+<blockquote>
+<ul>
+<li>参看<a href="shadow/index.html">易用版</a></li>
+</ul>
+</blockquote>
+<h3 id="33-使用影子编程">3.3 使用影子编程</h3>
+<blockquote>
+<ul>
+<li>通过查看引用可以定位到使用到该表或该字段的所有sql</li>
+<li>重构时查看字段引用可以准确评估影响范围</li>
+<li>删除字段相应sql拼写方法编译失败,按图索骥可以快速完成重构</li>
+<li>修改字段名相应sql可以同步重构完成</li>
+<li>实现编译检测的sql拼写</li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/introduction.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

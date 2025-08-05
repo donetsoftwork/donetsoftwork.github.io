@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ParametricContext 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ParametricContext 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="参数化上线文">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=Dapper_Shadow_ParametricContext.md&amp;value=---%0Auid%3A%20Dapper.Shadow.ParametricContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Dapper.Shadow.ParametricContext">
+
+
+
+  <h1 id="Dapper_Shadow_ParametricContext" data-uid="Dapper.Shadow.ParametricContext" class="text-break">
+ParametricContext 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/ParametricContext.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="Dapper.html">Dapper</a>.<a class="xref" href="Dapper.Shadow.html">Shadow</a></dd></dl>
+  <dl><dt>程序集</dt><dd>Dapper.Shadow.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>参数化上线文</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ParametricContext : ISqlEngine, ISqlValueComponent</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">ParametricContext</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></div>
+      <div><a class="xref" href="ShadowSql.Components.ISqlValueComponent.html">ISqlValueComponent</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowServices.html#Dapper_Shadow_DapperShadowServices_Use_ShadowSql_Engines_ISqlEngine_System_Data_IDbConnection_System_Boolean_System_Int32_">DapperShadowServices.Use(ISqlEngine, IDbConnection, bool, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_ConcatPrefix_ShadowSql_Engines_ISqlEngine_ShadowSql_Fragments_ISqlEntity_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlCoreServices.ConcatPrefix(ISqlEngine, ISqlEntity, StringBuilder, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_CountSql_ShadowSql_Engines_ISqlEngine_ShadowSql_Identifiers_ITableView_System_Int32_">ShadowSqlCoreServices.CountSql(ISqlEngine, ITableView, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_GroupByPrefix_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">ShadowSqlCoreServices.GroupByPrefix(ISqlEngine, StringBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_HavingPrefix_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">ShadowSqlCoreServices.HavingPrefix(ISqlEngine, StringBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_JoinOnPrefix_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">ShadowSqlCoreServices.JoinOnPrefix(ISqlEngine, StringBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Sql_ShadowSql_Engines_ISqlEngine_ShadowSql_Fragments_ISqlEntity_System_Int32_">ShadowSqlCoreServices.Sql(ISqlEngine, ISqlEntity, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Sql_ShadowSql_Engines_ISqlEngine_ShadowSql_Fragments_ISqlFragment_System_Int32_">ShadowSqlCoreServices.Sql(ISqlEngine, ISqlFragment, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_WherePrefix_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">ShadowSqlCoreServices.WherePrefix(ISqlEngine, StringBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_WriteInsertColumnName_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_ShadowSql_Identifiers_IColumn_">ShadowSqlCoreServices.WriteInsertColumnName(ISqlEngine, StringBuilder, IColumn)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="Dapper_Shadow_ParametricContext__ctor_" data-uid="Dapper.Shadow.ParametricContext.#ctor*"></a>
+
+  <h3 id="Dapper_Shadow_ParametricContext__ctor_ShadowSql_Engines_ISqlEngine_ShadowSql_Generators_IIdentifierGenerator_System_Object_" data-uid="Dapper.Shadow.ParametricContext.#ctor(ShadowSql.Engines.ISqlEngine,ShadowSql.Generators.IIdentifierGenerator,System.Object)">
+  ParametricContext(ISqlEngine, IIdentifierGenerator, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/ParametricContext.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>参数化上线文</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParametricContext(ISqlEngine engine, IIdentifierGenerator parameterGenerator, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>engine</code> <a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></dt>
+    <dd><p>数据库引擎</p>
+</dd>
+    <dt><code>parameterGenerator</code> <a class="xref" href="ShadowSql.Generators.IIdentifierGenerator.html">IIdentifierGenerator</a></dt>
+    <dd></dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_ParametricContext__ctor_" data-uid="Dapper.Shadow.ParametricContext.#ctor*"></a>
+
+  <h3 id="Dapper_Shadow_ParametricContext__ctor_ShadowSql_Engines_ISqlEngine_System_Object_" data-uid="Dapper.Shadow.ParametricContext.#ctor(ShadowSql.Engines.ISqlEngine,System.Object)">
+  ParametricContext(ISqlEngine, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/ParametricContext.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>参数化上线文</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParametricContext(ISqlEngine engine, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>engine</code> <a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></dt>
+    <dd><p>数据库引擎</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="Dapper_Shadow_ParametricContext_ParameterGenerator_" data-uid="Dapper.Shadow.ParametricContext.ParameterGenerator*"></a>
+
+  <h3 id="Dapper_Shadow_ParametricContext_ParameterGenerator" data-uid="Dapper.Shadow.ParametricContext.ParameterGenerator">
+  ParameterGenerator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/ParametricContext.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>参数名生成器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IIdentifierGenerator ParameterGenerator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Generators.IIdentifierGenerator.html">IIdentifierGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_ParametricContext_Parameters_" data-uid="Dapper.Shadow.ParametricContext.Parameters*"></a>
+
+  <h3 id="Dapper_Shadow_ParametricContext_Parameters" data-uid="Dapper.Shadow.ParametricContext.Parameters">
+  Parameters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/ParametricContext.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicParameters Parameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DynamicParameters</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="Dapper_Shadow_ParametricContext_BuildSql_" data-uid="Dapper.Shadow.ParametricContext.BuildSql*"></a>
+
+  <h3 id="Dapper_Shadow_ParametricContext_BuildSql_ShadowSql_Fragments_ISqlFragment_System_Int32_" data-uid="Dapper.Shadow.ParametricContext.BuildSql(ShadowSql.Fragments.ISqlFragment,System.Int32)">
+  BuildSql(ISqlFragment, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/ParametricContext.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>构造sql</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BuildSql(ISqlFragment fragment, int capacity = 128)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>fragment</code> <a class="xref" href="ShadowSql.Fragments.ISqlFragment.html">ISqlFragment</a></dt>
+    <dd></dd>
+    <dt><code>capacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/ParametricContext.cs/#L20" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

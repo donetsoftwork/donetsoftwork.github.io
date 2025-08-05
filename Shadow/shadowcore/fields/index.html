@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>字段简介 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="字段简介 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/fields/index.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="字段简介">字段简介</h1>
+
+<blockquote>
+<ul>
+<li>列及字段</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">interface</th>
+<th style="text-align: left;">功能</th>
+<th style="text-align: left;">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.IColumn.html">IColumn</a></td>
+<td style="text-align: left;">原始列</td>
+<td style="text-align: left;">定义表、继承IField</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.IField.html">IField</a></td>
+<td style="text-align: left;">字段</td>
+<td style="text-align: left;">继承IFieldView、ICompareField、IOrderField和IAssignView等</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.IPrefixField.html">IPrefixField</a></td>
+<td style="text-align: left;">前缀字段</td>
+<td style="text-align: left;">别名表字段</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.IFieldView.html">IFieldView</a></td>
+<td style="text-align: left;">展示字段</td>
+<td style="text-align: left;">用于select</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.ICompareView.html">ICompareView</a></td>
+<td style="text-align: left;">比较字段</td>
+<td style="text-align: left;">用于查询</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.ICompareField.html">ICompareField</a></td>
+<td style="text-align: left;">比较字段</td>
+<td style="text-align: left;">用于查询和聚合</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.IOrderField.html">IOrderField</a></td>
+<td style="text-align: left;">排序字段</td>
+<td style="text-align: left;">用于排序</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.IOrderAsc.html">IOrderAsc</a></td>
+<td style="text-align: left;">排序字段</td>
+<td style="text-align: left;">用于正序</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.IOrderDesc.html">IOrderDesc</a></td>
+<td style="text-align: left;">排序字段</td>
+<td style="text-align: left;">用于倒序</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.IOrderView.html">IOrderView</a></td>
+<td style="text-align: left;">排序字段</td>
+<td style="text-align: left;">一般表示原生orderby子句</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.IAssignView.html">IAssignView</a></td>
+<td style="text-align: left;">赋值字段</td>
+<td style="text-align: left;">用于更新</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Identifiers.IFieldAlias.html">IFieldAlias</a></td>
+<td style="text-align: left;">别名字段</td>
+<td style="text-align: left;">用于select</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Aggregates.IAggregateField.html">IAggregateField</a></td>
+<td style="text-align: left;">聚合字段</td>
+<td style="text-align: left;">用于聚合查询和排序</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/ShadowSql.Aggregates.IAggregateFieldAlias.html">IAggregateFieldAlias</a></td>
+<td style="text-align: left;">聚合别名</td>
+<td style="text-align: left;">用于select</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-功能类">2. 功能类</h2>
+<h3 id="21-column">2.1 Column</h3>
+<blockquote>
+<ul>
+<li>表的原始列</li>
+<li>作为数据表列的影子(占位符)</li>
+<li>参看<a href="column.html">Column</a></li>
+</ul>
+</blockquote>
+<h3 id="22-prefixfield">2.2 PrefixField</h3>
+<blockquote>
+<ul>
+<li>用于自定义别名表结构</li>
+<li>映射sql中带表前缀的列</li>
+<li>带表前缀的列影子(占位符)</li>
+<li>参看<a href="prefix.html">PrefixField</a></li>
+</ul>
+</blockquote>
+<h3 id="23-columnschema">2.3 ColumnSchema</h3>
+<blockquote>
+<ul>
+<li>包含数据库字段类型的原始列</li>
+<li>主要用于组成TableSchema,用来支持CreateTable</li>
+<li>参看<a href="schema.html">ColumnSchema</a></li>
+</ul>
+</blockquote>
+<h3 id="24-aliasfieldinfo">2.4 AliasFieldInfo</h3>
+<blockquote>
+<ul>
+<li>参看<a href="alias.html">别名字段</a></li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Identifiers.IFieldAlias.html">IFieldAlias</a></li>
+<li>参看<a class="xref" href="../../api/ShadowSql.FieldInfos.AliasFieldInfo.html">AliasFieldInfo</a></li>
+</ul>
+</blockquote>
+<h3 id="25-aggregatefieldinfo">2.5 AggregateFieldInfo</h3>
+<blockquote>
+<ul>
+<li>参看<a href="aggregate.html">聚合字段</a></li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Aggregates.IAggregateField.html">IAggregateField</a></li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Aggregates.AggregateFieldInfo.html">AggregateFieldInfo</a></li>
+</ul>
+</blockquote>
+<h3 id="26-aggregatealiasfieldinfo">2.6 AggregateAliasFieldInfo</h3>
+<blockquote>
+<ul>
+<li>参看<a href="aggregatealias.html">聚合别名</a></li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Aggregates.IAggregateFieldAlias.html">IAggregateFieldAlias</a></li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Aggregates.AggregateAliasFieldInfo.html">AggregateAliasFieldInfo</a></li>
+</ul>
+</blockquote>
+<h2 id="3-功能">3. 功能</h2>
+<h3 id="31-用于select">3.1 用于select</h3>
+<h3 id="311-ifieldview">3.1.1 IFieldView</h3>
+<blockquote>
+<ul>
+<li>继承接口<a class="xref" href="../../api/ShadowSql.Identifiers.IFieldView.html">IFieldView</a></li>
+</ul>
+</blockquote>
+<h3 id="32-比较逻辑">3.2 比较逻辑</h3>
+<blockquote>
+<ul>
+<li>比较逻辑用于查询</li>
+<li>参看<a href="../select/table.html">获取表精简版</a></li>
+<li>参看<a href="../../shadow/select/table.html">获取表易用版</a></li>
+</ul>
+</blockquote>
+<h4 id="321-无参逻辑">3.2.1 无参逻辑</h4>
+<pre><code class="lang-csharp">AtomicLogic IsNull(this ICompareView field);
+AtomicLogic NotNull(this ICompareView field);
+</code></pre>
+<h4 id="322-与值比较逻辑">3.2.2 与值比较逻辑</h4>
+<pre><code class="lang-csharp">AtomicLogic EqualValue&lt;TValue&gt;(this ICompareView field, TValue value);
+AtomicLogic NotEqualValue&lt;TValue&gt;(this ICompareView field, TValue value);
+AtomicLogic GreaterValue&lt;TValue&gt;(this ICompareView field, TValue value);
+AtomicLogic LessValue&lt;TValue&gt;(this ICompareView field, TValue value);
+AtomicLogic GreaterEqualValue&lt;TValue&gt;(this ICompareView field, TValue value);
+AtomicLogic LessEqualValue&lt;TValue&gt;(this ICompareView field, TValue value);
+AtomicLogic LikeValue(this ICompareView field, string value);
+AtomicLogic NotLikeValue(this ICompareView field, string value);
+AtomicLogic InValue&lt;TValue&gt;(this ICompareView field,  params IEnumerable&lt;TValue&gt; values);
+AtomicLogic NotInValue&lt;TValue&gt;(this ICompareView field, params IEnumerable&lt;TValue&gt; values);
+AtomicLogic BetweenValue&lt;TValue&gt;(this ICompareView field, TValue begin, TValue end);
+AtomicLogic NotBetweenValue&lt;TValue&gt;(this ICompareView field, TValue begin, TValue end);
+</code></pre>
+<h4 id="323-与参数比较逻辑">3.2.3 与参数比较逻辑</h4>
+<pre><code class="lang-csharp">AtomicLogic Compare(this ICompareField field, string op, string parameter = &quot;&quot;);
+AtomicLogic Equal(this ICompareField field, string parameter = &quot;&quot;);
+AtomicLogic NotEqual(this ICompareField field, string parameter = &quot;&quot;);
+AtomicLogic Greater(this ICompareField field, string parameter = &quot;&quot;);
+AtomicLogic Less(this ICompareField field, string parameter = &quot;&quot;);
+AtomicLogic GreaterEqual(this ICompareField field, string parameter = &quot;&quot;);
+AtomicLogic LessEqual(this ICompareField field, string parameter = &quot;&quot;);
+AtomicLogic Like(this ICompareField field, string parameter = &quot;&quot;);
+AtomicLogic NotLike(this ICompareField field, string parameter = &quot;&quot;);
+AtomicLogic In(this ICompareField field, string parameter = &quot;&quot;);
+AtomicLogic NotIn(this ICompareField field, string parameter = &quot;&quot;);
+AtomicLogic Between(this ICompareField field, string begin = &quot;&quot;, string end = &quot;&quot;);
+AtomicLogic NotBetween(this ICompareField field, string begin = &quot;&quot;, string end = &quot;&quot;);
+</code></pre>
+<h3 id="33-赋值逻辑">3.3 赋值逻辑</h3>
+<blockquote>
+<ul>
+<li>赋值逻辑用于更新</li>
+<li>参看<a href="../assign/operation.html">赋值逻辑</a></li>
+<li>参看<a href="../update/table.html">单表更新精简版</a></li>
+<li>参看<a href="../../shadow/update/table.html">单表更新易用版</a></li>
+</ul>
+</blockquote>
+<h3 id="34-插值逻辑">3.4 插值逻辑</h3>
+<blockquote>
+<ul>
+<li>插值逻辑用于Insert</li>
+</ul>
+</blockquote>
+<h4 id="341-插入参数">3.4.1 插入参数</h4>
+<blockquote>
+<ul>
+<li>用于插入单条</li>
+<li>参看<a href="../insert/single.html">插入单条精简版</a></li>
+<li>参看<a href="../../shadow/insert/single.html">插入单条易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">InsertValue Insert(this IColumn column, string parameterName = &quot;&quot;);
+</code></pre>
+<h4 id="342-插入值">3.4.2 插入值</h4>
+<blockquote>
+<ul>
+<li>用于插入单条</li>
+<li>参看<a href="../insert/single.html">插入单条精简版</a></li>
+<li>参看<a href="../../shadow/insert/single.html">插入单条易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">InsertValue InsertValue&lt;TValue&gt;(this IColumn column, TValue value);
+</code></pre>
+<h4 id="343-插入多值">3.4.3 插入多值</h4>
+<blockquote>
+<ul>
+<li>用于插入多条</li>
+<li>参看<a href="../insert/multi.html">插入多条精简版</a></li>
+<li>参看<a href="../../shadow/insert/multi.html">插入多条易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">InsertValues InsertValues&lt;TValue&gt;(this IColumn column, params IEnumerable&lt;TValue&gt; values);
+</code></pre>
+<h3 id="34-排序逻辑">3.4 排序逻辑</h3>
+<blockquote>
+<ul>
+<li>排序逻辑用于游标筛选</li>
+<li>参看<a href="../select/cursor.html">表分页精简版</a></li>
+<li>参看<a href="../../shadow/select/tablecursor.html">表分页易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">IOrderDesc Desc(this IOrderAsc field);
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/fields/index.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

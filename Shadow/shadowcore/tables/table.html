@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Table | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Table | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/tables/table.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="table">Table</h1>
+
+<blockquote>
+<ul>
+<li>定义表结构,包含列</li>
+<li>作为表的影子(占位符)</li>
+<li>支持select、update、insert和delete</li>
+<li>可以支持<a href="../../shadow/sqlquery/columnquery.html">严格查询</a></li>
+<li>可作为自定义表的基类</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.ITable.html">ITable</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.ITableView.html">ITableView</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IInsertTable.html">IInsertTable</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IUpdateTable.html">IUpdateTable</a></li>
+</ul>
+</blockquote>
+<h2 id="2-table类">2. Table类</h2>
+<blockquote>
+<ul>
+<li>参看<a class="xref" href="../../api/ShadowSql.Identifiers.Table.html">Table</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class Table(string name) : ITable, IInsertTable, IUpdateTable, ITableView {
+    string Name { get; }
+    IEnumerable&lt;IColumn&gt; Columns { get; }
+}
+</code></pre>
+<h2 id="3-方法">3. 方法</h2>
+<h3 id="31-定义列方法">3.1 定义列方法</h3>
+<pre><code class="lang-csharp">void AddColumn(IColumn column);
+IColumn DefineColumn(string columnName);
+TTable AddColums&lt;TTable&gt;(this TTable table, params IEnumerable&lt;IColumn&gt; columns)
+    where TTable : Table;
+TTable DefineColums&lt;TTable&gt;(this TTable table, params IEnumerable&lt;string&gt; columns)
+    where TTable : Table;
+</code></pre>
+<pre><code class="lang-csharp">var name = Column.Use(&quot;Name&quot;);
+var age = Column.Use(&quot;Age&quot;);
+var table = new Table(&quot;Students&quot;)
+    .AddColums(name, age);
+</code></pre>
+<pre><code class="lang-csharp">var table = new Table(&quot;Students&quot;)
+    .DefineColums(&quot;Name&quot;, &quot;Age&quot;);
+</code></pre>
+<h3 id="32-ignoreinsert扩展方法">3.2 IgnoreInsert扩展方法</h3>
+<blockquote>
+<ul>
+<li>插入忽略配置</li>
+<li>该扩展方法适用继承Table的自定义表</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TTable IgnoreInsert&lt;TTable&gt;(this TTable table, params IEnumerable&lt;IColumn&gt; columns)
+    where TTable : Table;
+TTable IgnoreInsert&lt;TTable&gt;(this TTable table, params IEnumerable&lt;string&gt; columns)
+    where TTable : Table;
+</code></pre>
+<pre><code class="lang-csharp">var table = new Table(&quot;Users&quot;)
+    .DefineColums(&quot;Id&quot;,&quot;Name&quot;, &quot;Age&quot;)
+    .IgnoreInsert(&quot;Id&quot;);
+var insert = new SingleInsert(table)
+    .InsertSelfColumns();
+// 预设Id是自增列,可查询不可插入
+// INSERT INTO [Users]([Name],[Age])VALUES(@Name,@Age)
+</code></pre>
+<h3 id="33-ignoreupdate扩展方法">3.3 IgnoreUpdate扩展方法</h3>
+<blockquote>
+<ul>
+<li>更新忽略配置</li>
+<li>该扩展方法适用继承Table的自定义表</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TTable IgnoreUpdate&lt;TTable&gt;(this TTable table, params IEnumerable&lt;IColumn&gt; columns)
+    where TTable : Table;
+TTable IgnoreUpdate&lt;TTable&gt;(this TTable table, params IEnumerable&lt;string&gt; columns)
+    where TTable : Table;
+</code></pre>
+<pre><code class="lang-csharp">var id = Column.Use(&quot;Id&quot;);
+var name = Column.Use(&quot;Name&quot;);
+var age = Column.Use(&quot;Age&quot;);
+var table = new Table(&quot;Users&quot;)
+    .AddColums(id, name, age)
+    .IgnoreUpdate(id);
+var update = new TableUpdate(table, id.Equal())
+    .SetSelfFields();
+// 预设Id是主键,可查询不可更新
+// UPDATE [Users] SET [Name]=@Name,[Age]=@Age WHERE [Id]=@Id
+</code></pre>
+<h3 id="34-copy扩展方法">3.4 Copy扩展方法</h3>
+<pre><code class="lang-csharp">Table Copy(this Table source, string newName = &quot;&quot;);
+</code></pre>
+<pre><code class="lang-csharp">var table = new Table(&quot;Users&quot;)
+    .DefineColums(&quot;Id&quot;, &quot;Name&quot;, &quot;Age&quot;)
+    .IgnoreInsert(&quot;Id&quot;);
+var backup = table.Copy(&quot;Users2025&quot;);
+var insert = new SingleInsert(backup)
+    .InsertSelfColumns();
+// 预设Id是自增列,可查询不可插入
+// INSERT INTO [Users2025]([Name],[Age])VALUES(@Name,@Age)
+</code></pre>
+<h2 id="4-insert功能">4. Insert功能</h2>
+<h3 id="41-插入单条">4.1 插入单条</h3>
+<blockquote>
+<ul>
+<li>参看<a href="../insert/single.html">插入单条精简版</a></li>
+<li>参看<a href="../../shadow/insert/single.html">插入单条易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var name = Column.Use(&quot;Name&quot;);
+var score = Column.Use(&quot;Score&quot;);
+var insert = new SingleInsert(&quot;Students&quot;)
+    .InsertColumns(name, score);
+// INSERT INTO [Students]([Name],[Score])VALUES(@Name,@Score)
+</code></pre>
+<h3 id="42-插入多条">4.2 插入多条</h3>
+<blockquote>
+<ul>
+<li>参看<a href="../insert/multi.html">插入多条精简版</a></li>
+<li>参看<a href="../../shadow/insert/multi.html">插入多条易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var name = Column.Use(&quot;Name&quot;);
+var score = Column.Use(&quot;Score&quot;);
+var insert = new MultiInsert(&quot;Students&quot;)
+    .Insert(name.InsertValues(&quot;张三&quot;, &quot;李四&quot;))
+    .Insert(score.InsertValues(90, 85));
+// INSERT INTO [Students]([Name],[Score])VALUES('张三',90),('李四',85)
+</code></pre>
+<h3 id="43-插入select子查询">4.3 插入Select子查询</h3>
+<blockquote>
+<ul>
+<li>参看<a href="../insert/select.html">插入Select精简版</a></li>
+<li>参看<a href="../../shadow/insert/select.html">插入Select易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var name = Column.Use(&quot;Name&quot;);
+var age = Column.Use(&quot;Age&quot;);
+var query = new TableSqlQuery(&quot;Students&quot;)
+    .Where(&quot;AddTime between '2024-01-01' and '2025-01-01'&quot;);
+var select = new TableSelect(query)
+    .Select(name, age);
+var insert = new SelectInsert(&quot;Backup2024&quot;, select);
+// INSERT INTO [Backup2024]([Name],[Age])SELECT [Name],[Age] FROM [Students] WHERE AddTime between '2024-01-01' and '2025-01-01'
+</code></pre>
+<h2 id="5-delete功能">5. Delete功能</h2>
+<blockquote>
+<ul>
+<li>参看<a href="../delete/table.html">表删除精简版</a></li>
+<li>参看<a href="../../shadow/delete/table.html">表删除易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var id = Column.Use(&quot;Id&quot;);
+var delete = new TableDelete(&quot;Users&quot;, id.EqualValue(1));
+// DELETE FROM [Users] WHERE [Id]=1
+</code></pre>
+<h2 id="6-update功能">6. Update功能</h2>
+<blockquote>
+<ul>
+<li>参看<a href="../update/table.html">单表更新精简版</a></li>
+<li>参看<a href="../../shadow/update/table.html">单表更新易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var id = Column.Use(&quot;Id&quot;);
+var age = Column.Use(&quot;Age&quot;);
+var update = new TableUpdate(&quot;Users&quot;, id.EqualValue(1))
+    .Set(age.AddValue(1));
+// UPDATE [Users] SET [Age]+=1 WHERE [Id]=1
+</code></pre>
+<h2 id="7-select功能">7. Select功能</h2>
+<blockquote>
+<ul>
+<li>参看<a href="../select/table.html">获取表精简版</a></li>
+<li>参看<a href="../select/cursor.html">表分页精简版</a></li>
+<li>参看<a href="../../shadow/select/table.html">获取表易用版</a></li>
+<li>参看<a href="../../shadow/select/tablecursor.html">表分页易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var select = new TableSelect(&quot;Users&quot;)
+    .Select(&quot;Id&quot;, &quot;Name&quot;);
+// SELECT [Id],[Name] FROM [Users]
+</code></pre>
+<h2 id="8-自定义表">8. 自定义表</h2>
+<blockquote>
+<ul>
+<li>继承Table的自定义表也继承了Table的所有功能</li>
+<li>select、update、insert和deleted等都可以支持</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">public class CommentTable : Table {
+    public CommentTable(string tableName = &quot;Comments&quot;) : base(tableName) {
+        Id = DefineColumn(nameof(Id));
+        UserId = DefineColumn(nameof(UserId));
+        PostId = DefineColumn(nameof(PostId));
+        Content = DefineColumn(nameof(Content));
+        Pick = DefineColumn(nameof(Pick));
+    }
+    public readonly IColumn Id;
+    public readonly IColumn UserId;
+    public readonly IColumn PostId;
+    public readonly IColumn Content;
+    public readonly IColumn Pick;
+}
+</code></pre>
+<pre><code class="lang-csharp">var table = new CommentTable();
+var query = new TableSqlQuery(table)
+    .Where(table.Pick.EqualValue(true));
+var select = new TableSelect(query)
+    .Select(table.Id, table.Content);
+// SELECT [Id],[Content] FROM [Comments] WHERE [Pick]=1
+</code></pre>
+<h2 id="9-其他相关功能">9. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>本组件并非只支持以上功能,其他功能参看以下文档:</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Identifiers.Table.html">Table</a></li>
+<li>参看<a href="../insert/single.html">插入单条精简版</a></li>
+<li>参看<a href="../../shadow/insert/single.html">插入单条易用版</a></li>
+<li>参看<a href="../insert/multi.html">插入多条精简版</a></li>
+<li>参看<a href="../../shadow/insert/multi.html">插入多条易用版</a></li>
+<li>参看<a href="../insert/select.html">插入Select精简版</a></li>
+<li>参看<a href="../../shadow/insert/select.html">插入Select易用版</a></li>
+<li>参看<a href="../delete/table.html">表删除精简版</a></li>
+<li>参看<a href="../../shadow/delete/table.html">表删除易用版</a></li>
+<li>参看<a href="../update/table.html">单表更新精简版</a></li>
+<li>参看<a href="../../shadow/update/table.html">单表更新易用版</a></li>
+<li>参看<a href="../../shadow/sqlquery/fieldquery.html">按字段查询</a></li>
+<li>参看<a href="../../shadow/sqlquery/columnquery.html">严格查询</a></li>
+<li>参看<a href="../select/table.html">获取表精简版</a></li>
+<li>参看<a href="../select/cursor.html">表分页精简版</a></li>
+<li>参看<a href="../../shadow/select/table.html">获取表易用版</a></li>
+<li>参看<a href="../../shadow/select/tablecursor.html">表分页易用版</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/tables/table.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

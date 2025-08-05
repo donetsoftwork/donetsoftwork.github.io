@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>使用方式 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="使用方式 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/how.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="使用方式">使用方式</h1>
+
+<blockquote>
+<ul>
+<li>ShadowSql不是全家桶</li>
+<li>不把所有功能都做一个项目里面就是为了大家不一次引用所有的nuget包</li>
+<li>大家可以先判断需要哪些功能,再引用对应的nuget包</li>
+<li>当然同时引用这6个nuget包也是可以的</li>
+</ul>
+</blockquote>
+<h2 id="一相关项目简介">一、相关项目简介</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">项目</th>
+<th style="text-align: left;">Nuget包</th>
+<th style="text-align: left;">依赖</th>
+<th style="text-align: left;">大小</th>
+<th style="text-align: left;">主要用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">精简版</td>
+<td style="text-align: left;">ShadowSql.Core</td>
+<td style="text-align: left;">ShadowSql.Core</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">147K</td>
+<td style="text-align: left;">简洁高效拼接sql</td>
+</tr>
+<tr>
+<td style="text-align: left;">易用版</td>
+<td style="text-align: left;">ShadowSql</td>
+<td style="text-align: left;">ShadowSql</td>
+<td style="text-align: left;">ShadowSql.Core</td>
+<td style="text-align: left;">96K(+147K)</td>
+<td style="text-align: left;">泛型表操作、链式拼接sql</td>
+</tr>
+<tr>
+<td style="text-align: left;">表达式版</td>
+<td style="text-align: left;">ShadowSql.Expressions</td>
+<td style="text-align: left;">ShadowSql.Expressions</td>
+<td style="text-align: left;">ShadowSql.Core</td>
+<td style="text-align: left;">75K(+147K)</td>
+<td style="text-align: left;">表达式树操作、链式拼接sql</td>
+</tr>
+<tr>
+<td style="text-align: left;">DDL</td>
+<td style="text-align: left;">Shadow.DDL</td>
+<td style="text-align: left;">Shadow.DDL</td>
+<td style="text-align: left;">ShadowSql.Core</td>
+<td style="text-align: left;">15K(+147K)</td>
+<td style="text-align: left;">拼接CreateTable、表Schema支持</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dapper</td>
+<td style="text-align: left;">Dapper</td>
+<td style="text-align: left;">Dapper</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">240K</td>
+<td style="text-align: left;">执行sql、类型Mapping</td>
+</tr>
+<tr>
+<td style="text-align: left;">精简版扩展</td>
+<td style="text-align: left;">Dapper.Shadow.Core</td>
+<td style="text-align: left;">ShadowSql.Dapper.Core</td>
+<td style="text-align: left;">ShadowSql.Core和Dapper</td>
+<td style="text-align: left;">17K(+387K)</td>
+<td style="text-align: left;">执行ShadowSql.Core拼接的sql</td>
+</tr>
+<tr>
+<td style="text-align: left;">易用版扩展</td>
+<td style="text-align: left;">Dapper.Shadow</td>
+<td style="text-align: left;">ShadowSql.Dapper</td>
+<td style="text-align: left;">ShadowSql.Dapper.Core、ShadowSql.Core、ShadowSql和Dapper</td>
+<td style="text-align: left;">35K(+500K)</td>
+<td style="text-align: left;">执行ShadowSql拼接的sql</td>
+</tr>
+</tbody>
+</table>
+<h2 id="二如何选型">二、如何选型</h2>
+<blockquote>
+<ul>
+<li>主要看个人或团队偏好</li>
+</ul>
+</blockquote>
+<h3 id="1-偏好lambda选表达式版">1. 偏好Lambda选表达式版</h3>
+<blockquote>
+<ul>
+<li>表达式树是Lambda的影子,可以生成委托,但这里只解析表达式树</li>
+<li>表达式版提供类EF的查询体验</li>
+<li>表达式树会用到反射,性能上会有点损耗,对比带来的便利性完全是可以接受的</li>
+<li>如果使用参数查询并缓存sql复用,完全可以忽略这个性能损耗,甚至可以忽略整个拼写sql的性能消耗</li>
+<li>表达式版搭配Dapper.Shadow.Core或者直接搭配Dapper甚至ADO.NET使用</li>
+</ul>
+</blockquote>
+<h4 id="11-对比efcore">1.1 对比EFCore</h4>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_ef" role="tab" aria-controls="tabpanel_1_ef" data-tab="ef" tabindex="0" aria-selected="true">EFCore</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_expression" role="tab" aria-controls="tabpanel_1_expression" data-tab="expression" tabindex="-1">表达式版</a>
+</li>
+</ul>
+<section id="tabpanel_1_ef" role="tabpanel" data-tab="ef">
+
+<blockquote>
+<p>ShadowSql不含EFCore的功能,这个示例是为了和表达式版对比</p>
+</blockquote>
+<pre><code class="lang-csharp">var query = context.Set&lt;User&gt;(&quot;Users&quot;)
+    .Where(u =&gt; u.Status)
+    .Take(10)
+    .Skip(20)
+    .OrderByDescending(u =&gt; u.Id)
+    .Select(u =&gt; new { u.Id, u.Name });
+</code></pre>
+</section>
+<section id="tabpanel_1_expression" role="tabpanel" data-tab="expression" aria-hidden="true" hidden="hidden">
+
+<blockquote>
+<p>表达式版可以写出与EFCore类似的代码</p>
+</blockquote>
+<pre><code class="lang-csharp">var select = _db.From(&quot;Users&quot;)
+    .ToSqlQuery&lt;User&gt;()
+    .Where(u =&gt; u.Status)
+    .Take(10)
+    .Skip(20)
+    .Desc(u =&gt; u.Id)
+    .ToSelect()
+    .Select(u =&gt; new { u.Id, u.Name });
+</code></pre></section>
+</div>
+<h4 id="12-表达式版参数化查询示例">1.2 表达式版参数化查询示例</h4>
+<blockquote>
+<p>表达式版可以写出与EFCore类似的代码</p>
+</blockquote>
+<pre><code class="lang-csharp">var select = _db.From(&quot;Users&quot;)
+    .ToSqlQuery&lt;User&gt;()
+    .Where&lt;UserParameter&gt;((u, p) =&gt; u.Id == p.Id2 &amp;&amp; u.Status)
+    .Take(10)
+    .Skip(20)
+    .Desc(u =&gt; u.Id)
+    .ToSelect()
+    .Select(u =&gt; new { u.Id, u.Name });
+</code></pre>
+<blockquote>
+</blockquote>
+<div class="TIP">
+<h5>提示</h5>
+<p>MsSql: SELECT [Id],[Name] FROM [Users] WHERE [Id]=@Id2 AND [Status]=1 ORDER BY [Id] DESC OFFSET 20 ROWS FETCH NEXT 10 ROWS ONLY</p>
+</div>
+<h4 id="13-表达式版更多功能">1.3 表达式版更多功能</h4>
+<blockquote>
+<ul>
+<li>参看<a href="expression/index.html">表达式版简介</a></li>
+</ul>
+</blockquote>
+<h3 id="2-偏好链式查询选易用版">2. 偏好链式查询选易用版</h3>
+<blockquote>
+<ul>
+<li>易用版支持泛型表操作几乎无性能损耗(对比精简版)</li>
+<li>每个模型类最好定义数据表影子类(联表定义别名表),以便做到sql编译检测</li>
+<li>不定义数据表影子类可以用<a href="shadow/sqlquery/fieldquery.html">按字段查询</a>或<a href="shadow/sqlquery/fieldquery.html">严格查询</a></li>
+<li>ShadowSql搭配Dapper.Shadow或Dapper.Shadow.Core或直接搭配Dapper甚至ADO.NET使用</li>
+</ul>
+</blockquote>
+<h4 id="21-易用版示例">2.1 易用版示例</h4>
+<pre><code class="lang-csharp">var select = new UserTable()
+    .ToSqlQuery()
+    .Where(table =&gt; table.Status.EqualValue(true))
+    .Take(10, 20)
+    .Asc(table =&gt; table.Id)
+    .ToSelect()
+    .Select(table =&gt; [table.Id, table.Name]);
+</code></pre>
+<blockquote>
+</blockquote>
+<div class="TIP">
+<h5>提示</h5>
+<p>MsSql: SELECT [Id],[Name] FROM [Users] WHERE [Id]=@Id2 AND [Status]=1 ORDER BY [Id] DESC OFFSET 20 ROWS FETCH NEXT 10 ROWS ONLY</p>
+</div>
+<h4 id="22-易用版更多功能">2.2 易用版更多功能</h4>
+<blockquote>
+<ul>
+<li>参看<a href="shadow/index.html">易用版版简介</a></li>
+</ul>
+</blockquote>
+<h3 id="3-有洁癖选精简版">3. 有“洁癖”选精简版</h3>
+<blockquote>
+<ul>
+<li>使用精简版也可以定义数据表影子类(联表定义别名表)</li>
+<li>查询时使用列或者数据表的列,这样代码可读性高,也可以做到sql编译检测</li>
+<li>ShadowSql.Core搭配Dapper.Shadow.Core或者直接搭配Dapper甚至ADO.NET使用</li>
+</ul>
+</blockquote>
+<h4 id="31-精简版示例">3.1 精简版示例</h4>
+<pre><code class="lang-csharp">var table = new UserTable();
+var query = new TableSqlQuery(table)
+    .Where(table.Status.EqualValue(true));
+var cursor = new TableCursor(query)
+    .Take(10)
+    .Skip(20)
+    .Asc(table.Id);
+var select = new CursorSelect(cursor)
+    .Select(table.Id, table.Name);
+</code></pre>
+<h4 id="32-易用版更多功能">3.2 易用版更多功能</h4>
+<blockquote>
+<ul>
+<li>参看<a href="shadowcore/index.html">精简版简介</a></li>
+</ul>
+</blockquote>
+<h3 id="4-需要createtable或表schema的选ddl">4. 需要CreateTable或表Schema的选DDL</h3>
+<blockquote>
+<ul>
+<li>DDL可以搭配易用版或表达式版</li>
+<li>参看<a href="ddl/index.html">DDL简介</a></li>
+</ul>
+</blockquote>
+<h4 id="41-createtable">4.1 CreateTable</h4>
+<pre><code class="lang-csharp">    ColumnSchema id = new(&quot;Id&quot;, &quot;INTEGER&quot;) { ColumnType = ColumnType.Identity | ColumnType.Key };
+    ColumnSchema name = new(&quot;Name&quot;, &quot;TEXT&quot;);
+    TableSchema table = new(&quot;Students&quot;, [id, name]);
+    CreateTable create = new(table);
+</code></pre>
+<blockquote>
+</blockquote>
+<div class="TIP">
+<h5>提示</h5>
+<p>Sqlite: CREATE TABLE &quot;Students&quot;(&quot;Id&quot; INTEGER PRIMARY KEY AUTOINCREMENT,&quot;Name&quot; TEXT)</p>
+</div>
+<h4 id="42-表schema查询示例">4.2 表Schema查询示例</h4>
+<pre><code class="lang-csharp">UserTable table = new(&quot;Users&quot;, &quot;tenant1&quot;);
+var query = new TableQuery(table)
+    .And(table.Status.EqualValue(true));
+var cursor = new TableCursor(query, 10, 20)
+    .Desc(table.Id);
+var select = new CursorSelect(cursor)
+    .Select(table.Id, table.Name);
+</code></pre>
+<blockquote>
+</blockquote>
+<div class="TIP">
+<h5>提示</h5>
+<p>MsSql: SELECT [Id],[Name] FROM [tenant1].[Users] WHERE [Status]=1 ORDER BY [Id] DESC OFFSET 20 ROWS FETCH NEXT 10 ROWS ONLY</p>
+</div>
+<pre><code class="lang-csharp">public class UserTable(string tableName = &quot;Users&quot;, string schema = &quot;&quot;)
+    : TableSchema(tableName, [Defines.Id, Defines.Name, Defines.Status], schema)
+{
+    #region Columns
+    public readonly ColumnSchema Id = Defines.Id;
+    new public readonly ColumnSchema Name  = Defines.Name;
+    public readonly ColumnSchema Status = Defines.Status;
+    #endregion
+
+    class Defines
+    {
+        public static readonly ColumnSchema Id = new(&quot;Id&quot;) { ColumnType = ColumnType.Key };
+        public static readonly ColumnSchema Name = new(&quot;Name&quot;);
+        public static readonly ColumnSchema Status = new(&quot;Status&quot;);
+    }
+}
+</code></pre>
+<h4 id="43-ddl表达式版查询示例">4.3 DDL+表达式版查询示例</h4>
+<pre><code class="lang-csharp">var select = new TableSchema(&quot;Users&quot;, [], &quot;tenant1&quot;)
+    .ToSqlQuery&lt;User&gt;()
+    .Where(u =&gt; u.Status)
+    .Take(10, 20)
+    .Desc(u =&gt; u.Id)
+    .ToSelect();
+</code></pre>
+<blockquote>
+</blockquote>
+<div class="TIP">
+<h5>提示</h5>
+<p>MsSql: SELECT * FROM [tenant1].[Users] WHERE [Status]=1 ORDER BY [Id] DESC OFFSET 20 ROWS FETCH NEXT 10 ROWS ONLY</p>
+</div>
+<h3 id="5-易用版和表达式版一般不一起使用">5. 易用版和表达式版一般不一起使用</h3>
+<blockquote>
+<ul>
+<li>易用版和表达式版有同名类和方法,在不同命名空间</li>
+<li>同一个类引用命名空间ShadowSql和ShadowSql.Expressions调用某些方法可能会报不明确引用错误</li>
+<li>同一项目一个类用易用版,另一个类用表达式版是可行的</li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/how.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

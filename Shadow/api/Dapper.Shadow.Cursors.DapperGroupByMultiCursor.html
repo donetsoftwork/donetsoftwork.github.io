@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>DapperGroupByMultiCursor 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="DapperGroupByMultiCursor 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="多(联)表分组后范围筛选">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=Dapper_Shadow_Cursors_DapperGroupByMultiCursor.md&amp;value=---%0Auid%3A%20Dapper.Shadow.Cursors.DapperGroupByMultiCursor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor">
+
+
+
+  <h1 id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor" class="text-break">
+DapperGroupByMultiCursor 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Cursors/DapperGroupByMultiCursor.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="Dapper.html">Dapper</a>.<a class="xref" href="Dapper.Shadow.html">Shadow</a>.<a class="xref" href="Dapper.Shadow.Cursors.html">Cursors</a></dd></dl>
+  <dl><dt>程序集</dt><dd>Dapper.Shadow.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>多(联)表分组后范围筛选</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DapperGroupByMultiCursor : GroupByMultiCursor, ICursor, ITableView, ISqlEntity</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html">GetFieldBase</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.ViewBase.html">ViewBase</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.TableViewBase.html">TableViewBase</a></div>
+      <div><a class="xref" href="ShadowSql.Cursors.CursorBase.html">CursorBase</a></div>
+      <div><a class="xref" href="ShadowSql.Cursors.CursorBase-1.html">CursorBase</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IGroupByView.html">IGroupByView</a>&gt;</div>
+      <div><a class="xref" href="ShadowSql.Cursors.GroupByCursorBase.html">GroupByCursorBase</a></div>
+      <div><a class="xref" href="ShadowSql.Cursors.GroupByMultiCursor.html">GroupByMultiCursor</a></div>
+      <div><span class="xref">DapperGroupByMultiCursor</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Cursors.ICursor.html">ICursor</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.ITableView.html">ITableView</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.GroupByMultiCursor.html#ShadowSql_Cursors_GroupByMultiCursor__multiTable">GroupByMultiCursor._multiTable</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.GroupByMultiCursor.html#ShadowSql_Cursors_GroupByMultiCursor_MultiTable">GroupByMultiCursor.MultiTable</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase-1.html#ShadowSql_Cursors_CursorBase_1__source">CursorBase&lt;IGroupByView&gt;._source</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase-1.html#ShadowSql_Cursors_CursorBase_1_Source">CursorBase&lt;IGroupByView&gt;.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase-1.html#ShadowSql_Cursors_CursorBase_1_WriteCore_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">CursorBase&lt;IGroupByView&gt;.WriteCore(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase-1.html#ShadowSql_Cursors_CursorBase_1_WriteSource_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">CursorBase&lt;IGroupByView&gt;.WriteSource(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase-1.html#ShadowSql_Cursors_CursorBase_1_GetFields">CursorBase&lt;IGroupByView&gt;.GetFields()</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase-1.html#ShadowSql_Cursors_CursorBase_1_GetField_System_String_">CursorBase&lt;IGroupByView&gt;.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase-1.html#ShadowSql_Cursors_CursorBase_1_GetCompareField_System_String_">CursorBase&lt;IGroupByView&gt;.GetCompareField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase-1.html#ShadowSql_Cursors_CursorBase_1_NewField_System_String_">CursorBase&lt;IGroupByView&gt;.NewField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase.html#ShadowSql_Cursors_CursorBase__limit">CursorBase._limit</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase.html#ShadowSql_Cursors_CursorBase__offset">CursorBase._offset</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase.html#ShadowSql_Cursors_CursorBase_Limit">CursorBase.Limit</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase.html#ShadowSql_Cursors_CursorBase_Offset">CursorBase.Offset</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase.html#ShadowSql_Cursors_CursorBase_CheckAsc_System_String_">CursorBase.CheckAsc(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase.html#ShadowSql_Cursors_CursorBase_CheckDesc_System_String_">CursorBase.CheckDesc(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Cursors.CursorBase.html#ShadowSql_Cursors_CursorBase_WriteOrderBy_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">CursorBase.WriteOrderBy(ISqlEngine, StringBuilder)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowServices.html#Dapper_Shadow_DapperShadowServices_ToDapperSelect_Dapper_Shadow_Cursors_DapperGroupByMultiCursor_">DapperShadowServices.ToDapperSelect(DapperGroupByMultiCursor)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowServices.html#Dapper_Shadow_DapperShadowServices_ToDapperSingle_Dapper_Shadow_Cursors_DapperGroupByMultiCursor_ShadowSql_Identifiers_IFieldView_">DapperShadowServices.ToDapperSingle(DapperGroupByMultiCursor, IFieldView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Asc__1___0_ShadowSql_Identifiers_IOrderView_">ShadowSqlCoreServices.Asc&lt;TCursor&gt;(TCursor, IOrderView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Asc__1___0_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlCoreServices.Asc&lt;TCursor&gt;(TCursor, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Asc__1___0_System_Func_ShadowSql_Identifiers_ITableView_ShadowSql_Identifiers_IOrderView__">ShadowSqlCoreServices.Asc&lt;TCursor&gt;(TCursor, Func&lt;ITableView, IOrderView&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Desc__1___0_ShadowSql_Identifiers_IOrderAsc_">ShadowSqlCoreServices.Desc&lt;TCursor&gt;(TCursor, IOrderAsc)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Desc__1___0_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlCoreServices.Desc&lt;TCursor&gt;(TCursor, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Desc__1___0_System_Func_ShadowSql_Identifiers_ITableView_ShadowSql_Identifiers_IOrderAsc__">ShadowSqlCoreServices.Desc&lt;TCursor&gt;(TCursor, Func&lt;ITableView, IOrderAsc&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_OrderBy__1___0_System_String_">ShadowSqlCoreServices.OrderBy&lt;TCursor&gt;(TCursor, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Skip__1___0_System_Int32_">ShadowSqlCoreServices.Skip&lt;TCursor&gt;(TCursor, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Take__1___0_System_Int32_">ShadowSqlCoreServices.Take&lt;TCursor&gt;(TCursor, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_AggregateAsc__1___0_System_Func_ShadowSql_Identifiers_IGroupByView_ShadowSql_Aggregates_IAggregateField__">ShadowSqlServices.AggregateAsc&lt;TGroupByCursor&gt;(TGroupByCursor, Func&lt;IGroupByView, IAggregateField&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_AggregateDesc__1___0_System_Func_ShadowSql_Identifiers_IGroupByView_ShadowSql_Aggregates_IAggregateField__">ShadowSqlServices.AggregateDesc&lt;TGroupByCursor&gt;(TGroupByCursor, Func&lt;IGroupByView, IAggregateField&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_CountAsc__1___0_">ShadowSqlServices.CountAsc&lt;TGroupByCursor&gt;(TGroupByCursor)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_CountDesc__1___0_">ShadowSqlServices.CountDesc&lt;TGroupByCursor&gt;(TGroupByCursor)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowServices.html#Dapper_Shadow_DapperShadowServices_ToDapperSelect_ShadowSql_Cursors_GroupByMultiCursor_Dapper_Shadow_IExecutor_">DapperShadowServices.ToDapperSelect(GroupByMultiCursor, IExecutor)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSelect_ShadowSql_Cursors_GroupByMultiCursor_">ShadowSqlServices.ToSelect(GroupByMultiCursor)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Cursors_ICursor_ShadowSql_Identifiers_IFieldView_">ShadowSqlServices.ToSingle(ICursor, IFieldView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Cursors_ICursor_System_String_">ShadowSqlServices.ToSingle(ICursor, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Count_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.Count(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_CountAsync_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.CountAsync(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCount_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCount(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCountAsync_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCountAsync(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_AsExists_ShadowSql_Identifiers_ITableView_">ShadowSqlCoreServices.AsExists(ITableView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_AsNotExists_ShadowSql_Identifiers_ITableView_">ShadowSqlCoreServices.AsNotExists(ITableView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Field_ShadowSql_Identifiers_ITableView_System_String_">ShadowSqlCoreServices.Field(ITableView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Fields_ShadowSql_Identifiers_ITableView_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlCoreServices.Fields(ITableView, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Strict_ShadowSql_Identifiers_ITableView_System_String_">ShadowSqlCoreServices.Strict(ITableView, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor__ctor_" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.#ctor*"></a>
+
+  <h3 id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor__ctor_Dapper_Shadow_IExecutor_ShadowSql_GroupBy_GroupByMultiSqlQuery_System_Int32_System_Int32_" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.#ctor(Dapper.Shadow.IExecutor,ShadowSql.GroupBy.GroupByMultiSqlQuery,System.Int32,System.Int32)">
+  DapperGroupByMultiCursor(IExecutor, GroupByMultiSqlQuery, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Cursors/DapperGroupByMultiCursor.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>多(联)表分组后范围筛选</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DapperGroupByMultiCursor(IExecutor executor, GroupByMultiSqlQuery groupBy, int limit, int offset)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>executor</code> <a class="xref" href="Dapper.Shadow.IExecutor.html">IExecutor</a></dt>
+    <dd><p>执行器</p>
+</dd>
+    <dt><code>groupBy</code> <a class="xref" href="ShadowSql.GroupBy.GroupByMultiSqlQuery.html">GroupByMultiSqlQuery</a></dt>
+    <dd><p>分组查询</p>
+</dd>
+    <dt><code>limit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>筛选数量</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>跳过数量</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor_Executor_" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.Executor*"></a>
+
+  <h3 id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor_Executor" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.Executor">
+  Executor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Cursors/DapperGroupByMultiCursor.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>执行器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IExecutor Executor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dapper.Shadow.IExecutor.html">IExecutor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor_AggregateAsc_" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.AggregateAsc*"></a>
+
+  <h3 id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor_AggregateAsc__1_System_String_System_Func___0_ShadowSql_Aggregates_IAggregateField__" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.AggregateAsc``1(System.String,System.Func{``0,ShadowSql.Aggregates.IAggregateField})">
+  AggregateAsc&lt;TAliasTable&gt;(string, Func&lt;TAliasTable, IAggregateField&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Cursors/DapperGroupByMultiCursor.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>正序</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DapperGroupByMultiCursor AggregateAsc&lt;TAliasTable&gt;(string tableName, Func&lt;TAliasTable, IAggregateField&gt; select) where TAliasTable : IAliasTable</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>select</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TAliasTable, <a class="xref" href="ShadowSql.Aggregates.IAggregateField.html">IAggregateField</a>&gt;</dt>
+    <dd><p>筛选</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.html">DapperGroupByMultiCursor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TAliasTable</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor_AggregateAsc_" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.AggregateAsc*"></a>
+
+  <h3 id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor_AggregateAsc__1_System_String_System_Func___0_ShadowSql_Identifiers_IColumn__System_Func_ShadowSql_Identifiers_IPrefixField_ShadowSql_Aggregates_IAggregateField__" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.AggregateAsc``1(System.String,System.Func{``0,ShadowSql.Identifiers.IColumn},System.Func{ShadowSql.Identifiers.IPrefixField,ShadowSql.Aggregates.IAggregateField})">
+  AggregateAsc&lt;TTable&gt;(string, Func&lt;TTable, IColumn&gt;, Func&lt;IPrefixField, IAggregateField&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Cursors/DapperGroupByMultiCursor.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>正序</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DapperGroupByMultiCursor AggregateAsc&lt;TTable&gt;(string tableName, Func&lt;TTable, IColumn&gt; select, Func&lt;IPrefixField, IAggregateField&gt; aggregate) where TTable : ITable</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>选择表</p>
+</dd>
+    <dt><code>select</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TTable, <a class="xref" href="ShadowSql.Identifiers.IColumn.html">IColumn</a>&gt;</dt>
+    <dd><p>定位列</p>
+</dd>
+    <dt><code>aggregate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IPrefixField.html">IPrefixField</a>, <a class="xref" href="ShadowSql.Aggregates.IAggregateField.html">IAggregateField</a>&gt;</dt>
+    <dd><p>聚合</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.html">DapperGroupByMultiCursor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TTable</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor_AggregateDesc_" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.AggregateDesc*"></a>
+
+  <h3 id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor_AggregateDesc__1_System_String_System_Func___0_ShadowSql_Aggregates_IAggregateField__" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.AggregateDesc``1(System.String,System.Func{``0,ShadowSql.Aggregates.IAggregateField})">
+  AggregateDesc&lt;TAliasTable&gt;(string, Func&lt;TAliasTable, IAggregateField&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Cursors/DapperGroupByMultiCursor.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>倒序</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DapperGroupByMultiCursor AggregateDesc&lt;TAliasTable&gt;(string tableName, Func&lt;TAliasTable, IAggregateField&gt; select) where TAliasTable : IAliasTable</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>select</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TAliasTable, <a class="xref" href="ShadowSql.Aggregates.IAggregateField.html">IAggregateField</a>&gt;</dt>
+    <dd><p>筛选</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.html">DapperGroupByMultiCursor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TAliasTable</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor_AggregateDesc_" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.AggregateDesc*"></a>
+
+  <h3 id="Dapper_Shadow_Cursors_DapperGroupByMultiCursor_AggregateDesc__1_System_String_System_Func___0_ShadowSql_Identifiers_IColumn__System_Func_ShadowSql_Identifiers_IPrefixField_ShadowSql_Aggregates_IAggregateField__" data-uid="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.AggregateDesc``1(System.String,System.Func{``0,ShadowSql.Identifiers.IColumn},System.Func{ShadowSql.Identifiers.IPrefixField,ShadowSql.Aggregates.IAggregateField})">
+  AggregateDesc&lt;TTable&gt;(string, Func&lt;TTable, IColumn&gt;, Func&lt;IPrefixField, IAggregateField&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Cursors/DapperGroupByMultiCursor.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>倒序</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DapperGroupByMultiCursor AggregateDesc&lt;TTable&gt;(string tableName, Func&lt;TTable, IColumn&gt; select, Func&lt;IPrefixField, IAggregateField&gt; aggregate) where TTable : ITable</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>选择表</p>
+</dd>
+    <dt><code>select</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TTable, <a class="xref" href="ShadowSql.Identifiers.IColumn.html">IColumn</a>&gt;</dt>
+    <dd><p>定位列</p>
+</dd>
+    <dt><code>aggregate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IPrefixField.html">IPrefixField</a>, <a class="xref" href="ShadowSql.Aggregates.IAggregateField.html">IAggregateField</a>&gt;</dt>
+    <dd><p>聚合</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dapper.Shadow.Cursors.DapperGroupByMultiCursor.html">DapperGroupByMultiCursor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TTable</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Cursors/DapperGroupByMultiCursor.cs/#L17" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

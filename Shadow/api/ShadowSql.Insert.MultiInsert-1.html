@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>MultiInsert&lt;TTable&gt; 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="MultiInsert&lt;TTable&gt; 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="多条插入">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_Insert_MultiInsert_1.md&amp;value=---%0Auid%3A%20ShadowSql.Insert.MultiInsert%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.Insert.MultiInsert`1">
+
+
+
+  <h1 id="ShadowSql_Insert_MultiInsert_1" data-uid="ShadowSql.Insert.MultiInsert`1" class="text-break">
+MultiInsert&lt;TTable&gt; 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/Insert/MultiInsert.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.Insert.html">Insert</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>多条插入</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MultiInsert&lt;TTable&gt; : MultiInsertBase, IMultiInsert, IInsert, IExecuteSql, ISqlEntity where TTable : IInsertTable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TTable</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Insert.MultiInsertBase.html">MultiInsertBase</a></div>
+      <div><span class="xref">MultiInsert&lt;TTable&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Insert.IMultiInsert.html">IMultiInsert</a></div>
+      <div><a class="xref" href="ShadowSql.Insert.IInsert.html">IInsert</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.IExecuteSql.html">IExecuteSql</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>衍生</dt>
+    <dd>
+      <div><a class="xref" href="Dapper.Shadow.Insert.DapperMultiInsert-1.html">DapperMultiInsert&lt;TTable&gt;</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ShadowSql.Insert.MultiInsertBase.html#ShadowSql_Insert_MultiInsertBase_Items">MultiInsertBase.Items</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Insert.MultiInsertBase.html#ShadowSql_Insert_MultiInsertBase_WriteInsert_ShadowSql_Identifiers_IInsertTable_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">MultiInsertBase.WriteInsert(IInsertTable, ISqlEngine, StringBuilder)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Execute_ShadowSql_Fragments_IExecuteSql_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.Execute(IExecuteSql, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_ExecuteAsync_ShadowSql_Fragments_IExecuteSql_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.ExecuteAsync(IExecuteSql, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Insert__1___0_ShadowSql_Insert_IInsertValues_">ShadowSqlCoreServices.Insert&lt;TInsert&gt;(TInsert, IInsertValues)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="ShadowSql_Insert_MultiInsert_1__ctor_" data-uid="ShadowSql.Insert.MultiInsert`1.#ctor*"></a>
+
+  <h3 id="ShadowSql_Insert_MultiInsert_1__ctor__0_" data-uid="ShadowSql.Insert.MultiInsert`1.#ctor(`0)">
+  MultiInsert(TTable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/Insert/MultiInsert.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>插入多条</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MultiInsert(TTable table)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <span class="xref">TTable</span></dt>
+    <dd><p>表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Insert_MultiInsert_1__ctor_" data-uid="ShadowSql.Insert.MultiInsert`1.#ctor*"></a>
+
+  <h3 id="ShadowSql_Insert_MultiInsert_1__ctor__0_System_Collections_Generic_List_ShadowSql_Insert_IInsertValues__" data-uid="ShadowSql.Insert.MultiInsert`1.#ctor(`0,System.Collections.Generic.List{ShadowSql.Insert.IInsertValues})">
+  MultiInsert(TTable, List&lt;IInsertValues&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/Insert/MultiInsert.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>多条插入</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MultiInsert(TTable table, List&lt;IInsertValues&gt; items)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <span class="xref">TTable</span></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ShadowSql.Insert.IInsertValues.html">IInsertValues</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">字段
+</h2>
+
+
+
+  <h3 id="ShadowSql_Insert_MultiInsert_1__table" data-uid="ShadowSql.Insert.MultiInsert`1._table">
+  _table
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/Insert/MultiInsert.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>源表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TTable _table</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">字段值</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TTable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="ShadowSql_Insert_MultiInsert_1_Table_" data-uid="ShadowSql.Insert.MultiInsert`1.Table*"></a>
+
+  <h3 id="ShadowSql_Insert_MultiInsert_1_Table" data-uid="ShadowSql.Insert.MultiInsert`1.Table">
+  Table
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/Insert/MultiInsert.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>源表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TTable Table { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TTable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_Insert_MultiInsert_1_Insert_" data-uid="ShadowSql.Insert.MultiInsert`1.Insert*"></a>
+
+  <h3 id="ShadowSql_Insert_MultiInsert_1_Insert_System_Func__0_ShadowSql_Insert_InsertValues__" data-uid="ShadowSql.Insert.MultiInsert`1.Insert(System.Func{`0,ShadowSql.Insert.InsertValues})">
+  Insert(Func&lt;TTable, InsertValues&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/Insert/MultiInsert.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>增加插入值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MultiInsert&lt;TTable&gt; Insert(Func&lt;TTable, InsertValues&gt; select)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>select</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TTable, <a class="xref" href="ShadowSql.Insert.InsertValues.html">InsertValues</a>&gt;</dt>
+    <dd><p>筛选</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Insert.MultiInsert-1.html">MultiInsert</a>&lt;TTable&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/Insert/MultiInsert.cs/#L16" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>TableSchemaBuilder | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="TableSchemaBuilder | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/ddl/builder.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="tableschemabuilder">TableSchemaBuilder</h1>
+
+<blockquote>
+<ul>
+<li>构造TableSchema对象的工具</li>
+<li>建造者模式</li>
+</ul>
+</blockquote>
+<h2 id="1-tableschemabuilder类">1. TableSchemaBuilder类</h2>
+<blockquote>
+<ul>
+<li>参看<a class="xref" href="../api/Shadow.DDL.TableSchemaBuilder.html">TableSchemaBuilder</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class TableSchemaBuilder {
+    string Schema { get; }
+    string Name { get; }
+    IEnumerable&lt;ColumnSchema&gt; Columns { get; }
+    // ...其他方法...
+    TableSchema Build();
+}
+</code></pre>
+<h2 id="2-definecolumn方法">2. DefineColumn方法</h2>
+<blockquote>
+<ul>
+<li>定义并放回一个列(以便修改完善)</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">ColumnSchema DefineColumn(string columnName, string sqlType = &quot;INT&quot;);
+</code></pre>
+<pre><code class="lang-csharp">var builder = new TableSchemaBuilder(&quot;Students&quot;, &quot;tenant1&quot;);
+builder.DefineColumn(&quot;Id&quot;, &quot;INTEGER&quot;)
+    .ColumnType = ColumnType.Identity | ColumnType.Key;
+</code></pre>
+<h2 id="3-defincolumns方法">3. DefinColumns方法</h2>
+<blockquote>
+<ul>
+<li>定义多个相同类型的列</li>
+<li>只需要列名类型无所谓也可以使用该方法</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TableSchemaBuilder DefinColumns(string sqlType, params IEnumerable&lt;string&gt; columnName);
+</code></pre>
+<pre><code class="lang-csharp">var builder = new TableSchemaBuilder(&quot;Users&quot;, &quot;tenant1&quot;)
+    .DefinColumns(&quot;TEXT&quot;, &quot;Id&quot;, &quot;Name&quot;);
+</code></pre>
+<h2 id="4-definekeys方法">4. DefineKeys方法</h2>
+<blockquote>
+<ul>
+<li>定义多个相同类型的主键</li>
+<li>只需要主键列名类型无所谓也可以使用该方法</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TableSchemaBuilder DefineKeys(string sqlType, params IEnumerable&lt;string&gt; columnName);
+</code></pre>
+<pre><code class="lang-csharp">var builder = new TableSchemaBuilder(&quot;user_role&quot;, &quot;tenant1&quot;)
+    .DefineKeys(&quot;INT&quot;, &quot;UserId&quot;, &quot;RoleId&quot;)
+    .DefinColumns(&quot;DATETIME&quot;, &quot;CreateTime&quot;);
+</code></pre>
+<h2 id="5-defineidentity方法">5. DefineIdentity方法</h2>
+<blockquote>
+<ul>
+<li>定义自增列</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TableSchemaBuilder DefineIdentity(string columnName, string sqlType = &quot;INT&quot;);
+</code></pre>
+<pre><code class="lang-csharp">var builder = new TableSchemaBuilder(&quot;Students&quot;, &quot;tenant1&quot;)
+    .DefineIdentity(&quot;Id&quot;, &quot;INTEGER&quot;)
+    .DefinColumns(&quot;TEXT&quot;, &quot;Name&quot;);
+</code></pre>
+<h2 id="6-build方法">6. Build方法</h2>
+<blockquote>
+<ul>
+<li>构造TableSchema对象</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TableSchema Build();
+</code></pre>
+<pre><code class="lang-csharp">var builder = new TableSchemaBuilder(&quot;Students&quot;, &quot;tenant1&quot;)
+    .DefineIdentity(&quot;Id&quot;, &quot;INTEGER&quot;)
+    .DefinColumns(&quot;TEXT&quot;, &quot;Name&quot;);
+TableSchema table = builder.Build();
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/ddl/builder.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

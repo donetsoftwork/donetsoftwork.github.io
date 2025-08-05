@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>DapperMultiTableSelect 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="DapperMultiTableSelect 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="多表视图筛选列">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=Dapper_Shadow_Select_DapperMultiTableSelect.md&amp;value=---%0Auid%3A%20Dapper.Shadow.Select.DapperMultiTableSelect%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Dapper.Shadow.Select.DapperMultiTableSelect">
+
+
+
+  <h1 id="Dapper_Shadow_Select_DapperMultiTableSelect" data-uid="Dapper.Shadow.Select.DapperMultiTableSelect" class="text-break">
+DapperMultiTableSelect 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Select/DapperMultiTableSelect.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="Dapper.html">Dapper</a>.<a class="xref" href="Dapper.Shadow.html">Shadow</a>.<a class="xref" href="Dapper.Shadow.Select.html">Select</a></dd></dl>
+  <dl><dt>程序集</dt><dd>Dapper.Shadow.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>多表视图筛选列</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DapperMultiTableSelect : MultiSelectBase&lt;ITableView&gt;, IMultiSelect, IDapperSelect, ISelect, ISelectFields, ISqlEntity</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html">GetFieldBase</a></div>
+      <div><a class="xref" href="ShadowSql.SelectFields.SelectFieldsBase.html">SelectFieldsBase</a></div>
+      <div><a class="xref" href="ShadowSql.Select.SelectBase-2.html">SelectBase</a>&lt;<a class="xref" href="ShadowSql.Identifiers.ITableView.html">ITableView</a>, <a class="xref" href="ShadowSql.Identifiers.IMultiView.html">IMultiView</a>&gt;</div>
+      <div><a class="xref" href="ShadowSql.Select.MultiSelectBase-1.html">MultiSelectBase</a>&lt;<a class="xref" href="ShadowSql.Identifiers.ITableView.html">ITableView</a>&gt;</div>
+      <div><span class="xref">DapperMultiTableSelect</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Select.IMultiSelect.html">IMultiSelect</a></div>
+      <div><a class="xref" href="Dapper.Shadow.IDapperSelect.html">IDapperSelect</a></div>
+      <div><a class="xref" href="ShadowSql.Select.ISelect.html">ISelect</a></div>
+      <div><a class="xref" href="ShadowSql.SelectFields.ISelectFields.html">ISelectFields</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ShadowSql.Select.MultiSelectBase-1.html#ShadowSql_Select_MultiSelectBase_1_SelectTables">MultiSelectBase&lt;ITableView&gt;.SelectTables</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Select.MultiSelectBase-1.html#ShadowSql_Select_MultiSelectBase_1_WriteSelectedCore_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_System_Boolean_">MultiSelectBase&lt;ITableView&gt;.WriteSelectedCore(ISqlEngine, StringBuilder, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Select.SelectBase-2.html#ShadowSql_Select_SelectBase_2__source">SelectBase&lt;ITableView, IMultiView&gt;._source</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Select.SelectBase-2.html#ShadowSql_Select_SelectBase_2_Source">SelectBase&lt;ITableView, IMultiView&gt;.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Select.SelectBase-2.html#ShadowSql_Select_SelectBase_2_Target">SelectBase&lt;ITableView, IMultiView&gt;.Target</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Select.SelectBase-2.html#ShadowSql_Select_SelectBase_2_GetFields">SelectBase&lt;ITableView, IMultiView&gt;.GetFields()</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Select.SelectBase-2.html#ShadowSql_Select_SelectBase_2_GetField_System_String_">SelectBase&lt;ITableView, IMultiView&gt;.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Select.SelectBase-2.html#ShadowSql_Select_SelectBase_2_NewField_System_String_">SelectBase&lt;ITableView, IMultiView&gt;.NewField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Select.SelectBase-2.html#ShadowSql_Select_SelectBase_2_WriteCore_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">SelectBase&lt;ITableView, IMultiView&gt;.WriteCore(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.SelectFields.SelectFieldsBase.html#ShadowSql_SelectFields_SelectFieldsBase_Selected">SelectFieldsBase.Selected</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.SelectFields.SelectFieldsBase.html#ShadowSql_SelectFields_SelectFieldsBase_WriteSelectFields_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_System_Collections_Generic_IEnumerable_ShadowSql_Identifiers_IFieldView__System_Boolean_">SelectFieldsBase.WriteSelectFields(ISqlEngine, StringBuilder, IEnumerable&lt;IFieldView&gt;, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.SelectFields.SelectFieldsBase.html#ShadowSql_SelectFields_SelectFieldsBase_ToColumnsCore">SelectFieldsBase.ToColumnsCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html#ShadowSql_Identifiers_GetFieldBase_GetFields">GetFieldBase.GetFields()</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html#ShadowSql_Identifiers_GetFieldBase_GetField_System_String_">GetFieldBase.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html#ShadowSql_Identifiers_GetFieldBase_NewField_System_String_">GetFieldBase.NewField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html#ShadowSql_Identifiers_GetFieldBase_WriteCore_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">GetFieldBase.WriteCore(ISqlEngine, StringBuilder)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Count_Dapper_Shadow_IDapperSelect_System_Object_">DapperShadowCoreServices.Count(IDapperSelect, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_CountAsync_Dapper_Shadow_IDapperSelect_System_Object_">DapperShadowCoreServices.CountAsync(IDapperSelect, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_FirstAsync__1_Dapper_Shadow_IDapperSelect_System_Object_">DapperShadowCoreServices.FirstAsync&lt;T&gt;(IDapperSelect, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_First__1_Dapper_Shadow_IDapperSelect_System_Object_">DapperShadowCoreServices.First&lt;T&gt;(IDapperSelect, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_GetAsync__1_Dapper_Shadow_IDapperSelect_System_Object_">DapperShadowCoreServices.GetAsync&lt;T&gt;(IDapperSelect, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Get__1_Dapper_Shadow_IDapperSelect_System_Object_">DapperShadowCoreServices.Get&lt;T&gt;(IDapperSelect, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCount_Dapper_Shadow_IDapperSelect_System_Object_">DapperShadowCoreServices.LongCount(IDapperSelect, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCountAsync_Dapper_Shadow_IDapperSelect_System_Object_">DapperShadowCoreServices.LongCountAsync(IDapperSelect, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Alias__1___0_ShadowSql_SingleSelect_ISingleSelect_System_String_">ShadowSqlCoreServices.Alias&lt;TSelectFields&gt;(TSelectFields, ISingleSelect, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Alias__1___0_System_String_System_String_">ShadowSqlCoreServices.Alias&lt;TSelectFields&gt;(TSelectFields, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_SelectSelfColumns__1___0_">ShadowSqlCoreServices.SelectSelfColumns&lt;TSelectFields&gt;(TSelectFields)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Select__1___0_ShadowSql_SingleSelect_ISingleSelect_">ShadowSqlCoreServices.Select&lt;TSelectFields&gt;(TSelectFields, ISingleSelect)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Select__1___0_System_Collections_Generic_IEnumerable_ShadowSql_Identifiers_IFieldView__">ShadowSqlCoreServices.Select&lt;TSelectFields&gt;(TSelectFields, params IEnumerable&lt;IFieldView&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Select__1___0_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlCoreServices.Select&lt;TSelectFields&gt;(TSelectFields, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_SelectTable__1___0_ShadowSql_Identifiers_IAliasTable_">ShadowSqlServices.SelectTable&lt;TMultiTableSelect&gt;(TMultiTableSelect, IAliasTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_SelectTable__1___0_System_String_">ShadowSqlServices.SelectTable&lt;TMultiTableSelect&gt;(TMultiTableSelect, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServicess.html#ShadowSql_ShadowSqlServicess_Apply__1___0_System_Action___0__">ShadowSqlServicess.Apply&lt;TSelect&gt;(TSelect, Action&lt;TSelect&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Count_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.Count(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_CountAsync_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.CountAsync(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_FirstAsync__1_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.FirstAsync&lt;T&gt;(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_First__1_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.First&lt;T&gt;(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_GetAsync__1_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.GetAsync&lt;T&gt;(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Get__1_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.Get&lt;T&gt;(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCount_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCount(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCountAsync_ShadowSql_Select_ISelect_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCountAsync(ISelect, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowServices.html#Dapper_Shadow_DapperShadowServices_DapperInsertTo__1_ShadowSql_Select_ISelect___0_">DapperShadowServices.DapperInsertTo&lt;TTable&gt;(ISelect, TTable)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_InsertTo_ShadowSql_Select_ISelect_System_String_">ShadowSqlServices.InsertTo(ISelect, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_InsertTo__1_ShadowSql_Select_ISelect___0_">ShadowSqlServices.InsertTo&lt;TTable&gt;(ISelect, TTable)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="Dapper_Shadow_Select_DapperMultiTableSelect__ctor_" data-uid="Dapper.Shadow.Select.DapperMultiTableSelect.#ctor*"></a>
+
+  <h3 id="Dapper_Shadow_Select_DapperMultiTableSelect__ctor_Dapper_Shadow_IExecutor_ShadowSql_Identifiers_IMultiView_" data-uid="Dapper.Shadow.Select.DapperMultiTableSelect.#ctor(Dapper.Shadow.IExecutor,ShadowSql.Identifiers.IMultiView)">
+  DapperMultiTableSelect(IExecutor, IMultiView)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Select/DapperMultiTableSelect.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>多表视图筛选列</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DapperMultiTableSelect(IExecutor executor, IMultiView multiView)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>executor</code> <a class="xref" href="Dapper.Shadow.IExecutor.html">IExecutor</a></dt>
+    <dd><p>执行器</p>
+</dd>
+    <dt><code>multiView</code> <a class="xref" href="ShadowSql.Identifiers.IMultiView.html">IMultiView</a></dt>
+    <dd><p>多(联)表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="Dapper_Shadow_Select_DapperMultiTableSelect_Executor_" data-uid="Dapper.Shadow.Select.DapperMultiTableSelect.Executor*"></a>
+
+  <h3 id="Dapper_Shadow_Select_DapperMultiTableSelect_Executor" data-uid="Dapper.Shadow.Select.DapperMultiTableSelect.Executor">
+  Executor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Select/DapperMultiTableSelect.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>执行器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IExecutor Executor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dapper.Shadow.IExecutor.html">IExecutor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/Select/DapperMultiTableSelect.cs/#L11" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

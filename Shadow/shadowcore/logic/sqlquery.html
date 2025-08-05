@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>sql逻辑 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="sql逻辑 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/logic/sqlquery.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="sql逻辑">sql逻辑</h1>
+
+<blockquote>
+<ul>
+<li>用来实现<a href="../sqlquery/index.html">sql查询</a></li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Logics.ISqlLogic.html">ISqlLogic</a></li>
+</ul>
+</blockquote>
+<h2 id="2-sqlquery基类">2. SqlQuery基类</h2>
+<blockquote>
+<ul>
+<li>SqlQuery用来定义sql逻辑的规范</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Queries.SqlQuery.html">SqlQuery</a></li>
+<li>实现类是<a class="xref" href="../../api/ShadowSql.Queries.SqlAndQuery.html">SqlAndQuery</a>和<a class="xref" href="../../api/ShadowSql.Queries.SqlOrQuery.html">SqlAndQuery</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class SqlQuery : ISqlLogic;
+</code></pre>
+<h3 id="21-原生sql查询方法">2.1 原生sql查询方法</h3>
+<pre><code class="lang-csharp">SqlAndQuery And(params IEnumerable&lt;string&gt; conditions);
+SqlOrQuery Or(params IEnumerable&lt;string&gt; conditions);
+</code></pre>
+<h3 id="22-原子逻辑查询方法">2.2 原子逻辑查询方法</h3>
+<pre><code class="lang-csharp">SqlAndQuery And(AtomicLogic atomic);
+SqlOrQuery Or(AtomicLogic atomic);
+</code></pre>
+<h3 id="23-and和or切换方法">2.3 AND和OR切换方法</h3>
+<blockquote>
+<ul>
+<li>用于切换为AND或OR</li>
+<li>也能用来实现AND和OR的嵌套查询</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">SqlAndQuery ToAnd();
+SqlOrQuery ToOr();
+</code></pre>
+<h3 id="24-静态工厂方法">2.4 静态工厂方法</h3>
+<pre><code class="lang-csharp">static SqlAndQuery CreateAndQuery();
+static SqlOrQuery CreateOrQuery();
+</code></pre>
+<h2 id="3-sqlandquery">3. SqlAndQuery</h2>
+<blockquote>
+<ul>
+<li>参看<a class="xref" href="../../api/ShadowSql.Queries.SqlAndQuery.html">SqlAndQuery</a></li>
+</ul>
+</blockquote>
+<h2 id="31-sqlandquery">3.1 SqlAndQuery</h2>
+<blockquote>
+<ul>
+<li>实现SqlQuery</li>
+<li>用来实现AND查询</li>
+<li>包含<a class="xref" href="../../api/ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a>和<a class="xref" href="../../api/ShadowSql.Logics.SqlConditionLogic.html">SqlConditionLogic</a></li>
+<li>参看<a href="and.html">AND逻辑</a></li>
+<li>参看<a href="condition.html">原生sql条件</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class SqlAndQuery(ComplexAndLogic complex, SqlConditionLogic conditions) : SqlQuery, ISqlLogic;
+</code></pre>
+<h2 id="32-and扩展方法">3.2 And扩展方法</h2>
+<blockquote>
+<ul>
+<li>嵌套OR逻辑</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">SqlAndQuery And(this SqlAndQuery query, OrLogic logic);
+SqlAndQuery And(this SqlAndQuery query, ComplexOrLogic logic);
+</code></pre>
+<pre><code class="lang-csharp">var score = Column.Use(&quot;Score&quot;);
+var age = Column.Use(&quot;Age&quot;);
+var query = SqlQuery.CreateAndQuery()
+    .And(score.LessValue(60))
+    .And(age.LessValue(10) | age.GreaterValue(15));
+// [Score]&lt;60 AND ([Age]&lt;10 OR [Age]&gt;15)
+</code></pre>
+<h2 id="4-sqlorquery">4. SqlOrQuery</h2>
+<blockquote>
+<ul>
+<li>参看<a class="xref" href="../../api/ShadowSql.Queries.SqlOrQuery.html">SqlOrQuery</a></li>
+</ul>
+</blockquote>
+<h2 id="41-sqlorquery">4.1 SqlOrQuery</h2>
+<blockquote>
+<ul>
+<li>实现SqlQuery</li>
+<li>用来实现OR查询</li>
+<li>包含<a class="xref" href="../../api/ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a>和<a class="xref" href="../../api/ShadowSql.Logics.SqlConditionLogic.html">SqlConditionLogic</a></li>
+<li>参看<a href="or.html">OR逻辑</a></li>
+<li>参看<a href="condition.html">原生sql条件</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class SqlOrQuery(ComplexOrLogic complex, SqlConditionLogic conditions) : SqlQuery, ISqlLogic;
+</code></pre>
+<h2 id="42-or扩展方法">4.2 Or扩展方法</h2>
+<blockquote>
+<ul>
+<li>嵌套AND逻辑</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">SqlOrQuery Or(this SqlOrQuery query, AndLogic logic);
+SqlOrQuery Or(this SqlOrQuery query, ComplexAndLogic logic);
+</code></pre>
+<pre><code class="lang-csharp">var score = Column.Use(&quot;Score&quot;);
+var age = Column.Use(&quot;Age&quot;);
+var query = SqlQuery.CreateOrQuery()
+    .Or(score.GreaterValue(90))
+    .Or(age.GreaterValue(10) &amp; age.LessValue(13));
+// [Score]&gt;90 OR ([Age]&gt;10 AND [Age]&lt;13)
+</code></pre>
+<h2 id="5-其他相关功能">5. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>参看<a href="index.html">逻辑简介</a></li>
+<li>参看<a href="atomic.html">原子逻辑</a></li>
+<li>参看<a href="and.html">AND逻辑</a></li>
+<li>参看<a href="or.html">OR逻辑</a></li>
+<li>参看<a href="condition.html">原生sql条件</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/logic/sqlquery.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

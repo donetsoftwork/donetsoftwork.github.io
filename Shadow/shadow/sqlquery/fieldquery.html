@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>按字段查询 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="按字段查询 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadow/sqlquery/fieldquery.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="按字段查询">按字段查询</h1>
+
+<blockquote>
+<ul>
+<li>按字段名查询扩展</li>
+<li>无需提前定义,随查随用</li>
+<li>需要校验请使用<a href="columnquery.html">严格查询</a></li>
+<li>特别注意:GroupBy后按字段查询也是校验的,因为HAVING不能直接查询分组外的字段(除非聚合)</li>
+<li>using ShadowSql.FieldQueries后即可使用</li>
+</ul>
+</blockquote>
+<h2 id="1-fieldparameter扩展方法">1. FieldParameter扩展方法</h2>
+<pre><code class="lang-csharp">TQuery FieldParameter&lt;TQuery&gt;(this TQuery query, string fieldName, string op = &quot;=&quot;, string parameter = &quot;&quot;)
+	where TQuery : IDataSqlQuery;
+TQuery FieldEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldNotEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldGreaterValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldLessValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldGreaterEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldLessEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldInValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, params TValue[] values)
+        where TQuery : IDataSqlQuery;
+TQuery FieldNotInValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, params TValue[] values)
+        where TQuery : IDataSqlQuery;
+TQuery FieldLikeValue&lt;TQuery&gt;(this TQuery query, string fieldName, string value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldNotLikeValue&lt;TQuery&gt;(this TQuery query, string fieldName, string value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue begin, TValue end)
+        where TQuery : IDataSqlQuery;
+TQuery FieldNotBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue begin, TValue end)
+        where TQuery : IDataSqlQuery;
+</code></pre>
+<pre><code class="lang-csharp">var query = new TableSqlQuery(&quot;Users&quot;)
+    .FieldParameter(&quot;Id&quot;, &quot;&lt;&quot;, &quot;LastId&quot;)
+    .FieldEqual(&quot;Status&quot;, &quot;state&quot;);
+// SELECT * FROM [Users] WHERE [Id]&lt;@LastId AND [Status]=@state
+</code></pre>
+<h2 id="2-fieldvalue扩展方法">2. FieldValue扩展方法</h2>
+<pre><code class="lang-csharp">TQuery FieldValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value, string op = &quot;=&quot;)
+	where TQuery : IDataSqlQuery;
+TQuery FieldEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldNotEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldGreaterValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldLessValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldGreaterEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldLessEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldInValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, params TValue[] values)
+        where TQuery : IDataSqlQuery;
+TQuery FieldNotInValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, params TValue[] values)
+        where TQuery : IDataSqlQuery;
+TQuery FieldLikeValue&lt;TQuery&gt;(this TQuery query, string fieldName, string value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldNotLikeValue&lt;TQuery&gt;(this TQuery query, string fieldName, string value)
+        where TQuery : IDataSqlQuery;
+TQuery FieldBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue begin, TValue end)
+        where TQuery : IDataSqlQuery;
+TQuery FieldNotBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue begin, TValue end)
+        where TQuery : IDataSqlQuery;
+</code></pre>
+<pre><code class="lang-csharp">var query = new TableSqlQuery(&quot;Users&quot;)
+    .ToOr()
+    .FieldValue(&quot;Id&quot;, 100, &quot;&lt;&quot;)
+    .FieldEqualValue(&quot;Status&quot;, true);
+// SELECT * FROM [Users] WHERE [Id]&lt;100 OR [Status]=1
+</code></pre>
+<h2 id="3-fieldisnull扩展方法">3. FieldIsNull扩展方法</h2>
+<pre><code class="lang-csharp">TQuery FieldIsNull&lt;TQuery&gt;(this TQuery query, string FieldName)
+        where TQuery : IDataSqlQuery;
+</code></pre>
+<h2 id="4-fieldisnotnull扩展方法">4. FieldIsNotNull扩展方法</h2>
+<pre><code class="lang-csharp">TQuery FieldNotNull&lt;TQuery&gt;(this TQuery query, string FieldName)
+        where TQuery : IDataSqlQuery;
+</code></pre>
+<h2 id="5-tablefieldparameter扩展方法">5. TableFieldParameter扩展方法</h2>
+<blockquote>
+<p>该方法适用MultiTableSqlQuery和JoinTableSqlQuery</p>
+</blockquote>
+<pre><code class="lang-csharp">TQuery TableFieldParameter&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string op = &quot;=&quot;, string parameter = &quot;&quot;)
+        where TQuery : IMultiView, IDataSqlQuery;
+TQuery TableFieldEqual&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldNotEqual&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldGreater&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldLess&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldGreaterEqual&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldLessEqual&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldIn&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldNotIn&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldLike&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldNotLike&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldBetween&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string begin = &quot;&quot;, string end = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldNotBetween&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string begin = &quot;&quot;, string end = &quot;&quot;)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+</code></pre>
+<pre><code class="lang-csharp">var query = new MultiTableSqlQuery()
+    .AddMembers(&quot;Comments&quot;, &quot;Posts&quot;)
+    .Where(&quot;t1.PostId=t2.Id&quot;)            
+    .TableFieldParameter(&quot;Comments&quot;, &quot;Pick&quot;, &quot;=&quot;, &quot;PickState&quot;)
+    .TableFieldEqual(&quot;Posts&quot;, &quot;Author&quot;);
+// SELECT * FROM [Comments] AS t1,[Posts] AS t2 WHERE t1.[Pick]=@PickState AND t2.[Author]=@Author AND t1.PostId=t2.Id
+</code></pre>
+<h2 id="6-tablefieldvalue扩展方法">6. TableFieldValue扩展方法</h2>
+<blockquote>
+<p>该方法适用MultiTableSqlQuery和JoinTableSqlQuery</p>
+</blockquote>
+<pre><code class="lang-csharp">TQuery TableFieldValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value, string op = &quot;=&quot;)
+        where TQuery : IMultiView, IDataSqlQuery;
+TQuery TableFieldEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldNotEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldGreaterValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldLessValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldGreaterEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldLessEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldInValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, params TValue[] values)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldNotInValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, params TValue[] values)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldLikeValue&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldNotLikeValue&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string value)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue begin, TValue end)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+TQuery TableFieldNotBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue begin, TValue end)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+</code></pre>
+<pre><code class="lang-csharp">var query = _db.From(&quot;Comments&quot;)
+    .SqlJoin(_db.From(&quot;Posts&quot;))
+    .OnColumn(&quot;PostId&quot;, &quot;Id&quot;)
+    .Root
+    .TableFieldValue(&quot;Comments&quot;, &quot;Pick&quot;, false)
+    .TableFieldEqualValue(&quot;Posts&quot;, &quot;Author&quot;, &quot;张三&quot;);
+// SELECT * FROM [Comments] AS t1 INNER JOIN [Posts] AS t2 ON t1.[PostId]=t2.[Id] WHERE t1.[Pick]=0 AND t2.[Author]='张三'
+</code></pre>
+<h2 id="7-tablefieldisnull">7. TableFieldIsNull</h2>
+<pre><code class="lang-csharp">TQuery TableFieldIsNull&lt;TQuery&gt;(this TQuery query, string tableName, string FieldName)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+</code></pre>
+<h2 id="8-tablefieldisnull">8. TableFieldIsNull</h2>
+<pre><code class="lang-csharp">TQuery TableFieldNotNull&lt;TQuery&gt;(this TQuery query, string tableName, string FieldName)
+        where TQuery : MultiTableBase, IDataSqlQuery;
+</code></pre>
+<h2 id="9-使用field方法">9. 使用Field方法</h2>
+<pre><code class="lang-csharp">var u = EmptyTable.Use(&quot;Users&quot;);
+var query = u.ToSqlQuery()
+    .Where(u.Field(&quot;Id&quot;).GreaterEqual(&quot;LastId&quot;))
+    .Where(u =&gt; u.Field(&quot;Status&quot;).EqualValue(true));
+// SELECT * FROM [Users] WHERE [Id]&gt;=@LastId AND [Status]=1
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;Comments&quot;)
+    .SqlJoin(EmptyTable.Use(&quot;Posts&quot;))
+    .OnColumn(&quot;PostId&quot;, &quot;Id&quot;)
+    .Root
+    .Where(join =&gt; join.From(&quot;Comments&quot;).Field(&quot;Pick&quot;).Equal())
+    .Where(&quot;t2&quot;, p =&gt; p.Field(&quot;Author&quot;).EqualValue(&quot;张三&quot;));
+// SELECT * FROM [Comments] AS t1 INNER JOIN [Posts] AS t2 ON t1.[PostId]=t2.[Id] WHERE t1.[Pick]=@Pick AND t2.[Author]='张三'
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadow/sqlquery/fieldquery.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

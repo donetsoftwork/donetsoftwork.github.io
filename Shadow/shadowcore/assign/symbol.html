@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>赋值运算符 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="赋值运算符 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/assign/symbol.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="赋值运算符">赋值运算符</h1>
+
+<blockquote>
+<ul>
+<li>赋值运算符用于实现赋值操作逻辑</li>
+<li>用于连接值和被赋予的字段</li>
+</ul>
+</blockquote>
+<h2 id="1-assignsymbol">1. AssignSymbol</h2>
+<blockquote>
+<ul>
+<li>参看<a class="xref" href="../../api/ShadowSql.Assigns.AssignSymbol.html">AssignSymbol</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class AssignSymbol : ISqlEntity{
+/// &lt;summary&gt;
+/// 操作符
+/// &lt;/summary&gt;
+string Operation { get; }
+}
+</code></pre>
+<h2 id="2-运算符">2. 运算符</h2>
+<blockquote>
+<ul>
+<li>=是默认也是最常用的运算符</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">SQL</th>
+<th style="text-align: left;">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Assign</td>
+<td style="text-align: left;">=</td>
+<td style="text-align: left;">等于</td>
+</tr>
+<tr>
+<td style="text-align: left;">AddAssign</td>
+<td style="text-align: left;">+=</td>
+<td style="text-align: left;">加上并赋值</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubAssign</td>
+<td style="text-align: left;">-=</td>
+<td style="text-align: left;">减去并赋值</td>
+</tr>
+<tr>
+<td style="text-align: left;">MulAssign</td>
+<td style="text-align: left;">*=</td>
+<td style="text-align: left;">乘上并赋值</td>
+</tr>
+<tr>
+<td style="text-align: left;">DivAssign</td>
+<td style="text-align: left;">/=</td>
+<td style="text-align: left;">除去并赋值</td>
+</tr>
+<tr>
+<td style="text-align: left;">ModAssign</td>
+<td style="text-align: left;">%=</td>
+<td style="text-align: left;">取模并赋值</td>
+</tr>
+<tr>
+<td style="text-align: left;">AndAssign</td>
+<td style="text-align: left;">&amp;=</td>
+<td style="text-align: left;">“位与”并赋值</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrAssign</td>
+<td style="text-align: left;">|=</td>
+<td style="text-align: left;">“位或”并赋值</td>
+</tr>
+<tr>
+<td style="text-align: left;">XorAssign</td>
+<td style="text-align: left;">^=</td>
+<td style="text-align: left;">“异或”并赋值</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-其他相关功能">3. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>参看<a href="index.html">赋值简介</a></li>
+<li>参看<a href="operation.html">赋值操作</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/assign/symbol.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

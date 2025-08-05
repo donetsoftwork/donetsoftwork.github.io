@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>DapperGroupByAliasTableSqlQuery&lt;TTable&gt; 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="DapperGroupByAliasTableSqlQuery&lt;TTable&gt; 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="对别名表分组">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=Dapper_Shadow_GroupBy_DapperGroupByAliasTableSqlQuery_1.md&amp;value=---%0Auid%3A%20Dapper.Shadow.GroupBy.DapperGroupByAliasTableSqlQuery%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Dapper.Shadow.GroupBy.DapperGroupByAliasTableSqlQuery`1">
+
+
+
+  <h1 id="Dapper_Shadow_GroupBy_DapperGroupByAliasTableSqlQuery_1" data-uid="Dapper.Shadow.GroupBy.DapperGroupByAliasTableSqlQuery`1" class="text-break">
+DapperGroupByAliasTableSqlQuery&lt;TTable&gt; 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/GroupBy/DapperGroupByAliasTableSqlQuery.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="Dapper.html">Dapper</a>.<a class="xref" href="Dapper.Shadow.html">Shadow</a>.<a class="xref" href="Dapper.Shadow.GroupBy.html">GroupBy</a></dd></dl>
+  <dl><dt>程序集</dt><dd>Dapper.Shadow.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>对别名表分组</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DapperGroupByAliasTableSqlQuery&lt;TTable&gt; : GroupByAliasTableSqlQuery&lt;TTable&gt;, IGroupByView, IDataSqlQuery, IDataFilter, IDapperSource, ITableView, ISqlEntity where TTable : ITable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TTable</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html">GetFieldBase</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.ViewBase.html">ViewBase</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.TableViewBase.html">TableViewBase</a></div>
+      <div><a class="xref" href="ShadowSql.Filters.FilterBase.html">FilterBase</a></div>
+      <div><a class="xref" href="ShadowSql.GroupBy.GroupByBase.html">GroupByBase</a></div>
+      <div><a class="xref" href="ShadowSql.GroupBy.GroupByBase-1.html">GroupByBase</a>&lt;<a class="xref" href="ShadowSql.Queries.SqlQuery.html">SqlQuery</a>&gt;</div>
+      <div><a class="xref" href="ShadowSql.GroupBy.GroupBySqlQueryBase-1.html">GroupBySqlQueryBase</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IAliasTable-1.html">IAliasTable</a>&lt;TTable&gt;&gt;</div>
+      <div><a class="xref" href="ShadowSql.GroupBy.GroupByAliasTableSqlQuery-1.html">GroupByAliasTableSqlQuery</a>&lt;TTable&gt;</div>
+      <div><span class="xref">DapperGroupByAliasTableSqlQuery&lt;TTable&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Identifiers.IGroupByView.html">IGroupByView</a></div>
+      <div><a class="xref" href="ShadowSql.Queries.IDataSqlQuery.html">IDataSqlQuery</a></div>
+      <div><a class="xref" href="ShadowSql.Filters.IDataFilter.html">IDataFilter</a></div>
+      <div><a class="xref" href="Dapper.Shadow.IDapperSource.html">IDapperSource</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.ITableView.html">ITableView</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByAliasTableSqlQuery-1.html#ShadowSql_GroupBy_GroupByAliasTableSqlQuery_1_Where">GroupByAliasTableSqlQuery&lt;TTable&gt;.Where</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByAliasTableSqlQuery-1.html#ShadowSql_GroupBy_GroupByAliasTableSqlQuery_1_HavingAggregate_System_Func__0_ShadowSql_Identifiers_IColumn__System_Func_ShadowSql_Identifiers_IPrefixField_ShadowSql_Aggregates_IAggregateField__System_Func_ShadowSql_Aggregates_IAggregateField_ShadowSql_Logics_AtomicLogic__">GroupByAliasTableSqlQuery&lt;TTable&gt;.HavingAggregate(Func&lt;TTable, IColumn&gt;, Func&lt;IPrefixField, IAggregateField&gt;, Func&lt;IAggregateField, AtomicLogic&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByAliasTableSqlQuery-1.html#ShadowSql_GroupBy_GroupByAliasTableSqlQuery_1_WriteGroupBySource_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">GroupByAliasTableSqlQuery&lt;TTable&gt;.WriteGroupBySource(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupBySqlQueryBase-1.html#ShadowSql_GroupBy_GroupBySqlQueryBase_1_Source">GroupBySqlQueryBase&lt;IAliasTable&lt;TTable&gt;&gt;.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByBase-1.html#ShadowSql_GroupBy_GroupByBase_1_WriteFilter_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">GroupByBase&lt;SqlQuery&gt;.WriteFilter(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByBase.html#ShadowSql_GroupBy_GroupByBase_GroupByFields">GroupByBase.GroupByFields</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByBase.html#ShadowSql_GroupBy_GroupByBase_Columns">GroupByBase.Columns</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByBase.html#ShadowSql_GroupBy_GroupByBase_WriteSource_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">GroupByBase.WriteSource(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByBase.html#ShadowSql_GroupBy_GroupByBase_WriteGroupBy_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">GroupByBase.WriteGroupBy(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByBase.html#ShadowSql_GroupBy_GroupByBase_FilterPrefix_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">GroupByBase.FilterPrefix(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByBase.html#ShadowSql_GroupBy_GroupByBase_GetFields">GroupByBase.GetFields()</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByBase.html#ShadowSql_GroupBy_GroupByBase_GetField_System_String_">GroupByBase.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.GroupBy.GroupByBase.html#ShadowSql_GroupBy_GroupByBase_NewField_System_String_">GroupByBase.NewField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.FilterBase.html#ShadowSql_Filters_FilterBase_WriteCore_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">FilterBase.WriteCore(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Identifiers.ViewBase.html#ShadowSql_Identifiers_ViewBase_GetCompareField_System_String_">ViewBase.GetCompareField(string)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowServices.html#Dapper_Shadow_DapperShadowServices_ToDapperSelect__1_Dapper_Shadow_GroupBy_DapperGroupByAliasTableSqlQuery___0__">DapperShadowServices.ToDapperSelect&lt;TTable&gt;(DapperGroupByAliasTableSqlQuery&lt;TTable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldBetweenValue__2___0_System_String___1___1_">FieldQueryServices.FieldBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldBetween__1___0_System_String_System_String_System_String_">FieldQueryServices.FieldBetween&lt;TQuery&gt;(TQuery, string, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldEqualValue__2___0_System_String___1_">FieldQueryServices.FieldEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldEqual__1___0_System_String_System_String_">FieldQueryServices.FieldEqual&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterEqualValue__2___0_System_String___1_">FieldQueryServices.FieldGreaterEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterEqual__1___0_System_String_System_String_">FieldQueryServices.FieldGreaterEqual&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterValue__2___0_System_String___1_">FieldQueryServices.FieldGreaterValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldGreater__1___0_System_String_System_String_">FieldQueryServices.FieldGreater&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1__">FieldQueryServices.FieldInValue&lt;TQuery, TValue&gt;(TQuery, string, params IEnumerable&lt;TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldIn__1___0_System_String_System_String_">FieldQueryServices.FieldIn&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldIsNull__1___0_System_String_">FieldQueryServices.FieldIsNull&lt;TQuery&gt;(TQuery, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldLessEqualValue__2___0_System_String___1_">FieldQueryServices.FieldLessEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldLessEqual__1___0_System_String_System_String_">FieldQueryServices.FieldLessEqual&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldLessValue__2___0_System_String___1_">FieldQueryServices.FieldLessValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldLess__1___0_System_String_System_String_">FieldQueryServices.FieldLess&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldLikeValue__1___0_System_String_System_String_">FieldQueryServices.FieldLikeValue&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldLike__1___0_System_String_System_String_">FieldQueryServices.FieldLike&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldNotBetweenValue__2___0_System_String___1___1_">FieldQueryServices.FieldNotBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldNotBetween__1___0_System_String_System_String_System_String_">FieldQueryServices.FieldNotBetween&lt;TQuery&gt;(TQuery, string, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldNotEqualValue__2___0_System_String___1_">FieldQueryServices.FieldNotEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldNotEqual__1___0_System_String_System_String_">FieldQueryServices.FieldNotEqual&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldNotInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1__">FieldQueryServices.FieldNotInValue&lt;TQuery, TValue&gt;(TQuery, string, params IEnumerable&lt;TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldNotIn__1___0_System_String_System_String_">FieldQueryServices.FieldNotIn&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldNotLikeValue__1___0_System_String_System_String_">FieldQueryServices.FieldNotLikeValue&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldNotLike__1___0_System_String_System_String_">FieldQueryServices.FieldNotLike&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldNotNull__1___0_System_String_">FieldQueryServices.FieldNotNull&lt;TQuery&gt;(TQuery, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldParameter__1___0_System_String_System_String_System_String_">FieldQueryServices.FieldParameter&lt;TQuery&gt;(TQuery, string, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.FieldQueries.FieldQueryServices.html#ShadowSql_FieldQueries_FieldQueryServices_FieldValue__2___0_System_String___1_System_String_">FieldQueryServices.FieldValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Apply__1___0_System_Func_ShadowSql_Queries_SqlQuery_ShadowSql_Identifiers_IGroupByView_ShadowSql_Queries_SqlQuery__">ShadowSqlCoreServices.Apply&lt;TGroupBy&gt;(TGroupBy, Func&lt;SqlQuery, IGroupByView, SqlQuery&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Apply__1___0_System_Func_ShadowSql_Queries_SqlQuery_ShadowSql_Identifiers_ITableView_ShadowSql_Queries_SqlQuery__">ShadowSqlCoreServices.Apply&lt;Query&gt;(Query, Func&lt;SqlQuery, ITableView, SqlQuery&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Apply__1___0_System_Func_ShadowSql_Queries_SqlQuery_ShadowSql_Queries_SqlQuery__">ShadowSqlCoreServices.Apply&lt;Query&gt;(Query, Func&lt;SqlQuery, SqlQuery&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Exists__1___0_ShadowSql_Identifiers_ITableView_">ShadowSqlCoreServices.Exists&lt;Query&gt;(Query, ITableView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_HavingAggregate__1___0_System_String_System_String_System_Func_ShadowSql_Aggregates_IAggregateField_ShadowSql_Logics_AtomicLogic__">ShadowSqlCoreServices.HavingAggregate&lt;TGroupBy&gt;(TGroupBy, string, string, Func&lt;IAggregateField, AtomicLogic&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Having__1___0_ShadowSql_Logics_AtomicLogic_">ShadowSqlCoreServices.Having&lt;TGroupBy&gt;(TGroupBy, AtomicLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Having__1___0_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlCoreServices.Having&lt;TGroupBy&gt;(TGroupBy, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Having__1___0_System_Func_ShadowSql_Identifiers_IGroupByView_ShadowSql_Logics_AtomicLogic__">ShadowSqlCoreServices.Having&lt;TGroupBy&gt;(TGroupBy, Func&lt;IGroupByView, AtomicLogic&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_In__1___0_ShadowSql_Identifiers_ICompareView_ShadowSql_SingleSelect_ISingleSelect_">ShadowSqlCoreServices.In&lt;Query&gt;(Query, ICompareView, ISingleSelect)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_NotExists__1___0_ShadowSql_Identifiers_ITableView_">ShadowSqlCoreServices.NotExists&lt;Query&gt;(Query, ITableView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_NotIn__1___0_ShadowSql_Identifiers_ICompareView_ShadowSql_SingleSelect_ISingleSelect_">ShadowSqlCoreServices.NotIn&lt;Query&gt;(Query, ICompareView, ISingleSelect)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_ToAnd__1___0_">ShadowSqlCoreServices.ToAnd&lt;Query&gt;(Query)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_ToOr__1___0_">ShadowSqlCoreServices.ToOr&lt;Query&gt;(Query)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictBetweenValue__2___0_System_String___1___1_">StrictQueryServices.StrictBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictBetween__1___0_System_String_System_String_System_String_">StrictQueryServices.StrictBetween&lt;TQuery&gt;(TQuery, string, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictEqualValue__2___0_System_String___1_">StrictQueryServices.StrictEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictEqual__1___0_System_String_System_String_">StrictQueryServices.StrictEqual&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterEqualValue__2___0_System_String___1_">StrictQueryServices.StrictGreaterEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterEqual__1___0_System_String_System_String_">StrictQueryServices.StrictGreaterEqual&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterValue__2___0_System_String___1_">StrictQueryServices.StrictGreaterValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictGreater__1___0_System_String_System_String_">StrictQueryServices.StrictGreater&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1__">StrictQueryServices.StrictInValue&lt;TQuery, TValue&gt;(TQuery, string, params IEnumerable&lt;TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictIn__1___0_System_String_System_String_">StrictQueryServices.StrictIn&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictIsNull__1___0_System_String_">StrictQueryServices.StrictIsNull&lt;TQuery&gt;(TQuery, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictLessEqualValue__2___0_System_String___1_">StrictQueryServices.StrictLessEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictLessEqual__1___0_System_String_System_String_">StrictQueryServices.StrictLessEqual&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictLessValue__2___0_System_String___1_">StrictQueryServices.StrictLessValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictLess__1___0_System_String_System_String_">StrictQueryServices.StrictLess&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictLikeValue__1___0_System_String_System_String_">StrictQueryServices.StrictLikeValue&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictLike__1___0_System_String_System_String_">StrictQueryServices.StrictLike&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictNotBetweenValue__2___0_System_String___1___1_">StrictQueryServices.StrictNotBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictNotBetween__1___0_System_String_System_String_System_String_">StrictQueryServices.StrictNotBetween&lt;TQuery&gt;(TQuery, string, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictNotEqualValue__2___0_System_String___1_">StrictQueryServices.StrictNotEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictNotEqual__1___0_System_String_System_String_">StrictQueryServices.StrictNotEqual&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictNotInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1__">StrictQueryServices.StrictNotInValue&lt;TQuery, TValue&gt;(TQuery, string, params IEnumerable&lt;TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictNotIn__1___0_System_String_System_String_">StrictQueryServices.StrictNotIn&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictNotLikeValue__1___0_System_String_System_String_">StrictQueryServices.StrictNotLikeValue&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictNotLike__1___0_System_String_System_String_">StrictQueryServices.StrictNotLike&lt;TQuery&gt;(TQuery, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictNotNull__1___0_System_String_">StrictQueryServices.StrictNotNull&lt;TQuery&gt;(TQuery, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictParameter__1___0_System_String_System_String_System_String_">StrictQueryServices.StrictParameter&lt;TQuery&gt;(TQuery, string, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.StrictQueries.StrictQueryServices.html#ShadowSql_StrictQueries_StrictQueryServices_StrictValue__2___0_System_String___1_System_String_">StrictQueryServices.StrictValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Count_Dapper_Shadow_IDapperSource_System_Object_">DapperShadowCoreServices.Count(IDapperSource, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_CountAsync_Dapper_Shadow_IDapperSource_System_Object_">DapperShadowCoreServices.CountAsync(IDapperSource, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCount_Dapper_Shadow_IDapperSource_System_Object_">DapperShadowCoreServices.LongCount(IDapperSource, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCountAsync_Dapper_Shadow_IDapperSource_System_Object_">DapperShadowCoreServices.LongCountAsync(IDapperSource, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Filters_IDataFilter_ShadowSql_Identifiers_IFieldView_">ShadowSqlServices.ToSingle(IDataFilter, IFieldView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Filters_IDataFilter_System_String_">ShadowSqlServices.ToSingle(IDataFilter, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowServices.html#Dapper_Shadow_DapperShadowServices_ToDapperSelect__1_ShadowSql_GroupBy_GroupByAliasTableSqlQuery___0__Dapper_Shadow_IExecutor_">DapperShadowServices.ToDapperSelect&lt;TTable&gt;(GroupByAliasTableSqlQuery&lt;TTable&gt;, IExecutor)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_Take__1_ShadowSql_GroupBy_GroupByAliasTableSqlQuery___0__System_Int32_System_Int32_">ShadowSqlServices.Take&lt;TTable&gt;(GroupByAliasTableSqlQuery&lt;TTable&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToCursor__1_ShadowSql_GroupBy_GroupByAliasTableSqlQuery___0__System_Int32_System_Int32_">ShadowSqlServices.ToCursor&lt;TTable&gt;(GroupByAliasTableSqlQuery&lt;TTable&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSelect__1_ShadowSql_GroupBy_GroupByAliasTableSqlQuery___0__">ShadowSqlServices.ToSelect&lt;TTable&gt;(GroupByAliasTableSqlQuery&lt;TTable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle__1_ShadowSql_GroupBy_GroupByAliasTableSqlQuery___0__System_Func___0_ShadowSql_Identifiers_IColumn__System_Func_ShadowSql_Identifiers_IPrefixField_ShadowSql_Aggregates_IAggregateFieldAlias__">ShadowSqlServices.ToSingle&lt;TTable&gt;(GroupByAliasTableSqlQuery&lt;TTable&gt;, Func&lt;TTable, IColumn&gt;, Func&lt;IPrefixField, IAggregateFieldAlias&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.AggregateAsServices.html#ShadowSql_AggregateAsServices_AggregateAs_ShadowSql_Identifiers_IGroupByView_System_String_System_String_System_String_">AggregateAsServices.AggregateAs(IGroupByView, string, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.AggregateAsServices.html#ShadowSql_AggregateAsServices_AvgAs_ShadowSql_Identifiers_IGroupByView_System_String_System_String_">AggregateAsServices.AvgAs(IGroupByView, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.AggregateAsServices.html#ShadowSql_AggregateAsServices_CountAs_ShadowSql_Identifiers_IGroupByView_System_String_">AggregateAsServices.CountAs(IGroupByView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.AggregateAsServices.html#ShadowSql_AggregateAsServices_DistinctCountAs_ShadowSql_Identifiers_IGroupByView_System_String_System_String_">AggregateAsServices.DistinctCountAs(IGroupByView, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.AggregateAsServices.html#ShadowSql_AggregateAsServices_MaxAs_ShadowSql_Identifiers_IGroupByView_System_String_System_String_">AggregateAsServices.MaxAs(IGroupByView, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.AggregateAsServices.html#ShadowSql_AggregateAsServices_MinAs_ShadowSql_Identifiers_IGroupByView_System_String_System_String_">AggregateAsServices.MinAs(IGroupByView, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.AggregateAsServices.html#ShadowSql_AggregateAsServices_SumAs_ShadowSql_Identifiers_IGroupByView_System_String_System_String_">AggregateAsServices.SumAs(IGroupByView, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Aggregate_ShadowSql_Identifiers_IGroupByView_System_String_System_String_">ShadowSqlCoreServices.Aggregate(IGroupByView, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Avg_ShadowSql_Identifiers_IGroupByView_System_String_">ShadowSqlCoreServices.Avg(IGroupByView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Count_ShadowSql_Identifiers_IGroupByView_">ShadowSqlCoreServices.Count(IGroupByView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_DistinctCount_ShadowSql_Identifiers_IGroupByView_System_String_">ShadowSqlCoreServices.DistinctCount(IGroupByView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Max_ShadowSql_Identifiers_IGroupByView_System_String_">ShadowSqlCoreServices.Max(IGroupByView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Min_ShadowSql_Identifiers_IGroupByView_System_String_">ShadowSqlCoreServices.Min(IGroupByView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Sum_ShadowSql_Identifiers_IGroupByView_System_String_">ShadowSqlCoreServices.Sum(IGroupByView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Identifiers_IGroupByView_System_Func_ShadowSql_Identifiers_IGroupByView_ShadowSql_Identifiers_IFieldView__">ShadowSqlServices.ToSingle(IGroupByView, Func&lt;IGroupByView, IFieldView&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Count_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.Count(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_CountAsync_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.CountAsync(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCount_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCount(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCountAsync_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCountAsync(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_AsExists_ShadowSql_Identifiers_ITableView_">ShadowSqlCoreServices.AsExists(ITableView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_AsNotExists_ShadowSql_Identifiers_ITableView_">ShadowSqlCoreServices.AsNotExists(ITableView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Field_ShadowSql_Identifiers_ITableView_System_String_">ShadowSqlCoreServices.Field(ITableView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Fields_ShadowSql_Identifiers_ITableView_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlCoreServices.Fields(ITableView, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Strict_ShadowSql_Identifiers_ITableView_System_String_">ShadowSqlCoreServices.Strict(ITableView, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="Dapper_Shadow_GroupBy_DapperGroupByAliasTableSqlQuery_1__ctor_" data-uid="Dapper.Shadow.GroupBy.DapperGroupByAliasTableSqlQuery`1.#ctor*"></a>
+
+  <h3 id="Dapper_Shadow_GroupBy_DapperGroupByAliasTableSqlQuery_1__ctor_Dapper_Shadow_IExecutor_ShadowSql_Identifiers_IAliasTable__0__ShadowSql_Logics_ISqlLogic_ShadowSql_Identifiers_IField___ShadowSql_Queries_SqlQuery_" data-uid="Dapper.Shadow.GroupBy.DapperGroupByAliasTableSqlQuery`1.#ctor(Dapper.Shadow.IExecutor,ShadowSql.Identifiers.IAliasTable{`0},ShadowSql.Logics.ISqlLogic,ShadowSql.Identifiers.IField[],ShadowSql.Queries.SqlQuery)">
+  DapperGroupByAliasTableSqlQuery(IExecutor, IAliasTable&lt;TTable&gt;, ISqlLogic, IField[], SqlQuery)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/GroupBy/DapperGroupByAliasTableSqlQuery.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对别名表分组</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DapperGroupByAliasTableSqlQuery(IExecutor executor, IAliasTable&lt;TTable&gt; aliasTable, ISqlLogic where, IField[] fields, SqlQuery having)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>executor</code> <a class="xref" href="Dapper.Shadow.IExecutor.html">IExecutor</a></dt>
+    <dd><p>执行器</p>
+</dd>
+    <dt><code>aliasTable</code> <a class="xref" href="ShadowSql.Identifiers.IAliasTable-1.html">IAliasTable</a>&lt;TTable&gt;</dt>
+    <dd><p>别名表</p>
+</dd>
+    <dt><code>where</code> <a class="xref" href="ShadowSql.Logics.ISqlLogic.html">ISqlLogic</a></dt>
+    <dd><p>查询条件</p>
+</dd>
+    <dt><code>fields</code> <a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a>[]</dt>
+    <dd><p>字段</p>
+</dd>
+    <dt><code>having</code> <a class="xref" href="ShadowSql.Queries.SqlQuery.html">SqlQuery</a></dt>
+    <dd><p>分组查询条件</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="Dapper_Shadow_GroupBy_DapperGroupByAliasTableSqlQuery_1_Executor_" data-uid="Dapper.Shadow.GroupBy.DapperGroupByAliasTableSqlQuery`1.Executor*"></a>
+
+  <h3 id="Dapper_Shadow_GroupBy_DapperGroupByAliasTableSqlQuery_1_Executor" data-uid="Dapper.Shadow.GroupBy.DapperGroupByAliasTableSqlQuery`1.Executor">
+  Executor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/GroupBy/DapperGroupByAliasTableSqlQuery.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>执行器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IExecutor Executor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dapper.Shadow.IExecutor.html">IExecutor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow/GroupBy/DapperGroupByAliasTableSqlQuery.cs/#L18" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

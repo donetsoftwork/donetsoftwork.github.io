@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>AndLogic 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="AndLogic 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="与逻辑">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_Logics_AndLogic.md&amp;value=---%0Auid%3A%20ShadowSql.Logics.AndLogic%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.Logics.AndLogic">
+
+
+
+  <h1 id="ShadowSql_Logics_AndLogic" data-uid="ShadowSql.Logics.AndLogic" class="text-break">
+AndLogic 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.Logics.html">Logics</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>与逻辑</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AndLogic : Logic, IPreview&lt;AtomicLogic&gt;, IAndLogic, ISqlLogic, ISqlFragment</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></div>
+      <div><span class="xref">AndLogic</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Previews.IPreview-1.html">IPreview</a>&lt;<a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a>&gt;</div>
+      <div><a class="xref" href="ShadowSql.Logics.IAndLogic.html">IAndLogic</a></div>
+      <div><a class="xref" href="ShadowSql.Logics.ISqlLogic.html">ISqlLogic</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlFragment.html">ISqlFragment</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_AndLogic_ShadowSql_Logics_EmptyLogic_">ShadowSqlCoreServices.And(AndLogic, EmptyLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_AndLogic_ShadowSql_Logics_Logic_">ShadowSqlCoreServices.And(AndLogic, Logic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Copy_ShadowSql_Logics_AndLogic_">ShadowSqlCoreServices.Copy(AndLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Not_ShadowSql_Logics_AndLogic_">ShadowSqlCoreServices.Not(AndLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_AndLogic_ShadowSql_Logics_EmptyLogic_">ShadowSqlCoreServices.Or(AndLogic, EmptyLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_AndLogic_ShadowSql_Logics_Logic_">ShadowSqlCoreServices.Or(AndLogic, Logic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_Logic_ShadowSql_Logics_Logic_">ShadowSqlCoreServices.And(Logic, Logic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Not_ShadowSql_Logics_Logic_">ShadowSqlCoreServices.Not(Logic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_Logic_ShadowSql_Logics_Logic_">ShadowSqlCoreServices.Or(Logic, Logic)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="ShadowSql_Logics_AndLogic__ctor_" data-uid="ShadowSql.Logics.AndLogic.#ctor*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic__ctor" data-uid="ShadowSql.Logics.AndLogic.#ctor">
+  AndLogic()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AndLogic()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic__ctor_" data-uid="ShadowSql.Logics.AndLogic.#ctor*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic__ctor_ShadowSql_Logics_AtomicLogic_" data-uid="ShadowSql.Logics.AndLogic.#ctor(ShadowSql.Logics.AtomicLogic)">
+  AndLogic(AtomicLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AndLogic(AtomicLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_Logics_AndLogic_And_" data-uid="ShadowSql.Logics.AndLogic.And*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_And_ShadowSql_Logics_AndLogic_" data-uid="ShadowSql.Logics.AndLogic.And(ShadowSql.Logics.AndLogic)">
+  And(AndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic And(AndLogic and)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>and</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>与逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_And_" data-uid="ShadowSql.Logics.AndLogic.And*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_And_ShadowSql_Logics_AtomicLogic_" data-uid="ShadowSql.Logics.AndLogic.And(ShadowSql.Logics.AtomicLogic)">
+  And(AtomicLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic And(AtomicLogic atomic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>atomic</code> <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_And_" data-uid="ShadowSql.Logics.AndLogic.And*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_And_ShadowSql_Logics_ComplexAndLogic_" data-uid="ShadowSql.Logics.AndLogic.And(ShadowSql.Logics.ComplexAndLogic)">
+  And(ComplexAndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic And(ComplexAndLogic and)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>and</code> <a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd><p>与逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_And_" data-uid="ShadowSql.Logics.AndLogic.And*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_And_ShadowSql_Logics_ComplexOrLogic_" data-uid="ShadowSql.Logics.AndLogic.And(ShadowSql.Logics.ComplexOrLogic)">
+  And(ComplexOrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic And(ComplexOrLogic or)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>or</code> <a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd><p>或逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_And_" data-uid="ShadowSql.Logics.AndLogic.And*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_And_ShadowSql_Logics_OrLogic_" data-uid="ShadowSql.Logics.AndLogic.And(ShadowSql.Logics.OrLogic)">
+  And(OrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic And(OrLogic or)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>or</code> <a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd><p>或逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_Or_" data-uid="ShadowSql.Logics.AndLogic.Or*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_Or_ShadowSql_Logics_AndLogic_" data-uid="ShadowSql.Logics.AndLogic.Or(ShadowSql.Logics.AndLogic)">
+  Or(AndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic Or(AndLogic and)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>and</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>与逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_Or_" data-uid="ShadowSql.Logics.AndLogic.Or*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_Or_ShadowSql_Logics_AtomicLogic_" data-uid="ShadowSql.Logics.AndLogic.Or(ShadowSql.Logics.AtomicLogic)">
+  Or(AtomicLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic Or(AtomicLogic atomic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>atomic</code> <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_Or_" data-uid="ShadowSql.Logics.AndLogic.Or*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_Or_ShadowSql_Logics_ComplexAndLogic_" data-uid="ShadowSql.Logics.AndLogic.Or(ShadowSql.Logics.ComplexAndLogic)">
+  Or(ComplexAndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic Or(ComplexAndLogic and)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>and</code> <a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd><p>与逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_Or_" data-uid="ShadowSql.Logics.AndLogic.Or*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_Or_ShadowSql_Logics_ComplexOrLogic_" data-uid="ShadowSql.Logics.AndLogic.Or(ShadowSql.Logics.ComplexOrLogic)">
+  Or(ComplexOrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic Or(ComplexOrLogic or)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>or</code> <a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd><p>或逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_Or_" data-uid="ShadowSql.Logics.AndLogic.Or*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_Or_ShadowSql_Logics_OrLogic_" data-uid="ShadowSql.Logics.AndLogic.Or(ShadowSql.Logics.OrLogic)">
+  Or(OrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic Or(OrLogic or)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>or</code> <a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd><p>或逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_ToAnd_" data-uid="ShadowSql.Logics.AndLogic.ToAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_ToAnd" data-uid="ShadowSql.Logics.AndLogic.ToAnd">
+  ToAnd()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>转化为And查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic ToAnd()</code></pre>
+  </div>
+
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_ToOr_" data-uid="ShadowSql.Logics.AndLogic.ToOr*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_ToOr" data-uid="ShadowSql.Logics.AndLogic.ToOr">
+  ToOr()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>转化为Or查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Logic ToOr()</code></pre>
+  </div>
+
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">运算符
+</h2>
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_ShadowSql_Logics_AndLogic_ShadowSql_Logics_AndLogic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd(ShadowSql.Logics.AndLogic,ShadowSql.Logics.AndLogic)">
+  operator &amp;(AndLogic, AndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AndLogic operator &amp;(AndLogic logic, AndLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_ShadowSql_Logics_AndLogic_ShadowSql_Logics_AtomicLogic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd(ShadowSql.Logics.AndLogic,ShadowSql.Logics.AtomicLogic)">
+  operator &amp;(AndLogic, AtomicLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AndLogic operator &amp;(AndLogic logic, AtomicLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_ShadowSql_Logics_AndLogic_ShadowSql_Logics_ComplexAndLogic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd(ShadowSql.Logics.AndLogic,ShadowSql.Logics.ComplexAndLogic)">
+  operator &amp;(AndLogic, ComplexAndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ComplexAndLogic operator &amp;(AndLogic logic, ComplexAndLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_ShadowSql_Logics_AndLogic_ShadowSql_Logics_ComplexOrLogic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd(ShadowSql.Logics.AndLogic,ShadowSql.Logics.ComplexOrLogic)">
+  operator &amp;(AndLogic, ComplexOrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator &amp;(AndLogic logic, ComplexOrLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_ShadowSql_Logics_AndLogic_ShadowSql_Logics_Logic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd(ShadowSql.Logics.AndLogic,ShadowSql.Logics.Logic)">
+  operator &amp;(AndLogic, Logic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator &amp;(AndLogic logic, Logic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseAnd_ShadowSql_Logics_AndLogic_ShadowSql_Logics_OrLogic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseAnd(ShadowSql.Logics.AndLogic,ShadowSql.Logics.OrLogic)">
+  operator &amp;(AndLogic, OrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator &amp;(AndLogic logic, OrLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseOr_ShadowSql_Logics_AndLogic_ShadowSql_Logics_AndLogic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr(ShadowSql.Logics.AndLogic,ShadowSql.Logics.AndLogic)">
+  operator |(AndLogic, AndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator |(AndLogic logic, AndLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseOr_ShadowSql_Logics_AndLogic_ShadowSql_Logics_AtomicLogic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr(ShadowSql.Logics.AndLogic,ShadowSql.Logics.AtomicLogic)">
+  operator |(AndLogic, AtomicLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator |(AndLogic logic, AtomicLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseOr_ShadowSql_Logics_AndLogic_ShadowSql_Logics_ComplexAndLogic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr(ShadowSql.Logics.AndLogic,ShadowSql.Logics.ComplexAndLogic)">
+  operator |(AndLogic, ComplexAndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator |(AndLogic logic, ComplexAndLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseOr_ShadowSql_Logics_AndLogic_ShadowSql_Logics_ComplexOrLogic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr(ShadowSql.Logics.AndLogic,ShadowSql.Logics.ComplexOrLogic)">
+  operator |(AndLogic, ComplexOrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ComplexOrLogic operator |(AndLogic logic, ComplexOrLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseOr_ShadowSql_Logics_AndLogic_ShadowSql_Logics_Logic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr(ShadowSql.Logics.AndLogic,ShadowSql.Logics.Logic)">
+  operator |(AndLogic, Logic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator |(AndLogic logic, Logic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_BitwiseOr_ShadowSql_Logics_AndLogic_ShadowSql_Logics_OrLogic_" data-uid="ShadowSql.Logics.AndLogic.op_BitwiseOr(ShadowSql.Logics.AndLogic,ShadowSql.Logics.OrLogic)">
+  operator |(AndLogic, OrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator |(AndLogic logic, OrLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_AndLogic_op_LogicalNot_" data-uid="ShadowSql.Logics.AndLogic.op_LogicalNot*"></a>
+
+  <h3 id="ShadowSql_Logics_AndLogic_op_LogicalNot_ShadowSql_Logics_AndLogic_" data-uid="ShadowSql.Logics.AndLogic.op_LogicalNot(ShadowSql.Logics.AndLogic)">
+  operator !(AndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>反逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OrLogic operator !(AndLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/AndLogic.cs/#L8" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

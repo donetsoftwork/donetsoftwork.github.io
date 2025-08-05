@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>数据获取简介 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="数据获取简介 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/select/index.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="数据获取简介">数据获取简介</h1>
+
+<blockquote>
+<ul>
+<li>数据获取组件</li>
+<li>本组件用来组装sql的SELECT语句</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.Select.ISelect.html">ISelect</a></p>
+</blockquote>
+<h2 id="2-筛选列方法">2. 筛选列方法</h2>
+<h3 id="21-select">2.1 Select</h3>
+<h4 id="211-select扩展方法">2.1.1 Select扩展方法</h4>
+<blockquote>
+<ul>
+<li>筛选列</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TSelectFields Select&lt;TSelectFields&gt;(this TSelectFields select, params IEnumerable&lt;IFieldView&gt; fields)
+    where TSelectFields : SelectFieldsBase;
+</code></pre>
+<h4 id="212-selectc重载扩展方法">2.1.2 Selectc重载扩展方法</h4>
+<blockquote>
+<ul>
+<li>按列名筛选</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TSelectFields Select&lt;TSelectFields&gt;(this TSelectFields select, params IEnumerable&lt;string&gt; columns)
+    where TSelectFields : SelectFieldsBase;
+</code></pre>
+<h4 id="213-select重载扩展方法">2.1.3 Select重载扩展方法</h4>
+<blockquote>
+<ul>
+<li>筛选子查询</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TSelectFields Select&lt;TSelectFields&gt;(this TSelectFields fields, ISingleSelect select)
+    where TSelectFields : SelectFieldsBase;
+</code></pre>
+<h3 id="22-alias">2.2 Alias</h3>
+<h4 id="221-alias扩展方法">2.2.1 Alias扩展方法</h4>
+<blockquote>
+<ul>
+<li>按原生sql筛选并设置别名</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TSelectFields Alias&lt;TSelectFields&gt;(this TSelectFields fields, string alias, string statement)
+    where TSelectFields : SelectFieldsBase;
+</code></pre>
+<h4 id="221-alias重载扩展方法">2.2.1 Alias重载扩展方法</h4>
+<blockquote>
+<ul>
+<li>按子查询筛选并设置别名</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TSelectFields Alias&lt;TSelectFields&gt;(this TSelectFields fields, ISingleSelect select, string alias)
+    where TSelectFields : SelectFieldsBase;
+</code></pre>
+<h3 id="23-selectcount扩展方法">2.3 SelectCount扩展方法</h3>
+<blockquote>
+<ul>
+<li>筛选计算</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TSelectFields SelectCount&lt;TSelectFields&gt;(this TSelectFields select, string alias = &quot;Count&quot;)
+    where TSelectFields : SelectFieldsBase;
+</code></pre>
+<h2 id="3-apply扩展方法">3. Apply扩展方法</h2>
+<blockquote>
+<ul>
+<li>操作Select的高阶函数</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TSelect Apply&lt;TSelect&gt;(this TSelect select, Action&lt;TSelect&gt; action)
+        where TSelect : ISelect;
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/select/index.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

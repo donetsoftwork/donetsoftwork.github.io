@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>更新简介 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="更新简介 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/update/index.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="更新简介">更新简介</h1>
+
+<blockquote>
+<ul>
+<li>UPDATE由SET、WHERE、FROM及UPDATE等部分组成</li>
+<li>其中FROM及UPDATE较为简单</li>
+<li>WHERE可以由<a href="../sqlquery/index.html">sqlquery</a>和<a href="../query/index.html">query</a>实现</li>
+<li>该功能主要处理SET子句</li>
+<li>实现了<a href="table.html">单表更新</a>和<a href="multi.html">联表更新</a></li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Update.IUpdate.html">IUpdate</a></li>
+</ul>
+</blockquote>
+<h2 id="2-基类">2. 基类</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Update.UpdateBase.html">UpdateBase</a></li>
+</ul>
+</blockquote>
+<h2 id="3-方法">3. 方法</h2>
+<h3 id="31-set">3.1 Set</h3>
+<h4 id="311-set扩展方法">3.1.1 Set扩展方法</h4>
+<blockquote>
+<ul>
+<li>增加赋值信息</li>
+<li><a class="xref" href="../../api/ShadowSql.Assigns.IAssignInfo.html">IAssignInfo</a>一般通过列(字段)来运算</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TUpdate Set&lt;TUpdate&gt;(this TUpdate update, IAssignInfo operation)
+	where TUpdate : UpdateBase, IUpdate;
+</code></pre>
+<pre><code class="lang-csharp">var table = new UserTable();
+var update = new TableUpdate(table, table.Id.Equal())
+    .Set(table.Status.AssignValue(false));
+// UPDATE [Users] SET [Status]=0 WHERE [Id]=@Id
+</code></pre>
+<h4 id="312-set重载扩展方法">3.1.2 Set重载扩展方法</h4>
+<blockquote>
+<ul>
+<li>按参数名修改</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TUpdate Set&lt;TUpdate&gt;(this TUpdate update, string columnName, string op = &quot;=&quot;, string parameter = &quot;&quot;)
+        where TUpdate : UpdateBase, IUpdate;
+</code></pre>
+<pre><code class="lang-csharp">var update = TableUpdate.Create(&quot;Users&quot;, id.EqualValue(1))
+    .Set(&quot;Status&quot;, &quot;=&quot;, &quot;DenyStatus&quot;);
+// UPDATE [Users] SET [Status]=@DenyStatus WHERE [Id]=1
+</code></pre>
+<h3 id="32-setassign扩展方法">3.2 SetAssign扩展方法</h3>
+<blockquote>
+<ul>
+<li>SetAssign是SetParameter的简化</li>
+<li>op固定为=</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TUpdate SetAssign&lt;TUpdate&gt;(this TUpdate update, string columnName, string parameter = &quot;&quot;)
+        where TUpdate : UpdateBase, IUpdate;
+</code></pre>
+<pre><code class="lang-csharp">var id = Column.Use(&quot;Id&quot;);
+var update = TableUpdate.Create(&quot;Users&quot;, id.EqualValue(1))
+    .SetAssign(&quot;Status&quot;, &quot;DenyStatus&quot;);
+// UPDATE [Users] SET [Status]=@DenyStatus WHERE [Id]=1
+</code></pre>
+<h3 id="33-setvalue扩展方法">3.3 SetValue扩展方法</h3>
+<blockquote>
+<ul>
+<li>按值修改</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TUpdate SetValue&lt;TUpdate, TValue&gt;(this TUpdate update, string columnName, TValue value, string op)
+    where TUpdate : UpdateBase, IUpdate;
+</code></pre>
+<pre><code class="lang-csharp">var id = Column.Use(&quot;Id&quot;);
+var update = TableUpdate.Create(&quot;Students&quot;, id.EqualValue(1))
+    .SetValue(&quot;Score&quot;, 8, &quot;+=&quot;);
+// UPDATE [Students] SET [Score]+=8 WHERE [Id]=1
+</code></pre>
+<h3 id="34-setvalue重载扩展方法">3.4 SetValue重载扩展方法</h3>
+<pre><code class="lang-csharp">TUpdate SetValue&lt;TUpdate, TValue&gt;(this TUpdate update, string columnName, TValue value)
+    where TUpdate : UpdateBase, IUpdate;
+</code></pre>
+<pre><code class="lang-csharp">var id = Column.Use(&quot;Id&quot;);
+var update = TableUpdate.Create(&quot;Students&quot;, id.EqualValue(1))
+    .SetValue(&quot;Score&quot;, 60);
+// UPDATE [Students] SET [Score]=60 WHERE [Id]=1
+</code></pre>
+<h3 id="35-setraw扩展方法">3.5 SetRaw扩展方法</h3>
+<blockquote>
+<ul>
+<li>按原生sql修改</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TUpdate SetRaw&lt;TUpdate&gt;(this TUpdate update, string assignSql)
+        where TUpdate : UpdateBase, IUpdate;
+</code></pre>
+<pre><code class="lang-csharp">var id = Column.Use(&quot;Id&quot;);
+var update = TableUpdate.Create(&quot;Students&quot;, id.EqualValue(1))
+    .SetRaw(&quot;Score=60&quot;);
+// UPDATE [Students] SET Score=60 WHERE [Id]=1
+</code></pre>
+<h2 id="4-其他相关功能">4. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>参看<a href="../assign/index.html">赋值简介</a></li>
+<li>参看<a href="../assign/operation.html">赋值逻辑</a></li>
+<li>参看<a href="../assign/operation.html">赋值逻辑</a></li>
+<li>参看<a href="../assign/raw.html">赋值原生sql</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/update/index.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>表游标 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="表游标 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadow/cursor/table.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="表游标">表游标</h1>
+
+<blockquote>
+<ul>
+<li>对表进行截取,处理分页和排序</li>
+<li>本组件是对ShadowSql.Core同名组件的泛型扩展</li>
+<li>支持对数据表类型特殊处理,增强功能、增加易用性</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.Cursors.ICursor.html">ICursor</a></p>
+</blockquote>
+<h2 id="2-基类">2. 基类</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.Cursors.CursorBase.html">CursorBase</a></p>
+</blockquote>
+<h2 id="3-类">3. 类</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.Cursors.TableCursor-1.html">TableCursor&lt;TTable&gt;</a></p>
+</blockquote>
+<pre><code class="lang-csharp">class TableCursor&lt;TTable&gt;
+    where TTable : ITable;
+</code></pre>
+<h2 id="4-tocursor">4. ToCursor</h2>
+<h3 id="41-tocursor扩展方法">4.1 ToCursor扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;TTable&gt; ToCursor&lt;TTable&gt;(this TTable source, int limit = 0, int offset = 0)
+        where TTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var cursor = _db.From(&quot;Users&quot;)
+    .ToCursor(10, 20);
+</code></pre>
+<h3 id="42-tocursor重载扩展方法">4.2 ToCursor重载扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;TTable&gt; ToCursor&lt;TTable&gt;(this TTable source, ISqlLogic where, int limit = 0, int offset = 0)
+        where TTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var age = Column.Use(&quot;Age&quot;);
+var cursor = _db.From(&quot;Users&quot;)
+    .ToCursor(age.GreaterValue(30), 10, 20);
+</code></pre>
+<h3 id="43-tocursor重载扩展方法">4.3 ToCursor重载扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;TTable&gt; ToCursor&lt;TTable&gt;(this TableSqlQuery&lt;TTable&gt; query, int limit = 0, int offset = 0)
+        where TTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var cursor = _db.From(&quot;Users&quot;)
+    .ToSqlQuery()
+    .Where(&quot;Age&gt;30&quot;)
+    .ToCursor(10, 20);
+</code></pre>
+<h3 id="44-tocursor重载扩展方法">4.4 ToCursor重载扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;TTable&gt; ToCursor&lt;TTable&gt;(this TableQuery&lt;TTable&gt; query, int limit = 0, int offset = 0)
+        where TTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var age = Column.Use(&quot;Age&quot;);
+var cursor = _db.From(&quot;Users&quot;)
+    .ToQuery()
+    .And(age.GreaterValue(30))
+    .ToCursor(10, 20);
+</code></pre>
+<h3 id="45-tocursor重载扩展方法">4.5 ToCursor重载扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;ITable&gt; ToCursor(this TableSqlQuery query, int limit = 0, int offset = 0);
+</code></pre>
+<pre><code class="lang-csharp">var cursor = new TableSqlQuery(&quot;Users&quot;)
+    .Where(&quot;Age&gt;30&quot;)
+    .ToCursor(10, 20);
+</code></pre>
+<h3 id="46-tocursor重载扩展方法">4.6 ToCursor重载扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;ITable&gt; ToCursor(this TableQuery query, int limit = 0, int offset = 0);
+</code></pre>
+<pre><code class="lang-csharp">var age = Column.Use(&quot;Age&quot;);
+var cursor = new TableQuery(&quot;Users&quot;)
+    .And(age.GreaterValue(30))
+    .ToCursor(10, 20);
+</code></pre>
+<h2 id="5-take">5. Take</h2>
+<blockquote>
+<ul>
+<li>Take方法是ToCursor的平替</li>
+</ul>
+</blockquote>
+<h3 id="51-take扩展方法">5.1 Take扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;TTable&gt; Take&lt;TTable&gt;(this TTable source, int limit, int offset = 0)
+        where TTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var cursor = _db.From(&quot;Users&quot;)
+    .Take(10, 20);
+</code></pre>
+<h3 id="52-take重载扩展方法">5.2 Take重载扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;TTable&gt; Take&lt;TTable&gt;(this TTable source, ISqlLogic where, int limit, int offset = 0)
+        where TTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var age = Column.Use(&quot;Age&quot;);
+var cursor = _db.From(&quot;Users&quot;)
+    .Take(age.GreaterValue(30), 10, 20);
+</code></pre>
+<h3 id="53-take重载扩展方法">5.3 Take重载扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;TTable&gt; Take&lt;TTable&gt;(this TableSqlQuery&lt;TTable&gt; query, int limit, int offset = 0)
+        where TTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var cursor = _db.From(&quot;Users&quot;)
+    .ToSqlQuery()
+    .Where(&quot;Age&gt;30&quot;)
+    .Take(10, 20);
+</code></pre>
+<h3 id="54-take重载扩展方法">5.4 Take重载扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;TTable&gt; ToCursor&lt;TTable&gt;(this TableQuery&lt;TTable&gt; query, int limit, int offset = 0)
+        where TTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var age = Column.Use(&quot;Age&quot;);
+var cursor = _db.From(&quot;Users&quot;)
+    .ToQuery()
+    .And(age.GreaterValue(30))
+    .Take(10, 20);
+</code></pre>
+<h3 id="55-take重载扩展方法">5.5 Take重载扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;ITable&gt; Take(this TableSqlQuery query, int limit, int offset = 0);
+</code></pre>
+<pre><code class="lang-csharp">var cursor = new TableSqlQuery(&quot;Users&quot;)
+    .Where(&quot;Age&gt;30&quot;)
+    .Take(10, 20);
+</code></pre>
+<h3 id="56-take重载扩展方法">5.6 Take重载扩展方法</h3>
+<pre><code class="lang-csharp">TableCursor&lt;ITable&gt; Take(this TableQuery query, int limit, int offset = 0);
+</code></pre>
+<pre><code class="lang-csharp">var age = Column.Use(&quot;Age&quot;);
+var cursor = new TableQuery(&quot;Users&quot;)
+    .And(age.GreaterValue(30))
+    .Take(10, 20);
+</code></pre>
+<h2 id="6-asc方法">6. Asc方法</h2>
+<pre><code class="lang-csharp">TableCursor&lt;TTable&gt; Asc(Func&lt;TTable, IOrderView&gt; select);
+</code></pre>
+<pre><code class="lang-csharp">var select = new UserTable()
+    .ToCursor(10, 20)
+    .Asc(table =&gt; table.Id);
+</code></pre>
+<h2 id="7-desc方法">7. Desc方法</h2>
+<pre><code class="lang-csharp">TableCursor&lt;TTable&gt; Desc(Func&lt;TTable, IOrderAsc&gt; select);
+</code></pre>
+<pre><code class="lang-csharp">var select = new UserTable()
+    .ToCursor(10, 20)
+    .Desc(table =&gt; table.Id);
+</code></pre>
+<h2 id="8-其他相关功能">8. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>本组件并非只有以上功能,其他功能参看以下文档:</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Cursors.TableCursor-1.html">TableCursor&lt;TTable&gt;</a>的方法和扩展方法部分</li>
+<li>参看<a href="index.html">游标简介</a></li>
+<li>参看<a href="../../shadowcore/cursor/index.html">ShadowSqlCore相关文档</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadow/cursor/table.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

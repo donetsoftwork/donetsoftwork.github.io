@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>TableSchema | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="TableSchema | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/ddl/schema.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="tableschema">TableSchema</h1>
+
+<blockquote>
+<ul>
+<li>作为表的影子(占位符)</li>
+<li>主要用来支持createtable</li>
+<li>与Table一样也支持select、update、insert和delete等</li>
+<li>TableSchema<a href="../shadow/sqlquery/fieldquery.html">按字段查询</a>也是会校验的,不存在的字段会抛异常</li>
+<li>本文sql示例按Sqlite数据库</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../api/ShadowSql.Identifiers.ITable.html">ITable</a></li>
+<li><a class="xref" href="../api/ShadowSql.Identifiers.ITableView.html">ITableView</a></li>
+<li><a class="xref" href="../api/ShadowSql.Identifiers.IInsertTable.html">IInsertTable</a></li>
+<li><a class="xref" href="../api/ShadowSql.Identifiers.IUpdateTable.html">IUpdateTable</a></li>
+</ul>
+</blockquote>
+<h2 id="2-tableschema类">2. TableSchema类</h2>
+<blockquote>
+<ul>
+<li>参看<a class="xref" href="../api/Shadow.DDL.Schemas.TableSchema.html">TableSchema</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class TableSchema
+    : ITable, IInsertTable, IUpdateTable, ITableView {
+    string Schema { get; }
+    string Name { get; }
+    ColumnSchema[] Columns { get; }
+    ColumnSchema[] Keys { get; }
+    ColumnSchema? GetColumn(string columName);
+}
+</code></pre>
+<h2 id="3-createtable功能">3. CreateTable功能</h2>
+<pre><code class="lang-csharp">    ColumnSchema id = new(&quot;Id&quot;, &quot;INTEGER&quot;) { ColumnType = ColumnType.Identity | ColumnType.Key };
+    ColumnSchema name = new(&quot;Name&quot;, &quot;TEXT&quot;);
+    TableSchema table = new(&quot;Students&quot;, [id, name]);
+    CreateTable create = new(table);
+// CREATE TABLE &quot;Students&quot;(&quot;Id&quot; INTEGER PRIMARY KEY AUTOINCREMENT,&quot;Name&quot; TEXT)
+</code></pre>
+<h2 id="4-droptable功能">4. DropTable功能</h2>
+<pre><code class="lang-csharp">var drop = new DropTable(&quot;Students&quot;);
+// DROP TABLE &quot;Students&quot;
+</code></pre>
+<h2 id="5-其他功能与table类似">5. 其他功能与Table类似</h2>
+<blockquote>
+<ul>
+<li>参看<a href="../shadowcore/tables/table.html">Table</a></li>
+</ul>
+</blockquote>
+<h3 id="51-表schema查询示例">5.1 表Schema查询示例</h3>
+<pre><code class="lang-csharp">UserTable table = new(&quot;Users&quot;, &quot;tenant1&quot;);
+var query = new TableQuery(table)
+    .And(table.Status.EqualValue(true));
+var cursor = new TableCursor(query, 10, 20)
+    .Desc(table.Id);
+var select = new CursorSelect(cursor)
+    .Select(table.Id, table.Name);
+// MsSql生成sql: SELECT [Id],[Name] FROM [tenant1].[Users] WHERE [Status]=1 ORDER BY [Id] DESC OFFSET 20 ROWS FETCH NEXT 10 ROWS ONLY
+</code></pre>
+<pre><code class="lang-csharp">public class UserTable(string tableName = &quot;Users&quot;, string schema = &quot;&quot;)
+    : TableSchema(tableName, [Defines.Id, Defines.Name, Defines.Status], schema)
+{
+    #region Columns
+    public readonly ColumnSchema Id = Defines.Id;
+    new public readonly ColumnSchema Name  = Defines.Name;
+    public readonly ColumnSchema Status = Defines.Status;
+    #endregion
+
+    class Defines
+    {
+        public static readonly ColumnSchema Id = new(&quot;Id&quot;) { ColumnType = ColumnType.Key };
+        public static readonly ColumnSchema Name = new(&quot;Name&quot;);
+        public static readonly ColumnSchema Status = new(&quot;Status&quot;);
+    }
+}
+</code></pre>
+<h3 id="52-ddl表达式版查询示例">5.2 DDL+表达式版查询示例</h3>
+<pre><code class="lang-csharp">var select = new TableSchema(&quot;Users&quot;, [], &quot;tenant1&quot;)
+    .ToSqlQuery&lt;User&gt;()
+    .Where(u =&gt; u.Status)
+    .Take(10, 20)
+    .Desc(u =&gt; u.Id)
+    .ToSelect();
+// MsSql生成sql: SELECT * FROM [tenant1].[Users] WHERE [Status]=1 ORDER BY [Id] DESC OFFSET 20 ROWS FETCH NEXT 10 ROWS ONLY
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/ddl/schema.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

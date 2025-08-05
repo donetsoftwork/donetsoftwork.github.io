@@ -1,0 +1,3242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>FieldQueryServices 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="FieldQueryServices 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="按字段查询服务">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_FieldQueries_FieldQueryServices.md&amp;value=---%0Auid%3A%20ShadowSql.FieldQueries.FieldQueryServices%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.FieldQueries.FieldQueryServices">
+
+
+
+  <h1 id="ShadowSql_FieldQueries_FieldQueryServices" data-uid="ShadowSql.FieldQueries.FieldQueryServices" class="text-break">
+FieldQueryServices 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.FieldQueries.html">FieldQueries</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>按字段查询服务</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FieldQueryServices</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">FieldQueryServices</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldBetweenValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldBetweenValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldBetweenValue__2___0_System_String___1___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldBetweenValue``2(``0,System.String,``1,``1)">
+  FieldBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段在两值之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue begin, TValue end) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>begin</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldBetweenValue__2___0_System_String___1___1__examples">示例</h4>
+  <p>[Id] BETWEEN 11 AND 19</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldBetween("Id", 11, 19);</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldBetween_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldBetween*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldBetween__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldBetween``1(``0,System.String,System.String,System.String)">
+  FieldBetween&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段在两参数之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldBetween&lt;TQuery&gt;(this TQuery query, string fieldName, string begin = &quot;&quot;, string end = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>begin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldBetween__1___0_System_String_System_String_System_String__examples">示例</h4>
+  <p>[Id] BETWEEN @IdBegin AND @IdEnd</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldBetween("Id", "IdBegin", "IdEnd");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldEqualValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldEqualValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldEqualValue__2___0_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldEqualValue``2(``0,System.String,``1)">
+  FieldEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldEqualValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Id]=100</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldEqualValue("Id", 100);</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldEqual_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldEqual*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldEqual__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldEqual``1(``0,System.String,System.String)">
+  FieldEqual&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldEqual&lt;TQuery&gt;(this TQuery query, string fieldName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldEqual__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Id]=@ParentId</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldEqual("Id", "ParentId");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterEqualValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldGreaterEqualValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterEqualValue__2___0_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldGreaterEqualValue``2(``0,System.String,``1)">
+  FieldGreaterEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段大于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldGreaterEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterEqualValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Score]&gt;=60</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldGreaterOrValue("Score", 60);</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterEqual_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldGreaterEqual*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterEqual__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldGreaterEqual``1(``0,System.String,System.String)">
+  FieldGreaterEqual&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段大于等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldGreaterEqual&lt;TQuery&gt;(this TQuery query, string fieldName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterEqual__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Score]&gt;=@AvgScore</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldGreaterOrEqual("Score", "AvgScore");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldGreaterValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterValue__2___0_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldGreaterValue``2(``0,System.String,``1)">
+  FieldGreaterValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段大于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldGreaterValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreaterValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Score]&gt;60</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldGreaterValue("Score", 60);</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreater_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldGreater*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreater__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldGreater``1(``0,System.String,System.String)">
+  FieldGreater&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段大于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldGreater&lt;TQuery&gt;(this TQuery query, string fieldName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldGreater__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Score]&gt;@AvgScore</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldGreater("Score", "AvgScore");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldInValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldInValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1__" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldInValue``2(``0,System.String,System.Collections.Generic.IEnumerable{``1})">
+  FieldInValue&lt;TQuery, TValue&gt;(TQuery, string, params IEnumerable&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段包含于值字段表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldInValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, params IEnumerable&lt;TValue&gt; values) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1___examples">示例</h4>
+  <p>[Id] IN (1,3,5)</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldInValue("Id", 1, 3, 5);</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldIn_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldIn*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldIn__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldIn``1(``0,System.String,System.String)">
+  FieldIn&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段包含于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldIn&lt;TQuery&gt;(this TQuery query, string fieldName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldIn__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Id] IN @Ids</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldIn("Id", "Ids");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldIsNull_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldIsNull*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldIsNull__1___0_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldIsNull``1(``0,System.String)">
+  FieldIsNull&lt;TQuery&gt;(TQuery, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段是null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldIsNull&lt;TQuery&gt;(this TQuery query, string fieldName) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldIsNull__1___0_System_String__examples">示例</h4>
+  <p>[Score] IS NULL</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldIsNull("Score");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldLessEqualValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLessEqualValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldLessEqualValue__2___0_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLessEqualValue``2(``0,System.String,``1)">
+  FieldLessEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段小于等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldLessEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldLessEqualValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Score]&lt;=60</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldLessOrEqualValue("Score", 60);</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldLessEqual_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLessEqual*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldLessEqual__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLessEqual``1(``0,System.String,System.String)">
+  FieldLessEqual&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段小于等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldLessEqual&lt;TQuery&gt;(this TQuery query, string fieldName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldLessEqual__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Score]&lt;=@AvgScore</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldLessOrEqual("Score", "AvgScore");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldLessValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLessValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldLessValue__2___0_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLessValue``2(``0,System.String,``1)">
+  FieldLessValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段小于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldLessValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldLessValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Score]&lt;60</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldLessValue("Score", 60);</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldLess_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLess*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldLess__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLess``1(``0,System.String,System.String)">
+  FieldLess&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段小于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldLess&lt;TQuery&gt;(this TQuery query, string fieldName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldLess__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Score]&lt;@AvgScore</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldLess("Score", "AvgScore");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldLikeValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLikeValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldLikeValue__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLikeValue``1(``0,System.String,System.String)">
+  FieldLikeValue&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段匹配值模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldLikeValue&lt;TQuery&gt;(this TQuery query, string fieldName, string value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldLikeValue__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Name] LIKE '张%'</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldLikeValue("Name", "张%");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldLike_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLike*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldLike__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldLike``1(``0,System.String,System.String)">
+  FieldLike&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段匹配参数模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldLike&lt;TQuery&gt;(this TQuery query, string fieldName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldLike__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Title] LIKE @KeyWord</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldLike("Title", "KeyWord");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotBetweenValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotBetweenValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotBetweenValue__2___0_System_String___1___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotBetweenValue``2(``0,System.String,``1,``1)">
+  FieldNotBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不在两值之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldNotBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue begin, TValue end) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>begin</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotBetweenValue__2___0_System_String___1___1__examples">示例</h4>
+  <p>[Id] NOT BETWEEN 11 AND 19</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldNotBetweenValue("Id", 11, 19);</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotBetween_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotBetween*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotBetween__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotBetween``1(``0,System.String,System.String,System.String)">
+  FieldNotBetween&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不在两参数之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldNotBetween&lt;TQuery&gt;(this TQuery query, string fieldName, string begin = &quot;&quot;, string end = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>begin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotBetween__1___0_System_String_System_String_System_String__examples">示例</h4>
+  <p>[Id] NOT BETWEEN @IdBegin AND @IdEnd</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldNotBetween("Id", "IdBegin", "IdEnd");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotEqualValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotEqualValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotEqualValue__2___0_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotEqualValue``2(``0,System.String,``1)">
+  FieldNotEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldNotEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotEqualValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Status]&lt;&gt;0</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldNotEqualValue("Status", false);</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotEqual_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotEqual*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotEqual__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotEqual``1(``0,System.String,System.String)">
+  FieldNotEqual&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldNotEqual&lt;TQuery&gt;(this TQuery query, string fieldName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotEqual__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Status]&lt;&gt;@FailStatus</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldNotEqual("Status", "FailStatus");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotInValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotInValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1__" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotInValue``2(``0,System.String,System.Collections.Generic.IEnumerable{``1})">
+  FieldNotInValue&lt;TQuery, TValue&gt;(TQuery, string, params IEnumerable&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不包含于值字段表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldNotInValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, params IEnumerable&lt;TValue&gt; values) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1___examples">示例</h4>
+  <p>[Id] NOT IN (1,3,5)</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldNotInValue("Id", 1, 3, 5);</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotIn_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotIn*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotIn__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotIn``1(``0,System.String,System.String)">
+  FieldNotIn&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不包含于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldNotIn&lt;TQuery&gt;(this TQuery query, string fieldName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotIn__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Id] NOT IN @Ids</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldNotIn("Id", "Ids");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotLikeValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotLikeValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotLikeValue__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotLikeValue``1(``0,System.String,System.String)">
+  FieldNotLikeValue&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不匹配值模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldNotLikeValue&lt;TQuery&gt;(this TQuery query, string fieldName, string value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotLikeValue__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Name] NOT LIKE '张%'</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldNotLikeValue("Name", "张%");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotLike_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotLike*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotLike__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotLike``1(``0,System.String,System.String)">
+  FieldNotLike&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不匹配参数模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldNotLike&lt;TQuery&gt;(this TQuery query, string fieldName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotLike__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Title] NOT LIKE @KeyWord</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldNotLike("Title", "KeyWord");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotNull_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotNull*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotNull__1___0_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldNotNull``1(``0,System.String)">
+  FieldNotNull&lt;TQuery&gt;(TQuery, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不是null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldNotNull&lt;TQuery&gt;(this TQuery query, string fieldName) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldNotNull__1___0_System_String__examples">示例</h4>
+  <p>[Score] IS NOT NULL</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldNotNull("Score");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldParameter_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldParameter*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldParameter__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldParameter``1(``0,System.String,System.String,System.String)">
+  FieldParameter&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对字段进行参数化查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldParameter&lt;TQuery&gt;(this TQuery query, string fieldName, string op = &quot;=&quot;, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>op</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>操作</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldParameter__1___0_System_String_System_String_System_String__examples">示例</h4>
+  <p>[Id]=@LastId</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldParameter("Id", "=" , "LastId");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_FieldValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_FieldValue__2___0_System_String___1_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.FieldValue``2(``0,System.String,``1,System.String)">
+  FieldValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对字段按值查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery FieldValue&lt;TQuery, TValue&gt;(this TQuery query, string fieldName, TValue value, string op = &quot;=&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+    <dt><code>op</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>操作</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_FieldQueries_FieldQueryServices_FieldValue__2___0_System_String___1_System_String__examples">示例</h4>
+  <p>[Id]&gt;100</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .FieldValue("Id", 100, "&gt;");</code></pre>
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldBetweenValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldBetweenValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldBetweenValue__2___0_System_String_System_String___1___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldBetweenValue``2(``0,System.String,System.String,``1,``1)">
+  TableFieldBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L1045"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段在两值之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue begin, TValue end) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>begin</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldBetween_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldBetween*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldBetween__1___0_System_String_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldBetween``1(``0,System.String,System.String,System.String,System.String)">
+  TableFieldBetween&lt;TQuery&gt;(TQuery, string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L1026"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段在两参数之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldBetween&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string begin = &quot;&quot;, string end = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>begin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldEqualValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldEqualValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldEqualValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldEqualValue``2(``0,System.String,System.String,``1)">
+  TableFieldEqualValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L704"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldEqual_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldEqual*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldEqual__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldEqual``1(``0,System.String,System.String,System.String)">
+  TableFieldEqual&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L688"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldEqual&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldGreaterEqualValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldGreaterEqualValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldGreaterEqualValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldGreaterEqualValue``2(``0,System.String,System.String,``1)">
+  TableFieldGreaterEqualValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L828"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段大于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldGreaterEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldGreaterEqual_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldGreaterEqual*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldGreaterEqual__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldGreaterEqual``1(``0,System.String,System.String,System.String)">
+  TableFieldGreaterEqual&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L812"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段大于等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldGreaterEqual&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldGreaterValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldGreaterValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldGreaterValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldGreaterValue``2(``0,System.String,System.String,``1)">
+  TableFieldGreaterValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L766"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段大于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldGreaterValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldGreater_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldGreater*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldGreater__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldGreater``1(``0,System.String,System.String,System.String)">
+  TableFieldGreater&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L750"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段大于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldGreater&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldInValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldInValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldInValue__2___0_System_String_System_String_System_Collections_Generic_IEnumerable___1__" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldInValue``2(``0,System.String,System.String,System.Collections.Generic.IEnumerable{``1})">
+  TableFieldInValue&lt;TQuery, TValue&gt;(TQuery, string, string, params IEnumerable&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L891"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段包含于值字段表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldInValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, params IEnumerable&lt;TValue&gt; values) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldIn_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldIn*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldIn__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldIn``1(``0,System.String,System.String,System.String)">
+  TableFieldIn&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L875"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段包含于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldIn&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldIsNull_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldIsNull*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldIsNull__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldIsNull``1(``0,System.String,System.String)">
+  TableFieldIsNull&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L936"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段是null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldIsNull&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLessEqualValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLessEqualValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLessEqualValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLessEqualValue``2(``0,System.String,System.String,``1)">
+  TableFieldLessEqualValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L859"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段小于等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldLessEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLessEqual_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLessEqual*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLessEqual__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLessEqual``1(``0,System.String,System.String,System.String)">
+  TableFieldLessEqual&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L843"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段小于等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldLessEqual&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLessValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLessValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLessValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLessValue``2(``0,System.String,System.String,``1)">
+  TableFieldLessValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L797"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段小于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldLessValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLess_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLess*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLess__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLess``1(``0,System.String,System.String,System.String)">
+  TableFieldLess&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L781"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段小于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldLess&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLikeValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLikeValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLikeValue__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLikeValue``1(``0,System.String,System.String,System.String)">
+  TableFieldLikeValue&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L980"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段匹配值模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldLikeValue&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLike_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLike*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldLike__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldLike``1(``0,System.String,System.String,System.String)">
+  TableFieldLike&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L965"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段匹配参数模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldLike&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotBetweenValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotBetweenValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotBetweenValue__2___0_System_String_System_String___1___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotBetweenValue``2(``0,System.String,System.String,``1,``1)">
+  TableFieldNotBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L1080"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不在两值之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldNotBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue begin, TValue end) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>begin</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotBetween_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotBetween*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotBetween__1___0_System_String_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotBetween``1(``0,System.String,System.String,System.String,System.String)">
+  TableFieldNotBetween&lt;TQuery&gt;(TQuery, string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L1061"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不在两参数之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldNotBetween&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string begin = &quot;&quot;, string end = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>begin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotEqualValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotEqualValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotEqualValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotEqualValue``2(``0,System.String,System.String,``1)">
+  TableFieldNotEqualValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L735"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldNotEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotEqual_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotEqual*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotEqual__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotEqual``1(``0,System.String,System.String,System.String)">
+  TableFieldNotEqual&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L719"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldNotEqual&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotInValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotInValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotInValue__2___0_System_String_System_String_System_Collections_Generic_IEnumerable___1__" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotInValue``2(``0,System.String,System.String,System.Collections.Generic.IEnumerable{``1})">
+  TableFieldNotInValue&lt;TQuery, TValue&gt;(TQuery, string, string, params IEnumerable&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L922"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不包含于值字段表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldNotInValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, params IEnumerable&lt;TValue&gt; values) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotIn_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotIn*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotIn__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotIn``1(``0,System.String,System.String,System.String)">
+  TableFieldNotIn&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L906"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不包含于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldNotIn&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotLikeValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotLikeValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotLikeValue__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotLikeValue``1(``0,System.String,System.String,System.String)">
+  TableFieldNotLikeValue&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L1010"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不匹配值模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldNotLikeValue&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotLike_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotLike*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotLike__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotLike``1(``0,System.String,System.String,System.String)">
+  TableFieldNotLike&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L995"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不匹配参数模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldNotLike&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotNull_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotNull*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldNotNull__1___0_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldNotNull``1(``0,System.String,System.String)">
+  TableFieldNotNull&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L950"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>字段不是null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldNotNull&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldParameter_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldParameter*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldParameter__1___0_System_String_System_String_System_String_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldParameter``1(``0,System.String,System.String,System.String,System.String)">
+  TableFieldParameter&lt;TQuery&gt;(TQuery, string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对字段进行参数化查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldParameter&lt;TQuery&gt;(this TQuery query, string tableName, string fieldName, string op = &quot;=&quot;, string parameter = &quot;&quot;) where TQuery : IMultiView, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>op</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>操作</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldValue_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldValue*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableFieldValue__2___0_System_String_System_String___1_System_String_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableFieldValue``2(``0,System.String,System.String,``1,System.String)">
+  TableFieldValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L673"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对字段按值查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableFieldValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string fieldName, TValue value, string op = &quot;=&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+    <dt><code>op</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>操作</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_FieldQueries_FieldQueryServices_TableField_" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableField*"></a>
+
+  <h3 id="ShadowSql_FieldQueries_FieldQueryServices_TableField__1___0_System_String_System_String_System_Func_ShadowSql_Identifiers_ICompareField_ShadowSql_Logics_AtomicLogic__" data-uid="ShadowSql.FieldQueries.FieldQueryServices.TableField``1(``0,System.String,System.String,System.Func{ShadowSql.Identifiers.ICompareField,ShadowSql.Logics.AtomicLogic})">
+  TableField&lt;Query&gt;(Query, string, string, Func&lt;ICompareField, AtomicLogic&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L638"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>按字段查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Query TableField&lt;Query&gt;(this Query query, string tableName, string fieldName, Func&lt;ICompareField, AtomicLogic&gt; logic) where Query : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">Query</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>字段名</p>
+</dd>
+    <dt><code>logic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="ShadowSql.Identifiers.ICompareField.html">ICompareField</a>, <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a>&gt;</dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Query</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>Query</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/FieldQueries/FieldQueryServices.cs/#L16" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

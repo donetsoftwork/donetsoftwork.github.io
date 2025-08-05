@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ShadowSql | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ShadowSql | .net拼写sql ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/index.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="landing" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="shadowsql">ShadowSql</h1>
+
+<blockquote>
+<ul>
+<li>一个.net sql拼写工具</li>
+<li>通过扩展Dapper实现ORM</li>
+<li>对标开源项目SqlKata</li>
+</ul>
+</blockquote>
+<h2 id="一六个子项目">一、六个子项目</h2>
+<h3 id="1精简版">1、<a href="shadowcore/index.html">精简版</a></h3>
+<blockquote>
+<ul>
+<li>.net拼接sql工具</li>
+<li>支持多种数据库,包括MsSql,MySql,Oracle,Sqlite,Postgres等</li>
+<li>整个sql拼写只使用1个StringBuilder,减少字符串碎片生成</li>
+<li>Nuget包名: ShadowSql.Core</li>
+<li>精简版</li>
+</ul>
+</blockquote>
+<h3 id="2易用版">2、<a href="shadow/index.html">易用版</a></h3>
+<blockquote>
+<ul>
+<li>.net拼接sql工具</li>
+<li>支持多种数据库,包括MsSql,MySql,Oracle,Sqlite,Postgres等</li>
+<li>整个sql拼写只使用1个StringBuilder,减少字符串碎片生成</li>
+<li>支持自定义表和自定义别名表拼接sql</li>
+<li>Nuget包名: ShadowSql</li>
+<li>易用版</li>
+</ul>
+</blockquote>
+<h3 id="3表达式版">3、<a href="expression/index.html">表达式版</a></h3>
+<blockquote>
+<ul>
+<li>.net拼接sql工具</li>
+<li>支持多种数据库,包括MsSql,MySql,Oracle,Sqlite,Postgres等</li>
+<li>整个sql拼写只使用1个StringBuilder,减少字符串碎片生成</li>
+<li>支持表达式树拼接sql</li>
+<li>Nuget包名: ShadowSql.Expressions</li>
+<li>表达式版</li>
+</ul>
+</blockquote>
+<h3 id="4ddl">4、<a href="ddl/index.html">DDL</a></h3>
+<blockquote>
+<ul>
+<li>用于拼写DDL的sql语句,主要是CreateTable</li>
+<li>搭配Dapper.Shadow可以实现执行DDL操作</li>
+<li>Nuget包名: ShadowSql.DDL</li>
+</ul>
+</blockquote>
+<h3 id="5两个dapper扩展">5、两个Dapper扩展</h3>
+<blockquote>
+<ul>
+<li><a href="dappercore/index.html">精简版扩展</a></li>
+<li><a href="dapper/index.html">易用版扩展</a></li>
+</ul>
+</blockquote>
+<h2 id="二对标开源项目sqlkata">二、对标开源项目SqlKata</h2>
+<h3 id="1拼接sql从头到尾只使用一个stringbuilder">1、拼接sql从头到尾只使用一个StringBuilder</h3>
+<h4 id="11-shadowsql通过stringbuilder拼接">1.1 ShadowSql通过StringBuilder拼接</h4>
+<blockquote>
+<ul>
+<li>拼接sql继承接口ISqlFragment和ISqlEntity</li>
+<li>对同一个StringBuilder对象进行操作</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">public interface ISqlFragment {
+    /// &lt;summary&gt;
+    /// sql拼接
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;engine&quot;&gt;数据库&lt;/param&gt;
+    /// &lt;param name=&quot;sql&quot;&gt;sql&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    bool TryWrite(ISqlEngine engine, StringBuilder sql);
+}
+public interface ISqlEntity {
+    /// &lt;summary&gt;
+    /// sql拼接
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;engine&quot;&gt;数据库&lt;/param&gt;
+    /// &lt;param name=&quot;sql&quot;&gt;sql&lt;/param&gt;
+    void Write(ISqlEngine engine, StringBuilder sql);
+}
+</code></pre>
+<h4 id="12-sqlkata通过string拼接">1.2 SqlKata通过string拼接</h4>
+<blockquote>
+<ul>
+<li>SqlKatat通过Replace、Concat和Join等进行sql拼接</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">        protected virtual string CompileConditions(SqlResult ctx, List&lt;AbstractCondition&gt; conditions) {
+            var result = new List&lt;string&gt;();
+
+            for (var i = 0; i &lt; conditions.Count; i++) {
+                var compiled = CompileCondition(ctx, conditions[i]);
+                if (string.IsNullOrEmpty(compiled))
+                    continue;
+                var boolOperator = i == 0 ? &quot;&quot; : (conditions[i].IsOr ? &quot;OR &quot; : &quot;AND &quot;);
+                result.Add(boolOperator + compiled);
+            }
+            return string.Join(&quot; &quot;, result);
+        }
+        public static string ReplaceIdentifierUnlessEscaped(this string input, string escapeCharacter, string identifier, string newIdentifier) {
+            var nonEscapedRegex = new Regex($@&quot;(?&lt;!{Regex.Escape(escapeCharacter)}){Regex.Escape(identifier)}&quot;);
+            var nonEscapedReplace = nonEscapedRegex.Replace(input, newIdentifier);
+            var escapedRegex = new Regex($@&quot;{Regex.Escape(escapeCharacter)}{Regex.Escape(identifier)}&quot;);
+            return escapedRegex.Replace(nonEscapedReplace, identifier);
+        }
+</code></pre>
+<h3 id="2执行更快内存消耗更少">2、执行更快、内存消耗更少</h3>
+<h4 id="21-简单查询对比">2.1 简单查询对比</h4>
+<blockquote>
+<ul>
+<li>简单查询对比</li>
+<li>SqlKata耗时是TableName的20倍多</li>
+<li>SqlKata耗时是SqlQuery的30倍多</li>
+<li>SqlKata耗时是Expression的9倍</li>
+<li>Logic性能最好,SqlKata耗时是他的50倍</li>
+<li>SqlKata内存消耗也远远大于以上4种</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+<th style="text-align: right;">Ratio</th>
+<th style="text-align: right;">Gen0</th>
+<th style="text-align: right;">Gen1</th>
+<th style="text-align: right;">Allocated</th>
+<th style="text-align: right;">Alloc Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ShadowSqlByTableName</td>
+<td style="text-align: right;">194.10 ns</td>
+<td style="text-align: right;">2.178 ns</td>
+<td style="text-align: right;">2.508 ns</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.0795</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">1376 B</td>
+<td style="text-align: right;">0.11</td>
+</tr>
+<tr>
+<td>ShadowSqlBySqlQuery</td>
+<td style="text-align: right;">125.34 ns</td>
+<td style="text-align: right;">1.132 ns</td>
+<td style="text-align: right;">1.211 ns</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">0.0530</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">920 B</td>
+<td style="text-align: right;">0.07</td>
+</tr>
+<tr>
+<td>ShadowSqlByExpression</td>
+<td style="text-align: right;">471.93 ns</td>
+<td style="text-align: right;">3.632 ns</td>
+<td style="text-align: right;">4.183 ns</td>
+<td style="text-align: right;">0.11</td>
+<td style="text-align: right;">0.0915</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">1584 B</td>
+<td style="text-align: right;">0.12</td>
+</tr>
+<tr>
+<td>ShadowSqlByLogic</td>
+<td style="text-align: right;">73.90 ns</td>
+<td style="text-align: right;">0.472 ns</td>
+<td style="text-align: right;">0.544 ns</td>
+<td style="text-align: right;">0.02</td>
+<td style="text-align: right;">0.0330</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">576 B</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr>
+<td>SqlKataBench</td>
+<td style="text-align: right;">4,163.90 ns</td>
+<td style="text-align: right;">18.189 ns</td>
+<td style="text-align: right;">20.946 ns</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.7365</td>
+<td style="text-align: right;">0.0040</td>
+<td style="text-align: right;">12712 B</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<ul>
+<li>更多对比信息查阅测试项目ShadowSqlBench
+<a href="https://github.com/donetsoftwork/Shadow/tree/master/Benchmarks/ShadowSqlBench">ShadowSqlBench</a></li>
+</ul>
+</blockquote>
+<h2 id="三本项目的特点">三、本项目的特点</h2>
+<h3 id="1支持影子编程">1、支持影子编程</h3>
+<h3 id="11-使用表达式树作为影子">1.1 使用表达式树作为影子</h3>
+<blockquote>
+<ul>
+<li>参看<a href="expression/index.html">表达式版</a></li>
+</ul>
+</blockquote>
+<h3 id="12-使用自定义表作为影子">1.2 使用自定义表作为影子</h3>
+<blockquote>
+<ul>
+<li>参看<a href="shadow/index.html">易用版</a></li>
+</ul>
+</blockquote>
+<h3 id="13-影子的作用">1.3 影子的作用</h3>
+<blockquote>
+<ul>
+<li>通过查看引用可以定位到使用该表或该字段的所有sql</li>
+<li>重构时查看字段引用可以准确评估影响范围</li>
+<li>删除字段相应sql拼写方法编译失败,按图索骥可以快速完成重构</li>
+<li>修改字段名相应sql可以同步重构完成</li>
+<li>实现编译检测的sql拼写</li>
+</ul>
+</blockquote>
+<h3 id="2通用轻量级">2、通用轻量级</h3>
+<blockquote>
+<ul>
+<li>跨平台,支持net7.0;net8.0;net9.0;netstandard2.0;netstandard2.1</li>
+<li>支持多种数据库(MsSql,MySql,Oracle,Sqlite,Postgres等),可扩展其他数据库方言的支持</li>
+<li>本工具很小</li>
+<li>两个Dapper扩展依赖Dapper外,不依赖其他第三方包</li>
+</ul>
+</blockquote>
+<h3 id="3高性能">3、高性能</h3>
+<blockquote>
+<ul>
+<li>拼写sql耗时更少</li>
+<li>拼写sql内存消耗更少</li>
+<li>拼写sql方便直接对接Dapper,使用Dapper高效执行sql</li>
+</ul>
+</blockquote>
+<h3 id="4简便易用">4、简便易用</h3>
+<blockquote>
+<ul>
+<li>能快速<a href="quick.html">上手</a></li>
+<li>完善的文档和丰富的使用示例</li>
+<li>大多数API和sql一致,代码可读性强,使用简单</li>
+<li>支持链式语法,大多数功能可以直接一行代码搞定</li>
+</ul>
+</blockquote>
+<h3 id="5稳定可靠">5、稳定可靠</h3>
+<blockquote>
+<ul>
+<li>单元测试覆盖率高</li>
+<li>大多数功能都有测试用例</li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/index.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

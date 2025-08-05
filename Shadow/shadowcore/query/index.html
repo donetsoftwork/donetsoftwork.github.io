@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>逻辑查询简介 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="逻辑查询简介 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/query/index.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="逻辑查询简介">逻辑查询简介</h1>
+
+<blockquote>
+<ul>
+<li>基于<a class="xref" href="../../api/ShadowSql.Logics.Logic.html">Logic</a>的实现类AndLogic、OrLogic、ComplexAndLogic及ComplexOrLogic等</li>
+<li><a class="xref" href="../../api/ShadowSql.Logics.AndLogic.html">AndLogic</a>实现AND连接逻辑</li>
+<li><a class="xref" href="../../api/ShadowSql.Logics.OrLogic.html">OrLogic</a>实现OR连接逻辑</li>
+<li><a class="xref" href="../../api/ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a>实现AND连接并支持嵌套OR查询</li>
+<li><a class="xref" href="../../api/ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a>实现OR连接并支持嵌套AND查询</li>
+<li>按And、Or来操作</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<p>IDataQuery</p>
+</blockquote>
+<h2 id="2-方法">2. 方法</h2>
+<h3 id="21-and扩展方法">2.1 And扩展方法</h3>
+<pre><code class="lang-csharp">Query And&lt;Query&gt;(this Query query, AtomicLogic logic)
+	where Query : FilterBase, IDataQuery;
+Query And&lt;Query&gt;(this Query query, AndLogic logic)
+	where Query : FilterBase, IDataQuery;
+Query And&lt;Query&gt;(this Query query, ComplexAndLogic logic)
+	where Query : FilterBase, IDataQuery;
+Query And&lt;Query&gt;(this Query query, OrLogic logic)
+	where Query : FilterBase, IDataQuery;
+Query And&lt;Query&gt;(this Query query, ComplexOrLogic logic)
+	where Query : FilterBase, IDataQuery;
+Query And&lt;Query&gt;(this Query query, Logic logic)
+	where Query : FilterBase, IDataQuery;
+Query And&lt;Query&gt;(this Query query, Func&lt;ITableView, AtomicLogic&gt; logic)
+	where Query : FilterBase, IDataQuery;
+Query And&lt;Query&gt;(this Query query, Func&lt;ITableView, OrLogic&gt; logic)
+	where Query : FilterBase, IDataQuery
+</code></pre>
+<pre><code class="lang-csharp">var users = new UserTable();
+var query = new TableQuery(users)
+     .And(users.Id.LessValue(100));
+// SELECT * FROM [Users] WHERE [Id]&lt;100
+</code></pre>
+<pre><code class="lang-csharp">var users = new UserTable();
+AndLogic andLogic = users.Id.Equal() &amp; users.Status.Equal(&quot;Status&quot;);
+var query = new TableQuery(users)
+    .And(andLogic);
+// SELECT * FROM [Users] WHERE [Id]=@Id AND [Status]=@Status
+</code></pre>
+<h3 id="22-or扩展方法">2.2 Or扩展方法</h3>
+<blockquote>
+<p>如果主要是OR查询,构造函数可以传一个空的Or查询对象来提高性能</p>
+</blockquote>
+<pre><code class="lang-csharp">Query Or&lt;Query&gt;(this Query query, AtomicLogic logic)
+    where Query : FilterBase, IDataQuery;
+Query Or&lt;Query&gt;(this Query query, AndLogic logic)
+    where Query : FilterBase, IDataQuery;
+Query Or&lt;Query&gt;(this Query query, ComplexAndLogic logic)
+    where Query : FilterBase, IDataQuery;
+Query Or&lt;Query&gt;(this Query query, OrLogic logic)
+    where Query : FilterBase, IDataQuery;
+Query Or&lt;Query&gt;(this Query query, ComplexOrLogic logic)
+    where Query : FilterBase, IDataQuery;
+Query Or&lt;Query&gt;(this Query query, Logic logic)
+    where Query : FilterBase, IDataQuery;
+Query Or&lt;Query&gt;(this Query query, Func&lt;ITableView, AtomicLogic&gt; logic)
+    where Query : FilterBase, IDataQuery;
+Query Or&lt;Query&gt;(this Query query, Func&lt;ITableView, AndLogic&gt; logic)
+    where Query : FilterBase, IDataQuery;
+</code></pre>
+<pre><code class="lang-csharp">var users = new UserTable();
+var query = new TableQuery(&quot;Users&quot;, new OrLogic())
+     .Or(users.Id.Equal())
+     .Or(users.Status.Equal(&quot;Status&quot;));
+// SELECT * FROM [Users] WHERE [Id]=@Id OR [Status]=@Status
+</code></pre>
+<pre><code class="lang-csharp">var users = new UserTable();
+var query = new TableQuery(users, new OrLogic())
+    .Or(users.Id.LessValue(100) | users.Status.EqualValue(true));
+// SELECT * FROM [Users] WHERE [Id]&lt;100 OR [Status]=1
+</code></pre>
+<h3 id="23-apply扩展方法">2.3 Apply扩展方法</h3>
+<blockquote>
+<ul>
+<li>操作Logic的高阶函数</li>
+<li>也可称开窗函数,把Query内部成员ITableView和Logic开放给用户直接使用</li>
+<li>以便于使用更直接、通用的逻辑来查询</li>
+<li>查询子函数标记static性能更好</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">Query Apply&lt;Query&gt;(this Query query, Func&lt;Logic, Logic&gt; logic)
+    where Query : FilterBase, IDataQuery
+Query Apply&lt;Query&gt;(this Query query, Func&lt;ITableView, Logic, Logic&gt; logic)
+    where Query : FilterBase, IDataQuery;
+</code></pre>
+<pre><code class="lang-csharp">var query = new TableQuery(&quot;Users&quot;)
+    .Apply(static (u, q) =&gt; q
+        .And(u.Field(&quot;Id&quot;).Equal())
+        .And(u.Field(&quot;Status&quot;).EqualValue(true))
+    );
+// SELECT * FROM [Users] WHERE [Id]=@Id AND [Status]=1
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/query/index.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

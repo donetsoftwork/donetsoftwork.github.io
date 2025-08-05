@@ -1,0 +1,3527 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>StrictQueryServices 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="StrictQueryServices 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="按列查询服务">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_StrictQueries_StrictQueryServices.md&amp;value=---%0Auid%3A%20ShadowSql.StrictQueries.StrictQueryServices%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.StrictQueries.StrictQueryServices">
+
+
+
+  <h1 id="ShadowSql_StrictQueries_StrictQueryServices" data-uid="ShadowSql.StrictQueries.StrictQueryServices" class="text-break">
+StrictQueryServices 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.StrictQueries.html">StrictQueries</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>按列查询服务</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StrictQueryServices</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">StrictQueryServices</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictBetweenValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictBetweenValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictBetweenValue__2___0_System_String___1___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictBetweenValue``2(``0,System.String,``1,``1)">
+  StrictBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列在两值之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue begin, TValue end) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>begin</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictBetweenValue__2___0_System_String___1___1__examples">示例</h4>
+  <p>[Id] BETWEEN 11 AND 19</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictBetween("Id", 11, 19);</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictBetween_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictBetween*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictBetween__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictBetween``1(``0,System.String,System.String,System.String)">
+  StrictBetween&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列在两参数之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictBetween&lt;TQuery&gt;(this TQuery query, string columnName, string begin = &quot;&quot;, string end = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>begin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictBetween__1___0_System_String_System_String_System_String__examples">示例</h4>
+  <p>[Id] BETWEEN @IdBegin AND @IdEnd</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictBetween("Id", "IdBegin", "IdEnd");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictEqualValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictEqualValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictEqualValue__2___0_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictEqualValue``2(``0,System.String,``1)">
+  StrictEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictEqualValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Id]=100</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictEqualValue("Id", 100);</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictEqual_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictEqual*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictEqual__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictEqual``1(``0,System.String,System.String)">
+  StrictEqual&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictEqual&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictEqual__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Id]=@ParentId</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictEqual("Id", "ParentId");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterEqualValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictGreaterEqualValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterEqualValue__2___0_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictGreaterEqualValue``2(``0,System.String,``1)">
+  StrictGreaterEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列大于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictGreaterEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterEqualValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Score]&gt;=60</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictGreaterOrValue("Score", 60);</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterEqual_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictGreaterEqual*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterEqual__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictGreaterEqual``1(``0,System.String,System.String)">
+  StrictGreaterEqual&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列大于等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictGreaterEqual&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterEqual__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Score]&gt;=@AvgScore</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictGreaterOrEqual("Score", "AvgScore");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictGreaterValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterValue__2___0_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictGreaterValue``2(``0,System.String,``1)">
+  StrictGreaterValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列大于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictGreaterValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreaterValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Score]&gt;60</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictGreaterValue("Score", 60);</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreater_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictGreater*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreater__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictGreater``1(``0,System.String,System.String)">
+  StrictGreater&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列大于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictGreater&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictGreater__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Score]&gt;@AvgScore</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictGreater("Score", "AvgScore");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictInValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictInValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1__" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictInValue``2(``0,System.String,System.Collections.Generic.IEnumerable{``1})">
+  StrictInValue&lt;TQuery, TValue&gt;(TQuery, string, params IEnumerable&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列包含于值列表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictInValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, params IEnumerable&lt;TValue&gt; values) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1___examples">示例</h4>
+  <p>[Id] IN (1,3,5)</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictInValue("Id", 1, 3, 5);</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictIn_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictIn*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictIn__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictIn``1(``0,System.String,System.String)">
+  StrictIn&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列包含于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictIn&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictIn__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Id] IN @Ids</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictIn("Id", "Ids");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictIsNull_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictIsNull*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictIsNull__1___0_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictIsNull``1(``0,System.String)">
+  StrictIsNull&lt;TQuery&gt;(TQuery, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列是null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictIsNull&lt;TQuery&gt;(this TQuery query, string columnName) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictIsNull__1___0_System_String__examples">示例</h4>
+  <p>[Score] IS NULL</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictIsNull("Score");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictLessEqualValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLessEqualValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictLessEqualValue__2___0_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLessEqualValue``2(``0,System.String,``1)">
+  StrictLessEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列小于等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictLessEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictLessEqualValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Score]&lt;=60</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictLessOrEqualValue("Score", 60);</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictLessEqual_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLessEqual*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictLessEqual__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLessEqual``1(``0,System.String,System.String)">
+  StrictLessEqual&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列小于等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictLessEqual&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictLessEqual__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Score]&lt;=@AvgScore</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictLessOrEqual("Score", "AvgScore");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictLessValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLessValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictLessValue__2___0_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLessValue``2(``0,System.String,``1)">
+  StrictLessValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列小于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictLessValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictLessValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Score]&lt;60</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictLessValue("Score", 60);</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictLess_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLess*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictLess__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLess``1(``0,System.String,System.String)">
+  StrictLess&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列小于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictLess&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictLess__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Score]&lt;@AvgScore</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictLess("Score", "AvgScore");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictLikeValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLikeValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictLikeValue__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLikeValue``1(``0,System.String,System.String)">
+  StrictLikeValue&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列匹配值模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictLikeValue&lt;TQuery&gt;(this TQuery query, string columnName, string value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictLikeValue__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Name] LIKE '张%'</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictLikeValue("Name", "张%");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictLike_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLike*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictLike__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictLike``1(``0,System.String,System.String)">
+  StrictLike&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列匹配参数模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictLike&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictLike__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Title] LIKE @KeyWord</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictLike("Title", "KeyWord");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotBetweenValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotBetweenValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotBetweenValue__2___0_System_String___1___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotBetweenValue``2(``0,System.String,``1,``1)">
+  StrictNotBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L649"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不在两值之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictNotBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue begin, TValue end) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>begin</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotBetweenValue__2___0_System_String___1___1__examples">示例</h4>
+  <p>[Id] NOT BETWEEN 11 AND 19</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictNotBetweenValue("Id", 11, 19);</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotBetween_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotBetween*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotBetween__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotBetween``1(``0,System.String,System.String,System.String)">
+  StrictNotBetween&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L623"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不在两参数之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictNotBetween&lt;TQuery&gt;(this TQuery query, string columnName, string begin = &quot;&quot;, string end = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>begin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotBetween__1___0_System_String_System_String_System_String__examples">示例</h4>
+  <p>[Id] NOT BETWEEN @IdBegin AND @IdEnd</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictNotBetween("Id", "IdBegin", "IdEnd");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotEqualValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotEqualValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotEqualValue__2___0_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotEqualValue``2(``0,System.String,``1)">
+  StrictNotEqualValue&lt;TQuery, TValue&gt;(TQuery, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictNotEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotEqualValue__2___0_System_String___1__examples">示例</h4>
+  <p>[Status]&lt;&gt;0</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictNotEqualValue("Status", false);</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotEqual_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotEqual*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotEqual__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotEqual``1(``0,System.String,System.String)">
+  StrictNotEqual&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictNotEqual&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotEqual__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Status]&lt;&gt;@FailStatus</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictNotEqual("Status", "FailStatus");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotInValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotInValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1__" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotInValue``2(``0,System.String,System.Collections.Generic.IEnumerable{``1})">
+  StrictNotInValue&lt;TQuery, TValue&gt;(TQuery, string, params IEnumerable&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不包含于值列表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictNotInValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, params IEnumerable&lt;TValue&gt; values) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotInValue__2___0_System_String_System_Collections_Generic_IEnumerable___1___examples">示例</h4>
+  <p>[Id] NOT IN (1,3,5)</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictNotInValue("Id", 1, 3, 5);</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotIn_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotIn*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotIn__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotIn``1(``0,System.String,System.String)">
+  StrictNotIn&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不包含于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictNotIn&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotIn__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Id] NOT IN @Ids</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictNotIn("Id", "Ids");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotLikeValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotLikeValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotLikeValue__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotLikeValue``1(``0,System.String,System.String)">
+  StrictNotLikeValue&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不匹配值模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictNotLikeValue&lt;TQuery&gt;(this TQuery query, string columnName, string value) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotLikeValue__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Name] NOT LIKE '张%'</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictNotLikeValue("Name", "张%");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotLike_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotLike*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotLike__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotLike``1(``0,System.String,System.String)">
+  StrictNotLike&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不匹配参数模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictNotLike&lt;TQuery&gt;(this TQuery query, string columnName, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotLike__1___0_System_String_System_String__examples">示例</h4>
+  <p>[Title] NOT LIKE @KeyWord</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictNotLike("Title", "KeyWord");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotNull_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotNull*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotNull__1___0_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictNotNull``1(``0,System.String)">
+  StrictNotNull&lt;TQuery&gt;(TQuery, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不是null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictNotNull&lt;TQuery&gt;(this TQuery query, string columnName) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictNotNull__1___0_System_String__examples">示例</h4>
+  <p>[Score] IS NOT NULL</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictNotNull("Score");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictParameter_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictParameter*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictParameter__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictParameter``1(``0,System.String,System.String,System.String)">
+  StrictParameter&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对列进行参数化查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictParameter&lt;TQuery&gt;(this TQuery query, string columnName, string op = &quot;=&quot;, string parameter = &quot;&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>op</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>操作</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictParameter__1___0_System_String_System_String_System_String__examples">示例</h4>
+  <p>[Id]=@LastId</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictParameter("Id", "=" , "LastId");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_StrictValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_StrictValue__2___0_System_String___1_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.StrictValue``2(``0,System.String,``1,System.String)">
+  StrictValue&lt;TQuery, TValue&gt;(TQuery, string, TValue, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对列按值查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery StrictValue&lt;TQuery, TValue&gt;(this TQuery query, string columnName, TValue value, string op = &quot;=&quot;) where TQuery : IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+    <dt><code>op</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>操作</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ShadowSql_StrictQueries_StrictQueryServices_StrictValue__2___0_System_String___1_System_String__examples">示例</h4>
+  <p>[Id]&gt;100</p>
+<pre><code class="lang-csharp">var q = new TableSqlQuery("Users")
+    .StrictValue("Id", 100, "&gt;");</code></pre>
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictBetweenValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictBetweenValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictBetweenValue__2___0_System_String_System_String___1___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictBetweenValue``2(``0,System.String,System.String,``1,``1)">
+  TableStrictBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L1100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列在两值之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue begin, TValue end) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>begin</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictBetween_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictBetween*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictBetween__1___0_System_String_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictBetween``1(``0,System.String,System.String,System.String,System.String)">
+  TableStrictBetween&lt;TQuery&gt;(TQuery, string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L1080"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列在两参数之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictBetween&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string begin = &quot;&quot;, string end = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>begin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictEqualValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictEqualValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictEqualValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictEqualValue``2(``0,System.String,System.String,``1)">
+  TableStrictEqualValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L737"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictEqual_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictEqual*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictEqual__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictEqual``1(``0,System.String,System.String,System.String)">
+  TableStrictEqual&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictEqual&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictGreaterEqualValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictGreaterEqualValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictGreaterEqualValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictGreaterEqualValue``2(``0,System.String,System.String,``1)">
+  TableStrictGreaterEqualValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L869"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列大于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictGreaterEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictGreaterEqual_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictGreaterEqual*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictGreaterEqual__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictGreaterEqual``1(``0,System.String,System.String,System.String)">
+  TableStrictGreaterEqual&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L852"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列大于等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictGreaterEqual&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictGreaterValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictGreaterValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictGreaterValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictGreaterValue``2(``0,System.String,System.String,``1)">
+  TableStrictGreaterValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L803"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列大于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictGreaterValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictGreater_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictGreater*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictGreater__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictGreater``1(``0,System.String,System.String,System.String)">
+  TableStrictGreater&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L786"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列大于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictGreater&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictInValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictInValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictInValue__2___0_System_String_System_String_System_Collections_Generic_IEnumerable___1__" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictInValue``2(``0,System.String,System.String,System.Collections.Generic.IEnumerable{``1})">
+  TableStrictInValue&lt;TQuery, TValue&gt;(TQuery, string, string, params IEnumerable&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L936"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列包含于值列表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictInValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, params IEnumerable&lt;TValue&gt; values) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictIn_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictIn*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictIn__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictIn``1(``0,System.String,System.String,System.String)">
+  TableStrictIn&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L919"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列包含于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictIn&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictIsNull_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictIsNull*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictIsNull__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictIsNull``1(``0,System.String,System.String)">
+  TableStrictIsNull&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L984"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列是null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictIsNull&lt;TQuery&gt;(this TQuery query, string tableName, string columnName) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLessEqualValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLessEqualValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLessEqualValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLessEqualValue``2(``0,System.String,System.String,``1)">
+  TableStrictLessEqualValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L902"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列小于等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictLessEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLessEqual_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLessEqual*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLessEqual__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLessEqual``1(``0,System.String,System.String,System.String)">
+  TableStrictLessEqual&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L885"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列小于等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictLessEqual&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLessValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLessValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLessValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLessValue``2(``0,System.String,System.String,``1)">
+  TableStrictLessValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L836"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列小于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictLessValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLess_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLess*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLess__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLess``1(``0,System.String,System.String,System.String)">
+  TableStrictLess&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L819"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列小于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictLess&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLikeValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLikeValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLikeValue__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLikeValue``1(``0,System.String,System.String,System.String)">
+  TableStrictLikeValue&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L1031"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列匹配值模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictLikeValue&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLike_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLike*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictLike__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictLike``1(``0,System.String,System.String,System.String)">
+  TableStrictLike&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L1015"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列匹配参数模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictLike&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotBetweenValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotBetweenValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotBetweenValue__2___0_System_String_System_String___1___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotBetweenValue``2(``0,System.String,System.String,``1,``1)">
+  TableStrictNotBetweenValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L1137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不在两值之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictNotBetweenValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue begin, TValue end) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>begin</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <span class="xref">TValue</span></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotBetween_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotBetween*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotBetween__1___0_System_String_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotBetween``1(``0,System.String,System.String,System.String,System.String)">
+  TableStrictNotBetween&lt;TQuery&gt;(TQuery, string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L1117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不在两参数之前</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictNotBetween&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string begin = &quot;&quot;, string end = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>begin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围开始</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>范围结束</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotEqualValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotEqualValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotEqualValue__2___0_System_String_System_String___1_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotEqualValue``2(``0,System.String,System.String,``1)">
+  TableStrictNotEqualValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L770"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不等于值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictNotEqualValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotEqual_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotEqual*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotEqual__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotEqual``1(``0,System.String,System.String,System.String)">
+  TableStrictNotEqual&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不等于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictNotEqual&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotInValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotInValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotInValue__2___0_System_String_System_String_System_Collections_Generic_IEnumerable___1__" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotInValue``2(``0,System.String,System.String,System.Collections.Generic.IEnumerable{``1})">
+  TableStrictNotInValue&lt;TQuery, TValue&gt;(TQuery, string, string, params IEnumerable&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L969"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不包含于值列表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictNotInValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, params IEnumerable&lt;TValue&gt; values) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotIn_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotIn*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotIn__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotIn``1(``0,System.String,System.String,System.String)">
+  TableStrictNotIn&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L952"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不包含于参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictNotIn&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotLikeValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotLikeValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotLikeValue__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotLikeValue``1(``0,System.String,System.String,System.String)">
+  TableStrictNotLikeValue&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L1063"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不匹配值模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictNotLikeValue&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string value) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotLike_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotLike*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotLike__1___0_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotLike``1(``0,System.String,System.String,System.String)">
+  TableStrictNotLike&lt;TQuery&gt;(TQuery, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L1047"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不匹配参数模式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictNotLike&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string parameter = &quot;&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotNull_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotNull*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictNotNull__1___0_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictNotNull``1(``0,System.String,System.String)">
+  TableStrictNotNull&lt;TQuery&gt;(TQuery, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L999"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>列不是null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictNotNull&lt;TQuery&gt;(this TQuery query, string tableName, string columnName) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictParameter_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictParameter*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictParameter__1___0_System_String_System_String_System_String_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictParameter``1(``0,System.String,System.String,System.String,System.String)">
+  TableStrictParameter&lt;TQuery&gt;(TQuery, string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对列进行参数化查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictParameter&lt;TQuery&gt;(this TQuery query, string tableName, string columnName, string op = &quot;=&quot;, string parameter = &quot;&quot;) where TQuery : IMultiView, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>op</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>操作</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictValue_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictValue*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrictValue__2___0_System_String_System_String___1_System_String_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrictValue``2(``0,System.String,System.String,``1,System.String)">
+  TableStrictValue&lt;TQuery, TValue&gt;(TQuery, string, string, TValue, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L704"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>对列按值查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TQuery TableStrictValue&lt;TQuery, TValue&gt;(this TQuery query, string tableName, string columnName, TValue value, string op = &quot;=&quot;) where TQuery : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">TQuery</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>值</p>
+</dd>
+    <dt><code>op</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>操作</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TQuery</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TQuery</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="ShadowSql_StrictQueries_StrictQueryServices_TableStrict_" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrict*"></a>
+
+  <h3 id="ShadowSql_StrictQueries_StrictQueryServices_TableStrict__1___0_System_String_System_String_System_Func_ShadowSql_Identifiers_IField_ShadowSql_Logics_AtomicLogic__" data-uid="ShadowSql.StrictQueries.StrictQueryServices.TableStrict``1(``0,System.String,System.String,System.Func{ShadowSql.Identifiers.IField,ShadowSql.Logics.AtomicLogic})">
+  TableStrict&lt;Query&gt;(Query, string, string, Func&lt;IField, AtomicLogic&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L667"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>按列查询</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Query TableStrict&lt;Query&gt;(this Query query, string tableName, string columnName, Func&lt;IField, AtomicLogic&gt; logic) where Query : MultiTableBase, IDataSqlQuery</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <span class="xref">Query</span></dt>
+    <dd><p>查询</p>
+</dd>
+    <dt><code>tableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>表名</p>
+</dd>
+    <dt><code>columnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>列名</p>
+</dd>
+    <dt><code>logic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="ShadowSql.Identifiers.IField.html">IField</a>, <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a>&gt;</dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Query</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>Query</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">异常</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql/StrictQueries/StrictQueryServices.cs/#L16" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

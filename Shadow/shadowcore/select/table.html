@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>数据获取 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="数据获取 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/select/table.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="数据获取">数据获取</h1>
+
+<blockquote>
+<ul>
+<li>数据获取组件</li>
+<li>本组件用来处理sql的SELECT语句</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.Select.ISelect.html">ISelect</a></p>
+</blockquote>
+<h2 id="2-使用方法">2. 使用方法</h2>
+<h3 id="21-从表获取">2.1 从表获取</h3>
+<pre><code class="lang-csharp">var select = new TableSelect(_db.From(&quot;Users&quot;))
+    .Select(&quot;Id&quot;, &quot;Name&quot;);
+// SELECT [Id],[Name] FROM [Users]
+</code></pre>
+<h3 id="22-从sqlquery获取">2.2 从SqlQuery获取</h3>
+<blockquote>
+<p><a href="../sqlquery/table.html">SqlQuery</a></p>
+</blockquote>
+<pre><code class="lang-csharp">var table = new UserTable();
+var query = new TableSqlQuery(table)
+    .Where(table.Status.EqualValue(true));
+var select = new TableSelect(query)
+    .Select(table.Id, table.Name);
+// SELECT [Id],[Name] FROM [Users] WHERE [Status]=1
+</code></pre>
+<h3 id="23-从query获取">2.3 从Query获取</h3>
+<blockquote>
+<p><a href="../query/table.html">Query</a></p>
+</blockquote>
+<pre><code class="lang-csharp">var table = new UserTable();
+var query = new TableQuery(table)
+    .And(table.Status.EqualValue(true));
+var select = new TableSelect(query)
+    .Select(table.Id, table.Name);
+// SELECT [Id],[Name] FROM [Users] WHERE [Status]=1
+</code></pre>
+<h3 id="24-从groupbysqlquery获取">2.4 从GroupBySqlQuery获取</h3>
+<blockquote>
+<p><a href="../sqlquery/groupby.html">GroupBySqlQuery</a></p>
+</blockquote>
+<pre><code class="lang-csharp">var table = new CommentTable();
+var query = new TableSqlQuery(table)
+    .Where(table.Pick.EqualValue(true));
+var groupBy = GroupBySqlQuery.Create(query, table.PostId);
+var select = new TableSelect(groupBy)
+    .Select(table.PostId, groupBy.CountAs(&quot;CommentCount&quot;));
+// SELECT [PostId],COUNT(*) AS CommentCount FROM [Comments] WHERE [Pick]=1 GROUP BY [PostId]
+</code></pre>
+<h3 id="25-从groupbyquery获取">2.5 从GroupByQuery获取</h3>
+<blockquote>
+<p><a href="../query/groupby.html">GroupByQuery</a></p>
+</blockquote>
+<pre><code class="lang-csharp">var table = new CommentTable();
+var query = new TableQuery(table)
+    .And(table.Pick.EqualValue(true));
+var groupBy = GroupByQuery.Create(query, table.PostId);
+var select = new TableSelect(groupBy)
+    .Select(table.PostId, groupBy.CountAs(&quot;CommentCount&quot;));
+// SELECT [PostId],COUNT(*) AS CommentCount FROM [Comments] WHERE [Pick]=1 GROUP BY [PostId]
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/select/table.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

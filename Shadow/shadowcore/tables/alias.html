@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>别名表 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="别名表 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/tables/alias.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="别名表">别名表</h1>
+
+<blockquote>
+<ul>
+<li>作为别名表的影子(占位符)</li>
+<li>主要用来联表或子查询</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IAliasTable.html">IAliasTable</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.IAliasTable-1.html">IAliasTable&lt;TTable&gt;</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Identifiers.ITableView.html">ITableView</a></li>
+</ul>
+</blockquote>
+<h2 id="2-tablealias类">2. TableAlias类</h2>
+<blockquote>
+<ul>
+<li>参看<a class="xref" href="../../api/ShadowSql.Variants.TableAlias-1.html">TableAlias&lt;TTable&gt;</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class TableAlias&lt;TTable&gt; : IAliasTable&lt;TTable&gt;, IAliasTable{
+	TTable Target { get; }
+	IEnumerable&lt;IPrefixField&gt; PrefixFields { get; }
+	IPrefixField AddColumn(IColumn column);
+}
+</code></pre>
+<h2 id="3-as扩展方法">3. As扩展方法</h2>
+<blockquote>
+<ul>
+<li>从Table创建<a class="xref" href="../../api/ShadowSql.Variants.TableAlias-1.html">TableAlias&lt;TTable&gt;</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TableAlias&lt;TTable&gt; As&lt;TTable&gt;(this TTable table, string alias)
+	where TTable : ITable
+</code></pre>
+<h2 id="4-联表获取">4. 联表获取</h2>
+<blockquote>
+<ul>
+<li>参看<a href="../../shadow/select/join.html">联表获取</a></li>
+<li>参看<a href="../../shadow/select/joincursor.html">联表分页</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var c = new Table(&quot;Comments&quot;)
+    .As(&quot;c&quot;);
+var p = new Table(&quot;Posts&quot;)
+    .As(&quot;p&quot;);
+var select = c.SqlJoin(p)
+    .OnColumn(&quot;PostId&quot;, &quot;Id&quot;)
+    .ToSelect()
+    .SelectTable(c);
+// SELECT c.* FROM [Comments] AS c INNER JOIN [Posts] AS p ON c.[PostId]=p.[Id]
+</code></pre>
+<h2 id="5-联表更新">5. 联表更新</h2>
+<blockquote>
+<ul>
+<li>参看<a href="../../shadow/update/multi.html">联表更新精简版</a></li>
+<li>参看<a href="../../shadow/update/multi.html">联表更新易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var c = new Table(&quot;Comments&quot;)
+    .As(&quot;c&quot;);
+var p = new Table(&quot;Posts&quot;)
+    .As(&quot;p&quot;);
+var update = c.SqlJoin(p)
+    .OnColumn(&quot;PostId&quot;, &quot;Id&quot;)
+    .Root
+    .Where(p.Field(&quot;Author&quot;).LikeValue(&quot;%专家&quot;))
+    .ToUpdate()
+    .Update(c)
+    .SetValue(&quot;Pick&quot;, true);
+// UPDATE c SET c.[Pick]=1 FROM [Comments] AS c INNER JOIN [Posts] AS p ON c.[PostId]=p.[Id] WHERE p.[Author] LIKE '%专家'
+</code></pre>
+<h2 id="6-联表删除">6. 联表删除</h2>
+<blockquote>
+<ul>
+<li>参看<a href="../../shadow/delete/multi.html">联表删除精简版</a></li>
+<li>参看<a href="../../shadow/delete/multi.html">联表删除易用版</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var c = new Table(&quot;Comments&quot;)
+    .As(&quot;c&quot;);
+var p = new Table(&quot;Posts&quot;)
+    .As(&quot;p&quot;);
+var update = c.SqlJoin(p)
+    .OnColumn(&quot;PostId&quot;, &quot;Id&quot;)
+    .Root
+    .TableFieldEqualValue(&quot;p&quot;, &quot;Author&quot;, &quot;王二&quot;)
+    .ToDelete()
+    .Delete(c);
+// DELETE c FROM [Comments] AS c INNER JOIN [Posts] AS p ON c.[PostId]=p.[Id] WHERE p.[Author]='王二'
+</code></pre>
+<h2 id="7-自定义别名表">7. 自定义别名表</h2>
+<blockquote>
+<ul>
+<li>继承TableAlias的自定义别名表也继承了TableAlias的所有功能</li>
+<li>更方便联表操作</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">public class CommentAliasTable : TableAlias&lt;CommentTable&gt; {
+    public CommentAliasTable(string tableAlias)
+        : this(new CommentTable(&quot;Comments&quot;), tableAlias) { }
+    public CommentAliasTable(CommentTable table, string tableAlias)
+        : base(table, tableAlias) {
+        Id = AddColumn(table.Id);
+        UserId = AddColumn(table.UserId);
+        PostId = AddColumn(table.PostId);
+        Content = AddColumn(table.Content);
+        Pick = AddColumn(table.Pick);
+    }
+    public readonly IPrefixField Id;
+    public readonly IPrefixField UserId;
+    public readonly IPrefixField PostId;
+    public readonly IPrefixField Content;
+    public readonly IPrefixField Pick;
+}
+public class PostAliasTable : TableAlias&lt;PostTable&gt; {
+    public PostAliasTable(string tableAlias)
+        : this(new PostTable(&quot;Posts&quot;), tableAlias) { }
+    public PostAliasTable(PostTable table, string tableAlias)
+        : base(table, tableAlias) {
+        Id = AddColumn(table.Id);
+        Title = AddColumn(table.Title);
+        Author = AddColumn(table.Author);
+        AuthorId = AddColumn(table.AuthorId);
+    }
+    public readonly IPrefixField Id;
+    public readonly IPrefixField Title;
+    public readonly IPrefixField Author;
+    public readonly IPrefixField AuthorId;
+}
+</code></pre>
+<pre><code class="lang-csharp">CommentAliasTable c = new(&quot;c&quot;);
+PostAliasTable p = new(&quot;p&quot;);
+var delete = c.SqlJoin(p)
+    .On(c.PostId, p.Id)
+    .Root
+    .Where(p.Author.EqualValue(&quot;王二&quot;))
+    .ToDelete()
+    .Delete(c);
+// DELETE c FROM [Comments] AS c INNER JOIN [Posts] AS p ON c.[PostId]=p.[Id] WHERE p.[Author]='王二'
+</code></pre>
+<h2 id="9-其他相关功能">9. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>本组件并非只支持以上功能,其他功能参看以下文档:</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Variants.TableAlias-1.html">TableAlias&lt;TTable&gt;</a></li>
+<li>参看<a href="../../shadow/select/join.html">联表获取</a></li>
+<li>参看<a href="../../shadow/select/joincursor.html">联表分页</a></li>
+<li>参看<a href="../../shadow/update/multi.html">联表更新精简版</a></li>
+<li>参看<a href="../../shadow/update/multi.html">联表更新易用版</a></li>
+<li>参看<a href="../../shadow/delete/multi.html">联表删除精简版</a></li>
+<li>参看<a href="../../shadow/delete/multi.html">联表删除易用版</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/tables/alias.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

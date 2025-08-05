@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>EmptyLogic 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="EmptyLogic 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="空逻辑">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_Logics_EmptyLogic.md&amp;value=---%0Auid%3A%20ShadowSql.Logics.EmptyLogic%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.Logics.EmptyLogic">
+
+
+
+  <h1 id="ShadowSql_Logics_EmptyLogic" data-uid="ShadowSql.Logics.EmptyLogic" class="text-break">
+EmptyLogic 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.Logics.html">Logics</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>空逻辑</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class EmptyLogic : ISqlLogic, ISqlFragment</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">EmptyLogic</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Logics.ISqlLogic.html">ISqlLogic</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlFragment.html">ISqlFragment</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_AndLogic_">ShadowSqlCoreServices.And(EmptyLogic, AndLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_AtomicLogic_">ShadowSqlCoreServices.And(EmptyLogic, AtomicLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_ComplexAndLogic_">ShadowSqlCoreServices.And(EmptyLogic, ComplexAndLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_ComplexOrLogic_">ShadowSqlCoreServices.And(EmptyLogic, ComplexOrLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_EmptyLogic_">ShadowSqlCoreServices.And(EmptyLogic, EmptyLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_OrLogic_">ShadowSqlCoreServices.And(EmptyLogic, OrLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_And_ShadowSql_Logics_EmptyLogic_ShadowSql_Queries_SqlAndQuery_">ShadowSqlCoreServices.And(EmptyLogic, SqlAndQuery)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_AndLogic_">ShadowSqlCoreServices.Or(EmptyLogic, AndLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_AtomicLogic_">ShadowSqlCoreServices.Or(EmptyLogic, AtomicLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_ComplexAndLogic_">ShadowSqlCoreServices.Or(EmptyLogic, ComplexAndLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_ComplexOrLogic_">ShadowSqlCoreServices.Or(EmptyLogic, ComplexOrLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_EmptyLogic_">ShadowSqlCoreServices.Or(EmptyLogic, EmptyLogic)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Or_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_OrLogic_">ShadowSqlCoreServices.Or(EmptyLogic, OrLogic)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">字段
+</h2>
+
+
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_Instance" data-uid="ShadowSql.Logics.EmptyLogic.Instance">
+  Instance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>单例</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly EmptyLogic Instance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">字段值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_Not_" data-uid="ShadowSql.Logics.EmptyLogic.Not*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_Not" data-uid="ShadowSql.Logics.EmptyLogic.Not">
+  Not()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>not Empty还为Empty</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmptyLogic Not()</code></pre>
+  </div>
+
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_TryWrite_" data-uid="ShadowSql.Logics.EmptyLogic.TryWrite*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_TryWrite_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_" data-uid="ShadowSql.Logics.EmptyLogic.TryWrite(ShadowSql.Engines.ISqlEngine,System.Text.StringBuilder)">
+  TryWrite(ISqlEngine, StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>sql拼接</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryWrite(ISqlEngine engine, StringBuilder sql)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>engine</code> <a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></dt>
+    <dd><p>数据库</p>
+</dd>
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>sql</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">运算符
+</h2>
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_AndLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.AndLogic,ShadowSql.Logics.EmptyLogic)">
+  operator &amp;(AndLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AndLogic operator &amp;(AndLogic other, EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd></dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.AtomicLogic,ShadowSql.Logics.EmptyLogic)">
+  operator &amp;(AtomicLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtomicLogic operator &amp;(AtomicLogic other, EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_ComplexAndLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.ComplexAndLogic,ShadowSql.Logics.EmptyLogic)">
+  operator &amp;(ComplexAndLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ComplexAndLogic operator &amp;(ComplexAndLogic other, EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd></dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_ComplexOrLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.ComplexOrLogic,ShadowSql.Logics.EmptyLogic)">
+  operator &amp;(ComplexOrLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator &amp;(ComplexOrLogic other, EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd></dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_AndLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.AndLogic)">
+  operator &amp;(EmptyLogic, AndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AndLogic operator &amp;(EmptyLogic logic, AndLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_AtomicLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.AtomicLogic)">
+  operator &amp;(EmptyLogic, AtomicLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtomicLogic operator &amp;(EmptyLogic logic, AtomicLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_ComplexAndLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.ComplexAndLogic)">
+  operator &amp;(EmptyLogic, ComplexAndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ComplexAndLogic operator &amp;(EmptyLogic logic, ComplexAndLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_ComplexOrLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.ComplexOrLogic)">
+  operator &amp;(EmptyLogic, ComplexOrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator &amp;(EmptyLogic logic, ComplexOrLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.EmptyLogic)">
+  operator &amp;(EmptyLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EmptyLogic operator &amp;(EmptyLogic logic, EmptyLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_OrLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.OrLogic)">
+  operator &amp;(EmptyLogic, OrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator &amp;(EmptyLogic logic, OrLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseAnd_ShadowSql_Logics_OrLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseAnd(ShadowSql.Logics.OrLogic,ShadowSql.Logics.EmptyLogic)">
+  operator &amp;(OrLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>与逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator &amp;(OrLogic other, EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd></dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_AndLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.AndLogic,ShadowSql.Logics.EmptyLogic)">
+  operator |(AndLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator |(AndLogic other, EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd></dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_AtomicLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.AtomicLogic,ShadowSql.Logics.EmptyLogic)">
+  operator |(AtomicLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtomicLogic operator |(AtomicLogic other, EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_ComplexAndLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.ComplexAndLogic,ShadowSql.Logics.EmptyLogic)">
+  operator |(ComplexAndLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator |(ComplexAndLogic other, EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd></dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_ComplexOrLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.ComplexOrLogic,ShadowSql.Logics.EmptyLogic)">
+  operator |(ComplexOrLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ComplexOrLogic operator |(ComplexOrLogic other, EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd></dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_AndLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.AndLogic)">
+  operator |(EmptyLogic, AndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator |(EmptyLogic logic, AndLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AndLogic.html">AndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_AtomicLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.AtomicLogic)">
+  operator |(EmptyLogic, AtomicLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtomicLogic operator |(EmptyLogic logic, AtomicLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.AtomicLogic.html">AtomicLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_ComplexAndLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.ComplexAndLogic)">
+  operator |(EmptyLogic, ComplexAndLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logic operator |(EmptyLogic logic, ComplexAndLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexAndLogic.html">ComplexAndLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.Logic.html">Logic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_ComplexOrLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.ComplexOrLogic)">
+  operator |(EmptyLogic, ComplexOrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ComplexOrLogic operator |(EmptyLogic logic, ComplexOrLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.ComplexOrLogic.html">ComplexOrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.EmptyLogic)">
+  operator |(EmptyLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EmptyLogic operator |(EmptyLogic logic, EmptyLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_EmptyLogic_ShadowSql_Logics_OrLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.EmptyLogic,ShadowSql.Logics.OrLogic)">
+  operator |(EmptyLogic, OrLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OrLogic operator |(EmptyLogic logic, OrLogic other)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_BitwiseOr_ShadowSql_Logics_OrLogic_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_BitwiseOr(ShadowSql.Logics.OrLogic,ShadowSql.Logics.EmptyLogic)">
+  operator |(OrLogic, EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>或逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OrLogic operator |(OrLogic other, EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd></dd>
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.OrLogic.html">OrLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Logics_EmptyLogic_op_LogicalNot_" data-uid="ShadowSql.Logics.EmptyLogic.op_LogicalNot*"></a>
+
+  <h3 id="ShadowSql_Logics_EmptyLogic_op_LogicalNot_ShadowSql_Logics_EmptyLogic_" data-uid="ShadowSql.Logics.EmptyLogic.op_LogicalNot(ShadowSql.Logics.EmptyLogic)">
+  operator !(EmptyLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>反逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EmptyLogic operator !(EmptyLogic logic)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>logic</code> <a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd><p>查询逻辑</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Logics.EmptyLogic.html">EmptyLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Logics/EmptyLogic.cs/#L10" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

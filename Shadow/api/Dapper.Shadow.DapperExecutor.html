@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>DapperExecutor 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="DapperExecutor 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="Dapper执行器">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=Dapper_Shadow_DapperExecutor.md&amp;value=---%0Auid%3A%20Dapper.Shadow.DapperExecutor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Dapper.Shadow.DapperExecutor">
+
+
+
+  <h1 id="Dapper_Shadow_DapperExecutor" data-uid="Dapper.Shadow.DapperExecutor" class="text-break">
+DapperExecutor 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="Dapper.html">Dapper</a>.<a class="xref" href="Dapper.Shadow.html">Shadow</a></dd></dl>
+  <dl><dt>程序集</dt><dd>Dapper.Shadow.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Dapper执行器</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DapperExecutor : IExecutor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">DapperExecutor</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="Dapper.Shadow.IExecutor.html">IExecutor</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>衍生</dt>
+    <dd>
+      <div><a class="xref" href="Dapper.Shadow.ParametricExecutor.html">ParametricExecutor</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_From_Dapper_Shadow_IExecutor_System_String_">DapperShadowCoreServices.From(IExecutor, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="Dapper_Shadow_DapperExecutor__ctor_" data-uid="Dapper.Shadow.DapperExecutor.#ctor*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor__ctor_ShadowSql_Engines_ISqlEngine_System_Data_IDbConnection_System_Boolean_System_Int32_" data-uid="Dapper.Shadow.DapperExecutor.#ctor(ShadowSql.Engines.ISqlEngine,System.Data.IDbConnection,System.Boolean,System.Int32)">
+  DapperExecutor(ISqlEngine, IDbConnection, bool, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Dapper执行器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DapperExecutor(ISqlEngine engine, IDbConnection connection, bool buffered = true, int capacity = 128)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>engine</code> <a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></dt>
+    <dd><p>数据库引擎</p>
+</dd>
+    <dt><code>connection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.idbconnection">IDbConnection</a></dt>
+    <dd><p>数据库连接</p>
+</dd>
+    <dt><code>buffered</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>capacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">字段
+</h2>
+
+
+
+  <h3 id="Dapper_Shadow_DapperExecutor__capacity" data-uid="Dapper.Shadow.DapperExecutor._capacity">
+  _capacity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>sql语句默认大小</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int _capacity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">字段值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Dapper_Shadow_DapperExecutor__engine" data-uid="Dapper.Shadow.DapperExecutor._engine">
+  _engine
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>数据库引擎</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ISqlEngine _engine</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">字段值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Buffered_" data-uid="Dapper.Shadow.DapperExecutor.Buffered*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Buffered" data-uid="Dapper.Shadow.DapperExecutor.Buffered">
+  Buffered
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether to buffer results in memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Buffered { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Capacity_" data-uid="Dapper.Shadow.DapperExecutor.Capacity*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Capacity" data-uid="Dapper.Shadow.DapperExecutor.Capacity">
+  Capacity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>sql语句默认大小</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Capacity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_CommandTimeout_" data-uid="Dapper.Shadow.DapperExecutor.CommandTimeout*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_CommandTimeout" data-uid="Dapper.Shadow.DapperExecutor.CommandTimeout">
+  CommandTimeout
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of seconds before command execution timeout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? CommandTimeout { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Connection_" data-uid="Dapper.Shadow.DapperExecutor.Connection*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Connection" data-uid="Dapper.Shadow.DapperExecutor.Connection">
+  Connection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>数据库连接</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDbConnection Connection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.idbconnection">IDbConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Engine_" data-uid="Dapper.Shadow.DapperExecutor.Engine*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Engine" data-uid="Dapper.Shadow.DapperExecutor.Engine">
+  Engine
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>数据库引擎</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISqlEngine Engine { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Engines.ISqlEngine.html">ISqlEngine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Transaction_" data-uid="Dapper.Shadow.DapperExecutor.Transaction*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Transaction" data-uid="Dapper.Shadow.DapperExecutor.Transaction">
+  Transaction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The transaction to use for this command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDbTransaction? Transaction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.idbtransaction">IDbTransaction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="Dapper_Shadow_DapperExecutor_BeginTransaction_" data-uid="Dapper.Shadow.DapperExecutor.BeginTransaction*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_BeginTransaction" data-uid="Dapper.Shadow.DapperExecutor.BeginTransaction">
+  BeginTransaction()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>开启事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginTransaction()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_BeginTransaction_" data-uid="Dapper.Shadow.DapperExecutor.BeginTransaction*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_BeginTransaction_System_Data_IsolationLevel_" data-uid="Dapper.Shadow.DapperExecutor.BeginTransaction(System.Data.IsolationLevel)">
+  BeginTransaction(IsolationLevel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>开启事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginTransaction(IsolationLevel level)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>level</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.isolationlevel">IsolationLevel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Commit_" data-uid="Dapper.Shadow.DapperExecutor.Commit*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Commit" data-uid="Dapper.Shadow.DapperExecutor.Commit">
+  Commit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>提交事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Commit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_CountAsync_" data-uid="Dapper.Shadow.DapperExecutor.CountAsync*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_CountAsync__1_ShadowSql_Identifiers_ITableView_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.CountAsync``1(ShadowSql.Identifiers.ITableView,System.Object)">
+  CountAsync&lt;T&gt;(ITableView, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步计数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;T?&gt; CountAsync&lt;T&gt;(ITableView view, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>view</code> <a class="xref" href="ShadowSql.Identifiers.ITableView.html">ITableView</a></dt>
+    <dd></dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Count_" data-uid="Dapper.Shadow.DapperExecutor.Count*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Count__1_ShadowSql_Identifiers_ITableView_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.Count``1(ShadowSql.Identifiers.ITableView,System.Object)">
+  Count&lt;T&gt;(ITableView, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>计数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual T? Count&lt;T&gt;(ITableView view, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>view</code> <a class="xref" href="ShadowSql.Identifiers.ITableView.html">ITableView</a></dt>
+    <dd></dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Execute_" data-uid="Dapper.Shadow.DapperExecutor.Execute*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Execute_ShadowSql_Fragments_ISqlEntity_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.Execute(ShadowSql.Fragments.ISqlEntity,System.Object)">
+  Execute(ISqlEntity, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>执行</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Execute(ISqlEntity entity, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></dt>
+    <dd></dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Execute_" data-uid="Dapper.Shadow.DapperExecutor.Execute*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Execute_System_String_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.Execute(System.String,System.Object)">
+  Execute(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Execute parameterized SQL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Execute(string sql, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SQL to execute for this query.</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>The parameters to use for this query.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of rows affected.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_ExecuteAsync_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteAsync*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_ExecuteAsync_ShadowSql_Fragments_ISqlEntity_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteAsync(ShadowSql.Fragments.ISqlEntity,System.Object)">
+  ExecuteAsync(ISqlEntity, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步执行</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;int&gt; ExecuteAsync(ISqlEntity entity, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></dt>
+    <dd></dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_ExecuteAsync_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteAsync*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_ExecuteAsync_System_String_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteAsync(System.String,System.Object)">
+  ExecuteAsync(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Execute parameterized SQL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; ExecuteAsync(string sql, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SQL to execute for this query.</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>The parameters to use for this query.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>The number of rows affected.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_ExecuteScalarAsync_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteScalarAsync*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_ExecuteScalarAsync__1_ShadowSql_Fragments_ISqlEntity_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteScalarAsync``1(ShadowSql.Fragments.ISqlEntity,System.Object)">
+  ExecuteScalarAsync&lt;T&gt;(ISqlEntity, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步执行(返回一行一列)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;T?&gt; ExecuteScalarAsync&lt;T&gt;(ISqlEntity entity, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></dt>
+    <dd></dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_ExecuteScalarAsync_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteScalarAsync*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_ExecuteScalarAsync__1_System_String_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteScalarAsync``1(System.String,System.Object)">
+  ExecuteScalarAsync&lt;T&gt;(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Execute parameterized SQL that selects a single value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T?&gt; ExecuteScalarAsync&lt;T&gt;(string sql, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SQL to execute.</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>The parameters to use for this command.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd><p>The first cell returned, as <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type to return.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_ExecuteScalar_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteScalar*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_ExecuteScalar__1_ShadowSql_Fragments_ISqlEntity_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteScalar``1(ShadowSql.Fragments.ISqlEntity,System.Object)">
+  ExecuteScalar&lt;T&gt;(ISqlEntity, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>执行(返回一行一列)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual T? ExecuteScalar&lt;T&gt;(ISqlEntity entity, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></dt>
+    <dd></dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_ExecuteScalar_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteScalar*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_ExecuteScalar__1_System_String_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.ExecuteScalar``1(System.String,System.Object)">
+  ExecuteScalar&lt;T&gt;(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Execute parameterized SQL that selects a single value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? ExecuteScalar&lt;T&gt;(string sql, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SQL to execute.</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>The parameters to use for this command.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The first cell returned, as <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type to return.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_QueryAsync_" data-uid="Dapper.Shadow.DapperExecutor.QueryAsync*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_QueryAsync__1_ShadowSql_Fragments_ISqlEntity_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.QueryAsync``1(ShadowSql.Fragments.ISqlEntity,System.Object)">
+  QueryAsync&lt;T&gt;(ISqlEntity, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Execute a query asynchronously using Task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IEnumerable&lt;T&gt;&gt; QueryAsync&lt;T&gt;(ISqlEntity entity, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></dt>
+    <dd><p>The SQL to execute for the query.</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>The parameters to pass, if any.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of results to return.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_QueryAsync_" data-uid="Dapper.Shadow.DapperExecutor.QueryAsync*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_QueryAsync__1_System_String_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.QueryAsync``1(System.String,System.Object)">
+  QueryAsync&lt;T&gt;(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Execute a query asynchronously using Task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;T&gt;&gt; QueryAsync&lt;T&gt;(string sql, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SQL to execute for the query.</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>The parameters to pass, if any.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of results to return.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_QueryFirstOrDefaultAsync_" data-uid="Dapper.Shadow.DapperExecutor.QueryFirstOrDefaultAsync*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_QueryFirstOrDefaultAsync__1_ShadowSql_Fragments_ISqlEntity_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.QueryFirstOrDefaultAsync``1(ShadowSql.Fragments.ISqlEntity,System.Object)">
+  QueryFirstOrDefaultAsync&lt;T&gt;(ISqlEntity, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Execute a single-row query asynchronously using Task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;T?&gt; QueryFirstOrDefaultAsync&lt;T&gt;(ISqlEntity entity, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></dt>
+    <dd><p>The SQL to execute for the query.</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>The parameters to pass, if any.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of result to return.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_QueryFirstOrDefaultAsync_" data-uid="Dapper.Shadow.DapperExecutor.QueryFirstOrDefaultAsync*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_QueryFirstOrDefaultAsync__1_System_String_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.QueryFirstOrDefaultAsync``1(System.String,System.Object)">
+  QueryFirstOrDefaultAsync&lt;T&gt;(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Execute a single-row query asynchronously using Task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T?&gt; QueryFirstOrDefaultAsync&lt;T&gt;(string sql, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SQL to execute for the query.</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>The parameters to pass, if any.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of result to return.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_QueryFirstOrDefault_" data-uid="Dapper.Shadow.DapperExecutor.QueryFirstOrDefault*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_QueryFirstOrDefault__1_ShadowSql_Fragments_ISqlEntity_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.QueryFirstOrDefault``1(ShadowSql.Fragments.ISqlEntity,System.Object)">
+  QueryFirstOrDefault&lt;T&gt;(ISqlEntity, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取单条</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual T? QueryFirstOrDefault&lt;T&gt;(ISqlEntity entity, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></dt>
+    <dd></dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_QueryFirstOrDefault_" data-uid="Dapper.Shadow.DapperExecutor.QueryFirstOrDefault*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_QueryFirstOrDefault__1_System_String_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.QueryFirstOrDefault``1(System.String,System.Object)">
+  QueryFirstOrDefault&lt;T&gt;(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes a single-row query, returning the data typed as <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? QueryFirstOrDefault&lt;T&gt;(string sql, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SQL to execute for the query.</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>The parameters to pass, if any.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A sequence of data of the supplied type; if a basic type (int, string, etc) is queried then the data from the first column is assumed, otherwise an instance is
+created per row, and a direct column-name===member-name mapping is assumed (case insensitive).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of result to return.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Query_" data-uid="Dapper.Shadow.DapperExecutor.Query*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Query__1_ShadowSql_Fragments_ISqlEntity_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.Query``1(ShadowSql.Fragments.ISqlEntity,System.Object)">
+  Query&lt;T&gt;(ISqlEntity, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取列表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;T&gt; Query&lt;T&gt;(ISqlEntity entity, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></dt>
+    <dd></dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>参数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Query_" data-uid="Dapper.Shadow.DapperExecutor.Query*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Query__1_System_String_System_Object_" data-uid="Dapper.Shadow.DapperExecutor.Query``1(System.String,System.Object)">
+  Query&lt;T&gt;(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes a query, returning the data typed as <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; Query&lt;T&gt;(string sql, object? param = null)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SQL to execute for the query.</p>
+</dd>
+    <dt><code>param</code> <span class="xref">object</span></dt>
+    <dd><p>The parameters to pass, if any.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>A sequence of data of the supplied type; if a basic type (int, string, etc) is queried then the data from the first column is assumed, otherwise an instance is
+created per row, and a direct column-name===member-name mapping is assumed (case insensitive).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of results to return.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Dapper_Shadow_DapperExecutor_Rollback_" data-uid="Dapper.Shadow.DapperExecutor.Rollback*"></a>
+
+  <h3 id="Dapper_Shadow_DapperExecutor_Rollback" data-uid="Dapper.Shadow.DapperExecutor.Rollback">
+  Rollback()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>回滚事务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rollback()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/Dapper.Shadow.Core/DapperExecutor.cs/#L18" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>快速上手 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="快速上手 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/getting-started.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="快速上手">快速上手</h1>
+
+<h2 id="一从表开始">一、从表开始</h2>
+<h3 id="1-自定义表">1. 自定义表</h3>
+<blockquote>
+<ul>
+<li>继承Table</li>
+<li>通过DefineColumn定义列</li>
+<li>建议定义为单例或用IOC管理</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">public class CommentTable : Table
+{
+    public CommentTable(string tableName = &quot;Comments&quot;)
+        : base(tableName)
+    {
+        Id = DefineColumn(nameof(Id));
+        UserId = DefineColumn(nameof(UserId));
+        PostId = DefineColumn(nameof(PostId));
+        Content = DefineColumn(nameof(Content));
+        Pick = DefineColumn(nameof(Pick));
+    }
+    public readonly IColumn Id;
+    public readonly IColumn UserId;
+    public readonly IColumn PostId;
+    public readonly IColumn Content;
+    public readonly IColumn Pick;
+}
+</code></pre>
+<h3 id="2-自定义别名表">2. 自定义别名表</h3>
+<blockquote>
+<ul>
+<li>如果要联表,同步自定义别名表是有必要的</li>
+<li>继承TableAlias</li>
+<li>通过AddColumn定义前缀列</li>
+<li>建议定义为单例或用IOC管理</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">public class CommentAliasTable : TableAlias&lt;CommentTable&gt;
+{
+    public CommentAliasTable(string tableAlias)
+        : this(new CommentTable(&quot;Comments&quot;), tableAlias){}
+    public CommentAliasTable(CommentTable table, string tableAlias)
+        : base(table, tableAlias)
+    {
+        Id = AddColumn(table.Id);
+        UserId = AddColumn(table.UserId);
+        PostId = AddColumn(table.PostId);
+        Content = AddColumn(table.Content);
+        Pick = AddColumn(table.Pick);
+    }
+    public readonly IPrefixField Id;
+    public readonly IPrefixField UserId;
+    public readonly IPrefixField PostId;
+    public readonly IPrefixField Content;
+    public readonly IPrefixField Pick;
+}
+</code></pre>
+<h3 id="3-用db管理表">3. 用DB管理表</h3>
+<pre><code class="lang-csharp">var table = _db.From(&quot;Users&quot;)
+</code></pre>
+<h2 id="二查询表">二、查询表</h2>
+<blockquote>
+<ul>
+<li>参看<a href="/shadow/sqlquery/table.html">表查询</a></li>
+</ul>
+</blockquote>
+<h3 id="1-自定义表查询">1. 自定义表查询</h3>
+<pre><code class="lang-csharp">var table = new UserTable();
+var query = table.ToSqlQuery()
+    .Where(table.Id.EqualValue(100));
+// SELECT * FROM [Users] WHERE [Id]=100
+</code></pre>
+<h3 id="2-其他表查询">2. 其他表查询</h3>
+<pre><code class="lang-csharp">var query =_db.From(&quot;Users&quot;)
+    .ToSqlQuery()
+    .FieldEqualValue(&quot;Id&quot;, 100);
+// SELECT * FROM [Users] WHERE [Id]=100
+</code></pre>
+<pre><code class="lang-csharp">var query =_db.From(&quot;Users&quot;)
+    .ToSqlQuery()
+    .Where(&quot;Id=100&quot;);
+// SELECT * FROM [Users] WHERE Id=100
+</code></pre>
+<h2 id="三联表查询">三、联表查询</h2>
+<blockquote>
+<ul>
+<li>参看<a href="/shadow/sqlquery/join.md">联表查询</a></li>
+</ul>
+</blockquote>
+<h3 id="1-自定义别名表联表">1. 自定义别名表联表</h3>
+<pre><code class="lang-csharp">CommentAliasTable c = new(&quot;c&quot;);
+PostAliasTable p = new(&quot;p&quot;);
+var query = c.SqlJoin(p)
+    .On(c.PostId, p.Id)
+    .Root
+    .Where(c.Pick.EqualValue(true))
+    .Where(p.Author.EqualValue(&quot;张三&quot;));
+// SELECT * FROM [Comments] AS c INNER JOIN [Posts] AS p ON c.[PostId]=p.[Id] WHERE c.[Pick]=1 AND p.[Author]='张三'
+</code></pre>
+<h3 id="2-其他表联表">2. 其他表联表</h3>
+<pre><code class="lang-csharp">var joinOn = _db.From(&quot;Comments&quot;)
+    .SqlJoin(_db.From(&quot;Posts&quot;))
+    .OnColumn(&quot;PostId&quot;, &quot;Id&quot;)
+    .WhereLeft(&quot;Pick&quot;, Pick =&gt; Pick.EqualValue(true))
+    .WhereRight(&quot;Author&quot;, Author =&gt; Author.NotEqualValue(&quot;张三&quot;));
+// SELECT * FROM [Comments] AS t1 INNER JOIN [Posts] AS t2 ON t1.[PostId]=t2.[Id] WHERE t1.[Pick]=1 AND t2.[Author]&lt;&gt;'张三'
+</code></pre>
+<h2 id="四分组查询">四、分组查询</h2>
+<blockquote>
+<ul>
+<li>参看<a href="shadow/sqlquery/groupby.html">分组查询</a></li>
+</ul>
+</blockquote>
+<h3 id="1-可以直接对表分组">1. 可以直接对表分组</h3>
+<blockquote>
+<ul>
+<li>调用SqlGroupBy</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var groupBy = _db.From(&quot;Comments&quot;)
+    .SqlGroupBy(&quot;PostId&quot;)
+    .Having(g =&gt; g.Sum(&quot;Pick&quot;).GreaterValue(100));
+// SELECT * FROM [Comments] GROUP BY [PostId] HAVING SUM([Pick])&gt;100
+</code></pre>
+<pre><code class="lang-csharp">var table = new CommentTable();
+var groupBy = table.SqlGroupBy(table.PostId)
+    .Having(table.Pick.Sum().GreaterValue(100));
+// SELECT * FROM [Comments] GROUP BY [PostId] HAVING SUM([Pick])&gt;100
+</code></pre>
+<h3 id="2-对表查询分组">2. 对表查询分组</h3>
+<blockquote>
+<ul>
+<li>调用路径:ToSqlQuery().SqlGroupBy()</li>
+<li><a href="shadow/sqlquery/table.html">表查询</a></li>
+<li><a href="shadow/sqlquery/groupby.html">分组查询</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var groupBy = _db.From(&quot;Comments&quot;)
+    .ToSqlQuery()
+    .FieldGreaterEqualValue(&quot;Pick&quot;, 10)
+    .SqlGroupBy(&quot;PostId&quot;)
+    .Having(g =&gt; g.Sum(&quot;Pick&quot;).GreaterValue(100));
+// SELECT * FROM [Comments] WHERE [Pick]&gt;=10 GROUP BY [PostId] HAVING SUM([Pick])&gt;100
+</code></pre>
+<pre><code class="lang-csharp">var table = new CommentTable();
+var groupBy = table.ToSqlQuery()
+    .Where(table.Pick.GreaterEqualValue(10))
+    .SqlGroupBy(table.PostId)
+    .Having(table.Pick.Sum().GreaterValue(100));
+// SELECT * FROM [Comments] WHERE [Pick]&gt;=10 GROUP BY [PostId] HAVING SUM([Pick])&gt;100
+</code></pre>
+<h2 id="五插入">五、插入</h2>
+<blockquote>
+<ul>
+<li>参看<a href="shadow/insert/single.html">Insert</a></li>
+</ul>
+</blockquote>
+<h3 id="1-按列插入">1. 按列插入</h3>
+<pre><code class="lang-csharp">var name = Column.Use(&quot;Name&quot;);
+var score = Column.Use(&quot;Score&quot;);
+var insert = new SingleInsert(&quot;Students&quot;)
+    .InsertColumns(name, score);
+// INSERT INTO [Students]([Name],[Score])VALUES(@Name,@Score)
+</code></pre>
+<h3 id="2-插入所有字段">2. 插入所有字段</h3>
+<blockquote>
+<ul>
+<li>支持忽略部分字段</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var table = new Table(&quot;Users&quot;)
+    .DefineColums(&quot;Id&quot;,&quot;Name&quot;, &quot;Age&quot;)
+    .IgnoreInsert(&quot;Id&quot;);
+var insert = table.ToInsert()
+    .InsertSelfColumns();
+// 预设Id是自增列,可查询不可插入
+// INSERT INTO [Users]([Name],[Age])VALUES(@Name,@Age)
+</code></pre>
+<h2 id="六删除">六、删除</h2>
+<blockquote>
+<ul>
+<li>调用ToDelete</li>
+<li>参看<a href="shadow/delete/table.html">delete</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var table = new StudentTable();
+var delete = table.ToSqlQuery()
+    .Where(table.Score.LessValue(60))
+    .ToDelete();
+// DELETE FROM [Students] WHERE [Score]&lt;60
+</code></pre>
+<h2 id="七更新">七、更新</h2>
+<blockquote>
+<ul>
+<li>参看<a href="shadow/update/table.html">update</a></li>
+</ul>
+</blockquote>
+<h3 id="1-按列更新">1. 按列更新</h3>
+<pre><code class="lang-csharp">var table = new StudentTable();
+var update = table.ToSqlQuery()
+    .Where(table.Score.LessValue(60))
+    .ToUpdate()
+    .Set(table =&gt; table.Score.AddValue(10));
+// UPDATE [Students] SET [Score]+=10 WHERE [Score]&lt;60
+</code></pre>
+<h3 id="2-更新所有字段">2. 更新所有字段</h3>
+<blockquote>
+<ul>
+<li>支持忽略部分字段</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var id = Column.Use(&quot;Id&quot;);
+var name = Column.Use(&quot;Name&quot;);
+var age = Column.Use(&quot;Age&quot;);
+var table = new Table(&quot;Users&quot;)
+    .AddColums(id, name, age)
+    .IgnoreUpdate(id);
+var update = table.ToUpdate(id.Equal())
+    .SetSelfFields();
+// 预设Id是主键不更新
+// UPDATE [Users] SET [Name]=@Name,[Age]=@Age WHERE [Id]=@Id
+</code></pre>
+<h2 id="八获取数据">八、获取数据</h2>
+<blockquote>
+<ul>
+<li>参看<a href="shadow/select/table.html">select</a></li>
+</ul>
+</blockquote>
+<h3 id="1-直接获取全表">1. 直接获取全表</h3>
+<blockquote>
+<ul>
+<li>调用ToSelect</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">UserTable table = new();
+var select = table.ToSelect()
+    .Select(table.Id, table.Name);
+// SELECT [Id],[Name] FROM [Users]
+</code></pre>
+<h3 id="2-从表查询获取">2. 从表查询获取</h3>
+<blockquote>
+<ul>
+<li>调用路径:ToSqlQuery().ToSelect()</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var table = new UserTable();
+var select = table.ToSqlQuery()
+    .Where(table.Status.EqualValue(true))
+    .ToSelect()
+    .Select(table.Id, table.Name);;
+// SELECT [Id],[Name] FROM [Users]
+</code></pre>
+<h3 id="3-分页获取">3. 分页获取</h3>
+<blockquote>
+<ul>
+<li>调用路径:ToSqlQuery().ToCursor().ToSelect()</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var table = new UserTable();
+var select = table.ToSqlQuery()
+    .Where(table.Status.EqualValue(true))
+    .ToCursor(10, 20)
+    .Asc(table.Id)
+    .ToSelect()
+    .Select(table.Id, table.Name);
+// SELECT [Id],[Name] FROM [Users] WHERE [Status]=1 ORDER BY [Id] OFFSET 20 ROWS FETCH NEXT 10 ROWS ONLY
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/getting-started.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

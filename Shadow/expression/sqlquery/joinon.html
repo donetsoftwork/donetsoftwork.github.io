@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>sql表关联 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="sql表关联 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/expression/sqlquery/joinon.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="sql表关联">sql表关联</h1>
+
+<blockquote>
+<ul>
+<li>两个表关联查询</li>
+<li>联表查询的JOIN ON部分</li>
+<li>通过关键字On查询</li>
+<li>本组件是对ShadowSql.Core同名组件的泛型扩展</li>
+<li>支持对数据表类型特殊处理,增强功能、增加易用性</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Join.IJoinOn.html">IJoinOn</a></li>
+<li><a class="xref" href="../../api/ShadowSql.Queries.IDataSqlQuery.html">IDataSqlQuery</a></li>
+</ul>
+</blockquote>
+<h2 id="2-基类">2. 基类</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.Join.JoinOnBase.html">JoinOnBase</a></p>
+</blockquote>
+<h2 id="3-类">3. 类</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Expressions.Join.JoinOnSqlQuery-2.html">JoinOnSqlQuery&lt;TLeft, TRight&gt;</a></li>
+</ul>
+</blockquote>
+<h2 id="4-sqljoin">4. SqlJoin</h2>
+<h3 id="41-sqljoin扩展方法">4.1 SqlJoin扩展方法</h3>
+<blockquote>
+<ul>
+<li>从表创建<a class="xref" href="../../api/ShadowSql.Expressions.Join.JoinOnSqlQuery-2.html">JoinOnSqlQuery&lt;TLeft, TRight&gt;</a>和<a class="xref" href="../../api/ShadowSql.Join.JoinTableSqlQuery.html">JoinTableSqlQuery</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">JoinOnSqlQuery&lt;TLeft, TRight&gt; SqlJoin&lt;TLeft, TRight&gt;(this ITable main, ITable table);
+</code></pre>
+<pre><code class="lang-csharp">var query = new Table(&quot;Users&quot;)
+    .SqlJoin&lt;User, UserRole&gt;(new Table(&quot;UserRoles&quot;));
+// SELECT * FROM [Users] AS t1 INNER JOIN [UserRoles] AS t2
+</code></pre>
+<h3 id="42-sqljoin重载扩展方法">4.2 SqlJoin重载扩展方法</h3>
+<blockquote>
+<ul>
+<li>从别名表创建<a class="xref" href="../../api/ShadowSql.Expressions.Join.JoinOnSqlQuery-2.html">JoinOnSqlQuery&lt;TLeft, TRight&gt;</a>和<a class="xref" href="../../api/ShadowSql.Join.JoinTableSqlQuery.html">JoinTableSqlQuery</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">JoinOnSqlQuery&lt;TLeft, TRight&gt; SqlJoin&lt;TLeft, TRight&gt;(this IAliasTable left, IAliasTable right);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;Users&quot;)
+    .As(&quot;u&quot;)
+    .SqlJoin&lt;User, UserRole&gt;(EmptyTable.Use(&quot;UserRoles&quot;).As(&quot;r&quot;))
+// SELECT * FROM [Users] AS u INNER JOIN [UserRoles] AS r
+</code></pre>
+<h2 id="5-on">5. On</h2>
+<h3 id="51-on方法">5.1 On方法</h3>
+<blockquote>
+<ul>
+<li>按主外键联表</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">JoinOnSqlQuery&lt;TLeft, TRight&gt; On&lt;TKey&gt;(Expression&lt;Func&lt;TLeft, TKey&gt;&gt; left, Expression&lt;Func&lt;TRight, TKey&gt;&gt; right);
+</code></pre>
+<pre><code class="lang-csharp">var query = new Table(&quot;Users&quot;)
+    .SqlJoin&lt;User, UserRole&gt;(new Table(&quot;UserRoles&quot;))
+    .On(u =&gt; u.Id, r =&gt; r.UserId);
+// SELECT * FROM [Users] AS t1 INNER JOIN [UserRoles] AS t2 ON t1.[Id]=t2.[UserId]
+</code></pre>
+<h3 id="52-on重载方法">5.2 On重载方法</h3>
+<blockquote>
+<ul>
+<li>按主外键联表</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">JoinOnSqlQuery&lt;TLeft, TRight&gt; On(Expression&lt;Func&lt;TLeft, TRight, bool&gt;&gt; query);
+</code></pre>
+<pre><code class="lang-csharp">var query = new Table(&quot;Users&quot;)
+    .SqlJoin&lt;User, UserRole&gt;(new Table(&quot;UserRoles&quot;))
+    .On((u, r) =&gt; u.Id == r.UserId);
+// SELECT * FROM [Users] AS t1 INNER JOIN [UserRoles] AS t2 ON t1.[Id]=t2.[UserId]
+</code></pre>
+<h2 id="6-lefttablejoin">6. LeftTableJoin</h2>
+<h3 id="61-lefttablejoin扩展方法">6.1 LeftTableJoin扩展方法</h3>
+<pre><code class="lang-csharp">JoinOnSqlQuery&lt;TLeft, TOther&gt; LeftTableJoin&lt;TLeft, TRight, TOther&gt;(this JoinOnSqlQuery&lt;TLeft, TRight&gt; joinOn, ITable table);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;Comments&quot;)
+    .SqlJoin&lt;Comment, Post&gt;(EmptyTable.Use(&quot;Posts&quot;))
+    .On((c, p) =&gt; c.PostId == p.Id)
+    .LeftTableJoin&lt;Comment, Post, User&gt;(EmptyTable.Use(&quot;Users&quot;))
+    .On((c, u) =&gt; c.UserId == u.Id);
+// SELECT * FROM [Comments] AS t1 INNER JOIN [Posts] AS t2 ON t1.[PostId]=t2.[Id] INNER JOIN [Users] AS t3 ON t1.[UserId]=t3.[Id]
+</code></pre>
+<h3 id="62-lefttablejoin重载扩展方法">6.2 LeftTableJoin重载扩展方法</h3>
+<pre><code class="lang-csharp">JoinOnSqlQuery&lt;TLeft, TOther&gt; LeftTableJoin&lt;TLeft, TRight, TOther&gt;(this JoinOnSqlQuery&lt;TLeft, TRight&gt; joinOn, IAliasTable table);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;Comments&quot;)
+    .As(&quot;c&quot;)
+    .SqlJoin&lt;Comment, Post&gt;(EmptyTable.Use(&quot;Posts&quot;).As(&quot;p&quot;))
+    .On((c, p) =&gt; c.PostId == p.Id)
+    .LeftTableJoin&lt;Comment, Post, User&gt;(EmptyTable.Use(&quot;Users&quot;).As(&quot;u&quot;))
+    .On((c, u) =&gt; c.UserId == u.Id);
+// SELECT * FROM [Comments] AS c INNER JOIN [Posts] AS p ON c.[PostId]=p.[Id] INNER JOIN [Users] AS u ON c.[UserId]=u.[Id]
+</code></pre>
+<h2 id="7-righttablejoin">7. RightTableJoin</h2>
+<h3 id="71-righttablejoin扩展方法">7.1 RightTableJoin扩展方法</h3>
+<pre><code class="lang-csharp">JoinOnSqlQuery&lt;TRight, TOther&gt; RightTableJoin&lt;TLeft, TRight, TOther&gt;(this JoinOnSqlQuery&lt;TLeft, TRight&gt; joinOn, ITable table);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;Posts&quot;)
+    .SqlJoin&lt;Post, Comment&gt;(EmptyTable.Use(&quot;Comments&quot;))
+    .On((c, p) =&gt; c.Id == p.PostId)
+    .RightTableJoin&lt;Post, Comment, User&gt;(EmptyTable.Use(&quot;Users&quot;))
+    .On((c, u) =&gt; c.UserId == u.Id);
+// SELECT * FROM [Posts] AS t1 INNER JOIN [Comments] AS t2 ON t1.[Id]=t2.[PostId] INNER JOIN [Users] AS t3 ON t2.[UserId]=t3.[Id]
+</code></pre>
+<h3 id="72-righttablejoin重载扩展方法">7.2 RightTableJoin重载扩展方法</h3>
+<pre><code class="lang-csharp">JoinOnSqlQuery&lt;TRight, TOther&gt; RightTableJoin&lt;TLeft, TRight, TOther&gt;(this JoinOnSqlQuery&lt;TLeft, TRight&gt; joinOn, IAliasTable table);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;Posts&quot;)
+    .As(&quot;p&quot;)
+    .SqlJoin&lt;Post, Comment&gt;(EmptyTable.Use(&quot;Comments&quot;).As(&quot;c&quot;))
+    .On((c, p) =&gt; c.Id == p.PostId)
+    .RightTableJoin&lt;Post, Comment, User&gt;(EmptyTable.Use(&quot;Users&quot;).As(&quot;u&quot;))
+    .On((c, u) =&gt; c.UserId == u.Id);
+// SELECT * FROM [Posts] AS p INNER JOIN [Comments] AS c ON p.[Id]=c.[PostId] INNER JOIN [Users] AS u ON c.[UserId]=u.[Id]
+</code></pre>
+<h2 id="8-onleft方法">8. OnLeft方法</h2>
+<blockquote>
+<ul>
+<li>在ON子句单对左表查询</li>
+<li>一般只在RIGHT JOIN时使用该方法,否则建议直接在WHERE子句查询</li>
+<li>作用是从左表剔除部分数据用NULL填充</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">JoinOnSqlQuery&lt;TLeft, TRight&gt; OnLeft(Expression&lt;Func&lt;TLeft, bool&gt;&gt; query);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;Users&quot;)
+    .SqlJoin&lt;User, UserRole&gt;(EmptyTable.Use(&quot;UserRoles&quot;))
+    .AsRightJoin()
+    .On((u, r) =&gt; u.Id == r.UserId)
+    .OnLeft(u =&gt; u.Status);
+// SELECT * FROM [Users] AS t1 RIGHT JOIN [UserRoles] AS t2 ON t1.[Id]=t2.[UserId] AND t1.[Status]=1
+</code></pre>
+<h2 id="9-onright">9. OnRight</h2>
+<blockquote>
+<ul>
+<li>在ON子句单对右表查询</li>
+<li>一般只在LEFT JOIN时使用该方法,否则建议直接在WHERE子句查询</li>
+<li>作用是从右表剔除部分数据用NULL填充</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">JoinOnSqlQuery&lt;LTable, RTable&gt; OnRight(Func&lt;RTable, IColumn&gt; select, Func&lt;IColumn, AtomicLogic&gt; query);
+</code></pre>
+<pre><code class="lang-csharp">var query = EmptyTable.Use(&quot;Users&quot;)
+    .SqlJoin&lt;User, UserRole&gt;(EmptyTable.Use(&quot;UserRoles&quot;))
+    .AsLeftJoin()
+    .On((u, r) =&gt; u.Id == r.UserId)
+    .OnRight(r =&gt; r.Score &gt;= 60);
+// SELECT * FROM [Users] AS t1 LEFT JOIN [UserRoles] AS t2 ON t1.[Id]=t2.[UserId] AND t2.[Score]&gt;=60
+</code></pre>
+<h2 id="10-其他相关功能">10. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>本组件并非只有以上功能,其他功能参看以下文档:</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.Join.JoinOnSqlQuery-2.html">JoinOnSqlQuery&lt;LTable, RTable&gt;</a>的方法和扩展方法部分</li>
+<li>参看<a href="index.html">sql查询简介</a></li>
+<li>参看<a href="../../shadowcore/sqlquery/joinon.html">ShadowSqlCore相关文档</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/expression/sqlquery/joinon.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

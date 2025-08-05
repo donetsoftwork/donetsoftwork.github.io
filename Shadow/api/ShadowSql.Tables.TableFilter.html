@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>TableFilter 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="TableFilter 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="表数据过滤">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_Tables_TableFilter.md&amp;value=---%0Auid%3A%20ShadowSql.Tables.TableFilter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.Tables.TableFilter">
+
+
+
+  <h1 id="ShadowSql_Tables_TableFilter" data-uid="ShadowSql.Tables.TableFilter" class="text-break">
+TableFilter 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Tables/TableFilter.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.Tables.html">Tables</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>表数据过滤</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TableFilter : DataFilterBase&lt;ISqlLogic&gt;, IDataFilter, ITableView, ISqlEntity</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.GetFieldBase.html">GetFieldBase</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.ViewBase.html">ViewBase</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.TableViewBase.html">TableViewBase</a></div>
+      <div><a class="xref" href="ShadowSql.Filters.FilterBase.html">FilterBase</a></div>
+      <div><a class="xref" href="ShadowSql.Filters.DataFilterBase-1.html">DataFilterBase</a>&lt;<a class="xref" href="ShadowSql.Logics.ISqlLogic.html">ISqlLogic</a>&gt;</div>
+      <div><span class="xref">TableFilter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="ShadowSql.Filters.IDataFilter.html">IDataFilter</a></div>
+      <div><a class="xref" href="ShadowSql.Identifiers.ITableView.html">ITableView</a></div>
+      <div><a class="xref" href="ShadowSql.Fragments.ISqlEntity.html">ISqlEntity</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.DataFilterBase-1.html#ShadowSql_Filters_DataFilterBase_1__source">DataFilterBase&lt;ISqlLogic&gt;._source</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.DataFilterBase-1.html#ShadowSql_Filters_DataFilterBase_1_Source">DataFilterBase&lt;ISqlLogic&gt;.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.DataFilterBase-1.html#ShadowSql_Filters_DataFilterBase_1_Filter">DataFilterBase&lt;ISqlLogic&gt;.Filter</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.DataFilterBase-1.html#ShadowSql_Filters_DataFilterBase_1_GetFields">DataFilterBase&lt;ISqlLogic&gt;.GetFields()</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.DataFilterBase-1.html#ShadowSql_Filters_DataFilterBase_1_GetField_System_String_">DataFilterBase&lt;ISqlLogic&gt;.GetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.DataFilterBase-1.html#ShadowSql_Filters_DataFilterBase_1_GetCompareField_System_String_">DataFilterBase&lt;ISqlLogic&gt;.GetCompareField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.DataFilterBase-1.html#ShadowSql_Filters_DataFilterBase_1_NewField_System_String_">DataFilterBase&lt;ISqlLogic&gt;.NewField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.DataFilterBase-1.html#ShadowSql_Filters_DataFilterBase_1_WriteSource_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">DataFilterBase&lt;ISqlLogic&gt;.WriteSource(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.DataFilterBase-1.html#ShadowSql_Filters_DataFilterBase_1_WriteFilter_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">DataFilterBase&lt;ISqlLogic&gt;.WriteFilter(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.FilterBase.html#ShadowSql_Filters_FilterBase_FilterPrefix_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">FilterBase.FilterPrefix(ISqlEngine, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="ShadowSql.Filters.FilterBase.html#ShadowSql_Filters_FilterBase_WriteCore_ShadowSql_Engines_ISqlEngine_System_Text_StringBuilder_">FilterBase.WriteCore(ISqlEngine, StringBuilder)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Filters_IDataFilter_ShadowSql_Identifiers_IFieldView_">ShadowSqlServices.ToSingle(IDataFilter, IFieldView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlServices.html#ShadowSql_ShadowSqlServices_ToSingle_ShadowSql_Filters_IDataFilter_System_String_">ShadowSqlServices.ToSingle(IDataFilter, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_Count_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.Count(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_CountAsync_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.CountAsync(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCount_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCount(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Dapper.Shadow.DapperShadowCoreServices.html#Dapper_Shadow_DapperShadowCoreServices_LongCountAsync_ShadowSql_Identifiers_ITableView_Dapper_Shadow_IExecutor_System_Object_">DapperShadowCoreServices.LongCountAsync(ITableView, IExecutor, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_AsExists_ShadowSql_Identifiers_ITableView_">ShadowSqlCoreServices.AsExists(ITableView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_AsNotExists_ShadowSql_Identifiers_ITableView_">ShadowSqlCoreServices.AsNotExists(ITableView)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Field_ShadowSql_Identifiers_ITableView_System_String_">ShadowSqlCoreServices.Field(ITableView, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Fields_ShadowSql_Identifiers_ITableView_System_Collections_Generic_IEnumerable_System_String__">ShadowSqlCoreServices.Fields(ITableView, params IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ShadowSql.ShadowSqlCoreServices.html#ShadowSql_ShadowSqlCoreServices_Strict_ShadowSql_Identifiers_ITableView_System_String_">ShadowSqlCoreServices.Strict(ITableView, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="ShadowSql_Tables_TableFilter__ctor_" data-uid="ShadowSql.Tables.TableFilter.#ctor*"></a>
+
+  <h3 id="ShadowSql_Tables_TableFilter__ctor_ShadowSql_Identifiers_ITableView_ShadowSql_Logics_ISqlLogic_" data-uid="ShadowSql.Tables.TableFilter.#ctor(ShadowSql.Identifiers.ITableView,ShadowSql.Logics.ISqlLogic)">
+  TableFilter(ITableView, ISqlLogic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Tables/TableFilter.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>表数据过滤</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableFilter(ITableView view, ISqlLogic filter)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>view</code> <a class="xref" href="ShadowSql.Identifiers.ITableView.html">ITableView</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="ShadowSql.Logics.ISqlLogic.html">ISqlLogic</a></dt>
+    <dd><p>过滤条件</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Core/Tables/TableFilter.cs/#L12" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

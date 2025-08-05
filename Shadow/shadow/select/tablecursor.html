@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>表分页 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="表分页 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadow/select/tablecursor.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="表分页">表分页</h1>
+
+<blockquote>
+<ul>
+<li>从表分页获取数据组件</li>
+<li>本组件用来处理sql的SELECT分页语句</li>
+<li>本组件是对ShadowSql.Core同名组件的泛型扩展</li>
+<li>支持对数据表类型特殊处理,增强功能、增加易用性</li>
+<li>本组件通过<a href="../cursor/table.html">表游标</a>来分页</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.Select.ISelect.html">ISelect</a></p>
+</blockquote>
+<h2 id="2-基类">2. 基类</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.SelectFields.SelectFieldsBase.html">SelectFieldsBase</a></li>
+</ul>
+</blockquote>
+<h2 id="3-类">3. 类</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.CursorSelect.TableCursorSelect-1.html">TableCursorSelect&lt;TTable&gt;</a></p>
+</blockquote>
+<pre><code class="lang-csharp">class TableCursorSelect&lt;TTable&gt;(TableCursor&lt;TTable&gt; cursor)
+    where TTable : ITable;
+</code></pre>
+<h2 id="4-toselect扩展方法">4. ToSelect扩展方法</h2>
+<blockquote>
+<ul>
+<li>从表游标创建TableCursorSelect</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TableCursorSelect&lt;TTable&gt; ToSelect&lt;TTable&gt;(this TableCursor&lt;TTable&gt; cursor)
+        where TTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var select = _db.From(&quot;Users&quot;)
+    .ToCursor(10, 20)
+    .Desc(&quot;Id&quot;)
+    .ToSelect()
+    .Select(&quot;Id&quot;, &quot;Name&quot;);
+// SELECT [Id],[Name] FROM [Users] ORDER BY [Id] DESC OFFSET 20 ROWS FETCH NEXT 10 ROWS ONLY
+</code></pre>
+<h2 id="5-select方法">5. Select方法</h2>
+<blockquote>
+<ul>
+<li>该方法利用泛型优势,更方便使用表字段来筛选</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TableCursorSelect&lt;TTable&gt; Select(Func&lt;TTable, IFieldView&gt; select);
+TableCursorSelect&lt;TTable&gt; Select(Func&lt;TTable, IEnumerable&lt;IFieldView&gt;&gt; select);
+</code></pre>
+<pre><code class="lang-csharp">var select = new UserTable()
+    .ToSqlQuery()
+    .Where(table =&gt; table.Status.EqualValue(true))
+    .ToCursor(10, 20)
+    .Asc(table =&gt; table.Id)
+    .ToSelect()
+    .Select(table =&gt; [table.Id, table.Name]);
+// SELECT [Id],[Name] FROM [Users] WHERE [Status]=1 ORDER BY [Id] OFFSET 20 ROWS FETCH NEXT 10 ROWS ONLY
+</code></pre>
+<h2 id="6-其他相关功能">6. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>参看<a href="index.html">获取简介</a></li>
+<li>参看<a href="../cursor/table.html">表游标</a></li>
+<li>参看<a href="../../shadowcore/select/index.html">ShadowSqlCore相关文档</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadow/select/tablecursor.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

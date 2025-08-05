@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>SingleInsertVisitor 类
+ | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="SingleInsertVisitor 类
+ | .net拼写sql ">
+      
+      <meta name="description" content="单条插入表达式解析">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/new/master/apiSpec/new?filename=ShadowSql_Expressions_Visit_SingleInsertVisitor.md&amp;value=---%0Auid%3A%20ShadowSql.Expressions.Visit.SingleInsertVisitor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor">
+
+
+
+  <h1 id="ShadowSql_Expressions_Visit_SingleInsertVisitor" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor" class="text-break">
+SingleInsertVisitor 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Visit/SingleInsertVisitor.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="ShadowSql.html">ShadowSql</a>.<a class="xref" href="ShadowSql.Expressions.html">Expressions</a>.<a class="xref" href="ShadowSql.Expressions.Visit.html">Visit</a></dd></dl>
+  <dl><dt>程序集</dt><dd>ShadowSql.Expressions.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>单条插入表达式解析</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SingleInsertVisitor : ExpressionVisitor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor">ExpressionVisitor</a></div>
+      <div><span class="xref">SingleInsertVisitor</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visit#system-linq-expressions-expressionvisitor-visit(system-collections-objectmodel-readonlycollection((system-linq-expressions-expression)))">ExpressionVisitor.Visit(ReadOnlyCollection&lt;Expression&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visit#system-linq-expressions-expressionvisitor-visit(system-linq-expressions-expression)">ExpressionVisitor.Visit(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitandconvert#system-linq-expressions-expressionvisitor-visitandconvert-1(system-collections-objectmodel-readonlycollection((-0))-system-string)">ExpressionVisitor.VisitAndConvert&lt;T&gt;(ReadOnlyCollection&lt;T&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitandconvert#system-linq-expressions-expressionvisitor-visitandconvert-1(-0-system-string)">ExpressionVisitor.VisitAndConvert&lt;T&gt;(T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitbinary">ExpressionVisitor.VisitBinary(BinaryExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitblock">ExpressionVisitor.VisitBlock(BlockExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitcatchblock">ExpressionVisitor.VisitCatchBlock(CatchBlock)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitconditional">ExpressionVisitor.VisitConditional(ConditionalExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitconstant">ExpressionVisitor.VisitConstant(ConstantExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitdebuginfo">ExpressionVisitor.VisitDebugInfo(DebugInfoExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitdefault">ExpressionVisitor.VisitDefault(DefaultExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitdynamic">ExpressionVisitor.VisitDynamic(DynamicExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitelementinit">ExpressionVisitor.VisitElementInit(ElementInit)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitextension">ExpressionVisitor.VisitExtension(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitgoto">ExpressionVisitor.VisitGoto(GotoExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitindex">ExpressionVisitor.VisitIndex(IndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitinvocation">ExpressionVisitor.VisitInvocation(InvocationExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitlabel">ExpressionVisitor.VisitLabel(LabelExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitlabeltarget">ExpressionVisitor.VisitLabelTarget(LabelTarget)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitlambda">ExpressionVisitor.VisitLambda&lt;T&gt;(Expression&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitlistinit">ExpressionVisitor.VisitListInit(ListInitExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitloop">ExpressionVisitor.VisitLoop(LoopExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitmember">ExpressionVisitor.VisitMember(MemberExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitmemberbinding">ExpressionVisitor.VisitMemberBinding(MemberBinding)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitmemberinit">ExpressionVisitor.VisitMemberInit(MemberInitExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitmemberlistbinding">ExpressionVisitor.VisitMemberListBinding(MemberListBinding)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitmembermemberbinding">ExpressionVisitor.VisitMemberMemberBinding(MemberMemberBinding)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitmethodcall">ExpressionVisitor.VisitMethodCall(MethodCallExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitnew">ExpressionVisitor.VisitNew(NewExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitnewarray">ExpressionVisitor.VisitNewArray(NewArrayExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitparameter">ExpressionVisitor.VisitParameter(ParameterExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitruntimevariables">ExpressionVisitor.VisitRuntimeVariables(RuntimeVariablesExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitswitch">ExpressionVisitor.VisitSwitch(SwitchExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitswitchcase">ExpressionVisitor.VisitSwitchCase(SwitchCase)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visittry">ExpressionVisitor.VisitTry(TryExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visittypebinary">ExpressionVisitor.VisitTypeBinary(TypeBinaryExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visitunary">ExpressionVisitor.VisitUnary(UnaryExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expressionvisitor.visit#system-linq-expressions-expressionvisitor-visit-1(system-collections-objectmodel-readonlycollection((-0))-system-func((-0-0)))">ExpressionVisitor.Visit&lt;T&gt;(ReadOnlyCollection&lt;T&gt;, Func&lt;T, T&gt;)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="ShadowSql_Expressions_Visit_SingleInsertVisitor__ctor_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.#ctor*"></a>
+
+  <h3 id="ShadowSql_Expressions_Visit_SingleInsertVisitor__ctor_ShadowSql_Identifiers_ITable_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.#ctor(ShadowSql.Identifiers.ITable)">
+  SingleInsertVisitor(ITable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Visit/SingleInsertVisitor.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>单条插入表达式解析</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SingleInsertVisitor(ITable table)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_Visit_SingleInsertVisitor__ctor_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.#ctor*"></a>
+
+  <h3 id="ShadowSql_Expressions_Visit_SingleInsertVisitor__ctor_ShadowSql_Identifiers_ITable_System_Collections_Generic_List_ShadowSql_Insert_IInsertValue__" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.#ctor(ShadowSql.Identifiers.ITable,System.Collections.Generic.List{ShadowSql.Insert.IInsertValue})">
+  SingleInsertVisitor(ITable, List&lt;IInsertValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Visit/SingleInsertVisitor.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>单条插入表达式解析</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SingleInsertVisitor(ITable table, List&lt;IInsertValue&gt; items)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ShadowSql.Insert.IInsertValue.html">IInsertValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="ShadowSql_Expressions_Visit_SingleInsertVisitor_Items_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.Items*"></a>
+
+  <h3 id="ShadowSql_Expressions_Visit_SingleInsertVisitor_Items" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.Items">
+  Items
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Visit/SingleInsertVisitor.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IInsertValue&gt; Items { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ShadowSql.Insert.IInsertValue.html">IInsertValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_Visit_SingleInsertVisitor_Table_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.Table*"></a>
+
+  <h3 id="ShadowSql_Expressions_Visit_SingleInsertVisitor_Table" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.Table">
+  Table
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Visit/SingleInsertVisitor.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITable Table { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="ShadowSql_Expressions_Visit_SingleInsertVisitor_CheckAssignment_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.CheckAssignment*"></a>
+
+  <h3 id="ShadowSql_Expressions_Visit_SingleInsertVisitor_CheckAssignment_System_Linq_Expressions_Expression_System_Reflection_MemberInfo_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.CheckAssignment(System.Linq.Expressions.Expression,System.Reflection.MemberInfo)">
+  CheckAssignment(Expression, MemberInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Visit/SingleInsertVisitor.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>处理赋值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckAssignment(Expression expression, MemberInfo info)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd><p>表达式</p>
+</dd>
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_Visit_SingleInsertVisitor_Insert_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.Insert*"></a>
+
+  <h3 id="ShadowSql_Expressions_Visit_SingleInsertVisitor_Insert__1_ShadowSql_Identifiers_ITable_System_Linq_Expressions_Expression_System_Func___0___" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.Insert``1(ShadowSql.Identifiers.ITable,System.Linq.Expressions.Expression{System.Func{``0}})">
+  Insert&lt;TEntity&gt;(ITable, Expression&lt;Func&lt;TEntity&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Visit/SingleInsertVisitor.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SingleInsertVisitor Insert&lt;TEntity&gt;(ITable table, Expression&lt;Func&lt;TEntity&gt;&gt; select)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>select</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TEntity&gt;&gt;</dt>
+    <dd><p>筛选</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.SingleInsertVisitor.html">SingleInsertVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_Visit_SingleInsertVisitor_Insert_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.Insert*"></a>
+
+  <h3 id="ShadowSql_Expressions_Visit_SingleInsertVisitor_Insert__2_ShadowSql_Identifiers_ITable_System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.Insert``2(ShadowSql.Identifiers.ITable,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+  Insert&lt;TParameter, TEntity&gt;(ITable, Expression&lt;Func&lt;TParameter, TEntity&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Visit/SingleInsertVisitor.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析表达式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SingleInsertVisitor Insert&lt;TParameter, TEntity&gt;(ITable table, Expression&lt;Func&lt;TParameter, TEntity&gt;&gt; select)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="ShadowSql.Identifiers.ITable.html">ITable</a></dt>
+    <dd><p>表</p>
+</dd>
+    <dt><code>select</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TParameter, TEntity&gt;&gt;</dt>
+    <dd><p>筛选</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ShadowSql.Expressions.Visit.SingleInsertVisitor.html">SingleInsertVisitor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TParameter</code></dt>
+    <dd></dd>
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="ShadowSql_Expressions_Visit_SingleInsertVisitor_VisitMemberAssignment_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.VisitMemberAssignment*"></a>
+
+  <h3 id="ShadowSql_Expressions_Visit_SingleInsertVisitor_VisitMemberAssignment_System_Linq_Expressions_MemberAssignment_" data-uid="ShadowSql.Expressions.Visit.SingleInsertVisitor.VisitMemberAssignment(System.Linq.Expressions.MemberAssignment)">
+  VisitMemberAssignment(MemberAssignment)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Visit/SingleInsertVisitor.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>解析MemberAssignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override MemberAssignment VisitMemberAssignment(MemberAssignment assignment)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>assignment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.memberassignment">MemberAssignment</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.memberassignment">MemberAssignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/ShadowSql.Expressions/Visit/SingleInsertVisitor.cs/#L16" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>比较运算符 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="比较运算符 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/logic/symbol.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="比较运算符">比较运算符</h1>
+
+<blockquote>
+<ul>
+<li>比较运算符用于实现基于字段的原子逻辑</li>
+<li>比较运算符分为单元、二元和三元</li>
+<li>比较运算符支持否定运算</li>
+<li>比较运算符支持前后交换运算</li>
+</ul>
+</blockquote>
+<h2 id="1-comparesymbol">1. CompareSymbol</h2>
+<blockquote>
+<ul>
+<li><a class="xref" href="../../api/ShadowSql.Compares.CompareSymbol.html">比较运算符</a></li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class CompareSymbol : ISqlEntity{
+/// &lt;summary&gt;
+/// 操作符
+/// &lt;/summary&gt;
+string Operation { get; }
+/// &lt;summary&gt;
+/// 否定运算
+/// &lt;/summary&gt;
+CompareSymbol Not();
+/// &lt;summary&gt;
+/// 前后交换运算
+/// &lt;/summary&gt;
+CompareSymbol Reverse();
+}
+</code></pre>
+<h2 id="2-单元运算符">2. 单元运算符</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">SQL</th>
+<th style="text-align: left;">作用</th>
+<th style="text-align: left;">否定运算</th>
+<th style="text-align: left;">前后交换运算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">IsNull</td>
+<td style="text-align: left;">IS NULL</td>
+<td style="text-align: left;">是否为空</td>
+<td style="text-align: left;">NotNull</td>
+<td style="text-align: left;">IsNull</td>
+</tr>
+<tr>
+<td style="text-align: left;">NotNull</td>
+<td style="text-align: left;">IS NOT NULL</td>
+<td style="text-align: left;">是否非空</td>
+<td style="text-align: left;">IsNull</td>
+<td style="text-align: left;">NotNull</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-二元运算符">3. 二元运算符</h2>
+<h3 id="31-判同逻辑">3.1 判同逻辑</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">SQL</th>
+<th style="text-align: left;">作用</th>
+<th style="text-align: left;">否定运算</th>
+<th style="text-align: left;">前后交换运算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Equal</td>
+<td style="text-align: left;">=</td>
+<td style="text-align: left;">是否相同</td>
+<td style="text-align: left;">NotEqual</td>
+<td style="text-align: left;">Equal</td>
+</tr>
+<tr>
+<td style="text-align: left;">NotEqual</td>
+<td style="text-align: left;">&lt;&gt;</td>
+<td style="text-align: left;">是否不同</td>
+<td style="text-align: left;">Equal</td>
+<td style="text-align: left;">NotEqual</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-数值比较运算符">3.2 数值比较运算符</h3>
+<blockquote>
+<ul>
+<li>只支持数值类型(整数和浮点数)</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">SQL</th>
+<th style="text-align: left;">作用</th>
+<th style="text-align: left;">否定运算</th>
+<th style="text-align: left;">前后交换运算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Greater</td>
+<td style="text-align: left;">&gt;</td>
+<td style="text-align: left;">是否大于</td>
+<td style="text-align: left;">LessEqual</td>
+<td style="text-align: left;">LessEqual</td>
+</tr>
+<tr>
+<td style="text-align: left;">LessEqual</td>
+<td style="text-align: left;">&lt;=</td>
+<td style="text-align: left;">是否小于等于</td>
+<td style="text-align: left;">Greater</td>
+<td style="text-align: left;">Greater</td>
+</tr>
+<tr>
+<td style="text-align: left;">Less</td>
+<td style="text-align: left;">&lt;</td>
+<td style="text-align: left;">是否小于</td>
+<td style="text-align: left;">GreaterEqual</td>
+<td style="text-align: left;">GreaterEqual</td>
+</tr>
+<tr>
+<td style="text-align: left;">GreaterEqual</td>
+<td style="text-align: left;">&gt;=</td>
+<td style="text-align: left;">是否大于等于</td>
+<td style="text-align: left;">Less</td>
+<td style="text-align: left;">Less</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-模式匹配运算符">3.3 模式匹配运算符</h3>
+<blockquote>
+<ul>
+<li>只支持字符类型</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">SQL</th>
+<th style="text-align: left;">作用</th>
+<th style="text-align: left;">否定运算</th>
+<th style="text-align: left;">前后交换运算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Like</td>
+<td style="text-align: left;">LIKE</td>
+<td style="text-align: left;">是否匹配</td>
+<td style="text-align: left;">NotLike</td>
+<td style="text-align: left;">Like</td>
+</tr>
+<tr>
+<td style="text-align: left;">NotLike</td>
+<td style="text-align: left;">NOT LIKE</td>
+<td style="text-align: left;">是否不匹配</td>
+<td style="text-align: left;">Like</td>
+<td style="text-align: left;">NotLike</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-集合运算符">3.3 集合运算符</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">SQL</th>
+<th style="text-align: left;">作用</th>
+<th style="text-align: left;">否定运算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">In</td>
+<td style="text-align: left;">IN</td>
+<td style="text-align: left;">是否在...之内</td>
+<td style="text-align: left;">NotIn</td>
+</tr>
+<tr>
+<td style="text-align: left;">NotIn</td>
+<td style="text-align: left;">NOT IN</td>
+<td style="text-align: left;">是否不在...之内</td>
+<td style="text-align: left;">In</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>集合逻辑不支持交换</p>
+</blockquote>
+<h2 id="4-三元运算符">4. 三元运算符</h2>
+<blockquote>
+<ul>
+<li>只支持数值类型(整数和浮点数)</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">SQL</th>
+<th style="text-align: left;">作用</th>
+<th style="text-align: left;">否定运算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Between</td>
+<td style="text-align: left;">BETWEEN</td>
+<td style="text-align: left;">是否在...之间</td>
+<td style="text-align: left;">NotBetween</td>
+</tr>
+<tr>
+<td style="text-align: left;">NotBetween</td>
+<td style="text-align: left;">NOT BETWEEN</td>
+<td style="text-align: left;">是否不在...之间</td>
+<td style="text-align: left;">Between</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>三元运算符不支持交换</p>
+</blockquote>
+<h2 id="5-其他相关功能">5. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>参看<a href="index.html">逻辑简介</a></li>
+<li>参看<a href="compare.html">比较逻辑</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/logic/symbol.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

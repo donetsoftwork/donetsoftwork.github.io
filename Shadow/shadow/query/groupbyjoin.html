@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>sql联表分组 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="sql联表分组 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadow/query/groupbyjoin.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="sql联表分组">sql联表分组</h1>
+
+<blockquote>
+<ul>
+<li>按列分组并查询</li>
+<li>本组件是对ShadowSql.Core同名组件的泛型扩展</li>
+<li>支持对数据表类型特殊处理,增强功能、增加易用性</li>
+</ul>
+</blockquote>
+<h2 id="1-接口">1. 接口</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.Identifiers.IGroupByView.html">IGroupByView</a></p>
+</blockquote>
+<h2 id="2-基类">2. 基类</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.GroupBy.GroupByBase.html">GroupByBase</a></p>
+</blockquote>
+<h2 id="3-类">3. 类</h2>
+<blockquote>
+<p><a class="xref" href="../../api/ShadowSql.GroupBy.GroupByMultiQuery.html">GroupByMultiQuery</a></p>
+</blockquote>
+<h2 id="4-groupby">4. GroupBy</h2>
+<blockquote>
+<p>从多、联表创建<a class="xref" href="../../api/ShadowSql.GroupBy.GroupByMultiQuery.html">GroupByMultiQuery</a></p>
+</blockquote>
+<h3 id="41-groupby扩展方法">4.1 GroupBy扩展方法</h3>
+<pre><code class="lang-csharp">GroupByMultiQuery GroupBy(this JoinTableQuery multiTable, params IField[] fields);
+GroupByMultiQuery GroupBy(this MultiTableQuery multiTable, params IField[] fields);
+</code></pre>
+<pre><code class="lang-csharp">CommentAliasTable c = new(&quot;c&quot;);
+PostAliasTable p = new(&quot;p&quot;);
+var query = c.Join(p)
+    .And(c.PostId.Equal(p.Id))
+    .Root
+    .GroupBy(p.Id);
+// SELECT * FROM [Comments] AS c INNER JOIN [Posts] AS p ON c.[PostId]=p.[Id] GROUP BY p.[Id]
+</code></pre>
+<pre><code class="lang-csharp">CommentAliasTable c = new(&quot;c&quot;);
+PostAliasTable p = new(&quot;p&quot;);
+var query = c.Multi(p)
+    .And(c.PostId.Equal(p.Id))
+    .GroupBy(p.Id);
+// SELECT * FROM [Comments] AS c,[Posts] AS p WHERE c.[PostId]=p.[Id] GROUP BY p.[Id]
+</code></pre>
+<h3 id="42-groupby重载扩展方法">4.2 GroupBy重载扩展方法</h3>
+<pre><code class="lang-csharp">GroupByMultiQuery GroupBy(this JoinTableQuery multiTable, params IEnumerable&lt;string&gt; columnNames);
+GroupByMultiQuery GroupBy(this MultiTableQuery multiTable, params IEnumerable&lt;string&gt; columnNames);
+</code></pre>
+<pre><code class="lang-csharp">var query = _db.From(&quot;Employees&quot;)
+    .SqlJoin(_db.From(&quot;Departments&quot;))
+    .OnColumn(&quot;DepartmentId&quot;, &quot;Id&quot;)
+    .Root
+    .GroupBy(&quot;Manager&quot;);
+// SELECT * FROM [Employees] AS t1 INNER JOIN [Departments] AS t2 ON t1.[DepartmentId]=t2.[Id] GROUP BY [Manager]
+</code></pre>
+<pre><code class="lang-csharp">var query = _db.From(&quot;Employees&quot;)
+    .SqlMulti(_db.From(&quot;Departments&quot;))
+    .Where(&quot;t1.DepartmentId=t2.Id&quot;)
+    .GroupBy(&quot;Manager&quot;);
+// SELECT * FROM [Employees] AS t1,[Departments] AS t2 WHERE t1.DepartmentId=t2.Id GROUP BY [Manager]
+</code></pre>
+<h3 id="43-aliasjoinonquery的groupby">4.3 AliasJoinOnQuery的GroupBy</h3>
+<pre><code class="lang-csharp">GroupByMultiQuery GroupBy&lt;TLeft, TRight&gt;(this AliasJoinOnQuery&lt;TLeft, TRight&gt; joinOn, Func&lt;TLeft, TRight, IField[]&gt; select)
+        where TLeft : IAliasTable&lt;ITable&gt;
+        where TRight : IAliasTable&lt;ITable&gt;;
+</code></pre>
+<pre><code class="lang-csharp">var query = new CommentAliasTable(&quot;c&quot;)
+    .Join(new PostAliasTable(&quot;p&quot;))
+    .Apply(c =&gt; c.PostId, p =&gt; p.Id, (q, PostId, Id) =&gt; q.And(PostId.Equal(Id)))
+    .GroupBy((c, p) =&gt; [c.PostId]);
+// SELECT * FROM [Comments] AS c INNER JOIN [Posts] AS p ON c.[PostId]=p.[Id] GROUP BY c.[PostId]
+</code></pre>
+<h3 id="44-joinonquery的groupby">4.4 JoinOnQuery的GroupBy</h3>
+<pre><code class="lang-csharp">GroupByMultiQuery GroupBy&lt;LTable, RTable&gt;(this JoinOnQuery&lt;LTable, RTable&gt; joinOn, Func&lt;LTable, RTable, IColumn[]&gt; select)
+        where LTable : ITable
+        where RTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var query = new CommentTable()
+    .Join(new PostTable())
+    .Apply(c =&gt; c.PostId, p =&gt; p.Id, (q, PostId, Id) =&gt; q.And(PostId.Equal(Id)))
+    .GroupBy((c, p) =&gt; [p.Id]);
+// SELECT * FROM [Comments] AS t1 INNER JOIN [Posts] AS t2 ON t1.[PostId]=t2.[Id] GROUP BY t2.[Id]
+</code></pre>
+<h2 id="5-apply">5. Apply</h2>
+<h2 id="51-apply方法">5.1 Apply方法</h2>
+<blockquote>
+<ul>
+<li>先聚合再查询</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">GroupByMultiQuery Apply&lt;TAliasTable&gt;(string tableName, Func&lt;TAliasTable, IAggregateField&gt; aggregate, Func&lt;Logic, IAggregateField, Logic&gt; query)
+         where TAliasTable : IAliasTable;
+</code></pre>
+<pre><code class="lang-csharp">var query = new CommentAliasTable(&quot;c&quot;)
+    .Join(new PostAliasTable(&quot;p&quot;))
+    .Apply((q, c, p) =&gt; q.And(c.PostId.Equal(p.Id)))
+    .GroupBy((c, p) =&gt; [c.PostId])
+    .Apply&lt;CommentAliasTable&gt;(&quot;c&quot;, c =&gt; c.Pick.Max(), (q, Pick) =&gt; q.And(Pick.GreaterValue(10)));
+// SELECT * FROM [Comments] AS c INNER JOIN [Posts] AS p ON c.[PostId]=p.[Id] GROUP BY c.[PostId] HAVING MAX(c.[Pick])&gt;10
+</code></pre>
+<h2 id="52-apply重载方法">5.2 Apply重载方法</h2>
+<blockquote>
+<ul>
+<li>先定位列再聚合后查询</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">GroupByMultiQuery Apply&lt;TTable&gt;(string tableName, Func&lt;TTable, IColumn&gt; select, Func&lt;IColumn, IAggregateField&gt; aggregate, Func&lt;Logic, IAggregateField, Logic&gt; query)
+        where TTable : ITable;
+</code></pre>
+<pre><code class="lang-csharp">var query = new CommentTable()
+    .Join(new PostTable())
+    .Apply(c =&gt; c.PostId, p =&gt; p.Id, (q, PostId, Id) =&gt; q.And(PostId.Equal(Id)))
+    .GroupBy((c, p) =&gt; [c.PostId])
+    .Apply&lt;CommentTable&gt;(&quot;Comments&quot;, c =&gt; c.Pick, Pick =&gt; Pick.Max(), (q, Pick) =&gt; q.And(Pick.GreaterValue(10)));
+// SELECT * FROM [Comments] AS t1 INNER JOIN [Posts] AS t2 ON t1.[PostId]=t2.[Id] GROUP BY t1.[PostId] HAVING MAX(t1.[Pick])&gt;10
+</code></pre>
+<h2 id="6-其他相关功能">6. 其他相关功能</h2>
+<blockquote>
+<ul>
+<li>本组件并非只有以上功能,其他功能参看以下文档:</li>
+<li>参看<a class="xref" href="../../api/ShadowSql.GroupBy.GroupByMultiQuery.html">GroupByMultiQuery</a>的方法和扩展方法部分</li>
+<li>参看<a href="../../shadowcore/fields/aggregate.html">聚合</a></li>
+<li>参看<a href="index.html">sql查询简介</a></li>
+<li>参看<a href="../../shadowcore/query/groupby.html">ShadowSqlCore相关文档</a></li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadow/query/groupbyjoin.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

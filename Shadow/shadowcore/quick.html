@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>快速上手 | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="快速上手 | .net拼写sql ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/quick.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="快速上手">快速上手</h1>
+
+<blockquote>
+<ul>
+<li>精简版快速上手</li>
+</ul>
+</blockquote>
+<h2 id="1-按列查询">1. 按列查询</h2>
+<h3 id="11-常量查询">1.1 常量查询</h3>
+<pre><code class="lang-csharp">var table = new UserTable();
+var query = new TableSqlQuery(table)
+     .Where(table.Id.LessValue(100))
+     .Where(table.Status.EqualValue(true));
+// SELECT * FROM [Users] WHERE [Id]&lt;100 AND [Status]=1
+</code></pre>
+<h3 id="12-参数查询">1.2 参数查询</h3>
+<pre><code class="lang-csharp">var table = new UserTable();
+var query = new TableSqlQuery(table)
+     .Where(table.Id.Less(&quot;LastId&quot;))
+     .Where(table.Status.Equal());
+// SELECT * FROM [Users] WHERE [Id]&lt;@LastId AND [Status]=@Status
+</code></pre>
+<h2 id="2-按列名查询">2. 按列名查询</h2>
+<h3 id="21-常量查询">2.1 常量查询</h3>
+<pre><code class="lang-csharp">var query = new TableSqlQuery(&quot;Users&quot;)
+    .Where(u =&gt; u.Field(&quot;Id&quot;).LessValue(100))
+    .Where(u =&gt; u.Field(&quot;Status&quot;).EqualValue(true));
+// SELECT * FROM [Users] WHERE [Id]&lt;100 AND [Status]=1
+</code></pre>
+<h3 id="22-参数查询">2.2 参数查询</h3>
+<pre><code class="lang-csharp">var query = new TableSqlQuery(&quot;Users&quot;)
+    .Where(u =&gt; u.Field(&quot;Id&quot;).Less(&quot;LastId&quot;))
+    .Where(u =&gt; u.Field(&quot;Status&quot;).Equal());
+// SELECT * FROM [Users] WHERE [Id]&lt;@LastId AND [Status]=@Status
+</code></pre>
+<h2 id="3-原生sql查询">3. 原生sql查询</h2>
+<h3 id="31-常量查询">3.1 常量查询</h3>
+<pre><code class="lang-csharp">var query = new TableSqlQuery(&quot;Users&quot;)
+    .Where(&quot;Id=1&quot;, &quot;Status=1&quot;);
+// SELECT * FROM [Users] WHERE Id=1 AND Status=1
+</code></pre>
+<h3 id="32-参数查询">3.2 参数查询</h3>
+<pre><code class="lang-csharp">var query = new TableSqlQuery(&quot;Users&quot;)
+    .Where(&quot;Id=@Id&quot;, &quot;Status=@Status&quot;);
+// SELECT * FROM [Users] WHERE Id=@Id AND Status=@Status
+</code></pre>
+<h2 id="4-逻辑运算查询">4. 逻辑运算查询</h2>
+<h3 id="41-常量查询">4.1 常量查询</h3>
+<pre><code class="lang-csharp">var users = new UserTable();
+var query = new TableQuery(users)
+    .And(users.Id.LessValue(100) &amp; users.Status.EqualValue(true));
+// SELECT * FROM [Users] WHERE [Id]&lt;100 AND [Status]=1
+</code></pre>
+<h3 id="42-参数查询">4.2 参数查询</h3>
+<pre><code class="lang-csharp">var users = new UserTable();
+var query = new TableQuery(users)
+    .And(users.Id.Less(&quot;LastId&quot;) &amp; users.Status.Equal(&quot;Status&quot;));
+// SELECT * FROM [Users] WHERE [Id]&lt;@LastId AND [Status]=@Status
+</code></pre>
+<h2 id="5-分页查询">5. 分页查询</h2>
+<pre><code class="lang-csharp">var table = new UserTable();
+var query = new TableSqlQuery(table)
+     .Where(table.Id.Less(&quot;LastId&quot;))
+     .Where(table.Status.EqualValue(true));
+var cursor = new TableCursor(query)
+    .Desc(table.Id)
+    .Skip(10)
+    .Take(10);
+// SELECT * FROM [Users] WHERE [Id]&lt;@LastId AND [Status]=1 ORDER BY [Id] DESC OFFSET 10 ROWS FETCH NEXT 10 ROWS ONLY
+</code></pre>
+<h2 id="6-删除">6. 删除</h2>
+<h3 id="61-常量删除">6.1 常量删除</h3>
+<pre><code class="lang-csharp">var table = _db.From(&quot;Students&quot;);
+var query = new TableSqlQuery(table)
+    .Where(table.Field(&quot;Score&quot;).LessValue(60));
+var delete = new TableDelete(table, query.Filter);
+// DELETE FROM [Students] WHERE [Score]&lt;60
+</code></pre>
+<h3 id="62-参数删除">6.2 参数删除</h3>
+<pre><code class="lang-csharp">var table = _db.From(&quot;Students&quot;);
+var query = new TableSqlQuery(table)
+    .Where(table.Field(&quot;Score&quot;).Less());
+var delete = new TableDelete(table, query.Filter);
+// DELETE FROM [Students] WHERE [Score]&lt;@Score
+</code></pre>
+<h2 id="7-更新">7. 更新</h2>
+<h3 id="71-常量更新">7.1 常量更新</h3>
+<pre><code class="lang-csharp">var table = new UserTable();
+var query = new TableSqlQuery(table)
+    .Where(table.Id.EqualValue(1));
+var update = new TableUpdate(table, query.Filter)
+    .Set(table.Status.AssignValue(false));
+// UPDATE [Users] SET [Status]=0 WHERE [Id]=1
+</code></pre>
+<h3 id="72-参数更新">7.2 参数更新</h3>
+<pre><code class="lang-csharp">var table = new UserTable();
+var query = new TableSqlQuery(table)
+    .Where(table.Id.Equal());
+var update = new TableUpdate(table, query.Filter)
+    .Set(table.Status.Assign(&quot;Status&quot;));
+// UPDATE [Users] SET [Status]=@Status WHERE [Id]=@Id
+</code></pre>
+<h2 id="8-插入">8. 插入</h2>
+<h3 id="81-常量插入">8.1 常量插入</h3>
+<pre><code class="lang-csharp">var table = new StudentTable();
+var insert = new SingleInsert(table)
+    .Insert(table.Name.InsertValue(&quot;张三&quot;))
+    .Insert(table.Score.InsertValue(90));
+// INSERT INTO [Students]([Name],[Score])VALUES('张三',90)
+</code></pre>
+<h3 id="82-参数插入">8.2 参数插入</h3>
+<pre><code class="lang-csharp">var table = new StudentTable();
+var insert = new SingleInsert(table)
+    .Insert(table.Name.Insert(&quot;StudentName&quot;))
+    .Insert(table.Score.Insert());
+// INSERT INTO [Students]([Name],[Score])VALUES(@StudentName,@Score)
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/Shadow/blob/master/docs/shadowcore/quick.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
