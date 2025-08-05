@@ -1,0 +1,427 @@
+{
+  "source_base_path": "D:/projects/MyDelta.net/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.IMyDeltaFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.IMyDeltaFactory-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.IMyDeltaFactory<TInstance>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.IMyDeltaFactory-1.yml\" sourcestartlinenumber=\"1\">MyDelta 工厂</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.IMyDeltaFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.IMyDeltaFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.IMyDeltaFactory",
+      "Summary": "<p sourcefile=\"api/MyDeltas.IMyDeltaFactory.yml\" sourcestartlinenumber=\"1\">MyDelta 工厂</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Json.MyDeltaConverter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Json.MyDeltaConverter-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Json.MyDeltaConverter<TInstance>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Json.MyDeltaConverter-1.yml\" sourcestartlinenumber=\"1\">泛型MyDelta转换器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Json.MyDeltaConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Json.MyDeltaConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Json.MyDeltaConverter",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Json.MyDeltaConverter.yml\" sourcestartlinenumber=\"1\">MyDelta转换器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Json.MyDeltaConverterFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Json.MyDeltaConverterFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Json.MyDeltaConverterFactory",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Json.MyDeltaConverterFactory.yml\" sourcestartlinenumber=\"1\">MyDelta转换器工厂</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Json.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Json",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Members.DelegateAccessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Members.DelegateAccessor-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Members.DelegateAccessor<TInstance>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Members.DelegateAccessor-1.yml\" sourcestartlinenumber=\"1\">委托访问器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Members.DelegateAccessor-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Members.DelegateAccessor-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Members.DelegateAccessor<TInstance, TMember>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Members.DelegateAccessor-2.yml\" sourcestartlinenumber=\"1\">委托访问器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Members.DelegateBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Members.DelegateBuilder-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Members.DelegateBuilder<TInstance>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Members.DelegateBuilder-1.yml\" sourcestartlinenumber=\"1\">委托成员构造器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Members.FieldAccessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Members.FieldAccessor-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Members.FieldAccessor<TInstance>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Members.FieldAccessor-1.yml\" sourcestartlinenumber=\"1\">字段访问器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Members.IMemberAccessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Members.IMemberAccessor-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Members.IMemberAccessor<TInstance>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Members.IMemberAccessor-1.yml\" sourcestartlinenumber=\"1\">成员访问器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Members.IMemberAccessorFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Members.IMemberAccessorFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Members.IMemberAccessorFactory",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Members.IMemberAccessorFactory.yml\" sourcestartlinenumber=\"1\">成员访问器工厂</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Members.MemberAccessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Members.MemberAccessor-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Members.MemberAccessor<TInstance>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Members.MemberAccessor-1.yml\" sourcestartlinenumber=\"1\">成员访问器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Members.MemberAccessorFactoryBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Members.MemberAccessorFactoryBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Members.MemberAccessorFactoryBase",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Members.MemberAccessorFactoryBase.yml\" sourcestartlinenumber=\"1\">成员访问器工厂基类(缓存)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Members.PropertyAccessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Members.PropertyAccessor-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Members.PropertyAccessor<TInstance>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Members.PropertyAccessor-1.yml\" sourcestartlinenumber=\"1\">属性访问器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Members.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Members.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Members",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.MyDelta-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.MyDelta-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.MyDelta<TInstance>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.MyDelta-1.yml\" sourcestartlinenumber=\"1\">数据变化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.MyDelta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.MyDelta.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.MyDelta",
+      "Summary": "<p sourcefile=\"api/MyDeltas.MyDelta.yml\" sourcestartlinenumber=\"1\">数据变化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.MyDeltaFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.MyDeltaFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.MyDeltaFactory",
+      "Summary": "<p sourcefile=\"api/MyDeltas.MyDeltaFactory.yml\" sourcestartlinenumber=\"1\">默认成员访问器工厂</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.MyDeltaServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.MyDeltaServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.MyDeltaServices",
+      "Summary": "<p sourcefile=\"api/MyDeltas.MyDeltaServices.yml\" sourcestartlinenumber=\"1\">扩展方法</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Reflection.ReflectionField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Reflection.ReflectionField.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Reflection.ReflectionField",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Reflection.ReflectionField.yml\" sourcestartlinenumber=\"1\">获取字段成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Reflection.ReflectionMember-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Reflection.ReflectionMember-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Reflection.ReflectionMember<TMember>",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Reflection.ReflectionMember-1.yml\" sourcestartlinenumber=\"1\">获取成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Reflection.ReflectionProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Reflection.ReflectionProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Reflection.ReflectionProperty",
+      "Summary": "<p sourcefile=\"api/MyDeltas.Reflection.ReflectionProperty.yml\" sourcestartlinenumber=\"1\">获取属性成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.Reflection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.Reflection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas.Reflection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MyDeltas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MyDeltas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyDeltas",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "deltas.md",
+      "output": {
+        ".html": {
+          "relative_path": "deltas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "emit.md",
+      "output": {
+        ".html": {
+          "relative_path": "emit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openapi.md",
+      "output": {
+        ".html": {
+          "relative_path": "openapi.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

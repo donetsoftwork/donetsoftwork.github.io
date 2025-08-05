@@ -1,0 +1,1653 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: MyDeltas
+  name: MyDeltas
+  href: api/MyDeltas.html
+  commentId: N:MyDeltas
+  fullName: MyDeltas
+  nameWithType: MyDeltas
+- uid: MyDeltas.IMyDeltaFactory
+  name: IMyDeltaFactory
+  href: api/MyDeltas.IMyDeltaFactory.html
+  commentId: T:MyDeltas.IMyDeltaFactory
+  fullName: MyDeltas.IMyDeltaFactory
+  nameWithType: IMyDeltaFactory
+- uid: MyDeltas.IMyDeltaFactory.Create*
+  name: Create
+  href: api/MyDeltas.IMyDeltaFactory.html#MyDeltas_IMyDeltaFactory_Create_
+  commentId: Overload:MyDeltas.IMyDeltaFactory.Create
+  isSpec: "True"
+  fullName: MyDeltas.IMyDeltaFactory.Create
+  nameWithType: IMyDeltaFactory.Create
+- uid: MyDeltas.IMyDeltaFactory.Create``1(``0,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: Create<TInstance>(TInstance, IDictionary<string, object?>)
+  href: api/MyDeltas.IMyDeltaFactory.html#MyDeltas_IMyDeltaFactory_Create__1___0_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:MyDeltas.IMyDeltaFactory.Create``1(``0,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: Create(Of TInstance)(TInstance, IDictionary(Of String, Object))
+  fullName: MyDeltas.IMyDeltaFactory.Create<TInstance>(TInstance, System.Collections.Generic.IDictionary<string, object?>)
+  fullName.vb: MyDeltas.IMyDeltaFactory.Create(Of TInstance)(TInstance, System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: IMyDeltaFactory.Create<TInstance>(TInstance, IDictionary<string, object?>)
+  nameWithType.vb: IMyDeltaFactory.Create(Of TInstance)(TInstance, IDictionary(Of String, Object))
+- uid: MyDeltas.IMyDeltaFactory`1
+  name: IMyDeltaFactory<TInstance>
+  href: api/MyDeltas.IMyDeltaFactory-1.html
+  commentId: T:MyDeltas.IMyDeltaFactory`1
+  name.vb: IMyDeltaFactory(Of TInstance)
+  fullName: MyDeltas.IMyDeltaFactory<TInstance>
+  fullName.vb: MyDeltas.IMyDeltaFactory(Of TInstance)
+  nameWithType: IMyDeltaFactory<TInstance>
+  nameWithType.vb: IMyDeltaFactory(Of TInstance)
+- uid: MyDeltas.IMyDeltaFactory`1.Create(`0,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: Create(TInstance, IDictionary<string, object?>)
+  href: api/MyDeltas.IMyDeltaFactory-1.html#MyDeltas_IMyDeltaFactory_1_Create__0_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:MyDeltas.IMyDeltaFactory`1.Create(`0,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: Create(TInstance, IDictionary(Of String, Object))
+  fullName: MyDeltas.IMyDeltaFactory<TInstance>.Create(TInstance, System.Collections.Generic.IDictionary<string, object?>)
+  fullName.vb: MyDeltas.IMyDeltaFactory(Of TInstance).Create(TInstance, System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: IMyDeltaFactory<TInstance>.Create(TInstance, IDictionary<string, object?>)
+  nameWithType.vb: IMyDeltaFactory(Of TInstance).Create(TInstance, IDictionary(Of String, Object))
+- uid: MyDeltas.IMyDeltaFactory`1.Create*
+  name: Create
+  href: api/MyDeltas.IMyDeltaFactory-1.html#MyDeltas_IMyDeltaFactory_1_Create_
+  commentId: Overload:MyDeltas.IMyDeltaFactory`1.Create
+  isSpec: "True"
+  fullName: MyDeltas.IMyDeltaFactory<TInstance>.Create
+  fullName.vb: MyDeltas.IMyDeltaFactory(Of TInstance).Create
+  nameWithType: IMyDeltaFactory<TInstance>.Create
+  nameWithType.vb: IMyDeltaFactory(Of TInstance).Create
+- uid: MyDeltas.Json
+  name: MyDeltas.Json
+  href: api/MyDeltas.Json.html
+  commentId: N:MyDeltas.Json
+  fullName: MyDeltas.Json
+  nameWithType: MyDeltas.Json
+- uid: MyDeltas.Json.MyDeltaConverter
+  name: MyDeltaConverter
+  href: api/MyDeltas.Json.MyDeltaConverter.html
+  commentId: T:MyDeltas.Json.MyDeltaConverter
+  fullName: MyDeltas.Json.MyDeltaConverter
+  nameWithType: MyDeltaConverter
+- uid: MyDeltas.Json.MyDeltaConverter.Instance
+  name: Instance
+  href: api/MyDeltas.Json.MyDeltaConverter.html#MyDeltas_Json_MyDeltaConverter_Instance
+  commentId: F:MyDeltas.Json.MyDeltaConverter.Instance
+  fullName: MyDeltas.Json.MyDeltaConverter.Instance
+  nameWithType: MyDeltaConverter.Instance
+- uid: MyDeltas.Json.MyDeltaConverter.Read(System.Text.Json.Utf8JsonReader@)
+  name: Read(ref Utf8JsonReader)
+  href: api/MyDeltas.Json.MyDeltaConverter.html#MyDeltas_Json_MyDeltaConverter_Read_System_Text_Json_Utf8JsonReader__
+  commentId: M:MyDeltas.Json.MyDeltaConverter.Read(System.Text.Json.Utf8JsonReader@)
+  name.vb: Read(Utf8JsonReader)
+  fullName: MyDeltas.Json.MyDeltaConverter.Read(ref System.Text.Json.Utf8JsonReader)
+  fullName.vb: MyDeltas.Json.MyDeltaConverter.Read(System.Text.Json.Utf8JsonReader)
+  nameWithType: MyDeltaConverter.Read(ref Utf8JsonReader)
+  nameWithType.vb: MyDeltaConverter.Read(Utf8JsonReader)
+- uid: MyDeltas.Json.MyDeltaConverter.Read(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonSerializerOptions)
+  name: Read(ref Utf8JsonReader, JsonSerializerOptions)
+  href: api/MyDeltas.Json.MyDeltaConverter.html#MyDeltas_Json_MyDeltaConverter_Read_System_Text_Json_Utf8JsonReader__System_Text_Json_JsonSerializerOptions_
+  commentId: M:MyDeltas.Json.MyDeltaConverter.Read(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonSerializerOptions)
+  name.vb: Read(Utf8JsonReader, JsonSerializerOptions)
+  fullName: MyDeltas.Json.MyDeltaConverter.Read(ref System.Text.Json.Utf8JsonReader, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: MyDeltas.Json.MyDeltaConverter.Read(System.Text.Json.Utf8JsonReader, System.Text.Json.JsonSerializerOptions)
+  nameWithType: MyDeltaConverter.Read(ref Utf8JsonReader, JsonSerializerOptions)
+  nameWithType.vb: MyDeltaConverter.Read(Utf8JsonReader, JsonSerializerOptions)
+- uid: MyDeltas.Json.MyDeltaConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name: Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  href: api/MyDeltas.Json.MyDeltaConverter.html#MyDeltas_Json_MyDeltaConverter_Read_System_Text_Json_Utf8JsonReader__System_Type_System_Text_Json_JsonSerializerOptions_
+  commentId: M:MyDeltas.Json.MyDeltaConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name.vb: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: MyDeltas.Json.MyDeltaConverter.Read(ref System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: MyDeltas.Json.MyDeltaConverter.Read(System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  nameWithType: MyDeltaConverter.Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType.vb: MyDeltaConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+- uid: MyDeltas.Json.MyDeltaConverter.Read*
+  name: Read
+  href: api/MyDeltas.Json.MyDeltaConverter.html#MyDeltas_Json_MyDeltaConverter_Read_
+  commentId: Overload:MyDeltas.Json.MyDeltaConverter.Read
+  isSpec: "True"
+  fullName: MyDeltas.Json.MyDeltaConverter.Read
+  nameWithType: MyDeltaConverter.Read
+- uid: MyDeltas.Json.MyDeltaConverter.Write(System.Text.Json.Utf8JsonWriter,MyDeltas.MyDelta,System.Text.Json.JsonSerializerOptions)
+  name: Write(Utf8JsonWriter, MyDelta, JsonSerializerOptions)
+  href: api/MyDeltas.Json.MyDeltaConverter.html#MyDeltas_Json_MyDeltaConverter_Write_System_Text_Json_Utf8JsonWriter_MyDeltas_MyDelta_System_Text_Json_JsonSerializerOptions_
+  commentId: M:MyDeltas.Json.MyDeltaConverter.Write(System.Text.Json.Utf8JsonWriter,MyDeltas.MyDelta,System.Text.Json.JsonSerializerOptions)
+  fullName: MyDeltas.Json.MyDeltaConverter.Write(System.Text.Json.Utf8JsonWriter, MyDeltas.MyDelta, System.Text.Json.JsonSerializerOptions)
+  nameWithType: MyDeltaConverter.Write(Utf8JsonWriter, MyDelta, JsonSerializerOptions)
+- uid: MyDeltas.Json.MyDeltaConverter.Write*
+  name: Write
+  href: api/MyDeltas.Json.MyDeltaConverter.html#MyDeltas_Json_MyDeltaConverter_Write_
+  commentId: Overload:MyDeltas.Json.MyDeltaConverter.Write
+  isSpec: "True"
+  fullName: MyDeltas.Json.MyDeltaConverter.Write
+  nameWithType: MyDeltaConverter.Write
+- uid: MyDeltas.Json.MyDeltaConverterFactory
+  name: MyDeltaConverterFactory
+  href: api/MyDeltas.Json.MyDeltaConverterFactory.html
+  commentId: T:MyDeltas.Json.MyDeltaConverterFactory
+  fullName: MyDeltas.Json.MyDeltaConverterFactory
+  nameWithType: MyDeltaConverterFactory
+- uid: MyDeltas.Json.MyDeltaConverterFactory.#ctor
+  name: MyDeltaConverterFactory()
+  href: api/MyDeltas.Json.MyDeltaConverterFactory.html#MyDeltas_Json_MyDeltaConverterFactory__ctor
+  commentId: M:MyDeltas.Json.MyDeltaConverterFactory.#ctor
+  name.vb: New()
+  fullName: MyDeltas.Json.MyDeltaConverterFactory.MyDeltaConverterFactory()
+  fullName.vb: MyDeltas.Json.MyDeltaConverterFactory.New()
+  nameWithType: MyDeltaConverterFactory.MyDeltaConverterFactory()
+  nameWithType.vb: MyDeltaConverterFactory.New()
+- uid: MyDeltas.Json.MyDeltaConverterFactory.#ctor(MyDeltas.IMyDeltaFactory)
+  name: MyDeltaConverterFactory(IMyDeltaFactory)
+  href: api/MyDeltas.Json.MyDeltaConverterFactory.html#MyDeltas_Json_MyDeltaConverterFactory__ctor_MyDeltas_IMyDeltaFactory_
+  commentId: M:MyDeltas.Json.MyDeltaConverterFactory.#ctor(MyDeltas.IMyDeltaFactory)
+  name.vb: New(IMyDeltaFactory)
+  fullName: MyDeltas.Json.MyDeltaConverterFactory.MyDeltaConverterFactory(MyDeltas.IMyDeltaFactory)
+  fullName.vb: MyDeltas.Json.MyDeltaConverterFactory.New(MyDeltas.IMyDeltaFactory)
+  nameWithType: MyDeltaConverterFactory.MyDeltaConverterFactory(IMyDeltaFactory)
+  nameWithType.vb: MyDeltaConverterFactory.New(IMyDeltaFactory)
+- uid: MyDeltas.Json.MyDeltaConverterFactory.#ctor*
+  name: MyDeltaConverterFactory
+  href: api/MyDeltas.Json.MyDeltaConverterFactory.html#MyDeltas_Json_MyDeltaConverterFactory__ctor_
+  commentId: Overload:MyDeltas.Json.MyDeltaConverterFactory.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.Json.MyDeltaConverterFactory.MyDeltaConverterFactory
+  fullName.vb: MyDeltas.Json.MyDeltaConverterFactory.New
+  nameWithType: MyDeltaConverterFactory.MyDeltaConverterFactory
+  nameWithType.vb: MyDeltaConverterFactory.New
+- uid: MyDeltas.Json.MyDeltaConverterFactory.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/MyDeltas.Json.MyDeltaConverterFactory.html#MyDeltas_Json_MyDeltaConverterFactory_CanConvert_System_Type_
+  commentId: M:MyDeltas.Json.MyDeltaConverterFactory.CanConvert(System.Type)
+  fullName: MyDeltas.Json.MyDeltaConverterFactory.CanConvert(System.Type)
+  nameWithType: MyDeltaConverterFactory.CanConvert(Type)
+- uid: MyDeltas.Json.MyDeltaConverterFactory.CanConvert*
+  name: CanConvert
+  href: api/MyDeltas.Json.MyDeltaConverterFactory.html#MyDeltas_Json_MyDeltaConverterFactory_CanConvert_
+  commentId: Overload:MyDeltas.Json.MyDeltaConverterFactory.CanConvert
+  isSpec: "True"
+  fullName: MyDeltas.Json.MyDeltaConverterFactory.CanConvert
+  nameWithType: MyDeltaConverterFactory.CanConvert
+- uid: MyDeltas.Json.MyDeltaConverterFactory.CreateConverter(System.Type,System.Text.Json.JsonSerializerOptions)
+  name: CreateConverter(Type, JsonSerializerOptions)
+  href: api/MyDeltas.Json.MyDeltaConverterFactory.html#MyDeltas_Json_MyDeltaConverterFactory_CreateConverter_System_Type_System_Text_Json_JsonSerializerOptions_
+  commentId: M:MyDeltas.Json.MyDeltaConverterFactory.CreateConverter(System.Type,System.Text.Json.JsonSerializerOptions)
+  fullName: MyDeltas.Json.MyDeltaConverterFactory.CreateConverter(System.Type, System.Text.Json.JsonSerializerOptions)
+  nameWithType: MyDeltaConverterFactory.CreateConverter(Type, JsonSerializerOptions)
+- uid: MyDeltas.Json.MyDeltaConverterFactory.CreateConverter*
+  name: CreateConverter
+  href: api/MyDeltas.Json.MyDeltaConverterFactory.html#MyDeltas_Json_MyDeltaConverterFactory_CreateConverter_
+  commentId: Overload:MyDeltas.Json.MyDeltaConverterFactory.CreateConverter
+  isSpec: "True"
+  fullName: MyDeltas.Json.MyDeltaConverterFactory.CreateConverter
+  nameWithType: MyDeltaConverterFactory.CreateConverter
+- uid: MyDeltas.Json.MyDeltaConverter`1
+  name: MyDeltaConverter<TInstance>
+  href: api/MyDeltas.Json.MyDeltaConverter-1.html
+  commentId: T:MyDeltas.Json.MyDeltaConverter`1
+  name.vb: MyDeltaConverter(Of TInstance)
+  fullName: MyDeltas.Json.MyDeltaConverter<TInstance>
+  fullName.vb: MyDeltas.Json.MyDeltaConverter(Of TInstance)
+  nameWithType: MyDeltaConverter<TInstance>
+  nameWithType.vb: MyDeltaConverter(Of TInstance)
+- uid: MyDeltas.Json.MyDeltaConverter`1.#ctor
+  name: MyDeltaConverter()
+  href: api/MyDeltas.Json.MyDeltaConverter-1.html#MyDeltas_Json_MyDeltaConverter_1__ctor
+  commentId: M:MyDeltas.Json.MyDeltaConverter`1.#ctor
+  name.vb: New()
+  fullName: MyDeltas.Json.MyDeltaConverter<TInstance>.MyDeltaConverter()
+  fullName.vb: MyDeltas.Json.MyDeltaConverter(Of TInstance).New()
+  nameWithType: MyDeltaConverter<TInstance>.MyDeltaConverter()
+  nameWithType.vb: MyDeltaConverter(Of TInstance).New()
+- uid: MyDeltas.Json.MyDeltaConverter`1.#ctor(MyDeltas.IMyDeltaFactory)
+  name: MyDeltaConverter(IMyDeltaFactory)
+  href: api/MyDeltas.Json.MyDeltaConverter-1.html#MyDeltas_Json_MyDeltaConverter_1__ctor_MyDeltas_IMyDeltaFactory_
+  commentId: M:MyDeltas.Json.MyDeltaConverter`1.#ctor(MyDeltas.IMyDeltaFactory)
+  name.vb: New(IMyDeltaFactory)
+  fullName: MyDeltas.Json.MyDeltaConverter<TInstance>.MyDeltaConverter(MyDeltas.IMyDeltaFactory)
+  fullName.vb: MyDeltas.Json.MyDeltaConverter(Of TInstance).New(MyDeltas.IMyDeltaFactory)
+  nameWithType: MyDeltaConverter<TInstance>.MyDeltaConverter(IMyDeltaFactory)
+  nameWithType.vb: MyDeltaConverter(Of TInstance).New(IMyDeltaFactory)
+- uid: MyDeltas.Json.MyDeltaConverter`1.#ctor*
+  name: MyDeltaConverter
+  href: api/MyDeltas.Json.MyDeltaConverter-1.html#MyDeltas_Json_MyDeltaConverter_1__ctor_
+  commentId: Overload:MyDeltas.Json.MyDeltaConverter`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.Json.MyDeltaConverter<TInstance>.MyDeltaConverter
+  fullName.vb: MyDeltas.Json.MyDeltaConverter(Of TInstance).New
+  nameWithType: MyDeltaConverter<TInstance>.MyDeltaConverter
+  nameWithType.vb: MyDeltaConverter(Of TInstance).New
+- uid: MyDeltas.Json.MyDeltaConverter`1.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name: Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  href: api/MyDeltas.Json.MyDeltaConverter-1.html#MyDeltas_Json_MyDeltaConverter_1_Read_System_Text_Json_Utf8JsonReader__System_Type_System_Text_Json_JsonSerializerOptions_
+  commentId: M:MyDeltas.Json.MyDeltaConverter`1.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name.vb: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: MyDeltas.Json.MyDeltaConverter<TInstance>.Read(ref System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: MyDeltas.Json.MyDeltaConverter(Of TInstance).Read(System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  nameWithType: MyDeltaConverter<TInstance>.Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType.vb: MyDeltaConverter(Of TInstance).Read(Utf8JsonReader, Type, JsonSerializerOptions)
+- uid: MyDeltas.Json.MyDeltaConverter`1.Read*
+  name: Read
+  href: api/MyDeltas.Json.MyDeltaConverter-1.html#MyDeltas_Json_MyDeltaConverter_1_Read_
+  commentId: Overload:MyDeltas.Json.MyDeltaConverter`1.Read
+  isSpec: "True"
+  fullName: MyDeltas.Json.MyDeltaConverter<TInstance>.Read
+  fullName.vb: MyDeltas.Json.MyDeltaConverter(Of TInstance).Read
+  nameWithType: MyDeltaConverter<TInstance>.Read
+  nameWithType.vb: MyDeltaConverter(Of TInstance).Read
+- uid: MyDeltas.Json.MyDeltaConverter`1.Write(System.Text.Json.Utf8JsonWriter,MyDeltas.MyDelta{`0},System.Text.Json.JsonSerializerOptions)
+  name: Write(Utf8JsonWriter, MyDelta<TInstance>, JsonSerializerOptions)
+  href: api/MyDeltas.Json.MyDeltaConverter-1.html#MyDeltas_Json_MyDeltaConverter_1_Write_System_Text_Json_Utf8JsonWriter_MyDeltas_MyDelta__0__System_Text_Json_JsonSerializerOptions_
+  commentId: M:MyDeltas.Json.MyDeltaConverter`1.Write(System.Text.Json.Utf8JsonWriter,MyDeltas.MyDelta{`0},System.Text.Json.JsonSerializerOptions)
+  name.vb: Write(Utf8JsonWriter, MyDelta(Of TInstance), JsonSerializerOptions)
+  fullName: MyDeltas.Json.MyDeltaConverter<TInstance>.Write(System.Text.Json.Utf8JsonWriter, MyDeltas.MyDelta<TInstance>, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: MyDeltas.Json.MyDeltaConverter(Of TInstance).Write(System.Text.Json.Utf8JsonWriter, MyDeltas.MyDelta(Of TInstance), System.Text.Json.JsonSerializerOptions)
+  nameWithType: MyDeltaConverter<TInstance>.Write(Utf8JsonWriter, MyDelta<TInstance>, JsonSerializerOptions)
+  nameWithType.vb: MyDeltaConverter(Of TInstance).Write(Utf8JsonWriter, MyDelta(Of TInstance), JsonSerializerOptions)
+- uid: MyDeltas.Json.MyDeltaConverter`1.Write*
+  name: Write
+  href: api/MyDeltas.Json.MyDeltaConverter-1.html#MyDeltas_Json_MyDeltaConverter_1_Write_
+  commentId: Overload:MyDeltas.Json.MyDeltaConverter`1.Write
+  isSpec: "True"
+  fullName: MyDeltas.Json.MyDeltaConverter<TInstance>.Write
+  fullName.vb: MyDeltas.Json.MyDeltaConverter(Of TInstance).Write
+  nameWithType: MyDeltaConverter<TInstance>.Write
+  nameWithType.vb: MyDeltaConverter(Of TInstance).Write
+- uid: MyDeltas.Members
+  name: MyDeltas.Members
+  href: api/MyDeltas.Members.html
+  commentId: N:MyDeltas.Members
+  fullName: MyDeltas.Members
+  nameWithType: MyDeltas.Members
+- uid: MyDeltas.Members.DelegateAccessor`1
+  name: DelegateAccessor<TInstance>
+  href: api/MyDeltas.Members.DelegateAccessor-1.html
+  commentId: T:MyDeltas.Members.DelegateAccessor`1
+  name.vb: DelegateAccessor(Of TInstance)
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance>
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance)
+  nameWithType: DelegateAccessor<TInstance>
+  nameWithType.vb: DelegateAccessor(Of TInstance)
+- uid: MyDeltas.Members.DelegateAccessor`1.#ctor(System.Type,System.Func{`0,System.Object},System.Action{`0,System.Object})
+  name: DelegateAccessor(Type, Func<TInstance, object?>, Action<TInstance, object?>)
+  href: api/MyDeltas.Members.DelegateAccessor-1.html#MyDeltas_Members_DelegateAccessor_1__ctor_System_Type_System_Func__0_System_Object__System_Action__0_System_Object__
+  commentId: M:MyDeltas.Members.DelegateAccessor`1.#ctor(System.Type,System.Func{`0,System.Object},System.Action{`0,System.Object})
+  name.vb: New(Type, Func(Of TInstance, Object), Action(Of TInstance, Object))
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance>.DelegateAccessor(System.Type, System.Func<TInstance, object?>, System.Action<TInstance, object?>)
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance).New(System.Type, System.Func(Of TInstance, Object), System.Action(Of TInstance, Object))
+  nameWithType: DelegateAccessor<TInstance>.DelegateAccessor(Type, Func<TInstance, object?>, Action<TInstance, object?>)
+  nameWithType.vb: DelegateAccessor(Of TInstance).New(Type, Func(Of TInstance, Object), Action(Of TInstance, Object))
+- uid: MyDeltas.Members.DelegateAccessor`1.#ctor*
+  name: DelegateAccessor
+  href: api/MyDeltas.Members.DelegateAccessor-1.html#MyDeltas_Members_DelegateAccessor_1__ctor_
+  commentId: Overload:MyDeltas.Members.DelegateAccessor`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance>.DelegateAccessor
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance).New
+  nameWithType: DelegateAccessor<TInstance>.DelegateAccessor
+  nameWithType.vb: DelegateAccessor(Of TInstance).New
+- uid: MyDeltas.Members.DelegateAccessor`2
+  name: DelegateAccessor<TInstance, TMember>
+  href: api/MyDeltas.Members.DelegateAccessor-2.html
+  commentId: T:MyDeltas.Members.DelegateAccessor`2
+  name.vb: DelegateAccessor(Of TInstance, TMember)
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember)
+  nameWithType: DelegateAccessor<TInstance, TMember>
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember)
+- uid: MyDeltas.Members.DelegateAccessor`2.#ctor(System.Func{`0,`1},System.Action{`0,`1})
+  name: DelegateAccessor(Func<TInstance, TMember>, Action<TInstance, TMember>)
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2__ctor_System_Func__0__1__System_Action__0__1__
+  commentId: M:MyDeltas.Members.DelegateAccessor`2.#ctor(System.Func{`0,`1},System.Action{`0,`1})
+  name.vb: New(Func(Of TInstance, TMember), Action(Of TInstance, TMember))
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.DelegateAccessor(System.Func<TInstance, TMember>, System.Action<TInstance, TMember>)
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).New(System.Func(Of TInstance, TMember), System.Action(Of TInstance, TMember))
+  nameWithType: DelegateAccessor<TInstance, TMember>.DelegateAccessor(Func<TInstance, TMember>, Action<TInstance, TMember>)
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).New(Func(Of TInstance, TMember), Action(Of TInstance, TMember))
+- uid: MyDeltas.Members.DelegateAccessor`2.#ctor(System.Type,System.Func{`0,`1},System.Action{`0,`1})
+  name: DelegateAccessor(Type, Func<TInstance, TMember>, Action<TInstance, TMember>)
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2__ctor_System_Type_System_Func__0__1__System_Action__0__1__
+  commentId: M:MyDeltas.Members.DelegateAccessor`2.#ctor(System.Type,System.Func{`0,`1},System.Action{`0,`1})
+  name.vb: New(Type, Func(Of TInstance, TMember), Action(Of TInstance, TMember))
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.DelegateAccessor(System.Type, System.Func<TInstance, TMember>, System.Action<TInstance, TMember>)
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).New(System.Type, System.Func(Of TInstance, TMember), System.Action(Of TInstance, TMember))
+  nameWithType: DelegateAccessor<TInstance, TMember>.DelegateAccessor(Type, Func<TInstance, TMember>, Action<TInstance, TMember>)
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).New(Type, Func(Of TInstance, TMember), Action(Of TInstance, TMember))
+- uid: MyDeltas.Members.DelegateAccessor`2.#ctor*
+  name: DelegateAccessor
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2__ctor_
+  commentId: Overload:MyDeltas.Members.DelegateAccessor`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.DelegateAccessor
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).New
+  nameWithType: DelegateAccessor<TInstance, TMember>.DelegateAccessor
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).New
+- uid: MyDeltas.Members.DelegateAccessor`2.Copy(`0,`0)
+  name: Copy(TInstance, TInstance)
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2_Copy__0__0_
+  commentId: M:MyDeltas.Members.DelegateAccessor`2.Copy(`0,`0)
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.Copy(TInstance, TInstance)
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).Copy(TInstance, TInstance)
+  nameWithType: DelegateAccessor<TInstance, TMember>.Copy(TInstance, TInstance)
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).Copy(TInstance, TInstance)
+- uid: MyDeltas.Members.DelegateAccessor`2.Copy*
+  name: Copy
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2_Copy_
+  commentId: Overload:MyDeltas.Members.DelegateAccessor`2.Copy
+  isSpec: "True"
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.Copy
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).Copy
+  nameWithType: DelegateAccessor<TInstance, TMember>.Copy
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).Copy
+- uid: MyDeltas.Members.DelegateAccessor`2.GetValue(`0)
+  name: GetValue(TInstance)
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2_GetValue__0_
+  commentId: M:MyDeltas.Members.DelegateAccessor`2.GetValue(`0)
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.GetValue(TInstance)
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).GetValue(TInstance)
+  nameWithType: DelegateAccessor<TInstance, TMember>.GetValue(TInstance)
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).GetValue(TInstance)
+- uid: MyDeltas.Members.DelegateAccessor`2.GetValue*
+  name: GetValue
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2_GetValue_
+  commentId: Overload:MyDeltas.Members.DelegateAccessor`2.GetValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.GetValue
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).GetValue
+  nameWithType: DelegateAccessor<TInstance, TMember>.GetValue
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).GetValue
+- uid: MyDeltas.Members.DelegateAccessor`2.Getter
+  name: Getter
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2_Getter
+  commentId: P:MyDeltas.Members.DelegateAccessor`2.Getter
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.Getter
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).Getter
+  nameWithType: DelegateAccessor<TInstance, TMember>.Getter
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).Getter
+- uid: MyDeltas.Members.DelegateAccessor`2.Getter*
+  name: Getter
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2_Getter_
+  commentId: Overload:MyDeltas.Members.DelegateAccessor`2.Getter
+  isSpec: "True"
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.Getter
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).Getter
+  nameWithType: DelegateAccessor<TInstance, TMember>.Getter
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).Getter
+- uid: MyDeltas.Members.DelegateAccessor`2.SetValueCore(`0,System.Object)
+  name: SetValueCore(TInstance, object?)
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2_SetValueCore__0_System_Object_
+  commentId: M:MyDeltas.Members.DelegateAccessor`2.SetValueCore(`0,System.Object)
+  name.vb: SetValueCore(TInstance, Object)
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.SetValueCore(TInstance, object?)
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).SetValueCore(TInstance, Object)
+  nameWithType: DelegateAccessor<TInstance, TMember>.SetValueCore(TInstance, object?)
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).SetValueCore(TInstance, Object)
+- uid: MyDeltas.Members.DelegateAccessor`2.SetValueCore*
+  name: SetValueCore
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2_SetValueCore_
+  commentId: Overload:MyDeltas.Members.DelegateAccessor`2.SetValueCore
+  isSpec: "True"
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.SetValueCore
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).SetValueCore
+  nameWithType: DelegateAccessor<TInstance, TMember>.SetValueCore
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).SetValueCore
+- uid: MyDeltas.Members.DelegateAccessor`2.Setter
+  name: Setter
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2_Setter
+  commentId: P:MyDeltas.Members.DelegateAccessor`2.Setter
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.Setter
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).Setter
+  nameWithType: DelegateAccessor<TInstance, TMember>.Setter
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).Setter
+- uid: MyDeltas.Members.DelegateAccessor`2.Setter*
+  name: Setter
+  href: api/MyDeltas.Members.DelegateAccessor-2.html#MyDeltas_Members_DelegateAccessor_2_Setter_
+  commentId: Overload:MyDeltas.Members.DelegateAccessor`2.Setter
+  isSpec: "True"
+  fullName: MyDeltas.Members.DelegateAccessor<TInstance, TMember>.Setter
+  fullName.vb: MyDeltas.Members.DelegateAccessor(Of TInstance, TMember).Setter
+  nameWithType: DelegateAccessor<TInstance, TMember>.Setter
+  nameWithType.vb: DelegateAccessor(Of TInstance, TMember).Setter
+- uid: MyDeltas.Members.DelegateBuilder`1
+  name: DelegateBuilder<TInstance>
+  href: api/MyDeltas.Members.DelegateBuilder-1.html
+  commentId: T:MyDeltas.Members.DelegateBuilder`1
+  name.vb: DelegateBuilder(Of TInstance)
+  fullName: MyDeltas.Members.DelegateBuilder<TInstance>
+  fullName.vb: MyDeltas.Members.DelegateBuilder(Of TInstance)
+  nameWithType: DelegateBuilder<TInstance>
+  nameWithType.vb: DelegateBuilder(Of TInstance)
+- uid: MyDeltas.Members.DelegateBuilder`1.#ctor
+  name: DelegateBuilder()
+  href: api/MyDeltas.Members.DelegateBuilder-1.html#MyDeltas_Members_DelegateBuilder_1__ctor
+  commentId: M:MyDeltas.Members.DelegateBuilder`1.#ctor
+  name.vb: New()
+  fullName: MyDeltas.Members.DelegateBuilder<TInstance>.DelegateBuilder()
+  fullName.vb: MyDeltas.Members.DelegateBuilder(Of TInstance).New()
+  nameWithType: DelegateBuilder<TInstance>.DelegateBuilder()
+  nameWithType.vb: DelegateBuilder(Of TInstance).New()
+- uid: MyDeltas.Members.DelegateBuilder`1.#ctor(System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{`0}})
+  name: DelegateBuilder(IDictionary<string, IMemberAccessor<TInstance>>)
+  href: api/MyDeltas.Members.DelegateBuilder-1.html#MyDeltas_Members_DelegateBuilder_1__ctor_System_Collections_Generic_IDictionary_System_String_MyDeltas_Members_IMemberAccessor__0___
+  commentId: M:MyDeltas.Members.DelegateBuilder`1.#ctor(System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{`0}})
+  name.vb: New(IDictionary(Of String, IMemberAccessor(Of TInstance)))
+  fullName: MyDeltas.Members.DelegateBuilder<TInstance>.DelegateBuilder(System.Collections.Generic.IDictionary<string, MyDeltas.Members.IMemberAccessor<TInstance>>)
+  fullName.vb: MyDeltas.Members.DelegateBuilder(Of TInstance).New(System.Collections.Generic.IDictionary(Of String, MyDeltas.Members.IMemberAccessor(Of TInstance)))
+  nameWithType: DelegateBuilder<TInstance>.DelegateBuilder(IDictionary<string, IMemberAccessor<TInstance>>)
+  nameWithType.vb: DelegateBuilder(Of TInstance).New(IDictionary(Of String, IMemberAccessor(Of TInstance)))
+- uid: MyDeltas.Members.DelegateBuilder`1.#ctor*
+  name: DelegateBuilder
+  href: api/MyDeltas.Members.DelegateBuilder-1.html#MyDeltas_Members_DelegateBuilder_1__ctor_
+  commentId: Overload:MyDeltas.Members.DelegateBuilder`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.Members.DelegateBuilder<TInstance>.DelegateBuilder
+  fullName.vb: MyDeltas.Members.DelegateBuilder(Of TInstance).New
+  nameWithType: DelegateBuilder<TInstance>.DelegateBuilder
+  nameWithType.vb: DelegateBuilder(Of TInstance).New
+- uid: MyDeltas.Members.DelegateBuilder`1.Add*
+  name: Add
+  href: api/MyDeltas.Members.DelegateBuilder-1.html#MyDeltas_Members_DelegateBuilder_1_Add_
+  commentId: Overload:MyDeltas.Members.DelegateBuilder`1.Add
+  isSpec: "True"
+  fullName: MyDeltas.Members.DelegateBuilder<TInstance>.Add
+  fullName.vb: MyDeltas.Members.DelegateBuilder(Of TInstance).Add
+  nameWithType: DelegateBuilder<TInstance>.Add
+  nameWithType.vb: DelegateBuilder(Of TInstance).Add
+- uid: MyDeltas.Members.DelegateBuilder`1.Add``1(System.String,System.Func{`0,``0},System.Action{`0,``0})
+  name: Add<TMember>(string, Func<TInstance, TMember>, Action<TInstance, TMember>)
+  href: api/MyDeltas.Members.DelegateBuilder-1.html#MyDeltas_Members_DelegateBuilder_1_Add__1_System_String_System_Func__0___0__System_Action__0___0__
+  commentId: M:MyDeltas.Members.DelegateBuilder`1.Add``1(System.String,System.Func{`0,``0},System.Action{`0,``0})
+  name.vb: Add(Of TMember)(String, Func(Of TInstance, TMember), Action(Of TInstance, TMember))
+  fullName: MyDeltas.Members.DelegateBuilder<TInstance>.Add<TMember>(string, System.Func<TInstance, TMember>, System.Action<TInstance, TMember>)
+  fullName.vb: MyDeltas.Members.DelegateBuilder(Of TInstance).Add(Of TMember)(String, System.Func(Of TInstance, TMember), System.Action(Of TInstance, TMember))
+  nameWithType: DelegateBuilder<TInstance>.Add<TMember>(string, Func<TInstance, TMember>, Action<TInstance, TMember>)
+  nameWithType.vb: DelegateBuilder(Of TInstance).Add(Of TMember)(String, Func(Of TInstance, TMember), Action(Of TInstance, TMember))
+- uid: MyDeltas.Members.DelegateBuilder`1.Create(`0,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: Create(TInstance, IDictionary<string, object?>)
+  href: api/MyDeltas.Members.DelegateBuilder-1.html#MyDeltas_Members_DelegateBuilder_1_Create__0_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:MyDeltas.Members.DelegateBuilder`1.Create(`0,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: Create(TInstance, IDictionary(Of String, Object))
+  fullName: MyDeltas.Members.DelegateBuilder<TInstance>.Create(TInstance, System.Collections.Generic.IDictionary<string, object?>)
+  fullName.vb: MyDeltas.Members.DelegateBuilder(Of TInstance).Create(TInstance, System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: DelegateBuilder<TInstance>.Create(TInstance, IDictionary<string, object?>)
+  nameWithType.vb: DelegateBuilder(Of TInstance).Create(TInstance, IDictionary(Of String, Object))
+- uid: MyDeltas.Members.DelegateBuilder`1.Create*
+  name: Create
+  href: api/MyDeltas.Members.DelegateBuilder-1.html#MyDeltas_Members_DelegateBuilder_1_Create_
+  commentId: Overload:MyDeltas.Members.DelegateBuilder`1.Create
+  isSpec: "True"
+  fullName: MyDeltas.Members.DelegateBuilder<TInstance>.Create
+  fullName.vb: MyDeltas.Members.DelegateBuilder(Of TInstance).Create
+  nameWithType: DelegateBuilder<TInstance>.Create
+  nameWithType.vb: DelegateBuilder(Of TInstance).Create
+- uid: MyDeltas.Members.DelegateBuilder`1.Members
+  name: Members
+  href: api/MyDeltas.Members.DelegateBuilder-1.html#MyDeltas_Members_DelegateBuilder_1_Members
+  commentId: P:MyDeltas.Members.DelegateBuilder`1.Members
+  fullName: MyDeltas.Members.DelegateBuilder<TInstance>.Members
+  fullName.vb: MyDeltas.Members.DelegateBuilder(Of TInstance).Members
+  nameWithType: DelegateBuilder<TInstance>.Members
+  nameWithType.vb: DelegateBuilder(Of TInstance).Members
+- uid: MyDeltas.Members.DelegateBuilder`1.Members*
+  name: Members
+  href: api/MyDeltas.Members.DelegateBuilder-1.html#MyDeltas_Members_DelegateBuilder_1_Members_
+  commentId: Overload:MyDeltas.Members.DelegateBuilder`1.Members
+  isSpec: "True"
+  fullName: MyDeltas.Members.DelegateBuilder<TInstance>.Members
+  fullName.vb: MyDeltas.Members.DelegateBuilder(Of TInstance).Members
+  nameWithType: DelegateBuilder<TInstance>.Members
+  nameWithType.vb: DelegateBuilder(Of TInstance).Members
+- uid: MyDeltas.Members.FieldAccessor`1
+  name: FieldAccessor<TInstance>
+  href: api/MyDeltas.Members.FieldAccessor-1.html
+  commentId: T:MyDeltas.Members.FieldAccessor`1
+  name.vb: FieldAccessor(Of TInstance)
+  fullName: MyDeltas.Members.FieldAccessor<TInstance>
+  fullName.vb: MyDeltas.Members.FieldAccessor(Of TInstance)
+  nameWithType: FieldAccessor<TInstance>
+  nameWithType.vb: FieldAccessor(Of TInstance)
+- uid: MyDeltas.Members.FieldAccessor`1.#ctor(System.Reflection.FieldInfo)
+  name: FieldAccessor(FieldInfo)
+  href: api/MyDeltas.Members.FieldAccessor-1.html#MyDeltas_Members_FieldAccessor_1__ctor_System_Reflection_FieldInfo_
+  commentId: M:MyDeltas.Members.FieldAccessor`1.#ctor(System.Reflection.FieldInfo)
+  name.vb: New(FieldInfo)
+  fullName: MyDeltas.Members.FieldAccessor<TInstance>.FieldAccessor(System.Reflection.FieldInfo)
+  fullName.vb: MyDeltas.Members.FieldAccessor(Of TInstance).New(System.Reflection.FieldInfo)
+  nameWithType: FieldAccessor<TInstance>.FieldAccessor(FieldInfo)
+  nameWithType.vb: FieldAccessor(Of TInstance).New(FieldInfo)
+- uid: MyDeltas.Members.FieldAccessor`1.#ctor*
+  name: FieldAccessor
+  href: api/MyDeltas.Members.FieldAccessor-1.html#MyDeltas_Members_FieldAccessor_1__ctor_
+  commentId: Overload:MyDeltas.Members.FieldAccessor`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.Members.FieldAccessor<TInstance>.FieldAccessor
+  fullName.vb: MyDeltas.Members.FieldAccessor(Of TInstance).New
+  nameWithType: FieldAccessor<TInstance>.FieldAccessor
+  nameWithType.vb: FieldAccessor(Of TInstance).New
+- uid: MyDeltas.Members.FieldAccessor`1.Field
+  name: Field
+  href: api/MyDeltas.Members.FieldAccessor-1.html#MyDeltas_Members_FieldAccessor_1_Field
+  commentId: P:MyDeltas.Members.FieldAccessor`1.Field
+  fullName: MyDeltas.Members.FieldAccessor<TInstance>.Field
+  fullName.vb: MyDeltas.Members.FieldAccessor(Of TInstance).Field
+  nameWithType: FieldAccessor<TInstance>.Field
+  nameWithType.vb: FieldAccessor(Of TInstance).Field
+- uid: MyDeltas.Members.FieldAccessor`1.Field*
+  name: Field
+  href: api/MyDeltas.Members.FieldAccessor-1.html#MyDeltas_Members_FieldAccessor_1_Field_
+  commentId: Overload:MyDeltas.Members.FieldAccessor`1.Field
+  isSpec: "True"
+  fullName: MyDeltas.Members.FieldAccessor<TInstance>.Field
+  fullName.vb: MyDeltas.Members.FieldAccessor(Of TInstance).Field
+  nameWithType: FieldAccessor<TInstance>.Field
+  nameWithType.vb: FieldAccessor(Of TInstance).Field
+- uid: MyDeltas.Members.FieldAccessor`1.GetValue(`0)
+  name: GetValue(TInstance)
+  href: api/MyDeltas.Members.FieldAccessor-1.html#MyDeltas_Members_FieldAccessor_1_GetValue__0_
+  commentId: M:MyDeltas.Members.FieldAccessor`1.GetValue(`0)
+  fullName: MyDeltas.Members.FieldAccessor<TInstance>.GetValue(TInstance)
+  fullName.vb: MyDeltas.Members.FieldAccessor(Of TInstance).GetValue(TInstance)
+  nameWithType: FieldAccessor<TInstance>.GetValue(TInstance)
+  nameWithType.vb: FieldAccessor(Of TInstance).GetValue(TInstance)
+- uid: MyDeltas.Members.FieldAccessor`1.GetValue*
+  name: GetValue
+  href: api/MyDeltas.Members.FieldAccessor-1.html#MyDeltas_Members_FieldAccessor_1_GetValue_
+  commentId: Overload:MyDeltas.Members.FieldAccessor`1.GetValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.FieldAccessor<TInstance>.GetValue
+  fullName.vb: MyDeltas.Members.FieldAccessor(Of TInstance).GetValue
+  nameWithType: FieldAccessor<TInstance>.GetValue
+  nameWithType.vb: FieldAccessor(Of TInstance).GetValue
+- uid: MyDeltas.Members.FieldAccessor`1.SetValueCore(`0,System.Object)
+  name: SetValueCore(TInstance, object?)
+  href: api/MyDeltas.Members.FieldAccessor-1.html#MyDeltas_Members_FieldAccessor_1_SetValueCore__0_System_Object_
+  commentId: M:MyDeltas.Members.FieldAccessor`1.SetValueCore(`0,System.Object)
+  name.vb: SetValueCore(TInstance, Object)
+  fullName: MyDeltas.Members.FieldAccessor<TInstance>.SetValueCore(TInstance, object?)
+  fullName.vb: MyDeltas.Members.FieldAccessor(Of TInstance).SetValueCore(TInstance, Object)
+  nameWithType: FieldAccessor<TInstance>.SetValueCore(TInstance, object?)
+  nameWithType.vb: FieldAccessor(Of TInstance).SetValueCore(TInstance, Object)
+- uid: MyDeltas.Members.FieldAccessor`1.SetValueCore*
+  name: SetValueCore
+  href: api/MyDeltas.Members.FieldAccessor-1.html#MyDeltas_Members_FieldAccessor_1_SetValueCore_
+  commentId: Overload:MyDeltas.Members.FieldAccessor`1.SetValueCore
+  isSpec: "True"
+  fullName: MyDeltas.Members.FieldAccessor<TInstance>.SetValueCore
+  fullName.vb: MyDeltas.Members.FieldAccessor(Of TInstance).SetValueCore
+  nameWithType: FieldAccessor<TInstance>.SetValueCore
+  nameWithType.vb: FieldAccessor(Of TInstance).SetValueCore
+- uid: MyDeltas.Members.IMemberAccessorFactory
+  name: IMemberAccessorFactory
+  href: api/MyDeltas.Members.IMemberAccessorFactory.html
+  commentId: T:MyDeltas.Members.IMemberAccessorFactory
+  fullName: MyDeltas.Members.IMemberAccessorFactory
+  nameWithType: IMemberAccessorFactory
+- uid: MyDeltas.Members.IMemberAccessorFactory.GetMembers*
+  name: GetMembers
+  href: api/MyDeltas.Members.IMemberAccessorFactory.html#MyDeltas_Members_IMemberAccessorFactory_GetMembers_
+  commentId: Overload:MyDeltas.Members.IMemberAccessorFactory.GetMembers
+  isSpec: "True"
+  fullName: MyDeltas.Members.IMemberAccessorFactory.GetMembers
+  nameWithType: IMemberAccessorFactory.GetMembers
+- uid: MyDeltas.Members.IMemberAccessorFactory.GetMembers``1
+  name: GetMembers<TInstance>()
+  href: api/MyDeltas.Members.IMemberAccessorFactory.html#MyDeltas_Members_IMemberAccessorFactory_GetMembers__1
+  commentId: M:MyDeltas.Members.IMemberAccessorFactory.GetMembers``1
+  name.vb: GetMembers(Of TInstance)()
+  fullName: MyDeltas.Members.IMemberAccessorFactory.GetMembers<TInstance>()
+  fullName.vb: MyDeltas.Members.IMemberAccessorFactory.GetMembers(Of TInstance)()
+  nameWithType: IMemberAccessorFactory.GetMembers<TInstance>()
+  nameWithType.vb: IMemberAccessorFactory.GetMembers(Of TInstance)()
+- uid: MyDeltas.Members.IMemberAccessorFactory.SetMembers*
+  name: SetMembers
+  href: api/MyDeltas.Members.IMemberAccessorFactory.html#MyDeltas_Members_IMemberAccessorFactory_SetMembers_
+  commentId: Overload:MyDeltas.Members.IMemberAccessorFactory.SetMembers
+  isSpec: "True"
+  fullName: MyDeltas.Members.IMemberAccessorFactory.SetMembers
+  nameWithType: IMemberAccessorFactory.SetMembers
+- uid: MyDeltas.Members.IMemberAccessorFactory.SetMembers``1(System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{``0}})
+  name: SetMembers<TInstance>(IDictionary<string, IMemberAccessor<TInstance>>)
+  href: api/MyDeltas.Members.IMemberAccessorFactory.html#MyDeltas_Members_IMemberAccessorFactory_SetMembers__1_System_Collections_Generic_IDictionary_System_String_MyDeltas_Members_IMemberAccessor___0___
+  commentId: M:MyDeltas.Members.IMemberAccessorFactory.SetMembers``1(System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{``0}})
+  name.vb: SetMembers(Of TInstance)(IDictionary(Of String, IMemberAccessor(Of TInstance)))
+  fullName: MyDeltas.Members.IMemberAccessorFactory.SetMembers<TInstance>(System.Collections.Generic.IDictionary<string, MyDeltas.Members.IMemberAccessor<TInstance>>)
+  fullName.vb: MyDeltas.Members.IMemberAccessorFactory.SetMembers(Of TInstance)(System.Collections.Generic.IDictionary(Of String, MyDeltas.Members.IMemberAccessor(Of TInstance)))
+  nameWithType: IMemberAccessorFactory.SetMembers<TInstance>(IDictionary<string, IMemberAccessor<TInstance>>)
+  nameWithType.vb: IMemberAccessorFactory.SetMembers(Of TInstance)(IDictionary(Of String, IMemberAccessor(Of TInstance)))
+- uid: MyDeltas.Members.IMemberAccessor`1
+  name: IMemberAccessor<TInstance>
+  href: api/MyDeltas.Members.IMemberAccessor-1.html
+  commentId: T:MyDeltas.Members.IMemberAccessor`1
+  name.vb: IMemberAccessor(Of TInstance)
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance)
+  nameWithType: IMemberAccessor<TInstance>
+  nameWithType.vb: IMemberAccessor(Of TInstance)
+- uid: MyDeltas.Members.IMemberAccessor`1.CheckChange(`0,System.Object)
+  name: CheckChange(TInstance, object?)
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_CheckChange__0_System_Object_
+  commentId: M:MyDeltas.Members.IMemberAccessor`1.CheckChange(`0,System.Object)
+  name.vb: CheckChange(TInstance, Object)
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.CheckChange(TInstance, object?)
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).CheckChange(TInstance, Object)
+  nameWithType: IMemberAccessor<TInstance>.CheckChange(TInstance, object?)
+  nameWithType.vb: IMemberAccessor(Of TInstance).CheckChange(TInstance, Object)
+- uid: MyDeltas.Members.IMemberAccessor`1.CheckChange*
+  name: CheckChange
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_CheckChange_
+  commentId: Overload:MyDeltas.Members.IMemberAccessor`1.CheckChange
+  isSpec: "True"
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.CheckChange
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).CheckChange
+  nameWithType: IMemberAccessor<TInstance>.CheckChange
+  nameWithType.vb: IMemberAccessor(Of TInstance).CheckChange
+- uid: MyDeltas.Members.IMemberAccessor`1.CheckValue(System.Object)
+  name: CheckValue(object?)
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_CheckValue_System_Object_
+  commentId: M:MyDeltas.Members.IMemberAccessor`1.CheckValue(System.Object)
+  name.vb: CheckValue(Object)
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.CheckValue(object?)
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).CheckValue(Object)
+  nameWithType: IMemberAccessor<TInstance>.CheckValue(object?)
+  nameWithType.vb: IMemberAccessor(Of TInstance).CheckValue(Object)
+- uid: MyDeltas.Members.IMemberAccessor`1.CheckValue*
+  name: CheckValue
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_CheckValue_
+  commentId: Overload:MyDeltas.Members.IMemberAccessor`1.CheckValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.CheckValue
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).CheckValue
+  nameWithType: IMemberAccessor<TInstance>.CheckValue
+  nameWithType.vb: IMemberAccessor(Of TInstance).CheckValue
+- uid: MyDeltas.Members.IMemberAccessor`1.Copy(`0,`0)
+  name: Copy(TInstance, TInstance)
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_Copy__0__0_
+  commentId: M:MyDeltas.Members.IMemberAccessor`1.Copy(`0,`0)
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.Copy(TInstance, TInstance)
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).Copy(TInstance, TInstance)
+  nameWithType: IMemberAccessor<TInstance>.Copy(TInstance, TInstance)
+  nameWithType.vb: IMemberAccessor(Of TInstance).Copy(TInstance, TInstance)
+- uid: MyDeltas.Members.IMemberAccessor`1.Copy*
+  name: Copy
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_Copy_
+  commentId: Overload:MyDeltas.Members.IMemberAccessor`1.Copy
+  isSpec: "True"
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.Copy
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).Copy
+  nameWithType: IMemberAccessor<TInstance>.Copy
+  nameWithType.vb: IMemberAccessor(Of TInstance).Copy
+- uid: MyDeltas.Members.IMemberAccessor`1.GetValue(`0)
+  name: GetValue(TInstance)
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_GetValue__0_
+  commentId: M:MyDeltas.Members.IMemberAccessor`1.GetValue(`0)
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.GetValue(TInstance)
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).GetValue(TInstance)
+  nameWithType: IMemberAccessor<TInstance>.GetValue(TInstance)
+  nameWithType.vb: IMemberAccessor(Of TInstance).GetValue(TInstance)
+- uid: MyDeltas.Members.IMemberAccessor`1.GetValue*
+  name: GetValue
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_GetValue_
+  commentId: Overload:MyDeltas.Members.IMemberAccessor`1.GetValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.GetValue
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).GetValue
+  nameWithType: IMemberAccessor<TInstance>.GetValue
+  nameWithType.vb: IMemberAccessor(Of TInstance).GetValue
+- uid: MyDeltas.Members.IMemberAccessor`1.SetValue(`0,System.Object)
+  name: SetValue(TInstance, object?)
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_SetValue__0_System_Object_
+  commentId: M:MyDeltas.Members.IMemberAccessor`1.SetValue(`0,System.Object)
+  name.vb: SetValue(TInstance, Object)
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.SetValue(TInstance, object?)
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).SetValue(TInstance, Object)
+  nameWithType: IMemberAccessor<TInstance>.SetValue(TInstance, object?)
+  nameWithType.vb: IMemberAccessor(Of TInstance).SetValue(TInstance, Object)
+- uid: MyDeltas.Members.IMemberAccessor`1.SetValue*
+  name: SetValue
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_SetValue_
+  commentId: Overload:MyDeltas.Members.IMemberAccessor`1.SetValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.SetValue
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).SetValue
+  nameWithType: IMemberAccessor<TInstance>.SetValue
+  nameWithType.vb: IMemberAccessor(Of TInstance).SetValue
+- uid: MyDeltas.Members.IMemberAccessor`1.TrySetValue(`0,System.Object)
+  name: TrySetValue(TInstance, object?)
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_TrySetValue__0_System_Object_
+  commentId: M:MyDeltas.Members.IMemberAccessor`1.TrySetValue(`0,System.Object)
+  name.vb: TrySetValue(TInstance, Object)
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.TrySetValue(TInstance, object?)
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).TrySetValue(TInstance, Object)
+  nameWithType: IMemberAccessor<TInstance>.TrySetValue(TInstance, object?)
+  nameWithType.vb: IMemberAccessor(Of TInstance).TrySetValue(TInstance, Object)
+- uid: MyDeltas.Members.IMemberAccessor`1.TrySetValue*
+  name: TrySetValue
+  href: api/MyDeltas.Members.IMemberAccessor-1.html#MyDeltas_Members_IMemberAccessor_1_TrySetValue_
+  commentId: Overload:MyDeltas.Members.IMemberAccessor`1.TrySetValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.IMemberAccessor<TInstance>.TrySetValue
+  fullName.vb: MyDeltas.Members.IMemberAccessor(Of TInstance).TrySetValue
+  nameWithType: IMemberAccessor<TInstance>.TrySetValue
+  nameWithType.vb: IMemberAccessor(Of TInstance).TrySetValue
+- uid: MyDeltas.Members.MemberAccessorFactoryBase
+  name: MemberAccessorFactoryBase
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html
+  commentId: T:MyDeltas.Members.MemberAccessorFactoryBase
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase
+  nameWithType: MemberAccessorFactoryBase
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.#ctor
+  name: MemberAccessorFactoryBase()
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase__ctor
+  commentId: M:MyDeltas.Members.MemberAccessorFactoryBase.#ctor
+  name.vb: New()
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.MemberAccessorFactoryBase()
+  fullName.vb: MyDeltas.Members.MemberAccessorFactoryBase.New()
+  nameWithType: MemberAccessorFactoryBase.MemberAccessorFactoryBase()
+  nameWithType.vb: MemberAccessorFactoryBase.New()
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.#ctor(System.Collections.Generic.IEqualityComparer{System.String})
+  name: MemberAccessorFactoryBase(IEqualityComparer<string>)
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase__ctor_System_Collections_Generic_IEqualityComparer_System_String__
+  commentId: M:MyDeltas.Members.MemberAccessorFactoryBase.#ctor(System.Collections.Generic.IEqualityComparer{System.String})
+  name.vb: New(IEqualityComparer(Of String))
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.MemberAccessorFactoryBase(System.Collections.Generic.IEqualityComparer<string>)
+  fullName.vb: MyDeltas.Members.MemberAccessorFactoryBase.New(System.Collections.Generic.IEqualityComparer(Of String))
+  nameWithType: MemberAccessorFactoryBase.MemberAccessorFactoryBase(IEqualityComparer<string>)
+  nameWithType.vb: MemberAccessorFactoryBase.New(IEqualityComparer(Of String))
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.#ctor*
+  name: MemberAccessorFactoryBase
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase__ctor_
+  commentId: Overload:MyDeltas.Members.MemberAccessorFactoryBase.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.MemberAccessorFactoryBase
+  fullName.vb: MyDeltas.Members.MemberAccessorFactoryBase.New
+  nameWithType: MemberAccessorFactoryBase.MemberAccessorFactoryBase
+  nameWithType.vb: MemberAccessorFactoryBase.New
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.CheckMembers*
+  name: CheckMembers
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase_CheckMembers_
+  commentId: Overload:MyDeltas.Members.MemberAccessorFactoryBase.CheckMembers
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.CheckMembers
+  nameWithType: MemberAccessorFactoryBase.CheckMembers
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.CheckMembers``1(System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{``0}})
+  name: CheckMembers<TInstance>(IDictionary<string, IMemberAccessor<TInstance>>)
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase_CheckMembers__1_System_Collections_Generic_IDictionary_System_String_MyDeltas_Members_IMemberAccessor___0___
+  commentId: M:MyDeltas.Members.MemberAccessorFactoryBase.CheckMembers``1(System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{``0}})
+  name.vb: CheckMembers(Of TInstance)(IDictionary(Of String, IMemberAccessor(Of TInstance)))
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.CheckMembers<TInstance>(System.Collections.Generic.IDictionary<string, MyDeltas.Members.IMemberAccessor<TInstance>>)
+  fullName.vb: MyDeltas.Members.MemberAccessorFactoryBase.CheckMembers(Of TInstance)(System.Collections.Generic.IDictionary(Of String, MyDeltas.Members.IMemberAccessor(Of TInstance)))
+  nameWithType: MemberAccessorFactoryBase.CheckMembers<TInstance>(IDictionary<string, IMemberAccessor<TInstance>>)
+  nameWithType.vb: MemberAccessorFactoryBase.CheckMembers(Of TInstance)(IDictionary(Of String, IMemberAccessor(Of TInstance)))
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.Create*
+  name: Create
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase_Create_
+  commentId: Overload:MyDeltas.Members.MemberAccessorFactoryBase.Create
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.Create
+  nameWithType: MemberAccessorFactoryBase.Create
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.Create``1(``0,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: Create<TInstance>(TInstance, IDictionary<string, object?>)
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase_Create__1___0_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:MyDeltas.Members.MemberAccessorFactoryBase.Create``1(``0,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: Create(Of TInstance)(TInstance, IDictionary(Of String, Object))
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.Create<TInstance>(TInstance, System.Collections.Generic.IDictionary<string, object?>)
+  fullName.vb: MyDeltas.Members.MemberAccessorFactoryBase.Create(Of TInstance)(TInstance, System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: MemberAccessorFactoryBase.Create<TInstance>(TInstance, IDictionary<string, object?>)
+  nameWithType.vb: MemberAccessorFactoryBase.Create(Of TInstance)(TInstance, IDictionary(Of String, Object))
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.GetMembers*
+  name: GetMembers
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase_GetMembers_
+  commentId: Overload:MyDeltas.Members.MemberAccessorFactoryBase.GetMembers
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.GetMembers
+  nameWithType: MemberAccessorFactoryBase.GetMembers
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.GetMembers``1
+  name: GetMembers<TInstance>()
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase_GetMembers__1
+  commentId: M:MyDeltas.Members.MemberAccessorFactoryBase.GetMembers``1
+  name.vb: GetMembers(Of TInstance)()
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.GetMembers<TInstance>()
+  fullName.vb: MyDeltas.Members.MemberAccessorFactoryBase.GetMembers(Of TInstance)()
+  nameWithType: MemberAccessorFactoryBase.GetMembers<TInstance>()
+  nameWithType.vb: MemberAccessorFactoryBase.GetMembers(Of TInstance)()
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.MemberComparer
+  name: MemberComparer
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase_MemberComparer
+  commentId: P:MyDeltas.Members.MemberAccessorFactoryBase.MemberComparer
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.MemberComparer
+  nameWithType: MemberAccessorFactoryBase.MemberComparer
+- uid: MyDeltas.Members.MemberAccessorFactoryBase.MemberComparer*
+  name: MemberComparer
+  href: api/MyDeltas.Members.MemberAccessorFactoryBase.html#MyDeltas_Members_MemberAccessorFactoryBase_MemberComparer_
+  commentId: Overload:MyDeltas.Members.MemberAccessorFactoryBase.MemberComparer
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessorFactoryBase.MemberComparer
+  nameWithType: MemberAccessorFactoryBase.MemberComparer
+- uid: MyDeltas.Members.MemberAccessor`1
+  name: MemberAccessor<TInstance>
+  href: api/MyDeltas.Members.MemberAccessor-1.html
+  commentId: T:MyDeltas.Members.MemberAccessor`1
+  name.vb: MemberAccessor(Of TInstance)
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance)
+  nameWithType: MemberAccessor<TInstance>
+  nameWithType.vb: MemberAccessor(Of TInstance)
+- uid: MyDeltas.Members.MemberAccessor`1.#ctor(System.Type)
+  name: MemberAccessor(Type)
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1__ctor_System_Type_
+  commentId: M:MyDeltas.Members.MemberAccessor`1.#ctor(System.Type)
+  name.vb: New(Type)
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.MemberAccessor(System.Type)
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).New(System.Type)
+  nameWithType: MemberAccessor<TInstance>.MemberAccessor(Type)
+  nameWithType.vb: MemberAccessor(Of TInstance).New(Type)
+- uid: MyDeltas.Members.MemberAccessor`1.#ctor*
+  name: MemberAccessor
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1__ctor_
+  commentId: Overload:MyDeltas.Members.MemberAccessor`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.MemberAccessor
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).New
+  nameWithType: MemberAccessor<TInstance>.MemberAccessor
+  nameWithType.vb: MemberAccessor(Of TInstance).New
+- uid: MyDeltas.Members.MemberAccessor`1.CheckChange(`0,System.Object)
+  name: CheckChange(TInstance, object?)
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_CheckChange__0_System_Object_
+  commentId: M:MyDeltas.Members.MemberAccessor`1.CheckChange(`0,System.Object)
+  name.vb: CheckChange(TInstance, Object)
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.CheckChange(TInstance, object?)
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).CheckChange(TInstance, Object)
+  nameWithType: MemberAccessor<TInstance>.CheckChange(TInstance, object?)
+  nameWithType.vb: MemberAccessor(Of TInstance).CheckChange(TInstance, Object)
+- uid: MyDeltas.Members.MemberAccessor`1.CheckChange*
+  name: CheckChange
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_CheckChange_
+  commentId: Overload:MyDeltas.Members.MemberAccessor`1.CheckChange
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.CheckChange
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).CheckChange
+  nameWithType: MemberAccessor<TInstance>.CheckChange
+  nameWithType.vb: MemberAccessor(Of TInstance).CheckChange
+- uid: MyDeltas.Members.MemberAccessor`1.CheckValue(System.Object)
+  name: CheckValue(object?)
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_CheckValue_System_Object_
+  commentId: M:MyDeltas.Members.MemberAccessor`1.CheckValue(System.Object)
+  name.vb: CheckValue(Object)
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.CheckValue(object?)
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).CheckValue(Object)
+  nameWithType: MemberAccessor<TInstance>.CheckValue(object?)
+  nameWithType.vb: MemberAccessor(Of TInstance).CheckValue(Object)
+- uid: MyDeltas.Members.MemberAccessor`1.CheckValue*
+  name: CheckValue
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_CheckValue_
+  commentId: Overload:MyDeltas.Members.MemberAccessor`1.CheckValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.CheckValue
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).CheckValue
+  nameWithType: MemberAccessor<TInstance>.CheckValue
+  nameWithType.vb: MemberAccessor(Of TInstance).CheckValue
+- uid: MyDeltas.Members.MemberAccessor`1.Copy(`0,`0)
+  name: Copy(TInstance, TInstance)
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_Copy__0__0_
+  commentId: M:MyDeltas.Members.MemberAccessor`1.Copy(`0,`0)
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.Copy(TInstance, TInstance)
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).Copy(TInstance, TInstance)
+  nameWithType: MemberAccessor<TInstance>.Copy(TInstance, TInstance)
+  nameWithType.vb: MemberAccessor(Of TInstance).Copy(TInstance, TInstance)
+- uid: MyDeltas.Members.MemberAccessor`1.Copy*
+  name: Copy
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_Copy_
+  commentId: Overload:MyDeltas.Members.MemberAccessor`1.Copy
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.Copy
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).Copy
+  nameWithType: MemberAccessor<TInstance>.Copy
+  nameWithType.vb: MemberAccessor(Of TInstance).Copy
+- uid: MyDeltas.Members.MemberAccessor`1.GetValue(`0)
+  name: GetValue(TInstance)
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_GetValue__0_
+  commentId: M:MyDeltas.Members.MemberAccessor`1.GetValue(`0)
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.GetValue(TInstance)
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).GetValue(TInstance)
+  nameWithType: MemberAccessor<TInstance>.GetValue(TInstance)
+  nameWithType.vb: MemberAccessor(Of TInstance).GetValue(TInstance)
+- uid: MyDeltas.Members.MemberAccessor`1.GetValue*
+  name: GetValue
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_GetValue_
+  commentId: Overload:MyDeltas.Members.MemberAccessor`1.GetValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.GetValue
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).GetValue
+  nameWithType: MemberAccessor<TInstance>.GetValue
+  nameWithType.vb: MemberAccessor(Of TInstance).GetValue
+- uid: MyDeltas.Members.MemberAccessor`1.MemberType
+  name: MemberType
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_MemberType
+  commentId: P:MyDeltas.Members.MemberAccessor`1.MemberType
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.MemberType
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).MemberType
+  nameWithType: MemberAccessor<TInstance>.MemberType
+  nameWithType.vb: MemberAccessor(Of TInstance).MemberType
+- uid: MyDeltas.Members.MemberAccessor`1.MemberType*
+  name: MemberType
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_MemberType_
+  commentId: Overload:MyDeltas.Members.MemberAccessor`1.MemberType
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.MemberType
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).MemberType
+  nameWithType: MemberAccessor<TInstance>.MemberType
+  nameWithType.vb: MemberAccessor(Of TInstance).MemberType
+- uid: MyDeltas.Members.MemberAccessor`1.SetValue(`0,System.Object)
+  name: SetValue(TInstance, object?)
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_SetValue__0_System_Object_
+  commentId: M:MyDeltas.Members.MemberAccessor`1.SetValue(`0,System.Object)
+  name.vb: SetValue(TInstance, Object)
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.SetValue(TInstance, object?)
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).SetValue(TInstance, Object)
+  nameWithType: MemberAccessor<TInstance>.SetValue(TInstance, object?)
+  nameWithType.vb: MemberAccessor(Of TInstance).SetValue(TInstance, Object)
+- uid: MyDeltas.Members.MemberAccessor`1.SetValue*
+  name: SetValue
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_SetValue_
+  commentId: Overload:MyDeltas.Members.MemberAccessor`1.SetValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.SetValue
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).SetValue
+  nameWithType: MemberAccessor<TInstance>.SetValue
+  nameWithType.vb: MemberAccessor(Of TInstance).SetValue
+- uid: MyDeltas.Members.MemberAccessor`1.SetValueCore(`0,System.Object)
+  name: SetValueCore(TInstance, object?)
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_SetValueCore__0_System_Object_
+  commentId: M:MyDeltas.Members.MemberAccessor`1.SetValueCore(`0,System.Object)
+  name.vb: SetValueCore(TInstance, Object)
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.SetValueCore(TInstance, object?)
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).SetValueCore(TInstance, Object)
+  nameWithType: MemberAccessor<TInstance>.SetValueCore(TInstance, object?)
+  nameWithType.vb: MemberAccessor(Of TInstance).SetValueCore(TInstance, Object)
+- uid: MyDeltas.Members.MemberAccessor`1.SetValueCore*
+  name: SetValueCore
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_SetValueCore_
+  commentId: Overload:MyDeltas.Members.MemberAccessor`1.SetValueCore
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.SetValueCore
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).SetValueCore
+  nameWithType: MemberAccessor<TInstance>.SetValueCore
+  nameWithType.vb: MemberAccessor(Of TInstance).SetValueCore
+- uid: MyDeltas.Members.MemberAccessor`1.TrySetValue(`0,System.Object)
+  name: TrySetValue(TInstance, object?)
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_TrySetValue__0_System_Object_
+  commentId: M:MyDeltas.Members.MemberAccessor`1.TrySetValue(`0,System.Object)
+  name.vb: TrySetValue(TInstance, Object)
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.TrySetValue(TInstance, object?)
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).TrySetValue(TInstance, Object)
+  nameWithType: MemberAccessor<TInstance>.TrySetValue(TInstance, object?)
+  nameWithType.vb: MemberAccessor(Of TInstance).TrySetValue(TInstance, Object)
+- uid: MyDeltas.Members.MemberAccessor`1.TrySetValue*
+  name: TrySetValue
+  href: api/MyDeltas.Members.MemberAccessor-1.html#MyDeltas_Members_MemberAccessor_1_TrySetValue_
+  commentId: Overload:MyDeltas.Members.MemberAccessor`1.TrySetValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.MemberAccessor<TInstance>.TrySetValue
+  fullName.vb: MyDeltas.Members.MemberAccessor(Of TInstance).TrySetValue
+  nameWithType: MemberAccessor<TInstance>.TrySetValue
+  nameWithType.vb: MemberAccessor(Of TInstance).TrySetValue
+- uid: MyDeltas.Members.PropertyAccessor`1
+  name: PropertyAccessor<TInstance>
+  href: api/MyDeltas.Members.PropertyAccessor-1.html
+  commentId: T:MyDeltas.Members.PropertyAccessor`1
+  name.vb: PropertyAccessor(Of TInstance)
+  fullName: MyDeltas.Members.PropertyAccessor<TInstance>
+  fullName.vb: MyDeltas.Members.PropertyAccessor(Of TInstance)
+  nameWithType: PropertyAccessor<TInstance>
+  nameWithType.vb: PropertyAccessor(Of TInstance)
+- uid: MyDeltas.Members.PropertyAccessor`1.#ctor(System.Reflection.PropertyInfo)
+  name: PropertyAccessor(PropertyInfo)
+  href: api/MyDeltas.Members.PropertyAccessor-1.html#MyDeltas_Members_PropertyAccessor_1__ctor_System_Reflection_PropertyInfo_
+  commentId: M:MyDeltas.Members.PropertyAccessor`1.#ctor(System.Reflection.PropertyInfo)
+  name.vb: New(PropertyInfo)
+  fullName: MyDeltas.Members.PropertyAccessor<TInstance>.PropertyAccessor(System.Reflection.PropertyInfo)
+  fullName.vb: MyDeltas.Members.PropertyAccessor(Of TInstance).New(System.Reflection.PropertyInfo)
+  nameWithType: PropertyAccessor<TInstance>.PropertyAccessor(PropertyInfo)
+  nameWithType.vb: PropertyAccessor(Of TInstance).New(PropertyInfo)
+- uid: MyDeltas.Members.PropertyAccessor`1.#ctor*
+  name: PropertyAccessor
+  href: api/MyDeltas.Members.PropertyAccessor-1.html#MyDeltas_Members_PropertyAccessor_1__ctor_
+  commentId: Overload:MyDeltas.Members.PropertyAccessor`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.Members.PropertyAccessor<TInstance>.PropertyAccessor
+  fullName.vb: MyDeltas.Members.PropertyAccessor(Of TInstance).New
+  nameWithType: PropertyAccessor<TInstance>.PropertyAccessor
+  nameWithType.vb: PropertyAccessor(Of TInstance).New
+- uid: MyDeltas.Members.PropertyAccessor`1.GetValue(`0)
+  name: GetValue(TInstance)
+  href: api/MyDeltas.Members.PropertyAccessor-1.html#MyDeltas_Members_PropertyAccessor_1_GetValue__0_
+  commentId: M:MyDeltas.Members.PropertyAccessor`1.GetValue(`0)
+  fullName: MyDeltas.Members.PropertyAccessor<TInstance>.GetValue(TInstance)
+  fullName.vb: MyDeltas.Members.PropertyAccessor(Of TInstance).GetValue(TInstance)
+  nameWithType: PropertyAccessor<TInstance>.GetValue(TInstance)
+  nameWithType.vb: PropertyAccessor(Of TInstance).GetValue(TInstance)
+- uid: MyDeltas.Members.PropertyAccessor`1.GetValue*
+  name: GetValue
+  href: api/MyDeltas.Members.PropertyAccessor-1.html#MyDeltas_Members_PropertyAccessor_1_GetValue_
+  commentId: Overload:MyDeltas.Members.PropertyAccessor`1.GetValue
+  isSpec: "True"
+  fullName: MyDeltas.Members.PropertyAccessor<TInstance>.GetValue
+  fullName.vb: MyDeltas.Members.PropertyAccessor(Of TInstance).GetValue
+  nameWithType: PropertyAccessor<TInstance>.GetValue
+  nameWithType.vb: PropertyAccessor(Of TInstance).GetValue
+- uid: MyDeltas.Members.PropertyAccessor`1.Property
+  name: Property
+  href: api/MyDeltas.Members.PropertyAccessor-1.html#MyDeltas_Members_PropertyAccessor_1_Property
+  commentId: P:MyDeltas.Members.PropertyAccessor`1.Property
+  fullName: MyDeltas.Members.PropertyAccessor<TInstance>.Property
+  fullName.vb: MyDeltas.Members.PropertyAccessor(Of TInstance).Property
+  nameWithType: PropertyAccessor<TInstance>.Property
+  nameWithType.vb: PropertyAccessor(Of TInstance).Property
+- uid: MyDeltas.Members.PropertyAccessor`1.Property*
+  name: Property
+  href: api/MyDeltas.Members.PropertyAccessor-1.html#MyDeltas_Members_PropertyAccessor_1_Property_
+  commentId: Overload:MyDeltas.Members.PropertyAccessor`1.Property
+  isSpec: "True"
+  fullName: MyDeltas.Members.PropertyAccessor<TInstance>.Property
+  fullName.vb: MyDeltas.Members.PropertyAccessor(Of TInstance).Property
+  nameWithType: PropertyAccessor<TInstance>.Property
+  nameWithType.vb: PropertyAccessor(Of TInstance).Property
+- uid: MyDeltas.Members.PropertyAccessor`1.SetValueCore(`0,System.Object)
+  name: SetValueCore(TInstance, object?)
+  href: api/MyDeltas.Members.PropertyAccessor-1.html#MyDeltas_Members_PropertyAccessor_1_SetValueCore__0_System_Object_
+  commentId: M:MyDeltas.Members.PropertyAccessor`1.SetValueCore(`0,System.Object)
+  name.vb: SetValueCore(TInstance, Object)
+  fullName: MyDeltas.Members.PropertyAccessor<TInstance>.SetValueCore(TInstance, object?)
+  fullName.vb: MyDeltas.Members.PropertyAccessor(Of TInstance).SetValueCore(TInstance, Object)
+  nameWithType: PropertyAccessor<TInstance>.SetValueCore(TInstance, object?)
+  nameWithType.vb: PropertyAccessor(Of TInstance).SetValueCore(TInstance, Object)
+- uid: MyDeltas.Members.PropertyAccessor`1.SetValueCore*
+  name: SetValueCore
+  href: api/MyDeltas.Members.PropertyAccessor-1.html#MyDeltas_Members_PropertyAccessor_1_SetValueCore_
+  commentId: Overload:MyDeltas.Members.PropertyAccessor`1.SetValueCore
+  isSpec: "True"
+  fullName: MyDeltas.Members.PropertyAccessor<TInstance>.SetValueCore
+  fullName.vb: MyDeltas.Members.PropertyAccessor(Of TInstance).SetValueCore
+  nameWithType: PropertyAccessor<TInstance>.SetValueCore
+  nameWithType.vb: PropertyAccessor(Of TInstance).SetValueCore
+- uid: MyDeltas.MyDelta
+  name: MyDelta
+  href: api/MyDeltas.MyDelta.html
+  commentId: T:MyDeltas.MyDelta
+  fullName: MyDeltas.MyDelta
+  nameWithType: MyDelta
+- uid: MyDeltas.MyDelta.#ctor
+  name: MyDelta()
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta__ctor
+  commentId: M:MyDeltas.MyDelta.#ctor
+  name.vb: New()
+  fullName: MyDeltas.MyDelta.MyDelta()
+  fullName.vb: MyDeltas.MyDelta.New()
+  nameWithType: MyDelta.MyDelta()
+  nameWithType.vb: MyDelta.New()
+- uid: MyDeltas.MyDelta.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: MyDelta(IDictionary<string, object?>)
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta__ctor_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:MyDeltas.MyDelta.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: New(IDictionary(Of String, Object))
+  fullName: MyDeltas.MyDelta.MyDelta(System.Collections.Generic.IDictionary<string, object?>)
+  fullName.vb: MyDeltas.MyDelta.New(System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: MyDelta.MyDelta(IDictionary<string, object?>)
+  nameWithType.vb: MyDelta.New(IDictionary(Of String, Object))
+- uid: MyDeltas.MyDelta.#ctor*
+  name: MyDelta
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta__ctor_
+  commentId: Overload:MyDeltas.MyDelta.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.MyDelta.MyDelta
+  fullName.vb: MyDeltas.MyDelta.New
+  nameWithType: MyDelta.MyDelta
+  nameWithType.vb: MyDelta.New
+- uid: MyDeltas.MyDelta.CheckChange(System.Object,System.Object)
+  name: CheckChange(object?, object?)
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_CheckChange_System_Object_System_Object_
+  commentId: M:MyDeltas.MyDelta.CheckChange(System.Object,System.Object)
+  name.vb: CheckChange(Object, Object)
+  fullName: MyDeltas.MyDelta.CheckChange(object?, object?)
+  fullName.vb: MyDeltas.MyDelta.CheckChange(Object, Object)
+  nameWithType: MyDelta.CheckChange(object?, object?)
+  nameWithType.vb: MyDelta.CheckChange(Object, Object)
+- uid: MyDeltas.MyDelta.CheckChange*
+  name: CheckChange
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_CheckChange_
+  commentId: Overload:MyDeltas.MyDelta.CheckChange
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta.CheckChange
+  nameWithType: MyDelta.CheckChange
+- uid: MyDeltas.MyDelta.CheckValueType(System.Object,System.Type)
+  name: CheckValueType(object?, Type)
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_CheckValueType_System_Object_System_Type_
+  commentId: M:MyDeltas.MyDelta.CheckValueType(System.Object,System.Type)
+  name.vb: CheckValueType(Object, Type)
+  fullName: MyDeltas.MyDelta.CheckValueType(object?, System.Type)
+  fullName.vb: MyDeltas.MyDelta.CheckValueType(Object, System.Type)
+  nameWithType: MyDelta.CheckValueType(object?, Type)
+  nameWithType.vb: MyDelta.CheckValueType(Object, Type)
+- uid: MyDeltas.MyDelta.CheckValueType*
+  name: CheckValueType
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_CheckValueType_
+  commentId: Overload:MyDeltas.MyDelta.CheckValueType
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta.CheckValueType
+  nameWithType: MyDelta.CheckValueType
+- uid: MyDeltas.MyDelta.Data
+  name: Data
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_Data
+  commentId: P:MyDeltas.MyDelta.Data
+  fullName: MyDeltas.MyDelta.Data
+  nameWithType: MyDelta.Data
+- uid: MyDeltas.MyDelta.Data*
+  name: Data
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_Data_
+  commentId: Overload:MyDeltas.MyDelta.Data
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta.Data
+  nameWithType: MyDelta.Data
+- uid: MyDeltas.MyDelta.GetChangedNames
+  name: GetChangedNames()
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_GetChangedNames
+  commentId: M:MyDeltas.MyDelta.GetChangedNames
+  fullName: MyDeltas.MyDelta.GetChangedNames()
+  nameWithType: MyDelta.GetChangedNames()
+- uid: MyDeltas.MyDelta.GetChangedNames*
+  name: GetChangedNames
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_GetChangedNames_
+  commentId: Overload:MyDeltas.MyDelta.GetChangedNames
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta.GetChangedNames
+  nameWithType: MyDelta.GetChangedNames
+- uid: MyDeltas.MyDelta.GetJsonValue(System.Text.Json.JsonElement,System.Type)
+  name: GetJsonValue(JsonElement, Type)
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_GetJsonValue_System_Text_Json_JsonElement_System_Type_
+  commentId: M:MyDeltas.MyDelta.GetJsonValue(System.Text.Json.JsonElement,System.Type)
+  fullName: MyDeltas.MyDelta.GetJsonValue(System.Text.Json.JsonElement, System.Type)
+  nameWithType: MyDelta.GetJsonValue(JsonElement, Type)
+- uid: MyDeltas.MyDelta.GetJsonValue*
+  name: GetJsonValue
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_GetJsonValue_
+  commentId: Overload:MyDeltas.MyDelta.GetJsonValue
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta.GetJsonValue
+  nameWithType: MyDelta.GetJsonValue
+- uid: MyDeltas.MyDelta.GetValue(System.String)
+  name: GetValue(string)
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_GetValue_System_String_
+  commentId: M:MyDeltas.MyDelta.GetValue(System.String)
+  name.vb: GetValue(String)
+  fullName: MyDeltas.MyDelta.GetValue(string)
+  fullName.vb: MyDeltas.MyDelta.GetValue(String)
+  nameWithType: MyDelta.GetValue(string)
+  nameWithType.vb: MyDelta.GetValue(String)
+- uid: MyDeltas.MyDelta.GetValue*
+  name: GetValue
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_GetValue_
+  commentId: Overload:MyDeltas.MyDelta.GetValue
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta.GetValue
+  nameWithType: MyDelta.GetValue
+- uid: MyDeltas.MyDelta.HasChanged(System.String)
+  name: HasChanged(string)
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_HasChanged_System_String_
+  commentId: M:MyDeltas.MyDelta.HasChanged(System.String)
+  name.vb: HasChanged(String)
+  fullName: MyDeltas.MyDelta.HasChanged(string)
+  fullName.vb: MyDeltas.MyDelta.HasChanged(String)
+  nameWithType: MyDelta.HasChanged(string)
+  nameWithType.vb: MyDelta.HasChanged(String)
+- uid: MyDeltas.MyDelta.HasChanged*
+  name: HasChanged
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_HasChanged_
+  commentId: Overload:MyDeltas.MyDelta.HasChanged
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta.HasChanged
+  nameWithType: MyDelta.HasChanged
+- uid: MyDeltas.MyDelta.SetValue(System.String,System.Object)
+  name: SetValue(string, object?)
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_SetValue_System_String_System_Object_
+  commentId: M:MyDeltas.MyDelta.SetValue(System.String,System.Object)
+  name.vb: SetValue(String, Object)
+  fullName: MyDeltas.MyDelta.SetValue(string, object?)
+  fullName.vb: MyDeltas.MyDelta.SetValue(String, Object)
+  nameWithType: MyDelta.SetValue(string, object?)
+  nameWithType.vb: MyDelta.SetValue(String, Object)
+- uid: MyDeltas.MyDelta.SetValue*
+  name: SetValue
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta_SetValue_
+  commentId: Overload:MyDeltas.MyDelta.SetValue
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta.SetValue
+  nameWithType: MyDelta.SetValue
+- uid: MyDeltas.MyDelta._data
+  name: _data
+  href: api/MyDeltas.MyDelta.html#MyDeltas_MyDelta__data
+  commentId: F:MyDeltas.MyDelta._data
+  fullName: MyDeltas.MyDelta._data
+  nameWithType: MyDelta._data
+- uid: MyDeltas.MyDeltaFactory
+  name: MyDeltaFactory
+  href: api/MyDeltas.MyDeltaFactory.html
+  commentId: T:MyDeltas.MyDeltaFactory
+  fullName: MyDeltas.MyDeltaFactory
+  nameWithType: MyDeltaFactory
+- uid: MyDeltas.MyDeltaFactory.#ctor
+  name: MyDeltaFactory()
+  href: api/MyDeltas.MyDeltaFactory.html#MyDeltas_MyDeltaFactory__ctor
+  commentId: M:MyDeltas.MyDeltaFactory.#ctor
+  name.vb: New()
+  fullName: MyDeltas.MyDeltaFactory.MyDeltaFactory()
+  fullName.vb: MyDeltas.MyDeltaFactory.New()
+  nameWithType: MyDeltaFactory.MyDeltaFactory()
+  nameWithType.vb: MyDeltaFactory.New()
+- uid: MyDeltas.MyDeltaFactory.#ctor(System.Collections.Generic.IEqualityComparer{System.String})
+  name: MyDeltaFactory(IEqualityComparer<string>)
+  href: api/MyDeltas.MyDeltaFactory.html#MyDeltas_MyDeltaFactory__ctor_System_Collections_Generic_IEqualityComparer_System_String__
+  commentId: M:MyDeltas.MyDeltaFactory.#ctor(System.Collections.Generic.IEqualityComparer{System.String})
+  name.vb: New(IEqualityComparer(Of String))
+  fullName: MyDeltas.MyDeltaFactory.MyDeltaFactory(System.Collections.Generic.IEqualityComparer<string>)
+  fullName.vb: MyDeltas.MyDeltaFactory.New(System.Collections.Generic.IEqualityComparer(Of String))
+  nameWithType: MyDeltaFactory.MyDeltaFactory(IEqualityComparer<string>)
+  nameWithType.vb: MyDeltaFactory.New(IEqualityComparer(Of String))
+- uid: MyDeltas.MyDeltaFactory.#ctor*
+  name: MyDeltaFactory
+  href: api/MyDeltas.MyDeltaFactory.html#MyDeltas_MyDeltaFactory__ctor_
+  commentId: Overload:MyDeltas.MyDeltaFactory.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.MyDeltaFactory.MyDeltaFactory
+  fullName.vb: MyDeltas.MyDeltaFactory.New
+  nameWithType: MyDeltaFactory.MyDeltaFactory
+  nameWithType.vb: MyDeltaFactory.New
+- uid: MyDeltas.MyDeltaFactory.CheckMembers*
+  name: CheckMembers
+  href: api/MyDeltas.MyDeltaFactory.html#MyDeltas_MyDeltaFactory_CheckMembers_
+  commentId: Overload:MyDeltas.MyDeltaFactory.CheckMembers
+  isSpec: "True"
+  fullName: MyDeltas.MyDeltaFactory.CheckMembers
+  nameWithType: MyDeltaFactory.CheckMembers
+- uid: MyDeltas.MyDeltaFactory.CheckMembers``1(System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{``0}})
+  name: CheckMembers<TInstance>(IDictionary<string, IMemberAccessor<TInstance>>)
+  href: api/MyDeltas.MyDeltaFactory.html#MyDeltas_MyDeltaFactory_CheckMembers__1_System_Collections_Generic_IDictionary_System_String_MyDeltas_Members_IMemberAccessor___0___
+  commentId: M:MyDeltas.MyDeltaFactory.CheckMembers``1(System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{``0}})
+  name.vb: CheckMembers(Of TInstance)(IDictionary(Of String, IMemberAccessor(Of TInstance)))
+  fullName: MyDeltas.MyDeltaFactory.CheckMembers<TInstance>(System.Collections.Generic.IDictionary<string, MyDeltas.Members.IMemberAccessor<TInstance>>)
+  fullName.vb: MyDeltas.MyDeltaFactory.CheckMembers(Of TInstance)(System.Collections.Generic.IDictionary(Of String, MyDeltas.Members.IMemberAccessor(Of TInstance)))
+  nameWithType: MyDeltaFactory.CheckMembers<TInstance>(IDictionary<string, IMemberAccessor<TInstance>>)
+  nameWithType.vb: MyDeltaFactory.CheckMembers(Of TInstance)(IDictionary(Of String, IMemberAccessor(Of TInstance)))
+- uid: MyDeltas.MyDeltaServices
+  name: MyDeltaServices
+  href: api/MyDeltas.MyDeltaServices.html
+  commentId: T:MyDeltas.MyDeltaServices
+  fullName: MyDeltas.MyDeltaServices
+  nameWithType: MyDeltaServices
+- uid: MyDeltas.MyDeltaServices.Create*
+  name: Create
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create_
+  commentId: Overload:MyDeltas.MyDeltaServices.Create
+  isSpec: "True"
+  fullName: MyDeltas.MyDeltaServices.Create
+  nameWithType: MyDeltaServices.Create
+- uid: MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory)
+  name: Create<TInstance>(IMyDeltaFactory)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create__1_MyDeltas_IMyDeltaFactory_
+  commentId: M:MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory)
+  name.vb: Create(Of TInstance)(IMyDeltaFactory)
+  fullName: MyDeltas.MyDeltaServices.Create<TInstance>(MyDeltas.IMyDeltaFactory)
+  fullName.vb: MyDeltas.MyDeltaServices.Create(Of TInstance)(MyDeltas.IMyDeltaFactory)
+  nameWithType: MyDeltaServices.Create<TInstance>(IMyDeltaFactory)
+  nameWithType.vb: MyDeltaServices.Create(Of TInstance)(IMyDeltaFactory)
+- uid: MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory,MyDeltas.MyDelta)
+  name: Create<TInstance>(IMyDeltaFactory, MyDelta)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create__1_MyDeltas_IMyDeltaFactory_MyDeltas_MyDelta_
+  commentId: M:MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory,MyDeltas.MyDelta)
+  name.vb: Create(Of TInstance)(IMyDeltaFactory, MyDelta)
+  fullName: MyDeltas.MyDeltaServices.Create<TInstance>(MyDeltas.IMyDeltaFactory, MyDeltas.MyDelta)
+  fullName.vb: MyDeltas.MyDeltaServices.Create(Of TInstance)(MyDeltas.IMyDeltaFactory, MyDeltas.MyDelta)
+  nameWithType: MyDeltaServices.Create<TInstance>(IMyDeltaFactory, MyDelta)
+  nameWithType.vb: MyDeltaServices.Create(Of TInstance)(IMyDeltaFactory, MyDelta)
+- uid: MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: Create<TInstance>(IMyDeltaFactory, IDictionary<string, object?>)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create__1_MyDeltas_IMyDeltaFactory_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: Create(Of TInstance)(IMyDeltaFactory, IDictionary(Of String, Object))
+  fullName: MyDeltas.MyDeltaServices.Create<TInstance>(MyDeltas.IMyDeltaFactory, System.Collections.Generic.IDictionary<string, object?>)
+  fullName.vb: MyDeltas.MyDeltaServices.Create(Of TInstance)(MyDeltas.IMyDeltaFactory, System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: MyDeltaServices.Create<TInstance>(IMyDeltaFactory, IDictionary<string, object?>)
+  nameWithType.vb: MyDeltaServices.Create(Of TInstance)(IMyDeltaFactory, IDictionary(Of String, Object))
+- uid: MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory,``0)
+  name: Create<TInstance>(IMyDeltaFactory, TInstance)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create__1_MyDeltas_IMyDeltaFactory___0_
+  commentId: M:MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory,``0)
+  name.vb: Create(Of TInstance)(IMyDeltaFactory, TInstance)
+  fullName: MyDeltas.MyDeltaServices.Create<TInstance>(MyDeltas.IMyDeltaFactory, TInstance)
+  fullName.vb: MyDeltas.MyDeltaServices.Create(Of TInstance)(MyDeltas.IMyDeltaFactory, TInstance)
+  nameWithType: MyDeltaServices.Create<TInstance>(IMyDeltaFactory, TInstance)
+  nameWithType.vb: MyDeltaServices.Create(Of TInstance)(IMyDeltaFactory, TInstance)
+- uid: MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory,``0,MyDeltas.MyDelta)
+  name: Create<TInstance>(IMyDeltaFactory, TInstance, MyDelta)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create__1_MyDeltas_IMyDeltaFactory___0_MyDeltas_MyDelta_
+  commentId: M:MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory,``0,MyDeltas.MyDelta)
+  name.vb: Create(Of TInstance)(IMyDeltaFactory, TInstance, MyDelta)
+  fullName: MyDeltas.MyDeltaServices.Create<TInstance>(MyDeltas.IMyDeltaFactory, TInstance, MyDeltas.MyDelta)
+  fullName.vb: MyDeltas.MyDeltaServices.Create(Of TInstance)(MyDeltas.IMyDeltaFactory, TInstance, MyDeltas.MyDelta)
+  nameWithType: MyDeltaServices.Create<TInstance>(IMyDeltaFactory, TInstance, MyDelta)
+  nameWithType.vb: MyDeltaServices.Create(Of TInstance)(IMyDeltaFactory, TInstance, MyDelta)
+- uid: MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory{``0})
+  name: Create<TInstance>(IMyDeltaFactory<TInstance>)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create__1_MyDeltas_IMyDeltaFactory___0__
+  commentId: M:MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory{``0})
+  name.vb: Create(Of TInstance)(IMyDeltaFactory(Of TInstance))
+  fullName: MyDeltas.MyDeltaServices.Create<TInstance>(MyDeltas.IMyDeltaFactory<TInstance>)
+  fullName.vb: MyDeltas.MyDeltaServices.Create(Of TInstance)(MyDeltas.IMyDeltaFactory(Of TInstance))
+  nameWithType: MyDeltaServices.Create<TInstance>(IMyDeltaFactory<TInstance>)
+  nameWithType.vb: MyDeltaServices.Create(Of TInstance)(IMyDeltaFactory(Of TInstance))
+- uid: MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory{``0},MyDeltas.MyDelta)
+  name: Create<TInstance>(IMyDeltaFactory<TInstance>, MyDelta)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create__1_MyDeltas_IMyDeltaFactory___0__MyDeltas_MyDelta_
+  commentId: M:MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory{``0},MyDeltas.MyDelta)
+  name.vb: Create(Of TInstance)(IMyDeltaFactory(Of TInstance), MyDelta)
+  fullName: MyDeltas.MyDeltaServices.Create<TInstance>(MyDeltas.IMyDeltaFactory<TInstance>, MyDeltas.MyDelta)
+  fullName.vb: MyDeltas.MyDeltaServices.Create(Of TInstance)(MyDeltas.IMyDeltaFactory(Of TInstance), MyDeltas.MyDelta)
+  nameWithType: MyDeltaServices.Create<TInstance>(IMyDeltaFactory<TInstance>, MyDelta)
+  nameWithType.vb: MyDeltaServices.Create(Of TInstance)(IMyDeltaFactory(Of TInstance), MyDelta)
+- uid: MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory{``0},System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: Create<TInstance>(IMyDeltaFactory<TInstance>, IDictionary<string, object?>)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create__1_MyDeltas_IMyDeltaFactory___0__System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory{``0},System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: Create(Of TInstance)(IMyDeltaFactory(Of TInstance), IDictionary(Of String, Object))
+  fullName: MyDeltas.MyDeltaServices.Create<TInstance>(MyDeltas.IMyDeltaFactory<TInstance>, System.Collections.Generic.IDictionary<string, object?>)
+  fullName.vb: MyDeltas.MyDeltaServices.Create(Of TInstance)(MyDeltas.IMyDeltaFactory(Of TInstance), System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: MyDeltaServices.Create<TInstance>(IMyDeltaFactory<TInstance>, IDictionary<string, object?>)
+  nameWithType.vb: MyDeltaServices.Create(Of TInstance)(IMyDeltaFactory(Of TInstance), IDictionary(Of String, Object))
+- uid: MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory{``0},``0)
+  name: Create<TInstance>(IMyDeltaFactory<TInstance>, TInstance)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create__1_MyDeltas_IMyDeltaFactory___0____0_
+  commentId: M:MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory{``0},``0)
+  name.vb: Create(Of TInstance)(IMyDeltaFactory(Of TInstance), TInstance)
+  fullName: MyDeltas.MyDeltaServices.Create<TInstance>(MyDeltas.IMyDeltaFactory<TInstance>, TInstance)
+  fullName.vb: MyDeltas.MyDeltaServices.Create(Of TInstance)(MyDeltas.IMyDeltaFactory(Of TInstance), TInstance)
+  nameWithType: MyDeltaServices.Create<TInstance>(IMyDeltaFactory<TInstance>, TInstance)
+  nameWithType.vb: MyDeltaServices.Create(Of TInstance)(IMyDeltaFactory(Of TInstance), TInstance)
+- uid: MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory{``0},``0,MyDeltas.MyDelta)
+  name: Create<TInstance>(IMyDeltaFactory<TInstance>, TInstance, MyDelta)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Create__1_MyDeltas_IMyDeltaFactory___0____0_MyDeltas_MyDelta_
+  commentId: M:MyDeltas.MyDeltaServices.Create``1(MyDeltas.IMyDeltaFactory{``0},``0,MyDeltas.MyDelta)
+  name.vb: Create(Of TInstance)(IMyDeltaFactory(Of TInstance), TInstance, MyDelta)
+  fullName: MyDeltas.MyDeltaServices.Create<TInstance>(MyDeltas.IMyDeltaFactory<TInstance>, TInstance, MyDeltas.MyDelta)
+  fullName.vb: MyDeltas.MyDeltaServices.Create(Of TInstance)(MyDeltas.IMyDeltaFactory(Of TInstance), TInstance, MyDeltas.MyDelta)
+  nameWithType: MyDeltaServices.Create<TInstance>(IMyDeltaFactory<TInstance>, TInstance, MyDelta)
+  nameWithType.vb: MyDeltaServices.Create(Of TInstance)(IMyDeltaFactory(Of TInstance), TInstance, MyDelta)
+- uid: MyDeltas.MyDeltaServices.Use*
+  name: Use
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Use_
+  commentId: Overload:MyDeltas.MyDeltaServices.Use
+  isSpec: "True"
+  fullName: MyDeltas.MyDeltaServices.Use
+  nameWithType: MyDeltaServices.Use
+- uid: MyDeltas.MyDeltaServices.Use``2(``0,System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{``1}})
+  name: Use<TMemberAccessorFactory, TInstance>(TMemberAccessorFactory, IDictionary<string, IMemberAccessor<TInstance>>)
+  href: api/MyDeltas.MyDeltaServices.html#MyDeltas_MyDeltaServices_Use__2___0_System_Collections_Generic_IDictionary_System_String_MyDeltas_Members_IMemberAccessor___1___
+  commentId: M:MyDeltas.MyDeltaServices.Use``2(``0,System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{``1}})
+  name.vb: Use(Of TMemberAccessorFactory, TInstance)(TMemberAccessorFactory, IDictionary(Of String, IMemberAccessor(Of TInstance)))
+  fullName: MyDeltas.MyDeltaServices.Use<TMemberAccessorFactory, TInstance>(TMemberAccessorFactory, System.Collections.Generic.IDictionary<string, MyDeltas.Members.IMemberAccessor<TInstance>>)
+  fullName.vb: MyDeltas.MyDeltaServices.Use(Of TMemberAccessorFactory, TInstance)(TMemberAccessorFactory, System.Collections.Generic.IDictionary(Of String, MyDeltas.Members.IMemberAccessor(Of TInstance)))
+  nameWithType: MyDeltaServices.Use<TMemberAccessorFactory, TInstance>(TMemberAccessorFactory, IDictionary<string, IMemberAccessor<TInstance>>)
+  nameWithType.vb: MyDeltaServices.Use(Of TMemberAccessorFactory, TInstance)(TMemberAccessorFactory, IDictionary(Of String, IMemberAccessor(Of TInstance)))
+- uid: MyDeltas.MyDelta`1
+  name: MyDelta<TInstance>
+  href: api/MyDeltas.MyDelta-1.html
+  commentId: T:MyDeltas.MyDelta`1
+  name.vb: MyDelta(Of TInstance)
+  fullName: MyDeltas.MyDelta<TInstance>
+  fullName.vb: MyDeltas.MyDelta(Of TInstance)
+  nameWithType: MyDelta<TInstance>
+  nameWithType.vb: MyDelta(Of TInstance)
+- uid: MyDeltas.MyDelta`1.#ctor(System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{`0}})
+  name: MyDelta(IDictionary<string, IMemberAccessor<TInstance>>)
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1__ctor_System_Collections_Generic_IDictionary_System_String_MyDeltas_Members_IMemberAccessor__0___
+  commentId: M:MyDeltas.MyDelta`1.#ctor(System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{`0}})
+  name.vb: New(IDictionary(Of String, IMemberAccessor(Of TInstance)))
+  fullName: MyDeltas.MyDelta<TInstance>.MyDelta(System.Collections.Generic.IDictionary<string, MyDeltas.Members.IMemberAccessor<TInstance>>)
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).New(System.Collections.Generic.IDictionary(Of String, MyDeltas.Members.IMemberAccessor(Of TInstance)))
+  nameWithType: MyDelta<TInstance>.MyDelta(IDictionary<string, IMemberAccessor<TInstance>>)
+  nameWithType.vb: MyDelta(Of TInstance).New(IDictionary(Of String, IMemberAccessor(Of TInstance)))
+- uid: MyDeltas.MyDelta`1.#ctor(`0,System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{`0}},System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: MyDelta(TInstance, IDictionary<string, IMemberAccessor<TInstance>>, IDictionary<string, object?>)
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1__ctor__0_System_Collections_Generic_IDictionary_System_String_MyDeltas_Members_IMemberAccessor__0___System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:MyDeltas.MyDelta`1.#ctor(`0,System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{`0}},System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: New(TInstance, IDictionary(Of String, IMemberAccessor(Of TInstance)), IDictionary(Of String, Object))
+  fullName: MyDeltas.MyDelta<TInstance>.MyDelta(TInstance, System.Collections.Generic.IDictionary<string, MyDeltas.Members.IMemberAccessor<TInstance>>, System.Collections.Generic.IDictionary<string, object?>)
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).New(TInstance, System.Collections.Generic.IDictionary(Of String, MyDeltas.Members.IMemberAccessor(Of TInstance)), System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: MyDelta<TInstance>.MyDelta(TInstance, IDictionary<string, IMemberAccessor<TInstance>>, IDictionary<string, object?>)
+  nameWithType.vb: MyDelta(Of TInstance).New(TInstance, IDictionary(Of String, IMemberAccessor(Of TInstance)), IDictionary(Of String, Object))
+- uid: MyDeltas.MyDelta`1.#ctor*
+  name: MyDelta
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1__ctor_
+  commentId: Overload:MyDeltas.MyDelta`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyDeltas.MyDelta<TInstance>.MyDelta
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).New
+  nameWithType: MyDelta<TInstance>.MyDelta
+  nameWithType.vb: MyDelta(Of TInstance).New
+- uid: MyDeltas.MyDelta`1.Instance
+  name: Instance
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1_Instance
+  commentId: P:MyDeltas.MyDelta`1.Instance
+  fullName: MyDeltas.MyDelta<TInstance>.Instance
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).Instance
+  nameWithType: MyDelta<TInstance>.Instance
+  nameWithType.vb: MyDelta(Of TInstance).Instance
+- uid: MyDeltas.MyDelta`1.Instance*
+  name: Instance
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1_Instance_
+  commentId: Overload:MyDeltas.MyDelta`1.Instance
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta<TInstance>.Instance
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).Instance
+  nameWithType: MyDelta<TInstance>.Instance
+  nameWithType.vb: MyDelta(Of TInstance).Instance
+- uid: MyDeltas.MyDelta`1.Patch(`0)
+  name: Patch(TInstance)
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1_Patch__0_
+  commentId: M:MyDeltas.MyDelta`1.Patch(`0)
+  fullName: MyDeltas.MyDelta<TInstance>.Patch(TInstance)
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).Patch(TInstance)
+  nameWithType: MyDelta<TInstance>.Patch(TInstance)
+  nameWithType.vb: MyDelta(Of TInstance).Patch(TInstance)
+- uid: MyDeltas.MyDelta`1.Patch*
+  name: Patch
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1_Patch_
+  commentId: Overload:MyDeltas.MyDelta`1.Patch
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta<TInstance>.Patch
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).Patch
+  nameWithType: MyDelta<TInstance>.Patch
+  nameWithType.vb: MyDelta(Of TInstance).Patch
+- uid: MyDeltas.MyDelta`1.Put(`0)
+  name: Put(TInstance)
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1_Put__0_
+  commentId: M:MyDeltas.MyDelta`1.Put(`0)
+  fullName: MyDeltas.MyDelta<TInstance>.Put(TInstance)
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).Put(TInstance)
+  nameWithType: MyDelta<TInstance>.Put(TInstance)
+  nameWithType.vb: MyDelta(Of TInstance).Put(TInstance)
+- uid: MyDeltas.MyDelta`1.Put*
+  name: Put
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1_Put_
+  commentId: Overload:MyDeltas.MyDelta`1.Put
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta<TInstance>.Put
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).Put
+  nameWithType: MyDelta<TInstance>.Put
+  nameWithType.vb: MyDelta(Of TInstance).Put
+- uid: MyDeltas.MyDelta`1.TrySetValue(System.String,System.Object)
+  name: TrySetValue(string, object?)
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1_TrySetValue_System_String_System_Object_
+  commentId: M:MyDeltas.MyDelta`1.TrySetValue(System.String,System.Object)
+  name.vb: TrySetValue(String, Object)
+  fullName: MyDeltas.MyDelta<TInstance>.TrySetValue(string, object?)
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).TrySetValue(String, Object)
+  nameWithType: MyDelta<TInstance>.TrySetValue(string, object?)
+  nameWithType.vb: MyDelta(Of TInstance).TrySetValue(String, Object)
+- uid: MyDeltas.MyDelta`1.TrySetValue*
+  name: TrySetValue
+  href: api/MyDeltas.MyDelta-1.html#MyDeltas_MyDelta_1_TrySetValue_
+  commentId: Overload:MyDeltas.MyDelta`1.TrySetValue
+  isSpec: "True"
+  fullName: MyDeltas.MyDelta<TInstance>.TrySetValue
+  fullName.vb: MyDeltas.MyDelta(Of TInstance).TrySetValue
+  nameWithType: MyDelta<TInstance>.TrySetValue
+  nameWithType.vb: MyDelta(Of TInstance).TrySetValue
+- uid: MyDeltas.Reflection
+  name: MyDeltas.Reflection
+  href: api/MyDeltas.Reflection.html
+  commentId: N:MyDeltas.Reflection
+  fullName: MyDeltas.Reflection
+  nameWithType: MyDeltas.Reflection
+- uid: MyDeltas.Reflection.ReflectionField
+  name: ReflectionField
+  href: api/MyDeltas.Reflection.ReflectionField.html
+  commentId: T:MyDeltas.Reflection.ReflectionField
+  fullName: MyDeltas.Reflection.ReflectionField
+  nameWithType: ReflectionField
+- uid: MyDeltas.Reflection.ReflectionField.Create*
+  name: Create
+  href: api/MyDeltas.Reflection.ReflectionField.html#MyDeltas_Reflection_ReflectionField_Create_
+  commentId: Overload:MyDeltas.Reflection.ReflectionField.Create
+  isSpec: "True"
+  fullName: MyDeltas.Reflection.ReflectionField.Create
+  nameWithType: ReflectionField.Create
+- uid: MyDeltas.Reflection.ReflectionField.Create``1(System.Reflection.FieldInfo)
+  name: Create<TInstance>(FieldInfo)
+  href: api/MyDeltas.Reflection.ReflectionField.html#MyDeltas_Reflection_ReflectionField_Create__1_System_Reflection_FieldInfo_
+  commentId: M:MyDeltas.Reflection.ReflectionField.Create``1(System.Reflection.FieldInfo)
+  name.vb: Create(Of TInstance)(FieldInfo)
+  fullName: MyDeltas.Reflection.ReflectionField.Create<TInstance>(System.Reflection.FieldInfo)
+  fullName.vb: MyDeltas.Reflection.ReflectionField.Create(Of TInstance)(System.Reflection.FieldInfo)
+  nameWithType: ReflectionField.Create<TInstance>(FieldInfo)
+  nameWithType.vb: ReflectionField.Create(Of TInstance)(FieldInfo)
+- uid: MyDeltas.Reflection.ReflectionField.GetFields(System.Type)
+  name: GetFields(Type)
+  href: api/MyDeltas.Reflection.ReflectionField.html#MyDeltas_Reflection_ReflectionField_GetFields_System_Type_
+  commentId: M:MyDeltas.Reflection.ReflectionField.GetFields(System.Type)
+  fullName: MyDeltas.Reflection.ReflectionField.GetFields(System.Type)
+  nameWithType: ReflectionField.GetFields(Type)
+- uid: MyDeltas.Reflection.ReflectionField.GetFields*
+  name: GetFields
+  href: api/MyDeltas.Reflection.ReflectionField.html#MyDeltas_Reflection_ReflectionField_GetFields_
+  commentId: Overload:MyDeltas.Reflection.ReflectionField.GetFields
+  isSpec: "True"
+  fullName: MyDeltas.Reflection.ReflectionField.GetFields
+  nameWithType: ReflectionField.GetFields
+- uid: MyDeltas.Reflection.ReflectionField.GetFields``1
+  name: GetFields<TInstance>()
+  href: api/MyDeltas.Reflection.ReflectionField.html#MyDeltas_Reflection_ReflectionField_GetFields__1
+  commentId: M:MyDeltas.Reflection.ReflectionField.GetFields``1
+  name.vb: GetFields(Of TInstance)()
+  fullName: MyDeltas.Reflection.ReflectionField.GetFields<TInstance>()
+  fullName.vb: MyDeltas.Reflection.ReflectionField.GetFields(Of TInstance)()
+  nameWithType: ReflectionField.GetFields<TInstance>()
+  nameWithType.vb: ReflectionField.GetFields(Of TInstance)()
+- uid: MyDeltas.Reflection.ReflectionMember`1
+  name: ReflectionMember<TMember>
+  href: api/MyDeltas.Reflection.ReflectionMember-1.html
+  commentId: T:MyDeltas.Reflection.ReflectionMember`1
+  name.vb: ReflectionMember(Of TMember)
+  fullName: MyDeltas.Reflection.ReflectionMember<TMember>
+  fullName.vb: MyDeltas.Reflection.ReflectionMember(Of TMember)
+  nameWithType: ReflectionMember<TMember>
+  nameWithType.vb: ReflectionMember(Of TMember)
+- uid: MyDeltas.Reflection.ReflectionMember`1.CheckMembers*
+  name: CheckMembers
+  href: api/MyDeltas.Reflection.ReflectionMember-1.html#MyDeltas_Reflection_ReflectionMember_1_CheckMembers_
+  commentId: Overload:MyDeltas.Reflection.ReflectionMember`1.CheckMembers
+  isSpec: "True"
+  fullName: MyDeltas.Reflection.ReflectionMember<TMember>.CheckMembers
+  fullName.vb: MyDeltas.Reflection.ReflectionMember(Of TMember).CheckMembers
+  nameWithType: ReflectionMember<TMember>.CheckMembers
+  nameWithType.vb: ReflectionMember(Of TMember).CheckMembers
+- uid: MyDeltas.Reflection.ReflectionMember`1.CheckMembers``1(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{``0}})
+  name: CheckMembers<TInstance>(IEnumerable<TMember>, IDictionary<string, IMemberAccessor<TInstance>>)
+  href: api/MyDeltas.Reflection.ReflectionMember-1.html#MyDeltas_Reflection_ReflectionMember_1_CheckMembers__1_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IDictionary_System_String_MyDeltas_Members_IMemberAccessor___0___
+  commentId: M:MyDeltas.Reflection.ReflectionMember`1.CheckMembers``1(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IDictionary{System.String,MyDeltas.Members.IMemberAccessor{``0}})
+  name.vb: CheckMembers(Of TInstance)(IEnumerable(Of TMember), IDictionary(Of String, IMemberAccessor(Of TInstance)))
+  fullName: MyDeltas.Reflection.ReflectionMember<TMember>.CheckMembers<TInstance>(System.Collections.Generic.IEnumerable<TMember>, System.Collections.Generic.IDictionary<string, MyDeltas.Members.IMemberAccessor<TInstance>>)
+  fullName.vb: MyDeltas.Reflection.ReflectionMember(Of TMember).CheckMembers(Of TInstance)(System.Collections.Generic.IEnumerable(Of TMember), System.Collections.Generic.IDictionary(Of String, MyDeltas.Members.IMemberAccessor(Of TInstance)))
+  nameWithType: ReflectionMember<TMember>.CheckMembers<TInstance>(IEnumerable<TMember>, IDictionary<string, IMemberAccessor<TInstance>>)
+  nameWithType.vb: ReflectionMember(Of TMember).CheckMembers(Of TInstance)(IEnumerable(Of TMember), IDictionary(Of String, IMemberAccessor(Of TInstance)))
+- uid: MyDeltas.Reflection.ReflectionMember`1.Create*
+  name: Create
+  href: api/MyDeltas.Reflection.ReflectionMember-1.html#MyDeltas_Reflection_ReflectionMember_1_Create_
+  commentId: Overload:MyDeltas.Reflection.ReflectionMember`1.Create
+  isSpec: "True"
+  fullName: MyDeltas.Reflection.ReflectionMember<TMember>.Create
+  fullName.vb: MyDeltas.Reflection.ReflectionMember(Of TMember).Create
+  nameWithType: ReflectionMember<TMember>.Create
+  nameWithType.vb: ReflectionMember(Of TMember).Create
+- uid: MyDeltas.Reflection.ReflectionMember`1.Create``1(`0)
+  name: Create<TInstance>(TMember)
+  href: api/MyDeltas.Reflection.ReflectionMember-1.html#MyDeltas_Reflection_ReflectionMember_1_Create__1__0_
+  commentId: M:MyDeltas.Reflection.ReflectionMember`1.Create``1(`0)
+  name.vb: Create(Of TInstance)(TMember)
+  fullName: MyDeltas.Reflection.ReflectionMember<TMember>.Create<TInstance>(TMember)
+  fullName.vb: MyDeltas.Reflection.ReflectionMember(Of TMember).Create(Of TInstance)(TMember)
+  nameWithType: ReflectionMember<TMember>.Create<TInstance>(TMember)
+  nameWithType.vb: ReflectionMember(Of TMember).Create(Of TInstance)(TMember)
+- uid: MyDeltas.Reflection.ReflectionProperty
+  name: ReflectionProperty
+  href: api/MyDeltas.Reflection.ReflectionProperty.html
+  commentId: T:MyDeltas.Reflection.ReflectionProperty
+  fullName: MyDeltas.Reflection.ReflectionProperty
+  nameWithType: ReflectionProperty
+- uid: MyDeltas.Reflection.ReflectionProperty.Create*
+  name: Create
+  href: api/MyDeltas.Reflection.ReflectionProperty.html#MyDeltas_Reflection_ReflectionProperty_Create_
+  commentId: Overload:MyDeltas.Reflection.ReflectionProperty.Create
+  isSpec: "True"
+  fullName: MyDeltas.Reflection.ReflectionProperty.Create
+  nameWithType: ReflectionProperty.Create
+- uid: MyDeltas.Reflection.ReflectionProperty.Create``1(System.Reflection.PropertyInfo)
+  name: Create<TInstance>(PropertyInfo)
+  href: api/MyDeltas.Reflection.ReflectionProperty.html#MyDeltas_Reflection_ReflectionProperty_Create__1_System_Reflection_PropertyInfo_
+  commentId: M:MyDeltas.Reflection.ReflectionProperty.Create``1(System.Reflection.PropertyInfo)
+  name.vb: Create(Of TInstance)(PropertyInfo)
+  fullName: MyDeltas.Reflection.ReflectionProperty.Create<TInstance>(System.Reflection.PropertyInfo)
+  fullName.vb: MyDeltas.Reflection.ReflectionProperty.Create(Of TInstance)(System.Reflection.PropertyInfo)
+  nameWithType: ReflectionProperty.Create<TInstance>(PropertyInfo)
+  nameWithType.vb: ReflectionProperty.Create(Of TInstance)(PropertyInfo)
+- uid: MyDeltas.Reflection.ReflectionProperty.GetProperties(System.Type)
+  name: GetProperties(Type)
+  href: api/MyDeltas.Reflection.ReflectionProperty.html#MyDeltas_Reflection_ReflectionProperty_GetProperties_System_Type_
+  commentId: M:MyDeltas.Reflection.ReflectionProperty.GetProperties(System.Type)
+  fullName: MyDeltas.Reflection.ReflectionProperty.GetProperties(System.Type)
+  nameWithType: ReflectionProperty.GetProperties(Type)
+- uid: MyDeltas.Reflection.ReflectionProperty.GetProperties*
+  name: GetProperties
+  href: api/MyDeltas.Reflection.ReflectionProperty.html#MyDeltas_Reflection_ReflectionProperty_GetProperties_
+  commentId: Overload:MyDeltas.Reflection.ReflectionProperty.GetProperties
+  isSpec: "True"
+  fullName: MyDeltas.Reflection.ReflectionProperty.GetProperties
+  nameWithType: ReflectionProperty.GetProperties
+- uid: MyDeltas.Reflection.ReflectionProperty.GetProperties``1
+  name: GetProperties<TInstance>()
+  href: api/MyDeltas.Reflection.ReflectionProperty.html#MyDeltas_Reflection_ReflectionProperty_GetProperties__1
+  commentId: M:MyDeltas.Reflection.ReflectionProperty.GetProperties``1
+  name.vb: GetProperties(Of TInstance)()
+  fullName: MyDeltas.Reflection.ReflectionProperty.GetProperties<TInstance>()
+  fullName.vb: MyDeltas.Reflection.ReflectionProperty.GetProperties(Of TInstance)()
+  nameWithType: ReflectionProperty.GetProperties<TInstance>()
+  nameWithType.vb: ReflectionProperty.GetProperties(Of TInstance)()

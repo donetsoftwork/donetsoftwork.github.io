@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>MyDeltas.Emit | .net拼写sql </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="MyDeltas.Emit | .net拼写sql ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyDelta.net/blob/master/docs/emit.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Shadow">
+            Shadow
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="mydeltasemit">MyDeltas.Emit</h1>
+
+<blockquote>
+<ul>
+<li>Emit加速数据变化处理</li>
+</ul>
+</blockquote>
+<h2 id="1-使用emitdeltafactory">1. 使用EmitDeltaFactory</h2>
+<blockquote>
+<p>代替MyDeltaFactory</p>
+</blockquote>
+<pre><code class="lang-csharp">IMyDeltaFactory emitFactory = new EmitDeltaFactory();
+</code></pre>
+<h2 id="2-数据变化">2. 数据变化</h2>
+<pre><code class="lang-csharp">MyDelta&lt;TodoItem&gt; delta = emitFactory.Create&lt;TodoItem&gt;();
+delta.TrySetValue(&quot;Name&quot;, &quot;Test&quot;);
+</code></pre>
+<h2 id="3-变化应用到实体">3. 变化应用到实体</h2>
+<pre><code class="lang-csharp">TodoItem todo = new();
+bool changed = delta.Patch(todo);
+</code></pre>
+<h2 id="4-支持systemtextjson序列化">4. 支持System.Text.Json序列化</h2>
+<h3 id="41--配置mvc的jsonserializeroptions">4.1  配置MVC的JsonSerializerOptions</h3>
+<pre><code class="lang-csharp">services.AddSingleton(emitFactory)
+    .AddControllers()
+    .AddJsonOptions(options =&gt;
+    {
+        options.JsonSerializerOptions.Converters.Add(new MyDeltaConverterFactory(emitFactory));
+    });
+</code></pre>
+<h3 id="42--通过jsonserializer的jsonserializeroptions参数直接传入配置">4.2  通过JsonSerializer的JsonSerializerOptions参数直接传入配置</h3>
+<pre><code class="lang-csharp">MyDelta&lt;TodoItem&gt; delta = emitFactory.Create&lt;TodoItem&gt;();
+delta.TrySetValue(&quot;Name&quot;, &quot;Test&quot;);
+string json = JsonSerializer.Serialize(delta, new JsonSerializerOptions
+{
+    Converters =
+    {
+        new MyDeltaConverterFactory(emitFactory)
+    }
+});
+//{&quot;Name&quot;:&quot;Test&quot;}
+</code></pre>
+<h3 id="43-不配置默认使用mydeltafactory">4.3 不配置默认使用MyDeltaFactory</h3>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyDelta.net/blob/master/docs/emit.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) ShadowSql All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
