@@ -1,0 +1,472 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  commentId: T:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  id: PropertyIndexMemberWriter
+  parent: PocoEmit.Collections.Indexs
+  children:
+  - PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.#ctor(System.Reflection.PropertyInfo)
+  - PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Create(System.Type)
+  - PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.GetItemProperty(System.Type)
+  - PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Item
+  - PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  langs:
+  - csharp
+  - vb
+  name: PropertyIndexMemberWriter
+  nameWithType: PropertyIndexMemberWriter
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: PropertyIndexMemberWriter
+    path: ../PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Indexs
+  summary: 索引方法写入器
+  example: []
+  syntax:
+    content: 'public class PropertyIndexMemberWriter : IEmitIndexMemberWriter'
+    content.vb: Public Class PropertyIndexMemberWriter Implements IEmitIndexMemberWriter
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Indexs.IEmitIndexMemberWriter
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.#ctor(System.Reflection.PropertyInfo)
+  commentId: M:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.#ctor(System.Reflection.PropertyInfo)
+  id: '#ctor(System.Reflection.PropertyInfo)'
+  parent: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  langs:
+  - csharp
+  - vb
+  name: PropertyIndexMemberWriter(PropertyInfo)
+  nameWithType: PropertyIndexMemberWriter.PropertyIndexMemberWriter(PropertyInfo)
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.PropertyIndexMemberWriter(System.Reflection.PropertyInfo)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Indexs
+  summary: 索引方法写入器
+  example: []
+  syntax:
+    content: public PropertyIndexMemberWriter(PropertyInfo item)
+    parameters:
+    - id: item
+      type: System.Reflection.PropertyInfo
+    content.vb: Public Sub New(item As PropertyInfo)
+  overload: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.#ctor*
+  nameWithType.vb: PropertyIndexMemberWriter.New(PropertyInfo)
+  fullName.vb: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.New(System.Reflection.PropertyInfo)
+  name.vb: New(PropertyInfo)
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Item
+  commentId: P:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Item
+  id: Item
+  parent: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: PropertyIndexMemberWriter.Item
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Item
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Item
+    path: ../PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Indexs
+  summary: 索引方法
+  example: []
+  syntax:
+    content: public PropertyInfo Item { get; }
+    parameters: []
+    return:
+      type: System.Reflection.PropertyInfo
+    content.vb: Public ReadOnly Property Item As PropertyInfo
+  overload: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Item*
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  id: Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Expression, Expression, Expression)
+  nameWithType: PropertyIndexMemberWriter.Write(Expression, Expression, Expression)
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Write(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Write
+    path: ../PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+    startLine: 22
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Indexs
+  summary: 写入
+  example: []
+  syntax:
+    content: public Expression Write(Expression instance, Expression index, Expression value)
+    parameters:
+    - id: instance
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: index
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: value
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Function Write(instance As Expression, index As Expression, value As Expression) As Expression
+  overload: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Write*
+  implements:
+  - PocoEmit.Indexs.IEmitIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.GetItemProperty(System.Type)
+  commentId: M:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.GetItemProperty(System.Type)
+  id: GetItemProperty(System.Type)
+  parent: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  langs:
+  - csharp
+  - vb
+  name: GetItemProperty(Type)
+  nameWithType: PropertyIndexMemberWriter.GetItemProperty(Type)
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.GetItemProperty(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetItemProperty
+    path: ../PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+    startLine: 28
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Indexs
+  summary: 获取Item索引器属性
+  example: []
+  syntax:
+    content: public static PropertyInfo GetItemProperty(Type listType)
+    parameters:
+    - id: listType
+      type: System.Type
+    return:
+      type: System.Reflection.PropertyInfo
+    content.vb: Public Shared Function GetItemProperty(listType As Type) As PropertyInfo
+  overload: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.GetItemProperty*
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Create(System.Type)
+  commentId: M:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Create(System.Type)
+  id: Create(System.Type)
+  parent: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  langs:
+  - csharp
+  - vb
+  name: Create(Type)
+  nameWithType: PropertyIndexMemberWriter.Create(Type)
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Create(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Create
+    path: ../PocoEmit.Collections/Collections/Indexs/PropertyIndexMemberWriter.cs
+    startLine: 35
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Indexs
+  summary: 构造索引方法写入器
+  example: []
+  syntax:
+    content: public static PropertyIndexMemberWriter Create(Type listType)
+    parameters:
+    - id: listType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+      description: ''
+    content.vb: Public Shared Function Create(listType As Type) As PropertyIndexMemberWriter
+  overload: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Create*
+references:
+- uid: PocoEmit.Collections.Indexs
+  commentId: N:PocoEmit.Collections.Indexs
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Indexs
+  nameWithType: PocoEmit.Collections.Indexs
+  fullName: PocoEmit.Collections.Indexs
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Indexs
+    name: Indexs
+    href: PocoEmit.Collections.Indexs.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Indexs
+    name: Indexs
+    href: PocoEmit.Collections.Indexs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Indexs.IEmitIndexMemberWriter
+  commentId: T:PocoEmit.Indexs.IEmitIndexMemberWriter
+  parent: PocoEmit.Indexs
+  href: PocoEmit.Indexs.IEmitIndexMemberWriter.html
+  name: IEmitIndexMemberWriter
+  nameWithType: IEmitIndexMemberWriter
+  fullName: PocoEmit.Indexs.IEmitIndexMemberWriter
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Indexs
+  commentId: N:PocoEmit.Indexs
+  href: PocoEmit.html
+  name: PocoEmit.Indexs
+  nameWithType: PocoEmit.Indexs
+  fullName: PocoEmit.Indexs
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Indexs
+    name: Indexs
+    href: PocoEmit.Indexs.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Indexs
+    name: Indexs
+    href: PocoEmit.Indexs.html
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.#ctor*
+  commentId: Overload:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.#ctor
+  href: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.html#PocoEmit_Collections_Indexs_PropertyIndexMemberWriter__ctor_System_Reflection_PropertyInfo_
+  name: PropertyIndexMemberWriter
+  nameWithType: PropertyIndexMemberWriter.PropertyIndexMemberWriter
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.PropertyIndexMemberWriter
+  nameWithType.vb: PropertyIndexMemberWriter.New
+  fullName.vb: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.New
+  name.vb: New
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Item*
+  commentId: Overload:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Item
+  href: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.html#PocoEmit_Collections_Indexs_PropertyIndexMemberWriter_Item
+  name: Item
+  nameWithType: PropertyIndexMemberWriter.Item
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Item
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Write*
+  commentId: Overload:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Write
+  href: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.html#PocoEmit_Collections_Indexs_PropertyIndexMemberWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Write
+  nameWithType: PropertyIndexMemberWriter.Write
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Write
+- uid: PocoEmit.Indexs.IEmitIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Indexs.IEmitIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Indexs.IEmitIndexMemberWriter
+  isExternal: true
+  href: PocoEmit.Indexs.IEmitIndexMemberWriter.html#PocoEmit_Indexs_IEmitIndexMemberWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Write(Expression, Expression, Expression)
+  nameWithType: IEmitIndexMemberWriter.Write(Expression, Expression, Expression)
+  fullName: PocoEmit.Indexs.IEmitIndexMemberWriter.Write(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Indexs.IEmitIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Write
+    href: PocoEmit.Indexs.IEmitIndexMemberWriter.html#PocoEmit_Indexs_IEmitIndexMemberWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Indexs.IEmitIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Write
+    href: PocoEmit.Indexs.IEmitIndexMemberWriter.html#PocoEmit_Indexs_IEmitIndexMemberWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.GetItemProperty*
+  commentId: Overload:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.GetItemProperty
+  href: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.html#PocoEmit_Collections_Indexs_PropertyIndexMemberWriter_GetItemProperty_System_Type_
+  name: GetItemProperty
+  nameWithType: PropertyIndexMemberWriter.GetItemProperty
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.GetItemProperty
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Create*
+  commentId: Overload:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Create
+  href: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.html#PocoEmit_Collections_Indexs_PropertyIndexMemberWriter_Create_System_Type_
+  name: Create
+  nameWithType: PropertyIndexMemberWriter.Create
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.Create
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  commentId: T:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  parent: PocoEmit.Collections.Indexs
+  href: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.html
+  name: PropertyIndexMemberWriter
+  nameWithType: PropertyIndexMemberWriter
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter

@@ -1,0 +1,588 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase
+  commentId: T:PocoEmit.Dictionaries.EmitDictionaryBase
+  id: EmitDictionaryBase
+  parent: PocoEmit.Dictionaries
+  children:
+  - PocoEmit.Dictionaries.EmitDictionaryBase.#ctor(System.Type,System.Type,System.Type)
+  - PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty(System.Type)
+  - PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty(System.Type)
+  - PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty(System.Type)
+  - PocoEmit.Dictionaries.EmitDictionaryBase.KeyType
+  - PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type,System.Type)
+  - PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type[])
+  - PocoEmit.Dictionaries.EmitDictionaryBase._keyType
+  langs:
+  - csharp
+  - vb
+  name: EmitDictionaryBase
+  nameWithType: EmitDictionaryBase
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: EmitDictionaryBase
+    path: ../PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 字典基类
+  example: []
+  syntax:
+    content: 'public abstract class EmitDictionaryBase : EmitCollectionBase, ICompileInfo'
+    content.vb: Public MustInherit Class EmitDictionaryBase Inherits EmitCollectionBase Implements ICompileInfo
+  inheritance:
+  - System.Object
+  - PocoEmit.Collections.EmitCollectionBase
+  derivedClasses:
+  - PocoEmit.Dictionaries.DictionaryConverter
+  - PocoEmit.Dictionaries.DictionaryCopier
+  - PocoEmit.Dictionaries.DictionaryIndexVisitor
+  implements:
+  - PocoEmit.Configuration.ICompileInfo
+  inheritedMembers:
+  - PocoEmit.Collections.EmitCollectionBase._collectionType
+  - PocoEmit.Collections.EmitCollectionBase._elementType
+  - PocoEmit.Collections.EmitCollectionBase.ElementType
+  - PocoEmit.Collections.EmitCollectionBase.CollectionType
+  - PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.#ctor(System.Type,System.Type,System.Type)
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.#ctor(System.Type,System.Type,System.Type)
+  id: '#ctor(System.Type,System.Type,System.Type)'
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  langs:
+  - csharp
+  - vb
+  name: EmitDictionaryBase(Type, Type, Type)
+  nameWithType: EmitDictionaryBase.EmitDictionaryBase(Type, Type, Type)
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.EmitDictionaryBase(System.Type, System.Type, System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 字典基类
+  example: []
+  syntax:
+    content: protected EmitDictionaryBase(Type dictionaryType, Type keyType, Type elementType)
+    parameters:
+    - id: dictionaryType
+      type: System.Type
+      description: ''
+    - id: keyType
+      type: System.Type
+      description: ''
+    - id: elementType
+      type: System.Type
+      description: ''
+    content.vb: Protected Sub New(dictionaryType As Type, keyType As Type, elementType As Type)
+  overload: PocoEmit.Dictionaries.EmitDictionaryBase.#ctor*
+  nameWithType.vb: EmitDictionaryBase.New(Type, Type, Type)
+  fullName.vb: PocoEmit.Dictionaries.EmitDictionaryBase.New(System.Type, System.Type, System.Type)
+  name.vb: New(Type, Type, Type)
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase._keyType
+  commentId: F:PocoEmit.Dictionaries.EmitDictionaryBase._keyType
+  id: _keyType
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  langs:
+  - csharp
+  - vb
+  name: _keyType
+  nameWithType: EmitDictionaryBase._keyType
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase._keyType
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _keyType
+    path: ../PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+    startLine: 20
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 键类型
+  example: []
+  syntax:
+    content: protected readonly Type _keyType
+    return:
+      type: System.Type
+    content.vb: Protected ReadOnly _keyType As Type
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.KeyType
+  commentId: P:PocoEmit.Dictionaries.EmitDictionaryBase.KeyType
+  id: KeyType
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  langs:
+  - csharp
+  - vb
+  name: KeyType
+  nameWithType: EmitDictionaryBase.KeyType
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.KeyType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: KeyType
+    path: ../PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+    startLine: 24
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 键类型
+  example: []
+  syntax:
+    content: public Type KeyType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property KeyType As Type
+  overload: PocoEmit.Dictionaries.EmitDictionaryBase.KeyType*
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type,System.Type)
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type,System.Type)
+  id: MakePairType(System.Type,System.Type)
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  langs:
+  - csharp
+  - vb
+  name: MakePairType(Type, Type)
+  nameWithType: EmitDictionaryBase.MakePairType(Type, Type)
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MakePairType
+    path: ../PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+    startLine: 33
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 键值对类型
+  example: []
+  syntax:
+    content: public static Type MakePairType(Type keyType, Type elementType)
+    parameters:
+    - id: keyType
+      type: System.Type
+      description: ''
+    - id: elementType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Type
+      description: ''
+    content.vb: Public Shared Function MakePairType(keyType As Type, elementType As Type) As Type
+  overload: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType*
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type[])
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type[])
+  id: MakePairType(System.Type[])
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  langs:
+  - csharp
+  - vb
+  name: MakePairType(Type[])
+  nameWithType: EmitDictionaryBase.MakePairType(Type[])
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type[])
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MakePairType
+    path: ../PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+    startLine: 40
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 键值对类型
+  example: []
+  syntax:
+    content: public static Type MakePairType(Type[] types)
+    parameters:
+    - id: types
+      type: System.Type[]
+      description: ''
+    return:
+      type: System.Type
+      description: ''
+    content.vb: Public Shared Function MakePairType(types As Type()) As Type
+  overload: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType*
+  nameWithType.vb: EmitDictionaryBase.MakePairType(Type())
+  fullName.vb: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type())
+  name.vb: MakePairType(Type())
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty(System.Type)
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty(System.Type)
+  id: GetKeysProperty(System.Type)
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  langs:
+  - csharp
+  - vb
+  name: GetKeysProperty(Type)
+  nameWithType: EmitDictionaryBase.GetKeysProperty(Type)
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetKeysProperty
+    path: ../PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+    startLine: 46
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 获取Keys属性
+  example: []
+  syntax:
+    content: public static PropertyInfo GetKeysProperty(Type dictionaryType)
+    parameters:
+    - id: dictionaryType
+      type: System.Type
+    return:
+      type: System.Reflection.PropertyInfo
+    content.vb: Public Shared Function GetKeysProperty(dictionaryType As Type) As PropertyInfo
+  overload: PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty*
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty(System.Type)
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty(System.Type)
+  id: GetValuesProperty(System.Type)
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  langs:
+  - csharp
+  - vb
+  name: GetValuesProperty(Type)
+  nameWithType: EmitDictionaryBase.GetValuesProperty(Type)
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetValuesProperty
+    path: ../PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+    startLine: 51
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 获取Values属性
+  example: []
+  syntax:
+    content: public static PropertyInfo GetValuesProperty(Type dictionaryType)
+    parameters:
+    - id: dictionaryType
+      type: System.Type
+    return:
+      type: System.Reflection.PropertyInfo
+    content.vb: Public Shared Function GetValuesProperty(dictionaryType As Type) As PropertyInfo
+  overload: PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty*
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty(System.Type)
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty(System.Type)
+  id: GetItemProperty(System.Type)
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  langs:
+  - csharp
+  - vb
+  name: GetItemProperty(Type)
+  nameWithType: EmitDictionaryBase.GetItemProperty(Type)
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetItemProperty
+    path: ../PocoEmit.Collections/Dictionaries/EmitDictionaryBase.cs
+    startLine: 56
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 获取Item索引器属性
+  example: []
+  syntax:
+    content: public static PropertyInfo GetItemProperty(Type dictionaryType)
+    parameters:
+    - id: dictionaryType
+      type: System.Type
+    return:
+      type: System.Reflection.PropertyInfo
+    content.vb: Public Shared Function GetItemProperty(dictionaryType As Type) As PropertyInfo
+  overload: PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty*
+references:
+- uid: PocoEmit.Dictionaries
+  commentId: N:PocoEmit.Dictionaries
+  href: PocoEmit.html
+  name: PocoEmit.Dictionaries
+  nameWithType: PocoEmit.Dictionaries
+  fullName: PocoEmit.Dictionaries
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Dictionaries
+    name: Dictionaries
+    href: PocoEmit.Dictionaries.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Dictionaries
+    name: Dictionaries
+    href: PocoEmit.Dictionaries.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.EmitCollectionBase
+  commentId: T:PocoEmit.Collections.EmitCollectionBase
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.EmitCollectionBase.html
+  name: EmitCollectionBase
+  nameWithType: EmitCollectionBase
+  fullName: PocoEmit.Collections.EmitCollectionBase
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Collections.EmitCollectionBase._collectionType
+  commentId: F:PocoEmit.Collections.EmitCollectionBase._collectionType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase__collectionType
+  name: _collectionType
+  nameWithType: EmitCollectionBase._collectionType
+  fullName: PocoEmit.Collections.EmitCollectionBase._collectionType
+- uid: PocoEmit.Collections.EmitCollectionBase._elementType
+  commentId: F:PocoEmit.Collections.EmitCollectionBase._elementType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase__elementType
+  name: _elementType
+  nameWithType: EmitCollectionBase._elementType
+  fullName: PocoEmit.Collections.EmitCollectionBase._elementType
+- uid: PocoEmit.Collections.EmitCollectionBase.ElementType
+  commentId: P:PocoEmit.Collections.EmitCollectionBase.ElementType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_ElementType
+  name: ElementType
+  nameWithType: EmitCollectionBase.ElementType
+  fullName: PocoEmit.Collections.EmitCollectionBase.ElementType
+- uid: PocoEmit.Collections.EmitCollectionBase.CollectionType
+  commentId: P:PocoEmit.Collections.EmitCollectionBase.CollectionType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CollectionType
+  name: CollectionType
+  nameWithType: EmitCollectionBase.CollectionType
+  fullName: PocoEmit.Collections.EmitCollectionBase.CollectionType
+- uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.EmitCollectionBase
+  isExternal: true
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  name: CheckInstance(Expression)
+  nameWithType: EmitCollectionBase.CheckInstance(Expression)
+  fullName: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+    name: CheckInstance
+    href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+    name: CheckInstance
+    href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.#ctor*
+  commentId: Overload:PocoEmit.Dictionaries.EmitDictionaryBase.#ctor
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase__ctor_System_Type_System_Type_System_Type_
+  name: EmitDictionaryBase
+  nameWithType: EmitDictionaryBase.EmitDictionaryBase
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.EmitDictionaryBase
+  nameWithType.vb: EmitDictionaryBase.New
+  fullName.vb: PocoEmit.Dictionaries.EmitDictionaryBase.New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.KeyType*
+  commentId: Overload:PocoEmit.Dictionaries.EmitDictionaryBase.KeyType
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_KeyType
+  name: KeyType
+  nameWithType: EmitDictionaryBase.KeyType
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.KeyType
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType*
+  commentId: Overload:PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_MakePairType_System_Type_System_Type_
+  name: MakePairType
+  nameWithType: EmitDictionaryBase.MakePairType
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty*
+  commentId: Overload:PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetKeysProperty_System_Type_
+  name: GetKeysProperty
+  nameWithType: EmitDictionaryBase.GetKeysProperty
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty*
+  commentId: Overload:PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetValuesProperty_System_Type_
+  name: GetValuesProperty
+  nameWithType: EmitDictionaryBase.GetValuesProperty
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty*
+  commentId: Overload:PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetItemProperty_System_Type_
+  name: GetItemProperty
+  nameWithType: EmitDictionaryBase.GetItemProperty
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty

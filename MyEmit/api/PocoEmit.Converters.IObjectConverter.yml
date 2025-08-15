@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Converters.IObjectConverter
+  commentId: T:PocoEmit.Converters.IObjectConverter
+  id: IObjectConverter
+  parent: PocoEmit.Converters
+  children:
+  - PocoEmit.Converters.IObjectConverter.ConvertObject(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IObjectConverter
+  nameWithType: IObjectConverter
+  fullName: PocoEmit.Converters.IObjectConverter
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit/Converters/IObjectConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IObjectConverter
+    path: ../PocoEmit/Converters/IObjectConverter.cs
+    startLine: 5
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Converters
+  summary: 弱类型转化(用于类型反射场景)
+  example: []
+  syntax:
+    content: public interface IObjectConverter
+    content.vb: Public Interface IObjectConverter
+- uid: PocoEmit.Converters.IObjectConverter.ConvertObject(System.Object)
+  commentId: M:PocoEmit.Converters.IObjectConverter.ConvertObject(System.Object)
+  id: ConvertObject(System.Object)
+  parent: PocoEmit.Converters.IObjectConverter
+  langs:
+  - csharp
+  - vb
+  name: ConvertObject(object)
+  nameWithType: IObjectConverter.ConvertObject(object)
+  fullName: PocoEmit.Converters.IObjectConverter.ConvertObject(object)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Converters/IObjectConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConvertObject
+    path: ../PocoEmit/Converters/IObjectConverter.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Converters
+  summary: 转化
+  example: []
+  syntax:
+    content: object ConvertObject(object source)
+    parameters:
+    - id: source
+      type: System.Object
+      description: ''
+    return:
+      type: System.Object
+      description: ''
+    content.vb: Function ConvertObject(source As Object) As Object
+  overload: PocoEmit.Converters.IObjectConverter.ConvertObject*
+  nameWithType.vb: IObjectConverter.ConvertObject(Object)
+  fullName.vb: PocoEmit.Converters.IObjectConverter.ConvertObject(Object)
+  name.vb: ConvertObject(Object)
+references:
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: PocoEmit.Converters.IObjectConverter.ConvertObject*
+  commentId: Overload:PocoEmit.Converters.IObjectConverter.ConvertObject
+  href: PocoEmit.Converters.IObjectConverter.html#PocoEmit_Converters_IObjectConverter_ConvertObject_System_Object_
+  name: ConvertObject
+  nameWithType: IObjectConverter.ConvertObject
+  fullName: PocoEmit.Converters.IObjectConverter.ConvertObject
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

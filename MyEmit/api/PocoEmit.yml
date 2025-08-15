@@ -1,0 +1,227 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  id: PocoEmit
+  children:
+  - PocoEmit.CollectionConfigureServices
+  - PocoEmit.CollectionContainer
+  - PocoEmit.IMapper
+  - PocoEmit.IMemberReader`2
+  - PocoEmit.IMemberWriter`2
+  - PocoEmit.IPoco
+  - PocoEmit.IPocoConverter`2
+  - PocoEmit.IPocoCopier`2
+  - PocoEmit.InstanceHelper
+  - PocoEmit.Mapper
+  - PocoEmit.MapperServices
+  - PocoEmit.Poco
+  - PocoEmit.PocoEmitServices
+  - PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+  type: Namespace
+  assemblies:
+  - PocoEmit
+references:
+- uid: PocoEmit.PocoEmitServices
+  commentId: T:PocoEmit.PocoEmitServices
+  parent: PocoEmit
+  href: PocoEmit.PocoEmitServices.html
+  name: PocoEmitServices
+  nameWithType: PocoEmitServices
+  fullName: PocoEmit.PocoEmitServices
+- uid: PocoEmit.IMemberReader`2
+  commentId: T:PocoEmit.IMemberReader`2
+  href: PocoEmit.IMemberReader-2.html
+  name: IMemberReader<TInstance, TValue>
+  nameWithType: IMemberReader<TInstance, TValue>
+  fullName: PocoEmit.IMemberReader<TInstance, TValue>
+  nameWithType.vb: IMemberReader(Of TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberReader(Of TInstance, TValue)
+  name.vb: IMemberReader(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.IMemberReader`2
+    name: IMemberReader
+    href: PocoEmit.IMemberReader-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IMemberReader`2
+    name: IMemberReader
+    href: PocoEmit.IMemberReader-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.IMemberWriter`2
+  commentId: T:PocoEmit.IMemberWriter`2
+  href: PocoEmit.IMemberWriter-2.html
+  name: IMemberWriter<TInstance, TValue>
+  nameWithType: IMemberWriter<TInstance, TValue>
+  fullName: PocoEmit.IMemberWriter<TInstance, TValue>
+  nameWithType.vb: IMemberWriter(Of TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberWriter(Of TInstance, TValue)
+  name.vb: IMemberWriter(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter
+    href: PocoEmit.IMemberWriter-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter
+    href: PocoEmit.IMemberWriter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.InstanceHelper
+  commentId: T:PocoEmit.InstanceHelper
+  href: PocoEmit.InstanceHelper.html
+  name: InstanceHelper
+  nameWithType: InstanceHelper
+  fullName: PocoEmit.InstanceHelper
+- uid: PocoEmit.IPoco
+  commentId: T:PocoEmit.IPoco
+  parent: PocoEmit
+  href: PocoEmit.IPoco.html
+  name: IPoco
+  nameWithType: IPoco
+  fullName: PocoEmit.IPoco
+- uid: PocoEmit.IPocoConverter`2
+  commentId: T:PocoEmit.IPocoConverter`2
+  href: PocoEmit.IPocoConverter-2.html
+  name: IPocoConverter<TSource, TDest>
+  nameWithType: IPocoConverter<TSource, TDest>
+  fullName: PocoEmit.IPocoConverter<TSource, TDest>
+  nameWithType.vb: IPocoConverter(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoConverter(Of TSource, TDest)
+  name.vb: IPocoConverter(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter
+    href: PocoEmit.IPocoConverter-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter
+    href: PocoEmit.IPocoConverter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Poco
+  commentId: T:PocoEmit.Poco
+  href: PocoEmit.Poco.html
+  name: Poco
+  nameWithType: Poco
+  fullName: PocoEmit.Poco
+- uid: PocoEmit.ReflectionHelper
+  commentId: T:PocoEmit.ReflectionHelper
+  parent: PocoEmit
+  href: PocoEmit.ReflectionHelper.html
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: PocoEmit.ReflectionHelper
+- uid: PocoEmit.CollectionConfigureServices
+  commentId: T:PocoEmit.CollectionConfigureServices
+  parent: PocoEmit
+  href: PocoEmit.CollectionConfigureServices.html
+  name: CollectionConfigureServices
+  nameWithType: CollectionConfigureServices
+  fullName: PocoEmit.CollectionConfigureServices
+- uid: PocoEmit.CollectionContainer
+  commentId: T:PocoEmit.CollectionContainer
+  parent: PocoEmit
+  href: PocoEmit.CollectionContainer.html
+  name: CollectionContainer
+  nameWithType: CollectionContainer
+  fullName: PocoEmit.CollectionContainer
+- uid: PocoEmit.MapperServices
+  commentId: T:PocoEmit.MapperServices
+  parent: PocoEmit
+  href: PocoEmit.MapperServices.html
+  name: MapperServices
+  nameWithType: MapperServices
+  fullName: PocoEmit.MapperServices
+- uid: PocoEmit.IMapper
+  commentId: T:PocoEmit.IMapper
+  parent: PocoEmit
+  href: PocoEmit.IMapper.html
+  name: IMapper
+  nameWithType: IMapper
+  fullName: PocoEmit.IMapper
+- uid: PocoEmit.IPocoCopier`2
+  commentId: T:PocoEmit.IPocoCopier`2
+  href: PocoEmit.IPocoCopier-2.html
+  name: IPocoCopier<TSource, TDest>
+  nameWithType: IPocoCopier<TSource, TDest>
+  fullName: PocoEmit.IPocoCopier<TSource, TDest>
+  nameWithType.vb: IPocoCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoCopier(Of TSource, TDest)
+  name.vb: IPocoCopier(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier
+    href: PocoEmit.IPocoCopier-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier
+    href: PocoEmit.IPocoCopier-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Mapper
+  commentId: T:PocoEmit.Mapper
+  href: PocoEmit.Mapper.html
+  name: Mapper
+  nameWithType: Mapper
+  fullName: PocoEmit.Mapper
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit

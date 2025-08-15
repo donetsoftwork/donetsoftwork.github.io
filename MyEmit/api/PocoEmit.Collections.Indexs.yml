@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Indexs
+  commentId: N:PocoEmit.Collections.Indexs
+  id: PocoEmit.Collections.Indexs
+  children:
+  - PocoEmit.Collections.Indexs.ArrayMemberIndex
+  - PocoEmit.Collections.Indexs.PropertyIndexMemberReader
+  - PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Collections.Indexs
+  nameWithType: PocoEmit.Collections.Indexs
+  fullName: PocoEmit.Collections.Indexs
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Collections.Indexs.ArrayMemberIndex
+  commentId: T:PocoEmit.Collections.Indexs.ArrayMemberIndex
+  parent: PocoEmit.Collections.Indexs
+  href: PocoEmit.Collections.Indexs.ArrayMemberIndex.html
+  name: ArrayMemberIndex
+  nameWithType: ArrayMemberIndex
+  fullName: PocoEmit.Collections.Indexs.ArrayMemberIndex
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberReader
+  commentId: T:PocoEmit.Collections.Indexs.PropertyIndexMemberReader
+  parent: PocoEmit.Collections.Indexs
+  href: PocoEmit.Collections.Indexs.PropertyIndexMemberReader.html
+  name: PropertyIndexMemberReader
+  nameWithType: PropertyIndexMemberReader
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberReader
+- uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  commentId: T:PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+  parent: PocoEmit.Collections.Indexs
+  href: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.html
+  name: PropertyIndexMemberWriter
+  nameWithType: PropertyIndexMemberWriter
+  fullName: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+- uid: PocoEmit.Collections.Indexs
+  commentId: N:PocoEmit.Collections.Indexs
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Indexs
+  nameWithType: PocoEmit.Collections.Indexs
+  fullName: PocoEmit.Collections.Indexs
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Indexs
+    name: Indexs
+    href: PocoEmit.Collections.Indexs.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Indexs
+    name: Indexs
+    href: PocoEmit.Collections.Indexs.html

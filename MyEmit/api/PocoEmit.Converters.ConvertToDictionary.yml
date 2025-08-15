@@ -1,0 +1,261 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Converters.ConvertToDictionary
+  commentId: T:PocoEmit.Converters.ConvertToDictionary
+  id: ConvertToDictionary
+  parent: PocoEmit.Converters
+  children:
+  - PocoEmit.Converters.ConvertToDictionary.#ctor(PocoEmit.Configuration.IMapperOptions)
+  - PocoEmit.Converters.ConvertToDictionary.Options
+  - PocoEmit.Converters.ConvertToDictionary.ToDictionary(System.Type,System.Type,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ConvertToDictionary
+  nameWithType: ConvertToDictionary
+  fullName: PocoEmit.Converters.ConvertToDictionary
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToDictionary.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConvertToDictionary
+    path: ../PocoEmit.Collections/Converters/ConvertToDictionary.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 转化为字典
+  example: []
+  syntax:
+    content: public class ConvertToDictionary
+    content.vb: Public Class ConvertToDictionary
+  inheritance:
+  - System.Object
+- uid: PocoEmit.Converters.ConvertToDictionary.#ctor(PocoEmit.Configuration.IMapperOptions)
+  commentId: M:PocoEmit.Converters.ConvertToDictionary.#ctor(PocoEmit.Configuration.IMapperOptions)
+  id: '#ctor(PocoEmit.Configuration.IMapperOptions)'
+  parent: PocoEmit.Converters.ConvertToDictionary
+  langs:
+  - csharp
+  - vb
+  name: ConvertToDictionary(IMapperOptions)
+  nameWithType: ConvertToDictionary.ConvertToDictionary(IMapperOptions)
+  fullName: PocoEmit.Converters.ConvertToDictionary.ConvertToDictionary(PocoEmit.Configuration.IMapperOptions)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToDictionary.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Converters/ConvertToDictionary.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 转化为字典
+  example: []
+  syntax:
+    content: public ConvertToDictionary(IMapperOptions options)
+    parameters:
+    - id: options
+      type: PocoEmit.Configuration.IMapperOptions
+      description: ''
+    content.vb: Public Sub New(options As IMapperOptions)
+  overload: PocoEmit.Converters.ConvertToDictionary.#ctor*
+  nameWithType.vb: ConvertToDictionary.New(IMapperOptions)
+  fullName.vb: PocoEmit.Converters.ConvertToDictionary.New(PocoEmit.Configuration.IMapperOptions)
+  name.vb: New(IMapperOptions)
+- uid: PocoEmit.Converters.ConvertToDictionary.Options
+  commentId: P:PocoEmit.Converters.ConvertToDictionary.Options
+  id: Options
+  parent: PocoEmit.Converters.ConvertToDictionary
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: ConvertToDictionary.Options
+  fullName: PocoEmit.Converters.ConvertToDictionary.Options
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToDictionary.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Options
+    path: ../PocoEmit.Collections/Converters/ConvertToDictionary.cs
+    startLine: 19
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 配置
+  example: []
+  syntax:
+    content: public IMapperOptions Options { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Configuration.IMapperOptions
+    content.vb: Public ReadOnly Property Options As IMapperOptions
+  overload: PocoEmit.Converters.ConvertToDictionary.Options*
+- uid: PocoEmit.Converters.ConvertToDictionary.ToDictionary(System.Type,System.Type,System.Boolean)
+  commentId: M:PocoEmit.Converters.ConvertToDictionary.ToDictionary(System.Type,System.Type,System.Boolean)
+  id: ToDictionary(System.Type,System.Type,System.Boolean)
+  parent: PocoEmit.Converters.ConvertToDictionary
+  langs:
+  - csharp
+  - vb
+  name: ToDictionary(Type, Type, bool)
+  nameWithType: ConvertToDictionary.ToDictionary(Type, Type, bool)
+  fullName: PocoEmit.Converters.ConvertToDictionary.ToDictionary(System.Type, System.Type, bool)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToDictionary.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ToDictionary
+    path: ../PocoEmit.Collections/Converters/ConvertToDictionary.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 转化为字典
+  example: []
+  syntax:
+    content: public IEmitConverter ToDictionary(Type sourceType, Type destType, bool isInterface)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    - id: isInterface
+      type: System.Boolean
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Public Function ToDictionary(sourceType As Type, destType As Type, isInterface As Boolean) As IEmitConverter
+  overload: PocoEmit.Converters.ConvertToDictionary.ToDictionary*
+  nameWithType.vb: ConvertToDictionary.ToDictionary(Type, Type, Boolean)
+  fullName.vb: PocoEmit.Converters.ConvertToDictionary.ToDictionary(System.Type, System.Type, Boolean)
+  name.vb: ToDictionary(Type, Type, Boolean)
+references:
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Converters.ConvertToDictionary.#ctor*
+  commentId: Overload:PocoEmit.Converters.ConvertToDictionary.#ctor
+  href: PocoEmit.Converters.ConvertToDictionary.html#PocoEmit_Converters_ConvertToDictionary__ctor_PocoEmit_Configuration_IMapperOptions_
+  name: ConvertToDictionary
+  nameWithType: ConvertToDictionary.ConvertToDictionary
+  fullName: PocoEmit.Converters.ConvertToDictionary.ConvertToDictionary
+  nameWithType.vb: ConvertToDictionary.New
+  fullName.vb: PocoEmit.Converters.ConvertToDictionary.New
+  name.vb: New
+- uid: PocoEmit.Configuration.IMapperOptions
+  commentId: T:PocoEmit.Configuration.IMapperOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.IMapperOptions.html
+  name: IMapperOptions
+  nameWithType: IMapperOptions
+  fullName: PocoEmit.Configuration.IMapperOptions
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Converters.ConvertToDictionary.Options*
+  commentId: Overload:PocoEmit.Converters.ConvertToDictionary.Options
+  href: PocoEmit.Converters.ConvertToDictionary.html#PocoEmit_Converters_ConvertToDictionary_Options
+  name: Options
+  nameWithType: ConvertToDictionary.Options
+  fullName: PocoEmit.Converters.ConvertToDictionary.Options
+- uid: PocoEmit.Converters.ConvertToDictionary.ToDictionary*
+  commentId: Overload:PocoEmit.Converters.ConvertToDictionary.ToDictionary
+  href: PocoEmit.Converters.ConvertToDictionary.html#PocoEmit_Converters_ConvertToDictionary_ToDictionary_System_Type_System_Type_System_Boolean_
+  name: ToDictionary
+  nameWithType: ConvertToDictionary.ToDictionary
+  fullName: PocoEmit.Converters.ConvertToDictionary.ToDictionary
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PocoEmit.Converters.IEmitConverter
+  commentId: T:PocoEmit.Converters.IEmitConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IEmitConverter.html
+  name: IEmitConverter
+  nameWithType: IEmitConverter
+  fullName: PocoEmit.Converters.IEmitConverter

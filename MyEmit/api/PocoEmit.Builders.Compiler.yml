@@ -1,0 +1,826 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Builders.Compiler
+  commentId: T:PocoEmit.Builders.Compiler
+  id: Compiler
+  parent: PocoEmit.Builders
+  children:
+  - PocoEmit.Builders.Compiler.CompileAction``2(System.Linq.Expressions.Expression{System.Action{``0,``1}})
+  - PocoEmit.Builders.Compiler.CompileFunc``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  - PocoEmit.Builders.Compiler.Compile``2(PocoEmit.Converters.IEmitConverter)
+  - PocoEmit.Builders.Compiler.Compile``2(PocoEmit.Members.IEmitMemberReader)
+  - PocoEmit.Builders.Compiler.Compile``2(PocoEmit.Members.IEmitMemberWriter)
+  - PocoEmit.Builders.Compiler.Instance
+  langs:
+  - csharp
+  - vb
+  name: Compiler
+  nameWithType: Compiler
+  fullName: PocoEmit.Builders.Compiler
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Builders/Compiler.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Compiler
+    path: ../PocoEmit/Builders/Compiler.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 编译器
+  example: []
+  syntax:
+    content: public class Compiler
+    content.vb: Public Class Compiler
+  inheritance:
+  - System.Object
+- uid: PocoEmit.Builders.Compiler.CompileFunc``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  commentId: M:PocoEmit.Builders.Compiler.CompileFunc``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  id: CompileFunc``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  parent: PocoEmit.Builders.Compiler
+  langs:
+  - csharp
+  - vb
+  name: CompileFunc<TArgument, TResult>(Expression<Func<TArgument, TResult>>)
+  nameWithType: Compiler.CompileFunc<TArgument, TResult>(Expression<Func<TArgument, TResult>>)
+  fullName: PocoEmit.Builders.Compiler.CompileFunc<TArgument, TResult>(System.Linq.Expressions.Expression<System.Func<TArgument, TResult>>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/Compiler.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CompileFunc
+    path: ../PocoEmit/Builders/Compiler.cs
+    startLine: 21
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 编译Func
+  example: []
+  syntax:
+    content: public virtual Func<TArgument, TResult> CompileFunc<TArgument, TResult>(Expression<Func<TArgument, TResult>> func)
+    parameters:
+    - id: func
+      type: System.Linq.Expressions.Expression{System.Func{{TArgument},{TResult}}}
+      description: ''
+    typeParameters:
+    - id: TArgument
+      description: ''
+    - id: TResult
+      description: ''
+    return:
+      type: System.Func{{TArgument},{TResult}}
+      description: ''
+    content.vb: Public Overridable Function CompileFunc(Of TArgument, TResult)(func As Expression(Of Func(Of TArgument, TResult))) As Func(Of TArgument, TResult)
+  overload: PocoEmit.Builders.Compiler.CompileFunc*
+  nameWithType.vb: Compiler.CompileFunc(Of TArgument, TResult)(Expression(Of Func(Of TArgument, TResult)))
+  fullName.vb: PocoEmit.Builders.Compiler.CompileFunc(Of TArgument, TResult)(System.Linq.Expressions.Expression(Of System.Func(Of TArgument, TResult)))
+  name.vb: CompileFunc(Of TArgument, TResult)(Expression(Of Func(Of TArgument, TResult)))
+- uid: PocoEmit.Builders.Compiler.CompileAction``2(System.Linq.Expressions.Expression{System.Action{``0,``1}})
+  commentId: M:PocoEmit.Builders.Compiler.CompileAction``2(System.Linq.Expressions.Expression{System.Action{``0,``1}})
+  id: CompileAction``2(System.Linq.Expressions.Expression{System.Action{``0,``1}})
+  parent: PocoEmit.Builders.Compiler
+  langs:
+  - csharp
+  - vb
+  name: CompileAction<T1, T2>(Expression<Action<T1, T2>>)
+  nameWithType: Compiler.CompileAction<T1, T2>(Expression<Action<T1, T2>>)
+  fullName: PocoEmit.Builders.Compiler.CompileAction<T1, T2>(System.Linq.Expressions.Expression<System.Action<T1, T2>>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/Compiler.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CompileAction
+    path: ../PocoEmit/Builders/Compiler.cs
+    startLine: 32
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 编译Action
+  example: []
+  syntax:
+    content: public virtual Action<T1, T2> CompileAction<T1, T2>(Expression<Action<T1, T2>> action)
+    parameters:
+    - id: action
+      type: System.Linq.Expressions.Expression{System.Action{{T1},{T2}}}
+      description: ''
+    typeParameters:
+    - id: T1
+      description: ''
+    - id: T2
+      description: ''
+    return:
+      type: System.Action{{T1},{T2}}
+      description: ''
+    content.vb: Public Overridable Function CompileAction(Of T1, T2)(action As Expression(Of Action(Of T1, T2))) As Action(Of T1, T2)
+  overload: PocoEmit.Builders.Compiler.CompileAction*
+  nameWithType.vb: Compiler.CompileAction(Of T1, T2)(Expression(Of Action(Of T1, T2)))
+  fullName.vb: PocoEmit.Builders.Compiler.CompileAction(Of T1, T2)(System.Linq.Expressions.Expression(Of System.Action(Of T1, T2)))
+  name.vb: CompileAction(Of T1, T2)(Expression(Of Action(Of T1, T2)))
+- uid: PocoEmit.Builders.Compiler.Compile``2(PocoEmit.Converters.IEmitConverter)
+  commentId: M:PocoEmit.Builders.Compiler.Compile``2(PocoEmit.Converters.IEmitConverter)
+  id: Compile``2(PocoEmit.Converters.IEmitConverter)
+  parent: PocoEmit.Builders.Compiler
+  langs:
+  - csharp
+  - vb
+  name: Compile<TSource, TDest>(IEmitConverter)
+  nameWithType: Compiler.Compile<TSource, TDest>(IEmitConverter)
+  fullName: PocoEmit.Builders.Compiler.Compile<TSource, TDest>(PocoEmit.Converters.IEmitConverter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/Compiler.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Compile
+    path: ../PocoEmit/Builders/Compiler.cs
+    startLine: 43
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 编译类型转化
+  example: []
+  syntax:
+    content: public static Func<TSource, TDest> Compile<TSource, TDest>(IEmitConverter converter)
+    parameters:
+    - id: converter
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: System.Func{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Shared Function Compile(Of TSource, TDest)(converter As IEmitConverter) As Func(Of TSource, TDest)
+  overload: PocoEmit.Builders.Compiler.Compile*
+  nameWithType.vb: Compiler.Compile(Of TSource, TDest)(IEmitConverter)
+  fullName.vb: PocoEmit.Builders.Compiler.Compile(Of TSource, TDest)(PocoEmit.Converters.IEmitConverter)
+  name.vb: Compile(Of TSource, TDest)(IEmitConverter)
+- uid: PocoEmit.Builders.Compiler.Compile``2(PocoEmit.Members.IEmitMemberReader)
+  commentId: M:PocoEmit.Builders.Compiler.Compile``2(PocoEmit.Members.IEmitMemberReader)
+  id: Compile``2(PocoEmit.Members.IEmitMemberReader)
+  parent: PocoEmit.Builders.Compiler
+  langs:
+  - csharp
+  - vb
+  name: Compile<TInstance, TValue>(IEmitMemberReader)
+  nameWithType: Compiler.Compile<TInstance, TValue>(IEmitMemberReader)
+  fullName: PocoEmit.Builders.Compiler.Compile<TInstance, TValue>(PocoEmit.Members.IEmitMemberReader)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/Compiler.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Compile
+    path: ../PocoEmit/Builders/Compiler.cs
+    startLine: 52
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 编译成员读取器
+  example: []
+  syntax:
+    content: public static Func<TInstance, TValue> Compile<TInstance, TValue>(IEmitMemberReader reader)
+    parameters:
+    - id: reader
+      type: PocoEmit.Members.IEmitMemberReader
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Func{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function Compile(Of TInstance, TValue)(reader As IEmitMemberReader) As Func(Of TInstance, TValue)
+  overload: PocoEmit.Builders.Compiler.Compile*
+  nameWithType.vb: Compiler.Compile(Of TInstance, TValue)(IEmitMemberReader)
+  fullName.vb: PocoEmit.Builders.Compiler.Compile(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberReader)
+  name.vb: Compile(Of TInstance, TValue)(IEmitMemberReader)
+- uid: PocoEmit.Builders.Compiler.Compile``2(PocoEmit.Members.IEmitMemberWriter)
+  commentId: M:PocoEmit.Builders.Compiler.Compile``2(PocoEmit.Members.IEmitMemberWriter)
+  id: Compile``2(PocoEmit.Members.IEmitMemberWriter)
+  parent: PocoEmit.Builders.Compiler
+  langs:
+  - csharp
+  - vb
+  name: Compile<TInstance, TValue>(IEmitMemberWriter)
+  nameWithType: Compiler.Compile<TInstance, TValue>(IEmitMemberWriter)
+  fullName: PocoEmit.Builders.Compiler.Compile<TInstance, TValue>(PocoEmit.Members.IEmitMemberWriter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/Compiler.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Compile
+    path: ../PocoEmit/Builders/Compiler.cs
+    startLine: 61
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 编译成员写入器
+  example: []
+  syntax:
+    content: public static Action<TInstance, TValue> Compile<TInstance, TValue>(IEmitMemberWriter writer)
+    parameters:
+    - id: writer
+      type: PocoEmit.Members.IEmitMemberWriter
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Action{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function Compile(Of TInstance, TValue)(writer As IEmitMemberWriter) As Action(Of TInstance, TValue)
+  overload: PocoEmit.Builders.Compiler.Compile*
+  nameWithType.vb: Compiler.Compile(Of TInstance, TValue)(IEmitMemberWriter)
+  fullName.vb: PocoEmit.Builders.Compiler.Compile(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberWriter)
+  name.vb: Compile(Of TInstance, TValue)(IEmitMemberWriter)
+- uid: PocoEmit.Builders.Compiler.Instance
+  commentId: P:PocoEmit.Builders.Compiler.Instance
+  id: Instance
+  parent: PocoEmit.Builders.Compiler
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: Compiler.Instance
+  fullName: PocoEmit.Builders.Compiler.Instance
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Builders/Compiler.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Instance
+    path: ../PocoEmit/Builders/Compiler.cs
+    startLine: 72
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 编译器
+  example: []
+  syntax:
+    content: public static Compiler Instance { get; set; }
+    parameters: []
+    return:
+      type: PocoEmit.Builders.Compiler
+    content.vb: Public Shared Property Instance As Compiler
+  overload: PocoEmit.Builders.Compiler.Instance*
+references:
+- uid: PocoEmit.Builders
+  commentId: N:PocoEmit.Builders
+  href: PocoEmit.html
+  name: PocoEmit.Builders
+  nameWithType: PocoEmit.Builders
+  fullName: PocoEmit.Builders
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Builders.Compiler.CompileFunc*
+  commentId: Overload:PocoEmit.Builders.Compiler.CompileFunc
+  href: PocoEmit.Builders.Compiler.html#PocoEmit_Builders_Compiler_CompileFunc__2_System_Linq_Expressions_Expression_System_Func___0___1___
+  name: CompileFunc
+  nameWithType: Compiler.CompileFunc
+  fullName: PocoEmit.Builders.Compiler.CompileFunc
+- uid: System.Linq.Expressions.Expression{System.Func{{TArgument},{TResult}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TArgument, TResult>>
+  nameWithType: Expression<Func<TArgument, TResult>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TArgument, TResult>>
+  nameWithType.vb: Expression(Of Func(Of TArgument, TResult))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TArgument, TResult))
+  name.vb: Expression(Of Func(Of TArgument, TResult))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: System.Func{{TArgument},{TResult}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TArgument, TResult>
+  nameWithType: Func<TArgument, TResult>
+  fullName: System.Func<TArgument, TResult>
+  nameWithType.vb: Func(Of TArgument, TResult)
+  fullName.vb: System.Func(Of TArgument, TResult)
+  name.vb: Func(Of TArgument, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: PocoEmit.Builders.Compiler.CompileAction*
+  commentId: Overload:PocoEmit.Builders.Compiler.CompileAction
+  href: PocoEmit.Builders.Compiler.html#PocoEmit_Builders_Compiler_CompileAction__2_System_Linq_Expressions_Expression_System_Action___0___1___
+  name: CompileAction
+  nameWithType: Compiler.CompileAction
+  fullName: PocoEmit.Builders.Compiler.CompileAction
+- uid: System.Linq.Expressions.Expression{System.Action{{T1},{T2}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Action{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Action<T1, T2>>
+  nameWithType: Expression<Action<T1, T2>>
+  fullName: System.Linq.Expressions.Expression<System.Action<T1, T2>>
+  nameWithType.vb: Expression(Of Action(Of T1, T2))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Action(Of T1, T2))
+  name.vb: Expression(Of Action(Of T1, T2))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: System.Action{{T1},{T2}}
+  commentId: T:System.Action{``0,``1}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: PocoEmit.Builders.Compiler.Compile*
+  commentId: Overload:PocoEmit.Builders.Compiler.Compile
+  href: PocoEmit.Builders.Compiler.html#PocoEmit_Builders_Compiler_Compile__2_PocoEmit_Converters_IEmitConverter_
+  name: Compile
+  nameWithType: Compiler.Compile
+  fullName: PocoEmit.Builders.Compiler.Compile
+- uid: PocoEmit.Converters.IEmitConverter
+  commentId: T:PocoEmit.Converters.IEmitConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IEmitConverter.html
+  name: IEmitConverter
+  nameWithType: IEmitConverter
+  fullName: PocoEmit.Converters.IEmitConverter
+- uid: System.Func{{TSource},{TDest}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TSource, TDest>
+  nameWithType: Func<TSource, TDest>
+  fullName: System.Func<TSource, TDest>
+  nameWithType.vb: Func(Of TSource, TDest)
+  fullName.vb: System.Func(Of TSource, TDest)
+  name.vb: Func(Of TSource, TDest)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: PocoEmit.Members.IEmitMemberReader
+  commentId: T:PocoEmit.Members.IEmitMemberReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberReader.html
+  name: IEmitMemberReader
+  nameWithType: IEmitMemberReader
+  fullName: PocoEmit.Members.IEmitMemberReader
+- uid: System.Func{{TInstance},{TValue}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TInstance, TValue>
+  nameWithType: Func<TInstance, TValue>
+  fullName: System.Func<TInstance, TValue>
+  nameWithType.vb: Func(Of TInstance, TValue)
+  fullName.vb: System.Func(Of TInstance, TValue)
+  name.vb: Func(Of TInstance, TValue)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: PocoEmit.Members.IEmitMemberWriter
+  commentId: T:PocoEmit.Members.IEmitMemberWriter
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberWriter.html
+  name: IEmitMemberWriter
+  nameWithType: IEmitMemberWriter
+  fullName: PocoEmit.Members.IEmitMemberWriter
+- uid: System.Action{{TInstance},{TValue}}
+  commentId: T:System.Action{``0,``1}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TInstance, TValue>
+  nameWithType: Action<TInstance, TValue>
+  fullName: System.Action<TInstance, TValue>
+  nameWithType.vb: Action(Of TInstance, TValue)
+  fullName.vb: System.Action(Of TInstance, TValue)
+  name.vb: Action(Of TInstance, TValue)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Builders.Compiler.Instance*
+  commentId: Overload:PocoEmit.Builders.Compiler.Instance
+  href: PocoEmit.Builders.Compiler.html#PocoEmit_Builders_Compiler_Instance
+  name: Instance
+  nameWithType: Compiler.Instance
+  fullName: PocoEmit.Builders.Compiler.Instance
+- uid: PocoEmit.Builders.Compiler
+  commentId: T:PocoEmit.Builders.Compiler
+  parent: PocoEmit.Builders
+  href: PocoEmit.Builders.Compiler.html
+  name: Compiler
+  nameWithType: Compiler
+  fullName: PocoEmit.Builders.Compiler

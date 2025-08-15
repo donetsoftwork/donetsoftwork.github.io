@@ -1,0 +1,697 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Converters.CompiledConverter`2
+  commentId: T:PocoEmit.Converters.CompiledConverter`2
+  id: CompiledConverter`2
+  parent: PocoEmit.Converters
+  children:
+  - PocoEmit.Converters.CompiledConverter`2.#ctor(PocoEmit.Converters.IEmitConverter,System.Func{`0,`1})
+  - PocoEmit.Converters.CompiledConverter`2.Convert(System.Linq.Expressions.Expression)
+  - PocoEmit.Converters.CompiledConverter`2.ConvertFunc
+  - PocoEmit.Converters.CompiledConverter`2.Inner
+  langs:
+  - csharp
+  - vb
+  name: CompiledConverter<TSource, TDest>
+  nameWithType: CompiledConverter<TSource, TDest>
+  fullName: PocoEmit.Converters.CompiledConverter<TSource, TDest>
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Converters/CompiledConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CompiledConverter
+    path: ../PocoEmit/Converters/CompiledConverter.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Converters
+  summary: 已编译转化器
+  example: []
+  syntax:
+    content: 'public sealed class CompiledConverter<TSource, TDest> : ICompiledConverter<TSource, TDest>, IEmitConverter, ICompileInfo, IPocoConverter<TSource, TDest>, IObjectConverter'
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    content.vb: Public NotInheritable Class CompiledConverter(Of TSource, TDest) Implements ICompiledConverter(Of TSource, TDest), IEmitConverter, ICompileInfo, IPocoConverter(Of TSource, TDest), IObjectConverter
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Converters.ICompiledConverter{{TSource},{TDest}}
+  - PocoEmit.Converters.IEmitConverter
+  - PocoEmit.Configuration.ICompileInfo
+  - PocoEmit.IPocoConverter{{TSource},{TDest}}
+  - PocoEmit.Converters.IObjectConverter
+  extensionMethods:
+  - PocoEmit.Converters.IEmitConverter.PocoEmit.PocoEmitServices.Build``2
+  nameWithType.vb: CompiledConverter(Of TSource, TDest)
+  fullName.vb: PocoEmit.Converters.CompiledConverter(Of TSource, TDest)
+  name.vb: CompiledConverter(Of TSource, TDest)
+- uid: PocoEmit.Converters.CompiledConverter`2.#ctor(PocoEmit.Converters.IEmitConverter,System.Func{`0,`1})
+  commentId: M:PocoEmit.Converters.CompiledConverter`2.#ctor(PocoEmit.Converters.IEmitConverter,System.Func{`0,`1})
+  id: '#ctor(PocoEmit.Converters.IEmitConverter,System.Func{`0,`1})'
+  parent: PocoEmit.Converters.CompiledConverter`2
+  langs:
+  - csharp
+  - vb
+  name: CompiledConverter(IEmitConverter, Func<TSource, TDest>)
+  nameWithType: CompiledConverter<TSource, TDest>.CompiledConverter(IEmitConverter, Func<TSource, TDest>)
+  fullName: PocoEmit.Converters.CompiledConverter<TSource, TDest>.CompiledConverter(PocoEmit.Converters.IEmitConverter, System.Func<TSource, TDest>)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit/Converters/CompiledConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit/Converters/CompiledConverter.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Converters
+  summary: 已编译转化器
+  example: []
+  syntax:
+    content: public CompiledConverter(IEmitConverter inner, Func<TSource, TDest> convertFunc)
+    parameters:
+    - id: inner
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    - id: convertFunc
+      type: System.Func{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Sub New(inner As IEmitConverter, convertFunc As Func(Of TSource, TDest))
+  overload: PocoEmit.Converters.CompiledConverter`2.#ctor*
+  nameWithType.vb: CompiledConverter(Of TSource, TDest).New(IEmitConverter, Func(Of TSource, TDest))
+  fullName.vb: PocoEmit.Converters.CompiledConverter(Of TSource, TDest).New(PocoEmit.Converters.IEmitConverter, System.Func(Of TSource, TDest))
+  name.vb: New(IEmitConverter, Func(Of TSource, TDest))
+- uid: PocoEmit.Converters.CompiledConverter`2.Inner
+  commentId: P:PocoEmit.Converters.CompiledConverter`2.Inner
+  id: Inner
+  parent: PocoEmit.Converters.CompiledConverter`2
+  langs:
+  - csharp
+  - vb
+  name: Inner
+  nameWithType: CompiledConverter<TSource, TDest>.Inner
+  fullName: PocoEmit.Converters.CompiledConverter<TSource, TDest>.Inner
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Converters/CompiledConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Inner
+    path: ../PocoEmit/Converters/CompiledConverter.cs
+    startLine: 21
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Converters
+  summary: 原始转化器
+  example: []
+  syntax:
+    content: public IEmitConverter Inner { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+    content.vb: Public ReadOnly Property Inner As IEmitConverter
+  overload: PocoEmit.Converters.CompiledConverter`2.Inner*
+  nameWithType.vb: CompiledConverter(Of TSource, TDest).Inner
+  fullName.vb: PocoEmit.Converters.CompiledConverter(Of TSource, TDest).Inner
+- uid: PocoEmit.Converters.CompiledConverter`2.ConvertFunc
+  commentId: P:PocoEmit.Converters.CompiledConverter`2.ConvertFunc
+  id: ConvertFunc
+  parent: PocoEmit.Converters.CompiledConverter`2
+  langs:
+  - csharp
+  - vb
+  name: ConvertFunc
+  nameWithType: CompiledConverter<TSource, TDest>.ConvertFunc
+  fullName: PocoEmit.Converters.CompiledConverter<TSource, TDest>.ConvertFunc
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Converters/CompiledConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConvertFunc
+    path: ../PocoEmit/Converters/CompiledConverter.cs
+    startLine: 27
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Converters
+  summary: 类型转化方法
+  example: []
+  syntax:
+    content: public Func<TSource, TDest> ConvertFunc { get; }
+    parameters: []
+    return:
+      type: System.Func{{TSource},{TDest}}
+    content.vb: Public ReadOnly Property ConvertFunc As Func(Of TSource, TDest)
+  overload: PocoEmit.Converters.CompiledConverter`2.ConvertFunc*
+  implements:
+  - PocoEmit.Converters.ICompiledConverter{{TSource},{TDest}}.ConvertFunc
+  nameWithType.vb: CompiledConverter(Of TSource, TDest).ConvertFunc
+  fullName.vb: PocoEmit.Converters.CompiledConverter(Of TSource, TDest).ConvertFunc
+- uid: PocoEmit.Converters.CompiledConverter`2.Convert(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Converters.CompiledConverter`2.Convert(System.Linq.Expressions.Expression)
+  id: Convert(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Converters.CompiledConverter`2
+  langs:
+  - csharp
+  - vb
+  name: Convert(Expression)
+  nameWithType: CompiledConverter<TSource, TDest>.Convert(Expression)
+  fullName: PocoEmit.Converters.CompiledConverter<TSource, TDest>.Convert(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Converters/CompiledConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Convert
+    path: ../PocoEmit/Converters/CompiledConverter.cs
+    startLine: 34
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Converters
+  summary: 转化
+  example: []
+  syntax:
+    content: public Expression Convert(Expression source)
+    parameters:
+    - id: source
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Public Function Convert(source As Expression) As Expression
+  overload: PocoEmit.Converters.CompiledConverter`2.Convert*
+  implements:
+  - PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+  nameWithType.vb: CompiledConverter(Of TSource, TDest).Convert(Expression)
+  fullName.vb: PocoEmit.Converters.CompiledConverter(Of TSource, TDest).Convert(System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Converters.ICompiledConverter{{TSource},{TDest}}
+  commentId: T:PocoEmit.Converters.ICompiledConverter{`0,`1}
+  parent: PocoEmit.Converters
+  definition: PocoEmit.Converters.ICompiledConverter`2
+  href: PocoEmit.Converters.ICompiledConverter-2.html
+  name: ICompiledConverter<TSource, TDest>
+  nameWithType: ICompiledConverter<TSource, TDest>
+  fullName: PocoEmit.Converters.ICompiledConverter<TSource, TDest>
+  nameWithType.vb: ICompiledConverter(Of TSource, TDest)
+  fullName.vb: PocoEmit.Converters.ICompiledConverter(Of TSource, TDest)
+  name.vb: ICompiledConverter(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Converters.ICompiledConverter`2
+    name: ICompiledConverter
+    href: PocoEmit.Converters.ICompiledConverter-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Converters.ICompiledConverter`2
+    name: ICompiledConverter
+    href: PocoEmit.Converters.ICompiledConverter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Converters.IEmitConverter
+  commentId: T:PocoEmit.Converters.IEmitConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IEmitConverter.html
+  name: IEmitConverter
+  nameWithType: IEmitConverter
+  fullName: PocoEmit.Converters.IEmitConverter
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.IPocoConverter{{TSource},{TDest}}
+  commentId: T:PocoEmit.IPocoConverter{``0,``1}
+  parent: PocoEmit
+  definition: PocoEmit.IPocoConverter`2
+  href: PocoEmit.IPocoConverter-2.html
+  name: IPocoConverter<TSource, TDest>
+  nameWithType: IPocoConverter<TSource, TDest>
+  fullName: PocoEmit.IPocoConverter<TSource, TDest>
+  nameWithType.vb: IPocoConverter(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoConverter(Of TSource, TDest)
+  name.vb: IPocoConverter(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter
+    href: PocoEmit.IPocoConverter-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter
+    href: PocoEmit.IPocoConverter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Converters.IObjectConverter
+  commentId: T:PocoEmit.Converters.IObjectConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IObjectConverter.html
+  name: IObjectConverter
+  nameWithType: IObjectConverter
+  fullName: PocoEmit.Converters.IObjectConverter
+- uid: PocoEmit.Converters.IEmitConverter.PocoEmit.PocoEmitServices.Build``2
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  parent: PocoEmit.PocoEmitServices
+  definition: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  name: Build<TSource, TDest>(IEmitConverter)
+  nameWithType: PocoEmitServices.Build<TSource, TDest>(IEmitConverter)
+  fullName: PocoEmit.PocoEmitServices.Build<TSource, TDest>(PocoEmit.Converters.IEmitConverter)
+  nameWithType.vb: PocoEmitServices.Build(Of TSource, TDest)(IEmitConverter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TSource, TDest)(PocoEmit.Converters.IEmitConverter)
+  name.vb: Build(Of TSource, TDest)(IEmitConverter)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Converters.ICompiledConverter`2
+  commentId: T:PocoEmit.Converters.ICompiledConverter`2
+  href: PocoEmit.Converters.ICompiledConverter-2.html
+  name: ICompiledConverter<TSource, TDest>
+  nameWithType: ICompiledConverter<TSource, TDest>
+  fullName: PocoEmit.Converters.ICompiledConverter<TSource, TDest>
+  nameWithType.vb: ICompiledConverter(Of TSource, TDest)
+  fullName.vb: PocoEmit.Converters.ICompiledConverter(Of TSource, TDest)
+  name.vb: ICompiledConverter(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Converters.ICompiledConverter`2
+    name: ICompiledConverter
+    href: PocoEmit.Converters.ICompiledConverter-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Converters.ICompiledConverter`2
+    name: ICompiledConverter
+    href: PocoEmit.Converters.ICompiledConverter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.IPocoConverter`2
+  commentId: T:PocoEmit.IPocoConverter`2
+  href: PocoEmit.IPocoConverter-2.html
+  name: IPocoConverter<TSource, TDest>
+  nameWithType: IPocoConverter<TSource, TDest>
+  fullName: PocoEmit.IPocoConverter<TSource, TDest>
+  nameWithType.vb: IPocoConverter(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoConverter(Of TSource, TDest)
+  name.vb: IPocoConverter(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter
+    href: PocoEmit.IPocoConverter-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter
+    href: PocoEmit.IPocoConverter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  name: Build<TSource, TDest>(IEmitConverter)
+  nameWithType: PocoEmitServices.Build<TSource, TDest>(IEmitConverter)
+  fullName: PocoEmit.PocoEmitServices.Build<TSource, TDest>(PocoEmit.Converters.IEmitConverter)
+  nameWithType.vb: PocoEmitServices.Build(Of TSource, TDest)(IEmitConverter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TSource, TDest)(PocoEmit.Converters.IEmitConverter)
+  name.vb: Build(Of TSource, TDest)(IEmitConverter)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+- uid: PocoEmit.PocoEmitServices
+  commentId: T:PocoEmit.PocoEmitServices
+  parent: PocoEmit
+  href: PocoEmit.PocoEmitServices.html
+  name: PocoEmitServices
+  nameWithType: PocoEmitServices
+  fullName: PocoEmit.PocoEmitServices
+- uid: PocoEmit.Converters.CompiledConverter`2.#ctor*
+  commentId: Overload:PocoEmit.Converters.CompiledConverter`2.#ctor
+  href: PocoEmit.Converters.CompiledConverter-2.html#PocoEmit_Converters_CompiledConverter_2__ctor_PocoEmit_Converters_IEmitConverter_System_Func__0__1__
+  name: CompiledConverter
+  nameWithType: CompiledConverter<TSource, TDest>.CompiledConverter
+  fullName: PocoEmit.Converters.CompiledConverter<TSource, TDest>.CompiledConverter
+  nameWithType.vb: CompiledConverter(Of TSource, TDest).New
+  fullName.vb: PocoEmit.Converters.CompiledConverter(Of TSource, TDest).New
+  name.vb: New
+- uid: System.Func{{TSource},{TDest}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TSource, TDest>
+  nameWithType: Func<TSource, TDest>
+  fullName: System.Func<TSource, TDest>
+  nameWithType.vb: Func(Of TSource, TDest)
+  fullName.vb: System.Func(Of TSource, TDest)
+  name.vb: Func(Of TSource, TDest)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: PocoEmit.Converters.CompiledConverter`2.Inner*
+  commentId: Overload:PocoEmit.Converters.CompiledConverter`2.Inner
+  href: PocoEmit.Converters.CompiledConverter-2.html#PocoEmit_Converters_CompiledConverter_2_Inner
+  name: Inner
+  nameWithType: CompiledConverter<TSource, TDest>.Inner
+  fullName: PocoEmit.Converters.CompiledConverter<TSource, TDest>.Inner
+  nameWithType.vb: CompiledConverter(Of TSource, TDest).Inner
+  fullName.vb: PocoEmit.Converters.CompiledConverter(Of TSource, TDest).Inner
+- uid: PocoEmit.Converters.CompiledConverter`2.ConvertFunc*
+  commentId: Overload:PocoEmit.Converters.CompiledConverter`2.ConvertFunc
+  href: PocoEmit.Converters.CompiledConverter-2.html#PocoEmit_Converters_CompiledConverter_2_ConvertFunc
+  name: ConvertFunc
+  nameWithType: CompiledConverter<TSource, TDest>.ConvertFunc
+  fullName: PocoEmit.Converters.CompiledConverter<TSource, TDest>.ConvertFunc
+  nameWithType.vb: CompiledConverter(Of TSource, TDest).ConvertFunc
+  fullName.vb: PocoEmit.Converters.CompiledConverter(Of TSource, TDest).ConvertFunc
+- uid: PocoEmit.Converters.ICompiledConverter{{TSource},{TDest}}.ConvertFunc
+  commentId: P:PocoEmit.Converters.ICompiledConverter{`0,`1}.ConvertFunc
+  parent: PocoEmit.Converters.ICompiledConverter{{TSource},{TDest}}
+  definition: PocoEmit.Converters.ICompiledConverter`2.ConvertFunc
+  href: PocoEmit.Converters.ICompiledConverter-2.html#PocoEmit_Converters_ICompiledConverter_2_ConvertFunc
+  name: ConvertFunc
+  nameWithType: ICompiledConverter<TSource, TDest>.ConvertFunc
+  fullName: PocoEmit.Converters.ICompiledConverter<TSource, TDest>.ConvertFunc
+  nameWithType.vb: ICompiledConverter(Of TSource, TDest).ConvertFunc
+  fullName.vb: PocoEmit.Converters.ICompiledConverter(Of TSource, TDest).ConvertFunc
+- uid: PocoEmit.Converters.ICompiledConverter`2.ConvertFunc
+  commentId: P:PocoEmit.Converters.ICompiledConverter`2.ConvertFunc
+  href: PocoEmit.Converters.ICompiledConverter-2.html#PocoEmit_Converters_ICompiledConverter_2_ConvertFunc
+  name: ConvertFunc
+  nameWithType: ICompiledConverter<TSource, TDest>.ConvertFunc
+  fullName: PocoEmit.Converters.ICompiledConverter<TSource, TDest>.ConvertFunc
+  nameWithType.vb: ICompiledConverter(Of TSource, TDest).ConvertFunc
+  fullName.vb: PocoEmit.Converters.ICompiledConverter(Of TSource, TDest).ConvertFunc
+- uid: PocoEmit.Converters.CompiledConverter`2.Convert*
+  commentId: Overload:PocoEmit.Converters.CompiledConverter`2.Convert
+  href: PocoEmit.Converters.CompiledConverter-2.html#PocoEmit_Converters_CompiledConverter_2_Convert_System_Linq_Expressions_Expression_
+  name: Convert
+  nameWithType: CompiledConverter<TSource, TDest>.Convert
+  fullName: PocoEmit.Converters.CompiledConverter<TSource, TDest>.Convert
+  nameWithType.vb: CompiledConverter(Of TSource, TDest).Convert
+  fullName.vb: PocoEmit.Converters.CompiledConverter(Of TSource, TDest).Convert
+- uid: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Converters.IEmitConverter
+  isExternal: true
+  href: PocoEmit.Converters.IEmitConverter.html#PocoEmit_Converters_IEmitConverter_Convert_System_Linq_Expressions_Expression_
+  name: Convert(Expression)
+  nameWithType: IEmitConverter.Convert(Expression)
+  fullName: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+    name: Convert
+    href: PocoEmit.Converters.IEmitConverter.html#PocoEmit_Converters_IEmitConverter_Convert_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+    name: Convert
+    href: PocoEmit.Converters.IEmitConverter.html#PocoEmit_Converters_IEmitConverter_Convert_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

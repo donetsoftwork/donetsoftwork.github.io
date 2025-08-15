@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Activators.CollectionActivator
+  commentId: T:PocoEmit.Collections.Activators.CollectionActivator
+  id: CollectionActivator
+  parent: PocoEmit.Collections.Activators
+  children:
+  - PocoEmit.Collections.Activators.CollectionActivator.#ctor(System.Type,System.Type,PocoEmit.Collections.Counters.IEmitCounter)
+  - PocoEmit.Collections.Activators.CollectionActivator.New(System.Linq.Expressions.Expression)
+  - PocoEmit.Collections.Activators.CollectionActivator.SourceCount
+  langs:
+  - csharp
+  - vb
+  name: CollectionActivator
+  nameWithType: CollectionActivator
+  fullName: PocoEmit.Collections.Activators.CollectionActivator
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Activators/CollectionActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CollectionActivator
+    path: ../PocoEmit.Collections/Collections/Activators/CollectionActivator.cs
+    startLine: 14
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Activators
+  summary: 集合激活器
+  example: []
+  syntax:
+    content: 'public class CollectionActivator : EmitCollectionBase, ICompileInfo, IEmitActivator'
+    content.vb: Public Class CollectionActivator Inherits EmitCollectionBase Implements ICompileInfo, IEmitActivator
+  inheritance:
+  - System.Object
+  - PocoEmit.Collections.EmitCollectionBase
+  derivedClasses:
+  - PocoEmit.Collections.Activators.ListActivator
+  - PocoEmit.Collections.Converters.CollectionConverter
+  implements:
+  - PocoEmit.Configuration.ICompileInfo
+  - PocoEmit.Activators.IEmitActivator
+  inheritedMembers:
+  - PocoEmit.Collections.EmitCollectionBase._collectionType
+  - PocoEmit.Collections.EmitCollectionBase._elementType
+  - PocoEmit.Collections.EmitCollectionBase.ElementType
+  - PocoEmit.Collections.EmitCollectionBase.CollectionType
+  - PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+- uid: PocoEmit.Collections.Activators.CollectionActivator.#ctor(System.Type,System.Type,PocoEmit.Collections.Counters.IEmitCounter)
+  commentId: M:PocoEmit.Collections.Activators.CollectionActivator.#ctor(System.Type,System.Type,PocoEmit.Collections.Counters.IEmitCounter)
+  id: '#ctor(System.Type,System.Type,PocoEmit.Collections.Counters.IEmitCounter)'
+  parent: PocoEmit.Collections.Activators.CollectionActivator
+  langs:
+  - csharp
+  - vb
+  name: CollectionActivator(Type, Type, IEmitCounter)
+  nameWithType: CollectionActivator.CollectionActivator(Type, Type, IEmitCounter)
+  fullName: PocoEmit.Collections.Activators.CollectionActivator.CollectionActivator(System.Type, System.Type, PocoEmit.Collections.Counters.IEmitCounter)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Activators/CollectionActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Collections/Activators/CollectionActivator.cs
+    startLine: 14
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Activators
+  summary: 集合激活器
+  example: []
+  syntax:
+    content: public CollectionActivator(Type collectionType, Type elementType, IEmitCounter sourceCount)
+    parameters:
+    - id: collectionType
+      type: System.Type
+      description: ''
+    - id: elementType
+      type: System.Type
+      description: ''
+    - id: sourceCount
+      type: PocoEmit.Collections.Counters.IEmitCounter
+      description: ''
+    content.vb: Public Sub New(collectionType As Type, elementType As Type, sourceCount As IEmitCounter)
+  overload: PocoEmit.Collections.Activators.CollectionActivator.#ctor*
+  nameWithType.vb: CollectionActivator.New(Type, Type, IEmitCounter)
+  fullName.vb: PocoEmit.Collections.Activators.CollectionActivator.New(System.Type, System.Type, PocoEmit.Collections.Counters.IEmitCounter)
+  name.vb: New(Type, Type, IEmitCounter)
+- uid: PocoEmit.Collections.Activators.CollectionActivator.SourceCount
+  commentId: P:PocoEmit.Collections.Activators.CollectionActivator.SourceCount
+  id: SourceCount
+  parent: PocoEmit.Collections.Activators.CollectionActivator
+  langs:
+  - csharp
+  - vb
+  name: SourceCount
+  nameWithType: CollectionActivator.SourceCount
+  fullName: PocoEmit.Collections.Activators.CollectionActivator.SourceCount
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Activators/CollectionActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: SourceCount
+    path: ../PocoEmit.Collections/Collections/Activators/CollectionActivator.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Activators
+  summary: 获取源数据量
+  example: []
+  syntax:
+    content: public IEmitCounter SourceCount { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Collections.Counters.IEmitCounter
+    content.vb: Public ReadOnly Property SourceCount As IEmitCounter
+  overload: PocoEmit.Collections.Activators.CollectionActivator.SourceCount*
+- uid: PocoEmit.Collections.Activators.CollectionActivator.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.Activators.CollectionActivator.New(System.Linq.Expressions.Expression)
+  id: New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.Activators.CollectionActivator
+  langs:
+  - csharp
+  - vb
+  name: New(Expression)
+  nameWithType: CollectionActivator.New(Expression)
+  fullName: PocoEmit.Collections.Activators.CollectionActivator.New(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Activators/CollectionActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: New
+    path: ../PocoEmit.Collections/Collections/Activators/CollectionActivator.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Activators
+  summary: 激活
+  example: []
+  syntax:
+    content: public Expression New(Expression argument)
+    parameters:
+    - id: argument
+      type: System.Linq.Expressions.Expression
+      description: 参数
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Function [New](argument As Expression) As Expression
+  overload: PocoEmit.Collections.Activators.CollectionActivator.New*
+  implements:
+  - PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Collections.Activators
+  commentId: N:PocoEmit.Collections.Activators
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Activators
+  nameWithType: PocoEmit.Collections.Activators
+  fullName: PocoEmit.Collections.Activators
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Activators
+    name: Activators
+    href: PocoEmit.Collections.Activators.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Activators
+    name: Activators
+    href: PocoEmit.Collections.Activators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.EmitCollectionBase
+  commentId: T:PocoEmit.Collections.EmitCollectionBase
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.EmitCollectionBase.html
+  name: EmitCollectionBase
+  nameWithType: EmitCollectionBase
+  fullName: PocoEmit.Collections.EmitCollectionBase
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Activators.IEmitActivator
+  commentId: T:PocoEmit.Activators.IEmitActivator
+  parent: PocoEmit.Activators
+  href: PocoEmit.Activators.IEmitActivator.html
+  name: IEmitActivator
+  nameWithType: IEmitActivator
+  fullName: PocoEmit.Activators.IEmitActivator
+- uid: PocoEmit.Collections.EmitCollectionBase._collectionType
+  commentId: F:PocoEmit.Collections.EmitCollectionBase._collectionType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase__collectionType
+  name: _collectionType
+  nameWithType: EmitCollectionBase._collectionType
+  fullName: PocoEmit.Collections.EmitCollectionBase._collectionType
+- uid: PocoEmit.Collections.EmitCollectionBase._elementType
+  commentId: F:PocoEmit.Collections.EmitCollectionBase._elementType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase__elementType
+  name: _elementType
+  nameWithType: EmitCollectionBase._elementType
+  fullName: PocoEmit.Collections.EmitCollectionBase._elementType
+- uid: PocoEmit.Collections.EmitCollectionBase.ElementType
+  commentId: P:PocoEmit.Collections.EmitCollectionBase.ElementType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_ElementType
+  name: ElementType
+  nameWithType: EmitCollectionBase.ElementType
+  fullName: PocoEmit.Collections.EmitCollectionBase.ElementType
+- uid: PocoEmit.Collections.EmitCollectionBase.CollectionType
+  commentId: P:PocoEmit.Collections.EmitCollectionBase.CollectionType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CollectionType
+  name: CollectionType
+  nameWithType: EmitCollectionBase.CollectionType
+  fullName: PocoEmit.Collections.EmitCollectionBase.CollectionType
+- uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.EmitCollectionBase
+  isExternal: true
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  name: CheckInstance(Expression)
+  nameWithType: EmitCollectionBase.CheckInstance(Expression)
+  fullName: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+    name: CheckInstance
+    href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+    name: CheckInstance
+    href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Activators
+  commentId: N:PocoEmit.Activators
+  href: PocoEmit.html
+  name: PocoEmit.Activators
+  nameWithType: PocoEmit.Activators
+  fullName: PocoEmit.Activators
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+- uid: PocoEmit.Collections.Activators.CollectionActivator.#ctor*
+  commentId: Overload:PocoEmit.Collections.Activators.CollectionActivator.#ctor
+  href: PocoEmit.Collections.Activators.CollectionActivator.html#PocoEmit_Collections_Activators_CollectionActivator__ctor_System_Type_System_Type_PocoEmit_Collections_Counters_IEmitCounter_
+  name: CollectionActivator
+  nameWithType: CollectionActivator.CollectionActivator
+  fullName: PocoEmit.Collections.Activators.CollectionActivator.CollectionActivator
+  nameWithType.vb: CollectionActivator.New
+  fullName.vb: PocoEmit.Collections.Activators.CollectionActivator.New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Collections.Counters.IEmitCounter
+  commentId: T:PocoEmit.Collections.Counters.IEmitCounter
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.IEmitCounter.html
+  name: IEmitCounter
+  nameWithType: IEmitCounter
+  fullName: PocoEmit.Collections.Counters.IEmitCounter
+- uid: PocoEmit.Collections.Counters
+  commentId: N:PocoEmit.Collections.Counters
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Counters
+  nameWithType: PocoEmit.Collections.Counters
+  fullName: PocoEmit.Collections.Counters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+- uid: PocoEmit.Collections.Activators.CollectionActivator.SourceCount*
+  commentId: Overload:PocoEmit.Collections.Activators.CollectionActivator.SourceCount
+  href: PocoEmit.Collections.Activators.CollectionActivator.html#PocoEmit_Collections_Activators_CollectionActivator_SourceCount
+  name: SourceCount
+  nameWithType: CollectionActivator.SourceCount
+  fullName: PocoEmit.Collections.Activators.CollectionActivator.SourceCount
+- uid: PocoEmit.Collections.Activators.CollectionActivator.New*
+  commentId: Overload:PocoEmit.Collections.Activators.CollectionActivator.New
+  href: PocoEmit.Collections.Activators.CollectionActivator.html#PocoEmit_Collections_Activators_CollectionActivator_New_System_Linq_Expressions_Expression_
+  name: New
+  nameWithType: CollectionActivator.New
+  fullName: PocoEmit.Collections.Activators.CollectionActivator.New
+- uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Activators.IEmitActivator
+  isExternal: true
+  href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  name: New(Expression)
+  nameWithType: IEmitActivator.New(Expression)
+  fullName: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

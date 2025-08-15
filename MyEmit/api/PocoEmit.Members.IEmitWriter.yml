@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Members.IEmitWriter
+  commentId: T:PocoEmit.Members.IEmitWriter
+  id: IEmitWriter
+  parent: PocoEmit.Members
+  children:
+  - PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  langs:
+  - csharp
+  - vb
+  name: IEmitWriter
+  nameWithType: IEmitWriter
+  fullName: PocoEmit.Members.IEmitWriter
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit/Members/IEmitWriter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IEmitWriter
+    path: ../PocoEmit/Members/IEmitWriter.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 成员写入接口
+  example: []
+  syntax:
+    content: 'public interface IEmitWriter : ICompileInfo'
+    content.vb: Public Interface IEmitWriter Inherits ICompileInfo
+  inheritedMembers:
+  - PocoEmit.Configuration.ICompileInfo.Compiled
+- uid: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  id: Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Members.IEmitWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Expression, Expression)
+  nameWithType: IEmitWriter.Write(Expression, Expression)
+  fullName: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Members/IEmitWriter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Write
+    path: ../PocoEmit/Members/IEmitWriter.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 写入
+  example: []
+  syntax:
+    content: Expression Write(Expression instance, Expression value)
+    parameters:
+    - id: instance
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: value
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Function Write(instance As Expression, value As Expression) As Expression
+  overload: PocoEmit.Members.IEmitWriter.Write*
+references:
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: PocoEmit.Configuration.ICompileInfo.Compiled
+  commentId: P:PocoEmit.Configuration.ICompileInfo.Compiled
+  parent: PocoEmit.Configuration.ICompileInfo
+  href: PocoEmit.Configuration.ICompileInfo.html#PocoEmit_Configuration_ICompileInfo_Compiled
+  name: Compiled
+  nameWithType: ICompileInfo.Compiled
+  fullName: PocoEmit.Configuration.ICompileInfo.Compiled
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Members.IEmitWriter.Write*
+  commentId: Overload:PocoEmit.Members.IEmitWriter.Write
+  href: PocoEmit.Members.IEmitWriter.html#PocoEmit_Members_IEmitWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Write
+  nameWithType: IEmitWriter.Write
+  fullName: PocoEmit.Members.IEmitWriter.Write
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

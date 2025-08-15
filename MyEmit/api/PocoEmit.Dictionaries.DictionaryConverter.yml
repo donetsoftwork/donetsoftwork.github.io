@@ -1,0 +1,795 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Dictionaries.DictionaryConverter
+  commentId: T:PocoEmit.Dictionaries.DictionaryConverter
+  id: DictionaryConverter
+  parent: PocoEmit.Dictionaries
+  children:
+  - PocoEmit.Dictionaries.DictionaryConverter.#ctor(System.Type,System.Type,System.Type,PocoEmit.Copies.IEmitCopier)
+  - PocoEmit.Dictionaries.DictionaryConverter.Convert(System.Linq.Expressions.Expression)
+  - PocoEmit.Dictionaries.DictionaryConverter.Copier
+  - PocoEmit.Dictionaries.DictionaryConverter.New(System.Linq.Expressions.Expression)
+  langs:
+  - csharp
+  - vb
+  name: DictionaryConverter
+  nameWithType: DictionaryConverter
+  fullName: PocoEmit.Dictionaries.DictionaryConverter
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/DictionaryConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: DictionaryConverter
+    path: ../PocoEmit.Collections/Dictionaries/DictionaryConverter.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 字典激活
+  example: []
+  syntax:
+    content: 'public class DictionaryConverter : EmitDictionaryBase, IEmitConverter, ICompileInfo'
+    content.vb: Public Class DictionaryConverter Inherits EmitDictionaryBase Implements IEmitConverter, ICompileInfo
+  inheritance:
+  - System.Object
+  - PocoEmit.Collections.EmitCollectionBase
+  - PocoEmit.Dictionaries.EmitDictionaryBase
+  implements:
+  - PocoEmit.Converters.IEmitConverter
+  - PocoEmit.Configuration.ICompileInfo
+  inheritedMembers:
+  - PocoEmit.Dictionaries.EmitDictionaryBase._keyType
+  - PocoEmit.Dictionaries.EmitDictionaryBase.KeyType
+  - PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type,System.Type)
+  - PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type[])
+  - PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty(System.Type)
+  - PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty(System.Type)
+  - PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty(System.Type)
+  - PocoEmit.Collections.EmitCollectionBase._collectionType
+  - PocoEmit.Collections.EmitCollectionBase._elementType
+  - PocoEmit.Collections.EmitCollectionBase.ElementType
+  - PocoEmit.Collections.EmitCollectionBase.CollectionType
+  - PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  extensionMethods:
+  - PocoEmit.Converters.IEmitConverter.PocoEmit.PocoEmitServices.Build``2
+- uid: PocoEmit.Dictionaries.DictionaryConverter.#ctor(System.Type,System.Type,System.Type,PocoEmit.Copies.IEmitCopier)
+  commentId: M:PocoEmit.Dictionaries.DictionaryConverter.#ctor(System.Type,System.Type,System.Type,PocoEmit.Copies.IEmitCopier)
+  id: '#ctor(System.Type,System.Type,System.Type,PocoEmit.Copies.IEmitCopier)'
+  parent: PocoEmit.Dictionaries.DictionaryConverter
+  langs:
+  - csharp
+  - vb
+  name: DictionaryConverter(Type, Type, Type, IEmitCopier)
+  nameWithType: DictionaryConverter.DictionaryConverter(Type, Type, Type, IEmitCopier)
+  fullName: PocoEmit.Dictionaries.DictionaryConverter.DictionaryConverter(System.Type, System.Type, System.Type, PocoEmit.Copies.IEmitCopier)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/DictionaryConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Dictionaries/DictionaryConverter.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 字典激活
+  example: []
+  syntax:
+    content: public DictionaryConverter(Type dictionaryType, Type keyType, Type elementType, IEmitCopier copier)
+    parameters:
+    - id: dictionaryType
+      type: System.Type
+    - id: keyType
+      type: System.Type
+    - id: elementType
+      type: System.Type
+    - id: copier
+      type: PocoEmit.Copies.IEmitCopier
+    content.vb: Public Sub New(dictionaryType As Type, keyType As Type, elementType As Type, copier As IEmitCopier)
+  overload: PocoEmit.Dictionaries.DictionaryConverter.#ctor*
+  nameWithType.vb: DictionaryConverter.New(Type, Type, Type, IEmitCopier)
+  fullName.vb: PocoEmit.Dictionaries.DictionaryConverter.New(System.Type, System.Type, System.Type, PocoEmit.Copies.IEmitCopier)
+  name.vb: New(Type, Type, Type, IEmitCopier)
+- uid: PocoEmit.Dictionaries.DictionaryConverter.Copier
+  commentId: P:PocoEmit.Dictionaries.DictionaryConverter.Copier
+  id: Copier
+  parent: PocoEmit.Dictionaries.DictionaryConverter
+  langs:
+  - csharp
+  - vb
+  name: Copier
+  nameWithType: DictionaryConverter.Copier
+  fullName: PocoEmit.Dictionaries.DictionaryConverter.Copier
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/DictionaryConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Copier
+    path: ../PocoEmit.Collections/Dictionaries/DictionaryConverter.cs
+    startLine: 20
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 复制
+  example: []
+  syntax:
+    content: public IEmitCopier Copier { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Copies.IEmitCopier
+    content.vb: Public ReadOnly Property Copier As IEmitCopier
+  overload: PocoEmit.Dictionaries.DictionaryConverter.Copier*
+- uid: PocoEmit.Dictionaries.DictionaryConverter.Convert(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Dictionaries.DictionaryConverter.Convert(System.Linq.Expressions.Expression)
+  id: Convert(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Dictionaries.DictionaryConverter
+  langs:
+  - csharp
+  - vb
+  name: Convert(Expression)
+  nameWithType: DictionaryConverter.Convert(Expression)
+  fullName: PocoEmit.Dictionaries.DictionaryConverter.Convert(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/DictionaryConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Convert
+    path: ../PocoEmit.Collections/Dictionaries/DictionaryConverter.cs
+    startLine: 25
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 转化
+  example: []
+  syntax:
+    content: public Expression Convert(Expression source)
+    parameters:
+    - id: source
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Public Function Convert(source As Expression) As Expression
+  overload: PocoEmit.Dictionaries.DictionaryConverter.Convert*
+  implements:
+  - PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+- uid: PocoEmit.Dictionaries.DictionaryConverter.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Dictionaries.DictionaryConverter.New(System.Linq.Expressions.Expression)
+  id: New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Dictionaries.DictionaryConverter
+  langs:
+  - csharp
+  - vb
+  name: New(Expression)
+  nameWithType: DictionaryConverter.New(Expression)
+  fullName: PocoEmit.Dictionaries.DictionaryConverter.New(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/DictionaryConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: New
+    path: ../PocoEmit.Collections/Dictionaries/DictionaryConverter.cs
+    startLine: 43
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 激活
+  example: []
+  syntax:
+    content: public Expression New(Expression argument)
+    parameters:
+    - id: argument
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Function [New](argument As Expression) As Expression
+  overload: PocoEmit.Dictionaries.DictionaryConverter.New*
+references:
+- uid: PocoEmit.Dictionaries
+  commentId: N:PocoEmit.Dictionaries
+  href: PocoEmit.html
+  name: PocoEmit.Dictionaries
+  nameWithType: PocoEmit.Dictionaries
+  fullName: PocoEmit.Dictionaries
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Dictionaries
+    name: Dictionaries
+    href: PocoEmit.Dictionaries.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Dictionaries
+    name: Dictionaries
+    href: PocoEmit.Dictionaries.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.EmitCollectionBase
+  commentId: T:PocoEmit.Collections.EmitCollectionBase
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.EmitCollectionBase.html
+  name: EmitCollectionBase
+  nameWithType: EmitCollectionBase
+  fullName: PocoEmit.Collections.EmitCollectionBase
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase
+  commentId: T:PocoEmit.Dictionaries.EmitDictionaryBase
+  parent: PocoEmit.Dictionaries
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html
+  name: EmitDictionaryBase
+  nameWithType: EmitDictionaryBase
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase
+- uid: PocoEmit.Converters.IEmitConverter
+  commentId: T:PocoEmit.Converters.IEmitConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IEmitConverter.html
+  name: IEmitConverter
+  nameWithType: IEmitConverter
+  fullName: PocoEmit.Converters.IEmitConverter
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase._keyType
+  commentId: F:PocoEmit.Dictionaries.EmitDictionaryBase._keyType
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase__keyType
+  name: _keyType
+  nameWithType: EmitDictionaryBase._keyType
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase._keyType
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.KeyType
+  commentId: P:PocoEmit.Dictionaries.EmitDictionaryBase.KeyType
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_KeyType
+  name: KeyType
+  nameWithType: EmitDictionaryBase.KeyType
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.KeyType
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type,System.Type)
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type,System.Type)
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  isExternal: true
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_MakePairType_System_Type_System_Type_
+  name: MakePairType(Type, Type)
+  nameWithType: EmitDictionaryBase.MakePairType(Type, Type)
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type, System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type,System.Type)
+    name: MakePairType
+    href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_MakePairType_System_Type_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type,System.Type)
+    name: MakePairType
+    href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_MakePairType_System_Type_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type[])
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type[])
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  isExternal: true
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_MakePairType_System_Type___
+  name: MakePairType(Type[])
+  nameWithType: EmitDictionaryBase.MakePairType(Type[])
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type[])
+  nameWithType.vb: EmitDictionaryBase.MakePairType(Type())
+  fullName.vb: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type())
+  name.vb: MakePairType(Type())
+  spec.csharp:
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type[])
+    name: MakePairType
+    href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_MakePairType_System_Type___
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase.MakePairType(System.Type[])
+    name: MakePairType
+    href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_MakePairType_System_Type___
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty(System.Type)
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty(System.Type)
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  isExternal: true
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetKeysProperty_System_Type_
+  name: GetKeysProperty(Type)
+  nameWithType: EmitDictionaryBase.GetKeysProperty(Type)
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty(System.Type)
+    name: GetKeysProperty
+    href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetKeysProperty_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetKeysProperty(System.Type)
+    name: GetKeysProperty
+    href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetKeysProperty_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty(System.Type)
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty(System.Type)
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  isExternal: true
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetValuesProperty_System_Type_
+  name: GetValuesProperty(Type)
+  nameWithType: EmitDictionaryBase.GetValuesProperty(Type)
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty(System.Type)
+    name: GetValuesProperty
+    href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetValuesProperty_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetValuesProperty(System.Type)
+    name: GetValuesProperty
+    href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetValuesProperty_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty(System.Type)
+  commentId: M:PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty(System.Type)
+  parent: PocoEmit.Dictionaries.EmitDictionaryBase
+  isExternal: true
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetItemProperty_System_Type_
+  name: GetItemProperty(Type)
+  nameWithType: EmitDictionaryBase.GetItemProperty(Type)
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty(System.Type)
+    name: GetItemProperty
+    href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetItemProperty_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase.GetItemProperty(System.Type)
+    name: GetItemProperty
+    href: PocoEmit.Dictionaries.EmitDictionaryBase.html#PocoEmit_Dictionaries_EmitDictionaryBase_GetItemProperty_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Collections.EmitCollectionBase._collectionType
+  commentId: F:PocoEmit.Collections.EmitCollectionBase._collectionType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase__collectionType
+  name: _collectionType
+  nameWithType: EmitCollectionBase._collectionType
+  fullName: PocoEmit.Collections.EmitCollectionBase._collectionType
+- uid: PocoEmit.Collections.EmitCollectionBase._elementType
+  commentId: F:PocoEmit.Collections.EmitCollectionBase._elementType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase__elementType
+  name: _elementType
+  nameWithType: EmitCollectionBase._elementType
+  fullName: PocoEmit.Collections.EmitCollectionBase._elementType
+- uid: PocoEmit.Collections.EmitCollectionBase.ElementType
+  commentId: P:PocoEmit.Collections.EmitCollectionBase.ElementType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_ElementType
+  name: ElementType
+  nameWithType: EmitCollectionBase.ElementType
+  fullName: PocoEmit.Collections.EmitCollectionBase.ElementType
+- uid: PocoEmit.Collections.EmitCollectionBase.CollectionType
+  commentId: P:PocoEmit.Collections.EmitCollectionBase.CollectionType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CollectionType
+  name: CollectionType
+  nameWithType: EmitCollectionBase.CollectionType
+  fullName: PocoEmit.Collections.EmitCollectionBase.CollectionType
+- uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.EmitCollectionBase
+  isExternal: true
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  name: CheckInstance(Expression)
+  nameWithType: EmitCollectionBase.CheckInstance(Expression)
+  fullName: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+    name: CheckInstance
+    href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+    name: CheckInstance
+    href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: PocoEmit.Converters.IEmitConverter.PocoEmit.PocoEmitServices.Build``2
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  parent: PocoEmit.PocoEmitServices
+  definition: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  name: Build<TSource, TDest>(IEmitConverter)
+  nameWithType: PocoEmitServices.Build<TSource, TDest>(IEmitConverter)
+  fullName: PocoEmit.PocoEmitServices.Build<TSource, TDest>(PocoEmit.Converters.IEmitConverter)
+  nameWithType.vb: PocoEmitServices.Build(Of TSource, TDest)(IEmitConverter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TSource, TDest)(PocoEmit.Converters.IEmitConverter)
+  name.vb: Build(Of TSource, TDest)(IEmitConverter)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  name: Build<TSource, TDest>(IEmitConverter)
+  nameWithType: PocoEmitServices.Build<TSource, TDest>(IEmitConverter)
+  fullName: PocoEmit.PocoEmitServices.Build<TSource, TDest>(PocoEmit.Converters.IEmitConverter)
+  nameWithType.vb: PocoEmitServices.Build(Of TSource, TDest)(IEmitConverter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TSource, TDest)(PocoEmit.Converters.IEmitConverter)
+  name.vb: Build(Of TSource, TDest)(IEmitConverter)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+- uid: PocoEmit.PocoEmitServices
+  commentId: T:PocoEmit.PocoEmitServices
+  parent: PocoEmit
+  href: PocoEmit.PocoEmitServices.html
+  name: PocoEmitServices
+  nameWithType: PocoEmitServices
+  fullName: PocoEmit.PocoEmitServices
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.Dictionaries.DictionaryConverter.#ctor*
+  commentId: Overload:PocoEmit.Dictionaries.DictionaryConverter.#ctor
+  href: PocoEmit.Dictionaries.DictionaryConverter.html#PocoEmit_Dictionaries_DictionaryConverter__ctor_System_Type_System_Type_System_Type_PocoEmit_Copies_IEmitCopier_
+  name: DictionaryConverter
+  nameWithType: DictionaryConverter.DictionaryConverter
+  fullName: PocoEmit.Dictionaries.DictionaryConverter.DictionaryConverter
+  nameWithType.vb: DictionaryConverter.New
+  fullName.vb: PocoEmit.Dictionaries.DictionaryConverter.New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Copies.IEmitCopier
+  commentId: T:PocoEmit.Copies.IEmitCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IEmitCopier.html
+  name: IEmitCopier
+  nameWithType: IEmitCopier
+  fullName: PocoEmit.Copies.IEmitCopier
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+- uid: PocoEmit.Dictionaries.DictionaryConverter.Copier*
+  commentId: Overload:PocoEmit.Dictionaries.DictionaryConverter.Copier
+  href: PocoEmit.Dictionaries.DictionaryConverter.html#PocoEmit_Dictionaries_DictionaryConverter_Copier
+  name: Copier
+  nameWithType: DictionaryConverter.Copier
+  fullName: PocoEmit.Dictionaries.DictionaryConverter.Copier
+- uid: PocoEmit.Dictionaries.DictionaryConverter.Convert*
+  commentId: Overload:PocoEmit.Dictionaries.DictionaryConverter.Convert
+  href: PocoEmit.Dictionaries.DictionaryConverter.html#PocoEmit_Dictionaries_DictionaryConverter_Convert_System_Linq_Expressions_Expression_
+  name: Convert
+  nameWithType: DictionaryConverter.Convert
+  fullName: PocoEmit.Dictionaries.DictionaryConverter.Convert
+- uid: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Converters.IEmitConverter
+  isExternal: true
+  href: PocoEmit.Converters.IEmitConverter.html#PocoEmit_Converters_IEmitConverter_Convert_System_Linq_Expressions_Expression_
+  name: Convert(Expression)
+  nameWithType: IEmitConverter.Convert(Expression)
+  fullName: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+    name: Convert
+    href: PocoEmit.Converters.IEmitConverter.html#PocoEmit_Converters_IEmitConverter_Convert_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+    name: Convert
+    href: PocoEmit.Converters.IEmitConverter.html#PocoEmit_Converters_IEmitConverter_Convert_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: PocoEmit.Dictionaries.DictionaryConverter.New*
+  commentId: Overload:PocoEmit.Dictionaries.DictionaryConverter.New
+  href: PocoEmit.Dictionaries.DictionaryConverter.html#PocoEmit_Dictionaries_DictionaryConverter_New_System_Linq_Expressions_Expression_
+  name: New
+  nameWithType: DictionaryConverter.New
+  fullName: PocoEmit.Dictionaries.DictionaryConverter.New

@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Configuration.PocoOptions
+  commentId: T:PocoEmit.Configuration.PocoOptions
+  id: PocoOptions
+  parent: PocoEmit.Configuration
+  children:
+  - PocoEmit.Configuration.PocoOptions.ConcurrencyLevel
+  - PocoEmit.Configuration.PocoOptions.ConverterCapacity
+  - PocoEmit.Configuration.PocoOptions.ConverterConfigurationCapacity
+  - PocoEmit.Configuration.PocoOptions.MemberBundleCapacity
+  langs:
+  - csharp
+  - vb
+  name: PocoOptions
+  nameWithType: PocoOptions
+  fullName: PocoEmit.Configuration.PocoOptions
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Configuration/PocoOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: PocoOptions
+    path: ../PocoEmit/Configuration/PocoOptions.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Configuration
+  summary: 成员容量配置
+  example: []
+  syntax:
+    content: public class PocoOptions
+    content.vb: Public Class PocoOptions
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PocoEmit.Configuration.MapperOptions
+- uid: PocoEmit.Configuration.PocoOptions.ConcurrencyLevel
+  commentId: F:PocoEmit.Configuration.PocoOptions.ConcurrencyLevel
+  id: ConcurrencyLevel
+  parent: PocoEmit.Configuration.PocoOptions
+  langs:
+  - csharp
+  - vb
+  name: ConcurrencyLevel
+  nameWithType: PocoOptions.ConcurrencyLevel
+  fullName: PocoEmit.Configuration.PocoOptions.ConcurrencyLevel
+  type: Field
+  source:
+    remote:
+      path: PocoEmit/Configuration/PocoOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConcurrencyLevel
+    path: ../PocoEmit/Configuration/PocoOptions.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Configuration
+  summary: 并发
+  example: []
+  syntax:
+    content: public int ConcurrencyLevel
+    return:
+      type: System.Int32
+    content.vb: Public ConcurrencyLevel As Integer
+- uid: PocoEmit.Configuration.PocoOptions.ConverterCapacity
+  commentId: F:PocoEmit.Configuration.PocoOptions.ConverterCapacity
+  id: ConverterCapacity
+  parent: PocoEmit.Configuration.PocoOptions
+  langs:
+  - csharp
+  - vb
+  name: ConverterCapacity
+  nameWithType: PocoOptions.ConverterCapacity
+  fullName: PocoEmit.Configuration.PocoOptions.ConverterCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit/Configuration/PocoOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConverterCapacity
+    path: ../PocoEmit/Configuration/PocoOptions.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Configuration
+  summary: 转化器数量
+  example: []
+  syntax:
+    content: public int ConverterCapacity
+    return:
+      type: System.Int32
+    content.vb: Public ConverterCapacity As Integer
+- uid: PocoEmit.Configuration.PocoOptions.ConverterConfigurationCapacity
+  commentId: F:PocoEmit.Configuration.PocoOptions.ConverterConfigurationCapacity
+  id: ConverterConfigurationCapacity
+  parent: PocoEmit.Configuration.PocoOptions
+  langs:
+  - csharp
+  - vb
+  name: ConverterConfigurationCapacity
+  nameWithType: PocoOptions.ConverterConfigurationCapacity
+  fullName: PocoEmit.Configuration.PocoOptions.ConverterConfigurationCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit/Configuration/PocoOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConverterConfigurationCapacity
+    path: ../PocoEmit/Configuration/PocoOptions.cs
+    startLine: 20
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Configuration
+  summary: 转化器配置数量
+  example: []
+  syntax:
+    content: public int ConverterConfigurationCapacity
+    return:
+      type: System.Int32
+    content.vb: Public ConverterConfigurationCapacity As Integer
+- uid: PocoEmit.Configuration.PocoOptions.MemberBundleCapacity
+  commentId: F:PocoEmit.Configuration.PocoOptions.MemberBundleCapacity
+  id: MemberBundleCapacity
+  parent: PocoEmit.Configuration.PocoOptions
+  langs:
+  - csharp
+  - vb
+  name: MemberBundleCapacity
+  nameWithType: PocoOptions.MemberBundleCapacity
+  fullName: PocoEmit.Configuration.PocoOptions.MemberBundleCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit/Configuration/PocoOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MemberBundleCapacity
+    path: ../PocoEmit/Configuration/PocoOptions.cs
+    startLine: 24
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Configuration
+  summary: 成员集合数量
+  example: []
+  syntax:
+    content: public int MemberBundleCapacity
+    return:
+      type: System.Int32
+    content.vb: Public MemberBundleCapacity As Integer
+references:
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

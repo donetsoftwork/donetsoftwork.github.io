@@ -1,0 +1,446 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Members.ArrayIndexMember
+  commentId: T:PocoEmit.Collections.Members.ArrayIndexMember
+  id: ArrayIndexMember
+  parent: PocoEmit.Collections.Members
+  children:
+  - PocoEmit.Collections.Members.ArrayIndexMember.#ctor(System.Int32)
+  - PocoEmit.Collections.Members.ArrayIndexMember.Index
+  - PocoEmit.Collections.Members.ArrayIndexMember.Read(System.Linq.Expressions.Expression)
+  - PocoEmit.Collections.Members.ArrayIndexMember.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  langs:
+  - csharp
+  - vb
+  name: ArrayIndexMember
+  nameWithType: ArrayIndexMember
+  fullName: PocoEmit.Collections.Members.ArrayIndexMember
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Members/ArrayIndexMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ArrayIndexMember
+    path: ../PocoEmit.Collections/Collections/Members/ArrayIndexMember.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Members
+  summary: 索引一维数组成员
+  example: []
+  syntax:
+    content: 'public class ArrayIndexMember : IEmitReader, IEmitWriter, ICompileInfo'
+    content.vb: Public Class ArrayIndexMember Implements IEmitReader, IEmitWriter, ICompileInfo
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Members.IEmitReader
+  - PocoEmit.Members.IEmitWriter
+  - PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Collections.Members.ArrayIndexMember.#ctor(System.Int32)
+  commentId: M:PocoEmit.Collections.Members.ArrayIndexMember.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: PocoEmit.Collections.Members.ArrayIndexMember
+  langs:
+  - csharp
+  - vb
+  name: ArrayIndexMember(int)
+  nameWithType: ArrayIndexMember.ArrayIndexMember(int)
+  fullName: PocoEmit.Collections.Members.ArrayIndexMember.ArrayIndexMember(int)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Members/ArrayIndexMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Collections/Members/ArrayIndexMember.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Members
+  summary: 索引一维数组成员
+  example: []
+  syntax:
+    content: public ArrayIndexMember(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(index As Integer)
+  overload: PocoEmit.Collections.Members.ArrayIndexMember.#ctor*
+  nameWithType.vb: ArrayIndexMember.New(Integer)
+  fullName.vb: PocoEmit.Collections.Members.ArrayIndexMember.New(Integer)
+  name.vb: New(Integer)
+- uid: PocoEmit.Collections.Members.ArrayIndexMember.Index
+  commentId: P:PocoEmit.Collections.Members.ArrayIndexMember.Index
+  id: Index
+  parent: PocoEmit.Collections.Members.ArrayIndexMember
+  langs:
+  - csharp
+  - vb
+  name: Index
+  nameWithType: ArrayIndexMember.Index
+  fullName: PocoEmit.Collections.Members.ArrayIndexMember.Index
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Members/ArrayIndexMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Index
+    path: ../PocoEmit.Collections/Collections/Members/ArrayIndexMember.cs
+    startLine: 17
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Members
+  summary: 索引值
+  example: []
+  syntax:
+    content: public int Index { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Index As Integer
+  overload: PocoEmit.Collections.Members.ArrayIndexMember.Index*
+- uid: PocoEmit.Collections.Members.ArrayIndexMember.Read(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.Members.ArrayIndexMember.Read(System.Linq.Expressions.Expression)
+  id: Read(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.Members.ArrayIndexMember
+  langs:
+  - csharp
+  - vb
+  name: Read(Expression)
+  nameWithType: ArrayIndexMember.Read(Expression)
+  fullName: PocoEmit.Collections.Members.ArrayIndexMember.Read(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Members/ArrayIndexMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Read
+    path: ../PocoEmit.Collections/Collections/Members/ArrayIndexMember.cs
+    startLine: 25
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Members
+  summary: 读取
+  example: []
+  syntax:
+    content: public Expression Read(Expression instance)
+    parameters:
+    - id: instance
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Public Function Read(instance As Expression) As Expression
+  overload: PocoEmit.Collections.Members.ArrayIndexMember.Read*
+  implements:
+  - PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+- uid: PocoEmit.Collections.Members.ArrayIndexMember.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.Members.ArrayIndexMember.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  id: Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.Members.ArrayIndexMember
+  langs:
+  - csharp
+  - vb
+  name: Write(Expression, Expression)
+  nameWithType: ArrayIndexMember.Write(Expression, Expression)
+  fullName: PocoEmit.Collections.Members.ArrayIndexMember.Write(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Members/ArrayIndexMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Write
+    path: ../PocoEmit.Collections/Collections/Members/ArrayIndexMember.cs
+    startLine: 28
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Members
+  summary: 写入
+  example: []
+  syntax:
+    content: public Expression Write(Expression instance, Expression value)
+    parameters:
+    - id: instance
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: value
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Function Write(instance As Expression, value As Expression) As Expression
+  overload: PocoEmit.Collections.Members.ArrayIndexMember.Write*
+  implements:
+  - PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Collections.Members
+  commentId: N:PocoEmit.Collections.Members
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Members
+  nameWithType: PocoEmit.Collections.Members
+  fullName: PocoEmit.Collections.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Members
+    name: Members
+    href: PocoEmit.Collections.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Members
+    name: Members
+    href: PocoEmit.Collections.Members.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Members.IEmitReader
+  commentId: T:PocoEmit.Members.IEmitReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitReader.html
+  name: IEmitReader
+  nameWithType: IEmitReader
+  fullName: PocoEmit.Members.IEmitReader
+- uid: PocoEmit.Members.IEmitWriter
+  commentId: T:PocoEmit.Members.IEmitWriter
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitWriter.html
+  name: IEmitWriter
+  nameWithType: IEmitWriter
+  fullName: PocoEmit.Members.IEmitWriter
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Collections.Members.ArrayIndexMember.#ctor*
+  commentId: Overload:PocoEmit.Collections.Members.ArrayIndexMember.#ctor
+  href: PocoEmit.Collections.Members.ArrayIndexMember.html#PocoEmit_Collections_Members_ArrayIndexMember__ctor_System_Int32_
+  name: ArrayIndexMember
+  nameWithType: ArrayIndexMember.ArrayIndexMember
+  fullName: PocoEmit.Collections.Members.ArrayIndexMember.ArrayIndexMember
+  nameWithType.vb: ArrayIndexMember.New
+  fullName.vb: PocoEmit.Collections.Members.ArrayIndexMember.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: PocoEmit.Collections.Members.ArrayIndexMember.Index*
+  commentId: Overload:PocoEmit.Collections.Members.ArrayIndexMember.Index
+  href: PocoEmit.Collections.Members.ArrayIndexMember.html#PocoEmit_Collections_Members_ArrayIndexMember_Index
+  name: Index
+  nameWithType: ArrayIndexMember.Index
+  fullName: PocoEmit.Collections.Members.ArrayIndexMember.Index
+- uid: PocoEmit.Collections.Members.ArrayIndexMember.Read*
+  commentId: Overload:PocoEmit.Collections.Members.ArrayIndexMember.Read
+  href: PocoEmit.Collections.Members.ArrayIndexMember.html#PocoEmit_Collections_Members_ArrayIndexMember_Read_System_Linq_Expressions_Expression_
+  name: Read
+  nameWithType: ArrayIndexMember.Read
+  fullName: PocoEmit.Collections.Members.ArrayIndexMember.Read
+- uid: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Members.IEmitReader
+  isExternal: true
+  href: PocoEmit.Members.IEmitReader.html#PocoEmit_Members_IEmitReader_Read_System_Linq_Expressions_Expression_
+  name: Read(Expression)
+  nameWithType: IEmitReader.Read(Expression)
+  fullName: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+    name: Read
+    href: PocoEmit.Members.IEmitReader.html#PocoEmit_Members_IEmitReader_Read_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+    name: Read
+    href: PocoEmit.Members.IEmitReader.html#PocoEmit_Members_IEmitReader_Read_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: PocoEmit.Collections.Members.ArrayIndexMember.Write*
+  commentId: Overload:PocoEmit.Collections.Members.ArrayIndexMember.Write
+  href: PocoEmit.Collections.Members.ArrayIndexMember.html#PocoEmit_Collections_Members_ArrayIndexMember_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Write
+  nameWithType: ArrayIndexMember.Write
+  fullName: PocoEmit.Collections.Members.ArrayIndexMember.Write
+- uid: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Members.IEmitWriter
+  isExternal: true
+  href: PocoEmit.Members.IEmitWriter.html#PocoEmit_Members_IEmitWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Write(Expression, Expression)
+  nameWithType: IEmitWriter.Write(Expression, Expression)
+  fullName: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Write
+    href: PocoEmit.Members.IEmitWriter.html#PocoEmit_Members_IEmitWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Write
+    href: PocoEmit.Members.IEmitWriter.html#PocoEmit_Members_IEmitWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )

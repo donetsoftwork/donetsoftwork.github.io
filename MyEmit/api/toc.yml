@@ -1,0 +1,601 @@
+### YamlMime:TableOfContent
+items:
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  type: Namespace
+  items:
+  - uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+    name: PocoEmitDIServices
+    type: Class
+- uid: PocoEmit
+  name: PocoEmit
+  type: Namespace
+  items:
+  - uid: PocoEmit.CollectionConfigureServices
+    name: CollectionConfigureServices
+    type: Class
+  - uid: PocoEmit.CollectionContainer
+    name: CollectionContainer
+    type: Class
+  - uid: PocoEmit.IMapper
+    name: IMapper
+    type: Interface
+  - uid: PocoEmit.IMemberReader`2
+    name: IMemberReader<TInstance, TValue>
+    type: Interface
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter<TInstance, TValue>
+    type: Interface
+  - uid: PocoEmit.IPoco
+    name: IPoco
+    type: Interface
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter<TSource, TDest>
+    type: Interface
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier<TSource, TDest>
+    type: Interface
+  - uid: PocoEmit.InstanceHelper
+    name: InstanceHelper
+    type: Class
+  - uid: PocoEmit.Mapper
+    name: Mapper
+    type: Class
+  - uid: PocoEmit.MapperServices
+    name: MapperServices
+    type: Class
+  - uid: PocoEmit.Poco
+    name: Poco
+    type: Class
+  - uid: PocoEmit.PocoEmitServices
+    name: PocoEmitServices
+    type: Class
+  - uid: PocoEmit.ReflectionHelper
+    name: ReflectionHelper
+    type: Class
+- uid: PocoEmit.Activators
+  name: PocoEmit.Activators
+  type: Namespace
+  items:
+  - uid: PocoEmit.Activators.ArgumentDelegateActivator`2
+    name: ArgumentDelegateActivator<TSource, TDest>
+    type: Class
+  - uid: PocoEmit.Activators.ConstructorActivator
+    name: ConstructorActivator
+    type: Class
+  - uid: PocoEmit.Activators.DelegateActivator`1
+    name: DelegateActivator<TInstance>
+    type: Class
+  - uid: PocoEmit.Activators.IEmitActivator
+    name: IEmitActivator
+    type: Interface
+  - uid: PocoEmit.Activators.IGenericActivator`1
+    name: IGenericActivator<TInstance>
+    type: Interface
+  - uid: PocoEmit.Activators.MethodActivator
+    name: MethodActivator
+    type: Class
+  - uid: PocoEmit.Activators.ParameterConstructorActivator
+    name: ParameterConstructorActivator
+    type: Class
+  - uid: PocoEmit.Activators.TypeActivator
+    name: TypeActivator
+    type: Class
+- uid: PocoEmit.Builders
+  name: PocoEmit.Builders
+  type: Namespace
+  items:
+  - uid: PocoEmit.Builders.CollectionConvertBuilder
+    name: CollectionConvertBuilder
+    type: Class
+  - uid: PocoEmit.Builders.CollectionCopierBuilder
+    name: CollectionCopierBuilder
+    type: Class
+  - uid: PocoEmit.Builders.Compiler
+    name: Compiler
+    type: Class
+  - uid: PocoEmit.Builders.ComplexConvertBuilder
+    name: ComplexConvertBuilder
+    type: Class
+  - uid: PocoEmit.Builders.ConvertBuilder
+    name: ConvertBuilder
+    type: Class
+  - uid: PocoEmit.Builders.CopierBuilder
+    name: CopierBuilder
+    type: Class
+  - uid: PocoEmit.Builders.CopierBuilderBase
+    name: CopierBuilderBase
+    type: Class
+  - uid: PocoEmit.Builders.CopyToSelf
+    name: CopyToSelf
+    type: Class
+  - uid: PocoEmit.Builders.EmitHelper
+    name: EmitHelper
+    type: Class
+- uid: PocoEmit.Collections
+  name: PocoEmit.Collections
+  type: Namespace
+  items:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase<TKey, TValue>
+    type: Class
+  - uid: PocoEmit.Collections.DictionaryStorage`2
+    name: DictionaryStorage<TKey, TValue>
+    type: Class
+  - uid: PocoEmit.Collections.EmitCollectionBase
+    name: EmitCollectionBase
+    type: Class
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher<TKey, TValue>
+    type: Interface
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver<TCollection, TElement>
+    type: Interface
+  - uid: PocoEmit.Collections.IConfiguration`2
+    name: IConfiguration<TKey, TValue>
+    type: Interface
+  - uid: PocoEmit.Collections.IConfigure`2
+    name: IConfigure<TKey, TValue>
+    type: Interface
+  - uid: PocoEmit.Collections.ICounter`1
+    name: ICounter<TCollection>
+    type: Interface
+  - uid: PocoEmit.Collections.IEmitCollection
+    name: IEmitCollection
+    type: Interface
+  - uid: PocoEmit.Collections.ISettings`2
+    name: ISettings<TKey, TValue>
+    type: Interface
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore<TKey, TValue>
+    type: Interface
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    type: Class
+  - uid: PocoEmit.Collections.MemberContainer
+    name: MemberContainer
+    type: Class
+  - uid: PocoEmit.Collections.MemberReaderCacher
+    name: MemberReaderCacher
+    type: Class
+  - uid: PocoEmit.Collections.MemberWriterCacher
+    name: MemberWriterCacher
+    type: Class
+  - uid: PocoEmit.Collections.PocoEmitCollectionServices
+    name: PocoEmitCollectionServices
+    type: Class
+  - uid: PocoEmit.Collections.TypeMemberCacher
+    name: TypeMemberCacher
+    type: Class
+- uid: PocoEmit.Collections.Activators
+  name: PocoEmit.Collections.Activators
+  type: Namespace
+  items:
+  - uid: PocoEmit.Collections.Activators.ArrayActivator
+    name: ArrayActivator
+    type: Class
+  - uid: PocoEmit.Collections.Activators.CollectionActivator
+    name: CollectionActivator
+    type: Class
+  - uid: PocoEmit.Collections.Activators.ListActivator
+    name: ListActivator
+    type: Class
+- uid: PocoEmit.Collections.Converters
+  name: PocoEmit.Collections.Converters
+  type: Namespace
+  items:
+  - uid: PocoEmit.Collections.Converters.ArrayConverter
+    name: ArrayConverter
+    type: Class
+  - uid: PocoEmit.Collections.Converters.CollectionArrayConverter
+    name: CollectionArrayConverter
+    type: Class
+  - uid: PocoEmit.Collections.Converters.CollectionConverter
+    name: CollectionConverter
+    type: Class
+  - uid: PocoEmit.Collections.Converters.IndexArrayConverter
+    name: IndexArrayConverter
+    type: Class
+- uid: PocoEmit.Collections.Copies
+  name: PocoEmit.Collections.Copies
+  type: Namespace
+  items:
+  - uid: PocoEmit.Collections.Copies.CollectionCopier
+    name: CollectionCopier
+    type: Class
+- uid: PocoEmit.Collections.Counters
+  name: PocoEmit.Collections.Counters
+  type: Namespace
+  items:
+  - uid: PocoEmit.Collections.Counters.ArrayCounter
+    name: ArrayCounter
+    type: Class
+  - uid: PocoEmit.Collections.Counters.ArrayLength
+    name: ArrayLength
+    type: Class
+  - uid: PocoEmit.Collections.Counters.CompiledCounter`1
+    name: CompiledCounter<TCollection>
+    type: Class
+  - uid: PocoEmit.Collections.Counters.EnumerableCounter
+    name: EnumerableCounter
+    type: Class
+  - uid: PocoEmit.Collections.Counters.ICompiledCounter`1
+    name: ICompiledCounter<TCollection>
+    type: Interface
+  - uid: PocoEmit.Collections.Counters.IEmitCounter
+    name: IEmitCounter
+    type: Interface
+  - uid: PocoEmit.Collections.Counters.IEmitElementCounter
+    name: IEmitElementCounter
+    type: Interface
+  - uid: PocoEmit.Collections.Counters.MethodCounter
+    name: MethodCounter
+    type: Class
+  - uid: PocoEmit.Collections.Counters.PropertyCounter
+    name: PropertyCounter
+    type: Class
+- uid: PocoEmit.Collections.Indexs
+  name: PocoEmit.Collections.Indexs
+  type: Namespace
+  items:
+  - uid: PocoEmit.Collections.Indexs.ArrayMemberIndex
+    name: ArrayMemberIndex
+    type: Class
+  - uid: PocoEmit.Collections.Indexs.PropertyIndexMemberReader
+    name: PropertyIndexMemberReader
+    type: Class
+  - uid: PocoEmit.Collections.Indexs.PropertyIndexMemberWriter
+    name: PropertyIndexMemberWriter
+    type: Class
+- uid: PocoEmit.Collections.Members
+  name: PocoEmit.Collections.Members
+  type: Namespace
+  items:
+  - uid: PocoEmit.Collections.Members.ArrayIndexMember
+    name: ArrayIndexMember
+    type: Class
+  - uid: PocoEmit.Collections.Members.IndexMemberReader
+    name: IndexMemberReader
+    type: Class
+  - uid: PocoEmit.Collections.Members.IndexMemberWriter
+    name: IndexMemberWriter
+    type: Class
+- uid: PocoEmit.Collections.Saves
+  name: PocoEmit.Collections.Saves
+  type: Namespace
+  items:
+  - uid: PocoEmit.Collections.Saves.CompiledElementSaver`2
+    name: CompiledElementSaver<TCollection, Element>
+    type: Class
+  - uid: PocoEmit.Collections.Saves.EmitElementSaver
+    name: EmitElementSaver
+    type: Class
+  - uid: PocoEmit.Collections.Saves.ICompiledElementSaver`2
+    name: ICompiledElementSaver<TCollection, Element>
+    type: Interface
+  - uid: PocoEmit.Collections.Saves.IEmitElementSaver
+    name: IEmitElementSaver
+    type: Interface
+- uid: PocoEmit.Collections.Visitors
+  name: PocoEmit.Collections.Visitors
+  type: Namespace
+  items:
+  - uid: PocoEmit.Collections.Visitors.ArrayVisitor
+    name: ArrayVisitor
+    type: Class
+  - uid: PocoEmit.Collections.Visitors.EnumerableVisitor
+    name: EnumerableVisitor
+    type: Class
+  - uid: PocoEmit.Collections.Visitors.IElementIndexVisitor
+    name: IElementIndexVisitor
+    type: Interface
+  - uid: PocoEmit.Collections.Visitors.IEmitElementVisitor
+    name: IEmitElementVisitor
+    type: Interface
+  - uid: PocoEmit.Collections.Visitors.IIndexVisitor
+    name: IIndexVisitor
+    type: Interface
+  - uid: PocoEmit.Collections.Visitors.ListVisitor
+    name: ListVisitor
+    type: Class
+- uid: PocoEmit.Configuration
+  name: PocoEmit.Configuration
+  type: Namespace
+  items:
+  - uid: PocoEmit.Configuration.CollectionContainerOptions
+    name: CollectionContainerOptions
+    type: Class
+  - uid: PocoEmit.Configuration.ConfigurationBase
+    name: ConfigurationBase
+    type: Class
+  - uid: PocoEmit.Configuration.ICompileInfo
+    name: ICompileInfo
+    type: Interface
+  - uid: PocoEmit.Configuration.IMapperOptions
+    name: IMapperOptions
+    type: Interface
+  - uid: PocoEmit.Configuration.IPocoOptions
+    name: IPocoOptions
+    type: Interface
+  - uid: PocoEmit.Configuration.MapperConfigurationBase
+    name: MapperConfigurationBase
+    type: Class
+  - uid: PocoEmit.Configuration.MapperOptions
+    name: MapperOptions
+    type: Class
+  - uid: PocoEmit.Configuration.MemberContainerOptions
+    name: MemberContainerOptions
+    type: Class
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    type: Class
+  - uid: PocoEmit.Configuration.PocoOptions
+    name: PocoOptions
+    type: Class
+  - uid: PocoEmit.Configuration.PrimitiveConfiguration
+    name: PrimitiveConfiguration
+    type: Class
+- uid: PocoEmit.Converters
+  name: PocoEmit.Converters
+  type: Namespace
+  items:
+  - uid: PocoEmit.Converters.CompatibleConverter
+    name: CompatibleConverter
+    type: Class
+  - uid: PocoEmit.Converters.CompiledConverter`2
+    name: CompiledConverter<TSource, TDest>
+    type: Class
+  - uid: PocoEmit.Converters.ComplexTypeConverter
+    name: ComplexTypeConverter
+    type: Class
+  - uid: PocoEmit.Converters.ConstructorConverter
+    name: ConstructorConverter
+    type: Class
+  - uid: PocoEmit.Converters.ConvertToArray
+    name: ConvertToArray
+    type: Class
+  - uid: PocoEmit.Converters.ConvertToCollection
+    name: ConvertToCollection
+    type: Class
+  - uid: PocoEmit.Converters.ConvertToDictionary
+    name: ConvertToDictionary
+    type: Class
+  - uid: PocoEmit.Converters.ConverterFactory
+    name: ConverterFactory
+    type: Class
+  - uid: PocoEmit.Converters.DelegateConverter`2
+    name: DelegateConverter<TSource, TDest>
+    type: Class
+  - uid: PocoEmit.Converters.EmitConverter
+    name: EmitConverter
+    type: Class
+  - uid: PocoEmit.Converters.ICompiledConverter`2
+    name: ICompiledConverter<TSource, TDest>
+    type: Interface
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    type: Interface
+  - uid: PocoEmit.Converters.IObjectConverter
+    name: IObjectConverter
+    type: Interface
+  - uid: PocoEmit.Converters.MemberReadConverter
+    name: MemberReadConverter
+    type: Class
+  - uid: PocoEmit.Converters.MethodConverter
+    name: MethodConverter
+    type: Class
+  - uid: PocoEmit.Converters.PassConverter
+    name: PassConverter
+    type: Class
+  - uid: PocoEmit.Converters.SelfMethodConverter
+    name: SelfMethodConverter
+    type: Class
+  - uid: PocoEmit.Converters.StringCompareConverter
+    name: StringCompareConverter
+    type: Class
+- uid: PocoEmit.Copies
+  name: PocoEmit.Copies
+  type: Namespace
+  items:
+  - uid: PocoEmit.Copies.CompatibleCopier
+    name: CompatibleCopier
+    type: Class
+  - uid: PocoEmit.Copies.CompiledCopier`2
+    name: CompiledCopier<TSource, TDest>
+    type: Class
+  - uid: PocoEmit.Copies.ComplexTypeCopier
+    name: ComplexTypeCopier
+    type: Class
+  - uid: PocoEmit.Copies.CopierFactory
+    name: CopierFactory
+    type: Class
+  - uid: PocoEmit.Copies.CopyToCollection
+    name: CopyToCollection
+    type: Class
+  - uid: PocoEmit.Copies.CopyToDictionary
+    name: CopyToDictionary
+    type: Class
+  - uid: PocoEmit.Copies.DelegateCopier`2
+    name: DelegateCopier<TSource, TDest>
+    type: Class
+  - uid: PocoEmit.Copies.ICompiledCopier`2
+    name: ICompiledCopier<TSource, TDest>
+    type: Interface
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    type: Interface
+  - uid: PocoEmit.Copies.IMemberConverter
+    name: IMemberConverter
+    type: Interface
+  - uid: PocoEmit.Copies.IObjectCopier
+    name: IObjectCopier
+    type: Interface
+  - uid: PocoEmit.Copies.MemberConverter
+    name: MemberConverter
+    type: Class
+  - uid: PocoEmit.Copies.MemberCopier
+    name: MemberCopier
+    type: Class
+  - uid: PocoEmit.Copies.MethodCopier
+    name: MethodCopier
+    type: Class
+- uid: PocoEmit.Dictionaries
+  name: PocoEmit.Dictionaries
+  type: Namespace
+  items:
+  - uid: PocoEmit.Dictionaries.DictionaryConverter
+    name: DictionaryConverter
+    type: Class
+  - uid: PocoEmit.Dictionaries.DictionaryCopier
+    name: DictionaryCopier
+    type: Class
+  - uid: PocoEmit.Dictionaries.DictionaryIndexVisitor
+    name: DictionaryIndexVisitor
+    type: Class
+  - uid: PocoEmit.Dictionaries.DictionaryValuesVisitor
+    name: DictionaryValuesVisitor
+    type: Class
+  - uid: PocoEmit.Dictionaries.EmitDictionaryBase
+    name: EmitDictionaryBase
+    type: Class
+- uid: PocoEmit.Helpers
+  name: PocoEmit.Helpers
+  type: Namespace
+  items:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper<TSource, TDest>
+    type: Class
+  - uid: PocoEmit.Helpers.MapHelper`2.DestHelper
+    name: MapHelper<TSource, TDest>.DestHelper
+    type: Class
+  - uid: PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+    name: MapHelper<TSource, TDest>.DestMemberHelper
+    type: Class
+  - uid: PocoEmit.Helpers.MapHelper`2.SourceHelper
+    name: MapHelper<TSource, TDest>.SourceHelper
+    type: Class
+  - uid: PocoEmit.Helpers.MapHelper`2.SourceMemberHelper
+    name: MapHelper<TSource, TDest>.SourceMemberHelper
+    type: Class
+- uid: PocoEmit.Indexs
+  name: PocoEmit.Indexs
+  type: Namespace
+  items:
+  - uid: PocoEmit.Indexs.IEmitIndexMemberReader
+    name: IEmitIndexMemberReader
+    type: Interface
+  - uid: PocoEmit.Indexs.IEmitIndexMemberWriter
+    name: IEmitIndexMemberWriter
+    type: Interface
+  - uid: PocoEmit.Indexs.IEmitMemberIndex
+    name: IEmitMemberIndex
+    type: Interface
+- uid: PocoEmit.Maping
+  name: PocoEmit.Maping
+  type: Namespace
+  items:
+  - uid: PocoEmit.Maping.CustomMatcher
+    name: CustomMatcher
+    type: Class
+  - uid: PocoEmit.Maping.IMemberMatch
+    name: IMemberMatch
+    type: Interface
+  - uid: PocoEmit.Maping.INameMatch
+    name: INameMatch
+    type: Interface
+  - uid: PocoEmit.Maping.IRecognizer
+    name: IRecognizer
+    type: Interface
+  - uid: PocoEmit.Maping.IgnoreRecognizer
+    name: IgnoreRecognizer
+    type: Class
+  - uid: PocoEmit.Maping.InheritRecognizer
+    name: InheritRecognizer
+    type: Class
+  - uid: PocoEmit.Maping.MemberNameMatcher
+    name: MemberNameMatcher
+    type: Class
+  - uid: PocoEmit.Maping.NameMatcher
+    name: NameMatcher
+    type: Class
+  - uid: PocoEmit.Maping.Recognizer
+    name: Recognizer
+    type: Class
+- uid: PocoEmit.Members
+  name: PocoEmit.Members
+  type: Namespace
+  items:
+  - uid: PocoEmit.Members.CompiledReader`2
+    name: CompiledReader<TInstance, TValue>
+    type: Class
+  - uid: PocoEmit.Members.CompiledWriter`2
+    name: CompiledWriter<TInstance, TValue>
+    type: Class
+  - uid: PocoEmit.Members.ConstructorParameterMember
+    name: ConstructorParameterMember
+    type: Class
+  - uid: PocoEmit.Members.ConvertInstanceReader
+    name: ConvertInstanceReader
+    type: Class
+  - uid: PocoEmit.Members.ConvertInstanceWriter
+    name: ConvertInstanceWriter
+    type: Class
+  - uid: PocoEmit.Members.ConvertValueReader
+    name: ConvertValueReader
+    type: Class
+  - uid: PocoEmit.Members.ConvertValueWriter
+    name: ConvertValueWriter
+    type: Class
+  - uid: PocoEmit.Members.FieldAccessor
+    name: FieldAccessor
+    type: Class
+  - uid: PocoEmit.Members.ICompiledReader`2
+    name: ICompiledReader<TInstance, TValue>
+    type: Interface
+  - uid: PocoEmit.Members.ICompiledWriter`2
+    name: ICompiledWriter<TInstance, TValue>
+    type: Interface
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    type: Interface
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    type: Interface
+  - uid: PocoEmit.Members.IEmitReader
+    name: IEmitReader
+    type: Interface
+  - uid: PocoEmit.Members.IEmitWriter
+    name: IEmitWriter
+    type: Interface
+  - uid: PocoEmit.Members.IMember
+    name: IMember
+    type: Interface
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor<TMemberType>
+    type: Class
+  - uid: PocoEmit.Members.PropertyAccessor
+    name: PropertyAccessor
+    type: Class
+  - uid: PocoEmit.Members.RenameMember`1
+    name: RenameMember<TMember>
+    type: Class
+  - uid: PocoEmit.Members.RenameReader
+    name: RenameReader
+    type: Class
+- uid: PocoEmit.Reflection
+  name: PocoEmit.Reflection
+  type: Namespace
+  items:
+  - uid: PocoEmit.Reflection.DefaultReflectionConstructor
+    name: DefaultReflectionConstructor
+    type: Class
+  - uid: PocoEmit.Reflection.DefaultReflectionMember
+    name: DefaultReflectionMember
+    type: Class
+  - uid: PocoEmit.Reflection.IReflectionConstructor
+    name: IReflectionConstructor
+    type: Interface
+  - uid: PocoEmit.Reflection.IReflectionMember
+    name: IReflectionMember
+    type: Interface
+memberLayout: SamePage

@@ -1,0 +1,581 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  commentId: T:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  id: PocoEmitDIServices
+  parent: Microsoft.Extensions.DependencyInjection
+  children:
+  - Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter(PocoEmit.IPoco,System.Type)
+  - Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter(System.IServiceProvider,System.Type)
+  - Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier(PocoEmit.IMapper,System.Type)
+  - Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier(System.IServiceProvider,System.Type)
+  - Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.IPoco)
+  - Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.IPoco,System.Object)
+  - Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.Configuration.IMapperOptions)
+  - Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.Configuration.IMapperOptions,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: PocoEmitDIServices
+  nameWithType: PocoEmitDIServices
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: PocoEmitDIServices
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 9
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: DI注入扩展方法
+  example: []
+  syntax:
+    content: public static class PocoEmitDIServices
+    content.vb: Public Module PocoEmitDIServices
+  inheritance:
+  - System.Object
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  langs:
+  - csharp
+  - vb
+  name: UseConverter(IServiceCollection)
+  nameWithType: PocoEmitDIServices.UseConverter(IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseConverter
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 17
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: 注册转化接口
+  example: []
+  syntax:
+    content: public static IServiceCollection UseConverter(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    content.vb: Public Shared Function UseConverter(services As IServiceCollection) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter*
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.IPoco)
+  commentId: M:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.IPoco)
+  id: UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.IPoco)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  langs:
+  - csharp
+  - vb
+  name: UseConverter(IServiceCollection, IPoco)
+  nameWithType: PocoEmitDIServices.UseConverter(IServiceCollection, IPoco)
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection, PocoEmit.IPoco)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseConverter
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 27
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: 注册转化接口
+  example: []
+  syntax:
+    content: public static IServiceCollection UseConverter(this IServiceCollection services, IPoco poco)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    content.vb: Public Shared Function UseConverter(services As IServiceCollection, poco As IPoco) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter*
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.IPoco,System.Object)
+  commentId: M:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.IPoco,System.Object)
+  id: UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.IPoco,System.Object)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  langs:
+  - csharp
+  - vb
+  name: UseConverter(IServiceCollection, IPoco, object)
+  nameWithType: PocoEmitDIServices.UseConverter(IServiceCollection, IPoco, object)
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection, PocoEmit.IPoco, object)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseConverter
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 38
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: 注册转化接口
+  example: []
+  syntax:
+    content: public static IServiceCollection UseConverter(this IServiceCollection services, IPoco poco, object serviceKey)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: serviceKey
+      type: System.Object
+      description: ''
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    content.vb: Public Shared Function UseConverter(services As IServiceCollection, poco As IPoco, serviceKey As Object) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter*
+  nameWithType.vb: PocoEmitDIServices.UseConverter(IServiceCollection, IPoco, Object)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter(Microsoft.Extensions.DependencyInjection.IServiceCollection, PocoEmit.IPoco, Object)
+  name.vb: UseConverter(IServiceCollection, IPoco, Object)
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  langs:
+  - csharp
+  - vb
+  name: UseCopier(IServiceCollection)
+  nameWithType: PocoEmitDIServices.UseCopier(IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseCopier
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 49
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: 注册转化接口
+  example: []
+  syntax:
+    content: public static IServiceCollection UseCopier(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    content.vb: Public Shared Function UseCopier(services As IServiceCollection) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier*
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.Configuration.IMapperOptions)
+  commentId: M:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.Configuration.IMapperOptions)
+  id: UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.Configuration.IMapperOptions)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  langs:
+  - csharp
+  - vb
+  name: UseCopier(IServiceCollection, IMapperOptions)
+  nameWithType: PocoEmitDIServices.UseCopier(IServiceCollection, IMapperOptions)
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection, PocoEmit.Configuration.IMapperOptions)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseCopier
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 59
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: 注册转化接口
+  example: []
+  syntax:
+    content: public static IServiceCollection UseCopier(this IServiceCollection services, IMapperOptions mapper)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    - id: mapper
+      type: PocoEmit.Configuration.IMapperOptions
+      description: ''
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    content.vb: Public Shared Function UseCopier(services As IServiceCollection, mapper As IMapperOptions) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier*
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.Configuration.IMapperOptions,System.Object)
+  commentId: M:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.Configuration.IMapperOptions,System.Object)
+  id: UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection,PocoEmit.Configuration.IMapperOptions,System.Object)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  langs:
+  - csharp
+  - vb
+  name: UseCopier(IServiceCollection, IMapperOptions, object)
+  nameWithType: PocoEmitDIServices.UseCopier(IServiceCollection, IMapperOptions, object)
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection, PocoEmit.Configuration.IMapperOptions, object)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseCopier
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 70
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: 注册转化接口
+  example: []
+  syntax:
+    content: public static IServiceCollection UseCopier(this IServiceCollection services, IMapperOptions mapper, object serviceKey)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    - id: mapper
+      type: PocoEmit.Configuration.IMapperOptions
+      description: ''
+    - id: serviceKey
+      type: System.Object
+      description: ''
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: ''
+    content.vb: Public Shared Function UseCopier(services As IServiceCollection, mapper As IMapperOptions, serviceKey As Object) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier*
+  nameWithType.vb: PocoEmitDIServices.UseCopier(IServiceCollection, IMapperOptions, Object)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier(Microsoft.Extensions.DependencyInjection.IServiceCollection, PocoEmit.Configuration.IMapperOptions, Object)
+  name.vb: UseCopier(IServiceCollection, IMapperOptions, Object)
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter(System.IServiceProvider,System.Type)
+  commentId: M:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter(System.IServiceProvider,System.Type)
+  id: GetGenericConverter(System.IServiceProvider,System.Type)
+  parent: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  langs:
+  - csharp
+  - vb
+  name: GetGenericConverter(IServiceProvider, Type)
+  nameWithType: PocoEmitDIServices.GetGenericConverter(IServiceProvider, Type)
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter(System.IServiceProvider, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetGenericConverter
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 82
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: 获取类型转化(用于IOC注入)
+  example: []
+  syntax:
+    content: public static object GetGenericConverter(IServiceProvider sp, Type converterType)
+    parameters:
+    - id: sp
+      type: System.IServiceProvider
+      description: ''
+    - id: converterType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Function GetGenericConverter(sp As IServiceProvider, converterType As Type) As Object
+  overload: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter*
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter(PocoEmit.IPoco,System.Type)
+  commentId: M:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter(PocoEmit.IPoco,System.Type)
+  id: GetGenericConverter(PocoEmit.IPoco,System.Type)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  langs:
+  - csharp
+  - vb
+  name: GetGenericConverter(IPoco, Type)
+  nameWithType: PocoEmitDIServices.GetGenericConverter(IPoco, Type)
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter(PocoEmit.IPoco, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetGenericConverter
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 93
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: 获取类型转化(用于IOC注入)
+  example: []
+  syntax:
+    content: public static object GetGenericConverter(this IPoco poco, Type converterType)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: converterType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Function GetGenericConverter(poco As IPoco, converterType As Type) As Object
+  overload: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter*
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier(System.IServiceProvider,System.Type)
+  commentId: M:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier(System.IServiceProvider,System.Type)
+  id: GetGenericCopier(System.IServiceProvider,System.Type)
+  parent: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  langs:
+  - csharp
+  - vb
+  name: GetGenericCopier(IServiceProvider, Type)
+  nameWithType: PocoEmitDIServices.GetGenericCopier(IServiceProvider, Type)
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier(System.IServiceProvider, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetGenericCopier
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 108
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: 获取复制器(用于IOC注)
+  example: []
+  syntax:
+    content: public static object GetGenericCopier(IServiceProvider sp, Type converterType)
+    parameters:
+    - id: sp
+      type: System.IServiceProvider
+      description: ''
+    - id: converterType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Function GetGenericCopier(sp As IServiceProvider, converterType As Type) As Object
+  overload: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier*
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier(PocoEmit.IMapper,System.Type)
+  commentId: M:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier(PocoEmit.IMapper,System.Type)
+  id: GetGenericCopier(PocoEmit.IMapper,System.Type)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices
+  langs:
+  - csharp
+  - vb
+  name: GetGenericCopier(IMapper, Type)
+  nameWithType: PocoEmitDIServices.GetGenericCopier(IMapper, Type)
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier(PocoEmit.IMapper, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetGenericCopier
+    path: ../PocoEmit.Mapper.DI/PocoEmitDIServices.cs
+    startLine: 119
+  assemblies:
+  - PocoEmit.Mapper.DI
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: 获取复制器(用于IOC注)
+  example: []
+  syntax:
+    content: public static object GetGenericCopier(this IMapper mapper, Type copierType)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: copierType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Function GetGenericCopier(mapper As IMapper, copierType As Type) As Object
+  overload: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier*
+references:
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter
+  href: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.html#Microsoft_Extensions_DependencyInjection_PocoEmitDIServices_UseConverter_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: UseConverter
+  nameWithType: PocoEmitDIServices.UseConverter
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseConverter
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: PocoEmit.IPoco
+  commentId: T:PocoEmit.IPoco
+  parent: PocoEmit
+  href: PocoEmit.IPoco.html
+  name: IPoco
+  nameWithType: IPoco
+  fullName: PocoEmit.IPoco
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier
+  href: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.html#Microsoft_Extensions_DependencyInjection_PocoEmitDIServices_UseCopier_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: UseCopier
+  nameWithType: PocoEmitDIServices.UseCopier
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.UseCopier
+- uid: PocoEmit.Configuration.IMapperOptions
+  commentId: T:PocoEmit.Configuration.IMapperOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.IMapperOptions.html
+  name: IMapperOptions
+  nameWithType: IMapperOptions
+  fullName: PocoEmit.Configuration.IMapperOptions
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter
+  href: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.html#Microsoft_Extensions_DependencyInjection_PocoEmitDIServices_GetGenericConverter_System_IServiceProvider_System_Type_
+  name: GetGenericConverter
+  nameWithType: PocoEmitDIServices.GetGenericConverter
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericConverter
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier
+  href: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.html#Microsoft_Extensions_DependencyInjection_PocoEmitDIServices_GetGenericCopier_System_IServiceProvider_System_Type_
+  name: GetGenericCopier
+  nameWithType: PocoEmitDIServices.GetGenericCopier
+  fullName: Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.GetGenericCopier
+- uid: PocoEmit.IMapper
+  commentId: T:PocoEmit.IMapper
+  parent: PocoEmit
+  href: PocoEmit.IMapper.html
+  name: IMapper
+  nameWithType: IMapper
+  fullName: PocoEmit.IMapper

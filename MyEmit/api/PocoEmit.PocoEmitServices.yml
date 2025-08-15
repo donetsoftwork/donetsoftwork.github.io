@@ -1,0 +1,2307 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.PocoEmitServices
+  commentId: T:PocoEmit.PocoEmitServices
+  id: PocoEmitServices
+  parent: PocoEmit
+  children:
+  - PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  - PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  - PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  - PocoEmit.PocoEmitServices.CheckInstanceType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type)
+  - PocoEmit.PocoEmitServices.CheckType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type,System.Type)
+  - PocoEmit.PocoEmitServices.CheckValueType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type)
+  - PocoEmit.PocoEmitServices.Convert``2(PocoEmit.IPoco,``0)
+  - PocoEmit.PocoEmitServices.GetConvertFunc``2(PocoEmit.IPoco)
+  - PocoEmit.PocoEmitServices.GetConverter``2(PocoEmit.IPoco)
+  - PocoEmit.PocoEmitServices.GetEmitConverter(PocoEmit.IPoco,System.Type,System.Type)
+  - PocoEmit.PocoEmitServices.GetEmitConverter``2(PocoEmit.IPoco)
+  - PocoEmit.PocoEmitServices.GetMemberReader``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberReader)
+  - PocoEmit.PocoEmitServices.GetMemberReader``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  - PocoEmit.PocoEmitServices.GetMemberReader``2(PocoEmit.IPoco,System.String)
+  - PocoEmit.PocoEmitServices.GetMemberWriter``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter)
+  - PocoEmit.PocoEmitServices.GetMemberWriter``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  - PocoEmit.PocoEmitServices.GetMemberWriter``2(PocoEmit.IPoco,System.String)
+  - PocoEmit.PocoEmitServices.GetObjectConverter(PocoEmit.IPoco,System.Type,System.Type)
+  - PocoEmit.PocoEmitServices.GetReadFunc``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberReader)
+  - PocoEmit.PocoEmitServices.GetReadFunc``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  - PocoEmit.PocoEmitServices.GetReadFunc``2(PocoEmit.IPoco,System.String)
+  - PocoEmit.PocoEmitServices.GetWriteAction``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter)
+  - PocoEmit.PocoEmitServices.GetWriteAction``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  - PocoEmit.PocoEmitServices.GetWriteAction``2(PocoEmit.IPoco,System.String)
+  - PocoEmit.PocoEmitServices.SetStringConvert``1(``0)
+  - PocoEmit.PocoEmitServices.UseConvertFunc``2(PocoEmit.IPoco,System.Func{``0,``1})
+  - PocoEmit.PocoEmitServices.UseConverter``1(``0,System.Object)
+  - PocoEmit.PocoEmitServices.UseStaticConverter``1(PocoEmit.IPoco)
+  - PocoEmit.PocoEmitServices.UseStaticConverter``1(``0,System.Type)
+  - PocoEmit.PocoEmitServices.UseSystemConvert``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: PocoEmitServices
+  nameWithType: PocoEmitServices
+  fullName: PocoEmit.PocoEmitServices
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: PocoEmitServices
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 类型转换扩展方法
+  example: []
+  syntax:
+    content: public static class PocoEmitServices
+    content.vb: Public Module PocoEmitServices
+  inheritance:
+  - System.Object
+- uid: PocoEmit.PocoEmitServices.GetConverter``2(PocoEmit.IPoco)
+  commentId: M:PocoEmit.PocoEmitServices.GetConverter``2(PocoEmit.IPoco)
+  id: GetConverter``2(PocoEmit.IPoco)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetConverter<TSource, TDest>(IPoco)
+  nameWithType: PocoEmitServices.GetConverter<TSource, TDest>(IPoco)
+  fullName: PocoEmit.PocoEmitServices.GetConverter<TSource, TDest>(PocoEmit.IPoco)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetConverter
+    path: ../PocoEmit/ConvertServices.cs
+    startLine: 22
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取类型转化
+  example: []
+  syntax:
+    content: public static IPocoConverter<TSource, TDest> GetConverter<TSource, TDest>(this IPoco poco)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: PocoEmit.IPocoConverter{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Shared Function GetConverter(Of TSource, TDest)(poco As IPoco) As IPocoConverter(Of TSource, TDest)
+  overload: PocoEmit.PocoEmitServices.GetConverter*
+  nameWithType.vb: PocoEmitServices.GetConverter(Of TSource, TDest)(IPoco)
+  fullName.vb: PocoEmit.PocoEmitServices.GetConverter(Of TSource, TDest)(PocoEmit.IPoco)
+  name.vb: GetConverter(Of TSource, TDest)(IPoco)
+- uid: PocoEmit.PocoEmitServices.GetObjectConverter(PocoEmit.IPoco,System.Type,System.Type)
+  commentId: M:PocoEmit.PocoEmitServices.GetObjectConverter(PocoEmit.IPoco,System.Type,System.Type)
+  id: GetObjectConverter(PocoEmit.IPoco,System.Type,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetObjectConverter(IPoco, Type, Type)
+  nameWithType: PocoEmitServices.GetObjectConverter(IPoco, Type, Type)
+  fullName: PocoEmit.PocoEmitServices.GetObjectConverter(PocoEmit.IPoco, System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetObjectConverter
+    path: ../PocoEmit/ConvertServices.cs
+    startLine: 44
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取弱类型转化(IObjectConverter)
+  example: []
+  syntax:
+    content: public static object GetObjectConverter(this IPoco poco, Type sourceType, Type destType)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Function GetObjectConverter(poco As IPoco, sourceType As Type, destType As Type) As Object
+  overload: PocoEmit.PocoEmitServices.GetObjectConverter*
+- uid: PocoEmit.PocoEmitServices.GetConvertFunc``2(PocoEmit.IPoco)
+  commentId: M:PocoEmit.PocoEmitServices.GetConvertFunc``2(PocoEmit.IPoco)
+  id: GetConvertFunc``2(PocoEmit.IPoco)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetConvertFunc<TSource, TDest>(IPoco)
+  nameWithType: PocoEmitServices.GetConvertFunc<TSource, TDest>(IPoco)
+  fullName: PocoEmit.PocoEmitServices.GetConvertFunc<TSource, TDest>(PocoEmit.IPoco)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetConvertFunc
+    path: ../PocoEmit/ConvertServices.cs
+    startLine: 66
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取转换委托
+  example: []
+  syntax:
+    content: public static Func<TSource, TDest> GetConvertFunc<TSource, TDest>(this IPoco poco)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: System.Func{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Shared Function GetConvertFunc(Of TSource, TDest)(poco As IPoco) As Func(Of TSource, TDest)
+  overload: PocoEmit.PocoEmitServices.GetConvertFunc*
+  nameWithType.vb: PocoEmitServices.GetConvertFunc(Of TSource, TDest)(IPoco)
+  fullName.vb: PocoEmit.PocoEmitServices.GetConvertFunc(Of TSource, TDest)(PocoEmit.IPoco)
+  name.vb: GetConvertFunc(Of TSource, TDest)(IPoco)
+- uid: PocoEmit.PocoEmitServices.Convert``2(PocoEmit.IPoco,``0)
+  commentId: M:PocoEmit.PocoEmitServices.Convert``2(PocoEmit.IPoco,``0)
+  id: Convert``2(PocoEmit.IPoco,``0)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: Convert<TSource, TDest>(IPoco, TSource)
+  nameWithType: PocoEmitServices.Convert<TSource, TDest>(IPoco, TSource)
+  fullName: PocoEmit.PocoEmitServices.Convert<TSource, TDest>(PocoEmit.IPoco, TSource)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Convert
+    path: ../PocoEmit/ConvertServices.cs
+    startLine: 91
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 转换类型
+  example: []
+  syntax:
+    content: public static TDest Convert<TSource, TDest>(this IPoco poco, TSource source)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: source
+      type: '{TSource}'
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: '{TDest}'
+      description: ''
+    content.vb: Public Shared Function Convert(Of TSource, TDest)(poco As IPoco, source As TSource) As TDest
+  overload: PocoEmit.PocoEmitServices.Convert*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: ''
+  nameWithType.vb: PocoEmitServices.Convert(Of TSource, TDest)(IPoco, TSource)
+  fullName.vb: PocoEmit.PocoEmitServices.Convert(Of TSource, TDest)(PocoEmit.IPoco, TSource)
+  name.vb: Convert(Of TSource, TDest)(IPoco, TSource)
+- uid: PocoEmit.PocoEmitServices.GetEmitConverter``2(PocoEmit.IPoco)
+  commentId: M:PocoEmit.PocoEmitServices.GetEmitConverter``2(PocoEmit.IPoco)
+  id: GetEmitConverter``2(PocoEmit.IPoco)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetEmitConverter<TSource, TDest>(IPoco)
+  nameWithType: PocoEmitServices.GetEmitConverter<TSource, TDest>(IPoco)
+  fullName: PocoEmit.PocoEmitServices.GetEmitConverter<TSource, TDest>(PocoEmit.IPoco)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitConverter
+    path: ../PocoEmit/ConvertServices.cs
+    startLine: 106
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取Emit类型转化
+  example: []
+  syntax:
+    content: public static IEmitConverter GetEmitConverter<TSource, TDest>(this IPoco poco)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Public Shared Function GetEmitConverter(Of TSource, TDest)(poco As IPoco) As IEmitConverter
+  overload: PocoEmit.PocoEmitServices.GetEmitConverter*
+  nameWithType.vb: PocoEmitServices.GetEmitConverter(Of TSource, TDest)(IPoco)
+  fullName.vb: PocoEmit.PocoEmitServices.GetEmitConverter(Of TSource, TDest)(PocoEmit.IPoco)
+  name.vb: GetEmitConverter(Of TSource, TDest)(IPoco)
+- uid: PocoEmit.PocoEmitServices.GetEmitConverter(PocoEmit.IPoco,System.Type,System.Type)
+  commentId: M:PocoEmit.PocoEmitServices.GetEmitConverter(PocoEmit.IPoco,System.Type,System.Type)
+  id: GetEmitConverter(PocoEmit.IPoco,System.Type,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetEmitConverter(IPoco, Type, Type)
+  nameWithType: PocoEmitServices.GetEmitConverter(IPoco, Type, Type)
+  fullName: PocoEmit.PocoEmitServices.GetEmitConverter(PocoEmit.IPoco, System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitConverter
+    path: ../PocoEmit/ConvertServices.cs
+    startLine: 115
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取Emit类型转化
+  example: []
+  syntax:
+    content: public static IEmitConverter GetEmitConverter(this IPoco poco, Type sourceType, Type destType)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Public Shared Function GetEmitConverter(poco As IPoco, sourceType As Type, destType As Type) As IEmitConverter
+  overload: PocoEmit.PocoEmitServices.GetEmitConverter*
+- uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  id: Build``2(PocoEmit.Converters.IEmitConverter)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: Build<TSource, TDest>(IEmitConverter)
+  nameWithType: PocoEmitServices.Build<TSource, TDest>(IEmitConverter)
+  fullName: PocoEmit.PocoEmitServices.Build<TSource, TDest>(PocoEmit.Converters.IEmitConverter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Build
+    path: ../PocoEmit/ConvertServices.cs
+    startLine: 126
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 编译转换委托
+  example: []
+  syntax:
+    content: public static Expression<Func<TSource, TDest>> Build<TSource, TDest>(this IEmitConverter emit)
+    parameters:
+    - id: emit
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},{TDest}}}
+      description: ''
+    content.vb: Public Shared Function Build(Of TSource, TDest)(emit As IEmitConverter) As Expression(Of Func(Of TSource, TDest))
+  overload: PocoEmit.PocoEmitServices.Build*
+  nameWithType.vb: PocoEmitServices.Build(Of TSource, TDest)(IEmitConverter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TSource, TDest)(PocoEmit.Converters.IEmitConverter)
+  name.vb: Build(Of TSource, TDest)(IEmitConverter)
+- uid: PocoEmit.PocoEmitServices.UseConvertFunc``2(PocoEmit.IPoco,System.Func{``0,``1})
+  commentId: M:PocoEmit.PocoEmitServices.UseConvertFunc``2(PocoEmit.IPoco,System.Func{``0,``1})
+  id: UseConvertFunc``2(PocoEmit.IPoco,System.Func{``0,``1})
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: UseConvertFunc<TSource, TDest>(IPoco, Func<TSource, TDest>)
+  nameWithType: PocoEmitServices.UseConvertFunc<TSource, TDest>(IPoco, Func<TSource, TDest>)
+  fullName: PocoEmit.PocoEmitServices.UseConvertFunc<TSource, TDest>(PocoEmit.IPoco, System.Func<TSource, TDest>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertSettingServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseConvertFunc
+    path: ../PocoEmit/ConvertSettingServices.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 设置委托来转化
+  example: []
+  syntax:
+    content: public static IPoco UseConvertFunc<TSource, TDest>(this IPoco poco, Func<TSource, TDest> convertFunc)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: convertFunc
+      type: System.Func{{TSource},{TDest}}
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: PocoEmit.IPoco
+      description: ''
+    content.vb: Public Shared Function UseConvertFunc(Of TSource, TDest)(poco As IPoco, convertFunc As Func(Of TSource, TDest)) As IPoco
+  overload: PocoEmit.PocoEmitServices.UseConvertFunc*
+  nameWithType.vb: PocoEmitServices.UseConvertFunc(Of TSource, TDest)(IPoco, Func(Of TSource, TDest))
+  fullName.vb: PocoEmit.PocoEmitServices.UseConvertFunc(Of TSource, TDest)(PocoEmit.IPoco, System.Func(Of TSource, TDest))
+  name.vb: UseConvertFunc(Of TSource, TDest)(IPoco, Func(Of TSource, TDest))
+- uid: PocoEmit.PocoEmitServices.UseStaticConverter``1(PocoEmit.IPoco)
+  commentId: M:PocoEmit.PocoEmitServices.UseStaticConverter``1(PocoEmit.IPoco)
+  id: UseStaticConverter``1(PocoEmit.IPoco)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: UseStaticConverter<TConverter>(IPoco)
+  nameWithType: PocoEmitServices.UseStaticConverter<TConverter>(IPoco)
+  fullName: PocoEmit.PocoEmitServices.UseStaticConverter<TConverter>(PocoEmit.IPoco)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertSettingServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseStaticConverter
+    path: ../PocoEmit/ConvertSettingServices.cs
+    startLine: 35
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 添加静态转化方法
+  example: []
+  syntax:
+    content: public static IPoco UseStaticConverter<TConverter>(this IPoco poco)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    typeParameters:
+    - id: TConverter
+      description: ''
+    return:
+      type: PocoEmit.IPoco
+      description: ''
+    content.vb: Public Shared Function UseStaticConverter(Of TConverter)(poco As IPoco) As IPoco
+  overload: PocoEmit.PocoEmitServices.UseStaticConverter*
+  nameWithType.vb: PocoEmitServices.UseStaticConverter(Of TConverter)(IPoco)
+  fullName.vb: PocoEmit.PocoEmitServices.UseStaticConverter(Of TConverter)(PocoEmit.IPoco)
+  name.vb: UseStaticConverter(Of TConverter)(IPoco)
+- uid: PocoEmit.PocoEmitServices.UseStaticConverter``1(``0,System.Type)
+  commentId: M:PocoEmit.PocoEmitServices.UseStaticConverter``1(``0,System.Type)
+  id: UseStaticConverter``1(``0,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: UseStaticConverter<TConfiguration>(TConfiguration, Type)
+  nameWithType: PocoEmitServices.UseStaticConverter<TConfiguration>(TConfiguration, Type)
+  fullName: PocoEmit.PocoEmitServices.UseStaticConverter<TConfiguration>(TConfiguration, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertSettingServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseStaticConverter
+    path: ../PocoEmit/ConvertSettingServices.cs
+    startLine: 44
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 添加静态转化方法
+  example: []
+  syntax:
+    content: 'public static TConfiguration UseStaticConverter<TConfiguration>(this TConfiguration configuration, Type converterType) where TConfiguration : IPoco'
+    parameters:
+    - id: configuration
+      type: '{TConfiguration}'
+      description: ''
+    - id: converterType
+      type: System.Type
+      description: ''
+    typeParameters:
+    - id: TConfiguration
+      description: ''
+    return:
+      type: '{TConfiguration}'
+      description: ''
+    content.vb: Public Shared Function UseStaticConverter(Of TConfiguration As IPoco)(configuration As TConfiguration, converterType As Type) As TConfiguration
+  overload: PocoEmit.PocoEmitServices.UseStaticConverter*
+  nameWithType.vb: PocoEmitServices.UseStaticConverter(Of TConfiguration)(TConfiguration, Type)
+  fullName.vb: PocoEmit.PocoEmitServices.UseStaticConverter(Of TConfiguration)(TConfiguration, System.Type)
+  name.vb: UseStaticConverter(Of TConfiguration)(TConfiguration, Type)
+- uid: PocoEmit.PocoEmitServices.UseConverter``1(``0,System.Object)
+  commentId: M:PocoEmit.PocoEmitServices.UseConverter``1(``0,System.Object)
+  id: UseConverter``1(``0,System.Object)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: UseConverter<TConfiguration>(TConfiguration, object)
+  nameWithType: PocoEmitServices.UseConverter<TConfiguration>(TConfiguration, object)
+  fullName: PocoEmit.PocoEmitServices.UseConverter<TConfiguration>(TConfiguration, object)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertSettingServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseConverter
+    path: ../PocoEmit/ConvertSettingServices.cs
+    startLine: 72
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 添加实例转化
+  example: []
+  syntax:
+    content: 'public static TConfiguration UseConverter<TConfiguration>(this TConfiguration configuration, object instance) where TConfiguration : IPoco'
+    parameters:
+    - id: configuration
+      type: '{TConfiguration}'
+      description: ''
+    - id: instance
+      type: System.Object
+      description: ''
+    typeParameters:
+    - id: TConfiguration
+      description: ''
+    return:
+      type: '{TConfiguration}'
+      description: ''
+    content.vb: Public Shared Function UseConverter(Of TConfiguration As IPoco)(configuration As TConfiguration, instance As Object) As TConfiguration
+  overload: PocoEmit.PocoEmitServices.UseConverter*
+  nameWithType.vb: PocoEmitServices.UseConverter(Of TConfiguration)(TConfiguration, Object)
+  fullName.vb: PocoEmit.PocoEmitServices.UseConverter(Of TConfiguration)(TConfiguration, Object)
+  name.vb: UseConverter(Of TConfiguration)(TConfiguration, Object)
+- uid: PocoEmit.PocoEmitServices.UseSystemConvert``1(``0)
+  commentId: M:PocoEmit.PocoEmitServices.UseSystemConvert``1(``0)
+  id: UseSystemConvert``1(``0)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: UseSystemConvert<TConfiguration>(TConfiguration)
+  nameWithType: PocoEmitServices.UseSystemConvert<TConfiguration>(TConfiguration)
+  fullName: PocoEmit.PocoEmitServices.UseSystemConvert<TConfiguration>(TConfiguration)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertSettingServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseSystemConvert
+    path: ../PocoEmit/ConvertSettingServices.cs
+    startLine: 100
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 加载System.Convert
+  example: []
+  syntax:
+    content: 'public static TConfiguration UseSystemConvert<TConfiguration>(this TConfiguration configuration) where TConfiguration : IPoco'
+    parameters:
+    - id: configuration
+      type: '{TConfiguration}'
+      description: ''
+    typeParameters:
+    - id: TConfiguration
+      description: ''
+    return:
+      type: '{TConfiguration}'
+      description: ''
+    content.vb: Public Shared Function UseSystemConvert(Of TConfiguration As IPoco)(configuration As TConfiguration) As TConfiguration
+  overload: PocoEmit.PocoEmitServices.UseSystemConvert*
+  nameWithType.vb: PocoEmitServices.UseSystemConvert(Of TConfiguration)(TConfiguration)
+  fullName.vb: PocoEmit.PocoEmitServices.UseSystemConvert(Of TConfiguration)(TConfiguration)
+  name.vb: UseSystemConvert(Of TConfiguration)(TConfiguration)
+- uid: PocoEmit.PocoEmitServices.SetStringConvert``1(``0)
+  commentId: M:PocoEmit.PocoEmitServices.SetStringConvert``1(``0)
+  id: SetStringConvert``1(``0)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: SetStringConvert<TConfiguration>(TConfiguration)
+  nameWithType: PocoEmitServices.SetStringConvert<TConfiguration>(TConfiguration)
+  fullName: PocoEmit.PocoEmitServices.SetStringConvert<TConfiguration>(TConfiguration)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ConvertSettingServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: SetStringConvert
+    path: ../PocoEmit/ConvertSettingServices.cs
+    startLine: 107
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 加载字符串转化基础类型
+  example: []
+  syntax:
+    content: 'public static TConfiguration SetStringConvert<TConfiguration>(this TConfiguration configuration) where TConfiguration : IPoco'
+    parameters:
+    - id: configuration
+      type: '{TConfiguration}'
+      description: ''
+    typeParameters:
+    - id: TConfiguration
+    return:
+      type: '{TConfiguration}'
+    content.vb: Public Shared Function SetStringConvert(Of TConfiguration As IPoco)(configuration As TConfiguration) As TConfiguration
+  overload: PocoEmit.PocoEmitServices.SetStringConvert*
+  nameWithType.vb: PocoEmitServices.SetStringConvert(Of TConfiguration)(TConfiguration)
+  fullName.vb: PocoEmit.PocoEmitServices.SetStringConvert(Of TConfiguration)(TConfiguration)
+  name.vb: SetStringConvert(Of TConfiguration)(TConfiguration)
+- uid: PocoEmit.PocoEmitServices.GetReadFunc``2(PocoEmit.IPoco,System.String)
+  commentId: M:PocoEmit.PocoEmitServices.GetReadFunc``2(PocoEmit.IPoco,System.String)
+  id: GetReadFunc``2(PocoEmit.IPoco,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetReadFunc<TInstance, TValue>(IPoco, string)
+  nameWithType: PocoEmitServices.GetReadFunc<TInstance, TValue>(IPoco, string)
+  fullName: PocoEmit.PocoEmitServices.GetReadFunc<TInstance, TValue>(PocoEmit.IPoco, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReadMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetReadFunc
+    path: ../PocoEmit/ReadMemberServices.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 读成员委托
+  example: []
+  syntax:
+    content: public static Func<TInstance, TValue> GetReadFunc<TInstance, TValue>(this IPoco poco, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Func{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetReadFunc(Of TInstance, TValue)(poco As IPoco, memberName As String) As Func(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetReadFunc*
+  nameWithType.vb: PocoEmitServices.GetReadFunc(Of TInstance, TValue)(IPoco, String)
+  fullName.vb: PocoEmit.PocoEmitServices.GetReadFunc(Of TInstance, TValue)(PocoEmit.IPoco, String)
+  name.vb: GetReadFunc(Of TInstance, TValue)(IPoco, String)
+- uid: PocoEmit.PocoEmitServices.GetReadFunc``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  commentId: M:PocoEmit.PocoEmitServices.GetReadFunc``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  id: GetReadFunc``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetReadFunc<TInstance, TValue>(IPoco, MemberInfo)
+  nameWithType: PocoEmitServices.GetReadFunc<TInstance, TValue>(IPoco, MemberInfo)
+  fullName: PocoEmit.PocoEmitServices.GetReadFunc<TInstance, TValue>(PocoEmit.IPoco, System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReadMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetReadFunc
+    path: ../PocoEmit/ReadMemberServices.cs
+    startLine: 38
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 读成员委托
+  example: []
+  syntax:
+    content: public static Func<TInstance, TValue> GetReadFunc<TInstance, TValue>(this IPoco poco, MemberInfo member)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: member
+      type: System.Reflection.MemberInfo
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Func{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetReadFunc(Of TInstance, TValue)(poco As IPoco, member As MemberInfo) As Func(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetReadFunc*
+  nameWithType.vb: PocoEmitServices.GetReadFunc(Of TInstance, TValue)(IPoco, MemberInfo)
+  fullName.vb: PocoEmit.PocoEmitServices.GetReadFunc(Of TInstance, TValue)(PocoEmit.IPoco, System.Reflection.MemberInfo)
+  name.vb: GetReadFunc(Of TInstance, TValue)(IPoco, MemberInfo)
+- uid: PocoEmit.PocoEmitServices.GetReadFunc``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberReader)
+  commentId: M:PocoEmit.PocoEmitServices.GetReadFunc``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberReader)
+  id: GetReadFunc``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberReader)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetReadFunc<TInstance, TValue>(IPoco, IEmitMemberReader)
+  nameWithType: PocoEmitServices.GetReadFunc<TInstance, TValue>(IPoco, IEmitMemberReader)
+  fullName: PocoEmit.PocoEmitServices.GetReadFunc<TInstance, TValue>(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberReader)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReadMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetReadFunc
+    path: ../PocoEmit/ReadMemberServices.cs
+    startLine: 53
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 读成员委托
+  example: []
+  syntax:
+    content: public static Func<TInstance, TValue> GetReadFunc<TInstance, TValue>(this IPoco poco, IEmitMemberReader emitReader)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: emitReader
+      type: PocoEmit.Members.IEmitMemberReader
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Func{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetReadFunc(Of TInstance, TValue)(poco As IPoco, emitReader As IEmitMemberReader) As Func(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetReadFunc*
+  nameWithType.vb: PocoEmitServices.GetReadFunc(Of TInstance, TValue)(IPoco, IEmitMemberReader)
+  fullName.vb: PocoEmit.PocoEmitServices.GetReadFunc(Of TInstance, TValue)(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberReader)
+  name.vb: GetReadFunc(Of TInstance, TValue)(IPoco, IEmitMemberReader)
+- uid: PocoEmit.PocoEmitServices.GetMemberReader``2(PocoEmit.IPoco,System.String)
+  commentId: M:PocoEmit.PocoEmitServices.GetMemberReader``2(PocoEmit.IPoco,System.String)
+  id: GetMemberReader``2(PocoEmit.IPoco,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetMemberReader<TInstance, TValue>(IPoco, string)
+  nameWithType: PocoEmitServices.GetMemberReader<TInstance, TValue>(IPoco, string)
+  fullName: PocoEmit.PocoEmitServices.GetMemberReader<TInstance, TValue>(PocoEmit.IPoco, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReadMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMemberReader
+    path: ../PocoEmit/ReadMemberServices.cs
+    startLine: 83
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取成员读取器
+  example: []
+  syntax:
+    content: public static IMemberReader<TInstance, TValue> GetMemberReader<TInstance, TValue>(this IPoco poco, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: PocoEmit.IMemberReader{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetMemberReader(Of TInstance, TValue)(poco As IPoco, memberName As String) As IMemberReader(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetMemberReader*
+  nameWithType.vb: PocoEmitServices.GetMemberReader(Of TInstance, TValue)(IPoco, String)
+  fullName.vb: PocoEmit.PocoEmitServices.GetMemberReader(Of TInstance, TValue)(PocoEmit.IPoco, String)
+  name.vb: GetMemberReader(Of TInstance, TValue)(IPoco, String)
+- uid: PocoEmit.PocoEmitServices.GetMemberReader``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  commentId: M:PocoEmit.PocoEmitServices.GetMemberReader``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  id: GetMemberReader``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetMemberReader<TInstance, TValue>(IPoco, MemberInfo)
+  nameWithType: PocoEmitServices.GetMemberReader<TInstance, TValue>(IPoco, MemberInfo)
+  fullName: PocoEmit.PocoEmitServices.GetMemberReader<TInstance, TValue>(PocoEmit.IPoco, System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReadMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMemberReader
+    path: ../PocoEmit/ReadMemberServices.cs
+    startLine: 98
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取成员读取器
+  example: []
+  syntax:
+    content: public static IMemberReader<TInstance, TValue> GetMemberReader<TInstance, TValue>(this IPoco poco, MemberInfo member)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: member
+      type: System.Reflection.MemberInfo
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: PocoEmit.IMemberReader{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetMemberReader(Of TInstance, TValue)(poco As IPoco, member As MemberInfo) As IMemberReader(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetMemberReader*
+  nameWithType.vb: PocoEmitServices.GetMemberReader(Of TInstance, TValue)(IPoco, MemberInfo)
+  fullName.vb: PocoEmit.PocoEmitServices.GetMemberReader(Of TInstance, TValue)(PocoEmit.IPoco, System.Reflection.MemberInfo)
+  name.vb: GetMemberReader(Of TInstance, TValue)(IPoco, MemberInfo)
+- uid: PocoEmit.PocoEmitServices.GetMemberReader``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberReader)
+  commentId: M:PocoEmit.PocoEmitServices.GetMemberReader``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberReader)
+  id: GetMemberReader``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberReader)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetMemberReader<TInstance, TValue>(IPoco, IEmitMemberReader)
+  nameWithType: PocoEmitServices.GetMemberReader<TInstance, TValue>(IPoco, IEmitMemberReader)
+  fullName: PocoEmit.PocoEmitServices.GetMemberReader<TInstance, TValue>(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberReader)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReadMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMemberReader
+    path: ../PocoEmit/ReadMemberServices.cs
+    startLine: 113
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取成员读取器
+  example: []
+  syntax:
+    content: public static IMemberReader<TInstance, TValue> GetMemberReader<TInstance, TValue>(this IPoco poco, IEmitMemberReader emitReader)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: emitReader
+      type: PocoEmit.Members.IEmitMemberReader
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: PocoEmit.IMemberReader{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetMemberReader(Of TInstance, TValue)(poco As IPoco, emitReader As IEmitMemberReader) As IMemberReader(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetMemberReader*
+  nameWithType.vb: PocoEmitServices.GetMemberReader(Of TInstance, TValue)(IPoco, IEmitMemberReader)
+  fullName.vb: PocoEmit.PocoEmitServices.GetMemberReader(Of TInstance, TValue)(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberReader)
+  name.vb: GetMemberReader(Of TInstance, TValue)(IPoco, IEmitMemberReader)
+- uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  id: Build``2(PocoEmit.Members.IEmitMemberReader)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: Build<TInstance, TValue>(IEmitMemberReader)
+  nameWithType: PocoEmitServices.Build<TInstance, TValue>(IEmitMemberReader)
+  fullName: PocoEmit.PocoEmitServices.Build<TInstance, TValue>(PocoEmit.Members.IEmitMemberReader)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReadMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Build
+    path: ../PocoEmit/ReadMemberServices.cs
+    startLine: 203
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 转换委托
+  example: []
+  syntax:
+    content: public static Expression<Func<TInstance, TValue>> Build<TInstance, TValue>(this IEmitMemberReader emit)
+    parameters:
+    - id: emit
+      type: PocoEmit.Members.IEmitMemberReader
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{TInstance},{TValue}}}
+      description: ''
+    content.vb: Public Shared Function Build(Of TInstance, TValue)(emit As IEmitMemberReader) As Expression(Of Func(Of TInstance, TValue))
+  overload: PocoEmit.PocoEmitServices.Build*
+  nameWithType.vb: PocoEmitServices.Build(Of TInstance, TValue)(IEmitMemberReader)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberReader)
+  name.vb: Build(Of TInstance, TValue)(IEmitMemberReader)
+- uid: PocoEmit.PocoEmitServices.GetWriteAction``2(PocoEmit.IPoco,System.String)
+  commentId: M:PocoEmit.PocoEmitServices.GetWriteAction``2(PocoEmit.IPoco,System.String)
+  id: GetWriteAction``2(PocoEmit.IPoco,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetWriteAction<TInstance, TValue>(IPoco, string)
+  nameWithType: PocoEmitServices.GetWriteAction<TInstance, TValue>(IPoco, string)
+  fullName: PocoEmit.PocoEmitServices.GetWriteAction<TInstance, TValue>(PocoEmit.IPoco, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetWriteAction
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 写成员委托
+  example: []
+  syntax:
+    content: public static Action<TInstance, TValue> GetWriteAction<TInstance, TValue>(this IPoco poco, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Action{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetWriteAction(Of TInstance, TValue)(poco As IPoco, memberName As String) As Action(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetWriteAction*
+  nameWithType.vb: PocoEmitServices.GetWriteAction(Of TInstance, TValue)(IPoco, String)
+  fullName.vb: PocoEmit.PocoEmitServices.GetWriteAction(Of TInstance, TValue)(PocoEmit.IPoco, String)
+  name.vb: GetWriteAction(Of TInstance, TValue)(IPoco, String)
+- uid: PocoEmit.PocoEmitServices.GetWriteAction``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  commentId: M:PocoEmit.PocoEmitServices.GetWriteAction``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  id: GetWriteAction``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetWriteAction<TInstance, TValue>(IPoco, MemberInfo)
+  nameWithType: PocoEmitServices.GetWriteAction<TInstance, TValue>(IPoco, MemberInfo)
+  fullName: PocoEmit.PocoEmitServices.GetWriteAction<TInstance, TValue>(PocoEmit.IPoco, System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetWriteAction
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 38
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 写成员委托
+  example: []
+  syntax:
+    content: public static Action<TInstance, TValue> GetWriteAction<TInstance, TValue>(this IPoco poco, MemberInfo member)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: member
+      type: System.Reflection.MemberInfo
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Action{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetWriteAction(Of TInstance, TValue)(poco As IPoco, member As MemberInfo) As Action(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetWriteAction*
+  nameWithType.vb: PocoEmitServices.GetWriteAction(Of TInstance, TValue)(IPoco, MemberInfo)
+  fullName.vb: PocoEmit.PocoEmitServices.GetWriteAction(Of TInstance, TValue)(PocoEmit.IPoco, System.Reflection.MemberInfo)
+  name.vb: GetWriteAction(Of TInstance, TValue)(IPoco, MemberInfo)
+- uid: PocoEmit.PocoEmitServices.GetWriteAction``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter)
+  commentId: M:PocoEmit.PocoEmitServices.GetWriteAction``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter)
+  id: GetWriteAction``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetWriteAction<TInstance, TValue>(IPoco, IEmitMemberWriter)
+  nameWithType: PocoEmitServices.GetWriteAction<TInstance, TValue>(IPoco, IEmitMemberWriter)
+  fullName: PocoEmit.PocoEmitServices.GetWriteAction<TInstance, TValue>(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberWriter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetWriteAction
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 53
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 写成员委托
+  example: []
+  syntax:
+    content: public static Action<TInstance, TValue> GetWriteAction<TInstance, TValue>(this IPoco poco, IEmitMemberWriter emitWriter)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: emitWriter
+      type: PocoEmit.Members.IEmitMemberWriter
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Action{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetWriteAction(Of TInstance, TValue)(poco As IPoco, emitWriter As IEmitMemberWriter) As Action(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetWriteAction*
+  nameWithType.vb: PocoEmitServices.GetWriteAction(Of TInstance, TValue)(IPoco, IEmitMemberWriter)
+  fullName.vb: PocoEmit.PocoEmitServices.GetWriteAction(Of TInstance, TValue)(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberWriter)
+  name.vb: GetWriteAction(Of TInstance, TValue)(IPoco, IEmitMemberWriter)
+- uid: PocoEmit.PocoEmitServices.GetMemberWriter``2(PocoEmit.IPoco,System.String)
+  commentId: M:PocoEmit.PocoEmitServices.GetMemberWriter``2(PocoEmit.IPoco,System.String)
+  id: GetMemberWriter``2(PocoEmit.IPoco,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetMemberWriter<TInstance, TValue>(IPoco, string)
+  nameWithType: PocoEmitServices.GetMemberWriter<TInstance, TValue>(IPoco, string)
+  fullName: PocoEmit.PocoEmitServices.GetMemberWriter<TInstance, TValue>(PocoEmit.IPoco, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMemberWriter
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 82
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取成员写入器
+  example: []
+  syntax:
+    content: public static IMemberWriter<TInstance, TValue> GetMemberWriter<TInstance, TValue>(this IPoco poco, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: PocoEmit.IMemberWriter{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetMemberWriter(Of TInstance, TValue)(poco As IPoco, memberName As String) As IMemberWriter(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetMemberWriter*
+  nameWithType.vb: PocoEmitServices.GetMemberWriter(Of TInstance, TValue)(IPoco, String)
+  fullName.vb: PocoEmit.PocoEmitServices.GetMemberWriter(Of TInstance, TValue)(PocoEmit.IPoco, String)
+  name.vb: GetMemberWriter(Of TInstance, TValue)(IPoco, String)
+- uid: PocoEmit.PocoEmitServices.GetMemberWriter``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  commentId: M:PocoEmit.PocoEmitServices.GetMemberWriter``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  id: GetMemberWriter``2(PocoEmit.IPoco,System.Reflection.MemberInfo)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetMemberWriter<TInstance, TValue>(IPoco, MemberInfo)
+  nameWithType: PocoEmitServices.GetMemberWriter<TInstance, TValue>(IPoco, MemberInfo)
+  fullName: PocoEmit.PocoEmitServices.GetMemberWriter<TInstance, TValue>(PocoEmit.IPoco, System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMemberWriter
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 97
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取成员写入器
+  example: []
+  syntax:
+    content: public static IMemberWriter<TInstance, TValue> GetMemberWriter<TInstance, TValue>(this IPoco poco, MemberInfo member)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: member
+      type: System.Reflection.MemberInfo
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: PocoEmit.IMemberWriter{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetMemberWriter(Of TInstance, TValue)(poco As IPoco, member As MemberInfo) As IMemberWriter(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetMemberWriter*
+  nameWithType.vb: PocoEmitServices.GetMemberWriter(Of TInstance, TValue)(IPoco, MemberInfo)
+  fullName.vb: PocoEmit.PocoEmitServices.GetMemberWriter(Of TInstance, TValue)(PocoEmit.IPoco, System.Reflection.MemberInfo)
+  name.vb: GetMemberWriter(Of TInstance, TValue)(IPoco, MemberInfo)
+- uid: PocoEmit.PocoEmitServices.GetMemberWriter``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter)
+  commentId: M:PocoEmit.PocoEmitServices.GetMemberWriter``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter)
+  id: GetMemberWriter``2(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: GetMemberWriter<TInstance, TValue>(IPoco, IEmitMemberWriter)
+  nameWithType: PocoEmitServices.GetMemberWriter<TInstance, TValue>(IPoco, IEmitMemberWriter)
+  fullName: PocoEmit.PocoEmitServices.GetMemberWriter<TInstance, TValue>(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberWriter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMemberWriter
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 112
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取成员写入器
+  example: []
+  syntax:
+    content: public static IMemberWriter<TInstance, TValue> GetMemberWriter<TInstance, TValue>(this IPoco poco, IEmitMemberWriter emitWriter)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: emitWriter
+      type: PocoEmit.Members.IEmitMemberWriter
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: PocoEmit.IMemberWriter{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetMemberWriter(Of TInstance, TValue)(poco As IPoco, emitWriter As IEmitMemberWriter) As IMemberWriter(Of TInstance, TValue)
+  overload: PocoEmit.PocoEmitServices.GetMemberWriter*
+  nameWithType.vb: PocoEmitServices.GetMemberWriter(Of TInstance, TValue)(IPoco, IEmitMemberWriter)
+  fullName.vb: PocoEmit.PocoEmitServices.GetMemberWriter(Of TInstance, TValue)(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberWriter)
+  name.vb: GetMemberWriter(Of TInstance, TValue)(IPoco, IEmitMemberWriter)
+- uid: PocoEmit.PocoEmitServices.CheckType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type,System.Type)
+  commentId: M:PocoEmit.PocoEmitServices.CheckType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type,System.Type)
+  id: CheckType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: CheckType(IPoco, ref IEmitMemberWriter, Type, Type)
+  nameWithType: PocoEmitServices.CheckType(IPoco, ref IEmitMemberWriter, Type, Type)
+  fullName: PocoEmit.PocoEmitServices.CheckType(PocoEmit.IPoco, ref PocoEmit.Members.IEmitMemberWriter, System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CheckType
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 141
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 检查类型
+  example: []
+  syntax:
+    content: public static bool CheckType(this IPoco poco, ref IEmitMemberWriter emitWriter, Type instanceType, Type valueType)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: emitWriter
+      type: PocoEmit.Members.IEmitMemberWriter
+      description: ''
+    - id: instanceType
+      type: System.Type
+      description: ''
+    - id: valueType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function CheckType(poco As IPoco, emitWriter As IEmitMemberWriter, instanceType As Type, valueType As Type) As Boolean
+  overload: PocoEmit.PocoEmitServices.CheckType*
+  nameWithType.vb: PocoEmitServices.CheckType(IPoco, IEmitMemberWriter, Type, Type)
+  fullName.vb: PocoEmit.PocoEmitServices.CheckType(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberWriter, System.Type, System.Type)
+  name.vb: CheckType(IPoco, IEmitMemberWriter, Type, Type)
+- uid: PocoEmit.PocoEmitServices.CheckInstanceType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type)
+  commentId: M:PocoEmit.PocoEmitServices.CheckInstanceType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type)
+  id: CheckInstanceType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: CheckInstanceType(IPoco, ref IEmitMemberWriter, Type)
+  nameWithType: PocoEmitServices.CheckInstanceType(IPoco, ref IEmitMemberWriter, Type)
+  fullName: PocoEmit.PocoEmitServices.CheckInstanceType(PocoEmit.IPoco, ref PocoEmit.Members.IEmitMemberWriter, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CheckInstanceType
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 161
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 检查实例类型是否需要兼容
+  example: []
+  syntax:
+    content: public static bool CheckInstanceType(this IPoco poco, ref IEmitMemberWriter emitWriter, Type instanceType)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: emitWriter
+      type: PocoEmit.Members.IEmitMemberWriter
+      description: ''
+    - id: instanceType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function CheckInstanceType(poco As IPoco, emitWriter As IEmitMemberWriter, instanceType As Type) As Boolean
+  overload: PocoEmit.PocoEmitServices.CheckInstanceType*
+  nameWithType.vb: PocoEmitServices.CheckInstanceType(IPoco, IEmitMemberWriter, Type)
+  fullName.vb: PocoEmit.PocoEmitServices.CheckInstanceType(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberWriter, System.Type)
+  name.vb: CheckInstanceType(IPoco, IEmitMemberWriter, Type)
+- uid: PocoEmit.PocoEmitServices.CheckValueType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type)
+  commentId: M:PocoEmit.PocoEmitServices.CheckValueType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type)
+  id: CheckValueType(PocoEmit.IPoco,PocoEmit.Members.IEmitMemberWriter@,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: CheckValueType(IPoco, ref IEmitMemberWriter, Type)
+  nameWithType: PocoEmitServices.CheckValueType(IPoco, ref IEmitMemberWriter, Type)
+  fullName: PocoEmit.PocoEmitServices.CheckValueType(PocoEmit.IPoco, ref PocoEmit.Members.IEmitMemberWriter, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CheckValueType
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 180
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 检查值类型是否需要转化
+  example: []
+  syntax:
+    content: public static bool CheckValueType(this IPoco poco, ref IEmitMemberWriter emitWriter, Type valueType)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: emitWriter
+      type: PocoEmit.Members.IEmitMemberWriter
+      description: ''
+    - id: valueType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function CheckValueType(poco As IPoco, emitWriter As IEmitMemberWriter, valueType As Type) As Boolean
+  overload: PocoEmit.PocoEmitServices.CheckValueType*
+  nameWithType.vb: PocoEmitServices.CheckValueType(IPoco, IEmitMemberWriter, Type)
+  fullName.vb: PocoEmit.PocoEmitServices.CheckValueType(PocoEmit.IPoco, PocoEmit.Members.IEmitMemberWriter, System.Type)
+  name.vb: CheckValueType(IPoco, IEmitMemberWriter, Type)
+- uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  id: Build``2(PocoEmit.Members.IEmitMemberWriter)
+  isExtensionMethod: true
+  parent: PocoEmit.PocoEmitServices
+  langs:
+  - csharp
+  - vb
+  name: Build<TInstance, TValue>(IEmitMemberWriter)
+  nameWithType: PocoEmitServices.Build<TInstance, TValue>(IEmitMemberWriter)
+  fullName: PocoEmit.PocoEmitServices.Build<TInstance, TValue>(PocoEmit.Members.IEmitMemberWriter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/WriteMemberServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Build
+    path: ../PocoEmit/WriteMemberServices.cs
+    startLine: 201
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 写入委托
+  example: []
+  syntax:
+    content: public static Expression<Action<TInstance, TValue>> Build<TInstance, TValue>(this IEmitMemberWriter emit)
+    parameters:
+    - id: emit
+      type: PocoEmit.Members.IEmitMemberWriter
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression{System.Action{{TInstance},{TValue}}}
+      description: ''
+    content.vb: Public Shared Function Build(Of TInstance, TValue)(emit As IEmitMemberWriter) As Expression(Of Action(Of TInstance, TValue))
+  overload: PocoEmit.PocoEmitServices.Build*
+  nameWithType.vb: PocoEmitServices.Build(Of TInstance, TValue)(IEmitMemberWriter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberWriter)
+  name.vb: Build(Of TInstance, TValue)(IEmitMemberWriter)
+references:
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.PocoEmitServices.GetConverter*
+  commentId: Overload:PocoEmit.PocoEmitServices.GetConverter
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetConverter__2_PocoEmit_IPoco_
+  name: GetConverter
+  nameWithType: PocoEmitServices.GetConverter
+  fullName: PocoEmit.PocoEmitServices.GetConverter
+- uid: PocoEmit.IPoco
+  commentId: T:PocoEmit.IPoco
+  parent: PocoEmit
+  href: PocoEmit.IPoco.html
+  name: IPoco
+  nameWithType: IPoco
+  fullName: PocoEmit.IPoco
+- uid: PocoEmit.IPocoConverter{{TSource},{TDest}}
+  commentId: T:PocoEmit.IPocoConverter{``0,``1}
+  parent: PocoEmit
+  definition: PocoEmit.IPocoConverter`2
+  href: PocoEmit.IPocoConverter-2.html
+  name: IPocoConverter<TSource, TDest>
+  nameWithType: IPocoConverter<TSource, TDest>
+  fullName: PocoEmit.IPocoConverter<TSource, TDest>
+  nameWithType.vb: IPocoConverter(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoConverter(Of TSource, TDest)
+  name.vb: IPocoConverter(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter
+    href: PocoEmit.IPocoConverter-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter
+    href: PocoEmit.IPocoConverter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.IPocoConverter`2
+  commentId: T:PocoEmit.IPocoConverter`2
+  href: PocoEmit.IPocoConverter-2.html
+  name: IPocoConverter<TSource, TDest>
+  nameWithType: IPocoConverter<TSource, TDest>
+  fullName: PocoEmit.IPocoConverter<TSource, TDest>
+  nameWithType.vb: IPocoConverter(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoConverter(Of TSource, TDest)
+  name.vb: IPocoConverter(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter
+    href: PocoEmit.IPocoConverter-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IPocoConverter`2
+    name: IPocoConverter
+    href: PocoEmit.IPocoConverter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.PocoEmitServices.GetObjectConverter*
+  commentId: Overload:PocoEmit.PocoEmitServices.GetObjectConverter
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetObjectConverter_PocoEmit_IPoco_System_Type_System_Type_
+  name: GetObjectConverter
+  nameWithType: PocoEmitServices.GetObjectConverter
+  fullName: PocoEmit.PocoEmitServices.GetObjectConverter
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.PocoEmitServices.GetConvertFunc*
+  commentId: Overload:PocoEmit.PocoEmitServices.GetConvertFunc
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetConvertFunc__2_PocoEmit_IPoco_
+  name: GetConvertFunc
+  nameWithType: PocoEmitServices.GetConvertFunc
+  fullName: PocoEmit.PocoEmitServices.GetConvertFunc
+- uid: System.Func{{TSource},{TDest}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TSource, TDest>
+  nameWithType: Func<TSource, TDest>
+  fullName: System.Func<TSource, TDest>
+  nameWithType.vb: Func(Of TSource, TDest)
+  fullName.vb: System.Func(Of TSource, TDest)
+  name.vb: Func(Of TSource, TDest)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: PocoEmit.PocoEmitServices.Convert*
+  commentId: Overload:PocoEmit.PocoEmitServices.Convert
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Convert__2_PocoEmit_IPoco___0_
+  name: Convert
+  nameWithType: PocoEmitServices.Convert
+  fullName: PocoEmit.PocoEmitServices.Convert
+- uid: '{TSource}'
+  commentId: '!:TSource'
+  definition: TSource
+  name: TSource
+  nameWithType: TSource
+  fullName: TSource
+- uid: '{TDest}'
+  commentId: '!:TDest'
+  definition: TDest
+  name: TDest
+  nameWithType: TDest
+  fullName: TDest
+- uid: TSource
+  name: TSource
+  nameWithType: TSource
+  fullName: TSource
+- uid: TDest
+  name: TDest
+  nameWithType: TDest
+  fullName: TDest
+- uid: PocoEmit.PocoEmitServices.GetEmitConverter*
+  commentId: Overload:PocoEmit.PocoEmitServices.GetEmitConverter
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetEmitConverter__2_PocoEmit_IPoco_
+  name: GetEmitConverter
+  nameWithType: PocoEmitServices.GetEmitConverter
+  fullName: PocoEmit.PocoEmitServices.GetEmitConverter
+- uid: PocoEmit.Converters.IEmitConverter
+  commentId: T:PocoEmit.Converters.IEmitConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IEmitConverter.html
+  name: IEmitConverter
+  nameWithType: IEmitConverter
+  fullName: PocoEmit.Converters.IEmitConverter
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: PocoEmit.PocoEmitServices.Build*
+  commentId: Overload:PocoEmit.PocoEmitServices.Build
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  name: Build
+  nameWithType: PocoEmitServices.Build
+  fullName: PocoEmit.PocoEmitServices.Build
+- uid: System.Linq.Expressions.Expression{System.Func{{TSource},{TDest}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TSource, TDest>>
+  nameWithType: Expression<Func<TSource, TDest>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TSource, TDest>>
+  nameWithType.vb: Expression(Of Func(Of TSource, TDest))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TSource, TDest))
+  name.vb: Expression(Of Func(Of TSource, TDest))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: PocoEmit.PocoEmitServices.UseConvertFunc*
+  commentId: Overload:PocoEmit.PocoEmitServices.UseConvertFunc
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseConvertFunc__2_PocoEmit_IPoco_System_Func___0___1__
+  name: UseConvertFunc
+  nameWithType: PocoEmitServices.UseConvertFunc
+  fullName: PocoEmit.PocoEmitServices.UseConvertFunc
+- uid: PocoEmit.PocoEmitServices.UseStaticConverter*
+  commentId: Overload:PocoEmit.PocoEmitServices.UseStaticConverter
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseStaticConverter__1_PocoEmit_IPoco_
+  name: UseStaticConverter
+  nameWithType: PocoEmitServices.UseStaticConverter
+  fullName: PocoEmit.PocoEmitServices.UseStaticConverter
+- uid: '{TConfiguration}'
+  commentId: '!:TConfiguration'
+  definition: TConfiguration
+  name: TConfiguration
+  nameWithType: TConfiguration
+  fullName: TConfiguration
+- uid: TConfiguration
+  name: TConfiguration
+  nameWithType: TConfiguration
+  fullName: TConfiguration
+- uid: PocoEmit.PocoEmitServices.UseConverter*
+  commentId: Overload:PocoEmit.PocoEmitServices.UseConverter
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseConverter__1___0_System_Object_
+  name: UseConverter
+  nameWithType: PocoEmitServices.UseConverter
+  fullName: PocoEmit.PocoEmitServices.UseConverter
+- uid: PocoEmit.PocoEmitServices.UseSystemConvert*
+  commentId: Overload:PocoEmit.PocoEmitServices.UseSystemConvert
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseSystemConvert__1___0_
+  name: UseSystemConvert
+  nameWithType: PocoEmitServices.UseSystemConvert
+  fullName: PocoEmit.PocoEmitServices.UseSystemConvert
+- uid: PocoEmit.PocoEmitServices.SetStringConvert*
+  commentId: Overload:PocoEmit.PocoEmitServices.SetStringConvert
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_SetStringConvert__1___0_
+  name: SetStringConvert
+  nameWithType: PocoEmitServices.SetStringConvert
+  fullName: PocoEmit.PocoEmitServices.SetStringConvert
+- uid: PocoEmit.PocoEmitServices.GetReadFunc*
+  commentId: Overload:PocoEmit.PocoEmitServices.GetReadFunc
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetReadFunc__2_PocoEmit_IPoco_System_String_
+  name: GetReadFunc
+  nameWithType: PocoEmitServices.GetReadFunc
+  fullName: PocoEmit.PocoEmitServices.GetReadFunc
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Func{{TInstance},{TValue}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TInstance, TValue>
+  nameWithType: Func<TInstance, TValue>
+  fullName: System.Func<TInstance, TValue>
+  nameWithType.vb: Func(Of TInstance, TValue)
+  fullName.vb: System.Func(Of TInstance, TValue)
+  name.vb: Func(Of TInstance, TValue)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Reflection.MemberInfo
+  commentId: T:System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  name: MemberInfo
+  nameWithType: MemberInfo
+  fullName: System.Reflection.MemberInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.Members.IEmitMemberReader
+  commentId: T:PocoEmit.Members.IEmitMemberReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberReader.html
+  name: IEmitMemberReader
+  nameWithType: IEmitMemberReader
+  fullName: PocoEmit.Members.IEmitMemberReader
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: PocoEmit.PocoEmitServices.GetMemberReader*
+  commentId: Overload:PocoEmit.PocoEmitServices.GetMemberReader
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberReader__2_PocoEmit_IPoco_System_String_
+  name: GetMemberReader
+  nameWithType: PocoEmitServices.GetMemberReader
+  fullName: PocoEmit.PocoEmitServices.GetMemberReader
+- uid: PocoEmit.IMemberReader{{TInstance},{TValue}}
+  commentId: T:PocoEmit.IMemberReader{``0,``1}
+  parent: PocoEmit
+  definition: PocoEmit.IMemberReader`2
+  href: PocoEmit.IMemberReader-2.html
+  name: IMemberReader<TInstance, TValue>
+  nameWithType: IMemberReader<TInstance, TValue>
+  fullName: PocoEmit.IMemberReader<TInstance, TValue>
+  nameWithType.vb: IMemberReader(Of TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberReader(Of TInstance, TValue)
+  name.vb: IMemberReader(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.IMemberReader`2
+    name: IMemberReader
+    href: PocoEmit.IMemberReader-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IMemberReader`2
+    name: IMemberReader
+    href: PocoEmit.IMemberReader-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.IMemberReader`2
+  commentId: T:PocoEmit.IMemberReader`2
+  href: PocoEmit.IMemberReader-2.html
+  name: IMemberReader<TInstance, TValue>
+  nameWithType: IMemberReader<TInstance, TValue>
+  fullName: PocoEmit.IMemberReader<TInstance, TValue>
+  nameWithType.vb: IMemberReader(Of TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberReader(Of TInstance, TValue)
+  name.vb: IMemberReader(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.IMemberReader`2
+    name: IMemberReader
+    href: PocoEmit.IMemberReader-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IMemberReader`2
+    name: IMemberReader
+    href: PocoEmit.IMemberReader-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Linq.Expressions.Expression{System.Func{{TInstance},{TValue}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TInstance, TValue>>
+  nameWithType: Expression<Func<TInstance, TValue>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TInstance, TValue>>
+  nameWithType.vb: Expression(Of Func(Of TInstance, TValue))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TInstance, TValue))
+  name.vb: Expression(Of Func(Of TInstance, TValue))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: PocoEmit.PocoEmitServices.GetWriteAction*
+  commentId: Overload:PocoEmit.PocoEmitServices.GetWriteAction
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetWriteAction__2_PocoEmit_IPoco_System_String_
+  name: GetWriteAction
+  nameWithType: PocoEmitServices.GetWriteAction
+  fullName: PocoEmit.PocoEmitServices.GetWriteAction
+- uid: System.Action{{TInstance},{TValue}}
+  commentId: T:System.Action{``0,``1}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TInstance, TValue>
+  nameWithType: Action<TInstance, TValue>
+  fullName: System.Action<TInstance, TValue>
+  nameWithType.vb: Action(Of TInstance, TValue)
+  fullName.vb: System.Action(Of TInstance, TValue)
+  name.vb: Action(Of TInstance, TValue)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: PocoEmit.Members.IEmitMemberWriter
+  commentId: T:PocoEmit.Members.IEmitMemberWriter
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberWriter.html
+  name: IEmitMemberWriter
+  nameWithType: IEmitMemberWriter
+  fullName: PocoEmit.Members.IEmitMemberWriter
+- uid: PocoEmit.PocoEmitServices.GetMemberWriter*
+  commentId: Overload:PocoEmit.PocoEmitServices.GetMemberWriter
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberWriter__2_PocoEmit_IPoco_System_String_
+  name: GetMemberWriter
+  nameWithType: PocoEmitServices.GetMemberWriter
+  fullName: PocoEmit.PocoEmitServices.GetMemberWriter
+- uid: PocoEmit.IMemberWriter{{TInstance},{TValue}}
+  commentId: T:PocoEmit.IMemberWriter{``0,``1}
+  parent: PocoEmit
+  definition: PocoEmit.IMemberWriter`2
+  href: PocoEmit.IMemberWriter-2.html
+  name: IMemberWriter<TInstance, TValue>
+  nameWithType: IMemberWriter<TInstance, TValue>
+  fullName: PocoEmit.IMemberWriter<TInstance, TValue>
+  nameWithType.vb: IMemberWriter(Of TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberWriter(Of TInstance, TValue)
+  name.vb: IMemberWriter(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter
+    href: PocoEmit.IMemberWriter-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter
+    href: PocoEmit.IMemberWriter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.IMemberWriter`2
+  commentId: T:PocoEmit.IMemberWriter`2
+  href: PocoEmit.IMemberWriter-2.html
+  name: IMemberWriter<TInstance, TValue>
+  nameWithType: IMemberWriter<TInstance, TValue>
+  fullName: PocoEmit.IMemberWriter<TInstance, TValue>
+  nameWithType.vb: IMemberWriter(Of TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberWriter(Of TInstance, TValue)
+  name.vb: IMemberWriter(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter
+    href: PocoEmit.IMemberWriter-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter
+    href: PocoEmit.IMemberWriter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.PocoEmitServices.CheckType*
+  commentId: Overload:PocoEmit.PocoEmitServices.CheckType
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter__System_Type_System_Type_
+  name: CheckType
+  nameWithType: PocoEmitServices.CheckType
+  fullName: PocoEmit.PocoEmitServices.CheckType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PocoEmit.PocoEmitServices.CheckInstanceType*
+  commentId: Overload:PocoEmit.PocoEmitServices.CheckInstanceType
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckInstanceType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter__System_Type_
+  name: CheckInstanceType
+  nameWithType: PocoEmitServices.CheckInstanceType
+  fullName: PocoEmit.PocoEmitServices.CheckInstanceType
+- uid: PocoEmit.PocoEmitServices.CheckValueType*
+  commentId: Overload:PocoEmit.PocoEmitServices.CheckValueType
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckValueType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter__System_Type_
+  name: CheckValueType
+  nameWithType: PocoEmitServices.CheckValueType
+  fullName: PocoEmit.PocoEmitServices.CheckValueType
+- uid: System.Linq.Expressions.Expression{System.Action{{TInstance},{TValue}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Action{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Action<TInstance, TValue>>
+  nameWithType: Expression<Action<TInstance, TValue>>
+  fullName: System.Linq.Expressions.Expression<System.Action<TInstance, TValue>>
+  nameWithType.vb: Expression(Of Action(Of TInstance, TValue))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Action(Of TInstance, TValue))
+  name.vb: Expression(Of Action(Of TInstance, TValue))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )

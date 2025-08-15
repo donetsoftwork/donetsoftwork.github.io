@@ -1,0 +1,586 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.InstanceHelper
+  commentId: T:PocoEmit.InstanceHelper
+  id: InstanceHelper
+  parent: PocoEmit
+  children:
+  - PocoEmit.InstanceHelper.GetReadFunc(System.Reflection.MemberInfo)
+  - PocoEmit.InstanceHelper.GetReadFunc``2(System.Reflection.MemberInfo)
+  - PocoEmit.InstanceHelper.GetReadFunc``2(System.String)
+  - PocoEmit.InstanceHelper.GetWriteAction(System.Reflection.MemberInfo)
+  - PocoEmit.InstanceHelper.GetWriteAction``2(System.Reflection.MemberInfo)
+  - PocoEmit.InstanceHelper.GetWriteAction``2(System.String)
+  langs:
+  - csharp
+  - vb
+  name: InstanceHelper
+  nameWithType: InstanceHelper
+  fullName: PocoEmit.InstanceHelper
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/InstanceHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: InstanceHelper
+    path: ../PocoEmit/InstanceHelper.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: Emit实例成员帮助类
+  example: []
+  syntax:
+    content: public static class InstanceHelper
+    content.vb: Public Module InstanceHelper
+  inheritance:
+  - System.Object
+- uid: PocoEmit.InstanceHelper.GetReadFunc``2(System.String)
+  commentId: M:PocoEmit.InstanceHelper.GetReadFunc``2(System.String)
+  id: GetReadFunc``2(System.String)
+  parent: PocoEmit.InstanceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetReadFunc<TInstance, TValue>(string)
+  nameWithType: InstanceHelper.GetReadFunc<TInstance, TValue>(string)
+  fullName: PocoEmit.InstanceHelper.GetReadFunc<TInstance, TValue>(string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/InstanceHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetReadFunc
+    path: ../PocoEmit/InstanceHelper.cs
+    startLine: 17
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 读取实例成员
+  example: []
+  syntax:
+    content: public static Func<TInstance, TValue> GetReadFunc<TInstance, TValue>(string memberName)
+    parameters:
+    - id: memberName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Func{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetReadFunc(Of TInstance, TValue)(memberName As String) As Func(Of TInstance, TValue)
+  overload: PocoEmit.InstanceHelper.GetReadFunc*
+  nameWithType.vb: InstanceHelper.GetReadFunc(Of TInstance, TValue)(String)
+  fullName.vb: PocoEmit.InstanceHelper.GetReadFunc(Of TInstance, TValue)(String)
+  name.vb: GetReadFunc(Of TInstance, TValue)(String)
+- uid: PocoEmit.InstanceHelper.GetWriteAction``2(System.String)
+  commentId: M:PocoEmit.InstanceHelper.GetWriteAction``2(System.String)
+  id: GetWriteAction``2(System.String)
+  parent: PocoEmit.InstanceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetWriteAction<TInstance, TValue>(string)
+  nameWithType: InstanceHelper.GetWriteAction<TInstance, TValue>(string)
+  fullName: PocoEmit.InstanceHelper.GetWriteAction<TInstance, TValue>(string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/InstanceHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetWriteAction
+    path: ../PocoEmit/InstanceHelper.cs
+    startLine: 26
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 写入实例成员
+  example: []
+  syntax:
+    content: public static Action<TInstance, TValue> GetWriteAction<TInstance, TValue>(string memberName)
+    parameters:
+    - id: memberName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Action{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetWriteAction(Of TInstance, TValue)(memberName As String) As Action(Of TInstance, TValue)
+  overload: PocoEmit.InstanceHelper.GetWriteAction*
+  nameWithType.vb: InstanceHelper.GetWriteAction(Of TInstance, TValue)(String)
+  fullName.vb: PocoEmit.InstanceHelper.GetWriteAction(Of TInstance, TValue)(String)
+  name.vb: GetWriteAction(Of TInstance, TValue)(String)
+- uid: PocoEmit.InstanceHelper.GetReadFunc``2(System.Reflection.MemberInfo)
+  commentId: M:PocoEmit.InstanceHelper.GetReadFunc``2(System.Reflection.MemberInfo)
+  id: GetReadFunc``2(System.Reflection.MemberInfo)
+  parent: PocoEmit.InstanceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetReadFunc<TInstance, TValue>(MemberInfo)
+  nameWithType: InstanceHelper.GetReadFunc<TInstance, TValue>(MemberInfo)
+  fullName: PocoEmit.InstanceHelper.GetReadFunc<TInstance, TValue>(System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/InstanceHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetReadFunc
+    path: ../PocoEmit/InstanceHelper.cs
+    startLine: 35
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 读属性
+  example: []
+  syntax:
+    content: public static Func<TInstance, TValue> GetReadFunc<TInstance, TValue>(MemberInfo member)
+    parameters:
+    - id: member
+      type: System.Reflection.MemberInfo
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Func{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetReadFunc(Of TInstance, TValue)(member As MemberInfo) As Func(Of TInstance, TValue)
+  overload: PocoEmit.InstanceHelper.GetReadFunc*
+  nameWithType.vb: InstanceHelper.GetReadFunc(Of TInstance, TValue)(MemberInfo)
+  fullName.vb: PocoEmit.InstanceHelper.GetReadFunc(Of TInstance, TValue)(System.Reflection.MemberInfo)
+  name.vb: GetReadFunc(Of TInstance, TValue)(MemberInfo)
+- uid: PocoEmit.InstanceHelper.GetWriteAction``2(System.Reflection.MemberInfo)
+  commentId: M:PocoEmit.InstanceHelper.GetWriteAction``2(System.Reflection.MemberInfo)
+  id: GetWriteAction``2(System.Reflection.MemberInfo)
+  parent: PocoEmit.InstanceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetWriteAction<TInstance, TValue>(MemberInfo)
+  nameWithType: InstanceHelper.GetWriteAction<TInstance, TValue>(MemberInfo)
+  fullName: PocoEmit.InstanceHelper.GetWriteAction<TInstance, TValue>(System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/InstanceHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetWriteAction
+    path: ../PocoEmit/InstanceHelper.cs
+    startLine: 44
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 写属性
+  example: []
+  syntax:
+    content: public static Action<TInstance, TValue> GetWriteAction<TInstance, TValue>(MemberInfo member)
+    parameters:
+    - id: member
+      type: System.Reflection.MemberInfo
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    - id: TValue
+      description: ''
+    return:
+      type: System.Action{{TInstance},{TValue}}
+      description: ''
+    content.vb: Public Shared Function GetWriteAction(Of TInstance, TValue)(member As MemberInfo) As Action(Of TInstance, TValue)
+  overload: PocoEmit.InstanceHelper.GetWriteAction*
+  nameWithType.vb: InstanceHelper.GetWriteAction(Of TInstance, TValue)(MemberInfo)
+  fullName.vb: PocoEmit.InstanceHelper.GetWriteAction(Of TInstance, TValue)(System.Reflection.MemberInfo)
+  name.vb: GetWriteAction(Of TInstance, TValue)(MemberInfo)
+- uid: PocoEmit.InstanceHelper.GetReadFunc(System.Reflection.MemberInfo)
+  commentId: M:PocoEmit.InstanceHelper.GetReadFunc(System.Reflection.MemberInfo)
+  id: GetReadFunc(System.Reflection.MemberInfo)
+  parent: PocoEmit.InstanceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetReadFunc(MemberInfo)
+  nameWithType: InstanceHelper.GetReadFunc(MemberInfo)
+  fullName: PocoEmit.InstanceHelper.GetReadFunc(System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/InstanceHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetReadFunc
+    path: ../PocoEmit/InstanceHelper.cs
+    startLine: 51
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 读成员
+  example: []
+  syntax:
+    content: public static Func<object, object> GetReadFunc(MemberInfo member)
+    parameters:
+    - id: member
+      type: System.Reflection.MemberInfo
+      description: ''
+    return:
+      type: System.Func{System.Object,System.Object}
+      description: ''
+    content.vb: Public Shared Function GetReadFunc(member As MemberInfo) As Func(Of Object, Object)
+  overload: PocoEmit.InstanceHelper.GetReadFunc*
+- uid: PocoEmit.InstanceHelper.GetWriteAction(System.Reflection.MemberInfo)
+  commentId: M:PocoEmit.InstanceHelper.GetWriteAction(System.Reflection.MemberInfo)
+  id: GetWriteAction(System.Reflection.MemberInfo)
+  parent: PocoEmit.InstanceHelper
+  langs:
+  - csharp
+  - vb
+  name: GetWriteAction(MemberInfo)
+  nameWithType: InstanceHelper.GetWriteAction(MemberInfo)
+  fullName: PocoEmit.InstanceHelper.GetWriteAction(System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/InstanceHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetWriteAction
+    path: ../PocoEmit/InstanceHelper.cs
+    startLine: 58
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 写成员
+  example: []
+  syntax:
+    content: public static Action<object, object> GetWriteAction(MemberInfo member)
+    parameters:
+    - id: member
+      type: System.Reflection.MemberInfo
+      description: ''
+    return:
+      type: System.Action{System.Object,System.Object}
+      description: ''
+    content.vb: Public Shared Function GetWriteAction(member As MemberInfo) As Action(Of Object, Object)
+  overload: PocoEmit.InstanceHelper.GetWriteAction*
+references:
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.InstanceHelper.GetReadFunc*
+  commentId: Overload:PocoEmit.InstanceHelper.GetReadFunc
+  href: PocoEmit.InstanceHelper.html#PocoEmit_InstanceHelper_GetReadFunc__2_System_String_
+  name: GetReadFunc
+  nameWithType: InstanceHelper.GetReadFunc
+  fullName: PocoEmit.InstanceHelper.GetReadFunc
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Func{{TInstance},{TValue}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TInstance, TValue>
+  nameWithType: Func<TInstance, TValue>
+  fullName: System.Func<TInstance, TValue>
+  nameWithType.vb: Func(Of TInstance, TValue)
+  fullName.vb: System.Func(Of TInstance, TValue)
+  name.vb: Func(Of TInstance, TValue)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: PocoEmit.InstanceHelper.GetWriteAction*
+  commentId: Overload:PocoEmit.InstanceHelper.GetWriteAction
+  href: PocoEmit.InstanceHelper.html#PocoEmit_InstanceHelper_GetWriteAction__2_System_String_
+  name: GetWriteAction
+  nameWithType: InstanceHelper.GetWriteAction
+  fullName: PocoEmit.InstanceHelper.GetWriteAction
+- uid: System.Action{{TInstance},{TValue}}
+  commentId: T:System.Action{``0,``1}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TInstance, TValue>
+  nameWithType: Action<TInstance, TValue>
+  fullName: System.Action<TInstance, TValue>
+  nameWithType.vb: Action(Of TInstance, TValue)
+  fullName.vb: System.Action(Of TInstance, TValue)
+  name.vb: Action(Of TInstance, TValue)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Reflection.MemberInfo
+  commentId: T:System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  name: MemberInfo
+  nameWithType: MemberInfo
+  fullName: System.Reflection.MemberInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Func{System.Object,System.Object}
+  commentId: T:System.Func{System.Object,System.Object}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<object, object>
+  nameWithType: Func<object, object>
+  fullName: System.Func<object, object>
+  nameWithType.vb: Func(Of Object, Object)
+  fullName.vb: System.Func(Of Object, Object)
+  name.vb: Func(Of Object, Object)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Action{System.Object,System.Object}
+  commentId: T:System.Action{System.Object,System.Object}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<object, object>
+  nameWithType: Action<object, object>
+  fullName: System.Action<object, object>
+  nameWithType.vb: Action(Of Object, Object)
+  fullName.vb: System.Action(Of Object, Object)
+  name.vb: Action(Of Object, Object)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )

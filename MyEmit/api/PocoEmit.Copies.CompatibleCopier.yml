@@ -1,0 +1,615 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Copies.CompatibleCopier
+  commentId: T:PocoEmit.Copies.CompatibleCopier
+  id: CompatibleCopier
+  parent: PocoEmit.Copies
+  children:
+  - PocoEmit.Copies.CompatibleCopier.#ctor(PocoEmit.Copies.IEmitCopier,System.Type,System.Type)
+  - PocoEmit.Copies.CompatibleCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  - PocoEmit.Copies.CompatibleCopier.DestType
+  - PocoEmit.Copies.CompatibleCopier.Inner
+  - PocoEmit.Copies.CompatibleCopier.InnerSourceType
+  langs:
+  - csharp
+  - vb
+  name: CompatibleCopier
+  nameWithType: CompatibleCopier
+  fullName: PocoEmit.Copies.CompatibleCopier
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/CompatibleCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CompatibleCopier
+    path: ../PocoEmit.Mapper/Copies/CompatibleCopier.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 兼容类型转化
+  example: []
+  syntax:
+    content: 'public sealed class CompatibleCopier : IEmitCopier, ICompileInfo'
+    content.vb: Public NotInheritable Class CompatibleCopier Implements IEmitCopier, ICompileInfo
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Copies.IEmitCopier
+  - PocoEmit.Configuration.ICompileInfo
+  extensionMethods:
+  - PocoEmit.Copies.IEmitCopier.PocoEmit.MapperServices.Build``2
+- uid: PocoEmit.Copies.CompatibleCopier.#ctor(PocoEmit.Copies.IEmitCopier,System.Type,System.Type)
+  commentId: M:PocoEmit.Copies.CompatibleCopier.#ctor(PocoEmit.Copies.IEmitCopier,System.Type,System.Type)
+  id: '#ctor(PocoEmit.Copies.IEmitCopier,System.Type,System.Type)'
+  parent: PocoEmit.Copies.CompatibleCopier
+  langs:
+  - csharp
+  - vb
+  name: CompatibleCopier(IEmitCopier, Type, Type)
+  nameWithType: CompatibleCopier.CompatibleCopier(IEmitCopier, Type, Type)
+  fullName: PocoEmit.Copies.CompatibleCopier.CompatibleCopier(PocoEmit.Copies.IEmitCopier, System.Type, System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/CompatibleCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Copies/CompatibleCopier.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 兼容类型转化
+  example: []
+  syntax:
+    content: public CompatibleCopier(IEmitCopier inner, Type innerSourceType, Type destType)
+    parameters:
+    - id: inner
+      type: PocoEmit.Copies.IEmitCopier
+      description: ''
+    - id: innerSourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    content.vb: Public Sub New(inner As IEmitCopier, innerSourceType As Type, destType As Type)
+  overload: PocoEmit.Copies.CompatibleCopier.#ctor*
+  nameWithType.vb: CompatibleCopier.New(IEmitCopier, Type, Type)
+  fullName.vb: PocoEmit.Copies.CompatibleCopier.New(PocoEmit.Copies.IEmitCopier, System.Type, System.Type)
+  name.vb: New(IEmitCopier, Type, Type)
+- uid: PocoEmit.Copies.CompatibleCopier.Inner
+  commentId: P:PocoEmit.Copies.CompatibleCopier.Inner
+  id: Inner
+  parent: PocoEmit.Copies.CompatibleCopier
+  langs:
+  - csharp
+  - vb
+  name: Inner
+  nameWithType: CompatibleCopier.Inner
+  fullName: PocoEmit.Copies.CompatibleCopier.Inner
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/CompatibleCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Inner
+    path: ../PocoEmit.Mapper/Copies/CompatibleCopier.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 内部转换器
+  example: []
+  syntax:
+    content: public IEmitCopier Inner { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Copies.IEmitCopier
+    content.vb: Public ReadOnly Property Inner As IEmitCopier
+  overload: PocoEmit.Copies.CompatibleCopier.Inner*
+- uid: PocoEmit.Copies.CompatibleCopier.InnerSourceType
+  commentId: P:PocoEmit.Copies.CompatibleCopier.InnerSourceType
+  id: InnerSourceType
+  parent: PocoEmit.Copies.CompatibleCopier
+  langs:
+  - csharp
+  - vb
+  name: InnerSourceType
+  nameWithType: CompatibleCopier.InnerSourceType
+  fullName: PocoEmit.Copies.CompatibleCopier.InnerSourceType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/CompatibleCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: InnerSourceType
+    path: ../PocoEmit.Mapper/Copies/CompatibleCopier.cs
+    startLine: 28
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 内部转换器源类型
+  example: []
+  syntax:
+    content: public Type InnerSourceType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property InnerSourceType As Type
+  overload: PocoEmit.Copies.CompatibleCopier.InnerSourceType*
+- uid: PocoEmit.Copies.CompatibleCopier.DestType
+  commentId: P:PocoEmit.Copies.CompatibleCopier.DestType
+  id: DestType
+  parent: PocoEmit.Copies.CompatibleCopier
+  langs:
+  - csharp
+  - vb
+  name: DestType
+  nameWithType: CompatibleCopier.DestType
+  fullName: PocoEmit.Copies.CompatibleCopier.DestType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/CompatibleCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: DestType
+    path: ../PocoEmit.Mapper/Copies/CompatibleCopier.cs
+    startLine: 33
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 映射目标类型
+  example: []
+  syntax:
+    content: public Type DestType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property DestType As Type
+  overload: PocoEmit.Copies.CompatibleCopier.DestType*
+- uid: PocoEmit.Copies.CompatibleCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Copies.CompatibleCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  id: Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Copies.CompatibleCopier
+  langs:
+  - csharp
+  - vb
+  name: Copy(Expression, Expression)
+  nameWithType: CompatibleCopier.Copy(Expression, Expression)
+  fullName: PocoEmit.Copies.CompatibleCopier.Copy(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/CompatibleCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Copy
+    path: ../PocoEmit.Mapper/Copies/CompatibleCopier.cs
+    startLine: 40
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 复制
+  example: []
+  syntax:
+    content: public IEnumerable<Expression> Copy(Expression source, Expression dest)
+    parameters:
+    - id: source
+      type: System.Linq.Expressions.Expression
+      description: 源
+    - id: dest
+      type: System.Linq.Expressions.Expression
+      description: 目标
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression}
+      description: ''
+    content.vb: Public Function Copy(source As Expression, dest As Expression) As IEnumerable(Of Expression)
+  overload: PocoEmit.Copies.CompatibleCopier.Copy*
+  implements:
+  - PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Copies.IEmitCopier
+  commentId: T:PocoEmit.Copies.IEmitCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IEmitCopier.html
+  name: IEmitCopier
+  nameWithType: IEmitCopier
+  fullName: PocoEmit.Copies.IEmitCopier
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Copies.IEmitCopier.PocoEmit.MapperServices.Build``2
+  commentId: M:PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  parent: PocoEmit.MapperServices
+  definition: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  name: Build<TSource, TDest>(IEmitCopier)
+  nameWithType: MapperServices.Build<TSource, TDest>(IEmitCopier)
+  fullName: PocoEmit.MapperServices.Build<TSource, TDest>(PocoEmit.Copies.IEmitCopier)
+  nameWithType.vb: MapperServices.Build(Of TSource, TDest)(IEmitCopier)
+  fullName.vb: PocoEmit.MapperServices.Build(Of TSource, TDest)(PocoEmit.Copies.IEmitCopier)
+  name.vb: Build(Of TSource, TDest)(IEmitCopier)
+  spec.csharp:
+  - uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+    name: Build
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+    name: Build
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  commentId: M:PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  name: Build<TSource, TDest>(IEmitCopier)
+  nameWithType: MapperServices.Build<TSource, TDest>(IEmitCopier)
+  fullName: PocoEmit.MapperServices.Build<TSource, TDest>(PocoEmit.Copies.IEmitCopier)
+  nameWithType.vb: MapperServices.Build(Of TSource, TDest)(IEmitCopier)
+  fullName.vb: PocoEmit.MapperServices.Build(Of TSource, TDest)(PocoEmit.Copies.IEmitCopier)
+  name.vb: Build(Of TSource, TDest)(IEmitCopier)
+  spec.csharp:
+  - uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+    name: Build
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+    name: Build
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+- uid: PocoEmit.MapperServices
+  commentId: T:PocoEmit.MapperServices
+  parent: PocoEmit
+  href: PocoEmit.MapperServices.html
+  name: MapperServices
+  nameWithType: MapperServices
+  fullName: PocoEmit.MapperServices
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.Copies.CompatibleCopier.#ctor*
+  commentId: Overload:PocoEmit.Copies.CompatibleCopier.#ctor
+  href: PocoEmit.Copies.CompatibleCopier.html#PocoEmit_Copies_CompatibleCopier__ctor_PocoEmit_Copies_IEmitCopier_System_Type_System_Type_
+  name: CompatibleCopier
+  nameWithType: CompatibleCopier.CompatibleCopier
+  fullName: PocoEmit.Copies.CompatibleCopier.CompatibleCopier
+  nameWithType.vb: CompatibleCopier.New
+  fullName.vb: PocoEmit.Copies.CompatibleCopier.New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Copies.CompatibleCopier.Inner*
+  commentId: Overload:PocoEmit.Copies.CompatibleCopier.Inner
+  href: PocoEmit.Copies.CompatibleCopier.html#PocoEmit_Copies_CompatibleCopier_Inner
+  name: Inner
+  nameWithType: CompatibleCopier.Inner
+  fullName: PocoEmit.Copies.CompatibleCopier.Inner
+- uid: PocoEmit.Copies.CompatibleCopier.InnerSourceType*
+  commentId: Overload:PocoEmit.Copies.CompatibleCopier.InnerSourceType
+  href: PocoEmit.Copies.CompatibleCopier.html#PocoEmit_Copies_CompatibleCopier_InnerSourceType
+  name: InnerSourceType
+  nameWithType: CompatibleCopier.InnerSourceType
+  fullName: PocoEmit.Copies.CompatibleCopier.InnerSourceType
+- uid: PocoEmit.Copies.CompatibleCopier.DestType*
+  commentId: Overload:PocoEmit.Copies.CompatibleCopier.DestType
+  href: PocoEmit.Copies.CompatibleCopier.html#PocoEmit_Copies_CompatibleCopier_DestType
+  name: DestType
+  nameWithType: CompatibleCopier.DestType
+  fullName: PocoEmit.Copies.CompatibleCopier.DestType
+- uid: PocoEmit.Copies.CompatibleCopier.Copy*
+  commentId: Overload:PocoEmit.Copies.CompatibleCopier.Copy
+  href: PocoEmit.Copies.CompatibleCopier.html#PocoEmit_Copies_CompatibleCopier_Copy_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Copy
+  nameWithType: CompatibleCopier.Copy
+  fullName: PocoEmit.Copies.CompatibleCopier.Copy
+- uid: PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Copies.IEmitCopier
+  isExternal: true
+  href: PocoEmit.Copies.IEmitCopier.html#PocoEmit_Copies_IEmitCopier_Copy_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Copy(Expression, Expression)
+  nameWithType: IEmitCopier.Copy(Expression, Expression)
+  fullName: PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Copy
+    href: PocoEmit.Copies.IEmitCopier.html#PocoEmit_Copies_IEmitCopier_Copy_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Copy
+    href: PocoEmit.Copies.IEmitCopier.html#PocoEmit_Copies_IEmitCopier_Copy_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Expression>
+  nameWithType: IEnumerable<Expression>
+  fullName: System.Collections.Generic.IEnumerable<System.Linq.Expressions.Expression>
+  nameWithType.vb: IEnumerable(Of Expression)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Linq.Expressions.Expression)
+  name.vb: IEnumerable(Of Expression)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

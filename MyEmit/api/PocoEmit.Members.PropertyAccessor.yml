@@ -1,0 +1,784 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Members.PropertyAccessor
+  commentId: T:PocoEmit.Members.PropertyAccessor
+  id: PropertyAccessor
+  parent: PocoEmit.Members
+  children:
+  - PocoEmit.Members.PropertyAccessor.#ctor(System.Reflection.PropertyInfo)
+  - PocoEmit.Members.PropertyAccessor.Read(System.Linq.Expressions.Expression)
+  - PocoEmit.Members.PropertyAccessor.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  langs:
+  - csharp
+  - vb
+  name: PropertyAccessor
+  nameWithType: PropertyAccessor
+  fullName: PocoEmit.Members.PropertyAccessor
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Members/PropertyAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: PropertyAccessor
+    path: ../PocoEmit/Members/PropertyAccessor.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 读取属性
+  example: []
+  syntax:
+    content: 'public class PropertyAccessor : MemberAccessor<PropertyInfo>, IEmitMemberReader, IEmitReader, IEmitMemberWriter, IMember, IEmitWriter, ICompileInfo'
+    content.vb: Public Class PropertyAccessor Inherits MemberAccessor(Of PropertyInfo) Implements IEmitMemberReader, IEmitReader, IEmitMemberWriter, IMember, IEmitWriter, ICompileInfo
+  inheritance:
+  - System.Object
+  - PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}
+  implements:
+  - PocoEmit.Members.IEmitMemberReader
+  - PocoEmit.Members.IEmitReader
+  - PocoEmit.Members.IEmitMemberWriter
+  - PocoEmit.Members.IMember
+  - PocoEmit.Members.IEmitWriter
+  - PocoEmit.Configuration.ICompileInfo
+  inheritedMembers:
+  - PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.InstanceType
+  - PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}._member
+  - PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}._valueType
+  - PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.Member
+  - PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.Name
+  - PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.ValueType
+  extensionMethods:
+  - PocoEmit.Members.IEmitMemberReader.PocoEmit.PocoEmitServices.Build``2
+  - PocoEmit.Members.IEmitMemberWriter.PocoEmit.PocoEmitServices.Build``2
+- uid: PocoEmit.Members.PropertyAccessor.#ctor(System.Reflection.PropertyInfo)
+  commentId: M:PocoEmit.Members.PropertyAccessor.#ctor(System.Reflection.PropertyInfo)
+  id: '#ctor(System.Reflection.PropertyInfo)'
+  parent: PocoEmit.Members.PropertyAccessor
+  langs:
+  - csharp
+  - vb
+  name: PropertyAccessor(PropertyInfo)
+  nameWithType: PropertyAccessor.PropertyAccessor(PropertyInfo)
+  fullName: PocoEmit.Members.PropertyAccessor.PropertyAccessor(System.Reflection.PropertyInfo)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit/Members/PropertyAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit/Members/PropertyAccessor.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 读取属性
+  example: []
+  syntax:
+    content: public PropertyAccessor(PropertyInfo property)
+    parameters:
+    - id: property
+      type: System.Reflection.PropertyInfo
+      description: ''
+    content.vb: Public Sub New([property] As PropertyInfo)
+  overload: PocoEmit.Members.PropertyAccessor.#ctor*
+  nameWithType.vb: PropertyAccessor.New(PropertyInfo)
+  fullName.vb: PocoEmit.Members.PropertyAccessor.New(System.Reflection.PropertyInfo)
+  name.vb: New(PropertyInfo)
+- uid: PocoEmit.Members.PropertyAccessor.Read(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Members.PropertyAccessor.Read(System.Linq.Expressions.Expression)
+  id: Read(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Members.PropertyAccessor
+  langs:
+  - csharp
+  - vb
+  name: Read(Expression)
+  nameWithType: PropertyAccessor.Read(Expression)
+  fullName: PocoEmit.Members.PropertyAccessor.Read(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Members/PropertyAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Read
+    path: ../PocoEmit/Members/PropertyAccessor.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 读取
+  example: []
+  syntax:
+    content: public Expression Read(Expression instance)
+    parameters:
+    - id: instance
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Public Function Read(instance As Expression) As Expression
+  overload: PocoEmit.Members.PropertyAccessor.Read*
+  implements:
+  - PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+- uid: PocoEmit.Members.PropertyAccessor.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Members.PropertyAccessor.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  id: Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Members.PropertyAccessor
+  langs:
+  - csharp
+  - vb
+  name: Write(Expression, Expression)
+  nameWithType: PropertyAccessor.Write(Expression, Expression)
+  fullName: PocoEmit.Members.PropertyAccessor.Write(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Members/PropertyAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Write
+    path: ../PocoEmit/Members/PropertyAccessor.cs
+    startLine: 41
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 写入
+  example: []
+  syntax:
+    content: public Expression Write(Expression instance, Expression value)
+    parameters:
+    - id: instance
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: value
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Function Write(instance As Expression, value As Expression) As Expression
+  overload: PocoEmit.Members.PropertyAccessor.Write*
+  implements:
+  - PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}
+  commentId: T:PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}
+  parent: PocoEmit.Members
+  definition: PocoEmit.Members.MemberAccessor`1
+  href: PocoEmit.Members.MemberAccessor-1.html
+  name: MemberAccessor<PropertyInfo>
+  nameWithType: MemberAccessor<PropertyInfo>
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.PropertyInfo>
+  nameWithType.vb: MemberAccessor(Of PropertyInfo)
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.PropertyInfo)
+  name.vb: MemberAccessor(Of PropertyInfo)
+  spec.csharp:
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor
+    href: PocoEmit.Members.MemberAccessor-1.html
+  - name: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor
+    href: PocoEmit.Members.MemberAccessor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: )
+- uid: PocoEmit.Members.IEmitMemberReader
+  commentId: T:PocoEmit.Members.IEmitMemberReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberReader.html
+  name: IEmitMemberReader
+  nameWithType: IEmitMemberReader
+  fullName: PocoEmit.Members.IEmitMemberReader
+- uid: PocoEmit.Members.IEmitReader
+  commentId: T:PocoEmit.Members.IEmitReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitReader.html
+  name: IEmitReader
+  nameWithType: IEmitReader
+  fullName: PocoEmit.Members.IEmitReader
+- uid: PocoEmit.Members.IEmitMemberWriter
+  commentId: T:PocoEmit.Members.IEmitMemberWriter
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberWriter.html
+  name: IEmitMemberWriter
+  nameWithType: IEmitMemberWriter
+  fullName: PocoEmit.Members.IEmitMemberWriter
+- uid: PocoEmit.Members.IMember
+  commentId: T:PocoEmit.Members.IMember
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IMember.html
+  name: IMember
+  nameWithType: IMember
+  fullName: PocoEmit.Members.IMember
+- uid: PocoEmit.Members.IEmitWriter
+  commentId: T:PocoEmit.Members.IEmitWriter
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitWriter.html
+  name: IEmitWriter
+  nameWithType: IEmitWriter
+  fullName: PocoEmit.Members.IEmitWriter
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.InstanceType
+  commentId: P:PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.InstanceType
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}
+  definition: PocoEmit.Members.MemberAccessor`1.InstanceType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_InstanceType
+  name: InstanceType
+  nameWithType: MemberAccessor<PropertyInfo>.InstanceType
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.PropertyInfo>.InstanceType
+  nameWithType.vb: MemberAccessor(Of PropertyInfo).InstanceType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.PropertyInfo).InstanceType
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}._member
+  commentId: F:PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}._member
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}
+  definition: PocoEmit.Members.MemberAccessor`1._member
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__member
+  name: _member
+  nameWithType: MemberAccessor<PropertyInfo>._member
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.PropertyInfo>._member
+  nameWithType.vb: MemberAccessor(Of PropertyInfo)._member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.PropertyInfo)._member
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}._valueType
+  commentId: F:PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}._valueType
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}
+  definition: PocoEmit.Members.MemberAccessor`1._valueType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__valueType
+  name: _valueType
+  nameWithType: MemberAccessor<PropertyInfo>._valueType
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.PropertyInfo>._valueType
+  nameWithType.vb: MemberAccessor(Of PropertyInfo)._valueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.PropertyInfo)._valueType
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.Member
+  commentId: P:PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.Member
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}
+  definition: PocoEmit.Members.MemberAccessor`1.Member
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Member
+  name: Member
+  nameWithType: MemberAccessor<PropertyInfo>.Member
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.PropertyInfo>.Member
+  nameWithType.vb: MemberAccessor(Of PropertyInfo).Member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.PropertyInfo).Member
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.Name
+  commentId: P:PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.Name
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}
+  definition: PocoEmit.Members.MemberAccessor`1.Name
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Name
+  name: Name
+  nameWithType: MemberAccessor<PropertyInfo>.Name
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.PropertyInfo>.Name
+  nameWithType.vb: MemberAccessor(Of PropertyInfo).Name
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.PropertyInfo).Name
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.ValueType
+  commentId: P:PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}.ValueType
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.PropertyInfo}
+  definition: PocoEmit.Members.MemberAccessor`1.ValueType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_ValueType
+  name: ValueType
+  nameWithType: MemberAccessor<PropertyInfo>.ValueType
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.PropertyInfo>.ValueType
+  nameWithType.vb: MemberAccessor(Of PropertyInfo).ValueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.PropertyInfo).ValueType
+- uid: PocoEmit.Members.IEmitMemberReader.PocoEmit.PocoEmitServices.Build``2
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  parent: PocoEmit.PocoEmitServices
+  definition: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  name: Build<TInstance, TValue>(IEmitMemberReader)
+  nameWithType: PocoEmitServices.Build<TInstance, TValue>(IEmitMemberReader)
+  fullName: PocoEmit.PocoEmitServices.Build<TInstance, TValue>(PocoEmit.Members.IEmitMemberReader)
+  nameWithType.vb: PocoEmitServices.Build(Of TInstance, TValue)(IEmitMemberReader)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberReader)
+  name.vb: Build(Of TInstance, TValue)(IEmitMemberReader)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: PocoEmit.Members.IEmitMemberWriter.PocoEmit.PocoEmitServices.Build``2
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  parent: PocoEmit.PocoEmitServices
+  definition: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  name: Build<TInstance, TValue>(IEmitMemberWriter)
+  nameWithType: PocoEmitServices.Build<TInstance, TValue>(IEmitMemberWriter)
+  fullName: PocoEmit.PocoEmitServices.Build<TInstance, TValue>(PocoEmit.Members.IEmitMemberWriter)
+  nameWithType.vb: PocoEmitServices.Build(Of TInstance, TValue)(IEmitMemberWriter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberWriter)
+  name.vb: Build(Of TInstance, TValue)(IEmitMemberWriter)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Members.MemberAccessor`1
+  commentId: T:PocoEmit.Members.MemberAccessor`1
+  href: PocoEmit.Members.MemberAccessor-1.html
+  name: MemberAccessor<TMemberType>
+  nameWithType: MemberAccessor<TMemberType>
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>
+  nameWithType.vb: MemberAccessor(Of TMemberType)
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType)
+  name.vb: MemberAccessor(Of TMemberType)
+  spec.csharp:
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor
+    href: PocoEmit.Members.MemberAccessor-1.html
+  - name: <
+  - name: TMemberType
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor
+    href: PocoEmit.Members.MemberAccessor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMemberType
+  - name: )
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Members.MemberAccessor`1.InstanceType
+  commentId: P:PocoEmit.Members.MemberAccessor`1.InstanceType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_InstanceType
+  name: InstanceType
+  nameWithType: MemberAccessor<TMemberType>.InstanceType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.InstanceType
+  nameWithType.vb: MemberAccessor(Of TMemberType).InstanceType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).InstanceType
+- uid: PocoEmit.Members.MemberAccessor`1._member
+  commentId: F:PocoEmit.Members.MemberAccessor`1._member
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__member
+  name: _member
+  nameWithType: MemberAccessor<TMemberType>._member
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>._member
+  nameWithType.vb: MemberAccessor(Of TMemberType)._member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType)._member
+- uid: PocoEmit.Members.MemberAccessor`1._valueType
+  commentId: F:PocoEmit.Members.MemberAccessor`1._valueType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__valueType
+  name: _valueType
+  nameWithType: MemberAccessor<TMemberType>._valueType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>._valueType
+  nameWithType.vb: MemberAccessor(Of TMemberType)._valueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType)._valueType
+- uid: PocoEmit.Members.MemberAccessor`1.Member
+  commentId: P:PocoEmit.Members.MemberAccessor`1.Member
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Member
+  name: Member
+  nameWithType: MemberAccessor<TMemberType>.Member
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.Member
+  nameWithType.vb: MemberAccessor(Of TMemberType).Member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).Member
+- uid: PocoEmit.Members.MemberAccessor`1.Name
+  commentId: P:PocoEmit.Members.MemberAccessor`1.Name
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Name
+  name: Name
+  nameWithType: MemberAccessor<TMemberType>.Name
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.Name
+  nameWithType.vb: MemberAccessor(Of TMemberType).Name
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).Name
+- uid: PocoEmit.Members.MemberAccessor`1.ValueType
+  commentId: P:PocoEmit.Members.MemberAccessor`1.ValueType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_ValueType
+  name: ValueType
+  nameWithType: MemberAccessor<TMemberType>.ValueType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.ValueType
+  nameWithType.vb: MemberAccessor(Of TMemberType).ValueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).ValueType
+- uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  name: Build<TInstance, TValue>(IEmitMemberReader)
+  nameWithType: PocoEmitServices.Build<TInstance, TValue>(IEmitMemberReader)
+  fullName: PocoEmit.PocoEmitServices.Build<TInstance, TValue>(PocoEmit.Members.IEmitMemberReader)
+  nameWithType.vb: PocoEmitServices.Build(Of TInstance, TValue)(IEmitMemberReader)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberReader)
+  name.vb: Build(Of TInstance, TValue)(IEmitMemberReader)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: PocoEmit.PocoEmitServices
+  commentId: T:PocoEmit.PocoEmitServices
+  parent: PocoEmit
+  href: PocoEmit.PocoEmitServices.html
+  name: PocoEmitServices
+  nameWithType: PocoEmitServices
+  fullName: PocoEmit.PocoEmitServices
+- uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  name: Build<TInstance, TValue>(IEmitMemberWriter)
+  nameWithType: PocoEmitServices.Build<TInstance, TValue>(IEmitMemberWriter)
+  fullName: PocoEmit.PocoEmitServices.Build<TInstance, TValue>(PocoEmit.Members.IEmitMemberWriter)
+  nameWithType.vb: PocoEmitServices.Build(Of TInstance, TValue)(IEmitMemberWriter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberWriter)
+  name.vb: Build(Of TInstance, TValue)(IEmitMemberWriter)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.Members.PropertyAccessor.#ctor*
+  commentId: Overload:PocoEmit.Members.PropertyAccessor.#ctor
+  href: PocoEmit.Members.PropertyAccessor.html#PocoEmit_Members_PropertyAccessor__ctor_System_Reflection_PropertyInfo_
+  name: PropertyAccessor
+  nameWithType: PropertyAccessor.PropertyAccessor
+  fullName: PocoEmit.Members.PropertyAccessor.PropertyAccessor
+  nameWithType.vb: PropertyAccessor.New
+  fullName.vb: PocoEmit.Members.PropertyAccessor.New
+  name.vb: New
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.Members.PropertyAccessor.Read*
+  commentId: Overload:PocoEmit.Members.PropertyAccessor.Read
+  href: PocoEmit.Members.PropertyAccessor.html#PocoEmit_Members_PropertyAccessor_Read_System_Linq_Expressions_Expression_
+  name: Read
+  nameWithType: PropertyAccessor.Read
+  fullName: PocoEmit.Members.PropertyAccessor.Read
+- uid: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Members.IEmitReader
+  isExternal: true
+  href: PocoEmit.Members.IEmitReader.html#PocoEmit_Members_IEmitReader_Read_System_Linq_Expressions_Expression_
+  name: Read(Expression)
+  nameWithType: IEmitReader.Read(Expression)
+  fullName: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+    name: Read
+    href: PocoEmit.Members.IEmitReader.html#PocoEmit_Members_IEmitReader_Read_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+    name: Read
+    href: PocoEmit.Members.IEmitReader.html#PocoEmit_Members_IEmitReader_Read_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: PocoEmit.Members.PropertyAccessor.Write*
+  commentId: Overload:PocoEmit.Members.PropertyAccessor.Write
+  href: PocoEmit.Members.PropertyAccessor.html#PocoEmit_Members_PropertyAccessor_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Write
+  nameWithType: PropertyAccessor.Write
+  fullName: PocoEmit.Members.PropertyAccessor.Write
+- uid: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Members.IEmitWriter
+  isExternal: true
+  href: PocoEmit.Members.IEmitWriter.html#PocoEmit_Members_IEmitWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Write(Expression, Expression)
+  nameWithType: IEmitWriter.Write(Expression, Expression)
+  fullName: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Write
+    href: PocoEmit.Members.IEmitWriter.html#PocoEmit_Members_IEmitWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Write
+    href: PocoEmit.Members.IEmitWriter.html#PocoEmit_Members_IEmitWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )

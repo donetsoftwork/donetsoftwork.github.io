@@ -1,0 +1,443 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper
+  commentId: T:PocoEmit.Helpers.MapHelper`2.DestHelper
+  id: MapHelper`2.DestHelper
+  parent: PocoEmit.Helpers
+  children:
+  - PocoEmit.Helpers.MapHelper`2.DestHelper.AddPrefix(System.String)
+  - PocoEmit.Helpers.MapHelper`2.DestHelper.AddSuffix(System.String)
+  - PocoEmit.Helpers.MapHelper`2.DestHelper.ClearPrefix
+  - PocoEmit.Helpers.MapHelper`2.DestHelper.ForMember(System.String)
+  - PocoEmit.Helpers.MapHelper`2.DestHelper.Ignore(System.String)
+  - PocoEmit.Helpers.MapHelper`2.DestHelper.MapFrom(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MapHelper<TSource, TDest>.DestHelper
+  nameWithType: MapHelper<TSource, TDest>.DestHelper
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: DestHelper
+    path: ../PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Helpers
+  summary: 映射目标
+  example: []
+  syntax:
+    content: public class MapHelper<TSource, TDest>.DestHelper
+    content.vb: Public Class MapHelper(Of TSource, TDest).DestHelper
+  inheritance:
+  - System.Object
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper
+  name.vb: MapHelper(Of TSource, TDest).DestHelper
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.MapFrom(System.String,System.String)
+  commentId: M:PocoEmit.Helpers.MapHelper`2.DestHelper.MapFrom(System.String,System.String)
+  id: MapFrom(System.String,System.String)
+  parent: PocoEmit.Helpers.MapHelper`2.DestHelper
+  langs:
+  - csharp
+  - vb
+  name: MapFrom(string, string)
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.MapFrom(string, string)
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.MapFrom(string, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MapFrom
+    path: ../PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+    startLine: 38
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Helpers
+  summary: 映射
+  example: []
+  syntax:
+    content: public MapHelper<TSource, TDest>.DestHelper MapFrom(string name, string sourceName)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    - id: sourceName
+      type: System.String
+      description: ''
+    return:
+      type: PocoEmit.Helpers.MapHelper`2.DestHelper
+      description: ''
+    content.vb: Public Function MapFrom(name As String, sourceName As String) As MapHelper(Of TSource, TDest).DestHelper
+  overload: PocoEmit.Helpers.MapHelper`2.DestHelper.MapFrom*
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.MapFrom(String, String)
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.MapFrom(String, String)
+  name.vb: MapFrom(String, String)
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.Ignore(System.String)
+  commentId: M:PocoEmit.Helpers.MapHelper`2.DestHelper.Ignore(System.String)
+  id: Ignore(System.String)
+  parent: PocoEmit.Helpers.MapHelper`2.DestHelper
+  langs:
+  - csharp
+  - vb
+  name: Ignore(string)
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.Ignore(string)
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.Ignore(string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Ignore
+    path: ../PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+    startLine: 48
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Helpers
+  summary: 忽略目标成员
+  example: []
+  syntax:
+    content: public MapHelper<TSource, TDest>.DestHelper Ignore(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    return:
+      type: PocoEmit.Helpers.MapHelper`2.DestHelper
+      description: ''
+    content.vb: Public Function Ignore(name As String) As MapHelper(Of TSource, TDest).DestHelper
+  overload: PocoEmit.Helpers.MapHelper`2.DestHelper.Ignore*
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.Ignore(String)
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.Ignore(String)
+  name.vb: Ignore(String)
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.AddPrefix(System.String)
+  commentId: M:PocoEmit.Helpers.MapHelper`2.DestHelper.AddPrefix(System.String)
+  id: AddPrefix(System.String)
+  parent: PocoEmit.Helpers.MapHelper`2.DestHelper
+  langs:
+  - csharp
+  - vb
+  name: AddPrefix(string)
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.AddPrefix(string)
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.AddPrefix(string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: AddPrefix
+    path: ../PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+    startLine: 57
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Helpers
+  summary: 添加前缀
+  example: []
+  syntax:
+    content: public MapHelper<TSource, TDest>.DestHelper AddPrefix(string prefix)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: ''
+    return:
+      type: PocoEmit.Helpers.MapHelper`2.DestHelper
+    content.vb: Public Function AddPrefix(prefix As String) As MapHelper(Of TSource, TDest).DestHelper
+  overload: PocoEmit.Helpers.MapHelper`2.DestHelper.AddPrefix*
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.AddPrefix(String)
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.AddPrefix(String)
+  name.vb: AddPrefix(String)
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.ClearPrefix
+  commentId: M:PocoEmit.Helpers.MapHelper`2.DestHelper.ClearPrefix
+  id: ClearPrefix
+  parent: PocoEmit.Helpers.MapHelper`2.DestHelper
+  langs:
+  - csharp
+  - vb
+  name: ClearPrefix()
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.ClearPrefix()
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.ClearPrefix()
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ClearPrefix
+    path: ../PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+    startLine: 65
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Helpers
+  summary: 清空前缀(主要用于清理默认前缀)
+  example: []
+  syntax:
+    content: public MapHelper<TSource, TDest>.DestHelper ClearPrefix()
+    return:
+      type: PocoEmit.Helpers.MapHelper`2.DestHelper
+    content.vb: Public Function ClearPrefix() As MapHelper(Of TSource, TDest).DestHelper
+  overload: PocoEmit.Helpers.MapHelper`2.DestHelper.ClearPrefix*
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.ClearPrefix()
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.ClearPrefix()
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.AddSuffix(System.String)
+  commentId: M:PocoEmit.Helpers.MapHelper`2.DestHelper.AddSuffix(System.String)
+  id: AddSuffix(System.String)
+  parent: PocoEmit.Helpers.MapHelper`2.DestHelper
+  langs:
+  - csharp
+  - vb
+  name: AddSuffix(string)
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.AddSuffix(string)
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.AddSuffix(string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: AddSuffix
+    path: ../PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+    startLine: 74
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Helpers
+  summary: 添加后缀
+  example: []
+  syntax:
+    content: public MapHelper<TSource, TDest>.DestHelper AddSuffix(string suffix)
+    parameters:
+    - id: suffix
+      type: System.String
+      description: ''
+    return:
+      type: PocoEmit.Helpers.MapHelper`2.DestHelper
+    content.vb: Public Function AddSuffix(suffix As String) As MapHelper(Of TSource, TDest).DestHelper
+  overload: PocoEmit.Helpers.MapHelper`2.DestHelper.AddSuffix*
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.AddSuffix(String)
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.AddSuffix(String)
+  name.vb: AddSuffix(String)
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.ForMember(System.String)
+  commentId: M:PocoEmit.Helpers.MapHelper`2.DestHelper.ForMember(System.String)
+  id: ForMember(System.String)
+  parent: PocoEmit.Helpers.MapHelper`2.DestHelper
+  langs:
+  - csharp
+  - vb
+  name: ForMember(string)
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.ForMember(string)
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.ForMember(string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ForMember
+    path: ../PocoEmit.Mapper/Helpers/MapHelper~2.Dest.cs
+    startLine: 85
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Helpers
+  summary: 指定成员名
+  example: []
+  syntax:
+    content: public MapHelper<TSource, TDest>.DestMemberHelper ForMember(string memberName)
+    parameters:
+    - id: memberName
+      type: System.String
+      description: ''
+    return:
+      type: PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+      description: ''
+    content.vb: Public Function ForMember(memberName As String) As MapHelper(Of TSource, TDest).DestMemberHelper
+  overload: PocoEmit.Helpers.MapHelper`2.DestHelper.ForMember*
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.ForMember(String)
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.ForMember(String)
+  name.vb: ForMember(String)
+references:
+- uid: PocoEmit.Helpers
+  commentId: N:PocoEmit.Helpers
+  href: PocoEmit.html
+  name: PocoEmit.Helpers
+  nameWithType: PocoEmit.Helpers
+  fullName: PocoEmit.Helpers
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Helpers
+    name: Helpers
+    href: PocoEmit.Helpers.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Helpers
+    name: Helpers
+    href: PocoEmit.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.MapFrom*
+  commentId: Overload:PocoEmit.Helpers.MapHelper`2.DestHelper.MapFrom
+  href: PocoEmit.Helpers.MapHelper-2.DestHelper.html#PocoEmit_Helpers_MapHelper_2_DestHelper_MapFrom_System_String_System_String_
+  name: MapFrom
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.MapFrom
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.MapFrom
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.MapFrom
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.MapFrom
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper
+  commentId: T:PocoEmit.Helpers.MapHelper`2.DestHelper
+  parent: PocoEmit.Helpers
+  href: PocoEmit.Helpers.MapHelper-2.html
+  name: MapHelper<TSource, TDest>.DestHelper
+  nameWithType: MapHelper<TSource, TDest>.DestHelper
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper
+  name.vb: MapHelper(Of TSource, TDest).DestHelper
+  spec.csharp:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.DestHelper
+    name: DestHelper
+    href: PocoEmit.Helpers.MapHelper-2.DestHelper.html
+  spec.vb:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.DestHelper
+    name: DestHelper
+    href: PocoEmit.Helpers.MapHelper-2.DestHelper.html
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.Ignore*
+  commentId: Overload:PocoEmit.Helpers.MapHelper`2.DestHelper.Ignore
+  href: PocoEmit.Helpers.MapHelper-2.DestHelper.html#PocoEmit_Helpers_MapHelper_2_DestHelper_Ignore_System_String_
+  name: Ignore
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.Ignore
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.Ignore
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.Ignore
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.Ignore
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.AddPrefix*
+  commentId: Overload:PocoEmit.Helpers.MapHelper`2.DestHelper.AddPrefix
+  href: PocoEmit.Helpers.MapHelper-2.DestHelper.html#PocoEmit_Helpers_MapHelper_2_DestHelper_AddPrefix_System_String_
+  name: AddPrefix
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.AddPrefix
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.AddPrefix
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.AddPrefix
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.AddPrefix
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.ClearPrefix*
+  commentId: Overload:PocoEmit.Helpers.MapHelper`2.DestHelper.ClearPrefix
+  href: PocoEmit.Helpers.MapHelper-2.DestHelper.html#PocoEmit_Helpers_MapHelper_2_DestHelper_ClearPrefix
+  name: ClearPrefix
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.ClearPrefix
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.ClearPrefix
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.ClearPrefix
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.ClearPrefix
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.AddSuffix*
+  commentId: Overload:PocoEmit.Helpers.MapHelper`2.DestHelper.AddSuffix
+  href: PocoEmit.Helpers.MapHelper-2.DestHelper.html#PocoEmit_Helpers_MapHelper_2_DestHelper_AddSuffix_System_String_
+  name: AddSuffix
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.AddSuffix
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.AddSuffix
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.AddSuffix
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.AddSuffix
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper.ForMember*
+  commentId: Overload:PocoEmit.Helpers.MapHelper`2.DestHelper.ForMember
+  href: PocoEmit.Helpers.MapHelper-2.DestHelper.html#PocoEmit_Helpers_MapHelper_2_DestHelper_ForMember_System_String_
+  name: ForMember
+  nameWithType: MapHelper<TSource, TDest>.DestHelper.ForMember
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper.ForMember
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper.ForMember
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper.ForMember
+- uid: PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+  commentId: T:PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+  parent: PocoEmit.Helpers
+  href: PocoEmit.Helpers.MapHelper-2.html
+  name: MapHelper<TSource, TDest>.DestMemberHelper
+  nameWithType: MapHelper<TSource, TDest>.DestMemberHelper
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestMemberHelper
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestMemberHelper
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestMemberHelper
+  name.vb: MapHelper(Of TSource, TDest).DestMemberHelper
+  spec.csharp:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+    name: DestMemberHelper
+    href: PocoEmit.Helpers.MapHelper-2.DestMemberHelper.html
+  spec.vb:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+    name: DestMemberHelper
+    href: PocoEmit.Helpers.MapHelper-2.DestMemberHelper.html

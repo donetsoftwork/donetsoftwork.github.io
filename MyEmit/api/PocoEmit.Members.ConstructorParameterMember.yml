@@ -1,0 +1,512 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Members.ConstructorParameterMember
+  commentId: T:PocoEmit.Members.ConstructorParameterMember
+  id: ConstructorParameterMember
+  parent: PocoEmit.Members
+  children:
+  - PocoEmit.Members.ConstructorParameterMember.#ctor(System.Reflection.ConstructorInfo,System.Reflection.ParameterInfo)
+  - PocoEmit.Members.ConstructorParameterMember.Convert(System.Reflection.ConstructorInfo)
+  - PocoEmit.Members.ConstructorParameterMember.Convert(System.Reflection.ConstructorInfo,System.Reflection.ParameterInfo[])
+  - PocoEmit.Members.ConstructorParameterMember.Parameter
+  langs:
+  - csharp
+  - vb
+  name: ConstructorParameterMember
+  nameWithType: ConstructorParameterMember
+  fullName: PocoEmit.Members.ConstructorParameterMember
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/ConstructorParameterMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConstructorParameterMember
+    path: ../PocoEmit.Mapper/Members/ConstructorParameterMember.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 构造函数参数成员
+  example: []
+  syntax:
+    content: 'public class ConstructorParameterMember : MemberAccessor<ConstructorInfo>, IMember'
+    content.vb: Public Class ConstructorParameterMember Inherits MemberAccessor(Of ConstructorInfo) Implements IMember
+  inheritance:
+  - System.Object
+  - PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}
+  implements:
+  - PocoEmit.Members.IMember
+  inheritedMembers:
+  - PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.InstanceType
+  - PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}._member
+  - PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}._valueType
+  - PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.Member
+  - PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.Name
+  - PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.ValueType
+- uid: PocoEmit.Members.ConstructorParameterMember.#ctor(System.Reflection.ConstructorInfo,System.Reflection.ParameterInfo)
+  commentId: M:PocoEmit.Members.ConstructorParameterMember.#ctor(System.Reflection.ConstructorInfo,System.Reflection.ParameterInfo)
+  id: '#ctor(System.Reflection.ConstructorInfo,System.Reflection.ParameterInfo)'
+  parent: PocoEmit.Members.ConstructorParameterMember
+  langs:
+  - csharp
+  - vb
+  name: ConstructorParameterMember(ConstructorInfo, ParameterInfo)
+  nameWithType: ConstructorParameterMember.ConstructorParameterMember(ConstructorInfo, ParameterInfo)
+  fullName: PocoEmit.Members.ConstructorParameterMember.ConstructorParameterMember(System.Reflection.ConstructorInfo, System.Reflection.ParameterInfo)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/ConstructorParameterMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Members/ConstructorParameterMember.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 构造函数参数成员
+  example: []
+  syntax:
+    content: public ConstructorParameterMember(ConstructorInfo constructor, ParameterInfo parameter)
+    parameters:
+    - id: constructor
+      type: System.Reflection.ConstructorInfo
+      description: ''
+    - id: parameter
+      type: System.Reflection.ParameterInfo
+      description: ''
+    content.vb: Public Sub New(constructor As ConstructorInfo, parameter As ParameterInfo)
+  overload: PocoEmit.Members.ConstructorParameterMember.#ctor*
+  nameWithType.vb: ConstructorParameterMember.New(ConstructorInfo, ParameterInfo)
+  fullName.vb: PocoEmit.Members.ConstructorParameterMember.New(System.Reflection.ConstructorInfo, System.Reflection.ParameterInfo)
+  name.vb: New(ConstructorInfo, ParameterInfo)
+- uid: PocoEmit.Members.ConstructorParameterMember.Parameter
+  commentId: P:PocoEmit.Members.ConstructorParameterMember.Parameter
+  id: Parameter
+  parent: PocoEmit.Members.ConstructorParameterMember
+  langs:
+  - csharp
+  - vb
+  name: Parameter
+  nameWithType: ConstructorParameterMember.Parameter
+  fullName: PocoEmit.Members.ConstructorParameterMember.Parameter
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/ConstructorParameterMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Parameter
+    path: ../PocoEmit.Mapper/Members/ConstructorParameterMember.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 参数
+  example: []
+  syntax:
+    content: public ParameterInfo Parameter { get; }
+    parameters: []
+    return:
+      type: System.Reflection.ParameterInfo
+    content.vb: Public ReadOnly Property Parameter As ParameterInfo
+  overload: PocoEmit.Members.ConstructorParameterMember.Parameter*
+- uid: PocoEmit.Members.ConstructorParameterMember.Convert(System.Reflection.ConstructorInfo)
+  commentId: M:PocoEmit.Members.ConstructorParameterMember.Convert(System.Reflection.ConstructorInfo)
+  id: Convert(System.Reflection.ConstructorInfo)
+  parent: PocoEmit.Members.ConstructorParameterMember
+  langs:
+  - csharp
+  - vb
+  name: Convert(ConstructorInfo)
+  nameWithType: ConstructorParameterMember.Convert(ConstructorInfo)
+  fullName: PocoEmit.Members.ConstructorParameterMember.Convert(System.Reflection.ConstructorInfo)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/ConstructorParameterMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Convert
+    path: ../PocoEmit.Mapper/Members/ConstructorParameterMember.cs
+    startLine: 26
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 转化为构造函数参数成员
+  example: []
+  syntax:
+    content: public static ConstructorParameterMember[] Convert(ConstructorInfo constructor)
+    parameters:
+    - id: constructor
+      type: System.Reflection.ConstructorInfo
+      description: ''
+    return:
+      type: PocoEmit.Members.ConstructorParameterMember[]
+      description: ''
+    content.vb: Public Shared Function Convert(constructor As ConstructorInfo) As ConstructorParameterMember()
+  overload: PocoEmit.Members.ConstructorParameterMember.Convert*
+- uid: PocoEmit.Members.ConstructorParameterMember.Convert(System.Reflection.ConstructorInfo,System.Reflection.ParameterInfo[])
+  commentId: M:PocoEmit.Members.ConstructorParameterMember.Convert(System.Reflection.ConstructorInfo,System.Reflection.ParameterInfo[])
+  id: Convert(System.Reflection.ConstructorInfo,System.Reflection.ParameterInfo[])
+  parent: PocoEmit.Members.ConstructorParameterMember
+  langs:
+  - csharp
+  - vb
+  name: Convert(ConstructorInfo, ParameterInfo[])
+  nameWithType: ConstructorParameterMember.Convert(ConstructorInfo, ParameterInfo[])
+  fullName: PocoEmit.Members.ConstructorParameterMember.Convert(System.Reflection.ConstructorInfo, System.Reflection.ParameterInfo[])
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/ConstructorParameterMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Convert
+    path: ../PocoEmit.Mapper/Members/ConstructorParameterMember.cs
+    startLine: 34
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 转化为构造函数参数成员
+  example: []
+  syntax:
+    content: public static ConstructorParameterMember[] Convert(ConstructorInfo constructor, ParameterInfo[] parameters)
+    parameters:
+    - id: constructor
+      type: System.Reflection.ConstructorInfo
+      description: ''
+    - id: parameters
+      type: System.Reflection.ParameterInfo[]
+      description: ''
+    return:
+      type: PocoEmit.Members.ConstructorParameterMember[]
+      description: ''
+    content.vb: Public Shared Function Convert(constructor As ConstructorInfo, parameters As ParameterInfo()) As ConstructorParameterMember()
+  overload: PocoEmit.Members.ConstructorParameterMember.Convert*
+  nameWithType.vb: ConstructorParameterMember.Convert(ConstructorInfo, ParameterInfo())
+  fullName.vb: PocoEmit.Members.ConstructorParameterMember.Convert(System.Reflection.ConstructorInfo, System.Reflection.ParameterInfo())
+  name.vb: Convert(ConstructorInfo, ParameterInfo())
+references:
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}
+  commentId: T:PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}
+  parent: PocoEmit.Members
+  definition: PocoEmit.Members.MemberAccessor`1
+  href: PocoEmit.Members.MemberAccessor-1.html
+  name: MemberAccessor<ConstructorInfo>
+  nameWithType: MemberAccessor<ConstructorInfo>
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.ConstructorInfo>
+  nameWithType.vb: MemberAccessor(Of ConstructorInfo)
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.ConstructorInfo)
+  name.vb: MemberAccessor(Of ConstructorInfo)
+  spec.csharp:
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor
+    href: PocoEmit.Members.MemberAccessor-1.html
+  - name: <
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor
+    href: PocoEmit.Members.MemberAccessor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: )
+- uid: PocoEmit.Members.IMember
+  commentId: T:PocoEmit.Members.IMember
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IMember.html
+  name: IMember
+  nameWithType: IMember
+  fullName: PocoEmit.Members.IMember
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.InstanceType
+  commentId: P:PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.InstanceType
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}
+  definition: PocoEmit.Members.MemberAccessor`1.InstanceType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_InstanceType
+  name: InstanceType
+  nameWithType: MemberAccessor<ConstructorInfo>.InstanceType
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.ConstructorInfo>.InstanceType
+  nameWithType.vb: MemberAccessor(Of ConstructorInfo).InstanceType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.ConstructorInfo).InstanceType
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}._member
+  commentId: F:PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}._member
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}
+  definition: PocoEmit.Members.MemberAccessor`1._member
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__member
+  name: _member
+  nameWithType: MemberAccessor<ConstructorInfo>._member
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.ConstructorInfo>._member
+  nameWithType.vb: MemberAccessor(Of ConstructorInfo)._member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.ConstructorInfo)._member
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}._valueType
+  commentId: F:PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}._valueType
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}
+  definition: PocoEmit.Members.MemberAccessor`1._valueType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__valueType
+  name: _valueType
+  nameWithType: MemberAccessor<ConstructorInfo>._valueType
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.ConstructorInfo>._valueType
+  nameWithType.vb: MemberAccessor(Of ConstructorInfo)._valueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.ConstructorInfo)._valueType
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.Member
+  commentId: P:PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.Member
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}
+  definition: PocoEmit.Members.MemberAccessor`1.Member
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Member
+  name: Member
+  nameWithType: MemberAccessor<ConstructorInfo>.Member
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.ConstructorInfo>.Member
+  nameWithType.vb: MemberAccessor(Of ConstructorInfo).Member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.ConstructorInfo).Member
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.Name
+  commentId: P:PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.Name
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}
+  definition: PocoEmit.Members.MemberAccessor`1.Name
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Name
+  name: Name
+  nameWithType: MemberAccessor<ConstructorInfo>.Name
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.ConstructorInfo>.Name
+  nameWithType.vb: MemberAccessor(Of ConstructorInfo).Name
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.ConstructorInfo).Name
+- uid: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.ValueType
+  commentId: P:PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}.ValueType
+  parent: PocoEmit.Members.MemberAccessor{System.Reflection.ConstructorInfo}
+  definition: PocoEmit.Members.MemberAccessor`1.ValueType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_ValueType
+  name: ValueType
+  nameWithType: MemberAccessor<ConstructorInfo>.ValueType
+  fullName: PocoEmit.Members.MemberAccessor<System.Reflection.ConstructorInfo>.ValueType
+  nameWithType.vb: MemberAccessor(Of ConstructorInfo).ValueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of System.Reflection.ConstructorInfo).ValueType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Members.MemberAccessor`1
+  commentId: T:PocoEmit.Members.MemberAccessor`1
+  href: PocoEmit.Members.MemberAccessor-1.html
+  name: MemberAccessor<TMemberType>
+  nameWithType: MemberAccessor<TMemberType>
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>
+  nameWithType.vb: MemberAccessor(Of TMemberType)
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType)
+  name.vb: MemberAccessor(Of TMemberType)
+  spec.csharp:
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor
+    href: PocoEmit.Members.MemberAccessor-1.html
+  - name: <
+  - name: TMemberType
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor
+    href: PocoEmit.Members.MemberAccessor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMemberType
+  - name: )
+- uid: PocoEmit.Members.MemberAccessor`1.InstanceType
+  commentId: P:PocoEmit.Members.MemberAccessor`1.InstanceType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_InstanceType
+  name: InstanceType
+  nameWithType: MemberAccessor<TMemberType>.InstanceType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.InstanceType
+  nameWithType.vb: MemberAccessor(Of TMemberType).InstanceType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).InstanceType
+- uid: PocoEmit.Members.MemberAccessor`1._member
+  commentId: F:PocoEmit.Members.MemberAccessor`1._member
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__member
+  name: _member
+  nameWithType: MemberAccessor<TMemberType>._member
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>._member
+  nameWithType.vb: MemberAccessor(Of TMemberType)._member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType)._member
+- uid: PocoEmit.Members.MemberAccessor`1._valueType
+  commentId: F:PocoEmit.Members.MemberAccessor`1._valueType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__valueType
+  name: _valueType
+  nameWithType: MemberAccessor<TMemberType>._valueType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>._valueType
+  nameWithType.vb: MemberAccessor(Of TMemberType)._valueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType)._valueType
+- uid: PocoEmit.Members.MemberAccessor`1.Member
+  commentId: P:PocoEmit.Members.MemberAccessor`1.Member
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Member
+  name: Member
+  nameWithType: MemberAccessor<TMemberType>.Member
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.Member
+  nameWithType.vb: MemberAccessor(Of TMemberType).Member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).Member
+- uid: PocoEmit.Members.MemberAccessor`1.Name
+  commentId: P:PocoEmit.Members.MemberAccessor`1.Name
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Name
+  name: Name
+  nameWithType: MemberAccessor<TMemberType>.Name
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.Name
+  nameWithType.vb: MemberAccessor(Of TMemberType).Name
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).Name
+- uid: PocoEmit.Members.MemberAccessor`1.ValueType
+  commentId: P:PocoEmit.Members.MemberAccessor`1.ValueType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_ValueType
+  name: ValueType
+  nameWithType: MemberAccessor<TMemberType>.ValueType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.ValueType
+  nameWithType.vb: MemberAccessor(Of TMemberType).ValueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).ValueType
+- uid: PocoEmit.Members.ConstructorParameterMember.#ctor*
+  commentId: Overload:PocoEmit.Members.ConstructorParameterMember.#ctor
+  href: PocoEmit.Members.ConstructorParameterMember.html#PocoEmit_Members_ConstructorParameterMember__ctor_System_Reflection_ConstructorInfo_System_Reflection_ParameterInfo_
+  name: ConstructorParameterMember
+  nameWithType: ConstructorParameterMember.ConstructorParameterMember
+  fullName: PocoEmit.Members.ConstructorParameterMember.ConstructorParameterMember
+  nameWithType.vb: ConstructorParameterMember.New
+  fullName.vb: PocoEmit.Members.ConstructorParameterMember.New
+  name.vb: New
+- uid: System.Reflection.ConstructorInfo
+  commentId: T:System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  name: ConstructorInfo
+  nameWithType: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System.Reflection.ParameterInfo
+  commentId: T:System.Reflection.ParameterInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  name: ParameterInfo
+  nameWithType: ParameterInfo
+  fullName: System.Reflection.ParameterInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.Members.ConstructorParameterMember.Parameter*
+  commentId: Overload:PocoEmit.Members.ConstructorParameterMember.Parameter
+  href: PocoEmit.Members.ConstructorParameterMember.html#PocoEmit_Members_ConstructorParameterMember_Parameter
+  name: Parameter
+  nameWithType: ConstructorParameterMember.Parameter
+  fullName: PocoEmit.Members.ConstructorParameterMember.Parameter
+- uid: PocoEmit.Members.ConstructorParameterMember.Convert*
+  commentId: Overload:PocoEmit.Members.ConstructorParameterMember.Convert
+  href: PocoEmit.Members.ConstructorParameterMember.html#PocoEmit_Members_ConstructorParameterMember_Convert_System_Reflection_ConstructorInfo_
+  name: Convert
+  nameWithType: ConstructorParameterMember.Convert
+  fullName: PocoEmit.Members.ConstructorParameterMember.Convert
+- uid: PocoEmit.Members.ConstructorParameterMember[]
+  isExternal: true
+  href: PocoEmit.Members.ConstructorParameterMember.html
+  name: ConstructorParameterMember[]
+  nameWithType: ConstructorParameterMember[]
+  fullName: PocoEmit.Members.ConstructorParameterMember[]
+  nameWithType.vb: ConstructorParameterMember()
+  fullName.vb: PocoEmit.Members.ConstructorParameterMember()
+  name.vb: ConstructorParameterMember()
+  spec.csharp:
+  - uid: PocoEmit.Members.ConstructorParameterMember
+    name: ConstructorParameterMember
+    href: PocoEmit.Members.ConstructorParameterMember.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: PocoEmit.Members.ConstructorParameterMember
+    name: ConstructorParameterMember
+    href: PocoEmit.Members.ConstructorParameterMember.html
+  - name: (
+  - name: )
+- uid: System.Reflection.ParameterInfo[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  name: ParameterInfo[]
+  nameWithType: ParameterInfo[]
+  fullName: System.Reflection.ParameterInfo[]
+  nameWithType.vb: ParameterInfo()
+  fullName.vb: System.Reflection.ParameterInfo()
+  name.vb: ParameterInfo()
+  spec.csharp:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: (
+  - name: )

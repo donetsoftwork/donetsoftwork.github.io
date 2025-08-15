@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.IMemberReader`2
+  commentId: T:PocoEmit.IMemberReader`2
+  id: IMemberReader`2
+  parent: PocoEmit
+  children:
+  - PocoEmit.IMemberReader`2.Name
+  - PocoEmit.IMemberReader`2.Read(`0)
+  langs:
+  - csharp
+  - vb
+  name: IMemberReader<TInstance, TValue>
+  nameWithType: IMemberReader<TInstance, TValue>
+  fullName: PocoEmit.IMemberReader<TInstance, TValue>
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit/IMemberReader~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IMemberReader
+    path: ../PocoEmit/IMemberReader~2.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 成员读取器
+  example: []
+  syntax:
+    content: public interface IMemberReader<TInstance, TValue>
+    typeParameters:
+    - id: TInstance
+      description: 实体类型
+    - id: TValue
+      description: 成员类型
+    content.vb: Public Interface IMemberReader(Of TInstance, TValue)
+  nameWithType.vb: IMemberReader(Of TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberReader(Of TInstance, TValue)
+  name.vb: IMemberReader(Of TInstance, TValue)
+- uid: PocoEmit.IMemberReader`2.Name
+  commentId: P:PocoEmit.IMemberReader`2.Name
+  id: Name
+  parent: PocoEmit.IMemberReader`2
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IMemberReader<TInstance, TValue>.Name
+  fullName: PocoEmit.IMemberReader<TInstance, TValue>.Name
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/IMemberReader~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Name
+    path: ../PocoEmit/IMemberReader~2.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 成员名
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: PocoEmit.IMemberReader`2.Name*
+  nameWithType.vb: IMemberReader(Of TInstance, TValue).Name
+  fullName.vb: PocoEmit.IMemberReader(Of TInstance, TValue).Name
+- uid: PocoEmit.IMemberReader`2.Read(`0)
+  commentId: M:PocoEmit.IMemberReader`2.Read(`0)
+  id: Read(`0)
+  parent: PocoEmit.IMemberReader`2
+  langs:
+  - csharp
+  - vb
+  name: Read(TInstance)
+  nameWithType: IMemberReader<TInstance, TValue>.Read(TInstance)
+  fullName: PocoEmit.IMemberReader<TInstance, TValue>.Read(TInstance)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/IMemberReader~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Read
+    path: ../PocoEmit/IMemberReader~2.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 读取
+  example: []
+  syntax:
+    content: TValue Read(TInstance instance)
+    parameters:
+    - id: instance
+      type: '{TInstance}'
+      description: 实体
+    return:
+      type: '{TValue}'
+      description: 成员值
+    content.vb: Function Read(instance As TInstance) As TValue
+  overload: PocoEmit.IMemberReader`2.Read*
+  nameWithType.vb: IMemberReader(Of TInstance, TValue).Read(TInstance)
+  fullName.vb: PocoEmit.IMemberReader(Of TInstance, TValue).Read(TInstance)
+references:
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.IMemberReader`2.Name*
+  commentId: Overload:PocoEmit.IMemberReader`2.Name
+  href: PocoEmit.IMemberReader-2.html#PocoEmit_IMemberReader_2_Name
+  name: Name
+  nameWithType: IMemberReader<TInstance, TValue>.Name
+  fullName: PocoEmit.IMemberReader<TInstance, TValue>.Name
+  nameWithType.vb: IMemberReader(Of TInstance, TValue).Name
+  fullName.vb: PocoEmit.IMemberReader(Of TInstance, TValue).Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.IMemberReader`2.Read*
+  commentId: Overload:PocoEmit.IMemberReader`2.Read
+  href: PocoEmit.IMemberReader-2.html#PocoEmit_IMemberReader_2_Read__0_
+  name: Read
+  nameWithType: IMemberReader<TInstance, TValue>.Read
+  fullName: PocoEmit.IMemberReader<TInstance, TValue>.Read
+  nameWithType.vb: IMemberReader(Of TInstance, TValue).Read
+  fullName.vb: PocoEmit.IMemberReader(Of TInstance, TValue).Read
+- uid: '{TInstance}'
+  commentId: '!:TInstance'
+  definition: TInstance
+  name: TInstance
+  nameWithType: TInstance
+  fullName: TInstance
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: TInstance
+  name: TInstance
+  nameWithType: TInstance
+  fullName: TInstance
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue

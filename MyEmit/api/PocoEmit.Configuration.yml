@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  id: PocoEmit.Configuration
+  children:
+  - PocoEmit.Configuration.CollectionContainerOptions
+  - PocoEmit.Configuration.ConfigurationBase
+  - PocoEmit.Configuration.ICompileInfo
+  - PocoEmit.Configuration.IMapperOptions
+  - PocoEmit.Configuration.IPocoOptions
+  - PocoEmit.Configuration.MapperConfigurationBase
+  - PocoEmit.Configuration.MapperOptions
+  - PocoEmit.Configuration.MemberContainerOptions
+  - PocoEmit.Configuration.PairTypeKey
+  - PocoEmit.Configuration.PocoOptions
+  - PocoEmit.Configuration.PrimitiveConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  type: Namespace
+  assemblies:
+  - PocoEmit
+references:
+- uid: PocoEmit.Configuration.ConfigurationBase
+  commentId: T:PocoEmit.Configuration.ConfigurationBase
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ConfigurationBase.html
+  name: ConfigurationBase
+  nameWithType: ConfigurationBase
+  fullName: PocoEmit.Configuration.ConfigurationBase
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Configuration.IPocoOptions
+  commentId: T:PocoEmit.Configuration.IPocoOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.IPocoOptions.html
+  name: IPocoOptions
+  nameWithType: IPocoOptions
+  fullName: PocoEmit.Configuration.IPocoOptions
+- uid: PocoEmit.Configuration.PairTypeKey
+  commentId: T:PocoEmit.Configuration.PairTypeKey
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.PairTypeKey.html
+  name: PairTypeKey
+  nameWithType: PairTypeKey
+  fullName: PocoEmit.Configuration.PairTypeKey
+- uid: PocoEmit.Configuration.MemberContainerOptions
+  commentId: T:PocoEmit.Configuration.MemberContainerOptions
+  href: PocoEmit.Configuration.MemberContainerOptions.html
+  name: MemberContainerOptions
+  nameWithType: MemberContainerOptions
+  fullName: PocoEmit.Configuration.MemberContainerOptions
+- uid: PocoEmit.Configuration.PocoOptions
+  commentId: T:PocoEmit.Configuration.PocoOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.PocoOptions.html
+  name: PocoOptions
+  nameWithType: PocoOptions
+  fullName: PocoEmit.Configuration.PocoOptions
+- uid: PocoEmit.Configuration.CollectionContainerOptions
+  commentId: T:PocoEmit.Configuration.CollectionContainerOptions
+  href: PocoEmit.Configuration.CollectionContainerOptions.html
+  name: CollectionContainerOptions
+  nameWithType: CollectionContainerOptions
+  fullName: PocoEmit.Configuration.CollectionContainerOptions
+- uid: PocoEmit.Configuration.IMapperOptions
+  commentId: T:PocoEmit.Configuration.IMapperOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.IMapperOptions.html
+  name: IMapperOptions
+  nameWithType: IMapperOptions
+  fullName: PocoEmit.Configuration.IMapperOptions
+- uid: PocoEmit.Configuration.MapperConfigurationBase
+  commentId: T:PocoEmit.Configuration.MapperConfigurationBase
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.MapperConfigurationBase.html
+  name: MapperConfigurationBase
+  nameWithType: MapperConfigurationBase
+  fullName: PocoEmit.Configuration.MapperConfigurationBase
+- uid: PocoEmit.Configuration.MapperOptions
+  commentId: T:PocoEmit.Configuration.MapperOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.MapperOptions.html
+  name: MapperOptions
+  nameWithType: MapperOptions
+  fullName: PocoEmit.Configuration.MapperOptions
+- uid: PocoEmit.Configuration.PrimitiveConfiguration
+  commentId: T:PocoEmit.Configuration.PrimitiveConfiguration
+  href: PocoEmit.Configuration.PrimitiveConfiguration.html
+  name: PrimitiveConfiguration
+  nameWithType: PrimitiveConfiguration
+  fullName: PocoEmit.Configuration.PrimitiveConfiguration
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html

@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.IPocoCopier`2
+  commentId: T:PocoEmit.IPocoCopier`2
+  id: IPocoCopier`2
+  parent: PocoEmit
+  children:
+  - PocoEmit.IPocoCopier`2.Copy(`0,`1)
+  langs:
+  - csharp
+  - vb
+  name: IPocoCopier<TSource, TDest>
+  nameWithType: IPocoCopier<TSource, TDest>
+  fullName: PocoEmit.IPocoCopier<TSource, TDest>
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Mapper/IPocoCopier`2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IPocoCopier
+    path: ../PocoEmit.Mapper/IPocoCopier`2.cs
+    startLine: 9
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 类型复制器
+  example: []
+  syntax:
+    content: 'public interface IPocoCopier<TSource, TDest> : IObjectCopier'
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    content.vb: Public Interface IPocoCopier(Of TSource, TDest) Inherits IObjectCopier
+  inheritedMembers:
+  - PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+  nameWithType.vb: IPocoCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoCopier(Of TSource, TDest)
+  name.vb: IPocoCopier(Of TSource, TDest)
+- uid: PocoEmit.IPocoCopier`2.Copy(`0,`1)
+  commentId: M:PocoEmit.IPocoCopier`2.Copy(`0,`1)
+  id: Copy(`0,`1)
+  parent: PocoEmit.IPocoCopier`2
+  langs:
+  - csharp
+  - vb
+  name: Copy(TSource, TDest)
+  nameWithType: IPocoCopier<TSource, TDest>.Copy(TSource, TDest)
+  fullName: PocoEmit.IPocoCopier<TSource, TDest>.Copy(TSource, TDest)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/IPocoCopier`2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Copy
+    path: ../PocoEmit.Mapper/IPocoCopier`2.cs
+    startLine: 17
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 复制
+  example: []
+  syntax:
+    content: void Copy(TSource from, TDest to)
+    parameters:
+    - id: from
+      type: '{TSource}'
+      description: ''
+    - id: to
+      type: '{TDest}'
+      description: ''
+    content.vb: Sub Copy(from As TSource, [to] As TDest)
+  overload: PocoEmit.IPocoCopier`2.Copy*
+  nameWithType.vb: IPocoCopier(Of TSource, TDest).Copy(TSource, TDest)
+  fullName.vb: PocoEmit.IPocoCopier(Of TSource, TDest).Copy(TSource, TDest)
+references:
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+  commentId: M:PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+  parent: PocoEmit.Copies.IObjectCopier
+  isExternal: true
+  href: PocoEmit.Copies.IObjectCopier.html#PocoEmit_Copies_IObjectCopier_CopyObject_System_Object_System_Object_
+  name: CopyObject(object, object)
+  nameWithType: IObjectCopier.CopyObject(object, object)
+  fullName: PocoEmit.Copies.IObjectCopier.CopyObject(object, object)
+  nameWithType.vb: IObjectCopier.CopyObject(Object, Object)
+  fullName.vb: PocoEmit.Copies.IObjectCopier.CopyObject(Object, Object)
+  name.vb: CopyObject(Object, Object)
+  spec.csharp:
+  - uid: PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+    name: CopyObject
+    href: PocoEmit.Copies.IObjectCopier.html#PocoEmit_Copies_IObjectCopier_CopyObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+    name: CopyObject
+    href: PocoEmit.Copies.IObjectCopier.html#PocoEmit_Copies_IObjectCopier_CopyObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: PocoEmit.Copies.IObjectCopier
+  commentId: T:PocoEmit.Copies.IObjectCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IObjectCopier.html
+  name: IObjectCopier
+  nameWithType: IObjectCopier
+  fullName: PocoEmit.Copies.IObjectCopier
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+- uid: PocoEmit.IPocoCopier`2.Copy*
+  commentId: Overload:PocoEmit.IPocoCopier`2.Copy
+  href: PocoEmit.IPocoCopier-2.html#PocoEmit_IPocoCopier_2_Copy__0__1_
+  name: Copy
+  nameWithType: IPocoCopier<TSource, TDest>.Copy
+  fullName: PocoEmit.IPocoCopier<TSource, TDest>.Copy
+  nameWithType.vb: IPocoCopier(Of TSource, TDest).Copy
+  fullName.vb: PocoEmit.IPocoCopier(Of TSource, TDest).Copy
+- uid: '{TSource}'
+  commentId: '!:TSource'
+  definition: TSource
+  name: TSource
+  nameWithType: TSource
+  fullName: TSource
+- uid: '{TDest}'
+  commentId: '!:TDest'
+  definition: TDest
+  name: TDest
+  nameWithType: TDest
+  fullName: TDest
+- uid: TSource
+  name: TSource
+  nameWithType: TSource
+  fullName: TSource
+- uid: TDest
+  name: TDest
+  nameWithType: TDest
+  fullName: TDest

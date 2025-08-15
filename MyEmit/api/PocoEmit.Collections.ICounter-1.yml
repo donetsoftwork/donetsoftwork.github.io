@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.ICounter`1
+  commentId: T:PocoEmit.Collections.ICounter`1
+  id: ICounter`1
+  parent: PocoEmit.Collections
+  children:
+  - PocoEmit.Collections.ICounter`1.Count(`0)
+  langs:
+  - csharp
+  - vb
+  name: ICounter<TCollection>
+  nameWithType: ICounter<TCollection>
+  fullName: PocoEmit.Collections.ICounter<TCollection>
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/ICollectionCounter~1.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ICounter
+    path: ../PocoEmit.Collections/Collections/ICollectionCounter~1.cs
+    startLine: 6
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 获取集合元素数量
+  example: []
+  syntax:
+    content: public interface ICounter<TCollection>
+    typeParameters:
+    - id: TCollection
+      description: ''
+    content.vb: Public Interface ICounter(Of TCollection)
+  nameWithType.vb: ICounter(Of TCollection)
+  fullName.vb: PocoEmit.Collections.ICounter(Of TCollection)
+  name.vb: ICounter(Of TCollection)
+- uid: PocoEmit.Collections.ICounter`1.Count(`0)
+  commentId: M:PocoEmit.Collections.ICounter`1.Count(`0)
+  id: Count(`0)
+  parent: PocoEmit.Collections.ICounter`1
+  langs:
+  - csharp
+  - vb
+  name: Count(TCollection)
+  nameWithType: ICounter<TCollection>.Count(TCollection)
+  fullName: PocoEmit.Collections.ICounter<TCollection>.Count(TCollection)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/ICollectionCounter~1.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Count
+    path: ../PocoEmit.Collections/Collections/ICollectionCounter~1.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 获取集合元素数量
+  example: []
+  syntax:
+    content: int Count(TCollection collection)
+    parameters:
+    - id: collection
+      type: '{TCollection}'
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Function Count(collection As TCollection) As Integer
+  overload: PocoEmit.Collections.ICounter`1.Count*
+  nameWithType.vb: ICounter(Of TCollection).Count(TCollection)
+  fullName.vb: PocoEmit.Collections.ICounter(Of TCollection).Count(TCollection)
+references:
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Collections.ICounter`1.Count*
+  commentId: Overload:PocoEmit.Collections.ICounter`1.Count
+  href: PocoEmit.Collections.ICounter-1.html#PocoEmit_Collections_ICounter_1_Count__0_
+  name: Count
+  nameWithType: ICounter<TCollection>.Count
+  fullName: PocoEmit.Collections.ICounter<TCollection>.Count
+  nameWithType.vb: ICounter(Of TCollection).Count
+  fullName.vb: PocoEmit.Collections.ICounter(Of TCollection).Count
+- uid: '{TCollection}'
+  commentId: '!:TCollection'
+  definition: TCollection
+  name: TCollection
+  nameWithType: TCollection
+  fullName: TCollection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TCollection
+  name: TCollection
+  nameWithType: TCollection
+  fullName: TCollection
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

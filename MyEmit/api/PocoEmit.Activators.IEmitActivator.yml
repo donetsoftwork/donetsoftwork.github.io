@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Activators.IEmitActivator
+  commentId: T:PocoEmit.Activators.IEmitActivator
+  id: IEmitActivator
+  parent: PocoEmit.Activators
+  children:
+  - PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  - PocoEmit.Activators.IEmitActivator.ReturnType
+  langs:
+  - csharp
+  - vb
+  name: IEmitActivator
+  nameWithType: IEmitActivator
+  fullName: PocoEmit.Activators.IEmitActivator
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/IEmitActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IEmitActivator
+    path: ../PocoEmit.Mapper/Activators/IEmitActivator.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: Emit类型激活(初始化)器
+  example: []
+  syntax:
+    content: public interface IEmitActivator
+    content.vb: Public Interface IEmitActivator
+- uid: PocoEmit.Activators.IEmitActivator.ReturnType
+  commentId: P:PocoEmit.Activators.IEmitActivator.ReturnType
+  id: ReturnType
+  parent: PocoEmit.Activators.IEmitActivator
+  langs:
+  - csharp
+  - vb
+  name: ReturnType
+  nameWithType: IEmitActivator.ReturnType
+  fullName: PocoEmit.Activators.IEmitActivator.ReturnType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/IEmitActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ReturnType
+    path: ../PocoEmit.Mapper/Activators/IEmitActivator.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 返回类型
+  example: []
+  syntax:
+    content: Type ReturnType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property ReturnType As Type
+  overload: PocoEmit.Activators.IEmitActivator.ReturnType*
+- uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  id: New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Activators.IEmitActivator
+  langs:
+  - csharp
+  - vb
+  name: New(Expression)
+  nameWithType: IEmitActivator.New(Expression)
+  fullName: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/IEmitActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: New
+    path: ../PocoEmit.Mapper/Activators/IEmitActivator.cs
+    startLine: 19
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 激活
+  example: []
+  syntax:
+    content: Expression New(Expression argument)
+    parameters:
+    - id: argument
+      type: System.Linq.Expressions.Expression
+      description: 参数
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Function [New](argument As Expression) As Expression
+  overload: PocoEmit.Activators.IEmitActivator.New*
+references:
+- uid: PocoEmit.Activators
+  commentId: N:PocoEmit.Activators
+  href: PocoEmit.html
+  name: PocoEmit.Activators
+  nameWithType: PocoEmit.Activators
+  fullName: PocoEmit.Activators
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+- uid: PocoEmit.Activators.IEmitActivator.ReturnType*
+  commentId: Overload:PocoEmit.Activators.IEmitActivator.ReturnType
+  href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_ReturnType
+  name: ReturnType
+  nameWithType: IEmitActivator.ReturnType
+  fullName: PocoEmit.Activators.IEmitActivator.ReturnType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Activators.IEmitActivator.New*
+  commentId: Overload:PocoEmit.Activators.IEmitActivator.New
+  href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  name: New
+  nameWithType: IEmitActivator.New
+  fullName: PocoEmit.Activators.IEmitActivator.New
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

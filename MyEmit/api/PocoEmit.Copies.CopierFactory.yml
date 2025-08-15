@@ -1,0 +1,1155 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Copies.CopierFactory
+  commentId: T:PocoEmit.Copies.CopierFactory
+  id: CopierFactory
+  parent: PocoEmit.Copies
+  children:
+  - PocoEmit.Copies.CopierFactory.#ctor(PocoEmit.Configuration.IMapperOptions)
+  - PocoEmit.Copies.CopierFactory.CreateNew(PocoEmit.Configuration.PairTypeKey)
+  - PocoEmit.Copies.CopierFactory.Options
+  langs:
+  - csharp
+  - vb
+  name: CopierFactory
+  nameWithType: CopierFactory
+  fullName: PocoEmit.Copies.CopierFactory
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/CopierFactory.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CopierFactory
+    path: ../PocoEmit.Mapper/Copies/CopierFactory.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 复制器工厂
+  example: []
+  syntax:
+    content: 'public class CopierFactory : CacheBase<PairTypeKey, IEmitCopier>, ICacher<PairTypeKey, IEmitCopier>, IStore<PairTypeKey, IEmitCopier>'
+    content.vb: Public Class CopierFactory Inherits CacheBase(Of PairTypeKey, IEmitCopier) Implements ICacher(Of PairTypeKey, IEmitCopier), IStore(Of PairTypeKey, IEmitCopier)
+  inheritance:
+  - System.Object
+  - PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  implements:
+  - PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  - PocoEmit.Collections.IStore{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  inheritedMembers:
+  - PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.Get(PocoEmit.Configuration.PairTypeKey)
+  - PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.ContainsKey(PocoEmit.Configuration.PairTypeKey)
+  - PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.TryGetValue(PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier@)
+  - PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.Set(PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier)
+  - PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.CreateNew(PocoEmit.Configuration.PairTypeKey)
+  extensionMethods:
+  - PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.PocoEmit.MapperServices.SetCopy``2(System.Action{{TSource},{TDest}})
+  - PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.PocoEmit.MapperServices.TrySetCopy``2(System.Action{{TSource},{TDest}})
+- uid: PocoEmit.Copies.CopierFactory.#ctor(PocoEmit.Configuration.IMapperOptions)
+  commentId: M:PocoEmit.Copies.CopierFactory.#ctor(PocoEmit.Configuration.IMapperOptions)
+  id: '#ctor(PocoEmit.Configuration.IMapperOptions)'
+  parent: PocoEmit.Copies.CopierFactory
+  langs:
+  - csharp
+  - vb
+  name: CopierFactory(IMapperOptions)
+  nameWithType: CopierFactory.CopierFactory(IMapperOptions)
+  fullName: PocoEmit.Copies.CopierFactory.CopierFactory(PocoEmit.Configuration.IMapperOptions)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/CopierFactory.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Copies/CopierFactory.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 复制器工厂
+  example: []
+  syntax:
+    content: public CopierFactory(IMapperOptions options)
+    parameters:
+    - id: options
+      type: PocoEmit.Configuration.IMapperOptions
+      description: ''
+    content.vb: Public Sub New(options As IMapperOptions)
+  overload: PocoEmit.Copies.CopierFactory.#ctor*
+  nameWithType.vb: CopierFactory.New(IMapperOptions)
+  fullName.vb: PocoEmit.Copies.CopierFactory.New(PocoEmit.Configuration.IMapperOptions)
+  name.vb: New(IMapperOptions)
+- uid: PocoEmit.Copies.CopierFactory.Options
+  commentId: P:PocoEmit.Copies.CopierFactory.Options
+  id: Options
+  parent: PocoEmit.Copies.CopierFactory
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: CopierFactory.Options
+  fullName: PocoEmit.Copies.CopierFactory.Options
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/CopierFactory.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Options
+    path: ../PocoEmit.Mapper/Copies/CopierFactory.cs
+    startLine: 19
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: Emit配置
+  example: []
+  syntax:
+    content: public IMapperOptions Options { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Configuration.IMapperOptions
+    content.vb: Public ReadOnly Property Options As IMapperOptions
+  overload: PocoEmit.Copies.CopierFactory.Options*
+- uid: PocoEmit.Copies.CopierFactory.CreateNew(PocoEmit.Configuration.PairTypeKey)
+  commentId: M:PocoEmit.Copies.CopierFactory.CreateNew(PocoEmit.Configuration.PairTypeKey)
+  id: CreateNew(PocoEmit.Configuration.PairTypeKey)
+  parent: PocoEmit.Copies.CopierFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateNew(PairTypeKey)
+  nameWithType: CopierFactory.CreateNew(PairTypeKey)
+  fullName: PocoEmit.Copies.CopierFactory.CreateNew(PocoEmit.Configuration.PairTypeKey)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/CopierFactory.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CreateNew
+    path: ../PocoEmit.Mapper/Copies/CopierFactory.cs
+    startLine: 24
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 构造新值
+  example: []
+  syntax:
+    content: protected override IEmitCopier CreateNew(PairTypeKey key)
+    parameters:
+    - id: key
+      type: PocoEmit.Configuration.PairTypeKey
+      description: ''
+    return:
+      type: PocoEmit.Copies.IEmitCopier
+      description: ''
+    content.vb: Protected Overrides Function CreateNew(key As PairTypeKey) As IEmitCopier
+  overridden: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.CreateNew(PocoEmit.Configuration.PairTypeKey)
+  overload: PocoEmit.Copies.CopierFactory.CreateNew*
+references:
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  commentId: T:PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.CacheBase`2
+  href: PocoEmit.Collections.CacheBase-2.html
+  name: CacheBase<PairTypeKey, IEmitCopier>
+  nameWithType: CacheBase<PairTypeKey, IEmitCopier>
+  fullName: PocoEmit.Collections.CacheBase<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>
+  nameWithType.vb: CacheBase(Of PairTypeKey, IEmitCopier)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier)
+  name.vb: CacheBase(Of PairTypeKey, IEmitCopier)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase
+    href: PocoEmit.Collections.CacheBase-2.html
+  - name: <
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase
+    href: PocoEmit.Collections.CacheBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+- uid: PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  commentId: T:PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<PairTypeKey, IEmitCopier>
+  nameWithType: ICacher<PairTypeKey, IEmitCopier>
+  fullName: PocoEmit.Collections.ICacher<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>
+  nameWithType.vb: ICacher(Of PairTypeKey, IEmitCopier)
+  fullName.vb: PocoEmit.Collections.ICacher(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier)
+  name.vb: ICacher(Of PairTypeKey, IEmitCopier)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+- uid: PocoEmit.Collections.IStore{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  commentId: T:PocoEmit.Collections.IStore{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<PairTypeKey, IEmitCopier>
+  nameWithType: IStore<PairTypeKey, IEmitCopier>
+  fullName: PocoEmit.Collections.IStore<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>
+  nameWithType.vb: IStore(Of PairTypeKey, IEmitCopier)
+  fullName.vb: PocoEmit.Collections.IStore(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier)
+  name.vb: IStore(Of PairTypeKey, IEmitCopier)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+- uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.Get(PocoEmit.Configuration.PairTypeKey)
+  commentId: M:PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.Get(PocoEmit.Configuration.PairTypeKey)
+  parent: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  definition: PocoEmit.Collections.CacheBase`2.Get(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  name: Get(PairTypeKey)
+  nameWithType: CacheBase<PairTypeKey, IEmitCopier>.Get(PairTypeKey)
+  fullName: PocoEmit.Collections.CacheBase<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>.Get(PocoEmit.Configuration.PairTypeKey)
+  nameWithType.vb: CacheBase(Of PairTypeKey, IEmitCopier).Get(PairTypeKey)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier).Get(PocoEmit.Configuration.PairTypeKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.Get(PocoEmit.Configuration.PairTypeKey)
+    name: Get
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  - name: (
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.Get(PocoEmit.Configuration.PairTypeKey)
+    name: Get
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  - name: (
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: )
+- uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.ContainsKey(PocoEmit.Configuration.PairTypeKey)
+  commentId: M:PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.ContainsKey(PocoEmit.Configuration.PairTypeKey)
+  parent: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  definition: PocoEmit.Collections.CacheBase`2.ContainsKey(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  name: ContainsKey(PairTypeKey)
+  nameWithType: CacheBase<PairTypeKey, IEmitCopier>.ContainsKey(PairTypeKey)
+  fullName: PocoEmit.Collections.CacheBase<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>.ContainsKey(PocoEmit.Configuration.PairTypeKey)
+  nameWithType.vb: CacheBase(Of PairTypeKey, IEmitCopier).ContainsKey(PairTypeKey)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier).ContainsKey(PocoEmit.Configuration.PairTypeKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.ContainsKey(PocoEmit.Configuration.PairTypeKey)
+    name: ContainsKey
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  - name: (
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.ContainsKey(PocoEmit.Configuration.PairTypeKey)
+    name: ContainsKey
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  - name: (
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: )
+- uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.TryGetValue(PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier@)
+  commentId: M:PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.TryGetValue(PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier@)
+  parent: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  definition: PocoEmit.Collections.CacheBase`2.TryGetValue(`0,`1@)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  name: TryGetValue(PairTypeKey, out IEmitCopier)
+  nameWithType: CacheBase<PairTypeKey, IEmitCopier>.TryGetValue(PairTypeKey, out IEmitCopier)
+  fullName: PocoEmit.Collections.CacheBase<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>.TryGetValue(PocoEmit.Configuration.PairTypeKey, out PocoEmit.Copies.IEmitCopier)
+  nameWithType.vb: CacheBase(Of PairTypeKey, IEmitCopier).TryGetValue(PairTypeKey, IEmitCopier)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier).TryGetValue(PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier)
+  name.vb: TryGetValue(PairTypeKey, IEmitCopier)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.TryGetValue(PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier@)
+    name: TryGetValue
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  - name: (
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.TryGetValue(PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier@)
+    name: TryGetValue
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  - name: (
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+- uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.Set(PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier)
+  commentId: M:PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.Set(PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier)
+  parent: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  definition: PocoEmit.Collections.CacheBase`2.Set(`0,`1)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  name: Set(PairTypeKey, IEmitCopier)
+  nameWithType: CacheBase<PairTypeKey, IEmitCopier>.Set(PairTypeKey, IEmitCopier)
+  fullName: PocoEmit.Collections.CacheBase<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>.Set(PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier)
+  nameWithType.vb: CacheBase(Of PairTypeKey, IEmitCopier).Set(PairTypeKey, IEmitCopier)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier).Set(PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.Set(PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier)
+    name: Set
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  - name: (
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.Set(PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier)
+    name: Set
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  - name: (
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+- uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.CreateNew(PocoEmit.Configuration.PairTypeKey)
+  commentId: M:PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.CreateNew(PocoEmit.Configuration.PairTypeKey)
+  parent: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  definition: PocoEmit.Collections.CacheBase`2.CreateNew(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  name: CreateNew(PairTypeKey)
+  nameWithType: CacheBase<PairTypeKey, IEmitCopier>.CreateNew(PairTypeKey)
+  fullName: PocoEmit.Collections.CacheBase<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>.CreateNew(PocoEmit.Configuration.PairTypeKey)
+  nameWithType.vb: CacheBase(Of PairTypeKey, IEmitCopier).CreateNew(PairTypeKey)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier).CreateNew(PocoEmit.Configuration.PairTypeKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.CreateNew(PocoEmit.Configuration.PairTypeKey)
+    name: CreateNew
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  - name: (
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.CreateNew(PocoEmit.Configuration.PairTypeKey)
+    name: CreateNew
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  - name: (
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: )
+- uid: PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.PocoEmit.MapperServices.SetCopy``2(System.Action{{TSource},{TDest}})
+  commentId: M:PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  parent: PocoEmit.MapperServices
+  definition: PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_SetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  name: SetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  nameWithType: MapperServices.SetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  fullName: PocoEmit.MapperServices.SetCopy<TSource, TDest>(PocoEmit.Collections.ICacher<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>, System.Action<TSource, TDest>)
+  nameWithType.vb: MapperServices.SetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+  fullName.vb: PocoEmit.MapperServices.SetCopy(Of TSource, TDest)(PocoEmit.Collections.ICacher(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier), System.Action(Of TSource, TDest))
+  name.vb: SetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+  spec.csharp:
+  - uid: PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+    name: SetCopy
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_SetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+    name: SetCopy
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_SetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: )
+- uid: PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}.PocoEmit.MapperServices.TrySetCopy``2(System.Action{{TSource},{TDest}})
+  commentId: M:PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  parent: PocoEmit.MapperServices
+  definition: PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_TrySetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  name: TrySetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  nameWithType: MapperServices.TrySetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  fullName: PocoEmit.MapperServices.TrySetCopy<TSource, TDest>(PocoEmit.Collections.ICacher<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>, System.Action<TSource, TDest>)
+  nameWithType.vb: MapperServices.TrySetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+  fullName.vb: PocoEmit.MapperServices.TrySetCopy(Of TSource, TDest)(PocoEmit.Collections.ICacher(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier), System.Action(Of TSource, TDest))
+  name.vb: TrySetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+  spec.csharp:
+  - uid: PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+    name: TrySetCopy
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_TrySetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+    name: TrySetCopy
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_TrySetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections.CacheBase`2
+  commentId: T:PocoEmit.Collections.CacheBase`2
+  href: PocoEmit.Collections.CacheBase-2.html
+  name: CacheBase<TKey, TValue>
+  nameWithType: CacheBase<TKey, TValue>
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>
+  nameWithType.vb: CacheBase(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue)
+  name.vb: CacheBase(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase
+    href: PocoEmit.Collections.CacheBase-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase
+    href: PocoEmit.Collections.CacheBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Collections.ICacher`2
+  commentId: T:PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<TKey, TValue>
+  nameWithType: ICacher<TKey, TValue>
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>
+  nameWithType.vb: ICacher(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue)
+  name.vb: ICacher(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IStore`2
+  commentId: T:PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<TKey, TValue>
+  nameWithType: IStore<TKey, TValue>
+  fullName: PocoEmit.Collections.IStore<TKey, TValue>
+  nameWithType.vb: IStore(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IStore(Of TKey, TValue)
+  name.vb: IStore(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.CacheBase`2.Get(`0)
+  commentId: M:PocoEmit.Collections.CacheBase`2.Get(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  name: Get(TKey)
+  nameWithType: CacheBase<TKey, TValue>.Get(TKey)
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>.Get(TKey)
+  nameWithType.vb: CacheBase(Of TKey, TValue).Get(TKey)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue).Get(TKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2.Get(`0)
+    name: Get
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2.Get(`0)
+    name: Get
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  - name: (
+  - name: TKey
+  - name: )
+- uid: PocoEmit.Collections.CacheBase`2.ContainsKey(`0)
+  commentId: M:PocoEmit.Collections.CacheBase`2.ContainsKey(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  name: ContainsKey(TKey)
+  nameWithType: CacheBase<TKey, TValue>.ContainsKey(TKey)
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: CacheBase(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2.ContainsKey(`0)
+    name: ContainsKey
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2.ContainsKey(`0)
+    name: ContainsKey
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  - name: (
+  - name: TKey
+  - name: )
+- uid: PocoEmit.Collections.CacheBase`2.TryGetValue(`0,`1@)
+  commentId: M:PocoEmit.Collections.CacheBase`2.TryGetValue(`0,`1@)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  name: TryGetValue(TKey, out TValue)
+  nameWithType: CacheBase<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: CacheBase(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue).TryGetValue(TKey, TValue)
+  name.vb: TryGetValue(TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.CacheBase`2.Set(`0,`1)
+  commentId: M:PocoEmit.Collections.CacheBase`2.Set(`0,`1)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  name: Set(TKey, TValue)
+  nameWithType: CacheBase<TKey, TValue>.Set(TKey, TValue)
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>.Set(TKey, TValue)
+  nameWithType.vb: CacheBase(Of TKey, TValue).Set(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue).Set(TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2.Set(`0,`1)
+    name: Set
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2.Set(`0,`1)
+    name: Set
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.CacheBase`2.CreateNew(`0)
+  commentId: M:PocoEmit.Collections.CacheBase`2.CreateNew(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  name: CreateNew(TKey)
+  nameWithType: CacheBase<TKey, TValue>.CreateNew(TKey)
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>.CreateNew(TKey)
+  nameWithType.vb: CacheBase(Of TKey, TValue).CreateNew(TKey)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue).CreateNew(TKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2.CreateNew(`0)
+    name: CreateNew
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2.CreateNew(`0)
+    name: CreateNew
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  - name: (
+  - name: TKey
+  - name: )
+- uid: PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  commentId: M:PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  isExternal: true
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_SetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  name: SetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  nameWithType: MapperServices.SetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  fullName: PocoEmit.MapperServices.SetCopy<TSource, TDest>(PocoEmit.Collections.ICacher<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>, System.Action<TSource, TDest>)
+  nameWithType.vb: MapperServices.SetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+  fullName.vb: PocoEmit.MapperServices.SetCopy(Of TSource, TDest)(PocoEmit.Collections.ICacher(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier), System.Action(Of TSource, TDest))
+  name.vb: SetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+  spec.csharp:
+  - uid: PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+    name: SetCopy
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_SetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+    name: SetCopy
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_SetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: )
+- uid: PocoEmit.MapperServices
+  commentId: T:PocoEmit.MapperServices
+  parent: PocoEmit
+  href: PocoEmit.MapperServices.html
+  name: MapperServices
+  nameWithType: MapperServices
+  fullName: PocoEmit.MapperServices
+- uid: PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  commentId: M:PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  isExternal: true
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_TrySetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  name: TrySetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  nameWithType: MapperServices.TrySetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  fullName: PocoEmit.MapperServices.TrySetCopy<TSource, TDest>(PocoEmit.Collections.ICacher<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>, System.Action<TSource, TDest>)
+  nameWithType.vb: MapperServices.TrySetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+  fullName.vb: PocoEmit.MapperServices.TrySetCopy(Of TSource, TDest)(PocoEmit.Collections.ICacher(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier), System.Action(Of TSource, TDest))
+  name.vb: TrySetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+  spec.csharp:
+  - uid: PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+    name: TrySetCopy
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_TrySetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+    name: TrySetCopy
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_TrySetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: )
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.Copies.CopierFactory.#ctor*
+  commentId: Overload:PocoEmit.Copies.CopierFactory.#ctor
+  href: PocoEmit.Copies.CopierFactory.html#PocoEmit_Copies_CopierFactory__ctor_PocoEmit_Configuration_IMapperOptions_
+  name: CopierFactory
+  nameWithType: CopierFactory.CopierFactory
+  fullName: PocoEmit.Copies.CopierFactory.CopierFactory
+  nameWithType.vb: CopierFactory.New
+  fullName.vb: PocoEmit.Copies.CopierFactory.New
+  name.vb: New
+- uid: PocoEmit.Configuration.IMapperOptions
+  commentId: T:PocoEmit.Configuration.IMapperOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.IMapperOptions.html
+  name: IMapperOptions
+  nameWithType: IMapperOptions
+  fullName: PocoEmit.Configuration.IMapperOptions
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Copies.CopierFactory.Options*
+  commentId: Overload:PocoEmit.Copies.CopierFactory.Options
+  href: PocoEmit.Copies.CopierFactory.html#PocoEmit_Copies_CopierFactory_Options
+  name: Options
+  nameWithType: CopierFactory.Options
+  fullName: PocoEmit.Copies.CopierFactory.Options
+- uid: PocoEmit.Copies.CopierFactory.CreateNew*
+  commentId: Overload:PocoEmit.Copies.CopierFactory.CreateNew
+  href: PocoEmit.Copies.CopierFactory.html#PocoEmit_Copies_CopierFactory_CreateNew_PocoEmit_Configuration_PairTypeKey_
+  name: CreateNew
+  nameWithType: CopierFactory.CreateNew
+  fullName: PocoEmit.Copies.CopierFactory.CreateNew
+- uid: PocoEmit.Configuration.PairTypeKey
+  commentId: T:PocoEmit.Configuration.PairTypeKey
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.PairTypeKey.html
+  name: PairTypeKey
+  nameWithType: PairTypeKey
+  fullName: PocoEmit.Configuration.PairTypeKey
+- uid: PocoEmit.Copies.IEmitCopier
+  commentId: T:PocoEmit.Copies.IEmitCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IEmitCopier.html
+  name: IEmitCopier
+  nameWithType: IEmitCopier
+  fullName: PocoEmit.Copies.IEmitCopier

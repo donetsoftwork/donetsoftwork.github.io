@@ -1,0 +1,210 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Activators.IGenericActivator`1
+  commentId: T:PocoEmit.Activators.IGenericActivator`1
+  id: IGenericActivator`1
+  parent: PocoEmit.Activators
+  children:
+  - PocoEmit.Activators.IGenericActivator`1.Activator
+  langs:
+  - csharp
+  - vb
+  name: IGenericActivator<TInstance>
+  nameWithType: IGenericActivator<TInstance>
+  fullName: PocoEmit.Activators.IGenericActivator<TInstance>
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/IGenericActivator~1.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IGenericActivator
+    path: ../PocoEmit.Mapper/Activators/IGenericActivator~1.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 强类型激活
+  example: []
+  syntax:
+    content: 'public interface IGenericActivator<TInstance> : IEmitActivator'
+    typeParameters:
+    - id: TInstance
+      description: ''
+    content.vb: Public Interface IGenericActivator(Of TInstance) Inherits IEmitActivator
+  inheritedMembers:
+  - PocoEmit.Activators.IEmitActivator.ReturnType
+  - PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  nameWithType.vb: IGenericActivator(Of TInstance)
+  fullName.vb: PocoEmit.Activators.IGenericActivator(Of TInstance)
+  name.vb: IGenericActivator(Of TInstance)
+- uid: PocoEmit.Activators.IGenericActivator`1.Activator
+  commentId: P:PocoEmit.Activators.IGenericActivator`1.Activator
+  id: Activator
+  parent: PocoEmit.Activators.IGenericActivator`1
+  langs:
+  - csharp
+  - vb
+  name: Activator
+  nameWithType: IGenericActivator<TInstance>.Activator
+  fullName: PocoEmit.Activators.IGenericActivator<TInstance>.Activator
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/IGenericActivator~1.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Activator
+    path: ../PocoEmit.Mapper/Activators/IGenericActivator~1.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 激活委托
+  example: []
+  syntax:
+    content: Func<TInstance> Activator { get; }
+    parameters: []
+    return:
+      type: System.Func{{TInstance}}
+    content.vb: ReadOnly Property Activator As Func(Of TInstance)
+  overload: PocoEmit.Activators.IGenericActivator`1.Activator*
+  nameWithType.vb: IGenericActivator(Of TInstance).Activator
+  fullName.vb: PocoEmit.Activators.IGenericActivator(Of TInstance).Activator
+references:
+- uid: PocoEmit.Activators
+  commentId: N:PocoEmit.Activators
+  href: PocoEmit.html
+  name: PocoEmit.Activators
+  nameWithType: PocoEmit.Activators
+  fullName: PocoEmit.Activators
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+- uid: PocoEmit.Activators.IEmitActivator.ReturnType
+  commentId: P:PocoEmit.Activators.IEmitActivator.ReturnType
+  parent: PocoEmit.Activators.IEmitActivator
+  href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_ReturnType
+  name: ReturnType
+  nameWithType: IEmitActivator.ReturnType
+  fullName: PocoEmit.Activators.IEmitActivator.ReturnType
+- uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Activators.IEmitActivator
+  isExternal: true
+  href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  name: New(Expression)
+  nameWithType: IEmitActivator.New(Expression)
+  fullName: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: PocoEmit.Activators.IEmitActivator
+  commentId: T:PocoEmit.Activators.IEmitActivator
+  parent: PocoEmit.Activators
+  href: PocoEmit.Activators.IEmitActivator.html
+  name: IEmitActivator
+  nameWithType: IEmitActivator
+  fullName: PocoEmit.Activators.IEmitActivator
+- uid: PocoEmit.Activators.IGenericActivator`1.Activator*
+  commentId: Overload:PocoEmit.Activators.IGenericActivator`1.Activator
+  href: PocoEmit.Activators.IGenericActivator-1.html#PocoEmit_Activators_IGenericActivator_1_Activator
+  name: Activator
+  nameWithType: IGenericActivator<TInstance>.Activator
+  fullName: PocoEmit.Activators.IGenericActivator<TInstance>.Activator
+  nameWithType.vb: IGenericActivator(Of TInstance).Activator
+  fullName.vb: PocoEmit.Activators.IGenericActivator(Of TInstance).Activator
+- uid: System.Func{{TInstance}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TInstance>
+  nameWithType: Func<TInstance>
+  fullName: System.Func<TInstance>
+  nameWithType.vb: Func(Of TInstance)
+  fullName.vb: System.Func(Of TInstance)
+  name.vb: Func(Of TInstance)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TInstance
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

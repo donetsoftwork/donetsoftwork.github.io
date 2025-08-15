@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Activators
+  commentId: N:PocoEmit.Collections.Activators
+  id: PocoEmit.Collections.Activators
+  children:
+  - PocoEmit.Collections.Activators.ArrayActivator
+  - PocoEmit.Collections.Activators.CollectionActivator
+  - PocoEmit.Collections.Activators.ListActivator
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Collections.Activators
+  nameWithType: PocoEmit.Collections.Activators
+  fullName: PocoEmit.Collections.Activators
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Collections.Activators.ArrayActivator
+  commentId: T:PocoEmit.Collections.Activators.ArrayActivator
+  parent: PocoEmit.Collections.Activators
+  href: PocoEmit.Collections.Activators.ArrayActivator.html
+  name: ArrayActivator
+  nameWithType: ArrayActivator
+  fullName: PocoEmit.Collections.Activators.ArrayActivator
+- uid: PocoEmit.Collections.Activators.CollectionActivator
+  commentId: T:PocoEmit.Collections.Activators.CollectionActivator
+  parent: PocoEmit.Collections.Activators
+  href: PocoEmit.Collections.Activators.CollectionActivator.html
+  name: CollectionActivator
+  nameWithType: CollectionActivator
+  fullName: PocoEmit.Collections.Activators.CollectionActivator
+- uid: PocoEmit.Collections.Activators.ListActivator
+  commentId: T:PocoEmit.Collections.Activators.ListActivator
+  href: PocoEmit.Collections.Activators.ListActivator.html
+  name: ListActivator
+  nameWithType: ListActivator
+  fullName: PocoEmit.Collections.Activators.ListActivator
+- uid: PocoEmit.Collections.Activators
+  commentId: N:PocoEmit.Collections.Activators
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Activators
+  nameWithType: PocoEmit.Collections.Activators
+  fullName: PocoEmit.Collections.Activators
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Activators
+    name: Activators
+    href: PocoEmit.Collections.Activators.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Activators
+    name: Activators
+    href: PocoEmit.Collections.Activators.html

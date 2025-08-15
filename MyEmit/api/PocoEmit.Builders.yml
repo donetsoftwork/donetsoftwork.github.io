@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Builders
+  commentId: N:PocoEmit.Builders
+  id: PocoEmit.Builders
+  children:
+  - PocoEmit.Builders.CollectionConvertBuilder
+  - PocoEmit.Builders.CollectionCopierBuilder
+  - PocoEmit.Builders.Compiler
+  - PocoEmit.Builders.ComplexConvertBuilder
+  - PocoEmit.Builders.ConvertBuilder
+  - PocoEmit.Builders.CopierBuilder
+  - PocoEmit.Builders.CopierBuilderBase
+  - PocoEmit.Builders.CopyToSelf
+  - PocoEmit.Builders.EmitHelper
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Builders
+  nameWithType: PocoEmit.Builders
+  fullName: PocoEmit.Builders
+  type: Namespace
+  assemblies:
+  - PocoEmit
+references:
+- uid: PocoEmit.Builders.Compiler
+  commentId: T:PocoEmit.Builders.Compiler
+  parent: PocoEmit.Builders
+  href: PocoEmit.Builders.Compiler.html
+  name: Compiler
+  nameWithType: Compiler
+  fullName: PocoEmit.Builders.Compiler
+- uid: PocoEmit.Builders.ConvertBuilder
+  commentId: T:PocoEmit.Builders.ConvertBuilder
+  parent: PocoEmit.Builders
+  href: PocoEmit.Builders.ConvertBuilder.html
+  name: ConvertBuilder
+  nameWithType: ConvertBuilder
+  fullName: PocoEmit.Builders.ConvertBuilder
+- uid: PocoEmit.Builders.EmitHelper
+  commentId: T:PocoEmit.Builders.EmitHelper
+  href: PocoEmit.Builders.EmitHelper.html
+  name: EmitHelper
+  nameWithType: EmitHelper
+  fullName: PocoEmit.Builders.EmitHelper
+- uid: PocoEmit.Builders.CollectionConvertBuilder
+  commentId: T:PocoEmit.Builders.CollectionConvertBuilder
+  href: PocoEmit.Builders.CollectionConvertBuilder.html
+  name: CollectionConvertBuilder
+  nameWithType: CollectionConvertBuilder
+  fullName: PocoEmit.Builders.CollectionConvertBuilder
+- uid: PocoEmit.Builders.CollectionCopierBuilder
+  commentId: T:PocoEmit.Builders.CollectionCopierBuilder
+  href: PocoEmit.Builders.CollectionCopierBuilder.html
+  name: CollectionCopierBuilder
+  nameWithType: CollectionCopierBuilder
+  fullName: PocoEmit.Builders.CollectionCopierBuilder
+- uid: PocoEmit.Builders.ComplexConvertBuilder
+  commentId: T:PocoEmit.Builders.ComplexConvertBuilder
+  parent: PocoEmit.Builders
+  href: PocoEmit.Builders.ComplexConvertBuilder.html
+  name: ComplexConvertBuilder
+  nameWithType: ComplexConvertBuilder
+  fullName: PocoEmit.Builders.ComplexConvertBuilder
+- uid: PocoEmit.Builders.CopierBuilder
+  commentId: T:PocoEmit.Builders.CopierBuilder
+  parent: PocoEmit.Builders
+  href: PocoEmit.Builders.CopierBuilder.html
+  name: CopierBuilder
+  nameWithType: CopierBuilder
+  fullName: PocoEmit.Builders.CopierBuilder
+- uid: PocoEmit.Builders.CopierBuilderBase
+  commentId: T:PocoEmit.Builders.CopierBuilderBase
+  parent: PocoEmit.Builders
+  href: PocoEmit.Builders.CopierBuilderBase.html
+  name: CopierBuilderBase
+  nameWithType: CopierBuilderBase
+  fullName: PocoEmit.Builders.CopierBuilderBase
+- uid: PocoEmit.Builders.CopyToSelf
+  commentId: T:PocoEmit.Builders.CopyToSelf
+  parent: PocoEmit.Builders
+  href: PocoEmit.Builders.CopyToSelf.html
+  name: CopyToSelf
+  nameWithType: CopyToSelf
+  fullName: PocoEmit.Builders.CopyToSelf
+- uid: PocoEmit.Builders
+  commentId: N:PocoEmit.Builders
+  href: PocoEmit.html
+  name: PocoEmit.Builders
+  nameWithType: PocoEmit.Builders
+  fullName: PocoEmit.Builders
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html

@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Members.ICompiledWriter`2
+  commentId: T:PocoEmit.Members.ICompiledWriter`2
+  id: ICompiledWriter`2
+  parent: PocoEmit.Members
+  children:
+  - PocoEmit.Members.ICompiledWriter`2.WriteAction
+  langs:
+  - csharp
+  - vb
+  name: ICompiledWriter<TInstance, TValue>
+  nameWithType: ICompiledWriter<TInstance, TValue>
+  fullName: PocoEmit.Members.ICompiledWriter<TInstance, TValue>
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit/Members/ICompiledWriter~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ICompiledWriter
+    path: ../PocoEmit/Members/ICompiledWriter~2.cs
+    startLine: 9
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 已编译成员写入器
+  example: []
+  syntax:
+    content: 'public interface ICompiledWriter<TInstance, TValue> : IEmitMemberWriter, IMember, IEmitWriter, ICompileInfo, IMemberWriter<TInstance, TValue>'
+    typeParameters:
+    - id: TInstance
+      description: 实体类型
+    - id: TValue
+      description: 成员类型
+    content.vb: Public Interface ICompiledWriter(Of TInstance, TValue) Inherits IEmitMemberWriter, IMember, IEmitWriter, ICompileInfo, IMemberWriter(Of TInstance, TValue)
+  inheritedMembers:
+  - PocoEmit.Members.IEmitMemberWriter.Info
+  - PocoEmit.Members.IMember.InstanceType
+  - PocoEmit.Members.IMember.Name
+  - PocoEmit.Members.IMember.ValueType
+  - PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  - PocoEmit.Configuration.ICompileInfo.Compiled
+  - PocoEmit.IMemberWriter{{TInstance},{TValue}}.Name
+  - PocoEmit.IMemberWriter{{TInstance},{TValue}}.Write({TInstance},{TValue})
+  extensionMethods:
+  - PocoEmit.Members.IEmitMemberWriter.PocoEmit.PocoEmitServices.Build``2
+  nameWithType.vb: ICompiledWriter(Of TInstance, TValue)
+  fullName.vb: PocoEmit.Members.ICompiledWriter(Of TInstance, TValue)
+  name.vb: ICompiledWriter(Of TInstance, TValue)
+- uid: PocoEmit.Members.ICompiledWriter`2.WriteAction
+  commentId: P:PocoEmit.Members.ICompiledWriter`2.WriteAction
+  id: WriteAction
+  parent: PocoEmit.Members.ICompiledWriter`2
+  langs:
+  - csharp
+  - vb
+  name: WriteAction
+  nameWithType: ICompiledWriter<TInstance, TValue>.WriteAction
+  fullName: PocoEmit.Members.ICompiledWriter<TInstance, TValue>.WriteAction
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/ICompiledWriter~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: WriteAction
+    path: ../PocoEmit/Members/ICompiledWriter~2.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 写入委托
+  example: []
+  syntax:
+    content: Action<TInstance, TValue> WriteAction { get; }
+    parameters: []
+    return:
+      type: System.Action{{TInstance},{TValue}}
+    content.vb: ReadOnly Property WriteAction As Action(Of TInstance, TValue)
+  overload: PocoEmit.Members.ICompiledWriter`2.WriteAction*
+  nameWithType.vb: ICompiledWriter(Of TInstance, TValue).WriteAction
+  fullName.vb: PocoEmit.Members.ICompiledWriter(Of TInstance, TValue).WriteAction
+references:
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: PocoEmit.Members.IEmitMemberWriter.Info
+  commentId: P:PocoEmit.Members.IEmitMemberWriter.Info
+  parent: PocoEmit.Members.IEmitMemberWriter
+  href: PocoEmit.Members.IEmitMemberWriter.html#PocoEmit_Members_IEmitMemberWriter_Info
+  name: Info
+  nameWithType: IEmitMemberWriter.Info
+  fullName: PocoEmit.Members.IEmitMemberWriter.Info
+- uid: PocoEmit.Members.IMember.InstanceType
+  commentId: P:PocoEmit.Members.IMember.InstanceType
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_InstanceType
+  name: InstanceType
+  nameWithType: IMember.InstanceType
+  fullName: PocoEmit.Members.IMember.InstanceType
+- uid: PocoEmit.Members.IMember.Name
+  commentId: P:PocoEmit.Members.IMember.Name
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_Name
+  name: Name
+  nameWithType: IMember.Name
+  fullName: PocoEmit.Members.IMember.Name
+- uid: PocoEmit.Members.IMember.ValueType
+  commentId: P:PocoEmit.Members.IMember.ValueType
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_ValueType
+  name: ValueType
+  nameWithType: IMember.ValueType
+  fullName: PocoEmit.Members.IMember.ValueType
+- uid: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Members.IEmitWriter
+  isExternal: true
+  href: PocoEmit.Members.IEmitWriter.html#PocoEmit_Members_IEmitWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Write(Expression, Expression)
+  nameWithType: IEmitWriter.Write(Expression, Expression)
+  fullName: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Write
+    href: PocoEmit.Members.IEmitWriter.html#PocoEmit_Members_IEmitWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Members.IEmitWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Write
+    href: PocoEmit.Members.IEmitWriter.html#PocoEmit_Members_IEmitWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: PocoEmit.Configuration.ICompileInfo.Compiled
+  commentId: P:PocoEmit.Configuration.ICompileInfo.Compiled
+  parent: PocoEmit.Configuration.ICompileInfo
+  href: PocoEmit.Configuration.ICompileInfo.html#PocoEmit_Configuration_ICompileInfo_Compiled
+  name: Compiled
+  nameWithType: ICompileInfo.Compiled
+  fullName: PocoEmit.Configuration.ICompileInfo.Compiled
+- uid: PocoEmit.IMemberWriter{{TInstance},{TValue}}.Name
+  commentId: P:PocoEmit.IMemberWriter{`0,`1}.Name
+  parent: PocoEmit.IMemberWriter{{TInstance},{TValue}}
+  definition: PocoEmit.IMemberWriter`2.Name
+  href: PocoEmit.IMemberWriter-2.html#PocoEmit_IMemberWriter_2_Name
+  name: Name
+  nameWithType: IMemberWriter<TInstance, TValue>.Name
+  fullName: PocoEmit.IMemberWriter<TInstance, TValue>.Name
+  nameWithType.vb: IMemberWriter(Of TInstance, TValue).Name
+  fullName.vb: PocoEmit.IMemberWriter(Of TInstance, TValue).Name
+- uid: PocoEmit.IMemberWriter{{TInstance},{TValue}}.Write({TInstance},{TValue})
+  commentId: M:PocoEmit.IMemberWriter{`0,`1}.Write(`0,`1)
+  parent: PocoEmit.IMemberWriter{{TInstance},{TValue}}
+  definition: PocoEmit.IMemberWriter`2.Write(`0,`1)
+  href: PocoEmit.IMemberWriter-2.html#PocoEmit_IMemberWriter_2_Write__0__1_
+  name: Write(TInstance, TValue)
+  nameWithType: IMemberWriter<TInstance, TValue>.Write(TInstance, TValue)
+  fullName: PocoEmit.IMemberWriter<TInstance, TValue>.Write(TInstance, TValue)
+  nameWithType.vb: IMemberWriter(Of TInstance, TValue).Write(TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberWriter(Of TInstance, TValue).Write(TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.IMemberWriter{`0,`1}.Write(`0,`1)
+    name: Write
+    href: PocoEmit.IMemberWriter-2.html#PocoEmit_IMemberWriter_2_Write__0__1_
+  - name: (
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.IMemberWriter{`0,`1}.Write(`0,`1)
+    name: Write
+    href: PocoEmit.IMemberWriter-2.html#PocoEmit_IMemberWriter_2_Write__0__1_
+  - name: (
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Members.IEmitMemberWriter.PocoEmit.PocoEmitServices.Build``2
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  parent: PocoEmit.PocoEmitServices
+  definition: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  name: Build<TInstance, TValue>(IEmitMemberWriter)
+  nameWithType: PocoEmitServices.Build<TInstance, TValue>(IEmitMemberWriter)
+  fullName: PocoEmit.PocoEmitServices.Build<TInstance, TValue>(PocoEmit.Members.IEmitMemberWriter)
+  nameWithType.vb: PocoEmitServices.Build(Of TInstance, TValue)(IEmitMemberWriter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberWriter)
+  name.vb: Build(Of TInstance, TValue)(IEmitMemberWriter)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: PocoEmit.Members.IEmitMemberWriter
+  commentId: T:PocoEmit.Members.IEmitMemberWriter
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberWriter.html
+  name: IEmitMemberWriter
+  nameWithType: IEmitMemberWriter
+  fullName: PocoEmit.Members.IEmitMemberWriter
+- uid: PocoEmit.Members.IMember
+  commentId: T:PocoEmit.Members.IMember
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IMember.html
+  name: IMember
+  nameWithType: IMember
+  fullName: PocoEmit.Members.IMember
+- uid: PocoEmit.Members.IEmitWriter
+  commentId: T:PocoEmit.Members.IEmitWriter
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitWriter.html
+  name: IEmitWriter
+  nameWithType: IEmitWriter
+  fullName: PocoEmit.Members.IEmitWriter
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.IMemberWriter`2.Name
+  commentId: P:PocoEmit.IMemberWriter`2.Name
+  href: PocoEmit.IMemberWriter-2.html#PocoEmit_IMemberWriter_2_Name
+  name: Name
+  nameWithType: IMemberWriter<TInstance, TValue>.Name
+  fullName: PocoEmit.IMemberWriter<TInstance, TValue>.Name
+  nameWithType.vb: IMemberWriter(Of TInstance, TValue).Name
+  fullName.vb: PocoEmit.IMemberWriter(Of TInstance, TValue).Name
+- uid: PocoEmit.IMemberWriter{{TInstance},{TValue}}
+  commentId: T:PocoEmit.IMemberWriter{``0,``1}
+  parent: PocoEmit
+  definition: PocoEmit.IMemberWriter`2
+  href: PocoEmit.IMemberWriter-2.html
+  name: IMemberWriter<TInstance, TValue>
+  nameWithType: IMemberWriter<TInstance, TValue>
+  fullName: PocoEmit.IMemberWriter<TInstance, TValue>
+  nameWithType.vb: IMemberWriter(Of TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberWriter(Of TInstance, TValue)
+  name.vb: IMemberWriter(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter
+    href: PocoEmit.IMemberWriter-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter
+    href: PocoEmit.IMemberWriter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.IMemberWriter`2.Write(`0,`1)
+  commentId: M:PocoEmit.IMemberWriter`2.Write(`0,`1)
+  href: PocoEmit.IMemberWriter-2.html#PocoEmit_IMemberWriter_2_Write__0__1_
+  name: Write(TInstance, TValue)
+  nameWithType: IMemberWriter<TInstance, TValue>.Write(TInstance, TValue)
+  fullName: PocoEmit.IMemberWriter<TInstance, TValue>.Write(TInstance, TValue)
+  nameWithType.vb: IMemberWriter(Of TInstance, TValue).Write(TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberWriter(Of TInstance, TValue).Write(TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.IMemberWriter`2.Write(`0,`1)
+    name: Write
+    href: PocoEmit.IMemberWriter-2.html#PocoEmit_IMemberWriter_2_Write__0__1_
+  - name: (
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.IMemberWriter`2.Write(`0,`1)
+    name: Write
+    href: PocoEmit.IMemberWriter-2.html#PocoEmit_IMemberWriter_2_Write__0__1_
+  - name: (
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  name: Build<TInstance, TValue>(IEmitMemberWriter)
+  nameWithType: PocoEmitServices.Build<TInstance, TValue>(IEmitMemberWriter)
+  fullName: PocoEmit.PocoEmitServices.Build<TInstance, TValue>(PocoEmit.Members.IEmitMemberWriter)
+  nameWithType.vb: PocoEmitServices.Build(Of TInstance, TValue)(IEmitMemberWriter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberWriter)
+  name.vb: Build(Of TInstance, TValue)(IEmitMemberWriter)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberWriter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberWriter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: PocoEmit.PocoEmitServices
+  commentId: T:PocoEmit.PocoEmitServices
+  parent: PocoEmit
+  href: PocoEmit.PocoEmitServices.html
+  name: PocoEmitServices
+  nameWithType: PocoEmitServices
+  fullName: PocoEmit.PocoEmitServices
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.IMemberWriter`2
+  commentId: T:PocoEmit.IMemberWriter`2
+  href: PocoEmit.IMemberWriter-2.html
+  name: IMemberWriter<TInstance, TValue>
+  nameWithType: IMemberWriter<TInstance, TValue>
+  fullName: PocoEmit.IMemberWriter<TInstance, TValue>
+  nameWithType.vb: IMemberWriter(Of TInstance, TValue)
+  fullName.vb: PocoEmit.IMemberWriter(Of TInstance, TValue)
+  name.vb: IMemberWriter(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter
+    href: PocoEmit.IMemberWriter-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IMemberWriter`2
+    name: IMemberWriter
+    href: PocoEmit.IMemberWriter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.Members.ICompiledWriter`2.WriteAction*
+  commentId: Overload:PocoEmit.Members.ICompiledWriter`2.WriteAction
+  href: PocoEmit.Members.ICompiledWriter-2.html#PocoEmit_Members_ICompiledWriter_2_WriteAction
+  name: WriteAction
+  nameWithType: ICompiledWriter<TInstance, TValue>.WriteAction
+  fullName: PocoEmit.Members.ICompiledWriter<TInstance, TValue>.WriteAction
+  nameWithType.vb: ICompiledWriter(Of TInstance, TValue).WriteAction
+  fullName.vb: PocoEmit.Members.ICompiledWriter(Of TInstance, TValue).WriteAction
+- uid: System.Action{{TInstance},{TValue}}
+  commentId: T:System.Action{``0,``1}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TInstance, TValue>
+  nameWithType: Action<TInstance, TValue>
+  fullName: System.Action<TInstance, TValue>
+  nameWithType.vb: Action(Of TInstance, TValue)
+  fullName.vb: System.Action(Of TInstance, TValue)
+  name.vb: Action(Of TInstance, TValue)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

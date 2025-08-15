@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Converters
+  commentId: N:PocoEmit.Collections.Converters
+  id: PocoEmit.Collections.Converters
+  children:
+  - PocoEmit.Collections.Converters.ArrayConverter
+  - PocoEmit.Collections.Converters.CollectionArrayConverter
+  - PocoEmit.Collections.Converters.CollectionConverter
+  - PocoEmit.Collections.Converters.IndexArrayConverter
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Collections.Converters
+  nameWithType: PocoEmit.Collections.Converters
+  fullName: PocoEmit.Collections.Converters
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Collections.Converters.ArrayConverter
+  commentId: T:PocoEmit.Collections.Converters.ArrayConverter
+  parent: PocoEmit.Collections.Converters
+  href: PocoEmit.Collections.Converters.ArrayConverter.html
+  name: ArrayConverter
+  nameWithType: ArrayConverter
+  fullName: PocoEmit.Collections.Converters.ArrayConverter
+- uid: PocoEmit.Collections.Converters.CollectionArrayConverter
+  commentId: T:PocoEmit.Collections.Converters.CollectionArrayConverter
+  parent: PocoEmit.Collections.Converters
+  href: PocoEmit.Collections.Converters.CollectionArrayConverter.html
+  name: CollectionArrayConverter
+  nameWithType: CollectionArrayConverter
+  fullName: PocoEmit.Collections.Converters.CollectionArrayConverter
+- uid: PocoEmit.Collections.Converters.CollectionConverter
+  commentId: T:PocoEmit.Collections.Converters.CollectionConverter
+  parent: PocoEmit.Collections.Converters
+  href: PocoEmit.Collections.Converters.CollectionConverter.html
+  name: CollectionConverter
+  nameWithType: CollectionConverter
+  fullName: PocoEmit.Collections.Converters.CollectionConverter
+- uid: PocoEmit.Collections.Converters.IndexArrayConverter
+  commentId: T:PocoEmit.Collections.Converters.IndexArrayConverter
+  parent: PocoEmit.Collections.Converters
+  href: PocoEmit.Collections.Converters.IndexArrayConverter.html
+  name: IndexArrayConverter
+  nameWithType: IndexArrayConverter
+  fullName: PocoEmit.Collections.Converters.IndexArrayConverter
+- uid: PocoEmit.Collections.Converters
+  commentId: N:PocoEmit.Collections.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Converters
+  nameWithType: PocoEmit.Collections.Converters
+  fullName: PocoEmit.Collections.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Converters
+    name: Converters
+    href: PocoEmit.Collections.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Converters
+    name: Converters
+    href: PocoEmit.Collections.Converters.html

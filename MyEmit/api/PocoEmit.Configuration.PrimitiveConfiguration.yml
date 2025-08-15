@@ -1,0 +1,827 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Configuration.PrimitiveConfiguration
+  commentId: T:PocoEmit.Configuration.PrimitiveConfiguration
+  id: PrimitiveConfiguration
+  parent: PocoEmit.Configuration
+  children:
+  - PocoEmit.Configuration.PrimitiveConfiguration.#ctor(PocoEmit.Collections.ICacher{System.Type,System.Boolean})
+  - PocoEmit.Configuration.PrimitiveConfiguration.CreateNew(System.Type)
+  - PocoEmit.Configuration.PrimitiveConfiguration.Get(System.Type)
+  - PocoEmit.Configuration.PrimitiveConfiguration.IsPrimitive(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: PrimitiveConfiguration
+  nameWithType: PrimitiveConfiguration
+  fullName: PocoEmit.Configuration.PrimitiveConfiguration
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/PrimitiveConfiguration.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: PrimitiveConfiguration
+    path: ../PocoEmit.Mapper/Configuration/PrimitiveConfiguration.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 基础类型配置
+  example: []
+  syntax:
+    content: 'public class PrimitiveConfiguration : CacheBase<Type, bool>, ICacher<Type, bool>, IStore<Type, bool>'
+    content.vb: Public Class PrimitiveConfiguration Inherits CacheBase(Of Type, Boolean) Implements ICacher(Of Type, Boolean), IStore(Of Type, Boolean)
+  inheritance:
+  - System.Object
+  - PocoEmit.Collections.CacheBase{System.Type,System.Boolean}
+  implements:
+  - PocoEmit.Collections.ICacher{System.Type,System.Boolean}
+  - PocoEmit.Collections.IStore{System.Type,System.Boolean}
+  inheritedMembers:
+  - PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Get(System.Type)
+  - PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.ContainsKey(System.Type)
+  - PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.TryGetValue(System.Type,System.Boolean@)
+  - PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Set(System.Type,System.Boolean)
+  - PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.CreateNew(System.Type)
+- uid: PocoEmit.Configuration.PrimitiveConfiguration.#ctor(PocoEmit.Collections.ICacher{System.Type,System.Boolean})
+  commentId: M:PocoEmit.Configuration.PrimitiveConfiguration.#ctor(PocoEmit.Collections.ICacher{System.Type,System.Boolean})
+  id: '#ctor(PocoEmit.Collections.ICacher{System.Type,System.Boolean})'
+  parent: PocoEmit.Configuration.PrimitiveConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PrimitiveConfiguration(ICacher<Type, bool>)
+  nameWithType: PrimitiveConfiguration.PrimitiveConfiguration(ICacher<Type, bool>)
+  fullName: PocoEmit.Configuration.PrimitiveConfiguration.PrimitiveConfiguration(PocoEmit.Collections.ICacher<System.Type, bool>)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/PrimitiveConfiguration.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Configuration/PrimitiveConfiguration.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 基础类型配置
+  example: []
+  syntax:
+    content: public PrimitiveConfiguration(ICacher<Type, bool> settings)
+    parameters:
+    - id: settings
+      type: PocoEmit.Collections.ICacher{System.Type,System.Boolean}
+      description: ''
+    content.vb: Public Sub New(settings As ICacher(Of Type, Boolean))
+  overload: PocoEmit.Configuration.PrimitiveConfiguration.#ctor*
+  nameWithType.vb: PrimitiveConfiguration.New(ICacher(Of Type, Boolean))
+  fullName.vb: PocoEmit.Configuration.PrimitiveConfiguration.New(PocoEmit.Collections.ICacher(Of System.Type, Boolean))
+  name.vb: New(ICacher(Of Type, Boolean))
+- uid: PocoEmit.Configuration.PrimitiveConfiguration.Get(System.Type)
+  commentId: M:PocoEmit.Configuration.PrimitiveConfiguration.Get(System.Type)
+  id: Get(System.Type)
+  parent: PocoEmit.Configuration.PrimitiveConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Get(Type)
+  nameWithType: PrimitiveConfiguration.Get(Type)
+  fullName: PocoEmit.Configuration.PrimitiveConfiguration.Get(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/PrimitiveConfiguration.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Get
+    path: ../PocoEmit.Mapper/Configuration/PrimitiveConfiguration.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 获取
+  example: []
+  syntax:
+    content: public override bool Get(Type key)
+    parameters:
+    - id: key
+      type: System.Type
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Overrides Function [Get](key As Type) As Boolean
+  overridden: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Get(System.Type)
+  overload: PocoEmit.Configuration.PrimitiveConfiguration.Get*
+- uid: PocoEmit.Configuration.PrimitiveConfiguration.CreateNew(System.Type)
+  commentId: M:PocoEmit.Configuration.PrimitiveConfiguration.CreateNew(System.Type)
+  id: CreateNew(System.Type)
+  parent: PocoEmit.Configuration.PrimitiveConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CreateNew(Type)
+  nameWithType: PrimitiveConfiguration.CreateNew(Type)
+  fullName: PocoEmit.Configuration.PrimitiveConfiguration.CreateNew(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/PrimitiveConfiguration.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CreateNew
+    path: ../PocoEmit.Mapper/Configuration/PrimitiveConfiguration.cs
+    startLine: 37
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 构造新值
+  example: []
+  syntax:
+    content: protected override bool CreateNew(Type key)
+    parameters:
+    - id: key
+      type: System.Type
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Protected Overrides Function CreateNew(key As Type) As Boolean
+  overridden: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.CreateNew(System.Type)
+  overload: PocoEmit.Configuration.PrimitiveConfiguration.CreateNew*
+- uid: PocoEmit.Configuration.PrimitiveConfiguration.IsPrimitive(System.Type)
+  commentId: M:PocoEmit.Configuration.PrimitiveConfiguration.IsPrimitive(System.Type)
+  id: IsPrimitive(System.Type)
+  parent: PocoEmit.Configuration.PrimitiveConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsPrimitive(Type)
+  nameWithType: PrimitiveConfiguration.IsPrimitive(Type)
+  fullName: PocoEmit.Configuration.PrimitiveConfiguration.IsPrimitive(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/PrimitiveConfiguration.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IsPrimitive
+    path: ../PocoEmit.Mapper/Configuration/PrimitiveConfiguration.cs
+    startLine: 52
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 判断是否为基础类型
+  example: []
+  syntax:
+    content: public static bool IsPrimitive(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsPrimitive(type As Type) As Boolean
+  overload: PocoEmit.Configuration.PrimitiveConfiguration.IsPrimitive*
+references:
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}
+  commentId: T:PocoEmit.Collections.CacheBase{System.Type,System.Boolean}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.CacheBase`2
+  href: PocoEmit.Collections.CacheBase-2.html
+  name: CacheBase<Type, bool>
+  nameWithType: CacheBase<Type, bool>
+  fullName: PocoEmit.Collections.CacheBase<System.Type, bool>
+  nameWithType.vb: CacheBase(Of Type, Boolean)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of System.Type, Boolean)
+  name.vb: CacheBase(Of Type, Boolean)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase
+    href: PocoEmit.Collections.CacheBase-2.html
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase
+    href: PocoEmit.Collections.CacheBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: PocoEmit.Collections.ICacher{System.Type,System.Boolean}
+  commentId: T:PocoEmit.Collections.ICacher{System.Type,System.Boolean}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<Type, bool>
+  nameWithType: ICacher<Type, bool>
+  fullName: PocoEmit.Collections.ICacher<System.Type, bool>
+  nameWithType.vb: ICacher(Of Type, Boolean)
+  fullName.vb: PocoEmit.Collections.ICacher(Of System.Type, Boolean)
+  name.vb: ICacher(Of Type, Boolean)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: PocoEmit.Collections.IStore{System.Type,System.Boolean}
+  commentId: T:PocoEmit.Collections.IStore{System.Type,System.Boolean}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<Type, bool>
+  nameWithType: IStore<Type, bool>
+  fullName: PocoEmit.Collections.IStore<System.Type, bool>
+  nameWithType.vb: IStore(Of Type, Boolean)
+  fullName.vb: PocoEmit.Collections.IStore(Of System.Type, Boolean)
+  name.vb: IStore(Of Type, Boolean)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Get(System.Type)
+  commentId: M:PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Get(System.Type)
+  parent: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}
+  definition: PocoEmit.Collections.CacheBase`2.Get(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  name: Get(Type)
+  nameWithType: CacheBase<Type, bool>.Get(Type)
+  fullName: PocoEmit.Collections.CacheBase<System.Type, bool>.Get(System.Type)
+  nameWithType.vb: CacheBase(Of Type, Boolean).Get(Type)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of System.Type, Boolean).Get(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Get(System.Type)
+    name: Get
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Get(System.Type)
+    name: Get
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.ContainsKey(System.Type)
+  commentId: M:PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.ContainsKey(System.Type)
+  parent: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}
+  definition: PocoEmit.Collections.CacheBase`2.ContainsKey(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  name: ContainsKey(Type)
+  nameWithType: CacheBase<Type, bool>.ContainsKey(Type)
+  fullName: PocoEmit.Collections.CacheBase<System.Type, bool>.ContainsKey(System.Type)
+  nameWithType.vb: CacheBase(Of Type, Boolean).ContainsKey(Type)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of System.Type, Boolean).ContainsKey(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.ContainsKey(System.Type)
+    name: ContainsKey
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.ContainsKey(System.Type)
+    name: ContainsKey
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.TryGetValue(System.Type,System.Boolean@)
+  commentId: M:PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.TryGetValue(System.Type,System.Boolean@)
+  parent: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}
+  definition: PocoEmit.Collections.CacheBase`2.TryGetValue(`0,`1@)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  name: TryGetValue(Type, out bool)
+  nameWithType: CacheBase<Type, bool>.TryGetValue(Type, out bool)
+  fullName: PocoEmit.Collections.CacheBase<System.Type, bool>.TryGetValue(System.Type, out bool)
+  nameWithType.vb: CacheBase(Of Type, Boolean).TryGetValue(Type, Boolean)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of System.Type, Boolean).TryGetValue(System.Type, Boolean)
+  name.vb: TryGetValue(Type, Boolean)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.TryGetValue(System.Type,System.Boolean@)
+    name: TryGetValue
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.TryGetValue(System.Type,System.Boolean@)
+    name: TryGetValue
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Set(System.Type,System.Boolean)
+  commentId: M:PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Set(System.Type,System.Boolean)
+  parent: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}
+  definition: PocoEmit.Collections.CacheBase`2.Set(`0,`1)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  name: Set(Type, bool)
+  nameWithType: CacheBase<Type, bool>.Set(Type, bool)
+  fullName: PocoEmit.Collections.CacheBase<System.Type, bool>.Set(System.Type, bool)
+  nameWithType.vb: CacheBase(Of Type, Boolean).Set(Type, Boolean)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of System.Type, Boolean).Set(System.Type, Boolean)
+  name.vb: Set(Type, Boolean)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Set(System.Type,System.Boolean)
+    name: Set
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.Set(System.Type,System.Boolean)
+    name: Set
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.CreateNew(System.Type)
+  commentId: M:PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.CreateNew(System.Type)
+  parent: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}
+  definition: PocoEmit.Collections.CacheBase`2.CreateNew(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  name: CreateNew(Type)
+  nameWithType: CacheBase<Type, bool>.CreateNew(Type)
+  fullName: PocoEmit.Collections.CacheBase<System.Type, bool>.CreateNew(System.Type)
+  nameWithType.vb: CacheBase(Of Type, Boolean).CreateNew(Type)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of System.Type, Boolean).CreateNew(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.CreateNew(System.Type)
+    name: CreateNew
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase{System.Type,System.Boolean}.CreateNew(System.Type)
+    name: CreateNew
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections.CacheBase`2
+  commentId: T:PocoEmit.Collections.CacheBase`2
+  href: PocoEmit.Collections.CacheBase-2.html
+  name: CacheBase<TKey, TValue>
+  nameWithType: CacheBase<TKey, TValue>
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>
+  nameWithType.vb: CacheBase(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue)
+  name.vb: CacheBase(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase
+    href: PocoEmit.Collections.CacheBase-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase
+    href: PocoEmit.Collections.CacheBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Collections.ICacher`2
+  commentId: T:PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<TKey, TValue>
+  nameWithType: ICacher<TKey, TValue>
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>
+  nameWithType.vb: ICacher(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue)
+  name.vb: ICacher(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IStore`2
+  commentId: T:PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<TKey, TValue>
+  nameWithType: IStore<TKey, TValue>
+  fullName: PocoEmit.Collections.IStore<TKey, TValue>
+  nameWithType.vb: IStore(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IStore(Of TKey, TValue)
+  name.vb: IStore(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.CacheBase`2.Get(`0)
+  commentId: M:PocoEmit.Collections.CacheBase`2.Get(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  name: Get(TKey)
+  nameWithType: CacheBase<TKey, TValue>.Get(TKey)
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>.Get(TKey)
+  nameWithType.vb: CacheBase(Of TKey, TValue).Get(TKey)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue).Get(TKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2.Get(`0)
+    name: Get
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2.Get(`0)
+    name: Get
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_
+  - name: (
+  - name: TKey
+  - name: )
+- uid: PocoEmit.Collections.CacheBase`2.ContainsKey(`0)
+  commentId: M:PocoEmit.Collections.CacheBase`2.ContainsKey(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  name: ContainsKey(TKey)
+  nameWithType: CacheBase<TKey, TValue>.ContainsKey(TKey)
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: CacheBase(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2.ContainsKey(`0)
+    name: ContainsKey
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2.ContainsKey(`0)
+    name: ContainsKey
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_
+  - name: (
+  - name: TKey
+  - name: )
+- uid: PocoEmit.Collections.CacheBase`2.TryGetValue(`0,`1@)
+  commentId: M:PocoEmit.Collections.CacheBase`2.TryGetValue(`0,`1@)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  name: TryGetValue(TKey, out TValue)
+  nameWithType: CacheBase<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: CacheBase(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue).TryGetValue(TKey, TValue)
+  name.vb: TryGetValue(TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.CacheBase`2.Set(`0,`1)
+  commentId: M:PocoEmit.Collections.CacheBase`2.Set(`0,`1)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  name: Set(TKey, TValue)
+  nameWithType: CacheBase<TKey, TValue>.Set(TKey, TValue)
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>.Set(TKey, TValue)
+  nameWithType.vb: CacheBase(Of TKey, TValue).Set(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue).Set(TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2.Set(`0,`1)
+    name: Set
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2.Set(`0,`1)
+    name: Set
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.CacheBase`2.CreateNew(`0)
+  commentId: M:PocoEmit.Collections.CacheBase`2.CreateNew(`0)
+  href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  name: CreateNew(TKey)
+  nameWithType: CacheBase<TKey, TValue>.CreateNew(TKey)
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>.CreateNew(TKey)
+  nameWithType.vb: CacheBase(Of TKey, TValue).CreateNew(TKey)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue).CreateNew(TKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2.CreateNew(`0)
+    name: CreateNew
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2.CreateNew(`0)
+    name: CreateNew
+    href: PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_CreateNew__0_
+  - name: (
+  - name: TKey
+  - name: )
+- uid: PocoEmit.Configuration.PrimitiveConfiguration.#ctor*
+  commentId: Overload:PocoEmit.Configuration.PrimitiveConfiguration.#ctor
+  href: PocoEmit.Configuration.PrimitiveConfiguration.html#PocoEmit_Configuration_PrimitiveConfiguration__ctor_PocoEmit_Collections_ICacher_System_Type_System_Boolean__
+  name: PrimitiveConfiguration
+  nameWithType: PrimitiveConfiguration.PrimitiveConfiguration
+  fullName: PocoEmit.Configuration.PrimitiveConfiguration.PrimitiveConfiguration
+  nameWithType.vb: PrimitiveConfiguration.New
+  fullName.vb: PocoEmit.Configuration.PrimitiveConfiguration.New
+  name.vb: New
+- uid: PocoEmit.Configuration.PrimitiveConfiguration.Get*
+  commentId: Overload:PocoEmit.Configuration.PrimitiveConfiguration.Get
+  href: PocoEmit.Configuration.PrimitiveConfiguration.html#PocoEmit_Configuration_PrimitiveConfiguration_Get_System_Type_
+  name: Get
+  nameWithType: PrimitiveConfiguration.Get
+  fullName: PocoEmit.Configuration.PrimitiveConfiguration.Get
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PocoEmit.Configuration.PrimitiveConfiguration.CreateNew*
+  commentId: Overload:PocoEmit.Configuration.PrimitiveConfiguration.CreateNew
+  href: PocoEmit.Configuration.PrimitiveConfiguration.html#PocoEmit_Configuration_PrimitiveConfiguration_CreateNew_System_Type_
+  name: CreateNew
+  nameWithType: PrimitiveConfiguration.CreateNew
+  fullName: PocoEmit.Configuration.PrimitiveConfiguration.CreateNew
+- uid: PocoEmit.Configuration.PrimitiveConfiguration.IsPrimitive*
+  commentId: Overload:PocoEmit.Configuration.PrimitiveConfiguration.IsPrimitive
+  href: PocoEmit.Configuration.PrimitiveConfiguration.html#PocoEmit_Configuration_PrimitiveConfiguration_IsPrimitive_System_Type_
+  name: IsPrimitive
+  nameWithType: PrimitiveConfiguration.IsPrimitive
+  fullName: PocoEmit.Configuration.PrimitiveConfiguration.IsPrimitive

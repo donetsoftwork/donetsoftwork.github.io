@@ -1,0 +1,1413 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.PocoEmitCollectionServices
+  commentId: T:PocoEmit.Collections.PocoEmitCollectionServices
+  id: PocoEmitCollectionServices
+  parent: PocoEmit.Collections
+  children:
+  - PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  - PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  - PocoEmit.Collections.PocoEmitCollectionServices.Compile``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  - PocoEmit.Collections.PocoEmitCollectionServices.Compile``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  - PocoEmit.Collections.PocoEmitCollectionServices.Count``1(PocoEmit.CollectionContainer,``0)
+  - PocoEmit.Collections.PocoEmitCollectionServices.Count``2(PocoEmit.CollectionContainer,``0)
+  - PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc``1(PocoEmit.CollectionContainer)
+  - PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc``2(PocoEmit.CollectionContainer)
+  - PocoEmit.Collections.PocoEmitCollectionServices.GetCounter``1(PocoEmit.CollectionContainer)
+  - PocoEmit.Collections.PocoEmitCollectionServices.GetCounter``2(PocoEmit.CollectionContainer)
+  - PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter``1(PocoEmit.CollectionContainer)
+  - PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter``2(PocoEmit.CollectionContainer)
+  - PocoEmit.Collections.PocoEmitCollectionServices.GetEmitSaver``2(PocoEmit.CollectionContainer)
+  - PocoEmit.Collections.PocoEmitCollectionServices.GetSaveAction``2(PocoEmit.CollectionContainer)
+  - PocoEmit.Collections.PocoEmitCollectionServices.GetSaver``2(PocoEmit.CollectionContainer)
+  - PocoEmit.Collections.PocoEmitCollectionServices.Save``2(PocoEmit.CollectionContainer,``0,``1)
+  langs:
+  - csharp
+  - vb
+  name: PocoEmitCollectionServices
+  nameWithType: PocoEmitCollectionServices
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionSaveServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: PocoEmitCollectionServices
+    path: ../PocoEmit.Collections/Collections/CollectionSaveServices.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 获取集合数量扩展方法
+  example: []
+  syntax:
+    content: public static class PocoEmitCollectionServices
+    content.vb: Public Module PocoEmitCollectionServices
+  inheritance:
+  - System.Object
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc``1(PocoEmit.CollectionContainer)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc``1(PocoEmit.CollectionContainer)
+  id: GetCountFunc``1(PocoEmit.CollectionContainer)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: GetCountFunc<TCollection>(CollectionContainer)
+  nameWithType: PocoEmitCollectionServices.GetCountFunc<TCollection>(CollectionContainer)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc<TCollection>(PocoEmit.CollectionContainer)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionCountServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetCountFunc
+    path: ../PocoEmit.Collections/Collections/CollectionCountServices.cs
+    startLine: 20
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 子元素数量获取器
+  example: []
+  syntax:
+    content: public static Func<TCollection, int> GetCountFunc<TCollection>(this CollectionContainer container)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: 集合容器
+    typeParameters:
+    - id: TCollection
+      description: 集合类型
+    return:
+      type: System.Func{{TCollection},System.Int32}
+      description: ''
+    content.vb: Public Shared Function GetCountFunc(Of TCollection)(container As CollectionContainer) As Func(Of TCollection, Integer)
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc*
+  nameWithType.vb: PocoEmitCollectionServices.GetCountFunc(Of TCollection)(CollectionContainer)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc(Of TCollection)(PocoEmit.CollectionContainer)
+  name.vb: GetCountFunc(Of TCollection)(CollectionContainer)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc``2(PocoEmit.CollectionContainer)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc``2(PocoEmit.CollectionContainer)
+  id: GetCountFunc``2(PocoEmit.CollectionContainer)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: GetCountFunc<TCollection, TElement>(CollectionContainer)
+  nameWithType: PocoEmitCollectionServices.GetCountFunc<TCollection, TElement>(CollectionContainer)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc<TCollection, TElement>(PocoEmit.CollectionContainer)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionCountServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetCountFunc
+    path: ../PocoEmit.Collections/Collections/CollectionCountServices.cs
+    startLine: 29
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 子元素数量获取器
+  example: []
+  syntax:
+    content: public static Func<TCollection, int> GetCountFunc<TCollection, TElement>(this CollectionContainer container)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: 集合容器
+    typeParameters:
+    - id: TCollection
+      description: 集合类型
+    - id: TElement
+      description: 子元素类型
+    return:
+      type: System.Func{{TCollection},System.Int32}
+      description: ''
+    content.vb: Public Shared Function GetCountFunc(Of TCollection, TElement)(container As CollectionContainer) As Func(Of TCollection, Integer)
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc*
+  nameWithType.vb: PocoEmitCollectionServices.GetCountFunc(Of TCollection, TElement)(CollectionContainer)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc(Of TCollection, TElement)(PocoEmit.CollectionContainer)
+  name.vb: GetCountFunc(Of TCollection, TElement)(CollectionContainer)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetCounter``1(PocoEmit.CollectionContainer)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.GetCounter``1(PocoEmit.CollectionContainer)
+  id: GetCounter``1(PocoEmit.CollectionContainer)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: GetCounter<TCollection>(CollectionContainer)
+  nameWithType: PocoEmitCollectionServices.GetCounter<TCollection>(CollectionContainer)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetCounter<TCollection>(PocoEmit.CollectionContainer)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionCountServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetCounter
+    path: ../PocoEmit.Collections/Collections/CollectionCountServices.cs
+    startLine: 58
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 子元素数量获取器
+  example: []
+  syntax:
+    content: public static ICounter<TCollection> GetCounter<TCollection>(this CollectionContainer container)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: 集合容器
+    typeParameters:
+    - id: TCollection
+      description: 集合类型
+    return:
+      type: PocoEmit.Collections.ICounter{{TCollection}}
+      description: ''
+    content.vb: Public Shared Function GetCounter(Of TCollection)(container As CollectionContainer) As ICounter(Of TCollection)
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.GetCounter*
+  nameWithType.vb: PocoEmitCollectionServices.GetCounter(Of TCollection)(CollectionContainer)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.GetCounter(Of TCollection)(PocoEmit.CollectionContainer)
+  name.vb: GetCounter(Of TCollection)(CollectionContainer)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetCounter``2(PocoEmit.CollectionContainer)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.GetCounter``2(PocoEmit.CollectionContainer)
+  id: GetCounter``2(PocoEmit.CollectionContainer)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: GetCounter<TCollection, TElement>(CollectionContainer)
+  nameWithType: PocoEmitCollectionServices.GetCounter<TCollection, TElement>(CollectionContainer)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetCounter<TCollection, TElement>(PocoEmit.CollectionContainer)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionCountServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetCounter
+    path: ../PocoEmit.Collections/Collections/CollectionCountServices.cs
+    startLine: 67
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 子元素数量获取器
+  example: []
+  syntax:
+    content: public static ICounter<TCollection> GetCounter<TCollection, TElement>(this CollectionContainer container)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: 集合容器
+    typeParameters:
+    - id: TCollection
+      description: 集合类型
+    - id: TElement
+      description: 子元素类型
+    return:
+      type: PocoEmit.Collections.ICounter{{TCollection}}
+      description: ''
+    content.vb: Public Shared Function GetCounter(Of TCollection, TElement)(container As CollectionContainer) As ICounter(Of TCollection)
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.GetCounter*
+  nameWithType.vb: PocoEmitCollectionServices.GetCounter(Of TCollection, TElement)(CollectionContainer)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.GetCounter(Of TCollection, TElement)(PocoEmit.CollectionContainer)
+  name.vb: GetCounter(Of TCollection, TElement)(CollectionContainer)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Count``1(PocoEmit.CollectionContainer,``0)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Count``1(PocoEmit.CollectionContainer,``0)
+  id: Count``1(PocoEmit.CollectionContainer,``0)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: Count<TCollection>(CollectionContainer, TCollection)
+  nameWithType: PocoEmitCollectionServices.Count<TCollection>(CollectionContainer, TCollection)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Count<TCollection>(PocoEmit.CollectionContainer, TCollection)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionCountServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Count
+    path: ../PocoEmit.Collections/Collections/CollectionCountServices.cs
+    startLine: 98
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 获取子元素数量
+  example: []
+  syntax:
+    content: public static int Count<TCollection>(this CollectionContainer container, TCollection collection)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: ''
+    - id: collection
+      type: '{TCollection}'
+      description: ''
+    typeParameters:
+    - id: TCollection
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Function Count(Of TCollection)(container As CollectionContainer, collection As TCollection) As Integer
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.Count*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: ''
+  nameWithType.vb: PocoEmitCollectionServices.Count(Of TCollection)(CollectionContainer, TCollection)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Count(Of TCollection)(PocoEmit.CollectionContainer, TCollection)
+  name.vb: Count(Of TCollection)(CollectionContainer, TCollection)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Count``2(PocoEmit.CollectionContainer,``0)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Count``2(PocoEmit.CollectionContainer,``0)
+  id: Count``2(PocoEmit.CollectionContainer,``0)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: Count<TCollection, TElement>(CollectionContainer, TCollection)
+  nameWithType: PocoEmitCollectionServices.Count<TCollection, TElement>(CollectionContainer, TCollection)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Count<TCollection, TElement>(PocoEmit.CollectionContainer, TCollection)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionCountServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Count
+    path: ../PocoEmit.Collections/Collections/CollectionCountServices.cs
+    startLine: 113
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 获取子元素数量
+  example: []
+  syntax:
+    content: public static int Count<TCollection, TElement>(this CollectionContainer container, TCollection collection)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: ''
+    - id: collection
+      type: '{TCollection}'
+      description: ''
+    typeParameters:
+    - id: TCollection
+      description: ''
+    - id: TElement
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Function Count(Of TCollection, TElement)(container As CollectionContainer, collection As TCollection) As Integer
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.Count*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: ''
+  nameWithType.vb: PocoEmitCollectionServices.Count(Of TCollection, TElement)(CollectionContainer, TCollection)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Count(Of TCollection, TElement)(PocoEmit.CollectionContainer, TCollection)
+  name.vb: Count(Of TCollection, TElement)(CollectionContainer, TCollection)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter``1(PocoEmit.CollectionContainer)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter``1(PocoEmit.CollectionContainer)
+  id: GetEmitCounter``1(PocoEmit.CollectionContainer)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: GetEmitCounter<TCollection>(CollectionContainer)
+  nameWithType: PocoEmitCollectionServices.GetEmitCounter<TCollection>(CollectionContainer)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter<TCollection>(PocoEmit.CollectionContainer)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionCountServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitCounter
+    path: ../PocoEmit.Collections/Collections/CollectionCountServices.cs
+    startLine: 135
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 子元素数量获取器
+  example: []
+  syntax:
+    content: public static IEmitElementCounter GetEmitCounter<TCollection>(this CollectionContainer container)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: 集合容器
+    typeParameters:
+    - id: TCollection
+      description: 集合类型
+    return:
+      type: PocoEmit.Collections.Counters.IEmitElementCounter
+      description: ''
+    content.vb: Public Shared Function GetEmitCounter(Of TCollection)(container As CollectionContainer) As IEmitElementCounter
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter*
+  nameWithType.vb: PocoEmitCollectionServices.GetEmitCounter(Of TCollection)(CollectionContainer)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter(Of TCollection)(PocoEmit.CollectionContainer)
+  name.vb: GetEmitCounter(Of TCollection)(CollectionContainer)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter``2(PocoEmit.CollectionContainer)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter``2(PocoEmit.CollectionContainer)
+  id: GetEmitCounter``2(PocoEmit.CollectionContainer)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: GetEmitCounter<TCollection, TElement>(CollectionContainer)
+  nameWithType: PocoEmitCollectionServices.GetEmitCounter<TCollection, TElement>(CollectionContainer)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter<TCollection, TElement>(PocoEmit.CollectionContainer)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionCountServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitCounter
+    path: ../PocoEmit.Collections/Collections/CollectionCountServices.cs
+    startLine: 144
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 子元素数量获取器
+  example: []
+  syntax:
+    content: public static IEmitElementCounter GetEmitCounter<TCollection, TElement>(this CollectionContainer container)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: 集合容器
+    typeParameters:
+    - id: TCollection
+      description: 集合类型
+    - id: TElement
+      description: 子元素类型
+    return:
+      type: PocoEmit.Collections.Counters.IEmitElementCounter
+      description: ''
+    content.vb: Public Shared Function GetEmitCounter(Of TCollection, TElement)(container As CollectionContainer) As IEmitElementCounter
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter*
+  nameWithType.vb: PocoEmitCollectionServices.GetEmitCounter(Of TCollection, TElement)(CollectionContainer)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter(Of TCollection, TElement)(PocoEmit.CollectionContainer)
+  name.vb: GetEmitCounter(Of TCollection, TElement)(CollectionContainer)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  id: Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: Build<TCollection>(IEmitElementCounter)
+  nameWithType: PocoEmitCollectionServices.Build<TCollection>(IEmitElementCounter)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Build<TCollection>(PocoEmit.Collections.Counters.IEmitElementCounter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionCountServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Build
+    path: ../PocoEmit.Collections/Collections/CollectionCountServices.cs
+    startLine: 154
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 转换委托
+  example: []
+  syntax:
+    content: public static Expression<Func<TCollection, int>> Build<TCollection>(this IEmitElementCounter emit)
+    parameters:
+    - id: emit
+      type: PocoEmit.Collections.Counters.IEmitElementCounter
+      description: ''
+    typeParameters:
+    - id: TCollection
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{TCollection},System.Int32}}
+      description: ''
+    content.vb: Public Shared Function Build(Of TCollection)(emit As IEmitElementCounter) As Expression(Of Func(Of TCollection, Integer))
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.Build*
+  nameWithType.vb: PocoEmitCollectionServices.Build(Of TCollection)(IEmitElementCounter)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Build(Of TCollection)(PocoEmit.Collections.Counters.IEmitElementCounter)
+  name.vb: Build(Of TCollection)(IEmitElementCounter)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Compile``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Compile``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  id: Compile``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: Compile<TCollection>(IEmitElementCounter)
+  nameWithType: PocoEmitCollectionServices.Compile<TCollection>(IEmitElementCounter)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Compile<TCollection>(PocoEmit.Collections.Counters.IEmitElementCounter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionCountServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Compile
+    path: ../PocoEmit.Collections/Collections/CollectionCountServices.cs
+    startLine: 167
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 编译数量获取器
+  example: []
+  syntax:
+    content: public static Func<TCollection, int> Compile<TCollection>(IEmitElementCounter counter)
+    parameters:
+    - id: counter
+      type: PocoEmit.Collections.Counters.IEmitElementCounter
+      description: ''
+    typeParameters:
+    - id: TCollection
+      description: ''
+    return:
+      type: System.Func{{TCollection},System.Int32}
+      description: ''
+    content.vb: Public Shared Function Compile(Of TCollection)(counter As IEmitElementCounter) As Func(Of TCollection, Integer)
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.Compile*
+  nameWithType.vb: PocoEmitCollectionServices.Compile(Of TCollection)(IEmitElementCounter)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Compile(Of TCollection)(PocoEmit.Collections.Counters.IEmitElementCounter)
+  name.vb: Compile(Of TCollection)(IEmitElementCounter)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetSaveAction``2(PocoEmit.CollectionContainer)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.GetSaveAction``2(PocoEmit.CollectionContainer)
+  id: GetSaveAction``2(PocoEmit.CollectionContainer)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: GetSaveAction<TCollection, TElement>(CollectionContainer)
+  nameWithType: PocoEmitCollectionServices.GetSaveAction<TCollection, TElement>(CollectionContainer)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetSaveAction<TCollection, TElement>(PocoEmit.CollectionContainer)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionSaveServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetSaveAction
+    path: ../PocoEmit.Collections/Collections/CollectionSaveServices.cs
+    startLine: 21
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 子元素保存委托
+  example: []
+  syntax:
+    content: public static Action<TCollection, TElement> GetSaveAction<TCollection, TElement>(this CollectionContainer container)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: ''
+    typeParameters:
+    - id: TCollection
+      description: ''
+    - id: TElement
+      description: ''
+    return:
+      type: System.Action{{TCollection},{TElement}}
+      description: ''
+    content.vb: Public Shared Function GetSaveAction(Of TCollection, TElement)(container As CollectionContainer) As Action(Of TCollection, TElement)
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.GetSaveAction*
+  nameWithType.vb: PocoEmitCollectionServices.GetSaveAction(Of TCollection, TElement)(CollectionContainer)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.GetSaveAction(Of TCollection, TElement)(PocoEmit.CollectionContainer)
+  name.vb: GetSaveAction(Of TCollection, TElement)(CollectionContainer)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetSaver``2(PocoEmit.CollectionContainer)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.GetSaver``2(PocoEmit.CollectionContainer)
+  id: GetSaver``2(PocoEmit.CollectionContainer)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: GetSaver<TCollection, TElement>(CollectionContainer)
+  nameWithType: PocoEmitCollectionServices.GetSaver<TCollection, TElement>(CollectionContainer)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetSaver<TCollection, TElement>(PocoEmit.CollectionContainer)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionSaveServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetSaver
+    path: ../PocoEmit.Collections/Collections/CollectionSaveServices.cs
+    startLine: 42
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 子元素保存器
+  example: []
+  syntax:
+    content: public static ICollectionSaver<TCollection, TElement> GetSaver<TCollection, TElement>(this CollectionContainer container)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: ''
+    typeParameters:
+    - id: TCollection
+      description: ''
+    - id: TElement
+      description: ''
+    return:
+      type: PocoEmit.Collections.ICollectionSaver{{TCollection},{TElement}}
+      description: ''
+    content.vb: Public Shared Function GetSaver(Of TCollection, TElement)(container As CollectionContainer) As ICollectionSaver(Of TCollection, TElement)
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.GetSaver*
+  nameWithType.vb: PocoEmitCollectionServices.GetSaver(Of TCollection, TElement)(CollectionContainer)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.GetSaver(Of TCollection, TElement)(PocoEmit.CollectionContainer)
+  name.vb: GetSaver(Of TCollection, TElement)(CollectionContainer)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Save``2(PocoEmit.CollectionContainer,``0,``1)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Save``2(PocoEmit.CollectionContainer,``0,``1)
+  id: Save``2(PocoEmit.CollectionContainer,``0,``1)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: Save<TCollection, TElement>(CollectionContainer, TCollection, TElement)
+  nameWithType: PocoEmitCollectionServices.Save<TCollection, TElement>(CollectionContainer, TCollection, TElement)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Save<TCollection, TElement>(PocoEmit.CollectionContainer, TCollection, TElement)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionSaveServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Save
+    path: ../PocoEmit.Collections/Collections/CollectionSaveServices.cs
+    startLine: 65
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 保存子元素
+  example: []
+  syntax:
+    content: public static void Save<TCollection, TElement>(this CollectionContainer container, TCollection collection, TElement item)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: ''
+    - id: collection
+      type: '{TCollection}'
+      description: ''
+    - id: item
+      type: '{TElement}'
+      description: ''
+    typeParameters:
+    - id: TCollection
+      description: ''
+    - id: TElement
+      description: ''
+    content.vb: Public Shared Sub Save(Of TCollection, TElement)(container As CollectionContainer, collection As TCollection, item As TElement)
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.Save*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: ''
+  nameWithType.vb: PocoEmitCollectionServices.Save(Of TCollection, TElement)(CollectionContainer, TCollection, TElement)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Save(Of TCollection, TElement)(PocoEmit.CollectionContainer, TCollection, TElement)
+  name.vb: Save(Of TCollection, TElement)(CollectionContainer, TCollection, TElement)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitSaver``2(PocoEmit.CollectionContainer)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.GetEmitSaver``2(PocoEmit.CollectionContainer)
+  id: GetEmitSaver``2(PocoEmit.CollectionContainer)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: GetEmitSaver<TCollection, TElement>(CollectionContainer)
+  nameWithType: PocoEmitCollectionServices.GetEmitSaver<TCollection, TElement>(CollectionContainer)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitSaver<TCollection, TElement>(PocoEmit.CollectionContainer)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionSaveServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitSaver
+    path: ../PocoEmit.Collections/Collections/CollectionSaveServices.cs
+    startLine: 80
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 子元素数量获取器
+  example: []
+  syntax:
+    content: public static IEmitElementSaver GetEmitSaver<TCollection, TElement>(this CollectionContainer container)
+    parameters:
+    - id: container
+      type: PocoEmit.CollectionContainer
+      description: 集合容器
+    typeParameters:
+    - id: TCollection
+      description: 集合类型
+    - id: TElement
+      description: 子元素类型
+    return:
+      type: PocoEmit.Collections.Saves.IEmitElementSaver
+      description: ''
+    content.vb: Public Shared Function GetEmitSaver(Of TCollection, TElement)(container As CollectionContainer) As IEmitElementSaver
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitSaver*
+  nameWithType.vb: PocoEmitCollectionServices.GetEmitSaver(Of TCollection, TElement)(CollectionContainer)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitSaver(Of TCollection, TElement)(PocoEmit.CollectionContainer)
+  name.vb: GetEmitSaver(Of TCollection, TElement)(CollectionContainer)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  id: Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  isExtensionMethod: true
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: Build<TCollection, TElement>(IEmitElementSaver)
+  nameWithType: PocoEmitCollectionServices.Build<TCollection, TElement>(IEmitElementSaver)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Build<TCollection, TElement>(PocoEmit.Collections.Saves.IEmitElementSaver)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionSaveServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Build
+    path: ../PocoEmit.Collections/Collections/CollectionSaveServices.cs
+    startLine: 91
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 转换委托
+  example: []
+  syntax:
+    content: public static Expression<Action<TCollection, TElement>> Build<TCollection, TElement>(this IEmitElementSaver saver)
+    parameters:
+    - id: saver
+      type: PocoEmit.Collections.Saves.IEmitElementSaver
+      description: ''
+    typeParameters:
+    - id: TCollection
+      description: ''
+    - id: TElement
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression{System.Action{{TCollection},{TElement}}}
+      description: ''
+    content.vb: Public Shared Function Build(Of TCollection, TElement)(saver As IEmitElementSaver) As Expression(Of Action(Of TCollection, TElement))
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.Build*
+  nameWithType.vb: PocoEmitCollectionServices.Build(Of TCollection, TElement)(IEmitElementSaver)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Build(Of TCollection, TElement)(PocoEmit.Collections.Saves.IEmitElementSaver)
+  name.vb: Build(Of TCollection, TElement)(IEmitElementSaver)
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Compile``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Compile``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  id: Compile``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  langs:
+  - csharp
+  - vb
+  name: Compile<TCollection, TElement>(IEmitElementSaver)
+  nameWithType: PocoEmitCollectionServices.Compile<TCollection, TElement>(IEmitElementSaver)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Compile<TCollection, TElement>(PocoEmit.Collections.Saves.IEmitElementSaver)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/CollectionSaveServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Compile
+    path: ../PocoEmit.Collections/Collections/CollectionSaveServices.cs
+    startLine: 106
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 编译元素保存器
+  example: []
+  syntax:
+    content: public static Action<TCollection, TElement> Compile<TCollection, TElement>(IEmitElementSaver saver)
+    parameters:
+    - id: saver
+      type: PocoEmit.Collections.Saves.IEmitElementSaver
+      description: ''
+    typeParameters:
+    - id: TCollection
+      description: ''
+    - id: TElement
+      description: ''
+    return:
+      type: System.Action{{TCollection},{TElement}}
+      description: ''
+    content.vb: Public Shared Function Compile(Of TCollection, TElement)(saver As IEmitElementSaver) As Action(Of TCollection, TElement)
+  overload: PocoEmit.Collections.PocoEmitCollectionServices.Compile*
+  nameWithType.vb: PocoEmitCollectionServices.Compile(Of TCollection, TElement)(IEmitElementSaver)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Compile(Of TCollection, TElement)(PocoEmit.Collections.Saves.IEmitElementSaver)
+  name.vb: Compile(Of TCollection, TElement)(IEmitElementSaver)
+references:
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc*
+  commentId: Overload:PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_GetCountFunc__1_PocoEmit_CollectionContainer_
+  name: GetCountFunc
+  nameWithType: PocoEmitCollectionServices.GetCountFunc
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetCountFunc
+- uid: PocoEmit.CollectionContainer
+  commentId: T:PocoEmit.CollectionContainer
+  parent: PocoEmit
+  href: PocoEmit.CollectionContainer.html
+  name: CollectionContainer
+  nameWithType: CollectionContainer
+  fullName: PocoEmit.CollectionContainer
+- uid: System.Func{{TCollection},System.Int32}
+  commentId: T:System.Func{``0,System.Int32}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TCollection, int>
+  nameWithType: Func<TCollection, int>
+  fullName: System.Func<TCollection, int>
+  nameWithType.vb: Func(Of TCollection, Integer)
+  fullName.vb: System.Func(Of TCollection, Integer)
+  name.vb: Func(Of TCollection, Integer)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetCounter*
+  commentId: Overload:PocoEmit.Collections.PocoEmitCollectionServices.GetCounter
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_GetCounter__1_PocoEmit_CollectionContainer_
+  name: GetCounter
+  nameWithType: PocoEmitCollectionServices.GetCounter
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetCounter
+- uid: PocoEmit.Collections.ICounter{{TCollection}}
+  commentId: T:PocoEmit.Collections.ICounter{``0}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICounter`1
+  href: PocoEmit.Collections.ICounter-1.html
+  name: ICounter<TCollection>
+  nameWithType: ICounter<TCollection>
+  fullName: PocoEmit.Collections.ICounter<TCollection>
+  nameWithType.vb: ICounter(Of TCollection)
+  fullName.vb: PocoEmit.Collections.ICounter(Of TCollection)
+  name.vb: ICounter(Of TCollection)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICounter`1
+    name: ICounter
+    href: PocoEmit.Collections.ICounter-1.html
+  - name: <
+  - name: TCollection
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICounter`1
+    name: ICounter
+    href: PocoEmit.Collections.ICounter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: )
+- uid: PocoEmit.Collections.ICounter`1
+  commentId: T:PocoEmit.Collections.ICounter`1
+  href: PocoEmit.Collections.ICounter-1.html
+  name: ICounter<TCollection>
+  nameWithType: ICounter<TCollection>
+  fullName: PocoEmit.Collections.ICounter<TCollection>
+  nameWithType.vb: ICounter(Of TCollection)
+  fullName.vb: PocoEmit.Collections.ICounter(Of TCollection)
+  name.vb: ICounter(Of TCollection)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICounter`1
+    name: ICounter
+    href: PocoEmit.Collections.ICounter-1.html
+  - name: <
+  - name: TCollection
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICounter`1
+    name: ICounter
+    href: PocoEmit.Collections.ICounter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Count*
+  commentId: Overload:PocoEmit.Collections.PocoEmitCollectionServices.Count
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Count__1_PocoEmit_CollectionContainer___0_
+  name: Count
+  nameWithType: PocoEmitCollectionServices.Count
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Count
+- uid: '{TCollection}'
+  commentId: '!:TCollection'
+  definition: TCollection
+  name: TCollection
+  nameWithType: TCollection
+  fullName: TCollection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TCollection
+  name: TCollection
+  nameWithType: TCollection
+  fullName: TCollection
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter*
+  commentId: Overload:PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_GetEmitCounter__1_PocoEmit_CollectionContainer_
+  name: GetEmitCounter
+  nameWithType: PocoEmitCollectionServices.GetEmitCounter
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitCounter
+- uid: PocoEmit.Collections.Counters.IEmitElementCounter
+  commentId: T:PocoEmit.Collections.Counters.IEmitElementCounter
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.IEmitElementCounter.html
+  name: IEmitElementCounter
+  nameWithType: IEmitElementCounter
+  fullName: PocoEmit.Collections.Counters.IEmitElementCounter
+- uid: PocoEmit.Collections.Counters
+  commentId: N:PocoEmit.Collections.Counters
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Counters
+  nameWithType: PocoEmit.Collections.Counters
+  fullName: PocoEmit.Collections.Counters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Build*
+  commentId: Overload:PocoEmit.Collections.PocoEmitCollectionServices.Build
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__1_PocoEmit_Collections_Counters_IEmitElementCounter_
+  name: Build
+  nameWithType: PocoEmitCollectionServices.Build
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Build
+- uid: System.Linq.Expressions.Expression{System.Func{{TCollection},System.Int32}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Int32}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TCollection, int>>
+  nameWithType: Expression<Func<TCollection, int>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TCollection, int>>
+  nameWithType.vb: Expression(Of Func(Of TCollection, Integer))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TCollection, Integer))
+  name.vb: Expression(Of Func(Of TCollection, Integer))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Compile*
+  commentId: Overload:PocoEmit.Collections.PocoEmitCollectionServices.Compile
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Compile__1_PocoEmit_Collections_Counters_IEmitElementCounter_
+  name: Compile
+  nameWithType: PocoEmitCollectionServices.Compile
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Compile
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetSaveAction*
+  commentId: Overload:PocoEmit.Collections.PocoEmitCollectionServices.GetSaveAction
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_GetSaveAction__2_PocoEmit_CollectionContainer_
+  name: GetSaveAction
+  nameWithType: PocoEmitCollectionServices.GetSaveAction
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetSaveAction
+- uid: System.Action{{TCollection},{TElement}}
+  commentId: T:System.Action{``0,``1}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TCollection, TElement>
+  nameWithType: Action<TCollection, TElement>
+  fullName: System.Action<TCollection, TElement>
+  nameWithType.vb: Action(Of TCollection, TElement)
+  fullName.vb: System.Action(Of TCollection, TElement)
+  name.vb: Action(Of TCollection, TElement)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetSaver*
+  commentId: Overload:PocoEmit.Collections.PocoEmitCollectionServices.GetSaver
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_GetSaver__2_PocoEmit_CollectionContainer_
+  name: GetSaver
+  nameWithType: PocoEmitCollectionServices.GetSaver
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetSaver
+- uid: PocoEmit.Collections.ICollectionSaver{{TCollection},{TElement}}
+  commentId: T:PocoEmit.Collections.ICollectionSaver{``0,``1}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICollectionSaver`2
+  href: PocoEmit.Collections.ICollectionSaver-2.html
+  name: ICollectionSaver<TCollection, TElement>
+  nameWithType: ICollectionSaver<TCollection, TElement>
+  fullName: PocoEmit.Collections.ICollectionSaver<TCollection, TElement>
+  nameWithType.vb: ICollectionSaver(Of TCollection, TElement)
+  fullName.vb: PocoEmit.Collections.ICollectionSaver(Of TCollection, TElement)
+  name.vb: ICollectionSaver(Of TCollection, TElement)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver
+    href: PocoEmit.Collections.ICollectionSaver-2.html
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver
+    href: PocoEmit.Collections.ICollectionSaver-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: PocoEmit.Collections.ICollectionSaver`2
+  commentId: T:PocoEmit.Collections.ICollectionSaver`2
+  href: PocoEmit.Collections.ICollectionSaver-2.html
+  name: ICollectionSaver<TCollection, TElement>
+  nameWithType: ICollectionSaver<TCollection, TElement>
+  fullName: PocoEmit.Collections.ICollectionSaver<TCollection, TElement>
+  nameWithType.vb: ICollectionSaver(Of TCollection, TElement)
+  fullName.vb: PocoEmit.Collections.ICollectionSaver(Of TCollection, TElement)
+  name.vb: ICollectionSaver(Of TCollection, TElement)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver
+    href: PocoEmit.Collections.ICollectionSaver-2.html
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver
+    href: PocoEmit.Collections.ICollectionSaver-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Save*
+  commentId: Overload:PocoEmit.Collections.PocoEmitCollectionServices.Save
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Save__2_PocoEmit_CollectionContainer___0___1_
+  name: Save
+  nameWithType: PocoEmitCollectionServices.Save
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Save
+- uid: '{TElement}'
+  commentId: '!:TElement'
+  definition: TElement
+  name: TElement
+  nameWithType: TElement
+  fullName: TElement
+- uid: TElement
+  name: TElement
+  nameWithType: TElement
+  fullName: TElement
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitSaver*
+  commentId: Overload:PocoEmit.Collections.PocoEmitCollectionServices.GetEmitSaver
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_GetEmitSaver__2_PocoEmit_CollectionContainer_
+  name: GetEmitSaver
+  nameWithType: PocoEmitCollectionServices.GetEmitSaver
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.GetEmitSaver
+- uid: PocoEmit.Collections.Saves.IEmitElementSaver
+  commentId: T:PocoEmit.Collections.Saves.IEmitElementSaver
+  parent: PocoEmit.Collections.Saves
+  href: PocoEmit.Collections.Saves.IEmitElementSaver.html
+  name: IEmitElementSaver
+  nameWithType: IEmitElementSaver
+  fullName: PocoEmit.Collections.Saves.IEmitElementSaver
+- uid: PocoEmit.Collections.Saves
+  commentId: N:PocoEmit.Collections.Saves
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Saves
+  nameWithType: PocoEmit.Collections.Saves
+  fullName: PocoEmit.Collections.Saves
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Saves
+    name: Saves
+    href: PocoEmit.Collections.Saves.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Saves
+    name: Saves
+    href: PocoEmit.Collections.Saves.html
+- uid: System.Linq.Expressions.Expression{System.Action{{TCollection},{TElement}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Action{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Action<TCollection, TElement>>
+  nameWithType: Expression<Action<TCollection, TElement>>
+  fullName: System.Linq.Expressions.Expression<System.Action<TCollection, TElement>>
+  nameWithType.vb: Expression(Of Action(Of TCollection, TElement))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Action(Of TCollection, TElement))
+  name.vb: Expression(Of Action(Of TCollection, TElement))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: )

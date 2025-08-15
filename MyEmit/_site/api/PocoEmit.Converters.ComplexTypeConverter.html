@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ComplexTypeConverter 类
+ | 简单对象Emit工具 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ComplexTypeConverter 类
+ | 简单对象Emit工具 ">
+      
+      <meta name="description" content="复合类型转化器">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyEmit/new/main/apiSpec/new?filename=PocoEmit_Converters_ComplexTypeConverter.md&amp;value=---%0Auid%3A%20PocoEmit.Converters.ComplexTypeConverter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MyEmit">
+            MyEmit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PocoEmit.Converters.ComplexTypeConverter">
+
+
+
+  <h1 id="PocoEmit_Converters_ComplexTypeConverter" data-uid="PocoEmit.Converters.ComplexTypeConverter" class="text-break">
+ComplexTypeConverter 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Converters/ComplexTypeConverter.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="PocoEmit.html">PocoEmit</a>.<a class="xref" href="PocoEmit.Converters.html">Converters</a></dd></dl>
+  <dl><dt>程序集</dt><dd>PocoEmit.Mapper.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>复合类型转化器</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ComplexTypeConverter : IEmitConverter, ICompileInfo</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">ComplexTypeConverter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a></div>
+      <div><a class="xref" href="PocoEmit.Configuration.ICompileInfo.html">ICompileInfo</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_">PocoEmitServices.Build&lt;TSource, TDest&gt;(IEmitConverter)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="PocoEmit_Converters_ComplexTypeConverter__ctor_" data-uid="PocoEmit.Converters.ComplexTypeConverter.#ctor*"></a>
+
+  <h3 id="PocoEmit_Converters_ComplexTypeConverter__ctor_PocoEmit_Activators_IEmitActivator_PocoEmit_Copies_IEmitCopier_" data-uid="PocoEmit.Converters.ComplexTypeConverter.#ctor(PocoEmit.Activators.IEmitActivator,PocoEmit.Copies.IEmitCopier)">
+  ComplexTypeConverter(IEmitActivator, IEmitCopier)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Converters/ComplexTypeConverter.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>复合类型转化器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComplexTypeConverter(IEmitActivator destActivator, IEmitCopier copier)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>destActivator</code> <a class="xref" href="PocoEmit.Activators.IEmitActivator.html">IEmitActivator</a></dt>
+    <dd></dd>
+    <dt><code>copier</code> <a class="xref" href="PocoEmit.Copies.IEmitCopier.html">IEmitCopier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="PocoEmit_Converters_ComplexTypeConverter_Copier_" data-uid="PocoEmit.Converters.ComplexTypeConverter.Copier*"></a>
+
+  <h3 id="PocoEmit_Converters_ComplexTypeConverter_Copier" data-uid="PocoEmit.Converters.ComplexTypeConverter.Copier">
+  Copier
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Converters/ComplexTypeConverter.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>复制</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEmitCopier Copier { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Copies.IEmitCopier.html">IEmitCopier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Converters_ComplexTypeConverter_DestActivator_" data-uid="PocoEmit.Converters.ComplexTypeConverter.DestActivator*"></a>
+
+  <h3 id="PocoEmit_Converters_ComplexTypeConverter_DestActivator" data-uid="PocoEmit.Converters.ComplexTypeConverter.DestActivator">
+  DestActivator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Converters/ComplexTypeConverter.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>激活映射目标</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEmitActivator DestActivator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Activators.IEmitActivator.html">IEmitActivator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="PocoEmit_Converters_ComplexTypeConverter_Convert_" data-uid="PocoEmit.Converters.ComplexTypeConverter.Convert*"></a>
+
+  <h3 id="PocoEmit_Converters_ComplexTypeConverter_Convert_System_Linq_Expressions_Expression_" data-uid="PocoEmit.Converters.ComplexTypeConverter.Convert(System.Linq.Expressions.Expression)">
+  Convert(Expression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Converters/ComplexTypeConverter.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>转化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Expression Convert(Expression source)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Converters/ComplexTypeConverter.cs/#L14" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) MyEmit All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

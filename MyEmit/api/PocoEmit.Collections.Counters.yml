@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Counters
+  commentId: N:PocoEmit.Collections.Counters
+  id: PocoEmit.Collections.Counters
+  children:
+  - PocoEmit.Collections.Counters.ArrayCounter
+  - PocoEmit.Collections.Counters.ArrayLength
+  - PocoEmit.Collections.Counters.CompiledCounter`1
+  - PocoEmit.Collections.Counters.EnumerableCounter
+  - PocoEmit.Collections.Counters.ICompiledCounter`1
+  - PocoEmit.Collections.Counters.IEmitCounter
+  - PocoEmit.Collections.Counters.IEmitElementCounter
+  - PocoEmit.Collections.Counters.MethodCounter
+  - PocoEmit.Collections.Counters.PropertyCounter
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Collections.Counters
+  nameWithType: PocoEmit.Collections.Counters
+  fullName: PocoEmit.Collections.Counters
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Collections.Counters.ArrayCounter
+  commentId: T:PocoEmit.Collections.Counters.ArrayCounter
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.ArrayCounter.html
+  name: ArrayCounter
+  nameWithType: ArrayCounter
+  fullName: PocoEmit.Collections.Counters.ArrayCounter
+- uid: PocoEmit.Collections.Counters.ArrayLength
+  commentId: T:PocoEmit.Collections.Counters.ArrayLength
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.ArrayLength.html
+  name: ArrayLength
+  nameWithType: ArrayLength
+  fullName: PocoEmit.Collections.Counters.ArrayLength
+- uid: PocoEmit.Collections.Counters.CompiledCounter`1
+  commentId: T:PocoEmit.Collections.Counters.CompiledCounter`1
+  href: PocoEmit.Collections.Counters.CompiledCounter-1.html
+  name: CompiledCounter<TCollection>
+  nameWithType: CompiledCounter<TCollection>
+  fullName: PocoEmit.Collections.Counters.CompiledCounter<TCollection>
+  nameWithType.vb: CompiledCounter(Of TCollection)
+  fullName.vb: PocoEmit.Collections.Counters.CompiledCounter(Of TCollection)
+  name.vb: CompiledCounter(Of TCollection)
+  spec.csharp:
+  - uid: PocoEmit.Collections.Counters.CompiledCounter`1
+    name: CompiledCounter
+    href: PocoEmit.Collections.Counters.CompiledCounter-1.html
+  - name: <
+  - name: TCollection
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.Counters.CompiledCounter`1
+    name: CompiledCounter
+    href: PocoEmit.Collections.Counters.CompiledCounter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: )
+- uid: PocoEmit.Collections.Counters.EnumerableCounter
+  commentId: T:PocoEmit.Collections.Counters.EnumerableCounter
+  href: PocoEmit.Collections.Counters.EnumerableCounter.html
+  name: EnumerableCounter
+  nameWithType: EnumerableCounter
+  fullName: PocoEmit.Collections.Counters.EnumerableCounter
+- uid: PocoEmit.Collections.Counters.ICompiledCounter`1
+  commentId: T:PocoEmit.Collections.Counters.ICompiledCounter`1
+  href: PocoEmit.Collections.Counters.ICompiledCounter-1.html
+  name: ICompiledCounter<TCollection>
+  nameWithType: ICompiledCounter<TCollection>
+  fullName: PocoEmit.Collections.Counters.ICompiledCounter<TCollection>
+  nameWithType.vb: ICompiledCounter(Of TCollection)
+  fullName.vb: PocoEmit.Collections.Counters.ICompiledCounter(Of TCollection)
+  name.vb: ICompiledCounter(Of TCollection)
+  spec.csharp:
+  - uid: PocoEmit.Collections.Counters.ICompiledCounter`1
+    name: ICompiledCounter
+    href: PocoEmit.Collections.Counters.ICompiledCounter-1.html
+  - name: <
+  - name: TCollection
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.Counters.ICompiledCounter`1
+    name: ICompiledCounter
+    href: PocoEmit.Collections.Counters.ICompiledCounter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: )
+- uid: PocoEmit.Collections.Counters.IEmitElementCounter
+  commentId: T:PocoEmit.Collections.Counters.IEmitElementCounter
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.IEmitElementCounter.html
+  name: IEmitElementCounter
+  nameWithType: IEmitElementCounter
+  fullName: PocoEmit.Collections.Counters.IEmitElementCounter
+- uid: PocoEmit.Collections.Counters.IEmitCounter
+  commentId: T:PocoEmit.Collections.Counters.IEmitCounter
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.IEmitCounter.html
+  name: IEmitCounter
+  nameWithType: IEmitCounter
+  fullName: PocoEmit.Collections.Counters.IEmitCounter
+- uid: PocoEmit.Collections.Counters.MethodCounter
+  commentId: T:PocoEmit.Collections.Counters.MethodCounter
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.MethodCounter.html
+  name: MethodCounter
+  nameWithType: MethodCounter
+  fullName: PocoEmit.Collections.Counters.MethodCounter
+- uid: PocoEmit.Collections.Counters.PropertyCounter
+  commentId: T:PocoEmit.Collections.Counters.PropertyCounter
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.PropertyCounter.html
+  name: PropertyCounter
+  nameWithType: PropertyCounter
+  fullName: PocoEmit.Collections.Counters.PropertyCounter
+- uid: PocoEmit.Collections.Counters
+  commentId: N:PocoEmit.Collections.Counters
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Counters
+  nameWithType: PocoEmit.Collections.Counters
+  fullName: PocoEmit.Collections.Counters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html

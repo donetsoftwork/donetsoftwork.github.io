@@ -1,0 +1,438 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Converters.MemberReadConverter
+  commentId: T:PocoEmit.Converters.MemberReadConverter
+  id: MemberReadConverter
+  parent: PocoEmit.Converters
+  children:
+  - PocoEmit.Converters.MemberReadConverter.#ctor(PocoEmit.Members.IEmitMemberReader)
+  - PocoEmit.Converters.MemberReadConverter.Convert(System.Linq.Expressions.Expression)
+  - PocoEmit.Converters.MemberReadConverter.Reader
+  langs:
+  - csharp
+  - vb
+  name: MemberReadConverter
+  nameWithType: MemberReadConverter
+  fullName: PocoEmit.Converters.MemberReadConverter
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Converters/MemberReadConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MemberReadConverter
+    path: ../PocoEmit.Mapper/Converters/MemberReadConverter.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Converters
+  summary: 通过成员读取转化
+  example: []
+  syntax:
+    content: 'public class MemberReadConverter : IEmitConverter, ICompileInfo'
+    content.vb: Public Class MemberReadConverter Implements IEmitConverter, ICompileInfo
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Converters.IEmitConverter
+  - PocoEmit.Configuration.ICompileInfo
+  extensionMethods:
+  - PocoEmit.Converters.IEmitConverter.PocoEmit.PocoEmitServices.Build``2
+- uid: PocoEmit.Converters.MemberReadConverter.#ctor(PocoEmit.Members.IEmitMemberReader)
+  commentId: M:PocoEmit.Converters.MemberReadConverter.#ctor(PocoEmit.Members.IEmitMemberReader)
+  id: '#ctor(PocoEmit.Members.IEmitMemberReader)'
+  parent: PocoEmit.Converters.MemberReadConverter
+  langs:
+  - csharp
+  - vb
+  name: MemberReadConverter(IEmitMemberReader)
+  nameWithType: MemberReadConverter.MemberReadConverter(IEmitMemberReader)
+  fullName: PocoEmit.Converters.MemberReadConverter.MemberReadConverter(PocoEmit.Members.IEmitMemberReader)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Converters/MemberReadConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Converters/MemberReadConverter.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Converters
+  summary: 通过成员读取转化
+  example: []
+  syntax:
+    content: public MemberReadConverter(IEmitMemberReader reader)
+    parameters:
+    - id: reader
+      type: PocoEmit.Members.IEmitMemberReader
+      description: ''
+    content.vb: Public Sub New(reader As IEmitMemberReader)
+  overload: PocoEmit.Converters.MemberReadConverter.#ctor*
+  nameWithType.vb: MemberReadConverter.New(IEmitMemberReader)
+  fullName.vb: PocoEmit.Converters.MemberReadConverter.New(PocoEmit.Members.IEmitMemberReader)
+  name.vb: New(IEmitMemberReader)
+- uid: PocoEmit.Converters.MemberReadConverter.Reader
+  commentId: P:PocoEmit.Converters.MemberReadConverter.Reader
+  id: Reader
+  parent: PocoEmit.Converters.MemberReadConverter
+  langs:
+  - csharp
+  - vb
+  name: Reader
+  nameWithType: MemberReadConverter.Reader
+  fullName: PocoEmit.Converters.MemberReadConverter.Reader
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Converters/MemberReadConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Reader
+    path: ../PocoEmit.Mapper/Converters/MemberReadConverter.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Converters
+  summary: 成员读取器
+  example: []
+  syntax:
+    content: public IEmitMemberReader Reader { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Members.IEmitMemberReader
+    content.vb: Public ReadOnly Property Reader As IEmitMemberReader
+  overload: PocoEmit.Converters.MemberReadConverter.Reader*
+- uid: PocoEmit.Converters.MemberReadConverter.Convert(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Converters.MemberReadConverter.Convert(System.Linq.Expressions.Expression)
+  id: Convert(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Converters.MemberReadConverter
+  langs:
+  - csharp
+  - vb
+  name: Convert(Expression)
+  nameWithType: MemberReadConverter.Convert(Expression)
+  fullName: PocoEmit.Converters.MemberReadConverter.Convert(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Converters/MemberReadConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Convert
+    path: ../PocoEmit.Mapper/Converters/MemberReadConverter.cs
+    startLine: 25
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Converters
+  summary: 转化
+  example: []
+  syntax:
+    content: public Expression Convert(Expression source)
+    parameters:
+    - id: source
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Public Function Convert(source As Expression) As Expression
+  overload: PocoEmit.Converters.MemberReadConverter.Convert*
+  implements:
+  - PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Converters.IEmitConverter
+  commentId: T:PocoEmit.Converters.IEmitConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IEmitConverter.html
+  name: IEmitConverter
+  nameWithType: IEmitConverter
+  fullName: PocoEmit.Converters.IEmitConverter
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Converters.IEmitConverter.PocoEmit.PocoEmitServices.Build``2
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  parent: PocoEmit.PocoEmitServices
+  definition: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  name: Build<TSource, TDest>(IEmitConverter)
+  nameWithType: PocoEmitServices.Build<TSource, TDest>(IEmitConverter)
+  fullName: PocoEmit.PocoEmitServices.Build<TSource, TDest>(PocoEmit.Converters.IEmitConverter)
+  nameWithType.vb: PocoEmitServices.Build(Of TSource, TDest)(IEmitConverter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TSource, TDest)(PocoEmit.Converters.IEmitConverter)
+  name.vb: Build(Of TSource, TDest)(IEmitConverter)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  name: Build<TSource, TDest>(IEmitConverter)
+  nameWithType: PocoEmitServices.Build<TSource, TDest>(IEmitConverter)
+  fullName: PocoEmit.PocoEmitServices.Build<TSource, TDest>(PocoEmit.Converters.IEmitConverter)
+  nameWithType.vb: PocoEmitServices.Build(Of TSource, TDest)(IEmitConverter)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TSource, TDest)(PocoEmit.Converters.IEmitConverter)
+  name.vb: Build(Of TSource, TDest)(IEmitConverter)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Converters.IEmitConverter)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Converters_IEmitConverter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: )
+- uid: PocoEmit.PocoEmitServices
+  commentId: T:PocoEmit.PocoEmitServices
+  parent: PocoEmit
+  href: PocoEmit.PocoEmitServices.html
+  name: PocoEmitServices
+  nameWithType: PocoEmitServices
+  fullName: PocoEmit.PocoEmitServices
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.Converters.MemberReadConverter.#ctor*
+  commentId: Overload:PocoEmit.Converters.MemberReadConverter.#ctor
+  href: PocoEmit.Converters.MemberReadConverter.html#PocoEmit_Converters_MemberReadConverter__ctor_PocoEmit_Members_IEmitMemberReader_
+  name: MemberReadConverter
+  nameWithType: MemberReadConverter.MemberReadConverter
+  fullName: PocoEmit.Converters.MemberReadConverter.MemberReadConverter
+  nameWithType.vb: MemberReadConverter.New
+  fullName.vb: PocoEmit.Converters.MemberReadConverter.New
+  name.vb: New
+- uid: PocoEmit.Members.IEmitMemberReader
+  commentId: T:PocoEmit.Members.IEmitMemberReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberReader.html
+  name: IEmitMemberReader
+  nameWithType: IEmitMemberReader
+  fullName: PocoEmit.Members.IEmitMemberReader
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: PocoEmit.Converters.MemberReadConverter.Reader*
+  commentId: Overload:PocoEmit.Converters.MemberReadConverter.Reader
+  href: PocoEmit.Converters.MemberReadConverter.html#PocoEmit_Converters_MemberReadConverter_Reader
+  name: Reader
+  nameWithType: MemberReadConverter.Reader
+  fullName: PocoEmit.Converters.MemberReadConverter.Reader
+- uid: PocoEmit.Converters.MemberReadConverter.Convert*
+  commentId: Overload:PocoEmit.Converters.MemberReadConverter.Convert
+  href: PocoEmit.Converters.MemberReadConverter.html#PocoEmit_Converters_MemberReadConverter_Convert_System_Linq_Expressions_Expression_
+  name: Convert
+  nameWithType: MemberReadConverter.Convert
+  fullName: PocoEmit.Converters.MemberReadConverter.Convert
+- uid: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Converters.IEmitConverter
+  isExternal: true
+  href: PocoEmit.Converters.IEmitConverter.html#PocoEmit_Converters_IEmitConverter_Convert_System_Linq_Expressions_Expression_
+  name: Convert(Expression)
+  nameWithType: IEmitConverter.Convert(Expression)
+  fullName: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+    name: Convert
+    href: PocoEmit.Converters.IEmitConverter.html#PocoEmit_Converters_IEmitConverter_Convert_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Converters.IEmitConverter.Convert(System.Linq.Expressions.Expression)
+    name: Convert
+    href: PocoEmit.Converters.IEmitConverter.html#PocoEmit_Converters_IEmitConverter_Convert_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

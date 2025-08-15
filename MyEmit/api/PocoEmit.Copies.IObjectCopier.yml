@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Copies.IObjectCopier
+  commentId: T:PocoEmit.Copies.IObjectCopier
+  id: IObjectCopier
+  parent: PocoEmit.Copies
+  children:
+  - PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IObjectCopier
+  nameWithType: IObjectCopier
+  fullName: PocoEmit.Copies.IObjectCopier
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/IObjectCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IObjectCopier
+    path: ../PocoEmit.Mapper/Copies/IObjectCopier.cs
+    startLine: 5
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 弱类型复制器
+  example: []
+  syntax:
+    content: public interface IObjectCopier
+    content.vb: Public Interface IObjectCopier
+- uid: PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+  commentId: M:PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+  id: CopyObject(System.Object,System.Object)
+  parent: PocoEmit.Copies.IObjectCopier
+  langs:
+  - csharp
+  - vb
+  name: CopyObject(object, object)
+  nameWithType: IObjectCopier.CopyObject(object, object)
+  fullName: PocoEmit.Copies.IObjectCopier.CopyObject(object, object)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/IObjectCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CopyObject
+    path: ../PocoEmit.Mapper/Copies/IObjectCopier.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 复制
+  example: []
+  syntax:
+    content: void CopyObject(object from, object to)
+    parameters:
+    - id: from
+      type: System.Object
+      description: ''
+    - id: to
+      type: System.Object
+      description: ''
+    content.vb: Sub CopyObject(from As Object, [to] As Object)
+  overload: PocoEmit.Copies.IObjectCopier.CopyObject*
+  nameWithType.vb: IObjectCopier.CopyObject(Object, Object)
+  fullName.vb: PocoEmit.Copies.IObjectCopier.CopyObject(Object, Object)
+  name.vb: CopyObject(Object, Object)
+references:
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+- uid: PocoEmit.Copies.IObjectCopier.CopyObject*
+  commentId: Overload:PocoEmit.Copies.IObjectCopier.CopyObject
+  href: PocoEmit.Copies.IObjectCopier.html#PocoEmit_Copies_IObjectCopier_CopyObject_System_Object_System_Object_
+  name: CopyObject
+  nameWithType: IObjectCopier.CopyObject
+  fullName: PocoEmit.Copies.IObjectCopier.CopyObject
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

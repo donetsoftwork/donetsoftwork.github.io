@@ -1,0 +1,542 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Dictionaries.DictionaryValuesVisitor
+  commentId: T:PocoEmit.Dictionaries.DictionaryValuesVisitor
+  id: DictionaryValuesVisitor
+  parent: PocoEmit.Dictionaries
+  children:
+  - PocoEmit.Dictionaries.DictionaryValuesVisitor.#ctor(System.Type,System.Type)
+  - PocoEmit.Dictionaries.DictionaryValuesVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  langs:
+  - csharp
+  - vb
+  name: DictionaryValuesVisitor
+  nameWithType: DictionaryValuesVisitor
+  fullName: PocoEmit.Dictionaries.DictionaryValuesVisitor
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/DictionaryValuesVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: DictionaryValuesVisitor
+    path: ../PocoEmit.Collections/Dictionaries/DictionaryValuesVisitor.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 字典值遍历
+  example: []
+  syntax:
+    content: 'public class DictionaryValuesVisitor : EmitCollectionBase, ICompileInfo, IEmitElementVisitor, IEmitCollection'
+    content.vb: Public Class DictionaryValuesVisitor Inherits EmitCollectionBase Implements ICompileInfo, IEmitElementVisitor, IEmitCollection
+  inheritance:
+  - System.Object
+  - PocoEmit.Collections.EmitCollectionBase
+  implements:
+  - PocoEmit.Configuration.ICompileInfo
+  - PocoEmit.Collections.Visitors.IEmitElementVisitor
+  - PocoEmit.Collections.IEmitCollection
+  inheritedMembers:
+  - PocoEmit.Collections.EmitCollectionBase._collectionType
+  - PocoEmit.Collections.EmitCollectionBase._elementType
+  - PocoEmit.Collections.EmitCollectionBase.ElementType
+  - PocoEmit.Collections.EmitCollectionBase.CollectionType
+  - PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+- uid: PocoEmit.Dictionaries.DictionaryValuesVisitor.#ctor(System.Type,System.Type)
+  commentId: M:PocoEmit.Dictionaries.DictionaryValuesVisitor.#ctor(System.Type,System.Type)
+  id: '#ctor(System.Type,System.Type)'
+  parent: PocoEmit.Dictionaries.DictionaryValuesVisitor
+  langs:
+  - csharp
+  - vb
+  name: DictionaryValuesVisitor(Type, Type)
+  nameWithType: DictionaryValuesVisitor.DictionaryValuesVisitor(Type, Type)
+  fullName: PocoEmit.Dictionaries.DictionaryValuesVisitor.DictionaryValuesVisitor(System.Type, System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/DictionaryValuesVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Dictionaries/DictionaryValuesVisitor.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 字典值遍历
+  example: []
+  syntax:
+    content: public DictionaryValuesVisitor(Type dictionaryType, Type elementType)
+    parameters:
+    - id: dictionaryType
+      type: System.Type
+      description: ''
+    - id: elementType
+      type: System.Type
+      description: ''
+    content.vb: Public Sub New(dictionaryType As Type, elementType As Type)
+  overload: PocoEmit.Dictionaries.DictionaryValuesVisitor.#ctor*
+  nameWithType.vb: DictionaryValuesVisitor.New(Type, Type)
+  fullName.vb: PocoEmit.Dictionaries.DictionaryValuesVisitor.New(System.Type, System.Type)
+  name.vb: New(Type, Type)
+- uid: PocoEmit.Dictionaries.DictionaryValuesVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  commentId: M:PocoEmit.Dictionaries.DictionaryValuesVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  id: Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  parent: PocoEmit.Dictionaries.DictionaryValuesVisitor
+  langs:
+  - csharp
+  - vb
+  name: Travel(Expression, Func<Expression, Expression>)
+  nameWithType: DictionaryValuesVisitor.Travel(Expression, Func<Expression, Expression>)
+  fullName: PocoEmit.Dictionaries.DictionaryValuesVisitor.Travel(System.Linq.Expressions.Expression, System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Dictionaries/DictionaryValuesVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Travel
+    path: ../PocoEmit.Collections/Dictionaries/DictionaryValuesVisitor.cs
+    startLine: 27
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Dictionaries
+  summary: 遍历字典
+  example: []
+  syntax:
+    content: public Expression Travel(Expression collection, Func<Expression, Expression> callback)
+    parameters:
+    - id: collection
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: callback
+      type: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Function Travel(collection As Expression, callback As Func(Of Expression, Expression)) As Expression
+  overload: PocoEmit.Dictionaries.DictionaryValuesVisitor.Travel*
+  implements:
+  - PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  nameWithType.vb: DictionaryValuesVisitor.Travel(Expression, Func(Of Expression, Expression))
+  fullName.vb: PocoEmit.Dictionaries.DictionaryValuesVisitor.Travel(System.Linq.Expressions.Expression, System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression))
+  name.vb: Travel(Expression, Func(Of Expression, Expression))
+references:
+- uid: PocoEmit.Dictionaries
+  commentId: N:PocoEmit.Dictionaries
+  href: PocoEmit.html
+  name: PocoEmit.Dictionaries
+  nameWithType: PocoEmit.Dictionaries
+  fullName: PocoEmit.Dictionaries
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Dictionaries
+    name: Dictionaries
+    href: PocoEmit.Dictionaries.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Dictionaries
+    name: Dictionaries
+    href: PocoEmit.Dictionaries.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.EmitCollectionBase
+  commentId: T:PocoEmit.Collections.EmitCollectionBase
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.EmitCollectionBase.html
+  name: EmitCollectionBase
+  nameWithType: EmitCollectionBase
+  fullName: PocoEmit.Collections.EmitCollectionBase
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Collections.Visitors.IEmitElementVisitor
+  commentId: T:PocoEmit.Collections.Visitors.IEmitElementVisitor
+  parent: PocoEmit.Collections.Visitors
+  href: PocoEmit.Collections.Visitors.IEmitElementVisitor.html
+  name: IEmitElementVisitor
+  nameWithType: IEmitElementVisitor
+  fullName: PocoEmit.Collections.Visitors.IEmitElementVisitor
+- uid: PocoEmit.Collections.IEmitCollection
+  commentId: T:PocoEmit.Collections.IEmitCollection
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.IEmitCollection.html
+  name: IEmitCollection
+  nameWithType: IEmitCollection
+  fullName: PocoEmit.Collections.IEmitCollection
+- uid: PocoEmit.Collections.EmitCollectionBase._collectionType
+  commentId: F:PocoEmit.Collections.EmitCollectionBase._collectionType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase__collectionType
+  name: _collectionType
+  nameWithType: EmitCollectionBase._collectionType
+  fullName: PocoEmit.Collections.EmitCollectionBase._collectionType
+- uid: PocoEmit.Collections.EmitCollectionBase._elementType
+  commentId: F:PocoEmit.Collections.EmitCollectionBase._elementType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase__elementType
+  name: _elementType
+  nameWithType: EmitCollectionBase._elementType
+  fullName: PocoEmit.Collections.EmitCollectionBase._elementType
+- uid: PocoEmit.Collections.EmitCollectionBase.ElementType
+  commentId: P:PocoEmit.Collections.EmitCollectionBase.ElementType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_ElementType
+  name: ElementType
+  nameWithType: EmitCollectionBase.ElementType
+  fullName: PocoEmit.Collections.EmitCollectionBase.ElementType
+- uid: PocoEmit.Collections.EmitCollectionBase.CollectionType
+  commentId: P:PocoEmit.Collections.EmitCollectionBase.CollectionType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CollectionType
+  name: CollectionType
+  nameWithType: EmitCollectionBase.CollectionType
+  fullName: PocoEmit.Collections.EmitCollectionBase.CollectionType
+- uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.EmitCollectionBase
+  isExternal: true
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  name: CheckInstance(Expression)
+  nameWithType: EmitCollectionBase.CheckInstance(Expression)
+  fullName: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+    name: CheckInstance
+    href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+    name: CheckInstance
+    href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Collections.Visitors
+  commentId: N:PocoEmit.Collections.Visitors
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Visitors
+  nameWithType: PocoEmit.Collections.Visitors
+  fullName: PocoEmit.Collections.Visitors
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Visitors
+    name: Visitors
+    href: PocoEmit.Collections.Visitors.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Visitors
+    name: Visitors
+    href: PocoEmit.Collections.Visitors.html
+- uid: PocoEmit.Dictionaries.DictionaryValuesVisitor.#ctor*
+  commentId: Overload:PocoEmit.Dictionaries.DictionaryValuesVisitor.#ctor
+  href: PocoEmit.Dictionaries.DictionaryValuesVisitor.html#PocoEmit_Dictionaries_DictionaryValuesVisitor__ctor_System_Type_System_Type_
+  name: DictionaryValuesVisitor
+  nameWithType: DictionaryValuesVisitor.DictionaryValuesVisitor
+  fullName: PocoEmit.Dictionaries.DictionaryValuesVisitor.DictionaryValuesVisitor
+  nameWithType.vb: DictionaryValuesVisitor.New
+  fullName.vb: PocoEmit.Dictionaries.DictionaryValuesVisitor.New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Dictionaries.DictionaryValuesVisitor.Travel*
+  commentId: Overload:PocoEmit.Dictionaries.DictionaryValuesVisitor.Travel
+  href: PocoEmit.Dictionaries.DictionaryValuesVisitor.html#PocoEmit_Dictionaries_DictionaryValuesVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression__
+  name: Travel
+  nameWithType: DictionaryValuesVisitor.Travel
+  fullName: PocoEmit.Dictionaries.DictionaryValuesVisitor.Travel
+- uid: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  commentId: M:PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  parent: PocoEmit.Collections.Visitors.IEmitElementVisitor
+  isExternal: true
+  href: PocoEmit.Collections.Visitors.IEmitElementVisitor.html#PocoEmit_Collections_Visitors_IEmitElementVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression__
+  name: Travel(Expression, Func<Expression, Expression>)
+  nameWithType: IEmitElementVisitor.Travel(Expression, Func<Expression, Expression>)
+  fullName: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression, System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>)
+  nameWithType.vb: IEmitElementVisitor.Travel(Expression, Func(Of Expression, Expression))
+  fullName.vb: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression, System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression))
+  name.vb: Travel(Expression, Func(Of Expression, Expression))
+  spec.csharp:
+  - uid: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+    name: Travel
+    href: PocoEmit.Collections.Visitors.IEmitElementVisitor.html#PocoEmit_Collections_Visitors_IEmitElementVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression__
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+    name: Travel
+    href: PocoEmit.Collections.Visitors.IEmitElementVisitor.html#PocoEmit_Collections_Visitors_IEmitElementVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression__
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+  commentId: T:System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<Expression, Expression>
+  nameWithType: Func<Expression, Expression>
+  fullName: System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>
+  nameWithType.vb: Func(Of Expression, Expression)
+  fullName.vb: System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  name.vb: Func(Of Expression, Expression)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>MapHelper&lt;TSource, TDest&gt; 类
+ | 简单对象Emit工具 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="MapHelper&lt;TSource, TDest&gt; 类
+ | 简单对象Emit工具 ">
+      
+      <meta name="description" content="映射辅助">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyEmit/new/main/apiSpec/new?filename=PocoEmit_Helpers_MapHelper_2.md&amp;value=---%0Auid%3A%20PocoEmit.Helpers.MapHelper%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MyEmit">
+            MyEmit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PocoEmit.Helpers.MapHelper`2">
+
+
+
+  <h1 id="PocoEmit_Helpers_MapHelper_2" data-uid="PocoEmit.Helpers.MapHelper`2" class="text-break">
+MapHelper&lt;TSource, TDest&gt; 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.SourceMember.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="PocoEmit.html">PocoEmit</a>.<a class="xref" href="PocoEmit.Helpers.html">Helpers</a></dd></dl>
+  <dl><dt>程序集</dt><dd>PocoEmit.Mapper.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>映射辅助</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MapHelper&lt;TSource, TDest&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TDest</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">MapHelper&lt;TSource, TDest&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2__ctor_" data-uid="PocoEmit.Helpers.MapHelper`2.#ctor*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2__ctor_PocoEmit_IMapper_System_StringComparison_" data-uid="PocoEmit.Helpers.MapHelper`2.#ctor(PocoEmit.IMapper,System.StringComparison)">
+  MapHelper(IMapper, StringComparison)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>映射辅助</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper(IMapper mapper, StringComparison comparison)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>mapper</code> <a class="xref" href="PocoEmit.IMapper.html">IMapper</a></dt>
+    <dd></dd>
+    <dt><code>comparison</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.stringcomparison">StringComparison</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_Dest_" data-uid="PocoEmit.Helpers.MapHelper`2.Dest*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_Dest" data-uid="PocoEmit.Helpers.MapHelper`2.Dest">
+  Dest
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>映射目标</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt;.DestHelper Dest { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;.<a class="xref" href="PocoEmit.Helpers.MapHelper-2.DestHelper.html">DestHelper</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_Source_" data-uid="PocoEmit.Helpers.MapHelper`2.Source*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_Source" data-uid="PocoEmit.Helpers.MapHelper`2.Source">
+  Source
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>映射源</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt;.SourceHelper Source { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;.<a class="xref" href="PocoEmit.Helpers.MapHelper-2.SourceHelper.html">SourceHelper</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_AddDestPrefix_" data-uid="PocoEmit.Helpers.MapHelper`2.AddDestPrefix*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_AddDestPrefix_System_String_" data-uid="PocoEmit.Helpers.MapHelper`2.AddDestPrefix(System.String)">
+  AddDestPrefix(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加目标前缀</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt; AddDestPrefix(string prefix)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>prefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_AddDestSuffix_" data-uid="PocoEmit.Helpers.MapHelper`2.AddDestSuffix*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_AddDestSuffix_System_String_" data-uid="PocoEmit.Helpers.MapHelper`2.AddDestSuffix(System.String)">
+  AddDestSuffix(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加目标后缀</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt; AddDestSuffix(string suffix)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>suffix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_AddSourcePrefix_" data-uid="PocoEmit.Helpers.MapHelper`2.AddSourcePrefix*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_AddSourcePrefix_System_String_" data-uid="PocoEmit.Helpers.MapHelper`2.AddSourcePrefix(System.String)">
+  AddSourcePrefix(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加源前缀</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt; AddSourcePrefix(string prefix)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>prefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_AddSourceSuffix_" data-uid="PocoEmit.Helpers.MapHelper`2.AddSourceSuffix*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_AddSourceSuffix_System_String_" data-uid="PocoEmit.Helpers.MapHelper`2.AddSourceSuffix(System.String)">
+  AddSourceSuffix(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加源后缀</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt; AddSourceSuffix(string suffix)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>suffix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_IgnoreDest_" data-uid="PocoEmit.Helpers.MapHelper`2.IgnoreDest*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_IgnoreDest_System_String_" data-uid="PocoEmit.Helpers.MapHelper`2.IgnoreDest(System.String)">
+  IgnoreDest(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>忽略目标成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt; IgnoreDest(string destMemberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>destMemberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_IgnoreSource_" data-uid="PocoEmit.Helpers.MapHelper`2.IgnoreSource*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_IgnoreSource_System_String_" data-uid="PocoEmit.Helpers.MapHelper`2.IgnoreSource(System.String)">
+  IgnoreSource(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>忽略源成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt; IgnoreSource(string sourceMemberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>sourceMemberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_SetMemberMap_" data-uid="PocoEmit.Helpers.MapHelper`2.SetMemberMap*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_SetMemberMap_System_String_System_String_" data-uid="PocoEmit.Helpers.MapHelper`2.SetMemberMap(System.String,System.String)">
+  SetMemberMap(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>映射</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt; SetMemberMap(string sourceMemberName, string destMemberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>sourceMemberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>destMemberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_UseActivator_" data-uid="PocoEmit.Helpers.MapHelper`2.UseActivator*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_UseActivator_System_Func__0__1__" data-uid="PocoEmit.Helpers.MapHelper`2.UseActivator(System.Func{`0,`1})">
+  UseActivator(Func&lt;TSource, TDest&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置带参委托来激活</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt; UseActivator(Func&lt;TSource, TDest&gt; activatorFunc)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>activatorFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_UseActivator_" data-uid="PocoEmit.Helpers.MapHelper`2.UseActivator*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_UseActivator_System_Func__1__" data-uid="PocoEmit.Helpers.MapHelper`2.UseActivator(System.Func{`1})">
+  UseActivator(Func&lt;TDest&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置委托来激活</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapHelper&lt;TSource, TDest&gt; UseActivator(Func&lt;TDest&gt; activatorFunc)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>activatorFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Helpers.MapHelper-2.html">MapHelper</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Helpers_MapHelper_2_UseConvertFunc_" data-uid="PocoEmit.Helpers.MapHelper`2.UseConvertFunc*"></a>
+
+  <h3 id="PocoEmit_Helpers_MapHelper_2_UseConvertFunc_System_Func__0__1__" data-uid="PocoEmit.Helpers.MapHelper`2.UseConvertFunc(System.Func{`0,`1})">
+  UseConvertFunc(Func&lt;TSource, TDest&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>使用委托转化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMapper UseConvertFunc(Func&lt;TSource, TDest&gt; convertFunc)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>convertFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TSource, TDest&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.IMapper.html">IMapper</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Helpers/MapHelper~2.SourceMember.cs/#L6" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) MyEmit All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

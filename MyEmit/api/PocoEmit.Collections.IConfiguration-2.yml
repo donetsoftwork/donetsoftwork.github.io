@@ -1,0 +1,273 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.IConfiguration`2
+  commentId: T:PocoEmit.Collections.IConfiguration`2
+  id: IConfiguration`2
+  parent: PocoEmit.Collections
+  children:
+  - PocoEmit.Collections.IConfiguration`2.TryRead(`0,`1@)
+  langs:
+  - csharp
+  - vb
+  name: IConfiguration<TKey, TValue>
+  nameWithType: IConfiguration<TKey, TValue>
+  fullName: PocoEmit.Collections.IConfiguration<TKey, TValue>
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit/Collections/IConfiguration~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IConfiguration
+    path: ../PocoEmit/Collections/IConfiguration~2.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 配置读写
+  example: []
+  syntax:
+    content: 'public interface IConfiguration<TKey, TValue> : IConfigure<TKey, TValue>'
+    typeParameters:
+    - id: TKey
+      description: ''
+    - id: TValue
+      description: ''
+    content.vb: Public Interface IConfiguration(Of TKey, TValue) Inherits IConfigure(Of TKey, TValue)
+  inheritedMembers:
+  - PocoEmit.Collections.IConfigure{{TKey},{TValue}}.Configure({TKey},{TValue})
+  nameWithType.vb: IConfiguration(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IConfiguration(Of TKey, TValue)
+  name.vb: IConfiguration(Of TKey, TValue)
+- uid: PocoEmit.Collections.IConfiguration`2.TryRead(`0,`1@)
+  commentId: M:PocoEmit.Collections.IConfiguration`2.TryRead(`0,`1@)
+  id: TryRead(`0,`1@)
+  parent: PocoEmit.Collections.IConfiguration`2
+  langs:
+  - csharp
+  - vb
+  name: TryRead(TKey, out TValue)
+  nameWithType: IConfiguration<TKey, TValue>.TryRead(TKey, out TValue)
+  fullName: PocoEmit.Collections.IConfiguration<TKey, TValue>.TryRead(TKey, out TValue)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Collections/IConfiguration~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: TryRead
+    path: ../PocoEmit/Collections/IConfiguration~2.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 获取
+  example: []
+  syntax:
+    content: bool TryRead(TKey key, out TValue value)
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: ''
+    - id: value
+      type: '{TValue}'
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Function TryRead(key As TKey, value As TValue) As Boolean
+  overload: PocoEmit.Collections.IConfiguration`2.TryRead*
+  nameWithType.vb: IConfiguration(Of TKey, TValue).TryRead(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IConfiguration(Of TKey, TValue).TryRead(TKey, TValue)
+  name.vb: TryRead(TKey, TValue)
+references:
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Collections.IConfigure{{TKey},{TValue}}.Configure({TKey},{TValue})
+  commentId: M:PocoEmit.Collections.IConfigure{`0,`1}.Configure(`0,`1)
+  parent: PocoEmit.Collections.IConfigure{{TKey},{TValue}}
+  definition: PocoEmit.Collections.IConfigure`2.Configure(`0,`1)
+  href: PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_
+  name: Configure(TKey, TValue)
+  nameWithType: IConfigure<TKey, TValue>.Configure(TKey, TValue)
+  fullName: PocoEmit.Collections.IConfigure<TKey, TValue>.Configure(TKey, TValue)
+  nameWithType.vb: IConfigure(Of TKey, TValue).Configure(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IConfigure(Of TKey, TValue).Configure(TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IConfigure{`0,`1}.Configure(`0,`1)
+    name: Configure
+    href: PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.IConfigure{`0,`1}.Configure(`0,`1)
+    name: Configure
+    href: PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IConfigure`2.Configure(`0,`1)
+  commentId: M:PocoEmit.Collections.IConfigure`2.Configure(`0,`1)
+  href: PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_
+  name: Configure(TKey, TValue)
+  nameWithType: IConfigure<TKey, TValue>.Configure(TKey, TValue)
+  fullName: PocoEmit.Collections.IConfigure<TKey, TValue>.Configure(TKey, TValue)
+  nameWithType.vb: IConfigure(Of TKey, TValue).Configure(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IConfigure(Of TKey, TValue).Configure(TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IConfigure`2.Configure(`0,`1)
+    name: Configure
+    href: PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.IConfigure`2.Configure(`0,`1)
+    name: Configure
+    href: PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IConfigure{{TKey},{TValue}}
+  commentId: T:PocoEmit.Collections.IConfigure{`0,`1}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.IConfigure`2
+  href: PocoEmit.Collections.IConfigure-2.html
+  name: IConfigure<TKey, TValue>
+  nameWithType: IConfigure<TKey, TValue>
+  fullName: PocoEmit.Collections.IConfigure<TKey, TValue>
+  nameWithType.vb: IConfigure(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IConfigure(Of TKey, TValue)
+  name.vb: IConfigure(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IConfigure`2
+    name: IConfigure
+    href: PocoEmit.Collections.IConfigure-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IConfigure`2
+    name: IConfigure
+    href: PocoEmit.Collections.IConfigure-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IConfigure`2
+  commentId: T:PocoEmit.Collections.IConfigure`2
+  href: PocoEmit.Collections.IConfigure-2.html
+  name: IConfigure<TKey, TValue>
+  nameWithType: IConfigure<TKey, TValue>
+  fullName: PocoEmit.Collections.IConfigure<TKey, TValue>
+  nameWithType.vb: IConfigure(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IConfigure(Of TKey, TValue)
+  name.vb: IConfigure(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IConfigure`2
+    name: IConfigure
+    href: PocoEmit.Collections.IConfigure-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IConfigure`2
+    name: IConfigure
+    href: PocoEmit.Collections.IConfigure-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IConfiguration`2.TryRead*
+  commentId: Overload:PocoEmit.Collections.IConfiguration`2.TryRead
+  href: PocoEmit.Collections.IConfiguration-2.html#PocoEmit_Collections_IConfiguration_2_TryRead__0__1__
+  name: TryRead
+  nameWithType: IConfiguration<TKey, TValue>.TryRead
+  fullName: PocoEmit.Collections.IConfiguration<TKey, TValue>.TryRead
+  nameWithType.vb: IConfiguration(Of TKey, TValue).TryRead
+  fullName.vb: PocoEmit.Collections.IConfiguration(Of TKey, TValue).TryRead
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

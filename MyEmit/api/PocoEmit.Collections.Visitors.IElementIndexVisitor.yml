@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Visitors.IElementIndexVisitor
+  commentId: T:PocoEmit.Collections.Visitors.IElementIndexVisitor
+  id: IElementIndexVisitor
+  parent: PocoEmit.Collections.Visitors
+  children:
+  - PocoEmit.Collections.Visitors.IElementIndexVisitor.ElementType
+  - PocoEmit.Collections.Visitors.IElementIndexVisitor.KeyType
+  langs:
+  - csharp
+  - vb
+  name: IElementIndexVisitor
+  nameWithType: IElementIndexVisitor
+  fullName: PocoEmit.Collections.Visitors.IElementIndexVisitor
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/IElementIndexVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IElementIndexVisitor
+    path: ../PocoEmit.Collections/Collections/Visitors/IElementIndexVisitor.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 元素索引访问者
+  example: []
+  syntax:
+    content: 'public interface IElementIndexVisitor : IIndexVisitor'
+    content.vb: Public Interface IElementIndexVisitor Inherits IIndexVisitor
+  inheritedMembers:
+  - PocoEmit.Collections.Visitors.IIndexVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.IndexExpression,System.Linq.Expressions.Expression})
+- uid: PocoEmit.Collections.Visitors.IElementIndexVisitor.KeyType
+  commentId: P:PocoEmit.Collections.Visitors.IElementIndexVisitor.KeyType
+  id: KeyType
+  parent: PocoEmit.Collections.Visitors.IElementIndexVisitor
+  langs:
+  - csharp
+  - vb
+  name: KeyType
+  nameWithType: IElementIndexVisitor.KeyType
+  fullName: PocoEmit.Collections.Visitors.IElementIndexVisitor.KeyType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/IElementIndexVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: KeyType
+    path: ../PocoEmit.Collections/Collections/Visitors/IElementIndexVisitor.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 主键类型
+  example: []
+  syntax:
+    content: Type KeyType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property KeyType As Type
+  overload: PocoEmit.Collections.Visitors.IElementIndexVisitor.KeyType*
+- uid: PocoEmit.Collections.Visitors.IElementIndexVisitor.ElementType
+  commentId: P:PocoEmit.Collections.Visitors.IElementIndexVisitor.ElementType
+  id: ElementType
+  parent: PocoEmit.Collections.Visitors.IElementIndexVisitor
+  langs:
+  - csharp
+  - vb
+  name: ElementType
+  nameWithType: IElementIndexVisitor.ElementType
+  fullName: PocoEmit.Collections.Visitors.IElementIndexVisitor.ElementType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/IElementIndexVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ElementType
+    path: ../PocoEmit.Collections/Collections/Visitors/IElementIndexVisitor.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 元素类型
+  example: []
+  syntax:
+    content: Type ElementType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property ElementType As Type
+  overload: PocoEmit.Collections.Visitors.IElementIndexVisitor.ElementType*
+references:
+- uid: PocoEmit.Collections.Visitors
+  commentId: N:PocoEmit.Collections.Visitors
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Visitors
+  nameWithType: PocoEmit.Collections.Visitors
+  fullName: PocoEmit.Collections.Visitors
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Visitors
+    name: Visitors
+    href: PocoEmit.Collections.Visitors.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Visitors
+    name: Visitors
+    href: PocoEmit.Collections.Visitors.html
+- uid: PocoEmit.Collections.Visitors.IIndexVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.IndexExpression,System.Linq.Expressions.Expression})
+  commentId: M:PocoEmit.Collections.Visitors.IIndexVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.IndexExpression,System.Linq.Expressions.Expression})
+  parent: PocoEmit.Collections.Visitors.IIndexVisitor
+  isExternal: true
+  href: PocoEmit.Collections.Visitors.IIndexVisitor.html#PocoEmit_Collections_Visitors_IIndexVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_IndexExpression_System_Linq_Expressions_Expression__
+  name: Travel(Expression, Func<Expression, IndexExpression, Expression>)
+  nameWithType: IIndexVisitor.Travel(Expression, Func<Expression, IndexExpression, Expression>)
+  fullName: PocoEmit.Collections.Visitors.IIndexVisitor.Travel(System.Linq.Expressions.Expression, System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.IndexExpression, System.Linq.Expressions.Expression>)
+  nameWithType.vb: IIndexVisitor.Travel(Expression, Func(Of Expression, IndexExpression, Expression))
+  fullName.vb: PocoEmit.Collections.Visitors.IIndexVisitor.Travel(System.Linq.Expressions.Expression, System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.IndexExpression, System.Linq.Expressions.Expression))
+  name.vb: Travel(Expression, Func(Of Expression, IndexExpression, Expression))
+  spec.csharp:
+  - uid: PocoEmit.Collections.Visitors.IIndexVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.IndexExpression,System.Linq.Expressions.Expression})
+    name: Travel
+    href: PocoEmit.Collections.Visitors.IIndexVisitor.html#PocoEmit_Collections_Visitors_IIndexVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_IndexExpression_System_Linq_Expressions_Expression__
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.IndexExpression
+    name: IndexExpression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.indexexpression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.Visitors.IIndexVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.IndexExpression,System.Linq.Expressions.Expression})
+    name: Travel
+    href: PocoEmit.Collections.Visitors.IIndexVisitor.html#PocoEmit_Collections_Visitors_IIndexVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_IndexExpression_System_Linq_Expressions_Expression__
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.IndexExpression
+    name: IndexExpression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.indexexpression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  - name: )
+- uid: PocoEmit.Collections.Visitors.IIndexVisitor
+  commentId: T:PocoEmit.Collections.Visitors.IIndexVisitor
+  parent: PocoEmit.Collections.Visitors
+  href: PocoEmit.Collections.Visitors.IIndexVisitor.html
+  name: IIndexVisitor
+  nameWithType: IIndexVisitor
+  fullName: PocoEmit.Collections.Visitors.IIndexVisitor
+- uid: PocoEmit.Collections.Visitors.IElementIndexVisitor.KeyType*
+  commentId: Overload:PocoEmit.Collections.Visitors.IElementIndexVisitor.KeyType
+  href: PocoEmit.Collections.Visitors.IElementIndexVisitor.html#PocoEmit_Collections_Visitors_IElementIndexVisitor_KeyType
+  name: KeyType
+  nameWithType: IElementIndexVisitor.KeyType
+  fullName: PocoEmit.Collections.Visitors.IElementIndexVisitor.KeyType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections.Visitors.IElementIndexVisitor.ElementType*
+  commentId: Overload:PocoEmit.Collections.Visitors.IElementIndexVisitor.ElementType
+  href: PocoEmit.Collections.Visitors.IElementIndexVisitor.html#PocoEmit_Collections_Visitors_IElementIndexVisitor_ElementType
+  name: ElementType
+  nameWithType: IElementIndexVisitor.ElementType
+  fullName: PocoEmit.Collections.Visitors.IElementIndexVisitor.ElementType

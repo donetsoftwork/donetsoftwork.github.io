@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Maping
+  commentId: N:PocoEmit.Maping
+  id: PocoEmit.Maping
+  children:
+  - PocoEmit.Maping.CustomMatcher
+  - PocoEmit.Maping.IMemberMatch
+  - PocoEmit.Maping.INameMatch
+  - PocoEmit.Maping.IRecognizer
+  - PocoEmit.Maping.IgnoreRecognizer
+  - PocoEmit.Maping.InheritRecognizer
+  - PocoEmit.Maping.MemberNameMatcher
+  - PocoEmit.Maping.NameMatcher
+  - PocoEmit.Maping.Recognizer
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Maping
+  nameWithType: PocoEmit.Maping
+  fullName: PocoEmit.Maping
+  type: Namespace
+  assemblies:
+  - PocoEmit.Mapper
+references:
+- uid: PocoEmit.Maping.CustomMatcher
+  commentId: T:PocoEmit.Maping.CustomMatcher
+  href: PocoEmit.Maping.CustomMatcher.html
+  name: CustomMatcher
+  nameWithType: CustomMatcher
+  fullName: PocoEmit.Maping.CustomMatcher
+- uid: PocoEmit.Maping.IgnoreRecognizer
+  commentId: T:PocoEmit.Maping.IgnoreRecognizer
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.IgnoreRecognizer.html
+  name: IgnoreRecognizer
+  nameWithType: IgnoreRecognizer
+  fullName: PocoEmit.Maping.IgnoreRecognizer
+- uid: PocoEmit.Maping.IMemberMatch
+  commentId: T:PocoEmit.Maping.IMemberMatch
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.IMemberMatch.html
+  name: IMemberMatch
+  nameWithType: IMemberMatch
+  fullName: PocoEmit.Maping.IMemberMatch
+- uid: PocoEmit.Maping.INameMatch
+  commentId: T:PocoEmit.Maping.INameMatch
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.INameMatch.html
+  name: INameMatch
+  nameWithType: INameMatch
+  fullName: PocoEmit.Maping.INameMatch
+- uid: PocoEmit.Maping.InheritRecognizer
+  commentId: T:PocoEmit.Maping.InheritRecognizer
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.InheritRecognizer.html
+  name: InheritRecognizer
+  nameWithType: InheritRecognizer
+  fullName: PocoEmit.Maping.InheritRecognizer
+- uid: PocoEmit.Maping.IRecognizer
+  commentId: T:PocoEmit.Maping.IRecognizer
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.IRecognizer.html
+  name: IRecognizer
+  nameWithType: IRecognizer
+  fullName: PocoEmit.Maping.IRecognizer
+- uid: PocoEmit.Maping.MemberNameMatcher
+  commentId: T:PocoEmit.Maping.MemberNameMatcher
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.MemberNameMatcher.html
+  name: MemberNameMatcher
+  nameWithType: MemberNameMatcher
+  fullName: PocoEmit.Maping.MemberNameMatcher
+- uid: PocoEmit.Maping.NameMatcher
+  commentId: T:PocoEmit.Maping.NameMatcher
+  href: PocoEmit.Maping.NameMatcher.html
+  name: NameMatcher
+  nameWithType: NameMatcher
+  fullName: PocoEmit.Maping.NameMatcher
+- uid: PocoEmit.Maping.Recognizer
+  commentId: T:PocoEmit.Maping.Recognizer
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.Recognizer.html
+  name: Recognizer
+  nameWithType: Recognizer
+  fullName: PocoEmit.Maping.Recognizer
+- uid: PocoEmit.Maping
+  commentId: N:PocoEmit.Maping
+  href: PocoEmit.html
+  name: PocoEmit.Maping
+  nameWithType: PocoEmit.Maping
+  fullName: PocoEmit.Maping
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Maping
+    name: Maping
+    href: PocoEmit.Maping.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Maping
+    name: Maping
+    href: PocoEmit.Maping.html

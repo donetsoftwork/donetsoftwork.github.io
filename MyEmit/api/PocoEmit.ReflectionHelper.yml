@@ -1,0 +1,1931 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.ReflectionHelper
+  commentId: T:PocoEmit.ReflectionHelper
+  id: ReflectionHelper
+  parent: PocoEmit
+  children:
+  - PocoEmit.ReflectionHelper.CheckValueType(System.Type,System.Type)
+  - PocoEmit.ReflectionHelper.GetConstructor(System.Type,System.Func{System.Reflection.ParameterInfo[],System.Boolean})
+  - PocoEmit.ReflectionHelper.GetConstructorByParameterType(System.Type,System.Type)
+  - PocoEmit.ReflectionHelper.GetConstructors(System.Type)
+  - PocoEmit.ReflectionHelper.GetElementType(System.Type)
+  - PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+  - PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.IPoco,System.Type,System.String)
+  - PocoEmit.ReflectionHelper.GetEmitReader``1(PocoEmit.IPoco,System.String)
+  - PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+  - PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.IPoco,System.Type,System.String)
+  - PocoEmit.ReflectionHelper.GetEmitWriter``1(PocoEmit.IPoco,System.String)
+  - PocoEmit.ReflectionHelper.GetFields(System.Type)
+  - PocoEmit.ReflectionHelper.GetFields``1
+  - PocoEmit.ReflectionHelper.GetGenericArguments(System.Type)
+  - PocoEmit.ReflectionHelper.GetMethod(System.Type,System.Func{System.Reflection.MethodInfo,System.Boolean})
+  - PocoEmit.ReflectionHelper.GetMethods(System.Type)
+  - PocoEmit.ReflectionHelper.GetProperties(System.Type)
+  - PocoEmit.ReflectionHelper.GetPropery(System.Type,System.Func{System.Reflection.PropertyInfo,System.Boolean})
+  - PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+  - PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.IPoco,System.Type,System.String)
+  - PocoEmit.ReflectionHelper.GetReadMember``1(PocoEmit.IPoco,System.String)
+  - PocoEmit.ReflectionHelper.GetTypeMembers(PocoEmit.IPoco,System.Type)
+  - PocoEmit.ReflectionHelper.GetTypeMembers``1(PocoEmit.IPoco)
+  - PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+  - PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.IPoco,System.Type,System.String)
+  - PocoEmit.ReflectionHelper.GetWriteMember``1(PocoEmit.IPoco,System.String)
+  - PocoEmit.ReflectionHelper.HasGenericType(System.Type,System.Type)
+  - PocoEmit.ReflectionHelper.IsGenericType(System.Type,System.Type)
+  - PocoEmit.ReflectionHelper.IsNullable(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: PocoEmit.ReflectionHelper
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ReflectionHelper
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 反射帮助类
+  example: []
+  syntax:
+    content: public static class ReflectionHelper
+    content.vb: Public Module ReflectionHelper
+  inheritance:
+  - System.Object
+- uid: PocoEmit.ReflectionHelper.GetTypeMembers``1(PocoEmit.IPoco)
+  commentId: M:PocoEmit.ReflectionHelper.GetTypeMembers``1(PocoEmit.IPoco)
+  id: GetTypeMembers``1(PocoEmit.IPoco)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTypeMembers<TInstance>(IPoco)
+  nameWithType: ReflectionHelper.GetTypeMembers<TInstance>(IPoco)
+  fullName: PocoEmit.ReflectionHelper.GetTypeMembers<TInstance>(PocoEmit.IPoco)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetTypeMembers
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 21
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取类型所有成员
+  example: []
+  syntax:
+    content: public static MemberBundle GetTypeMembers<TInstance>(this IPoco poco)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    return:
+      type: PocoEmit.Collections.MemberBundle
+      description: ''
+    content.vb: Public Shared Function GetTypeMembers(Of TInstance)(poco As IPoco) As MemberBundle
+  overload: PocoEmit.ReflectionHelper.GetTypeMembers*
+  nameWithType.vb: ReflectionHelper.GetTypeMembers(Of TInstance)(IPoco)
+  fullName.vb: PocoEmit.ReflectionHelper.GetTypeMembers(Of TInstance)(PocoEmit.IPoco)
+  name.vb: GetTypeMembers(Of TInstance)(IPoco)
+- uid: PocoEmit.ReflectionHelper.GetTypeMembers(PocoEmit.IPoco,System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.GetTypeMembers(PocoEmit.IPoco,System.Type)
+  id: GetTypeMembers(PocoEmit.IPoco,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTypeMembers(IPoco, Type)
+  nameWithType: ReflectionHelper.GetTypeMembers(IPoco, Type)
+  fullName: PocoEmit.ReflectionHelper.GetTypeMembers(PocoEmit.IPoco, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetTypeMembers
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 29
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取类型所有成员
+  example: []
+  syntax:
+    content: public static MemberBundle GetTypeMembers(this IPoco poco, Type instanceType)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: instanceType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Collections.MemberBundle
+      description: ''
+    content.vb: Public Shared Function GetTypeMembers(poco As IPoco, instanceType As Type) As MemberBundle
+  overload: PocoEmit.ReflectionHelper.GetTypeMembers*
+- uid: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.IPoco,System.Type,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.IPoco,System.Type,System.String)
+  id: GetReadMember(PocoEmit.IPoco,System.Type,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetReadMember(IPoco, Type, string)
+  nameWithType: ReflectionHelper.GetReadMember(IPoco, Type, string)
+  fullName: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.IPoco, System.Type, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetReadMember
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 40
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可读成员
+  example: []
+  syntax:
+    content: public static MemberInfo GetReadMember(this IPoco poco, Type instanceType, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: instanceType
+      type: System.Type
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    return:
+      type: System.Reflection.MemberInfo
+      description: ''
+    content.vb: Public Shared Function GetReadMember(poco As IPoco, instanceType As Type, memberName As String) As MemberInfo
+  overload: PocoEmit.ReflectionHelper.GetReadMember*
+  nameWithType.vb: ReflectionHelper.GetReadMember(IPoco, Type, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.IPoco, System.Type, String)
+  name.vb: GetReadMember(IPoco, Type, String)
+- uid: PocoEmit.ReflectionHelper.GetReadMember``1(PocoEmit.IPoco,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetReadMember``1(PocoEmit.IPoco,System.String)
+  id: GetReadMember``1(PocoEmit.IPoco,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetReadMember<TInstance>(IPoco, string)
+  nameWithType: ReflectionHelper.GetReadMember<TInstance>(IPoco, string)
+  fullName: PocoEmit.ReflectionHelper.GetReadMember<TInstance>(PocoEmit.IPoco, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetReadMember
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 53
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可读成员
+  example: []
+  syntax:
+    content: public static MemberInfo GetReadMember<TInstance>(this IPoco poco, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    return:
+      type: System.Reflection.MemberInfo
+      description: ''
+    content.vb: Public Shared Function GetReadMember(Of TInstance)(poco As IPoco, memberName As String) As MemberInfo
+  overload: PocoEmit.ReflectionHelper.GetReadMember*
+  nameWithType.vb: ReflectionHelper.GetReadMember(Of TInstance)(IPoco, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetReadMember(Of TInstance)(PocoEmit.IPoco, String)
+  name.vb: GetReadMember(Of TInstance)(IPoco, String)
+- uid: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+  id: GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetReadMember(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetReadMember(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetReadMember
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 65
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可读成员
+  example: []
+  syntax:
+    content: public static MemberInfo GetReadMember(this MemberBundle bundle, string memberName)
+    parameters:
+    - id: bundle
+      type: PocoEmit.Collections.MemberBundle
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    return:
+      type: System.Reflection.MemberInfo
+      description: ''
+    content.vb: Public Shared Function GetReadMember(bundle As MemberBundle, memberName As String) As MemberInfo
+  overload: PocoEmit.ReflectionHelper.GetReadMember*
+  nameWithType.vb: ReflectionHelper.GetReadMember(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetReadMember(MemberBundle, String)
+- uid: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.IPoco,System.Type,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.IPoco,System.Type,System.String)
+  id: GetEmitReader(PocoEmit.IPoco,System.Type,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetEmitReader(IPoco, Type, string)
+  nameWithType: ReflectionHelper.GetEmitReader(IPoco, Type, string)
+  fullName: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.IPoco, System.Type, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitReader
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 80
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可读成员
+  example: []
+  syntax:
+    content: public static IEmitMemberReader GetEmitReader(this IPoco poco, Type instanceType, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: instanceType
+      type: System.Type
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    return:
+      type: PocoEmit.Members.IEmitMemberReader
+      description: ''
+    content.vb: Public Shared Function GetEmitReader(poco As IPoco, instanceType As Type, memberName As String) As IEmitMemberReader
+  overload: PocoEmit.ReflectionHelper.GetEmitReader*
+  nameWithType.vb: ReflectionHelper.GetEmitReader(IPoco, Type, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.IPoco, System.Type, String)
+  name.vb: GetEmitReader(IPoco, Type, String)
+- uid: PocoEmit.ReflectionHelper.GetEmitReader``1(PocoEmit.IPoco,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetEmitReader``1(PocoEmit.IPoco,System.String)
+  id: GetEmitReader``1(PocoEmit.IPoco,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetEmitReader<TInstance>(IPoco, string)
+  nameWithType: ReflectionHelper.GetEmitReader<TInstance>(IPoco, string)
+  fullName: PocoEmit.ReflectionHelper.GetEmitReader<TInstance>(PocoEmit.IPoco, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitReader
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 93
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可读成员
+  example: []
+  syntax:
+    content: public static IEmitMemberReader GetEmitReader<TInstance>(this IPoco poco, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    return:
+      type: PocoEmit.Members.IEmitMemberReader
+      description: ''
+    content.vb: Public Shared Function GetEmitReader(Of TInstance)(poco As IPoco, memberName As String) As IEmitMemberReader
+  overload: PocoEmit.ReflectionHelper.GetEmitReader*
+  nameWithType.vb: ReflectionHelper.GetEmitReader(Of TInstance)(IPoco, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetEmitReader(Of TInstance)(PocoEmit.IPoco, String)
+  name.vb: GetEmitReader(Of TInstance)(IPoco, String)
+- uid: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+  id: GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetEmitReader(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetEmitReader(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitReader
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 105
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可读成员
+  example: []
+  syntax:
+    content: public static IEmitMemberReader GetEmitReader(this MemberBundle bundle, string memberName)
+    parameters:
+    - id: bundle
+      type: PocoEmit.Collections.MemberBundle
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    return:
+      type: PocoEmit.Members.IEmitMemberReader
+      description: ''
+    content.vb: Public Shared Function GetEmitReader(bundle As MemberBundle, memberName As String) As IEmitMemberReader
+  overload: PocoEmit.ReflectionHelper.GetEmitReader*
+  nameWithType.vb: ReflectionHelper.GetEmitReader(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetEmitReader(MemberBundle, String)
+- uid: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.IPoco,System.Type,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.IPoco,System.Type,System.String)
+  id: GetWriteMember(PocoEmit.IPoco,System.Type,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetWriteMember(IPoco, Type, string)
+  nameWithType: ReflectionHelper.GetWriteMember(IPoco, Type, string)
+  fullName: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.IPoco, System.Type, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetWriteMember
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 120
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可写成员
+  example: []
+  syntax:
+    content: public static MemberInfo GetWriteMember(this IPoco poco, Type instanceType, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: instanceType
+      type: System.Type
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    return:
+      type: System.Reflection.MemberInfo
+      description: ''
+    content.vb: Public Shared Function GetWriteMember(poco As IPoco, instanceType As Type, memberName As String) As MemberInfo
+  overload: PocoEmit.ReflectionHelper.GetWriteMember*
+  nameWithType.vb: ReflectionHelper.GetWriteMember(IPoco, Type, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.IPoco, System.Type, String)
+  name.vb: GetWriteMember(IPoco, Type, String)
+- uid: PocoEmit.ReflectionHelper.GetWriteMember``1(PocoEmit.IPoco,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetWriteMember``1(PocoEmit.IPoco,System.String)
+  id: GetWriteMember``1(PocoEmit.IPoco,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetWriteMember<TInstance>(IPoco, string)
+  nameWithType: ReflectionHelper.GetWriteMember<TInstance>(IPoco, string)
+  fullName: PocoEmit.ReflectionHelper.GetWriteMember<TInstance>(PocoEmit.IPoco, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetWriteMember
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 133
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可写成员
+  example: []
+  syntax:
+    content: public static MemberInfo GetWriteMember<TInstance>(this IPoco poco, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    return:
+      type: System.Reflection.MemberInfo
+      description: ''
+    content.vb: Public Shared Function GetWriteMember(Of TInstance)(poco As IPoco, memberName As String) As MemberInfo
+  overload: PocoEmit.ReflectionHelper.GetWriteMember*
+  nameWithType.vb: ReflectionHelper.GetWriteMember(Of TInstance)(IPoco, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetWriteMember(Of TInstance)(PocoEmit.IPoco, String)
+  name.vb: GetWriteMember(Of TInstance)(IPoco, String)
+- uid: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+  id: GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetWriteMember(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetWriteMember(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetWriteMember
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 145
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可读成员
+  example: []
+  syntax:
+    content: public static MemberInfo GetWriteMember(this MemberBundle bundle, string memberName)
+    parameters:
+    - id: bundle
+      type: PocoEmit.Collections.MemberBundle
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    return:
+      type: System.Reflection.MemberInfo
+      description: ''
+    content.vb: Public Shared Function GetWriteMember(bundle As MemberBundle, memberName As String) As MemberInfo
+  overload: PocoEmit.ReflectionHelper.GetWriteMember*
+  nameWithType.vb: ReflectionHelper.GetWriteMember(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetWriteMember(MemberBundle, String)
+- uid: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.IPoco,System.Type,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.IPoco,System.Type,System.String)
+  id: GetEmitWriter(PocoEmit.IPoco,System.Type,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetEmitWriter(IPoco, Type, string)
+  nameWithType: ReflectionHelper.GetEmitWriter(IPoco, Type, string)
+  fullName: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.IPoco, System.Type, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitWriter
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 160
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可写成员
+  example: []
+  syntax:
+    content: public static IEmitMemberWriter GetEmitWriter(this IPoco poco, Type instanceType, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: instanceType
+      type: System.Type
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    return:
+      type: PocoEmit.Members.IEmitMemberWriter
+      description: ''
+    content.vb: Public Shared Function GetEmitWriter(poco As IPoco, instanceType As Type, memberName As String) As IEmitMemberWriter
+  overload: PocoEmit.ReflectionHelper.GetEmitWriter*
+  nameWithType.vb: ReflectionHelper.GetEmitWriter(IPoco, Type, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.IPoco, System.Type, String)
+  name.vb: GetEmitWriter(IPoco, Type, String)
+- uid: PocoEmit.ReflectionHelper.GetEmitWriter``1(PocoEmit.IPoco,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetEmitWriter``1(PocoEmit.IPoco,System.String)
+  id: GetEmitWriter``1(PocoEmit.IPoco,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetEmitWriter<TInstance>(IPoco, string)
+  nameWithType: ReflectionHelper.GetEmitWriter<TInstance>(IPoco, string)
+  fullName: PocoEmit.ReflectionHelper.GetEmitWriter<TInstance>(PocoEmit.IPoco, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitWriter
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 173
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可写成员
+  example: []
+  syntax:
+    content: public static IEmitMemberWriter GetEmitWriter<TInstance>(this IPoco poco, string memberName)
+    parameters:
+    - id: poco
+      type: PocoEmit.IPoco
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    return:
+      type: PocoEmit.Members.IEmitMemberWriter
+      description: ''
+    content.vb: Public Shared Function GetEmitWriter(Of TInstance)(poco As IPoco, memberName As String) As IEmitMemberWriter
+  overload: PocoEmit.ReflectionHelper.GetEmitWriter*
+  nameWithType.vb: ReflectionHelper.GetEmitWriter(Of TInstance)(IPoco, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetEmitWriter(Of TInstance)(PocoEmit.IPoco, String)
+  name.vb: GetEmitWriter(Of TInstance)(IPoco, String)
+- uid: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+  id: GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+  isExtensionMethod: true
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetEmitWriter(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetEmitWriter(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitWriter
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 185
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取可读成员
+  example: []
+  syntax:
+    content: public static IEmitMemberWriter GetEmitWriter(this MemberBundle bundle, string memberName)
+    parameters:
+    - id: bundle
+      type: PocoEmit.Collections.MemberBundle
+      description: ''
+    - id: memberName
+      type: System.String
+      description: ''
+    return:
+      type: PocoEmit.Members.IEmitMemberWriter
+      description: ''
+    content.vb: Public Shared Function GetEmitWriter(bundle As MemberBundle, memberName As String) As IEmitMemberWriter
+  overload: PocoEmit.ReflectionHelper.GetEmitWriter*
+  nameWithType.vb: ReflectionHelper.GetEmitWriter(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetEmitWriter(MemberBundle, String)
+- uid: PocoEmit.ReflectionHelper.GetPropery(System.Type,System.Func{System.Reflection.PropertyInfo,System.Boolean})
+  commentId: M:PocoEmit.ReflectionHelper.GetPropery(System.Type,System.Func{System.Reflection.PropertyInfo,System.Boolean})
+  id: GetPropery(System.Type,System.Func{System.Reflection.PropertyInfo,System.Boolean})
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetPropery(Type, Func<PropertyInfo, bool>)
+  nameWithType: ReflectionHelper.GetPropery(Type, Func<PropertyInfo, bool>)
+  fullName: PocoEmit.ReflectionHelper.GetPropery(System.Type, System.Func<System.Reflection.PropertyInfo, bool>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetPropery
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 198
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 筛选属性
+  example: []
+  syntax:
+    content: public static PropertyInfo GetPropery(Type declaringType, Func<PropertyInfo, bool> filter)
+    parameters:
+    - id: declaringType
+      type: System.Type
+      description: ''
+    - id: filter
+      type: System.Func{System.Reflection.PropertyInfo,System.Boolean}
+      description: ''
+    return:
+      type: System.Reflection.PropertyInfo
+      description: ''
+    content.vb: Public Shared Function GetPropery(declaringType As Type, filter As Func(Of PropertyInfo, Boolean)) As PropertyInfo
+  overload: PocoEmit.ReflectionHelper.GetPropery*
+  nameWithType.vb: ReflectionHelper.GetPropery(Type, Func(Of PropertyInfo, Boolean))
+  fullName.vb: PocoEmit.ReflectionHelper.GetPropery(System.Type, System.Func(Of System.Reflection.PropertyInfo, Boolean))
+  name.vb: GetPropery(Type, Func(Of PropertyInfo, Boolean))
+- uid: PocoEmit.ReflectionHelper.GetProperties(System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.GetProperties(System.Type)
+  id: GetProperties(System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetProperties(Type)
+  nameWithType: ReflectionHelper.GetProperties(Type)
+  fullName: PocoEmit.ReflectionHelper.GetProperties(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetProperties
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 217
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取所有属性
+  example: []
+  syntax:
+    content: public static IEnumerable<PropertyInfo> GetProperties(Type declaringType)
+    parameters:
+    - id: declaringType
+      type: System.Type
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+      description: ''
+    content.vb: Public Shared Function GetProperties(declaringType As Type) As IEnumerable(Of PropertyInfo)
+  overload: PocoEmit.ReflectionHelper.GetProperties*
+- uid: PocoEmit.ReflectionHelper.GetFields``1
+  commentId: M:PocoEmit.ReflectionHelper.GetFields``1
+  id: GetFields``1
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFields<TStructuralType>()
+  nameWithType: ReflectionHelper.GetFields<TStructuralType>()
+  fullName: PocoEmit.ReflectionHelper.GetFields<TStructuralType>()
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetFields
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 237
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取所有字段
+  example: []
+  syntax:
+    content: public static IEnumerable<FieldInfo> GetFields<TStructuralType>()
+    typeParameters:
+    - id: TStructuralType
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+      description: ''
+    content.vb: Public Shared Function GetFields(Of TStructuralType)() As IEnumerable(Of FieldInfo)
+  overload: PocoEmit.ReflectionHelper.GetFields*
+  nameWithType.vb: ReflectionHelper.GetFields(Of TStructuralType)()
+  fullName.vb: PocoEmit.ReflectionHelper.GetFields(Of TStructuralType)()
+  name.vb: GetFields(Of TStructuralType)()
+- uid: PocoEmit.ReflectionHelper.GetFields(System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.GetFields(System.Type)
+  id: GetFields(System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFields(Type)
+  nameWithType: ReflectionHelper.GetFields(Type)
+  fullName: PocoEmit.ReflectionHelper.GetFields(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetFields
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 243
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取所有字段
+  example: []
+  syntax:
+    content: public static IEnumerable<FieldInfo> GetFields(Type declaringType)
+    parameters:
+    - id: declaringType
+      type: System.Type
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+      description: ''
+    content.vb: Public Shared Function GetFields(declaringType As Type) As IEnumerable(Of FieldInfo)
+  overload: PocoEmit.ReflectionHelper.GetFields*
+- uid: PocoEmit.ReflectionHelper.CheckValueType(System.Type,System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.CheckValueType(System.Type,System.Type)
+  id: CheckValueType(System.Type,System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: CheckValueType(Type, Type)
+  nameWithType: ReflectionHelper.CheckValueType(Type, Type)
+  fullName: PocoEmit.ReflectionHelper.CheckValueType(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CheckValueType
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 264
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 判断是否兼容值类型
+  example: []
+  syntax:
+    content: public static bool CheckValueType(Type fromType, Type toType)
+    parameters:
+    - id: fromType
+      type: System.Type
+      description: ''
+    - id: toType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function CheckValueType(fromType As Type, toType As Type) As Boolean
+  overload: PocoEmit.ReflectionHelper.CheckValueType*
+- uid: PocoEmit.ReflectionHelper.IsNullable(System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.IsNullable(System.Type)
+  id: IsNullable(System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: IsNullable(Type)
+  nameWithType: ReflectionHelper.IsNullable(Type)
+  fullName: PocoEmit.ReflectionHelper.IsNullable(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IsNullable
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 295
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 是否可空类型
+  example: []
+  syntax:
+    content: public static bool IsNullable(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsNullable(type As Type) As Boolean
+  overload: PocoEmit.ReflectionHelper.IsNullable*
+- uid: PocoEmit.ReflectionHelper.IsGenericType(System.Type,System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.IsGenericType(System.Type,System.Type)
+  id: IsGenericType(System.Type,System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: IsGenericType(Type, Type)
+  nameWithType: ReflectionHelper.IsGenericType(Type, Type)
+  fullName: PocoEmit.ReflectionHelper.IsGenericType(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IsGenericType
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 305
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 是否泛型定义
+  example: []
+  syntax:
+    content: public static bool IsGenericType(Type type, Type genericType)
+    parameters:
+    - id: type
+      type: System.Type
+      description: ''
+    - id: genericType
+      type: System.Type
+      description: 泛型
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsGenericType(type As Type, genericType As Type) As Boolean
+  overload: PocoEmit.ReflectionHelper.IsGenericType*
+- uid: PocoEmit.ReflectionHelper.HasGenericType(System.Type,System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.HasGenericType(System.Type,System.Type)
+  id: HasGenericType(System.Type,System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: HasGenericType(Type, Type)
+  nameWithType: ReflectionHelper.HasGenericType(Type, Type)
+  fullName: PocoEmit.ReflectionHelper.HasGenericType(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: HasGenericType
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 327
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 判断是否包含泛型定义
+  example: []
+  syntax:
+    content: public static bool HasGenericType(Type type, Type genericType)
+    parameters:
+    - id: type
+      type: System.Type
+      description: ''
+    - id: genericType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function HasGenericType(type As Type, genericType As Type) As Boolean
+  overload: PocoEmit.ReflectionHelper.HasGenericType*
+- uid: PocoEmit.ReflectionHelper.GetElementType(System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.GetElementType(System.Type)
+  id: GetElementType(System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetElementType(Type)
+  nameWithType: ReflectionHelper.GetElementType(Type)
+  fullName: PocoEmit.ReflectionHelper.GetElementType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetElementType
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 359
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取子元素类型
+  example: []
+  syntax:
+    content: public static Type GetElementType(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: ''
+    return:
+      type: System.Type
+      description: ''
+    content.vb: Public Shared Function GetElementType(type As Type) As Type
+  overload: PocoEmit.ReflectionHelper.GetElementType*
+- uid: PocoEmit.ReflectionHelper.GetGenericArguments(System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.GetGenericArguments(System.Type)
+  id: GetGenericArguments(System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetGenericArguments(Type)
+  nameWithType: ReflectionHelper.GetGenericArguments(Type)
+  fullName: PocoEmit.ReflectionHelper.GetGenericArguments(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetGenericArguments
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 384
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取泛型参数
+  example: []
+  syntax:
+    content: public static Type[] GetGenericArguments(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: ''
+    return:
+      type: System.Type[]
+      description: ''
+    content.vb: Public Shared Function GetGenericArguments(type As Type) As Type()
+  overload: PocoEmit.ReflectionHelper.GetGenericArguments*
+- uid: PocoEmit.ReflectionHelper.GetConstructorByParameterType(System.Type,System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.GetConstructorByParameterType(System.Type,System.Type)
+  id: GetConstructorByParameterType(System.Type,System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetConstructorByParameterType(Type, Type)
+  nameWithType: ReflectionHelper.GetConstructorByParameterType(Type, Type)
+  fullName: PocoEmit.ReflectionHelper.GetConstructorByParameterType(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetConstructorByParameterType
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 403
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取构造函数
+  example: []
+  syntax:
+    content: public static ConstructorInfo GetConstructorByParameterType(Type declaringType, Type parameterType)
+    parameters:
+    - id: declaringType
+      type: System.Type
+      description: ''
+    - id: parameterType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Reflection.ConstructorInfo
+      description: ''
+    content.vb: Public Shared Function GetConstructorByParameterType(declaringType As Type, parameterType As Type) As ConstructorInfo
+  overload: PocoEmit.ReflectionHelper.GetConstructorByParameterType*
+- uid: PocoEmit.ReflectionHelper.GetConstructor(System.Type,System.Func{System.Reflection.ParameterInfo[],System.Boolean})
+  commentId: M:PocoEmit.ReflectionHelper.GetConstructor(System.Type,System.Func{System.Reflection.ParameterInfo[],System.Boolean})
+  id: GetConstructor(System.Type,System.Func{System.Reflection.ParameterInfo[],System.Boolean})
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetConstructor(Type, Func<ParameterInfo[], bool>)
+  nameWithType: ReflectionHelper.GetConstructor(Type, Func<ParameterInfo[], bool>)
+  fullName: PocoEmit.ReflectionHelper.GetConstructor(System.Type, System.Func<System.Reflection.ParameterInfo[], bool>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetConstructor
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 414
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取构造函数
+  example: []
+  syntax:
+    content: public static ConstructorInfo GetConstructor(Type declaringType, Func<ParameterInfo[], bool> filter)
+    parameters:
+    - id: declaringType
+      type: System.Type
+      description: ''
+    - id: filter
+      type: System.Func{System.Reflection.ParameterInfo[],System.Boolean}
+      description: ''
+    return:
+      type: System.Reflection.ConstructorInfo
+      description: ''
+    content.vb: Public Shared Function GetConstructor(declaringType As Type, filter As Func(Of ParameterInfo(), Boolean)) As ConstructorInfo
+  overload: PocoEmit.ReflectionHelper.GetConstructor*
+  nameWithType.vb: ReflectionHelper.GetConstructor(Type, Func(Of ParameterInfo(), Boolean))
+  fullName.vb: PocoEmit.ReflectionHelper.GetConstructor(System.Type, System.Func(Of System.Reflection.ParameterInfo(), Boolean))
+  name.vb: GetConstructor(Type, Func(Of ParameterInfo(), Boolean))
+- uid: PocoEmit.ReflectionHelper.GetConstructors(System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.GetConstructors(System.Type)
+  id: GetConstructors(System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetConstructors(Type)
+  nameWithType: ReflectionHelper.GetConstructors(Type)
+  fullName: PocoEmit.ReflectionHelper.GetConstructors(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetConstructors
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 433
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取所有构造函数
+  example: []
+  syntax:
+    content: public static IEnumerable<ConstructorInfo> GetConstructors(Type declaringType)
+    parameters:
+    - id: declaringType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+      description: ''
+    content.vb: Public Shared Function GetConstructors(declaringType As Type) As IEnumerable(Of ConstructorInfo)
+  overload: PocoEmit.ReflectionHelper.GetConstructors*
+- uid: PocoEmit.ReflectionHelper.GetMethod(System.Type,System.Func{System.Reflection.MethodInfo,System.Boolean})
+  commentId: M:PocoEmit.ReflectionHelper.GetMethod(System.Type,System.Func{System.Reflection.MethodInfo,System.Boolean})
+  id: GetMethod(System.Type,System.Func{System.Reflection.MethodInfo,System.Boolean})
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetMethod(Type, Func<MethodInfo, bool>)
+  nameWithType: ReflectionHelper.GetMethod(Type, Func<MethodInfo, bool>)
+  fullName: PocoEmit.ReflectionHelper.GetMethod(System.Type, System.Func<System.Reflection.MethodInfo, bool>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMethod
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 454
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取函数
+  example: []
+  syntax:
+    content: public static MethodInfo GetMethod(Type type, Func<MethodInfo, bool> filter)
+    parameters:
+    - id: type
+      type: System.Type
+      description: ''
+    - id: filter
+      type: System.Func{System.Reflection.MethodInfo,System.Boolean}
+      description: ''
+    return:
+      type: System.Reflection.MethodInfo
+      description: ''
+    content.vb: Public Shared Function GetMethod(type As Type, filter As Func(Of MethodInfo, Boolean)) As MethodInfo
+  overload: PocoEmit.ReflectionHelper.GetMethod*
+  nameWithType.vb: ReflectionHelper.GetMethod(Type, Func(Of MethodInfo, Boolean))
+  fullName.vb: PocoEmit.ReflectionHelper.GetMethod(System.Type, System.Func(Of System.Reflection.MethodInfo, Boolean))
+  name.vb: GetMethod(Type, Func(Of MethodInfo, Boolean))
+- uid: PocoEmit.ReflectionHelper.GetMethods(System.Type)
+  commentId: M:PocoEmit.ReflectionHelper.GetMethods(System.Type)
+  id: GetMethods(System.Type)
+  parent: PocoEmit.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetMethods(Type)
+  nameWithType: ReflectionHelper.GetMethods(Type)
+  fullName: PocoEmit.ReflectionHelper.GetMethods(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/ReflectionHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMethods
+    path: ../PocoEmit/ReflectionHelper.cs
+    startLine: 461
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit
+  summary: 获取所有函数
+  example: []
+  syntax:
+    content: public static IEnumerable<MethodInfo> GetMethods(Type declaringType)
+    parameters:
+    - id: declaringType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: ''
+    content.vb: Public Shared Function GetMethods(declaringType As Type) As IEnumerable(Of MethodInfo)
+  overload: PocoEmit.ReflectionHelper.GetMethods*
+references:
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.ReflectionHelper.GetTypeMembers*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetTypeMembers
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetTypeMembers__1_PocoEmit_IPoco_
+  name: GetTypeMembers
+  nameWithType: ReflectionHelper.GetTypeMembers
+  fullName: PocoEmit.ReflectionHelper.GetTypeMembers
+- uid: PocoEmit.IPoco
+  commentId: T:PocoEmit.IPoco
+  parent: PocoEmit
+  href: PocoEmit.IPoco.html
+  name: IPoco
+  nameWithType: IPoco
+  fullName: PocoEmit.IPoco
+- uid: PocoEmit.Collections.MemberBundle
+  commentId: T:PocoEmit.Collections.MemberBundle
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.MemberBundle.html
+  name: MemberBundle
+  nameWithType: MemberBundle
+  fullName: PocoEmit.Collections.MemberBundle
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.ReflectionHelper.GetReadMember*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetReadMember
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_IPoco_System_Type_System_String_
+  name: GetReadMember
+  nameWithType: ReflectionHelper.GetReadMember
+  fullName: PocoEmit.ReflectionHelper.GetReadMember
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Reflection.MemberInfo
+  commentId: T:System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  name: MemberInfo
+  nameWithType: MemberInfo
+  fullName: System.Reflection.MemberInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.ReflectionHelper.GetEmitReader*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetEmitReader
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_IPoco_System_Type_System_String_
+  name: GetEmitReader
+  nameWithType: ReflectionHelper.GetEmitReader
+  fullName: PocoEmit.ReflectionHelper.GetEmitReader
+- uid: PocoEmit.Members.IEmitMemberReader
+  commentId: T:PocoEmit.Members.IEmitMemberReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberReader.html
+  name: IEmitMemberReader
+  nameWithType: IEmitMemberReader
+  fullName: PocoEmit.Members.IEmitMemberReader
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: PocoEmit.ReflectionHelper.GetWriteMember*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetWriteMember
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_IPoco_System_Type_System_String_
+  name: GetWriteMember
+  nameWithType: ReflectionHelper.GetWriteMember
+  fullName: PocoEmit.ReflectionHelper.GetWriteMember
+- uid: PocoEmit.ReflectionHelper.GetEmitWriter*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetEmitWriter
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_IPoco_System_Type_System_String_
+  name: GetEmitWriter
+  nameWithType: ReflectionHelper.GetEmitWriter
+  fullName: PocoEmit.ReflectionHelper.GetEmitWriter
+- uid: PocoEmit.Members.IEmitMemberWriter
+  commentId: T:PocoEmit.Members.IEmitMemberWriter
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberWriter.html
+  name: IEmitMemberWriter
+  nameWithType: IEmitMemberWriter
+  fullName: PocoEmit.Members.IEmitMemberWriter
+- uid: PocoEmit.ReflectionHelper.GetPropery*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetPropery
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetPropery_System_Type_System_Func_System_Reflection_PropertyInfo_System_Boolean__
+  name: GetPropery
+  nameWithType: ReflectionHelper.GetPropery
+  fullName: PocoEmit.ReflectionHelper.GetPropery
+- uid: System.Func{System.Reflection.PropertyInfo,System.Boolean}
+  commentId: T:System.Func{System.Reflection.PropertyInfo,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<PropertyInfo, bool>
+  nameWithType: Func<PropertyInfo, bool>
+  fullName: System.Func<System.Reflection.PropertyInfo, bool>
+  nameWithType.vb: Func(Of PropertyInfo, Boolean)
+  fullName.vb: System.Func(Of System.Reflection.PropertyInfo, Boolean)
+  name.vb: Func(Of PropertyInfo, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: PocoEmit.ReflectionHelper.GetProperties*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetProperties
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetProperties_System_Type_
+  name: GetProperties
+  nameWithType: ReflectionHelper.GetProperties
+  fullName: PocoEmit.ReflectionHelper.GetProperties
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PropertyInfo>
+  nameWithType: IEnumerable<PropertyInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.PropertyInfo>
+  nameWithType.vb: IEnumerable(Of PropertyInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.PropertyInfo)
+  name.vb: IEnumerable(Of PropertyInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PocoEmit.ReflectionHelper.GetFields*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetFields
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetFields__1
+  name: GetFields
+  nameWithType: ReflectionHelper.GetFields
+  fullName: PocoEmit.ReflectionHelper.GetFields
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<FieldInfo>
+  nameWithType: IEnumerable<FieldInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.FieldInfo>
+  nameWithType.vb: IEnumerable(Of FieldInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.FieldInfo)
+  name.vb: IEnumerable(Of FieldInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: )
+- uid: PocoEmit.ReflectionHelper.CheckValueType*
+  commentId: Overload:PocoEmit.ReflectionHelper.CheckValueType
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_CheckValueType_System_Type_System_Type_
+  name: CheckValueType
+  nameWithType: ReflectionHelper.CheckValueType
+  fullName: PocoEmit.ReflectionHelper.CheckValueType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PocoEmit.ReflectionHelper.IsNullable*
+  commentId: Overload:PocoEmit.ReflectionHelper.IsNullable
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_IsNullable_System_Type_
+  name: IsNullable
+  nameWithType: ReflectionHelper.IsNullable
+  fullName: PocoEmit.ReflectionHelper.IsNullable
+- uid: PocoEmit.ReflectionHelper.IsGenericType*
+  commentId: Overload:PocoEmit.ReflectionHelper.IsGenericType
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_IsGenericType_System_Type_System_Type_
+  name: IsGenericType
+  nameWithType: ReflectionHelper.IsGenericType
+  fullName: PocoEmit.ReflectionHelper.IsGenericType
+- uid: PocoEmit.ReflectionHelper.HasGenericType*
+  commentId: Overload:PocoEmit.ReflectionHelper.HasGenericType
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_HasGenericType_System_Type_System_Type_
+  name: HasGenericType
+  nameWithType: ReflectionHelper.HasGenericType
+  fullName: PocoEmit.ReflectionHelper.HasGenericType
+- uid: PocoEmit.ReflectionHelper.GetElementType*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetElementType
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetElementType_System_Type_
+  name: GetElementType
+  nameWithType: ReflectionHelper.GetElementType
+  fullName: PocoEmit.ReflectionHelper.GetElementType
+- uid: PocoEmit.ReflectionHelper.GetGenericArguments*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetGenericArguments
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetGenericArguments_System_Type_
+  name: GetGenericArguments
+  nameWithType: ReflectionHelper.GetGenericArguments
+  fullName: PocoEmit.ReflectionHelper.GetGenericArguments
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: PocoEmit.ReflectionHelper.GetConstructorByParameterType*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetConstructorByParameterType
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetConstructorByParameterType_System_Type_System_Type_
+  name: GetConstructorByParameterType
+  nameWithType: ReflectionHelper.GetConstructorByParameterType
+  fullName: PocoEmit.ReflectionHelper.GetConstructorByParameterType
+- uid: System.Reflection.ConstructorInfo
+  commentId: T:System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  name: ConstructorInfo
+  nameWithType: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: PocoEmit.ReflectionHelper.GetConstructor*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetConstructor
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetConstructor_System_Type_System_Func_System_Reflection_ParameterInfo___System_Boolean__
+  name: GetConstructor
+  nameWithType: ReflectionHelper.GetConstructor
+  fullName: PocoEmit.ReflectionHelper.GetConstructor
+- uid: System.Func{System.Reflection.ParameterInfo[],System.Boolean}
+  commentId: T:System.Func{System.Reflection.ParameterInfo[],System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ParameterInfo[], bool>
+  nameWithType: Func<ParameterInfo[], bool>
+  fullName: System.Func<System.Reflection.ParameterInfo[], bool>
+  nameWithType.vb: Func(Of ParameterInfo(), Boolean)
+  fullName.vb: System.Func(Of System.Reflection.ParameterInfo(), Boolean)
+  name.vb: Func(Of ParameterInfo(), Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: PocoEmit.ReflectionHelper.GetConstructors*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetConstructors
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetConstructors_System_Type_
+  name: GetConstructors
+  nameWithType: ReflectionHelper.GetConstructors
+  fullName: PocoEmit.ReflectionHelper.GetConstructors
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ConstructorInfo>
+  nameWithType: IEnumerable<ConstructorInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.ConstructorInfo>
+  nameWithType.vb: IEnumerable(Of ConstructorInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.ConstructorInfo)
+  name.vb: IEnumerable(Of ConstructorInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: )
+- uid: PocoEmit.ReflectionHelper.GetMethod*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetMethod
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetMethod_System_Type_System_Func_System_Reflection_MethodInfo_System_Boolean__
+  name: GetMethod
+  nameWithType: ReflectionHelper.GetMethod
+  fullName: PocoEmit.ReflectionHelper.GetMethod
+- uid: System.Func{System.Reflection.MethodInfo,System.Boolean}
+  commentId: T:System.Func{System.Reflection.MethodInfo,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<MethodInfo, bool>
+  nameWithType: Func<MethodInfo, bool>
+  fullName: System.Func<System.Reflection.MethodInfo, bool>
+  nameWithType.vb: Func(Of MethodInfo, Boolean)
+  fullName.vb: System.Func(Of System.Reflection.MethodInfo, Boolean)
+  name.vb: Func(Of MethodInfo, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: PocoEmit.ReflectionHelper.GetMethods*
+  commentId: Overload:PocoEmit.ReflectionHelper.GetMethods
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetMethods_System_Type_
+  name: GetMethods
+  nameWithType: ReflectionHelper.GetMethods
+  fullName: PocoEmit.ReflectionHelper.GetMethods
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MethodInfo>
+  nameWithType: IEnumerable<MethodInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo>
+  nameWithType.vb: IEnumerable(Of MethodInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.MethodInfo)
+  name.vb: IEnumerable(Of MethodInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: )

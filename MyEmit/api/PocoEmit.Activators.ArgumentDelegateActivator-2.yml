@@ -1,0 +1,443 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Activators.ArgumentDelegateActivator`2
+  commentId: T:PocoEmit.Activators.ArgumentDelegateActivator`2
+  id: ArgumentDelegateActivator`2
+  parent: PocoEmit.Activators
+  children:
+  - PocoEmit.Activators.ArgumentDelegateActivator`2.#ctor(System.Func{`0,`1})
+  - PocoEmit.Activators.ArgumentDelegateActivator`2.Activator
+  - PocoEmit.Activators.ArgumentDelegateActivator`2.New(System.Linq.Expressions.Expression)
+  langs:
+  - csharp
+  - vb
+  name: ArgumentDelegateActivator<TSource, TDest>
+  nameWithType: ArgumentDelegateActivator<TSource, TDest>
+  fullName: PocoEmit.Activators.ArgumentDelegateActivator<TSource, TDest>
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ArgumentDelegateActivator~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ArgumentDelegateActivator
+    path: ../PocoEmit.Mapper/Activators/ArgumentDelegateActivator~2.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 带参委托激活
+  example: []
+  syntax:
+    content: 'public class ArgumentDelegateActivator<TSource, TDest> : MethodActivator, IEmitActivator'
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    content.vb: Public Class ArgumentDelegateActivator(Of TSource, TDest) Inherits MethodActivator Implements IEmitActivator
+  inheritance:
+  - System.Object
+  - PocoEmit.Activators.MethodActivator
+  implements:
+  - PocoEmit.Activators.IEmitActivator
+  inheritedMembers:
+  - PocoEmit.Activators.MethodActivator._target
+  - PocoEmit.Activators.MethodActivator.Target
+  - PocoEmit.Activators.MethodActivator._method
+  - PocoEmit.Activators.MethodActivator.ReturnType
+  - PocoEmit.Activators.MethodActivator.Method
+  nameWithType.vb: ArgumentDelegateActivator(Of TSource, TDest)
+  fullName.vb: PocoEmit.Activators.ArgumentDelegateActivator(Of TSource, TDest)
+  name.vb: ArgumentDelegateActivator(Of TSource, TDest)
+- uid: PocoEmit.Activators.ArgumentDelegateActivator`2.#ctor(System.Func{`0,`1})
+  commentId: M:PocoEmit.Activators.ArgumentDelegateActivator`2.#ctor(System.Func{`0,`1})
+  id: '#ctor(System.Func{`0,`1})'
+  parent: PocoEmit.Activators.ArgumentDelegateActivator`2
+  langs:
+  - csharp
+  - vb
+  name: ArgumentDelegateActivator(Func<TSource, TDest>)
+  nameWithType: ArgumentDelegateActivator<TSource, TDest>.ArgumentDelegateActivator(Func<TSource, TDest>)
+  fullName: PocoEmit.Activators.ArgumentDelegateActivator<TSource, TDest>.ArgumentDelegateActivator(System.Func<TSource, TDest>)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ArgumentDelegateActivator~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Activators/ArgumentDelegateActivator~2.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 带参委托激活
+  example: []
+  syntax:
+    content: public ArgumentDelegateActivator(Func<TSource, TDest> activator)
+    parameters:
+    - id: activator
+      type: System.Func{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Sub New(activator As Func(Of TSource, TDest))
+  overload: PocoEmit.Activators.ArgumentDelegateActivator`2.#ctor*
+  nameWithType.vb: ArgumentDelegateActivator(Of TSource, TDest).New(Func(Of TSource, TDest))
+  fullName.vb: PocoEmit.Activators.ArgumentDelegateActivator(Of TSource, TDest).New(System.Func(Of TSource, TDest))
+  name.vb: New(Func(Of TSource, TDest))
+- uid: PocoEmit.Activators.ArgumentDelegateActivator`2.Activator
+  commentId: P:PocoEmit.Activators.ArgumentDelegateActivator`2.Activator
+  id: Activator
+  parent: PocoEmit.Activators.ArgumentDelegateActivator`2
+  langs:
+  - csharp
+  - vb
+  name: Activator
+  nameWithType: ArgumentDelegateActivator<TSource, TDest>.Activator
+  fullName: PocoEmit.Activators.ArgumentDelegateActivator<TSource, TDest>.Activator
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ArgumentDelegateActivator~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Activator
+    path: ../PocoEmit.Mapper/Activators/ArgumentDelegateActivator~2.cs
+    startLine: 19
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  example: []
+  syntax:
+    content: public Func<TSource, TDest> Activator { get; }
+    parameters: []
+    return:
+      type: System.Func{{TSource},{TDest}}
+    content.vb: Public ReadOnly Property Activator As Func(Of TSource, TDest)
+  overload: PocoEmit.Activators.ArgumentDelegateActivator`2.Activator*
+  nameWithType.vb: ArgumentDelegateActivator(Of TSource, TDest).Activator
+  fullName.vb: PocoEmit.Activators.ArgumentDelegateActivator(Of TSource, TDest).Activator
+- uid: PocoEmit.Activators.ArgumentDelegateActivator`2.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Activators.ArgumentDelegateActivator`2.New(System.Linq.Expressions.Expression)
+  id: New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Activators.ArgumentDelegateActivator`2
+  langs:
+  - csharp
+  - vb
+  name: New(Expression)
+  nameWithType: ArgumentDelegateActivator<TSource, TDest>.New(Expression)
+  fullName: PocoEmit.Activators.ArgumentDelegateActivator<TSource, TDest>.New(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ArgumentDelegateActivator~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: New
+    path: ../PocoEmit.Mapper/Activators/ArgumentDelegateActivator~2.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 激活
+  example: []
+  syntax:
+    content: public override Expression New(Expression argument)
+    parameters:
+    - id: argument
+      type: System.Linq.Expressions.Expression
+      description: 参数
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Overrides Function [New](argument As Expression) As Expression
+  overridden: PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression)
+  overload: PocoEmit.Activators.ArgumentDelegateActivator`2.New*
+  implements:
+  - PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  nameWithType.vb: ArgumentDelegateActivator(Of TSource, TDest).New(Expression)
+  fullName.vb: PocoEmit.Activators.ArgumentDelegateActivator(Of TSource, TDest).New(System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Activators
+  commentId: N:PocoEmit.Activators
+  href: PocoEmit.html
+  name: PocoEmit.Activators
+  nameWithType: PocoEmit.Activators
+  fullName: PocoEmit.Activators
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Activators.MethodActivator
+  commentId: T:PocoEmit.Activators.MethodActivator
+  parent: PocoEmit.Activators
+  href: PocoEmit.Activators.MethodActivator.html
+  name: MethodActivator
+  nameWithType: MethodActivator
+  fullName: PocoEmit.Activators.MethodActivator
+- uid: PocoEmit.Activators.IEmitActivator
+  commentId: T:PocoEmit.Activators.IEmitActivator
+  parent: PocoEmit.Activators
+  href: PocoEmit.Activators.IEmitActivator.html
+  name: IEmitActivator
+  nameWithType: IEmitActivator
+  fullName: PocoEmit.Activators.IEmitActivator
+- uid: PocoEmit.Activators.MethodActivator._target
+  commentId: F:PocoEmit.Activators.MethodActivator._target
+  parent: PocoEmit.Activators.MethodActivator
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator__target
+  name: _target
+  nameWithType: MethodActivator._target
+  fullName: PocoEmit.Activators.MethodActivator._target
+- uid: PocoEmit.Activators.MethodActivator.Target
+  commentId: P:PocoEmit.Activators.MethodActivator.Target
+  parent: PocoEmit.Activators.MethodActivator
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator_Target
+  name: Target
+  nameWithType: MethodActivator.Target
+  fullName: PocoEmit.Activators.MethodActivator.Target
+- uid: PocoEmit.Activators.MethodActivator._method
+  commentId: F:PocoEmit.Activators.MethodActivator._method
+  parent: PocoEmit.Activators.MethodActivator
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator__method
+  name: _method
+  nameWithType: MethodActivator._method
+  fullName: PocoEmit.Activators.MethodActivator._method
+- uid: PocoEmit.Activators.MethodActivator.ReturnType
+  commentId: P:PocoEmit.Activators.MethodActivator.ReturnType
+  parent: PocoEmit.Activators.MethodActivator
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator_ReturnType
+  name: ReturnType
+  nameWithType: MethodActivator.ReturnType
+  fullName: PocoEmit.Activators.MethodActivator.ReturnType
+- uid: PocoEmit.Activators.MethodActivator.Method
+  commentId: P:PocoEmit.Activators.MethodActivator.Method
+  parent: PocoEmit.Activators.MethodActivator
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator_Method
+  name: Method
+  nameWithType: MethodActivator.Method
+  fullName: PocoEmit.Activators.MethodActivator.Method
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Activators.ArgumentDelegateActivator`2.#ctor*
+  commentId: Overload:PocoEmit.Activators.ArgumentDelegateActivator`2.#ctor
+  href: PocoEmit.Activators.ArgumentDelegateActivator-2.html#PocoEmit_Activators_ArgumentDelegateActivator_2__ctor_System_Func__0__1__
+  name: ArgumentDelegateActivator
+  nameWithType: ArgumentDelegateActivator<TSource, TDest>.ArgumentDelegateActivator
+  fullName: PocoEmit.Activators.ArgumentDelegateActivator<TSource, TDest>.ArgumentDelegateActivator
+  nameWithType.vb: ArgumentDelegateActivator(Of TSource, TDest).New
+  fullName.vb: PocoEmit.Activators.ArgumentDelegateActivator(Of TSource, TDest).New
+  name.vb: New
+- uid: System.Func{{TSource},{TDest}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TSource, TDest>
+  nameWithType: Func<TSource, TDest>
+  fullName: System.Func<TSource, TDest>
+  nameWithType.vb: Func(Of TSource, TDest)
+  fullName.vb: System.Func(Of TSource, TDest)
+  name.vb: Func(Of TSource, TDest)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: PocoEmit.Activators.ArgumentDelegateActivator`2.Activator*
+  commentId: Overload:PocoEmit.Activators.ArgumentDelegateActivator`2.Activator
+  href: PocoEmit.Activators.ArgumentDelegateActivator-2.html#PocoEmit_Activators_ArgumentDelegateActivator_2_Activator
+  name: Activator
+  nameWithType: ArgumentDelegateActivator<TSource, TDest>.Activator
+  fullName: PocoEmit.Activators.ArgumentDelegateActivator<TSource, TDest>.Activator
+  nameWithType.vb: ArgumentDelegateActivator(Of TSource, TDest).Activator
+  fullName.vb: PocoEmit.Activators.ArgumentDelegateActivator(Of TSource, TDest).Activator
+- uid: PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Activators.MethodActivator
+  isExternal: true
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator_New_System_Linq_Expressions_Expression_
+  name: New(Expression)
+  nameWithType: MethodActivator.New(Expression)
+  fullName: PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: PocoEmit.Activators.ArgumentDelegateActivator`2.New*
+  commentId: Overload:PocoEmit.Activators.ArgumentDelegateActivator`2.New
+  href: PocoEmit.Activators.ArgumentDelegateActivator-2.html#PocoEmit_Activators_ArgumentDelegateActivator_2_New_System_Linq_Expressions_Expression_
+  name: New
+  nameWithType: ArgumentDelegateActivator<TSource, TDest>.New
+  fullName: PocoEmit.Activators.ArgumentDelegateActivator<TSource, TDest>.New
+  nameWithType.vb: ArgumentDelegateActivator(Of TSource, TDest).New
+  fullName.vb: PocoEmit.Activators.ArgumentDelegateActivator(Of TSource, TDest).New
+- uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Activators.IEmitActivator
+  isExternal: true
+  href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  name: New(Expression)
+  nameWithType: IEmitActivator.New(Expression)
+  fullName: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

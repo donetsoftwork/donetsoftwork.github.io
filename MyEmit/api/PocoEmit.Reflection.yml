@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Reflection
+  commentId: N:PocoEmit.Reflection
+  id: PocoEmit.Reflection
+  children:
+  - PocoEmit.Reflection.DefaultReflectionConstructor
+  - PocoEmit.Reflection.DefaultReflectionMember
+  - PocoEmit.Reflection.IReflectionConstructor
+  - PocoEmit.Reflection.IReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Reflection
+  nameWithType: PocoEmit.Reflection
+  fullName: PocoEmit.Reflection
+  type: Namespace
+  assemblies:
+  - PocoEmit
+references:
+- uid: PocoEmit.Reflection.DefaultReflectionMember
+  commentId: T:PocoEmit.Reflection.DefaultReflectionMember
+  parent: PocoEmit.Reflection
+  href: PocoEmit.Reflection.DefaultReflectionMember.html
+  name: DefaultReflectionMember
+  nameWithType: DefaultReflectionMember
+  fullName: PocoEmit.Reflection.DefaultReflectionMember
+- uid: PocoEmit.Reflection.IReflectionMember
+  commentId: T:PocoEmit.Reflection.IReflectionMember
+  parent: PocoEmit.Reflection
+  href: PocoEmit.Reflection.IReflectionMember.html
+  name: IReflectionMember
+  nameWithType: IReflectionMember
+  fullName: PocoEmit.Reflection.IReflectionMember
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor
+  commentId: T:PocoEmit.Reflection.DefaultReflectionConstructor
+  parent: PocoEmit.Reflection
+  href: PocoEmit.Reflection.DefaultReflectionConstructor.html
+  name: DefaultReflectionConstructor
+  nameWithType: DefaultReflectionConstructor
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor
+- uid: PocoEmit.Reflection.IReflectionConstructor
+  commentId: T:PocoEmit.Reflection.IReflectionConstructor
+  parent: PocoEmit.Reflection
+  href: PocoEmit.Reflection.IReflectionConstructor.html
+  name: IReflectionConstructor
+  nameWithType: IReflectionConstructor
+  fullName: PocoEmit.Reflection.IReflectionConstructor
+- uid: PocoEmit.Reflection
+  commentId: N:PocoEmit.Reflection
+  href: PocoEmit.html
+  name: PocoEmit.Reflection
+  nameWithType: PocoEmit.Reflection
+  fullName: PocoEmit.Reflection
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Reflection
+    name: Reflection
+    href: PocoEmit.Reflection.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Reflection
+    name: Reflection
+    href: PocoEmit.Reflection.html

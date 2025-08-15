@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Copies
+  commentId: N:PocoEmit.Collections.Copies
+  id: PocoEmit.Collections.Copies
+  children:
+  - PocoEmit.Collections.Copies.CollectionCopier
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Collections.Copies
+  nameWithType: PocoEmit.Collections.Copies
+  fullName: PocoEmit.Collections.Copies
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Collections.Copies.CollectionCopier
+  commentId: T:PocoEmit.Collections.Copies.CollectionCopier
+  href: PocoEmit.Collections.Copies.CollectionCopier.html
+  name: CollectionCopier
+  nameWithType: CollectionCopier
+  fullName: PocoEmit.Collections.Copies.CollectionCopier

@@ -1,0 +1,764 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Builders.ComplexConvertBuilder
+  commentId: T:PocoEmit.Builders.ComplexConvertBuilder
+  id: ComplexConvertBuilder
+  parent: PocoEmit.Builders
+  children:
+  - PocoEmit.Builders.ComplexConvertBuilder.#ctor(PocoEmit.Configuration.IMapperOptions)
+  - PocoEmit.Builders.ComplexConvertBuilder.Build(System.Type,System.Type)
+  - PocoEmit.Builders.ComplexConvertBuilder.CreateDefaultActivator(System.Type)
+  - PocoEmit.Builders.ComplexConvertBuilder.Options
+  - PocoEmit.Builders.ComplexConvertBuilder.ToArray(System.Type,System.Type)
+  - PocoEmit.Builders.ComplexConvertBuilder.ToCollection(System.Type,System.Type,System.Boolean)
+  - PocoEmit.Builders.ComplexConvertBuilder.ToDictionary(System.Type,System.Type,System.Boolean)
+  - PocoEmit.Builders.ComplexConvertBuilder._options
+  langs:
+  - csharp
+  - vb
+  name: ComplexConvertBuilder
+  nameWithType: ComplexConvertBuilder
+  fullName: PocoEmit.Builders.ComplexConvertBuilder
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ComplexConvertBuilder
+    path: ../PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 复杂类型转化构建器
+  example: []
+  syntax:
+    content: 'public class ComplexConvertBuilder : ConvertBuilder'
+    content.vb: Public Class ComplexConvertBuilder Inherits ConvertBuilder
+  inheritance:
+  - System.Object
+  - PocoEmit.Builders.ConvertBuilder
+  derivedClasses:
+  - PocoEmit.Builders.CollectionConvertBuilder
+  inheritedMembers:
+  - PocoEmit.Builders.ConvertBuilder.BuildForSelf(System.Type)
+  - PocoEmit.Builders.ConvertBuilder.BuildForObject(System.Type)
+  - PocoEmit.Builders.ConvertBuilder.BuildForString(System.Type)
+  - PocoEmit.Builders.ConvertBuilder.BuildForNullable(PocoEmit.Converters.IEmitConverter,System.Type,System.Type)
+  - PocoEmit.Builders.ConvertBuilder.BuildByConstructor(System.Reflection.ConstructorInfo,System.Type)
+  - PocoEmit.Builders.ConvertBuilder.Default
+- uid: PocoEmit.Builders.ComplexConvertBuilder.#ctor(PocoEmit.Configuration.IMapperOptions)
+  commentId: M:PocoEmit.Builders.ComplexConvertBuilder.#ctor(PocoEmit.Configuration.IMapperOptions)
+  id: '#ctor(PocoEmit.Configuration.IMapperOptions)'
+  parent: PocoEmit.Builders.ComplexConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: ComplexConvertBuilder(IMapperOptions)
+  nameWithType: ComplexConvertBuilder.ComplexConvertBuilder(IMapperOptions)
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.ComplexConvertBuilder(PocoEmit.Configuration.IMapperOptions)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 复杂类型转化构建器
+  example: []
+  syntax:
+    content: public ComplexConvertBuilder(IMapperOptions options)
+    parameters:
+    - id: options
+      type: PocoEmit.Configuration.IMapperOptions
+      description: ''
+    content.vb: Public Sub New(options As IMapperOptions)
+  overload: PocoEmit.Builders.ComplexConvertBuilder.#ctor*
+  nameWithType.vb: ComplexConvertBuilder.New(IMapperOptions)
+  fullName.vb: PocoEmit.Builders.ComplexConvertBuilder.New(PocoEmit.Configuration.IMapperOptions)
+  name.vb: New(IMapperOptions)
+- uid: PocoEmit.Builders.ComplexConvertBuilder._options
+  commentId: F:PocoEmit.Builders.ComplexConvertBuilder._options
+  id: _options
+  parent: PocoEmit.Builders.ComplexConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: _options
+  nameWithType: ComplexConvertBuilder._options
+  fullName: PocoEmit.Builders.ComplexConvertBuilder._options
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _options
+    path: ../PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: Emit配置
+  example: []
+  syntax:
+    content: protected readonly IMapperOptions _options
+    return:
+      type: PocoEmit.Configuration.IMapperOptions
+    content.vb: Protected ReadOnly _options As IMapperOptions
+- uid: PocoEmit.Builders.ComplexConvertBuilder.Options
+  commentId: P:PocoEmit.Builders.ComplexConvertBuilder.Options
+  id: Options
+  parent: PocoEmit.Builders.ComplexConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: ComplexConvertBuilder.Options
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.Options
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Options
+    path: ../PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+    startLine: 27
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: Emit配置
+  example: []
+  syntax:
+    content: public IMapperOptions Options { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Configuration.IMapperOptions
+    content.vb: Public ReadOnly Property Options As IMapperOptions
+  overload: PocoEmit.Builders.ComplexConvertBuilder.Options*
+- uid: PocoEmit.Builders.ComplexConvertBuilder.Build(System.Type,System.Type)
+  commentId: M:PocoEmit.Builders.ComplexConvertBuilder.Build(System.Type,System.Type)
+  id: Build(System.Type,System.Type)
+  parent: PocoEmit.Builders.ComplexConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build(Type, Type)
+  nameWithType: ComplexConvertBuilder.Build(Type, Type)
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.Build(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Build
+    path: ../PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+    startLine: 31
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 构建转换器
+  example: []
+  syntax:
+    content: public override IEmitConverter Build(Type sourceType, Type destType)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: 源类型
+    - id: destType
+      type: System.Type
+      description: 目标类型
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: 转换器
+    content.vb: Public Overrides Function Build(sourceType As Type, destType As Type) As IEmitConverter
+  overridden: PocoEmit.Builders.ConvertBuilder.Build(System.Type,System.Type)
+  overload: PocoEmit.Builders.ComplexConvertBuilder.Build*
+- uid: PocoEmit.Builders.ComplexConvertBuilder.ToArray(System.Type,System.Type)
+  commentId: M:PocoEmit.Builders.ComplexConvertBuilder.ToArray(System.Type,System.Type)
+  id: ToArray(System.Type,System.Type)
+  parent: PocoEmit.Builders.ComplexConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: ToArray(Type, Type)
+  nameWithType: ComplexConvertBuilder.ToArray(Type, Type)
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.ToArray(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ToArray
+    path: ../PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+    startLine: 66
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 数组不支持(预留扩展)
+  example: []
+  syntax:
+    content: protected virtual IEmitConverter ToArray(Type sourceType, Type destType)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Protected Overridable Function ToArray(sourceType As Type, destType As Type) As IEmitConverter
+  overload: PocoEmit.Builders.ComplexConvertBuilder.ToArray*
+- uid: PocoEmit.Builders.ComplexConvertBuilder.ToDictionary(System.Type,System.Type,System.Boolean)
+  commentId: M:PocoEmit.Builders.ComplexConvertBuilder.ToDictionary(System.Type,System.Type,System.Boolean)
+  id: ToDictionary(System.Type,System.Type,System.Boolean)
+  parent: PocoEmit.Builders.ComplexConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: ToDictionary(Type, Type, bool)
+  nameWithType: ComplexConvertBuilder.ToDictionary(Type, Type, bool)
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.ToDictionary(System.Type, System.Type, bool)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ToDictionary
+    path: ../PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+    startLine: 75
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 字典不支持(预留扩展)
+  example: []
+  syntax:
+    content: protected virtual IEmitConverter ToDictionary(Type sourceType, Type destType, bool isInterface)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    - id: isInterface
+      type: System.Boolean
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Protected Overridable Function ToDictionary(sourceType As Type, destType As Type, isInterface As Boolean) As IEmitConverter
+  overload: PocoEmit.Builders.ComplexConvertBuilder.ToDictionary*
+  nameWithType.vb: ComplexConvertBuilder.ToDictionary(Type, Type, Boolean)
+  fullName.vb: PocoEmit.Builders.ComplexConvertBuilder.ToDictionary(System.Type, System.Type, Boolean)
+  name.vb: ToDictionary(Type, Type, Boolean)
+- uid: PocoEmit.Builders.ComplexConvertBuilder.ToCollection(System.Type,System.Type,System.Boolean)
+  commentId: M:PocoEmit.Builders.ComplexConvertBuilder.ToCollection(System.Type,System.Type,System.Boolean)
+  id: ToCollection(System.Type,System.Type,System.Boolean)
+  parent: PocoEmit.Builders.ComplexConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: ToCollection(Type, Type, bool)
+  nameWithType: ComplexConvertBuilder.ToCollection(Type, Type, bool)
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.ToCollection(System.Type, System.Type, bool)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ToCollection
+    path: ../PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+    startLine: 84
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 集合不支持(预留扩展)
+  example: []
+  syntax:
+    content: protected virtual IEmitConverter ToCollection(Type sourceType, Type destType, bool isInterface)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    - id: isInterface
+      type: System.Boolean
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Protected Overridable Function ToCollection(sourceType As Type, destType As Type, isInterface As Boolean) As IEmitConverter
+  overload: PocoEmit.Builders.ComplexConvertBuilder.ToCollection*
+  nameWithType.vb: ComplexConvertBuilder.ToCollection(Type, Type, Boolean)
+  fullName.vb: PocoEmit.Builders.ComplexConvertBuilder.ToCollection(System.Type, System.Type, Boolean)
+  name.vb: ToCollection(Type, Type, Boolean)
+- uid: PocoEmit.Builders.ComplexConvertBuilder.CreateDefaultActivator(System.Type)
+  commentId: M:PocoEmit.Builders.ComplexConvertBuilder.CreateDefaultActivator(System.Type)
+  id: CreateDefaultActivator(System.Type)
+  parent: PocoEmit.Builders.ComplexConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: CreateDefaultActivator(Type)
+  nameWithType: ComplexConvertBuilder.CreateDefaultActivator(Type)
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.CreateDefaultActivator(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CreateDefaultActivator
+    path: ../PocoEmit.Mapper/Builders/ComplexConvertBuilder.cs
+    startLine: 144
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 构造默认激活器
+  example: []
+  syntax:
+    content: public IEmitActivator CreateDefaultActivator(Type key)
+    parameters:
+    - id: key
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Activators.IEmitActivator
+      description: ''
+    content.vb: Public Function CreateDefaultActivator(key As Type) As IEmitActivator
+  overload: PocoEmit.Builders.ComplexConvertBuilder.CreateDefaultActivator*
+references:
+- uid: PocoEmit.Builders
+  commentId: N:PocoEmit.Builders
+  href: PocoEmit.html
+  name: PocoEmit.Builders
+  nameWithType: PocoEmit.Builders
+  fullName: PocoEmit.Builders
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Builders.ConvertBuilder
+  commentId: T:PocoEmit.Builders.ConvertBuilder
+  parent: PocoEmit.Builders
+  href: PocoEmit.Builders.ConvertBuilder.html
+  name: ConvertBuilder
+  nameWithType: ConvertBuilder
+  fullName: PocoEmit.Builders.ConvertBuilder
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForSelf(System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.BuildForSelf(System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  isExternal: true
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForSelf_System_Type_
+  name: BuildForSelf(Type)
+  nameWithType: ConvertBuilder.BuildForSelf(Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForSelf(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Builders.ConvertBuilder.BuildForSelf(System.Type)
+    name: BuildForSelf
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForSelf_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Builders.ConvertBuilder.BuildForSelf(System.Type)
+    name: BuildForSelf
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForSelf_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForObject(System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.BuildForObject(System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  isExternal: true
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForObject_System_Type_
+  name: BuildForObject(Type)
+  nameWithType: ConvertBuilder.BuildForObject(Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForObject(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Builders.ConvertBuilder.BuildForObject(System.Type)
+    name: BuildForObject
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForObject_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Builders.ConvertBuilder.BuildForObject(System.Type)
+    name: BuildForObject
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForObject_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForString(System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.BuildForString(System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  isExternal: true
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForString_System_Type_
+  name: BuildForString(Type)
+  nameWithType: ConvertBuilder.BuildForString(Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForString(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Builders.ConvertBuilder.BuildForString(System.Type)
+    name: BuildForString
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForString_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Builders.ConvertBuilder.BuildForString(System.Type)
+    name: BuildForString
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForString_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForNullable(PocoEmit.Converters.IEmitConverter,System.Type,System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.BuildForNullable(PocoEmit.Converters.IEmitConverter,System.Type,System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  isExternal: true
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForNullable_PocoEmit_Converters_IEmitConverter_System_Type_System_Type_
+  name: BuildForNullable(IEmitConverter, Type, Type)
+  nameWithType: ConvertBuilder.BuildForNullable(IEmitConverter, Type, Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForNullable(PocoEmit.Converters.IEmitConverter, System.Type, System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Builders.ConvertBuilder.BuildForNullable(PocoEmit.Converters.IEmitConverter,System.Type,System.Type)
+    name: BuildForNullable
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForNullable_PocoEmit_Converters_IEmitConverter_System_Type_System_Type_
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Builders.ConvertBuilder.BuildForNullable(PocoEmit.Converters.IEmitConverter,System.Type,System.Type)
+    name: BuildForNullable
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForNullable_PocoEmit_Converters_IEmitConverter_System_Type_System_Type_
+  - name: (
+  - uid: PocoEmit.Converters.IEmitConverter
+    name: IEmitConverter
+    href: PocoEmit.Converters.IEmitConverter.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Builders.ConvertBuilder.BuildByConstructor(System.Reflection.ConstructorInfo,System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.BuildByConstructor(System.Reflection.ConstructorInfo,System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  isExternal: true
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildByConstructor_System_Reflection_ConstructorInfo_System_Type_
+  name: BuildByConstructor(ConstructorInfo, Type)
+  nameWithType: ConvertBuilder.BuildByConstructor(ConstructorInfo, Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildByConstructor(System.Reflection.ConstructorInfo, System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Builders.ConvertBuilder.BuildByConstructor(System.Reflection.ConstructorInfo,System.Type)
+    name: BuildByConstructor
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildByConstructor_System_Reflection_ConstructorInfo_System_Type_
+  - name: (
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Builders.ConvertBuilder.BuildByConstructor(System.Reflection.ConstructorInfo,System.Type)
+    name: BuildByConstructor
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildByConstructor_System_Reflection_ConstructorInfo_System_Type_
+  - name: (
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Builders.ConvertBuilder.Default
+  commentId: F:PocoEmit.Builders.ConvertBuilder.Default
+  parent: PocoEmit.Builders.ConvertBuilder
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_Default
+  name: Default
+  nameWithType: ConvertBuilder.Default
+  fullName: PocoEmit.Builders.ConvertBuilder.Default
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Builders.ComplexConvertBuilder.#ctor*
+  commentId: Overload:PocoEmit.Builders.ComplexConvertBuilder.#ctor
+  href: PocoEmit.Builders.ComplexConvertBuilder.html#PocoEmit_Builders_ComplexConvertBuilder__ctor_PocoEmit_Configuration_IMapperOptions_
+  name: ComplexConvertBuilder
+  nameWithType: ComplexConvertBuilder.ComplexConvertBuilder
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.ComplexConvertBuilder
+  nameWithType.vb: ComplexConvertBuilder.New
+  fullName.vb: PocoEmit.Builders.ComplexConvertBuilder.New
+  name.vb: New
+- uid: PocoEmit.Configuration.IMapperOptions
+  commentId: T:PocoEmit.Configuration.IMapperOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.IMapperOptions.html
+  name: IMapperOptions
+  nameWithType: IMapperOptions
+  fullName: PocoEmit.Configuration.IMapperOptions
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Builders.ComplexConvertBuilder.Options*
+  commentId: Overload:PocoEmit.Builders.ComplexConvertBuilder.Options
+  href: PocoEmit.Builders.ComplexConvertBuilder.html#PocoEmit_Builders_ComplexConvertBuilder_Options
+  name: Options
+  nameWithType: ComplexConvertBuilder.Options
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.Options
+- uid: PocoEmit.Builders.ConvertBuilder.Build(System.Type,System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.Build(System.Type,System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  isExternal: true
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_Build_System_Type_System_Type_
+  name: Build(Type, Type)
+  nameWithType: ConvertBuilder.Build(Type, Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.Build(System.Type, System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Builders.ConvertBuilder.Build(System.Type,System.Type)
+    name: Build
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_Build_System_Type_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Builders.ConvertBuilder.Build(System.Type,System.Type)
+    name: Build
+    href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_Build_System_Type_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: PocoEmit.Builders.ComplexConvertBuilder.Build*
+  commentId: Overload:PocoEmit.Builders.ComplexConvertBuilder.Build
+  href: PocoEmit.Builders.ComplexConvertBuilder.html#PocoEmit_Builders_ComplexConvertBuilder_Build_System_Type_System_Type_
+  name: Build
+  nameWithType: ComplexConvertBuilder.Build
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.Build
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Converters.IEmitConverter
+  commentId: T:PocoEmit.Converters.IEmitConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IEmitConverter.html
+  name: IEmitConverter
+  nameWithType: IEmitConverter
+  fullName: PocoEmit.Converters.IEmitConverter
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: PocoEmit.Builders.ComplexConvertBuilder.ToArray*
+  commentId: Overload:PocoEmit.Builders.ComplexConvertBuilder.ToArray
+  href: PocoEmit.Builders.ComplexConvertBuilder.html#PocoEmit_Builders_ComplexConvertBuilder_ToArray_System_Type_System_Type_
+  name: ToArray
+  nameWithType: ComplexConvertBuilder.ToArray
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.ToArray
+- uid: PocoEmit.Builders.ComplexConvertBuilder.ToDictionary*
+  commentId: Overload:PocoEmit.Builders.ComplexConvertBuilder.ToDictionary
+  href: PocoEmit.Builders.ComplexConvertBuilder.html#PocoEmit_Builders_ComplexConvertBuilder_ToDictionary_System_Type_System_Type_System_Boolean_
+  name: ToDictionary
+  nameWithType: ComplexConvertBuilder.ToDictionary
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.ToDictionary
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PocoEmit.Builders.ComplexConvertBuilder.ToCollection*
+  commentId: Overload:PocoEmit.Builders.ComplexConvertBuilder.ToCollection
+  href: PocoEmit.Builders.ComplexConvertBuilder.html#PocoEmit_Builders_ComplexConvertBuilder_ToCollection_System_Type_System_Type_System_Boolean_
+  name: ToCollection
+  nameWithType: ComplexConvertBuilder.ToCollection
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.ToCollection
+- uid: PocoEmit.Builders.ComplexConvertBuilder.CreateDefaultActivator*
+  commentId: Overload:PocoEmit.Builders.ComplexConvertBuilder.CreateDefaultActivator
+  href: PocoEmit.Builders.ComplexConvertBuilder.html#PocoEmit_Builders_ComplexConvertBuilder_CreateDefaultActivator_System_Type_
+  name: CreateDefaultActivator
+  nameWithType: ComplexConvertBuilder.CreateDefaultActivator
+  fullName: PocoEmit.Builders.ComplexConvertBuilder.CreateDefaultActivator
+- uid: PocoEmit.Activators.IEmitActivator
+  commentId: T:PocoEmit.Activators.IEmitActivator
+  parent: PocoEmit.Activators
+  href: PocoEmit.Activators.IEmitActivator.html
+  name: IEmitActivator
+  nameWithType: IEmitActivator
+  fullName: PocoEmit.Activators.IEmitActivator
+- uid: PocoEmit.Activators
+  commentId: N:PocoEmit.Activators
+  href: PocoEmit.html
+  name: PocoEmit.Activators
+  nameWithType: PocoEmit.Activators
+  fullName: PocoEmit.Activators
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html

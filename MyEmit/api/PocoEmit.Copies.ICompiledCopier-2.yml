@@ -1,0 +1,534 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Copies.ICompiledCopier`2
+  commentId: T:PocoEmit.Copies.ICompiledCopier`2
+  id: ICompiledCopier`2
+  parent: PocoEmit.Copies
+  children:
+  - PocoEmit.Copies.ICompiledCopier`2.CopyAction
+  langs:
+  - csharp
+  - vb
+  name: ICompiledCopier<TSource, TDest>
+  nameWithType: ICompiledCopier<TSource, TDest>
+  fullName: PocoEmit.Copies.ICompiledCopier<TSource, TDest>
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/ICompiledCopier~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ICompiledCopier
+    path: ../PocoEmit.Mapper/Copies/ICompiledCopier~2.cs
+    startLine: 9
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 已编译复制器
+  example: []
+  syntax:
+    content: 'public interface ICompiledCopier<TSource, TDest> : IEmitCopier, ICompileInfo, IPocoCopier<TSource, TDest>, IObjectCopier'
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    content.vb: Public Interface ICompiledCopier(Of TSource, TDest) Inherits IEmitCopier, ICompileInfo, IPocoCopier(Of TSource, TDest), IObjectCopier
+  inheritedMembers:
+  - PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  - PocoEmit.Configuration.ICompileInfo.Compiled
+  - PocoEmit.IPocoCopier{{TSource},{TDest}}.Copy({TSource},{TDest})
+  - PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+  extensionMethods:
+  - PocoEmit.Copies.IEmitCopier.PocoEmit.MapperServices.Build``2
+  nameWithType.vb: ICompiledCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.Copies.ICompiledCopier(Of TSource, TDest)
+  name.vb: ICompiledCopier(Of TSource, TDest)
+- uid: PocoEmit.Copies.ICompiledCopier`2.CopyAction
+  commentId: P:PocoEmit.Copies.ICompiledCopier`2.CopyAction
+  id: CopyAction
+  parent: PocoEmit.Copies.ICompiledCopier`2
+  langs:
+  - csharp
+  - vb
+  name: CopyAction
+  nameWithType: ICompiledCopier<TSource, TDest>.CopyAction
+  fullName: PocoEmit.Copies.ICompiledCopier<TSource, TDest>.CopyAction
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/ICompiledCopier~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CopyAction
+    path: ../PocoEmit.Mapper/Copies/ICompiledCopier~2.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 复制器
+  example: []
+  syntax:
+    content: Action<TSource, TDest> CopyAction { get; }
+    parameters: []
+    return:
+      type: System.Action{{TSource},{TDest}}
+    content.vb: ReadOnly Property CopyAction As Action(Of TSource, TDest)
+  overload: PocoEmit.Copies.ICompiledCopier`2.CopyAction*
+  nameWithType.vb: ICompiledCopier(Of TSource, TDest).CopyAction
+  fullName.vb: PocoEmit.Copies.ICompiledCopier(Of TSource, TDest).CopyAction
+references:
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+- uid: PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Copies.IEmitCopier
+  isExternal: true
+  href: PocoEmit.Copies.IEmitCopier.html#PocoEmit_Copies_IEmitCopier_Copy_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Copy(Expression, Expression)
+  nameWithType: IEmitCopier.Copy(Expression, Expression)
+  fullName: PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Copy
+    href: PocoEmit.Copies.IEmitCopier.html#PocoEmit_Copies_IEmitCopier_Copy_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Copies.IEmitCopier.Copy(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Copy
+    href: PocoEmit.Copies.IEmitCopier.html#PocoEmit_Copies_IEmitCopier_Copy_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: PocoEmit.Configuration.ICompileInfo.Compiled
+  commentId: P:PocoEmit.Configuration.ICompileInfo.Compiled
+  parent: PocoEmit.Configuration.ICompileInfo
+  href: PocoEmit.Configuration.ICompileInfo.html#PocoEmit_Configuration_ICompileInfo_Compiled
+  name: Compiled
+  nameWithType: ICompileInfo.Compiled
+  fullName: PocoEmit.Configuration.ICompileInfo.Compiled
+- uid: PocoEmit.IPocoCopier{{TSource},{TDest}}.Copy({TSource},{TDest})
+  commentId: M:PocoEmit.IPocoCopier{`0,`1}.Copy(`0,`1)
+  parent: PocoEmit.IPocoCopier{{TSource},{TDest}}
+  definition: PocoEmit.IPocoCopier`2.Copy(`0,`1)
+  href: PocoEmit.IPocoCopier-2.html#PocoEmit_IPocoCopier_2_Copy__0__1_
+  name: Copy(TSource, TDest)
+  nameWithType: IPocoCopier<TSource, TDest>.Copy(TSource, TDest)
+  fullName: PocoEmit.IPocoCopier<TSource, TDest>.Copy(TSource, TDest)
+  nameWithType.vb: IPocoCopier(Of TSource, TDest).Copy(TSource, TDest)
+  fullName.vb: PocoEmit.IPocoCopier(Of TSource, TDest).Copy(TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoCopier{`0,`1}.Copy(`0,`1)
+    name: Copy
+    href: PocoEmit.IPocoCopier-2.html#PocoEmit_IPocoCopier_2_Copy__0__1_
+  - name: (
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.IPocoCopier{`0,`1}.Copy(`0,`1)
+    name: Copy
+    href: PocoEmit.IPocoCopier-2.html#PocoEmit_IPocoCopier_2_Copy__0__1_
+  - name: (
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+  commentId: M:PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+  parent: PocoEmit.Copies.IObjectCopier
+  isExternal: true
+  href: PocoEmit.Copies.IObjectCopier.html#PocoEmit_Copies_IObjectCopier_CopyObject_System_Object_System_Object_
+  name: CopyObject(object, object)
+  nameWithType: IObjectCopier.CopyObject(object, object)
+  fullName: PocoEmit.Copies.IObjectCopier.CopyObject(object, object)
+  nameWithType.vb: IObjectCopier.CopyObject(Object, Object)
+  fullName.vb: PocoEmit.Copies.IObjectCopier.CopyObject(Object, Object)
+  name.vb: CopyObject(Object, Object)
+  spec.csharp:
+  - uid: PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+    name: CopyObject
+    href: PocoEmit.Copies.IObjectCopier.html#PocoEmit_Copies_IObjectCopier_CopyObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Copies.IObjectCopier.CopyObject(System.Object,System.Object)
+    name: CopyObject
+    href: PocoEmit.Copies.IObjectCopier.html#PocoEmit_Copies_IObjectCopier_CopyObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: PocoEmit.Copies.IEmitCopier.PocoEmit.MapperServices.Build``2
+  commentId: M:PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  parent: PocoEmit.MapperServices
+  definition: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  name: Build<TSource, TDest>(IEmitCopier)
+  nameWithType: MapperServices.Build<TSource, TDest>(IEmitCopier)
+  fullName: PocoEmit.MapperServices.Build<TSource, TDest>(PocoEmit.Copies.IEmitCopier)
+  nameWithType.vb: MapperServices.Build(Of TSource, TDest)(IEmitCopier)
+  fullName.vb: PocoEmit.MapperServices.Build(Of TSource, TDest)(PocoEmit.Copies.IEmitCopier)
+  name.vb: Build(Of TSource, TDest)(IEmitCopier)
+  spec.csharp:
+  - uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+    name: Build
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+    name: Build
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+- uid: PocoEmit.Copies.IEmitCopier
+  commentId: T:PocoEmit.Copies.IEmitCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IEmitCopier.html
+  name: IEmitCopier
+  nameWithType: IEmitCopier
+  fullName: PocoEmit.Copies.IEmitCopier
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.IPocoCopier`2.Copy(`0,`1)
+  commentId: M:PocoEmit.IPocoCopier`2.Copy(`0,`1)
+  href: PocoEmit.IPocoCopier-2.html#PocoEmit_IPocoCopier_2_Copy__0__1_
+  name: Copy(TSource, TDest)
+  nameWithType: IPocoCopier<TSource, TDest>.Copy(TSource, TDest)
+  fullName: PocoEmit.IPocoCopier<TSource, TDest>.Copy(TSource, TDest)
+  nameWithType.vb: IPocoCopier(Of TSource, TDest).Copy(TSource, TDest)
+  fullName.vb: PocoEmit.IPocoCopier(Of TSource, TDest).Copy(TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoCopier`2.Copy(`0,`1)
+    name: Copy
+    href: PocoEmit.IPocoCopier-2.html#PocoEmit_IPocoCopier_2_Copy__0__1_
+  - name: (
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.IPocoCopier`2.Copy(`0,`1)
+    name: Copy
+    href: PocoEmit.IPocoCopier-2.html#PocoEmit_IPocoCopier_2_Copy__0__1_
+  - name: (
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.IPocoCopier{{TSource},{TDest}}
+  commentId: T:PocoEmit.IPocoCopier{``0,``1}
+  parent: PocoEmit
+  definition: PocoEmit.IPocoCopier`2
+  href: PocoEmit.IPocoCopier-2.html
+  name: IPocoCopier<TSource, TDest>
+  nameWithType: IPocoCopier<TSource, TDest>
+  fullName: PocoEmit.IPocoCopier<TSource, TDest>
+  nameWithType.vb: IPocoCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoCopier(Of TSource, TDest)
+  name.vb: IPocoCopier(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier
+    href: PocoEmit.IPocoCopier-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier
+    href: PocoEmit.IPocoCopier-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Copies.IObjectCopier
+  commentId: T:PocoEmit.Copies.IObjectCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IObjectCopier.html
+  name: IObjectCopier
+  nameWithType: IObjectCopier
+  fullName: PocoEmit.Copies.IObjectCopier
+- uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  commentId: M:PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  name: Build<TSource, TDest>(IEmitCopier)
+  nameWithType: MapperServices.Build<TSource, TDest>(IEmitCopier)
+  fullName: PocoEmit.MapperServices.Build<TSource, TDest>(PocoEmit.Copies.IEmitCopier)
+  nameWithType.vb: MapperServices.Build(Of TSource, TDest)(IEmitCopier)
+  fullName.vb: PocoEmit.MapperServices.Build(Of TSource, TDest)(PocoEmit.Copies.IEmitCopier)
+  name.vb: Build(Of TSource, TDest)(IEmitCopier)
+  spec.csharp:
+  - uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+    name: Build
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+    name: Build
+    href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: (
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+- uid: PocoEmit.MapperServices
+  commentId: T:PocoEmit.MapperServices
+  parent: PocoEmit
+  href: PocoEmit.MapperServices.html
+  name: MapperServices
+  nameWithType: MapperServices
+  fullName: PocoEmit.MapperServices
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.IPocoCopier`2
+  commentId: T:PocoEmit.IPocoCopier`2
+  href: PocoEmit.IPocoCopier-2.html
+  name: IPocoCopier<TSource, TDest>
+  nameWithType: IPocoCopier<TSource, TDest>
+  fullName: PocoEmit.IPocoCopier<TSource, TDest>
+  nameWithType.vb: IPocoCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoCopier(Of TSource, TDest)
+  name.vb: IPocoCopier(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier
+    href: PocoEmit.IPocoCopier-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier
+    href: PocoEmit.IPocoCopier-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.Copies.ICompiledCopier`2.CopyAction*
+  commentId: Overload:PocoEmit.Copies.ICompiledCopier`2.CopyAction
+  href: PocoEmit.Copies.ICompiledCopier-2.html#PocoEmit_Copies_ICompiledCopier_2_CopyAction
+  name: CopyAction
+  nameWithType: ICompiledCopier<TSource, TDest>.CopyAction
+  fullName: PocoEmit.Copies.ICompiledCopier<TSource, TDest>.CopyAction
+  nameWithType.vb: ICompiledCopier(Of TSource, TDest).CopyAction
+  fullName.vb: PocoEmit.Copies.ICompiledCopier(Of TSource, TDest).CopyAction
+- uid: System.Action{{TSource},{TDest}}
+  commentId: T:System.Action{``0,``1}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TSource, TDest>
+  nameWithType: Action<TSource, TDest>
+  fullName: System.Action<TSource, TDest>
+  nameWithType.vb: Action(Of TSource, TDest)
+  fullName.vb: System.Action(Of TSource, TDest)
+  name.vb: Action(Of TSource, TDest)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

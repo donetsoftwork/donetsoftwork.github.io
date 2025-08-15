@@ -1,0 +1,106 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.CollectionConfigureServices
+  commentId: T:PocoEmit.CollectionConfigureServices
+  id: CollectionConfigureServices
+  parent: PocoEmit
+  children:
+  - PocoEmit.CollectionConfigureServices.UseCollection(PocoEmit.IMapper)
+  langs:
+  - csharp
+  - vb
+  name: CollectionConfigureServices
+  nameWithType: CollectionConfigureServices
+  fullName: PocoEmit.CollectionConfigureServices
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/CollectionConfigureServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CollectionConfigureServices
+    path: ../PocoEmit.Collections/CollectionConfigureServices.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit
+  summary: 集合配置扩展方法
+  example: []
+  syntax:
+    content: public static class CollectionConfigureServices
+    content.vb: Public Module CollectionConfigureServices
+  inheritance:
+  - System.Object
+- uid: PocoEmit.CollectionConfigureServices.UseCollection(PocoEmit.IMapper)
+  commentId: M:PocoEmit.CollectionConfigureServices.UseCollection(PocoEmit.IMapper)
+  id: UseCollection(PocoEmit.IMapper)
+  isExtensionMethod: true
+  parent: PocoEmit.CollectionConfigureServices
+  langs:
+  - csharp
+  - vb
+  name: UseCollection(IMapper)
+  nameWithType: CollectionConfigureServices.UseCollection(IMapper)
+  fullName: PocoEmit.CollectionConfigureServices.UseCollection(PocoEmit.IMapper)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/CollectionConfigureServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseCollection
+    path: ../PocoEmit.Collections/CollectionConfigureServices.cs
+    startLine: 15
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit
+  summary: 启用集合功能(转化和复制)
+  example: []
+  syntax:
+    content: public static IMapper UseCollection(this IMapper mapper)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    return:
+      type: PocoEmit.IMapper
+      description: ''
+    content.vb: Public Shared Function UseCollection(mapper As IMapper) As IMapper
+  overload: PocoEmit.CollectionConfigureServices.UseCollection*
+references:
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.CollectionConfigureServices.UseCollection*
+  commentId: Overload:PocoEmit.CollectionConfigureServices.UseCollection
+  href: PocoEmit.CollectionConfigureServices.html#PocoEmit_CollectionConfigureServices_UseCollection_PocoEmit_IMapper_
+  name: UseCollection
+  nameWithType: CollectionConfigureServices.UseCollection
+  fullName: PocoEmit.CollectionConfigureServices.UseCollection
+- uid: PocoEmit.IMapper
+  commentId: T:PocoEmit.IMapper
+  parent: PocoEmit
+  href: PocoEmit.IMapper.html
+  name: IMapper
+  nameWithType: IMapper
+  fullName: PocoEmit.IMapper

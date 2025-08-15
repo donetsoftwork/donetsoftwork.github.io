@@ -1,0 +1,513 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor
+  commentId: T:PocoEmit.Reflection.DefaultReflectionConstructor
+  id: DefaultReflectionConstructor
+  parent: PocoEmit.Reflection
+  children:
+  - PocoEmit.Reflection.DefaultReflectionConstructor.#ctor(System.Boolean)
+  - PocoEmit.Reflection.DefaultReflectionConstructor.Default
+  - PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructor(System.Type)
+  - PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructors(System.Type)
+  - PocoEmit.Reflection.DefaultReflectionConstructor.ParameterCountDesc
+  - PocoEmit.Reflection.DefaultReflectionConstructor.Sort(System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo})
+  langs:
+  - csharp
+  - vb
+  name: DefaultReflectionConstructor
+  nameWithType: DefaultReflectionConstructor
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: DefaultReflectionConstructor
+    path: ../PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Reflection
+  summary: 默认反射构造函数
+  example: []
+  syntax:
+    content: 'public class DefaultReflectionConstructor : IReflectionConstructor'
+    content.vb: Public Class DefaultReflectionConstructor Implements IReflectionConstructor
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Reflection.IReflectionConstructor
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.#ctor(System.Boolean)
+  commentId: M:PocoEmit.Reflection.DefaultReflectionConstructor.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: PocoEmit.Reflection.DefaultReflectionConstructor
+  langs:
+  - csharp
+  - vb
+  name: DefaultReflectionConstructor(bool)
+  nameWithType: DefaultReflectionConstructor.DefaultReflectionConstructor(bool)
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.DefaultReflectionConstructor(bool)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Reflection
+  summary: 默认反射构造函数
+  example: []
+  syntax:
+    content: public DefaultReflectionConstructor(bool parameterCountDesc)
+    parameters:
+    - id: parameterCountDesc
+      type: System.Boolean
+    content.vb: Public Sub New(parameterCountDesc As Boolean)
+  overload: PocoEmit.Reflection.DefaultReflectionConstructor.#ctor*
+  nameWithType.vb: DefaultReflectionConstructor.New(Boolean)
+  fullName.vb: PocoEmit.Reflection.DefaultReflectionConstructor.New(Boolean)
+  name.vb: New(Boolean)
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.ParameterCountDesc
+  commentId: P:PocoEmit.Reflection.DefaultReflectionConstructor.ParameterCountDesc
+  id: ParameterCountDesc
+  parent: PocoEmit.Reflection.DefaultReflectionConstructor
+  langs:
+  - csharp
+  - vb
+  name: ParameterCountDesc
+  nameWithType: DefaultReflectionConstructor.ParameterCountDesc
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.ParameterCountDesc
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ParameterCountDesc
+    path: ../PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Reflection
+  summary: 获取参数最多的还是最少的
+  example: []
+  syntax:
+    content: public bool ParameterCountDesc { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ParameterCountDesc As Boolean
+  overload: PocoEmit.Reflection.DefaultReflectionConstructor.ParameterCountDesc*
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructor(System.Type)
+  commentId: M:PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructor(System.Type)
+  id: GetConstructor(System.Type)
+  parent: PocoEmit.Reflection.DefaultReflectionConstructor
+  langs:
+  - csharp
+  - vb
+  name: GetConstructor(Type)
+  nameWithType: DefaultReflectionConstructor.GetConstructor(Type)
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructor(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetConstructor
+    path: ../PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+    startLine: 22
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Reflection
+  summary: 获取构造函数
+  example: []
+  syntax:
+    content: public virtual ConstructorInfo GetConstructor(Type instanceType)
+    parameters:
+    - id: instanceType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Reflection.ConstructorInfo
+      description: ''
+    content.vb: Public Overridable Function GetConstructor(instanceType As Type) As ConstructorInfo
+  overload: PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructor*
+  implements:
+  - PocoEmit.Reflection.IReflectionConstructor.GetConstructor(System.Type)
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.Sort(System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo})
+  commentId: M:PocoEmit.Reflection.DefaultReflectionConstructor.Sort(System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo})
+  id: Sort(System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo})
+  parent: PocoEmit.Reflection.DefaultReflectionConstructor
+  langs:
+  - csharp
+  - vb
+  name: Sort(IEnumerable<ConstructorInfo>)
+  nameWithType: DefaultReflectionConstructor.Sort(IEnumerable<ConstructorInfo>)
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.Sort(System.Collections.Generic.IEnumerable<System.Reflection.ConstructorInfo>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Sort
+    path: ../PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+    startLine: 32
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Reflection
+  summary: 排序
+  example: []
+  syntax:
+    content: protected virtual IEnumerable<ConstructorInfo> Sort(IEnumerable<ConstructorInfo> list)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+      description: ''
+    content.vb: Protected Overridable Function Sort(list As IEnumerable(Of ConstructorInfo)) As IEnumerable(Of ConstructorInfo)
+  overload: PocoEmit.Reflection.DefaultReflectionConstructor.Sort*
+  nameWithType.vb: DefaultReflectionConstructor.Sort(IEnumerable(Of ConstructorInfo))
+  fullName.vb: PocoEmit.Reflection.DefaultReflectionConstructor.Sort(System.Collections.Generic.IEnumerable(Of System.Reflection.ConstructorInfo))
+  name.vb: Sort(IEnumerable(Of ConstructorInfo))
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructors(System.Type)
+  commentId: M:PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructors(System.Type)
+  id: GetConstructors(System.Type)
+  parent: PocoEmit.Reflection.DefaultReflectionConstructor
+  langs:
+  - csharp
+  - vb
+  name: GetConstructors(Type)
+  nameWithType: DefaultReflectionConstructor.GetConstructors(Type)
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructors(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetConstructors
+    path: ../PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+    startLine: 43
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Reflection
+  summary: 获取所有构造函数
+  example: []
+  syntax:
+    content: protected virtual IEnumerable<ConstructorInfo> GetConstructors(Type instanceType)
+    parameters:
+    - id: instanceType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+      description: ''
+    content.vb: Protected Overridable Function GetConstructors(instanceType As Type) As IEnumerable(Of ConstructorInfo)
+  overload: PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructors*
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.Default
+  commentId: F:PocoEmit.Reflection.DefaultReflectionConstructor.Default
+  id: Default
+  parent: PocoEmit.Reflection.DefaultReflectionConstructor
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: DefaultReflectionConstructor.Default
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.Default
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Default
+    path: ../PocoEmit.Mapper/Reflection/DefaultReflectionConstructor.cs
+    startLine: 49
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Reflection
+  summary: 默认反射构造函数实例
+  example: []
+  syntax:
+    content: public static readonly DefaultReflectionConstructor Default
+    return:
+      type: PocoEmit.Reflection.DefaultReflectionConstructor
+    content.vb: Public Shared ReadOnly [Default] As DefaultReflectionConstructor
+references:
+- uid: PocoEmit.Reflection
+  commentId: N:PocoEmit.Reflection
+  href: PocoEmit.html
+  name: PocoEmit.Reflection
+  nameWithType: PocoEmit.Reflection
+  fullName: PocoEmit.Reflection
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Reflection
+    name: Reflection
+    href: PocoEmit.Reflection.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Reflection
+    name: Reflection
+    href: PocoEmit.Reflection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Reflection.IReflectionConstructor
+  commentId: T:PocoEmit.Reflection.IReflectionConstructor
+  parent: PocoEmit.Reflection
+  href: PocoEmit.Reflection.IReflectionConstructor.html
+  name: IReflectionConstructor
+  nameWithType: IReflectionConstructor
+  fullName: PocoEmit.Reflection.IReflectionConstructor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.#ctor*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionConstructor.#ctor
+  href: PocoEmit.Reflection.DefaultReflectionConstructor.html#PocoEmit_Reflection_DefaultReflectionConstructor__ctor_System_Boolean_
+  name: DefaultReflectionConstructor
+  nameWithType: DefaultReflectionConstructor.DefaultReflectionConstructor
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.DefaultReflectionConstructor
+  nameWithType.vb: DefaultReflectionConstructor.New
+  fullName.vb: PocoEmit.Reflection.DefaultReflectionConstructor.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.ParameterCountDesc*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionConstructor.ParameterCountDesc
+  href: PocoEmit.Reflection.DefaultReflectionConstructor.html#PocoEmit_Reflection_DefaultReflectionConstructor_ParameterCountDesc
+  name: ParameterCountDesc
+  nameWithType: DefaultReflectionConstructor.ParameterCountDesc
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.ParameterCountDesc
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructor*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructor
+  href: PocoEmit.Reflection.DefaultReflectionConstructor.html#PocoEmit_Reflection_DefaultReflectionConstructor_GetConstructor_System_Type_
+  name: GetConstructor
+  nameWithType: DefaultReflectionConstructor.GetConstructor
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructor
+- uid: PocoEmit.Reflection.IReflectionConstructor.GetConstructor(System.Type)
+  commentId: M:PocoEmit.Reflection.IReflectionConstructor.GetConstructor(System.Type)
+  parent: PocoEmit.Reflection.IReflectionConstructor
+  isExternal: true
+  href: PocoEmit.Reflection.IReflectionConstructor.html#PocoEmit_Reflection_IReflectionConstructor_GetConstructor_System_Type_
+  name: GetConstructor(Type)
+  nameWithType: IReflectionConstructor.GetConstructor(Type)
+  fullName: PocoEmit.Reflection.IReflectionConstructor.GetConstructor(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Reflection.IReflectionConstructor.GetConstructor(System.Type)
+    name: GetConstructor
+    href: PocoEmit.Reflection.IReflectionConstructor.html#PocoEmit_Reflection_IReflectionConstructor_GetConstructor_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Reflection.IReflectionConstructor.GetConstructor(System.Type)
+    name: GetConstructor
+    href: PocoEmit.Reflection.IReflectionConstructor.html#PocoEmit_Reflection_IReflectionConstructor_GetConstructor_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Reflection.ConstructorInfo
+  commentId: T:System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  name: ConstructorInfo
+  nameWithType: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.Sort*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionConstructor.Sort
+  href: PocoEmit.Reflection.DefaultReflectionConstructor.html#PocoEmit_Reflection_DefaultReflectionConstructor_Sort_System_Collections_Generic_IEnumerable_System_Reflection_ConstructorInfo__
+  name: Sort
+  nameWithType: DefaultReflectionConstructor.Sort
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.Sort
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ConstructorInfo>
+  nameWithType: IEnumerable<ConstructorInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.ConstructorInfo>
+  nameWithType.vb: IEnumerable(Of ConstructorInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.ConstructorInfo)
+  name.vb: IEnumerable(Of ConstructorInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructors*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructors
+  href: PocoEmit.Reflection.DefaultReflectionConstructor.html#PocoEmit_Reflection_DefaultReflectionConstructor_GetConstructors_System_Type_
+  name: GetConstructors
+  nameWithType: DefaultReflectionConstructor.GetConstructors
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor.GetConstructors
+- uid: PocoEmit.Reflection.DefaultReflectionConstructor
+  commentId: T:PocoEmit.Reflection.DefaultReflectionConstructor
+  parent: PocoEmit.Reflection
+  href: PocoEmit.Reflection.DefaultReflectionConstructor.html
+  name: DefaultReflectionConstructor
+  nameWithType: DefaultReflectionConstructor
+  fullName: PocoEmit.Reflection.DefaultReflectionConstructor

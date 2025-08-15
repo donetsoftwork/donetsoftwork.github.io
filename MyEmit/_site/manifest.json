@@ -1,0 +1,2994 @@
+{
+  "source_base_path": "D:/projects/MyEmit/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection.PocoEmitDIServices",
+      "Summary": "<p sourcefile=\"api/Microsoft.Extensions.DependencyInjection.PocoEmitDIServices.yml\" sourcestartlinenumber=\"1\">DI注入扩展方法</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Activators.ArgumentDelegateActivator-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Activators.ArgumentDelegateActivator-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Activators.ArgumentDelegateActivator<TSource, TDest>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Activators.ArgumentDelegateActivator-2.yml\" sourcestartlinenumber=\"1\">带参委托激活</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Activators.ConstructorActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Activators.ConstructorActivator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Activators.ConstructorActivator",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Activators.ConstructorActivator.yml\" sourcestartlinenumber=\"1\">构造函数激活</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Activators.DelegateActivator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Activators.DelegateActivator-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Activators.DelegateActivator<TInstance>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Activators.DelegateActivator-1.yml\" sourcestartlinenumber=\"1\">委托激活类型</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Activators.IEmitActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Activators.IEmitActivator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Activators.IEmitActivator",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Activators.IEmitActivator.yml\" sourcestartlinenumber=\"1\">Emit类型激活(初始化)器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Activators.IGenericActivator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Activators.IGenericActivator-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Activators.IGenericActivator<TInstance>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Activators.IGenericActivator-1.yml\" sourcestartlinenumber=\"1\">强类型激活</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Activators.MethodActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Activators.MethodActivator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Activators.MethodActivator",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Activators.MethodActivator.yml\" sourcestartlinenumber=\"1\">方法激活类型</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Activators.ParameterConstructorActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Activators.ParameterConstructorActivator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Activators.ParameterConstructorActivator",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Activators.ParameterConstructorActivator.yml\" sourcestartlinenumber=\"1\">含参构造函数激活</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Activators.TypeActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Activators.TypeActivator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Activators.TypeActivator",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Activators.TypeActivator.yml\" sourcestartlinenumber=\"1\">类型激活(一般结构体使用)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Activators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Activators.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Activators",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Builders.CollectionConvertBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Builders.CollectionConvertBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Builders.CollectionConvertBuilder",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Builders.CollectionConvertBuilder.yml\" sourcestartlinenumber=\"1\">集合类型转化构建器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Builders.CollectionCopierBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Builders.CollectionCopierBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Builders.CollectionCopierBuilder",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Builders.CollectionCopierBuilder.yml\" sourcestartlinenumber=\"1\">集合复制</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Builders.Compiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Builders.Compiler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Builders.Compiler",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Builders.Compiler.yml\" sourcestartlinenumber=\"1\">编译器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Builders.ComplexConvertBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Builders.ComplexConvertBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Builders.ComplexConvertBuilder",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Builders.ComplexConvertBuilder.yml\" sourcestartlinenumber=\"1\">复杂类型转化构建器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Builders.ConvertBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Builders.ConvertBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Builders.ConvertBuilder",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Builders.ConvertBuilder.yml\" sourcestartlinenumber=\"1\">默认转换构建器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Builders.CopierBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Builders.CopierBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Builders.CopierBuilder",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Builders.CopierBuilder.yml\" sourcestartlinenumber=\"1\">构建复制器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Builders.CopierBuilderBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Builders.CopierBuilderBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Builders.CopierBuilderBase",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Builders.CopierBuilderBase.yml\" sourcestartlinenumber=\"1\">构建复制器基类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Builders.CopyToSelf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Builders.CopyToSelf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Builders.CopyToSelf",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Builders.CopyToSelf.yml\" sourcestartlinenumber=\"1\">同类型复制器构建器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Builders.EmitHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Builders.EmitHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Builders.EmitHelper",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Builders.EmitHelper.yml\" sourcestartlinenumber=\"1\">Emit工具</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Builders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Builders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Builders",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.CollectionConfigureServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.CollectionConfigureServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.CollectionConfigureServices",
+      "Summary": "<p sourcefile=\"api/PocoEmit.CollectionConfigureServices.yml\" sourcestartlinenumber=\"1\">集合配置扩展方法</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.CollectionContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.CollectionContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.CollectionContainer",
+      "Summary": "<p sourcefile=\"api/PocoEmit.CollectionContainer.yml\" sourcestartlinenumber=\"1\">集合容器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Activators.ArrayActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Activators.ArrayActivator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Activators.ArrayActivator",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Activators.ArrayActivator.yml\" sourcestartlinenumber=\"1\">数组激活器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Activators.CollectionActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Activators.CollectionActivator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Activators.CollectionActivator",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Activators.CollectionActivator.yml\" sourcestartlinenumber=\"1\">集合激活器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Activators.ListActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Activators.ListActivator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Activators.ListActivator",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Activators.ListActivator.yml\" sourcestartlinenumber=\"1\">列表激活器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Activators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Activators.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Activators",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.CacheBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.CacheBase-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.CacheBase<TKey, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.CacheBase-2.yml\" sourcestartlinenumber=\"1\">缓存基类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Converters.ArrayConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Converters.ArrayConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Converters.ArrayConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Converters.ArrayConverter.yml\" sourcestartlinenumber=\"1\">数组转数组</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Converters.CollectionArrayConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Converters.CollectionArrayConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Converters.CollectionArrayConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Converters.CollectionArrayConverter.yml\" sourcestartlinenumber=\"1\">集合转数组</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Converters.CollectionConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Converters.CollectionConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Converters.CollectionConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Converters.CollectionConverter.yml\" sourcestartlinenumber=\"1\">集合类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Converters.IndexArrayConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Converters.IndexArrayConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Converters.IndexArrayConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Converters.IndexArrayConverter.yml\" sourcestartlinenumber=\"1\">索引转数组</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Converters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Converters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Copies.CollectionCopier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Copies.CollectionCopier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Copies.CollectionCopier",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Copies.CollectionCopier.yml\" sourcestartlinenumber=\"1\">集合复制器(支持含Add和Clear的类和接口)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Copies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Copies.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Copies",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Counters.ArrayCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Counters.ArrayCounter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Counters.ArrayCounter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Counters.ArrayCounter.yml\" sourcestartlinenumber=\"1\">数组长度获取</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Counters.ArrayLength.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Counters.ArrayLength.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Counters.ArrayLength",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Counters.ArrayLength.yml\" sourcestartlinenumber=\"1\">数组长度获取</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Counters.CompiledCounter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Counters.CompiledCounter-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Counters.CompiledCounter<TCollection>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Counters.CompiledCounter-1.yml\" sourcestartlinenumber=\"1\">已编译数量获取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Counters.EnumerableCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Counters.EnumerableCounter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Counters.EnumerableCounter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Counters.EnumerableCounter.yml\" sourcestartlinenumber=\"1\">获取迭代器数量</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Counters.ICompiledCounter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Counters.ICompiledCounter-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Counters.ICompiledCounter<TCollection>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Counters.ICompiledCounter-1.yml\" sourcestartlinenumber=\"1\">已编译元素数量获取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Counters.IEmitCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Counters.IEmitCounter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Counters.IEmitCounter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Counters.IEmitCounter.yml\" sourcestartlinenumber=\"1\">元素数量获取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Counters.IEmitElementCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Counters.IEmitElementCounter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Counters.IEmitElementCounter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Counters.IEmitElementCounter.yml\" sourcestartlinenumber=\"1\">子元素数量获取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Counters.MethodCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Counters.MethodCounter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Counters.MethodCounter",
+      "Summary": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Counters.PropertyCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Counters.PropertyCounter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Counters.PropertyCounter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Counters.PropertyCounter.yml\" sourcestartlinenumber=\"1\">按属性获取集合数量</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Counters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Counters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Counters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.DictionaryStorage-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.DictionaryStorage-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.DictionaryStorage<TKey, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.DictionaryStorage-2.yml\" sourcestartlinenumber=\"1\">字典存储</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.EmitCollectionBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.EmitCollectionBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.EmitCollectionBase",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.EmitCollectionBase.yml\" sourcestartlinenumber=\"1\">集合基类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.ICacher-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.ICacher-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.ICacher<TKey, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.ICacher-2.yml\" sourcestartlinenumber=\"1\">数据缓存</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.ICollectionSaver-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.ICollectionSaver-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.ICollectionSaver<TCollection, TElement>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.ICollectionSaver-2.yml\" sourcestartlinenumber=\"1\">集合元素保存器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.IConfiguration-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.IConfiguration-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.IConfiguration<TKey, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.IConfiguration-2.yml\" sourcestartlinenumber=\"1\">配置读写</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.IConfigure-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.IConfigure-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.IConfigure<TKey, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.IConfigure-2.yml\" sourcestartlinenumber=\"1\">配置(用户行为)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.ICounter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.ICounter-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.ICounter<TCollection>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.ICounter-1.yml\" sourcestartlinenumber=\"1\">获取集合元素数量</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.IEmitCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.IEmitCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.IEmitCollection",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.IEmitCollection.yml\" sourcestartlinenumber=\"1\">Emit集合</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.ISettings-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.ISettings-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.ISettings<TKey, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.ISettings-2.yml\" sourcestartlinenumber=\"1\">配置设置</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.IStore-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.IStore-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.IStore<TKey, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.IStore-2.yml\" sourcestartlinenumber=\"1\">存储(系统行为)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Indexs.ArrayMemberIndex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Indexs.ArrayMemberIndex.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Indexs.ArrayMemberIndex",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Indexs.ArrayMemberIndex.yml\" sourcestartlinenumber=\"1\">数组成员索引器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Indexs.PropertyIndexMemberReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Indexs.PropertyIndexMemberReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Indexs.PropertyIndexMemberReader",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Indexs.PropertyIndexMemberReader.yml\" sourcestartlinenumber=\"1\">索引方法读取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Indexs.PropertyIndexMemberWriter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Indexs.PropertyIndexMemberWriter.yml\" sourcestartlinenumber=\"1\">索引方法写入器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Indexs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Indexs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Indexs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.MemberBundle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.MemberBundle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.MemberBundle",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.MemberBundle.yml\" sourcestartlinenumber=\"1\">成员集合</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.MemberContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.MemberContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.MemberContainer",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.MemberContainer.yml\" sourcestartlinenumber=\"1\">成员容器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.MemberReaderCacher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.MemberReaderCacher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.MemberReaderCacher",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.MemberReaderCacher.yml\" sourcestartlinenumber=\"1\">成员读取缓存</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.MemberWriterCacher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.MemberWriterCacher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.MemberWriterCacher",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.MemberWriterCacher.yml\" sourcestartlinenumber=\"1\">成员写入器缓存</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Members.ArrayIndexMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Members.ArrayIndexMember.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Members.ArrayIndexMember",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Members.ArrayIndexMember.yml\" sourcestartlinenumber=\"1\">索引一维数组成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Members.IndexMemberReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Members.IndexMemberReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Members.IndexMemberReader",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Members.IndexMemberReader.yml\" sourcestartlinenumber=\"1\">索引成员读取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Members.IndexMemberWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Members.IndexMemberWriter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Members.IndexMemberWriter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Members.IndexMemberWriter.yml\" sourcestartlinenumber=\"1\">索引成员读取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Members.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Members.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Members",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.PocoEmitCollectionServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.PocoEmitCollectionServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.PocoEmitCollectionServices",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.PocoEmitCollectionServices.yml\" sourcestartlinenumber=\"1\">获取集合数量扩展方法</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Saves.CompiledElementSaver-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Saves.CompiledElementSaver-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Saves.CompiledElementSaver<TCollection, Element>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Saves.CompiledElementSaver-2.yml\" sourcestartlinenumber=\"1\">已编集合元素保存器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Saves.EmitElementSaver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Saves.EmitElementSaver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Saves.EmitElementSaver",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Saves.EmitElementSaver.yml\" sourcestartlinenumber=\"1\">集合元素保存器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Saves.ICompiledElementSaver-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Saves.ICompiledElementSaver-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Saves.ICompiledElementSaver<TCollection, Element>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Saves.ICompiledElementSaver-2.yml\" sourcestartlinenumber=\"1\">已编集合元素保存器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Saves.IEmitElementSaver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Saves.IEmitElementSaver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Saves.IEmitElementSaver",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Saves.IEmitElementSaver.yml\" sourcestartlinenumber=\"1\">集合元素保存器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Saves.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Saves.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Saves",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.TypeMemberCacher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.TypeMemberCacher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.TypeMemberCacher",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.TypeMemberCacher.yml\" sourcestartlinenumber=\"1\">类型成员缓存</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Visitors.ArrayVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Visitors.ArrayVisitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Visitors.ArrayVisitor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Visitors.ArrayVisitor.yml\" sourcestartlinenumber=\"1\">数组访问者</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Visitors.EnumerableVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Visitors.EnumerableVisitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Visitors.EnumerableVisitor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Visitors.EnumerableVisitor.yml\" sourcestartlinenumber=\"1\">迭代器访问者</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Visitors.IElementIndexVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Visitors.IElementIndexVisitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Visitors.IElementIndexVisitor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Visitors.IElementIndexVisitor.yml\" sourcestartlinenumber=\"1\">元素索引访问者</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Visitors.IEmitElementVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Visitors.IEmitElementVisitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Visitors.IEmitElementVisitor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Visitors.IEmitElementVisitor.yml\" sourcestartlinenumber=\"1\">集合元素访问者</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Visitors.IIndexVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Visitors.IIndexVisitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Visitors.IIndexVisitor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Visitors.IIndexVisitor.yml\" sourcestartlinenumber=\"1\">索引访问者</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Visitors.ListVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Visitors.ListVisitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Visitors.ListVisitor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Collections.Visitors.ListVisitor.yml\" sourcestartlinenumber=\"1\">列表访问者</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.Visitors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.Visitors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections.Visitors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Collections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Collections.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Collections",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.CollectionContainerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.CollectionContainerOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.CollectionContainerOptions",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.CollectionContainerOptions.yml\" sourcestartlinenumber=\"1\">集合容器配置</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.ConfigurationBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.ConfigurationBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.ConfigurationBase",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.ConfigurationBase.yml\" sourcestartlinenumber=\"1\">Emit配置</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.ICompileInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.ICompileInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.ICompileInfo",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.ICompileInfo.yml\" sourcestartlinenumber=\"1\">编译信息</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.IMapperOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.IMapperOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.IMapperOptions",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.IMapperOptions.yml\" sourcestartlinenumber=\"1\">映射配置接口</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.IPocoOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.IPocoOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.IPocoOptions",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.IPocoOptions.yml\" sourcestartlinenumber=\"1\">简单对象配置接口</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.MapperConfigurationBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.MapperConfigurationBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.MapperConfigurationBase",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.MapperConfigurationBase.yml\" sourcestartlinenumber=\"1\">映射配置基类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.MapperOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.MapperOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.MapperOptions",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.MapperOptions.yml\" sourcestartlinenumber=\"1\">成员容量配置</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.MemberContainerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.MemberContainerOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.MemberContainerOptions",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.MemberContainerOptions.yml\" sourcestartlinenumber=\"1\">成员容器配置</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.PairTypeKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.PairTypeKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.PairTypeKey",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.PairTypeKey.yml\" sourcestartlinenumber=\"1\">类型关联键</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.PocoOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.PocoOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.PocoOptions",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.PocoOptions.yml\" sourcestartlinenumber=\"1\">成员容量配置</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.PrimitiveConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.PrimitiveConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration.PrimitiveConfiguration",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Configuration.PrimitiveConfiguration.yml\" sourcestartlinenumber=\"1\">基础类型配置</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Configuration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Configuration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.CompatibleConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.CompatibleConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.CompatibleConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.CompatibleConverter.yml\" sourcestartlinenumber=\"1\">兼容类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.CompiledConverter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.CompiledConverter-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.CompiledConverter<TSource, TDest>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.CompiledConverter-2.yml\" sourcestartlinenumber=\"1\">已编译转化器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.ComplexTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.ComplexTypeConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.ComplexTypeConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.ComplexTypeConverter.yml\" sourcestartlinenumber=\"1\">复合类型转化器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.ConstructorConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.ConstructorConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.ConstructorConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.ConstructorConverter.yml\" sourcestartlinenumber=\"1\">构造函数转化器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.ConvertToArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.ConvertToArray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.ConvertToArray",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.ConvertToArray.yml\" sourcestartlinenumber=\"1\">转化为数组</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.ConvertToCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.ConvertToCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.ConvertToCollection",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.ConvertToCollection.yml\" sourcestartlinenumber=\"1\">转化为集合</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.ConvertToDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.ConvertToDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.ConvertToDictionary",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.ConvertToDictionary.yml\" sourcestartlinenumber=\"1\">转化为字典</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.ConverterFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.ConverterFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.ConverterFactory",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.ConverterFactory.yml\" sourcestartlinenumber=\"1\">转化器工厂</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.DelegateConverter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.DelegateConverter-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.DelegateConverter<TSource, TDest>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.DelegateConverter-2.yml\" sourcestartlinenumber=\"1\">委托类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.EmitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.EmitConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.EmitConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.EmitConverter.yml\" sourcestartlinenumber=\"1\">Emit类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.ICompiledConverter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.ICompiledConverter-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.ICompiledConverter<TSource, TDest>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.ICompiledConverter-2.yml\" sourcestartlinenumber=\"1\">强类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.IEmitConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.IEmitConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.IEmitConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.IEmitConverter.yml\" sourcestartlinenumber=\"1\">Emit类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.IObjectConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.IObjectConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.IObjectConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.IObjectConverter.yml\" sourcestartlinenumber=\"1\">弱类型转化(用于类型反射场景)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.MemberReadConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.MemberReadConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.MemberReadConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.MemberReadConverter.yml\" sourcestartlinenumber=\"1\">通过成员读取转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.MethodConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.MethodConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.MethodConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.MethodConverter.yml\" sourcestartlinenumber=\"1\">Emit方法类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.PassConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.PassConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.PassConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.PassConverter.yml\" sourcestartlinenumber=\"1\">相同类型直接跳过转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.SelfMethodConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.SelfMethodConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.SelfMethodConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.SelfMethodConverter.yml\" sourcestartlinenumber=\"1\">Emit本实例方法类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.StringCompareConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.StringCompareConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters.StringCompareConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Converters.StringCompareConverter.yml\" sourcestartlinenumber=\"1\">字符比较器转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Converters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Converters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.CompatibleCopier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.CompatibleCopier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.CompatibleCopier",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.CompatibleCopier.yml\" sourcestartlinenumber=\"1\">兼容类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.CompiledCopier-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.CompiledCopier-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.CompiledCopier<TSource, TDest>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.CompiledCopier-2.yml\" sourcestartlinenumber=\"1\">已编译复制器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.ComplexTypeCopier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.ComplexTypeCopier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.ComplexTypeCopier",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.ComplexTypeCopier.yml\" sourcestartlinenumber=\"1\">复制成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.CopierFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.CopierFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.CopierFactory",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.CopierFactory.yml\" sourcestartlinenumber=\"1\">复制器工厂</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.CopyToCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.CopyToCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.CopyToCollection",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.CopyToCollection.yml\" sourcestartlinenumber=\"1\">复制数据到集合</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.CopyToDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.CopyToDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.CopyToDictionary",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.CopyToDictionary.yml\" sourcestartlinenumber=\"1\">复制数据到字典</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.DelegateCopier-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.DelegateCopier-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.DelegateCopier<TSource, TDest>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.DelegateCopier-2.yml\" sourcestartlinenumber=\"1\">委托复制器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.ICompiledCopier-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.ICompiledCopier-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.ICompiledCopier<TSource, TDest>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.ICompiledCopier-2.yml\" sourcestartlinenumber=\"1\">已编译复制器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.IEmitCopier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.IEmitCopier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.IEmitCopier",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.IEmitCopier.yml\" sourcestartlinenumber=\"1\">Emit类型复制器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.IMemberConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.IMemberConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.IMemberConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.IMemberConverter.yml\" sourcestartlinenumber=\"1\">成员转化器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.IObjectCopier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.IObjectCopier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.IObjectCopier",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.IObjectCopier.yml\" sourcestartlinenumber=\"1\">弱类型复制器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.MemberConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.MemberConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.MemberConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.MemberConverter.yml\" sourcestartlinenumber=\"1\">成员转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.MemberCopier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.MemberCopier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.MemberCopier",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.MemberCopier.yml\" sourcestartlinenumber=\"1\">成员复制器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.MethodCopier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.MethodCopier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies.MethodCopier",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Copies.MethodCopier.yml\" sourcestartlinenumber=\"1\">Emit方法类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Copies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Copies.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Copies",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Dictionaries.DictionaryConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Dictionaries.DictionaryConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Dictionaries.DictionaryConverter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Dictionaries.DictionaryConverter.yml\" sourcestartlinenumber=\"1\">字典激活</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Dictionaries.DictionaryCopier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Dictionaries.DictionaryCopier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Dictionaries.DictionaryCopier",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Dictionaries.DictionaryCopier.yml\" sourcestartlinenumber=\"1\">字典复制</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Dictionaries.DictionaryIndexVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Dictionaries.DictionaryIndexVisitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Dictionaries.DictionaryIndexVisitor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Dictionaries.DictionaryIndexVisitor.yml\" sourcestartlinenumber=\"1\">字典索引访问者</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Dictionaries.DictionaryValuesVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Dictionaries.DictionaryValuesVisitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Dictionaries.DictionaryValuesVisitor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Dictionaries.DictionaryValuesVisitor.yml\" sourcestartlinenumber=\"1\">字典值遍历</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Dictionaries.EmitDictionaryBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Dictionaries.EmitDictionaryBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Dictionaries.EmitDictionaryBase",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Dictionaries.EmitDictionaryBase.yml\" sourcestartlinenumber=\"1\">字典基类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Dictionaries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Dictionaries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Dictionaries",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Helpers.MapHelper-2.DestHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Helpers.MapHelper-2.DestHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Helpers.MapHelper-2.DestHelper.yml\" sourcestartlinenumber=\"1\">映射目标</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Helpers.MapHelper-2.DestMemberHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Helpers.MapHelper-2.DestMemberHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Helpers.MapHelper<TSource, TDest>.DestMemberHelper",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Helpers.MapHelper-2.DestMemberHelper.yml\" sourcestartlinenumber=\"1\">映射源成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Helpers.MapHelper-2.SourceHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Helpers.MapHelper-2.SourceHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Helpers.MapHelper<TSource, TDest>.SourceHelper",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Helpers.MapHelper-2.SourceHelper.yml\" sourcestartlinenumber=\"1\">映射源</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Helpers.MapHelper-2.SourceMemberHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Helpers.MapHelper-2.SourceMemberHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Helpers.MapHelper<TSource, TDest>.SourceMemberHelper",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Helpers.MapHelper-2.SourceMemberHelper.yml\" sourcestartlinenumber=\"1\">映射源成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Helpers.MapHelper-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Helpers.MapHelper-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Helpers.MapHelper<TSource, TDest>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Helpers.MapHelper-2.yml\" sourcestartlinenumber=\"1\">映射辅助</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.IMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.IMapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.IMapper",
+      "Summary": "<p sourcefile=\"api/PocoEmit.IMapper.yml\" sourcestartlinenumber=\"1\">对象映射</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.IMemberReader-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.IMemberReader-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.IMemberReader<TInstance, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.IMemberReader-2.yml\" sourcestartlinenumber=\"1\">成员读取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.IMemberWriter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.IMemberWriter-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.IMemberWriter<TInstance, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.IMemberWriter-2.yml\" sourcestartlinenumber=\"1\">成员写入器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.IPoco.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.IPoco.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.IPoco",
+      "Summary": "<p sourcefile=\"api/PocoEmit.IPoco.yml\" sourcestartlinenumber=\"1\">简单对象处理接口</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.IPocoConverter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.IPocoConverter-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.IPocoConverter<TSource, TDest>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.IPocoConverter-2.yml\" sourcestartlinenumber=\"1\">类型转化</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.IPocoCopier-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.IPocoCopier-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.IPocoCopier<TSource, TDest>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.IPocoCopier-2.yml\" sourcestartlinenumber=\"1\">类型复制器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Indexs.IEmitIndexMemberReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Indexs.IEmitIndexMemberReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Indexs.IEmitIndexMemberReader",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Indexs.IEmitIndexMemberReader.yml\" sourcestartlinenumber=\"1\">成员索引读取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Indexs.IEmitIndexMemberWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Indexs.IEmitIndexMemberWriter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Indexs.IEmitIndexMemberWriter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Indexs.IEmitIndexMemberWriter.yml\" sourcestartlinenumber=\"1\">成员索引写入器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Indexs.IEmitMemberIndex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Indexs.IEmitMemberIndex.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Indexs.IEmitMemberIndex",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Indexs.IEmitMemberIndex.yml\" sourcestartlinenumber=\"1\">成员索引器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Indexs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Indexs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Indexs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.InstanceHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.InstanceHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.InstanceHelper",
+      "Summary": "<p sourcefile=\"api/PocoEmit.InstanceHelper.yml\" sourcestartlinenumber=\"1\">Emit实例成员帮助类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Maping.CustomMatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Maping.CustomMatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Maping.CustomMatcher",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Maping.CustomMatcher.yml\" sourcestartlinenumber=\"1\">自定义匹配</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Maping.IMemberMatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Maping.IMemberMatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Maping.IMemberMatch",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Maping.IMemberMatch.yml\" sourcestartlinenumber=\"1\">成员匹配</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Maping.INameMatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Maping.INameMatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Maping.INameMatch",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Maping.INameMatch.yml\" sourcestartlinenumber=\"1\">名称匹配接口</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Maping.IRecognizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Maping.IRecognizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Maping.IRecognizer",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Maping.IRecognizer.yml\" sourcestartlinenumber=\"1\">识别器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Maping.IgnoreRecognizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Maping.IgnoreRecognizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Maping.IgnoreRecognizer",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Maping.IgnoreRecognizer.yml\" sourcestartlinenumber=\"1\">可忽略识别器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Maping.InheritRecognizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Maping.InheritRecognizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Maping.InheritRecognizer",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Maping.InheritRecognizer.yml\" sourcestartlinenumber=\"1\">继承识别器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Maping.MemberNameMatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Maping.MemberNameMatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Maping.MemberNameMatcher",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Maping.MemberNameMatcher.yml\" sourcestartlinenumber=\"1\">成员名匹配</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Maping.NameMatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Maping.NameMatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Maping.NameMatcher",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Maping.NameMatcher.yml\" sourcestartlinenumber=\"1\">成员名匹配</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Maping.Recognizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Maping.Recognizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Maping.Recognizer",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Maping.Recognizer.yml\" sourcestartlinenumber=\"1\">识别器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Maping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Maping.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Maping",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Mapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Mapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Mapper",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Mapper.yml\" sourcestartlinenumber=\"1\">对象映射配置</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.MapperServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.MapperServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.MapperServices",
+      "Summary": "<p sourcefile=\"api/PocoEmit.MapperServices.yml\" sourcestartlinenumber=\"1\">复制配置扩展方法</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.CompiledReader-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.CompiledReader-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.CompiledReader<TInstance, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.CompiledReader-2.yml\" sourcestartlinenumber=\"1\">已编译读取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.CompiledWriter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.CompiledWriter-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.CompiledWriter<TInstance, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.CompiledWriter-2.yml\" sourcestartlinenumber=\"1\">已编译写入器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.ConstructorParameterMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.ConstructorParameterMember.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.ConstructorParameterMember",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.ConstructorParameterMember.yml\" sourcestartlinenumber=\"1\">构造函数参数成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.ConvertInstanceReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.ConvertInstanceReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.ConvertInstanceReader",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.ConvertInstanceReader.yml\" sourcestartlinenumber=\"1\">转化实体类型读成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.ConvertInstanceWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.ConvertInstanceWriter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.ConvertInstanceWriter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.ConvertInstanceWriter.yml\" sourcestartlinenumber=\"1\">转化实体类型写入成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.ConvertValueReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.ConvertValueReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.ConvertValueReader",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.ConvertValueReader.yml\" sourcestartlinenumber=\"1\">读取成员转化值类型</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.ConvertValueWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.ConvertValueWriter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.ConvertValueWriter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.ConvertValueWriter.yml\" sourcestartlinenumber=\"1\">转化值类型写入成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.FieldAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.FieldAccessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.FieldAccessor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.FieldAccessor.yml\" sourcestartlinenumber=\"1\">读写字段</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.ICompiledReader-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.ICompiledReader-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.ICompiledReader<TInstance, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.ICompiledReader-2.yml\" sourcestartlinenumber=\"1\">已编译成员读取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.ICompiledWriter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.ICompiledWriter-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.ICompiledWriter<TInstance, TValue>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.ICompiledWriter-2.yml\" sourcestartlinenumber=\"1\">已编译成员写入器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.IEmitMemberReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.IEmitMemberReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.IEmitMemberReader",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.IEmitMemberReader.yml\" sourcestartlinenumber=\"1\">成员读取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.IEmitMemberWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.IEmitMemberWriter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.IEmitMemberWriter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.IEmitMemberWriter.yml\" sourcestartlinenumber=\"1\">成员写入器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.IEmitReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.IEmitReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.IEmitReader",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.IEmitReader.yml\" sourcestartlinenumber=\"1\">成员读取接口</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.IEmitWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.IEmitWriter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.IEmitWriter",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.IEmitWriter.yml\" sourcestartlinenumber=\"1\">成员写入接口</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.IMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.IMember.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.IMember",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.IMember.yml\" sourcestartlinenumber=\"1\">成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.MemberAccessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.MemberAccessor-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.MemberAccessor<TMemberType>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.MemberAccessor-1.yml\" sourcestartlinenumber=\"1\">成员操作基类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.PropertyAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.PropertyAccessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.PropertyAccessor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.PropertyAccessor.yml\" sourcestartlinenumber=\"1\">读取属性</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.RenameMember-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.RenameMember-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.RenameMember<TMember>",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.RenameMember-1.yml\" sourcestartlinenumber=\"1\">重命名成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.RenameReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.RenameReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members.RenameReader",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Members.RenameReader.yml\" sourcestartlinenumber=\"1\">重命名读取器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Members.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Members.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Members",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Poco.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Poco.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Poco",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Poco.yml\" sourcestartlinenumber=\"1\">简单对象配置</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.PocoEmitServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.PocoEmitServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.PocoEmitServices",
+      "Summary": "<p sourcefile=\"api/PocoEmit.PocoEmitServices.yml\" sourcestartlinenumber=\"1\">类型转换扩展方法</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Reflection.DefaultReflectionConstructor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Reflection.DefaultReflectionConstructor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Reflection.DefaultReflectionConstructor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Reflection.DefaultReflectionConstructor.yml\" sourcestartlinenumber=\"1\">默认反射构造函数</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Reflection.DefaultReflectionMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Reflection.DefaultReflectionMember.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Reflection.DefaultReflectionMember",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Reflection.DefaultReflectionMember.yml\" sourcestartlinenumber=\"1\">默认反射成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Reflection.IReflectionConstructor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Reflection.IReflectionConstructor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Reflection.IReflectionConstructor",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Reflection.IReflectionConstructor.yml\" sourcestartlinenumber=\"1\">反射构造函数</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Reflection.IReflectionMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Reflection.IReflectionMember.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Reflection.IReflectionMember",
+      "Summary": "<p sourcefile=\"api/PocoEmit.Reflection.IReflectionMember.yml\" sourcestartlinenumber=\"1\">反射获取成员</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.Reflection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.Reflection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.Reflection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.ReflectionHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.ReflectionHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit.ReflectionHelper",
+      "Summary": "<p sourcefile=\"api/PocoEmit.ReflectionHelper.yml\" sourcestartlinenumber=\"1\">反射帮助类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PocoEmit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PocoEmit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PocoEmit",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cache.md",
+      "output": {
+        ".html": {
+          "relative_path": "cache.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "collection/convert.md",
+      "output": {
+        ".html": {
+          "relative_path": "collection/convert.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "collection/copy.md",
+      "output": {
+        ".html": {
+          "relative_path": "collection/copy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "collection/count.md",
+      "output": {
+        ".html": {
+          "relative_path": "collection/count.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "collection/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "collection/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "collection/save.md",
+      "output": {
+        ".html": {
+          "relative_path": "collection/save.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "collection/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "collection/toc.html"
+        },
+        ".json": {
+          "relative_path": "collection/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "di/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "di/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "field.md",
+      "output": {
+        ".html": {
+          "relative_path": "field.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "mapper/convert.md",
+      "output": {
+        ".html": {
+          "relative_path": "mapper/convert.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "mapper/copy.md",
+      "output": {
+        ".html": {
+          "relative_path": "mapper/copy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "mapper/helper.md",
+      "output": {
+        ".html": {
+          "relative_path": "mapper/helper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "mapper/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "mapper/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "mapper/settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "mapper/settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "mapper/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "mapper/toc.html"
+        },
+        ".json": {
+          "relative_path": "mapper/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "member.md",
+      "output": {
+        ".html": {
+          "relative_path": "member.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "poco/convert.md",
+      "output": {
+        ".html": {
+          "relative_path": "poco/convert.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "poco/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "poco/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "poco/quick.md",
+      "output": {
+        ".html": {
+          "relative_path": "poco/quick.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "poco/read.md",
+      "output": {
+        ".html": {
+          "relative_path": "poco/read.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "poco/reflection.md",
+      "output": {
+        ".html": {
+          "relative_path": "poco/reflection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "poco/settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "poco/settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "poco/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "poco/toc.html"
+        },
+        ".json": {
+          "relative_path": "poco/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "poco/write.md",
+      "output": {
+        ".html": {
+          "relative_path": "poco/write.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "property.md",
+      "output": {
+        ".html": {
+          "relative_path": "property.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

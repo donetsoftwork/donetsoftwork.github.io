@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Counters.ArrayLength
+  commentId: T:PocoEmit.Collections.Counters.ArrayLength
+  id: ArrayLength
+  parent: PocoEmit.Collections.Counters
+  children:
+  - PocoEmit.Collections.Counters.ArrayLength.#ctor
+  - PocoEmit.Collections.Counters.ArrayLength.Count(System.Linq.Expressions.Expression)
+  - PocoEmit.Collections.Counters.ArrayLength.Length
+  langs:
+  - csharp
+  - vb
+  name: ArrayLength
+  nameWithType: ArrayLength
+  fullName: PocoEmit.Collections.Counters.ArrayLength
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/ArrayLength.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ArrayLength
+    path: ../PocoEmit.Collections/Collections/Counters/ArrayLength.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 数组长度获取
+  example: []
+  syntax:
+    content: 'public class ArrayLength : IEmitCounter'
+    content.vb: Public Class ArrayLength Implements IEmitCounter
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PocoEmit.Collections.Counters.ArrayCounter
+  implements:
+  - PocoEmit.Collections.Counters.IEmitCounter
+- uid: PocoEmit.Collections.Counters.ArrayLength.#ctor
+  commentId: M:PocoEmit.Collections.Counters.ArrayLength.#ctor
+  id: '#ctor'
+  parent: PocoEmit.Collections.Counters.ArrayLength
+  langs:
+  - csharp
+  - vb
+  name: ArrayLength()
+  nameWithType: ArrayLength.ArrayLength()
+  fullName: PocoEmit.Collections.Counters.ArrayLength.ArrayLength()
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/ArrayLength.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Collections/Counters/ArrayLength.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 数组长度获取
+  example: []
+  syntax:
+    content: protected ArrayLength()
+    content.vb: Protected Sub New()
+  overload: PocoEmit.Collections.Counters.ArrayLength.#ctor*
+  nameWithType.vb: ArrayLength.New()
+  fullName.vb: PocoEmit.Collections.Counters.ArrayLength.New()
+  name.vb: New()
+- uid: PocoEmit.Collections.Counters.ArrayLength.Count(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.Counters.ArrayLength.Count(System.Linq.Expressions.Expression)
+  id: Count(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.Counters.ArrayLength
+  langs:
+  - csharp
+  - vb
+  name: Count(Expression)
+  nameWithType: ArrayLength.Count(Expression)
+  fullName: PocoEmit.Collections.Counters.ArrayLength.Count(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/ArrayLength.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Count
+    path: ../PocoEmit.Collections/Collections/Counters/ArrayLength.cs
+    startLine: 25
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 获取数量
+  example: []
+  syntax:
+    content: public static Expression Count(Expression array)
+    parameters:
+    - id: array
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Shared Function Count(array As Expression) As Expression
+  overload: PocoEmit.Collections.Counters.ArrayLength.Count*
+- uid: PocoEmit.Collections.Counters.ArrayLength.Length
+  commentId: F:PocoEmit.Collections.Counters.ArrayLength.Length
+  id: Length
+  parent: PocoEmit.Collections.Counters.ArrayLength
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: ArrayLength.Length
+  fullName: PocoEmit.Collections.Counters.ArrayLength.Length
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/ArrayLength.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Length
+    path: ../PocoEmit.Collections/Collections/Counters/ArrayLength.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 实例
+  example: []
+  syntax:
+    content: public static readonly ArrayLength Length
+    return:
+      type: PocoEmit.Collections.Counters.ArrayLength
+    content.vb: Public Shared ReadOnly Length As ArrayLength
+references:
+- uid: PocoEmit.Collections.Counters
+  commentId: N:PocoEmit.Collections.Counters
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Counters
+  nameWithType: PocoEmit.Collections.Counters
+  fullName: PocoEmit.Collections.Counters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.Counters.IEmitCounter
+  commentId: T:PocoEmit.Collections.Counters.IEmitCounter
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.IEmitCounter.html
+  name: IEmitCounter
+  nameWithType: IEmitCounter
+  fullName: PocoEmit.Collections.Counters.IEmitCounter
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections.Counters.ArrayLength.#ctor*
+  commentId: Overload:PocoEmit.Collections.Counters.ArrayLength.#ctor
+  href: PocoEmit.Collections.Counters.ArrayLength.html#PocoEmit_Collections_Counters_ArrayLength__ctor
+  name: ArrayLength
+  nameWithType: ArrayLength.ArrayLength
+  fullName: PocoEmit.Collections.Counters.ArrayLength.ArrayLength
+  nameWithType.vb: ArrayLength.New
+  fullName.vb: PocoEmit.Collections.Counters.ArrayLength.New
+  name.vb: New
+- uid: PocoEmit.Collections.Counters.ArrayLength.Count*
+  commentId: Overload:PocoEmit.Collections.Counters.ArrayLength.Count
+  href: PocoEmit.Collections.Counters.ArrayLength.html#PocoEmit_Collections_Counters_ArrayLength_Count_System_Linq_Expressions_Expression_
+  name: Count
+  nameWithType: ArrayLength.Count
+  fullName: PocoEmit.Collections.Counters.ArrayLength.Count
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: PocoEmit.Collections.Counters.ArrayLength
+  commentId: T:PocoEmit.Collections.Counters.ArrayLength
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.ArrayLength.html
+  name: ArrayLength
+  nameWithType: ArrayLength
+  fullName: PocoEmit.Collections.Counters.ArrayLength

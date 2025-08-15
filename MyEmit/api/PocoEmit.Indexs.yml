@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Indexs
+  commentId: N:PocoEmit.Indexs
+  id: PocoEmit.Indexs
+  children:
+  - PocoEmit.Indexs.IEmitIndexMemberReader
+  - PocoEmit.Indexs.IEmitIndexMemberWriter
+  - PocoEmit.Indexs.IEmitMemberIndex
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Indexs
+  nameWithType: PocoEmit.Indexs
+  fullName: PocoEmit.Indexs
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Indexs.IEmitMemberIndex
+  commentId: T:PocoEmit.Indexs.IEmitMemberIndex
+  parent: PocoEmit.Indexs
+  href: PocoEmit.Indexs.IEmitMemberIndex.html
+  name: IEmitMemberIndex
+  nameWithType: IEmitMemberIndex
+  fullName: PocoEmit.Indexs.IEmitMemberIndex
+- uid: PocoEmit.Indexs.IEmitIndexMemberReader
+  commentId: T:PocoEmit.Indexs.IEmitIndexMemberReader
+  parent: PocoEmit.Indexs
+  href: PocoEmit.Indexs.IEmitIndexMemberReader.html
+  name: IEmitIndexMemberReader
+  nameWithType: IEmitIndexMemberReader
+  fullName: PocoEmit.Indexs.IEmitIndexMemberReader
+- uid: PocoEmit.Indexs.IEmitIndexMemberWriter
+  commentId: T:PocoEmit.Indexs.IEmitIndexMemberWriter
+  parent: PocoEmit.Indexs
+  href: PocoEmit.Indexs.IEmitIndexMemberWriter.html
+  name: IEmitIndexMemberWriter
+  nameWithType: IEmitIndexMemberWriter
+  fullName: PocoEmit.Indexs.IEmitIndexMemberWriter
+- uid: PocoEmit.Indexs
+  commentId: N:PocoEmit.Indexs
+  href: PocoEmit.html
+  name: PocoEmit.Indexs
+  nameWithType: PocoEmit.Indexs
+  fullName: PocoEmit.Indexs
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Indexs
+    name: Indexs
+    href: PocoEmit.Indexs.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Indexs
+    name: Indexs
+    href: PocoEmit.Indexs.html

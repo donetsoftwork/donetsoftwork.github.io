@@ -1,0 +1,655 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Members.ConvertInstanceReader
+  commentId: T:PocoEmit.Members.ConvertInstanceReader
+  id: ConvertInstanceReader
+  parent: PocoEmit.Members
+  children:
+  - PocoEmit.Members.ConvertInstanceReader.#ctor(PocoEmit.Converters.IEmitConverter,PocoEmit.Members.IEmitMemberReader)
+  - PocoEmit.Members.ConvertInstanceReader.Converter
+  - PocoEmit.Members.ConvertInstanceReader.Inner
+  - PocoEmit.Members.ConvertInstanceReader.InstanceType
+  - PocoEmit.Members.ConvertInstanceReader.Name
+  - PocoEmit.Members.ConvertInstanceReader.Read(System.Linq.Expressions.Expression)
+  - PocoEmit.Members.ConvertInstanceReader.ValueType
+  langs:
+  - csharp
+  - vb
+  name: ConvertInstanceReader
+  nameWithType: ConvertInstanceReader
+  fullName: PocoEmit.Members.ConvertInstanceReader
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Members/ConvertInstanceReader.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConvertInstanceReader
+    path: ../PocoEmit/Members/ConvertInstanceReader.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 转化实体类型读成员
+  example: []
+  syntax:
+    content: 'public class ConvertInstanceReader : IEmitMemberReader, IMember, IEmitReader, ICompileInfo'
+    content.vb: Public Class ConvertInstanceReader Implements IEmitMemberReader, IMember, IEmitReader, ICompileInfo
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Members.IEmitMemberReader
+  - PocoEmit.Members.IMember
+  - PocoEmit.Members.IEmitReader
+  - PocoEmit.Configuration.ICompileInfo
+  extensionMethods:
+  - PocoEmit.Members.IEmitMemberReader.PocoEmit.PocoEmitServices.Build``2
+- uid: PocoEmit.Members.ConvertInstanceReader.#ctor(PocoEmit.Converters.IEmitConverter,PocoEmit.Members.IEmitMemberReader)
+  commentId: M:PocoEmit.Members.ConvertInstanceReader.#ctor(PocoEmit.Converters.IEmitConverter,PocoEmit.Members.IEmitMemberReader)
+  id: '#ctor(PocoEmit.Converters.IEmitConverter,PocoEmit.Members.IEmitMemberReader)'
+  parent: PocoEmit.Members.ConvertInstanceReader
+  langs:
+  - csharp
+  - vb
+  name: ConvertInstanceReader(IEmitConverter, IEmitMemberReader)
+  nameWithType: ConvertInstanceReader.ConvertInstanceReader(IEmitConverter, IEmitMemberReader)
+  fullName: PocoEmit.Members.ConvertInstanceReader.ConvertInstanceReader(PocoEmit.Converters.IEmitConverter, PocoEmit.Members.IEmitMemberReader)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit/Members/ConvertInstanceReader.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit/Members/ConvertInstanceReader.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 转化实体类型读成员
+  example: []
+  syntax:
+    content: public ConvertInstanceReader(IEmitConverter converter, IEmitMemberReader inner)
+    parameters:
+    - id: converter
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    - id: inner
+      type: PocoEmit.Members.IEmitMemberReader
+      description: ''
+    content.vb: Public Sub New(converter As IEmitConverter, inner As IEmitMemberReader)
+  overload: PocoEmit.Members.ConvertInstanceReader.#ctor*
+  nameWithType.vb: ConvertInstanceReader.New(IEmitConverter, IEmitMemberReader)
+  fullName.vb: PocoEmit.Members.ConvertInstanceReader.New(PocoEmit.Converters.IEmitConverter, PocoEmit.Members.IEmitMemberReader)
+  name.vb: New(IEmitConverter, IEmitMemberReader)
+- uid: PocoEmit.Members.ConvertInstanceReader.Converter
+  commentId: P:PocoEmit.Members.ConvertInstanceReader.Converter
+  id: Converter
+  parent: PocoEmit.Members.ConvertInstanceReader
+  langs:
+  - csharp
+  - vb
+  name: Converter
+  nameWithType: ConvertInstanceReader.Converter
+  fullName: PocoEmit.Members.ConvertInstanceReader.Converter
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/ConvertInstanceReader.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Converter
+    path: ../PocoEmit/Members/ConvertInstanceReader.cs
+    startLine: 21
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 转换器
+  example: []
+  syntax:
+    content: public IEmitConverter Converter { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+    content.vb: Public ReadOnly Property Converter As IEmitConverter
+  overload: PocoEmit.Members.ConvertInstanceReader.Converter*
+- uid: PocoEmit.Members.ConvertInstanceReader.Inner
+  commentId: P:PocoEmit.Members.ConvertInstanceReader.Inner
+  id: Inner
+  parent: PocoEmit.Members.ConvertInstanceReader
+  langs:
+  - csharp
+  - vb
+  name: Inner
+  nameWithType: ConvertInstanceReader.Inner
+  fullName: PocoEmit.Members.ConvertInstanceReader.Inner
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/ConvertInstanceReader.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Inner
+    path: ../PocoEmit/Members/ConvertInstanceReader.cs
+    startLine: 27
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 内部成员
+  example: []
+  syntax:
+    content: public IEmitMemberReader Inner { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Members.IEmitMemberReader
+    content.vb: Public ReadOnly Property Inner As IEmitMemberReader
+  overload: PocoEmit.Members.ConvertInstanceReader.Inner*
+- uid: PocoEmit.Members.ConvertInstanceReader.InstanceType
+  commentId: P:PocoEmit.Members.ConvertInstanceReader.InstanceType
+  id: InstanceType
+  parent: PocoEmit.Members.ConvertInstanceReader
+  langs:
+  - csharp
+  - vb
+  name: InstanceType
+  nameWithType: ConvertInstanceReader.InstanceType
+  fullName: PocoEmit.Members.ConvertInstanceReader.InstanceType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/ConvertInstanceReader.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: InstanceType
+    path: ../PocoEmit/Members/ConvertInstanceReader.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 实体类型
+  example: []
+  syntax:
+    content: public Type InstanceType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property InstanceType As Type
+  overload: PocoEmit.Members.ConvertInstanceReader.InstanceType*
+  implements:
+  - PocoEmit.Members.IMember.InstanceType
+- uid: PocoEmit.Members.ConvertInstanceReader.Name
+  commentId: P:PocoEmit.Members.ConvertInstanceReader.Name
+  id: Name
+  parent: PocoEmit.Members.ConvertInstanceReader
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ConvertInstanceReader.Name
+  fullName: PocoEmit.Members.ConvertInstanceReader.Name
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/ConvertInstanceReader.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Name
+    path: ../PocoEmit/Members/ConvertInstanceReader.cs
+    startLine: 33
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 成员名
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: PocoEmit.Members.ConvertInstanceReader.Name*
+  implements:
+  - PocoEmit.Members.IMember.Name
+- uid: PocoEmit.Members.ConvertInstanceReader.ValueType
+  commentId: P:PocoEmit.Members.ConvertInstanceReader.ValueType
+  id: ValueType
+  parent: PocoEmit.Members.ConvertInstanceReader
+  langs:
+  - csharp
+  - vb
+  name: ValueType
+  nameWithType: ConvertInstanceReader.ValueType
+  fullName: PocoEmit.Members.ConvertInstanceReader.ValueType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/ConvertInstanceReader.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ValueType
+    path: ../PocoEmit/Members/ConvertInstanceReader.cs
+    startLine: 36
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 值类型
+  example: []
+  syntax:
+    content: public Type ValueType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ValueType As Type
+  overload: PocoEmit.Members.ConvertInstanceReader.ValueType*
+  implements:
+  - PocoEmit.Members.IMember.ValueType
+- uid: PocoEmit.Members.ConvertInstanceReader.Read(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Members.ConvertInstanceReader.Read(System.Linq.Expressions.Expression)
+  id: Read(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Members.ConvertInstanceReader
+  langs:
+  - csharp
+  - vb
+  name: Read(Expression)
+  nameWithType: ConvertInstanceReader.Read(Expression)
+  fullName: PocoEmit.Members.ConvertInstanceReader.Read(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Members/ConvertInstanceReader.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Read
+    path: ../PocoEmit/Members/ConvertInstanceReader.cs
+    startLine: 46
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 读取
+  example: []
+  syntax:
+    content: public Expression Read(Expression instance)
+    parameters:
+    - id: instance
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Public Function Read(instance As Expression) As Expression
+  overload: PocoEmit.Members.ConvertInstanceReader.Read*
+  implements:
+  - PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Members.IEmitMemberReader
+  commentId: T:PocoEmit.Members.IEmitMemberReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberReader.html
+  name: IEmitMemberReader
+  nameWithType: IEmitMemberReader
+  fullName: PocoEmit.Members.IEmitMemberReader
+- uid: PocoEmit.Members.IMember
+  commentId: T:PocoEmit.Members.IMember
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IMember.html
+  name: IMember
+  nameWithType: IMember
+  fullName: PocoEmit.Members.IMember
+- uid: PocoEmit.Members.IEmitReader
+  commentId: T:PocoEmit.Members.IEmitReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitReader.html
+  name: IEmitReader
+  nameWithType: IEmitReader
+  fullName: PocoEmit.Members.IEmitReader
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Members.IEmitMemberReader.PocoEmit.PocoEmitServices.Build``2
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  parent: PocoEmit.PocoEmitServices
+  definition: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  name: Build<TInstance, TValue>(IEmitMemberReader)
+  nameWithType: PocoEmitServices.Build<TInstance, TValue>(IEmitMemberReader)
+  fullName: PocoEmit.PocoEmitServices.Build<TInstance, TValue>(PocoEmit.Members.IEmitMemberReader)
+  nameWithType.vb: PocoEmitServices.Build(Of TInstance, TValue)(IEmitMemberReader)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberReader)
+  name.vb: Build(Of TInstance, TValue)(IEmitMemberReader)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  commentId: M:PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+  href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  name: Build<TInstance, TValue>(IEmitMemberReader)
+  nameWithType: PocoEmitServices.Build<TInstance, TValue>(IEmitMemberReader)
+  fullName: PocoEmit.PocoEmitServices.Build<TInstance, TValue>(PocoEmit.Members.IEmitMemberReader)
+  nameWithType.vb: PocoEmitServices.Build(Of TInstance, TValue)(IEmitMemberReader)
+  fullName.vb: PocoEmit.PocoEmitServices.Build(Of TInstance, TValue)(PocoEmit.Members.IEmitMemberReader)
+  name.vb: Build(Of TInstance, TValue)(IEmitMemberReader)
+  spec.csharp:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.PocoEmitServices.Build``2(PocoEmit.Members.IEmitMemberReader)
+    name: Build
+    href: PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Build__2_PocoEmit_Members_IEmitMemberReader_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: PocoEmit.PocoEmitServices
+  commentId: T:PocoEmit.PocoEmitServices
+  parent: PocoEmit
+  href: PocoEmit.PocoEmitServices.html
+  name: PocoEmitServices
+  nameWithType: PocoEmitServices
+  fullName: PocoEmit.PocoEmitServices
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.Members.ConvertInstanceReader.#ctor*
+  commentId: Overload:PocoEmit.Members.ConvertInstanceReader.#ctor
+  href: PocoEmit.Members.ConvertInstanceReader.html#PocoEmit_Members_ConvertInstanceReader__ctor_PocoEmit_Converters_IEmitConverter_PocoEmit_Members_IEmitMemberReader_
+  name: ConvertInstanceReader
+  nameWithType: ConvertInstanceReader.ConvertInstanceReader
+  fullName: PocoEmit.Members.ConvertInstanceReader.ConvertInstanceReader
+  nameWithType.vb: ConvertInstanceReader.New
+  fullName.vb: PocoEmit.Members.ConvertInstanceReader.New
+  name.vb: New
+- uid: PocoEmit.Converters.IEmitConverter
+  commentId: T:PocoEmit.Converters.IEmitConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IEmitConverter.html
+  name: IEmitConverter
+  nameWithType: IEmitConverter
+  fullName: PocoEmit.Converters.IEmitConverter
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: PocoEmit.Members.ConvertInstanceReader.Converter*
+  commentId: Overload:PocoEmit.Members.ConvertInstanceReader.Converter
+  href: PocoEmit.Members.ConvertInstanceReader.html#PocoEmit_Members_ConvertInstanceReader_Converter
+  name: Converter
+  nameWithType: ConvertInstanceReader.Converter
+  fullName: PocoEmit.Members.ConvertInstanceReader.Converter
+- uid: PocoEmit.Members.ConvertInstanceReader.Inner*
+  commentId: Overload:PocoEmit.Members.ConvertInstanceReader.Inner
+  href: PocoEmit.Members.ConvertInstanceReader.html#PocoEmit_Members_ConvertInstanceReader_Inner
+  name: Inner
+  nameWithType: ConvertInstanceReader.Inner
+  fullName: PocoEmit.Members.ConvertInstanceReader.Inner
+- uid: PocoEmit.Members.ConvertInstanceReader.InstanceType*
+  commentId: Overload:PocoEmit.Members.ConvertInstanceReader.InstanceType
+  href: PocoEmit.Members.ConvertInstanceReader.html#PocoEmit_Members_ConvertInstanceReader_InstanceType
+  name: InstanceType
+  nameWithType: ConvertInstanceReader.InstanceType
+  fullName: PocoEmit.Members.ConvertInstanceReader.InstanceType
+- uid: PocoEmit.Members.IMember.InstanceType
+  commentId: P:PocoEmit.Members.IMember.InstanceType
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_InstanceType
+  name: InstanceType
+  nameWithType: IMember.InstanceType
+  fullName: PocoEmit.Members.IMember.InstanceType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Members.ConvertInstanceReader.Name*
+  commentId: Overload:PocoEmit.Members.ConvertInstanceReader.Name
+  href: PocoEmit.Members.ConvertInstanceReader.html#PocoEmit_Members_ConvertInstanceReader_Name
+  name: Name
+  nameWithType: ConvertInstanceReader.Name
+  fullName: PocoEmit.Members.ConvertInstanceReader.Name
+- uid: PocoEmit.Members.IMember.Name
+  commentId: P:PocoEmit.Members.IMember.Name
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_Name
+  name: Name
+  nameWithType: IMember.Name
+  fullName: PocoEmit.Members.IMember.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PocoEmit.Members.ConvertInstanceReader.ValueType*
+  commentId: Overload:PocoEmit.Members.ConvertInstanceReader.ValueType
+  href: PocoEmit.Members.ConvertInstanceReader.html#PocoEmit_Members_ConvertInstanceReader_ValueType
+  name: ValueType
+  nameWithType: ConvertInstanceReader.ValueType
+  fullName: PocoEmit.Members.ConvertInstanceReader.ValueType
+- uid: PocoEmit.Members.IMember.ValueType
+  commentId: P:PocoEmit.Members.IMember.ValueType
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_ValueType
+  name: ValueType
+  nameWithType: IMember.ValueType
+  fullName: PocoEmit.Members.IMember.ValueType
+- uid: PocoEmit.Members.ConvertInstanceReader.Read*
+  commentId: Overload:PocoEmit.Members.ConvertInstanceReader.Read
+  href: PocoEmit.Members.ConvertInstanceReader.html#PocoEmit_Members_ConvertInstanceReader_Read_System_Linq_Expressions_Expression_
+  name: Read
+  nameWithType: ConvertInstanceReader.Read
+  fullName: PocoEmit.Members.ConvertInstanceReader.Read
+- uid: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Members.IEmitReader
+  isExternal: true
+  href: PocoEmit.Members.IEmitReader.html#PocoEmit_Members_IEmitReader_Read_System_Linq_Expressions_Expression_
+  name: Read(Expression)
+  nameWithType: IEmitReader.Read(Expression)
+  fullName: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+    name: Read
+    href: PocoEmit.Members.IEmitReader.html#PocoEmit_Members_IEmitReader_Read_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Members.IEmitReader.Read(System.Linq.Expressions.Expression)
+    name: Read
+    href: PocoEmit.Members.IEmitReader.html#PocoEmit_Members_IEmitReader_Read_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

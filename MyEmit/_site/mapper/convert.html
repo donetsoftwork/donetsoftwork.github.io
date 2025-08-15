@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>类型转化 | 简单对象Emit工具 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="类型转化 | 简单对象Emit工具 ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyEmit/blob/main/docs/mapper/convert.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MyEmit">
+            MyEmit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="类型转化">类型转化</h1>
+
+<blockquote>
+<ul>
+<li>调用<a class="xref" href="../api/PocoEmit.IMapper.html">IMapper</a>的方法来转化</li>
+<li>IMapper继承<a class="xref" href="../api/PocoEmit.IPoco.html">IPoco</a></li>
+<li>一般使用<a class="xref" href="../api/PocoEmit.Mapper.html">Mapper</a>的实例或Mapper.Global</li>
+</ul>
+</blockquote>
+<h2 id="一转化方式">一、转化方式</h2>
+<blockquote>
+<ul>
+<li>调用Convert方法直接转化</li>
+<li>调用GetConvertFunc方法委托转化</li>
+<li>调用GetConverter方法接口转化</li>
+<li>以上继承自PocoEmit,与<a href="../poco/convert.html">PocoEmit转化方式</a>一致</li>
+</ul>
+</blockquote>
+<h2 id="二支持范围">二、支持范围</h2>
+<h3 id="1-基础类型转化">1. 基础类型转化</h3>
+<blockquote>
+<ul>
+<li>继承自PocoEmit,与<a href="../poco/convert.html">PocoEmit转化方式</a>一致</li>
+</ul>
+</blockquote>
+<h3 id="2-支持单参数转化">2. 支持单参数转化</h3>
+<blockquote>
+<ul>
+<li>继承自PocoEmit,与<a href="../poco/convert.html">PocoEmit转化方式</a>一致</li>
+</ul>
+</blockquote>
+<h3 id="3-支持可空类型">3. 支持可空类型</h3>
+<blockquote>
+<ul>
+<li>继承自PocoEmit,与<a href="../poco/convert.html">PocoEmit转化方式</a>一致</li>
+</ul>
+</blockquote>
+<h3 id="4-支持成员转化">4. 支持成员转化</h3>
+<blockquote>
+<ul>
+<li>如果源类型含目标类型的成员,按该成员转化</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class MyMapperId(int id)
+{
+    public int Id { get; } = id;
+}
+var source = new MyMapperId(22);
+var result = _mapper.Convert&lt;MyMapperId, int&gt;(source);
+</code></pre>
+<h3 id="5-复制成员转化">5. 复制成员转化</h3>
+<blockquote>
+<ul>
+<li>通过两个类型的复制器来转化成员</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">var user = new User { Id = 1, Name = &quot;Jxj&quot; };
+// 转化
+var dto = Mapper.Global.Convert&lt;User, UserDTO&gt;(user);
+// dto.Id = 1, dto.Name = &quot;Jxj&quot;
+</code></pre>
+<h3 id="6-构造函数转化">6. 构造函数转化</h3>
+<blockquote>
+<ul>
+<li>通过构造函数参数传入来转化成员</li>
+<li>可以部分字段通过构造函数参数,另一部分通过成员复制器转化</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">class MyMapper(MyMapperId id)
+{
+    public MyMapperId Id { get; } = id;
+    public string Name { get; set; }
+}
+var source = new MyMapperDTO { Id = 222, Name = nameof(MyMapperDTO) };
+var result = _mapper.Convert&lt;MyMapperDTO, MyMapper&gt;(source);
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyEmit/blob/main/docs/mapper/convert.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) MyEmit All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

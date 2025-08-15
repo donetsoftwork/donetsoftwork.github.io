@@ -1,0 +1,334 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Configuration.MapperOptions
+  commentId: T:PocoEmit.Configuration.MapperOptions
+  id: MapperOptions
+  parent: PocoEmit.Configuration
+  children:
+  - PocoEmit.Configuration.MapperOptions.ActivatorConfigurationCapacity
+  - PocoEmit.Configuration.MapperOptions.ArgumentActivatorConfigurationCapacity
+  - PocoEmit.Configuration.MapperOptions.CopierCapacity
+  - PocoEmit.Configuration.MapperOptions.CopierConfigurationCapacity
+  - PocoEmit.Configuration.MapperOptions.DefaultValueCapacity
+  - PocoEmit.Configuration.MapperOptions.MatchCapacity
+  - PocoEmit.Configuration.MapperOptions.PrimitiveCapacity
+  langs:
+  - csharp
+  - vb
+  name: MapperOptions
+  nameWithType: MapperOptions
+  fullName: PocoEmit.Configuration.MapperOptions
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/MapperOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MapperOptions
+    path: ../PocoEmit.Mapper/Configuration/MapperOptions.cs
+    startLine: 5
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 成员容量配置
+  example: []
+  syntax:
+    content: 'public class MapperOptions : PocoOptions'
+    content.vb: Public Class MapperOptions Inherits PocoOptions
+  inheritance:
+  - System.Object
+  - PocoEmit.Configuration.PocoOptions
+  inheritedMembers:
+  - PocoEmit.Configuration.PocoOptions.ConcurrencyLevel
+  - PocoEmit.Configuration.PocoOptions.ConverterCapacity
+  - PocoEmit.Configuration.PocoOptions.ConverterConfigurationCapacity
+  - PocoEmit.Configuration.PocoOptions.MemberBundleCapacity
+- uid: PocoEmit.Configuration.MapperOptions.CopierCapacity
+  commentId: F:PocoEmit.Configuration.MapperOptions.CopierCapacity
+  id: CopierCapacity
+  parent: PocoEmit.Configuration.MapperOptions
+  langs:
+  - csharp
+  - vb
+  name: CopierCapacity
+  nameWithType: MapperOptions.CopierCapacity
+  fullName: PocoEmit.Configuration.MapperOptions.CopierCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/MapperOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CopierCapacity
+    path: ../PocoEmit.Mapper/Configuration/MapperOptions.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 转化器数量
+  example: []
+  syntax:
+    content: public int CopierCapacity
+    return:
+      type: System.Int32
+    content.vb: Public CopierCapacity As Integer
+- uid: PocoEmit.Configuration.MapperOptions.CopierConfigurationCapacity
+  commentId: F:PocoEmit.Configuration.MapperOptions.CopierConfigurationCapacity
+  id: CopierConfigurationCapacity
+  parent: PocoEmit.Configuration.MapperOptions
+  langs:
+  - csharp
+  - vb
+  name: CopierConfigurationCapacity
+  nameWithType: MapperOptions.CopierConfigurationCapacity
+  fullName: PocoEmit.Configuration.MapperOptions.CopierConfigurationCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/MapperOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CopierConfigurationCapacity
+    path: ../PocoEmit.Mapper/Configuration/MapperOptions.cs
+    startLine: 14
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 转化器配置数量
+  example: []
+  syntax:
+    content: public int CopierConfigurationCapacity
+    return:
+      type: System.Int32
+    content.vb: Public CopierConfigurationCapacity As Integer
+- uid: PocoEmit.Configuration.MapperOptions.ActivatorConfigurationCapacity
+  commentId: F:PocoEmit.Configuration.MapperOptions.ActivatorConfigurationCapacity
+  id: ActivatorConfigurationCapacity
+  parent: PocoEmit.Configuration.MapperOptions
+  langs:
+  - csharp
+  - vb
+  name: ActivatorConfigurationCapacity
+  nameWithType: MapperOptions.ActivatorConfigurationCapacity
+  fullName: PocoEmit.Configuration.MapperOptions.ActivatorConfigurationCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/MapperOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ActivatorConfigurationCapacity
+    path: ../PocoEmit.Mapper/Configuration/MapperOptions.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 激活器配置数量
+  example: []
+  syntax:
+    content: public int ActivatorConfigurationCapacity
+    return:
+      type: System.Int32
+    content.vb: Public ActivatorConfigurationCapacity As Integer
+- uid: PocoEmit.Configuration.MapperOptions.ArgumentActivatorConfigurationCapacity
+  commentId: F:PocoEmit.Configuration.MapperOptions.ArgumentActivatorConfigurationCapacity
+  id: ArgumentActivatorConfigurationCapacity
+  parent: PocoEmit.Configuration.MapperOptions
+  langs:
+  - csharp
+  - vb
+  name: ArgumentActivatorConfigurationCapacity
+  nameWithType: MapperOptions.ArgumentActivatorConfigurationCapacity
+  fullName: PocoEmit.Configuration.MapperOptions.ArgumentActivatorConfigurationCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/MapperOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ArgumentActivatorConfigurationCapacity
+    path: ../PocoEmit.Mapper/Configuration/MapperOptions.cs
+    startLine: 22
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 带参激活器配置数量
+  example: []
+  syntax:
+    content: public int ArgumentActivatorConfigurationCapacity
+    return:
+      type: System.Int32
+    content.vb: Public ArgumentActivatorConfigurationCapacity As Integer
+- uid: PocoEmit.Configuration.MapperOptions.MatchCapacity
+  commentId: F:PocoEmit.Configuration.MapperOptions.MatchCapacity
+  id: MatchCapacity
+  parent: PocoEmit.Configuration.MapperOptions
+  langs:
+  - csharp
+  - vb
+  name: MatchCapacity
+  nameWithType: MapperOptions.MatchCapacity
+  fullName: PocoEmit.Configuration.MapperOptions.MatchCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/MapperOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MatchCapacity
+    path: ../PocoEmit.Mapper/Configuration/MapperOptions.cs
+    startLine: 26
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 成员匹配配置数量
+  example: []
+  syntax:
+    content: public int MatchCapacity
+    return:
+      type: System.Int32
+    content.vb: Public MatchCapacity As Integer
+- uid: PocoEmit.Configuration.MapperOptions.PrimitiveCapacity
+  commentId: F:PocoEmit.Configuration.MapperOptions.PrimitiveCapacity
+  id: PrimitiveCapacity
+  parent: PocoEmit.Configuration.MapperOptions
+  langs:
+  - csharp
+  - vb
+  name: PrimitiveCapacity
+  nameWithType: MapperOptions.PrimitiveCapacity
+  fullName: PocoEmit.Configuration.MapperOptions.PrimitiveCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/MapperOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: PrimitiveCapacity
+    path: ../PocoEmit.Mapper/Configuration/MapperOptions.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 基础类型配置数量
+  example: []
+  syntax:
+    content: public int PrimitiveCapacity
+    return:
+      type: System.Int32
+    content.vb: Public PrimitiveCapacity As Integer
+- uid: PocoEmit.Configuration.MapperOptions.DefaultValueCapacity
+  commentId: F:PocoEmit.Configuration.MapperOptions.DefaultValueCapacity
+  id: DefaultValueCapacity
+  parent: PocoEmit.Configuration.MapperOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultValueCapacity
+  nameWithType: MapperOptions.DefaultValueCapacity
+  fullName: PocoEmit.Configuration.MapperOptions.DefaultValueCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Configuration/MapperOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: DefaultValueCapacity
+    path: ../PocoEmit.Mapper/Configuration/MapperOptions.cs
+    startLine: 34
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Configuration
+  summary: 默认值配置数量
+  example: []
+  syntax:
+    content: public int DefaultValueCapacity
+    return:
+      type: System.Int32
+    content.vb: Public DefaultValueCapacity As Integer
+references:
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Configuration.PocoOptions
+  commentId: T:PocoEmit.Configuration.PocoOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.PocoOptions.html
+  name: PocoOptions
+  nameWithType: PocoOptions
+  fullName: PocoEmit.Configuration.PocoOptions
+- uid: PocoEmit.Configuration.PocoOptions.ConcurrencyLevel
+  commentId: F:PocoEmit.Configuration.PocoOptions.ConcurrencyLevel
+  parent: PocoEmit.Configuration.PocoOptions
+  href: PocoEmit.Configuration.PocoOptions.html#PocoEmit_Configuration_PocoOptions_ConcurrencyLevel
+  name: ConcurrencyLevel
+  nameWithType: PocoOptions.ConcurrencyLevel
+  fullName: PocoEmit.Configuration.PocoOptions.ConcurrencyLevel
+- uid: PocoEmit.Configuration.PocoOptions.ConverterCapacity
+  commentId: F:PocoEmit.Configuration.PocoOptions.ConverterCapacity
+  parent: PocoEmit.Configuration.PocoOptions
+  href: PocoEmit.Configuration.PocoOptions.html#PocoEmit_Configuration_PocoOptions_ConverterCapacity
+  name: ConverterCapacity
+  nameWithType: PocoOptions.ConverterCapacity
+  fullName: PocoEmit.Configuration.PocoOptions.ConverterCapacity
+- uid: PocoEmit.Configuration.PocoOptions.ConverterConfigurationCapacity
+  commentId: F:PocoEmit.Configuration.PocoOptions.ConverterConfigurationCapacity
+  parent: PocoEmit.Configuration.PocoOptions
+  href: PocoEmit.Configuration.PocoOptions.html#PocoEmit_Configuration_PocoOptions_ConverterConfigurationCapacity
+  name: ConverterConfigurationCapacity
+  nameWithType: PocoOptions.ConverterConfigurationCapacity
+  fullName: PocoEmit.Configuration.PocoOptions.ConverterConfigurationCapacity
+- uid: PocoEmit.Configuration.PocoOptions.MemberBundleCapacity
+  commentId: F:PocoEmit.Configuration.PocoOptions.MemberBundleCapacity
+  parent: PocoEmit.Configuration.PocoOptions
+  href: PocoEmit.Configuration.PocoOptions.html#PocoEmit_Configuration_PocoOptions_MemberBundleCapacity
+  name: MemberBundleCapacity
+  nameWithType: PocoOptions.MemberBundleCapacity
+  fullName: PocoEmit.Configuration.PocoOptions.MemberBundleCapacity
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

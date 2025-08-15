@@ -1,0 +1,828 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.MemberBundle
+  commentId: T:PocoEmit.Collections.MemberBundle
+  id: MemberBundle
+  parent: PocoEmit.Collections
+  children:
+  - PocoEmit.Collections.MemberBundle.#ctor(System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo},System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader},System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo},System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter})
+  - PocoEmit.Collections.MemberBundle.EmitReaders
+  - PocoEmit.Collections.MemberBundle.EmitWriters
+  - PocoEmit.Collections.MemberBundle.ReadMembers
+  - PocoEmit.Collections.MemberBundle.WriteMembers
+  langs:
+  - csharp
+  - vb
+  name: MemberBundle
+  nameWithType: MemberBundle
+  fullName: PocoEmit.Collections.MemberBundle
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberBundle.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MemberBundle
+    path: ../PocoEmit/Collections/MemberBundle.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 成员集合
+  example: []
+  syntax:
+    content: public class MemberBundle
+    content.vb: Public Class MemberBundle
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - PocoEmit.Collections.MemberBundle.PocoEmit.ReflectionHelper.GetEmitReader(System.String)
+  - PocoEmit.Collections.MemberBundle.PocoEmit.ReflectionHelper.GetEmitWriter(System.String)
+  - PocoEmit.Collections.MemberBundle.PocoEmit.ReflectionHelper.GetReadMember(System.String)
+  - PocoEmit.Collections.MemberBundle.PocoEmit.ReflectionHelper.GetWriteMember(System.String)
+- uid: PocoEmit.Collections.MemberBundle.#ctor(System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo},System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader},System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo},System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter})
+  commentId: M:PocoEmit.Collections.MemberBundle.#ctor(System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo},System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader},System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo},System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter})
+  id: '#ctor(System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo},System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader},System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo},System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter})'
+  parent: PocoEmit.Collections.MemberBundle
+  langs:
+  - csharp
+  - vb
+  name: MemberBundle(IDictionary<string, MemberInfo>, IDictionary<string, IEmitMemberReader>, IDictionary<string, MemberInfo>, IDictionary<string, IEmitMemberWriter>)
+  nameWithType: MemberBundle.MemberBundle(IDictionary<string, MemberInfo>, IDictionary<string, IEmitMemberReader>, IDictionary<string, MemberInfo>, IDictionary<string, IEmitMemberWriter>)
+  fullName: PocoEmit.Collections.MemberBundle.MemberBundle(System.Collections.Generic.IDictionary<string, System.Reflection.MemberInfo>, System.Collections.Generic.IDictionary<string, PocoEmit.Members.IEmitMemberReader>, System.Collections.Generic.IDictionary<string, System.Reflection.MemberInfo>, System.Collections.Generic.IDictionary<string, PocoEmit.Members.IEmitMemberWriter>)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberBundle.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit/Collections/MemberBundle.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 成员集合
+  example: []
+  syntax:
+    content: public MemberBundle(IDictionary<string, MemberInfo> readMembers, IDictionary<string, IEmitMemberReader> emitReaders, IDictionary<string, MemberInfo> writeMembers, IDictionary<string, IEmitMemberWriter> emitWriters)
+    parameters:
+    - id: readMembers
+      type: System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo}
+      description: 可读成员
+    - id: emitReaders
+      type: System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader}
+      description: 读取器
+    - id: writeMembers
+      type: System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo}
+      description: 可写成员
+    - id: emitWriters
+      type: System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter}
+      description: 写入器
+    content.vb: Public Sub New(readMembers As IDictionary(Of String, MemberInfo), emitReaders As IDictionary(Of String, IEmitMemberReader), writeMembers As IDictionary(Of String, MemberInfo), emitWriters As IDictionary(Of String, IEmitMemberWriter))
+  overload: PocoEmit.Collections.MemberBundle.#ctor*
+  nameWithType.vb: MemberBundle.New(IDictionary(Of String, MemberInfo), IDictionary(Of String, IEmitMemberReader), IDictionary(Of String, MemberInfo), IDictionary(Of String, IEmitMemberWriter))
+  fullName.vb: PocoEmit.Collections.MemberBundle.New(System.Collections.Generic.IDictionary(Of String, System.Reflection.MemberInfo), System.Collections.Generic.IDictionary(Of String, PocoEmit.Members.IEmitMemberReader), System.Collections.Generic.IDictionary(Of String, System.Reflection.MemberInfo), System.Collections.Generic.IDictionary(Of String, PocoEmit.Members.IEmitMemberWriter))
+  name.vb: New(IDictionary(Of String, MemberInfo), IDictionary(Of String, IEmitMemberReader), IDictionary(Of String, MemberInfo), IDictionary(Of String, IEmitMemberWriter))
+- uid: PocoEmit.Collections.MemberBundle.ReadMembers
+  commentId: P:PocoEmit.Collections.MemberBundle.ReadMembers
+  id: ReadMembers
+  parent: PocoEmit.Collections.MemberBundle
+  langs:
+  - csharp
+  - vb
+  name: ReadMembers
+  nameWithType: MemberBundle.ReadMembers
+  fullName: PocoEmit.Collections.MemberBundle.ReadMembers
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberBundle.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ReadMembers
+    path: ../PocoEmit/Collections/MemberBundle.cs
+    startLine: 33
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 可读成员
+  example: []
+  syntax:
+    content: public IDictionary<string, MemberInfo> ReadMembers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo}
+    content.vb: Public ReadOnly Property ReadMembers As IDictionary(Of String, MemberInfo)
+  overload: PocoEmit.Collections.MemberBundle.ReadMembers*
+- uid: PocoEmit.Collections.MemberBundle.EmitReaders
+  commentId: P:PocoEmit.Collections.MemberBundle.EmitReaders
+  id: EmitReaders
+  parent: PocoEmit.Collections.MemberBundle
+  langs:
+  - csharp
+  - vb
+  name: EmitReaders
+  nameWithType: MemberBundle.EmitReaders
+  fullName: PocoEmit.Collections.MemberBundle.EmitReaders
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberBundle.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: EmitReaders
+    path: ../PocoEmit/Collections/MemberBundle.cs
+    startLine: 38
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 读取器
+  example: []
+  syntax:
+    content: public IDictionary<string, IEmitMemberReader> EmitReaders { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader}
+    content.vb: Public ReadOnly Property EmitReaders As IDictionary(Of String, IEmitMemberReader)
+  overload: PocoEmit.Collections.MemberBundle.EmitReaders*
+- uid: PocoEmit.Collections.MemberBundle.WriteMembers
+  commentId: P:PocoEmit.Collections.MemberBundle.WriteMembers
+  id: WriteMembers
+  parent: PocoEmit.Collections.MemberBundle
+  langs:
+  - csharp
+  - vb
+  name: WriteMembers
+  nameWithType: MemberBundle.WriteMembers
+  fullName: PocoEmit.Collections.MemberBundle.WriteMembers
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberBundle.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: WriteMembers
+    path: ../PocoEmit/Collections/MemberBundle.cs
+    startLine: 43
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 可写成员
+  example: []
+  syntax:
+    content: public IDictionary<string, MemberInfo> WriteMembers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo}
+    content.vb: Public ReadOnly Property WriteMembers As IDictionary(Of String, MemberInfo)
+  overload: PocoEmit.Collections.MemberBundle.WriteMembers*
+- uid: PocoEmit.Collections.MemberBundle.EmitWriters
+  commentId: P:PocoEmit.Collections.MemberBundle.EmitWriters
+  id: EmitWriters
+  parent: PocoEmit.Collections.MemberBundle
+  langs:
+  - csharp
+  - vb
+  name: EmitWriters
+  nameWithType: MemberBundle.EmitWriters
+  fullName: PocoEmit.Collections.MemberBundle.EmitWriters
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberBundle.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: EmitWriters
+    path: ../PocoEmit/Collections/MemberBundle.cs
+    startLine: 48
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 写入器
+  example: []
+  syntax:
+    content: public IDictionary<string, IEmitMemberWriter> EmitWriters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter}
+    content.vb: Public ReadOnly Property EmitWriters As IDictionary(Of String, IEmitMemberWriter)
+  overload: PocoEmit.Collections.MemberBundle.EmitWriters*
+references:
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.MemberBundle.PocoEmit.ReflectionHelper.GetEmitReader(System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+  parent: PocoEmit.ReflectionHelper
+  definition: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_Collections_MemberBundle_System_String_
+  name: GetEmitReader(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetEmitReader(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle, string)
+  nameWithType.vb: ReflectionHelper.GetEmitReader(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetEmitReader(MemberBundle, String)
+  spec.csharp:
+  - uid: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetEmitReader
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetEmitReader
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: PocoEmit.Collections.MemberBundle.PocoEmit.ReflectionHelper.GetEmitWriter(System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+  parent: PocoEmit.ReflectionHelper
+  definition: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_Collections_MemberBundle_System_String_
+  name: GetEmitWriter(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetEmitWriter(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle, string)
+  nameWithType.vb: ReflectionHelper.GetEmitWriter(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetEmitWriter(MemberBundle, String)
+  spec.csharp:
+  - uid: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetEmitWriter
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetEmitWriter
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: PocoEmit.Collections.MemberBundle.PocoEmit.ReflectionHelper.GetReadMember(System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+  parent: PocoEmit.ReflectionHelper
+  definition: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_Collections_MemberBundle_System_String_
+  name: GetReadMember(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetReadMember(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle, string)
+  nameWithType.vb: ReflectionHelper.GetReadMember(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetReadMember(MemberBundle, String)
+  spec.csharp:
+  - uid: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetReadMember
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetReadMember
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: PocoEmit.Collections.MemberBundle.PocoEmit.ReflectionHelper.GetWriteMember(System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+  parent: PocoEmit.ReflectionHelper
+  definition: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_Collections_MemberBundle_System_String_
+  name: GetWriteMember(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetWriteMember(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle, string)
+  nameWithType.vb: ReflectionHelper.GetWriteMember(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetWriteMember(MemberBundle, String)
+  spec.csharp:
+  - uid: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetWriteMember
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetWriteMember
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+  isExternal: true
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_Collections_MemberBundle_System_String_
+  name: GetEmitReader(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetEmitReader(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle, string)
+  nameWithType.vb: ReflectionHelper.GetEmitReader(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetEmitReader(MemberBundle, String)
+  spec.csharp:
+  - uid: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetEmitReader
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetEmitReader
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: PocoEmit.ReflectionHelper
+  commentId: T:PocoEmit.ReflectionHelper
+  parent: PocoEmit
+  href: PocoEmit.ReflectionHelper.html
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: PocoEmit.ReflectionHelper
+- uid: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+  isExternal: true
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_Collections_MemberBundle_System_String_
+  name: GetEmitWriter(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetEmitWriter(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle, string)
+  nameWithType.vb: ReflectionHelper.GetEmitWriter(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetEmitWriter(MemberBundle, String)
+  spec.csharp:
+  - uid: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetEmitWriter
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetEmitWriter
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+  isExternal: true
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_Collections_MemberBundle_System_String_
+  name: GetReadMember(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetReadMember(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle, string)
+  nameWithType.vb: ReflectionHelper.GetReadMember(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetReadMember(MemberBundle, String)
+  spec.csharp:
+  - uid: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetReadMember
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetReadMember
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+  commentId: M:PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+  isExternal: true
+  href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_Collections_MemberBundle_System_String_
+  name: GetWriteMember(MemberBundle, string)
+  nameWithType: ReflectionHelper.GetWriteMember(MemberBundle, string)
+  fullName: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle, string)
+  nameWithType.vb: ReflectionHelper.GetWriteMember(MemberBundle, String)
+  fullName.vb: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle, String)
+  name.vb: GetWriteMember(MemberBundle, String)
+  spec.csharp:
+  - uid: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetWriteMember
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)
+    name: GetWriteMember
+    href: PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_Collections_MemberBundle_System_String_
+  - name: (
+  - uid: PocoEmit.Collections.MemberBundle
+    name: MemberBundle
+    href: PocoEmit.Collections.MemberBundle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: PocoEmit.Collections.MemberBundle.#ctor*
+  commentId: Overload:PocoEmit.Collections.MemberBundle.#ctor
+  href: PocoEmit.Collections.MemberBundle.html#PocoEmit_Collections_MemberBundle__ctor_System_Collections_Generic_IDictionary_System_String_System_Reflection_MemberInfo__System_Collections_Generic_IDictionary_System_String_PocoEmit_Members_IEmitMemberReader__System_Collections_Generic_IDictionary_System_String_System_Reflection_MemberInfo__System_Collections_Generic_IDictionary_System_String_PocoEmit_Members_IEmitMemberWriter__
+  name: MemberBundle
+  nameWithType: MemberBundle.MemberBundle
+  fullName: PocoEmit.Collections.MemberBundle.MemberBundle
+  nameWithType.vb: MemberBundle.New
+  fullName.vb: PocoEmit.Collections.MemberBundle.New
+  name.vb: New
+- uid: System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, MemberInfo>
+  nameWithType: IDictionary<string, MemberInfo>
+  fullName: System.Collections.Generic.IDictionary<string, System.Reflection.MemberInfo>
+  nameWithType.vb: IDictionary(Of String, MemberInfo)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, System.Reflection.MemberInfo)
+  name.vb: IDictionary(Of String, MemberInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: )
+- uid: System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, IEmitMemberReader>
+  nameWithType: IDictionary<string, IEmitMemberReader>
+  fullName: System.Collections.Generic.IDictionary<string, PocoEmit.Members.IEmitMemberReader>
+  nameWithType.vb: IDictionary(Of String, IEmitMemberReader)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, PocoEmit.Members.IEmitMemberReader)
+  name.vb: IDictionary(Of String, IEmitMemberReader)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, IEmitMemberWriter>
+  nameWithType: IDictionary<string, IEmitMemberWriter>
+  fullName: System.Collections.Generic.IDictionary<string, PocoEmit.Members.IEmitMemberWriter>
+  nameWithType.vb: IDictionary(Of String, IEmitMemberWriter)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, PocoEmit.Members.IEmitMemberWriter)
+  name.vb: IDictionary(Of String, IEmitMemberWriter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PocoEmit.Collections.MemberBundle.ReadMembers*
+  commentId: Overload:PocoEmit.Collections.MemberBundle.ReadMembers
+  href: PocoEmit.Collections.MemberBundle.html#PocoEmit_Collections_MemberBundle_ReadMembers
+  name: ReadMembers
+  nameWithType: MemberBundle.ReadMembers
+  fullName: PocoEmit.Collections.MemberBundle.ReadMembers
+- uid: PocoEmit.Collections.MemberBundle.EmitReaders*
+  commentId: Overload:PocoEmit.Collections.MemberBundle.EmitReaders
+  href: PocoEmit.Collections.MemberBundle.html#PocoEmit_Collections_MemberBundle_EmitReaders
+  name: EmitReaders
+  nameWithType: MemberBundle.EmitReaders
+  fullName: PocoEmit.Collections.MemberBundle.EmitReaders
+- uid: PocoEmit.Collections.MemberBundle.WriteMembers*
+  commentId: Overload:PocoEmit.Collections.MemberBundle.WriteMembers
+  href: PocoEmit.Collections.MemberBundle.html#PocoEmit_Collections_MemberBundle_WriteMembers
+  name: WriteMembers
+  nameWithType: MemberBundle.WriteMembers
+  fullName: PocoEmit.Collections.MemberBundle.WriteMembers
+- uid: PocoEmit.Collections.MemberBundle.EmitWriters*
+  commentId: Overload:PocoEmit.Collections.MemberBundle.EmitWriters
+  href: PocoEmit.Collections.MemberBundle.html#PocoEmit_Collections_MemberBundle_EmitWriters
+  name: EmitWriters
+  nameWithType: MemberBundle.EmitWriters
+  fullName: PocoEmit.Collections.MemberBundle.EmitWriters

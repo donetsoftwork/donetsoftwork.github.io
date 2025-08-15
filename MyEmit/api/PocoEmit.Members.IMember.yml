@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Members.IMember
+  commentId: T:PocoEmit.Members.IMember
+  id: IMember
+  parent: PocoEmit.Members
+  children:
+  - PocoEmit.Members.IMember.InstanceType
+  - PocoEmit.Members.IMember.Name
+  - PocoEmit.Members.IMember.ValueType
+  langs:
+  - csharp
+  - vb
+  name: IMember
+  nameWithType: IMember
+  fullName: PocoEmit.Members.IMember
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit/Members/IMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IMember
+    path: ../PocoEmit/Members/IMember.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 成员
+  example: []
+  syntax:
+    content: public interface IMember
+    content.vb: Public Interface IMember
+- uid: PocoEmit.Members.IMember.InstanceType
+  commentId: P:PocoEmit.Members.IMember.InstanceType
+  id: InstanceType
+  parent: PocoEmit.Members.IMember
+  langs:
+  - csharp
+  - vb
+  name: InstanceType
+  nameWithType: IMember.InstanceType
+  fullName: PocoEmit.Members.IMember.InstanceType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/IMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: InstanceType
+    path: ../PocoEmit/Members/IMember.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 实体类型
+  example: []
+  syntax:
+    content: Type InstanceType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property InstanceType As Type
+  overload: PocoEmit.Members.IMember.InstanceType*
+- uid: PocoEmit.Members.IMember.Name
+  commentId: P:PocoEmit.Members.IMember.Name
+  id: Name
+  parent: PocoEmit.Members.IMember
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IMember.Name
+  fullName: PocoEmit.Members.IMember.Name
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/IMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Name
+    path: ../PocoEmit/Members/IMember.cs
+    startLine: 17
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 成员名
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: PocoEmit.Members.IMember.Name*
+- uid: PocoEmit.Members.IMember.ValueType
+  commentId: P:PocoEmit.Members.IMember.ValueType
+  id: ValueType
+  parent: PocoEmit.Members.IMember
+  langs:
+  - csharp
+  - vb
+  name: ValueType
+  nameWithType: IMember.ValueType
+  fullName: PocoEmit.Members.IMember.ValueType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/IMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ValueType
+    path: ../PocoEmit/Members/IMember.cs
+    startLine: 21
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 值类型
+  example: []
+  syntax:
+    content: Type ValueType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property ValueType As Type
+  overload: PocoEmit.Members.IMember.ValueType*
+references:
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: PocoEmit.Members.IMember.InstanceType*
+  commentId: Overload:PocoEmit.Members.IMember.InstanceType
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_InstanceType
+  name: InstanceType
+  nameWithType: IMember.InstanceType
+  fullName: PocoEmit.Members.IMember.InstanceType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Members.IMember.Name*
+  commentId: Overload:PocoEmit.Members.IMember.Name
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_Name
+  name: Name
+  nameWithType: IMember.Name
+  fullName: PocoEmit.Members.IMember.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PocoEmit.Members.IMember.ValueType*
+  commentId: Overload:PocoEmit.Members.IMember.ValueType
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_ValueType
+  name: ValueType
+  nameWithType: IMember.ValueType
+  fullName: PocoEmit.Members.IMember.ValueType

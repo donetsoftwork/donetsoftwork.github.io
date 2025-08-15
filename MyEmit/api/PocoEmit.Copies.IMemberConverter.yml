@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Copies.IMemberConverter
+  commentId: T:PocoEmit.Copies.IMemberConverter
+  id: IMemberConverter
+  parent: PocoEmit.Copies
+  children:
+  - PocoEmit.Copies.IMemberConverter.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  langs:
+  - csharp
+  - vb
+  name: IMemberConverter
+  nameWithType: IMemberConverter
+  fullName: PocoEmit.Copies.IMemberConverter
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/IMemberConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IMemberConverter
+    path: ../PocoEmit.Mapper/Copies/IMemberConverter.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 成员转化器
+  example: []
+  syntax:
+    content: public interface IMemberConverter
+    content.vb: Public Interface IMemberConverter
+- uid: PocoEmit.Copies.IMemberConverter.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Copies.IMemberConverter.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  id: Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Copies.IMemberConverter
+  langs:
+  - csharp
+  - vb
+  name: Convert(Expression, Expression)
+  nameWithType: IMemberConverter.Convert(Expression, Expression)
+  fullName: PocoEmit.Copies.IMemberConverter.Convert(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/IMemberConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Convert
+    path: ../PocoEmit.Mapper/Copies/IMemberConverter.cs
+    startLine: 14
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 转化
+  example: []
+  syntax:
+    content: Expression Convert(Expression source, Expression dest)
+    parameters:
+    - id: source
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: dest
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Function Convert(source As Expression, dest As Expression) As Expression
+  overload: PocoEmit.Copies.IMemberConverter.Convert*
+references:
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+- uid: PocoEmit.Copies.IMemberConverter.Convert*
+  commentId: Overload:PocoEmit.Copies.IMemberConverter.Convert
+  href: PocoEmit.Copies.IMemberConverter.html#PocoEmit_Copies_IMemberConverter_Convert_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Convert
+  nameWithType: IMemberConverter.Convert
+  fullName: PocoEmit.Copies.IMemberConverter.Convert
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

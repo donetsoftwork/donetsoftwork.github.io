@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  id: PocoEmit.Copies
+  children:
+  - PocoEmit.Copies.CompatibleCopier
+  - PocoEmit.Copies.CompiledCopier`2
+  - PocoEmit.Copies.ComplexTypeCopier
+  - PocoEmit.Copies.CopierFactory
+  - PocoEmit.Copies.CopyToCollection
+  - PocoEmit.Copies.CopyToDictionary
+  - PocoEmit.Copies.DelegateCopier`2
+  - PocoEmit.Copies.ICompiledCopier`2
+  - PocoEmit.Copies.IEmitCopier
+  - PocoEmit.Copies.IMemberConverter
+  - PocoEmit.Copies.IObjectCopier
+  - PocoEmit.Copies.MemberConverter
+  - PocoEmit.Copies.MemberCopier
+  - PocoEmit.Copies.MethodCopier
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Copies.CopyToCollection
+  commentId: T:PocoEmit.Copies.CopyToCollection
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.CopyToCollection.html
+  name: CopyToCollection
+  nameWithType: CopyToCollection
+  fullName: PocoEmit.Copies.CopyToCollection
+- uid: PocoEmit.Copies.CopyToDictionary
+  commentId: T:PocoEmit.Copies.CopyToDictionary
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.CopyToDictionary.html
+  name: CopyToDictionary
+  nameWithType: CopyToDictionary
+  fullName: PocoEmit.Copies.CopyToDictionary
+- uid: PocoEmit.Copies.CompatibleCopier
+  commentId: T:PocoEmit.Copies.CompatibleCopier
+  href: PocoEmit.Copies.CompatibleCopier.html
+  name: CompatibleCopier
+  nameWithType: CompatibleCopier
+  fullName: PocoEmit.Copies.CompatibleCopier
+- uid: PocoEmit.Copies.CompiledCopier`2
+  commentId: T:PocoEmit.Copies.CompiledCopier`2
+  href: PocoEmit.Copies.CompiledCopier-2.html
+  name: CompiledCopier<TSource, TDest>
+  nameWithType: CompiledCopier<TSource, TDest>
+  fullName: PocoEmit.Copies.CompiledCopier<TSource, TDest>
+  nameWithType.vb: CompiledCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.Copies.CompiledCopier(Of TSource, TDest)
+  name.vb: CompiledCopier(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Copies.CompiledCopier`2
+    name: CompiledCopier
+    href: PocoEmit.Copies.CompiledCopier-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Copies.CompiledCopier`2
+    name: CompiledCopier
+    href: PocoEmit.Copies.CompiledCopier-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Copies.ComplexTypeCopier
+  commentId: T:PocoEmit.Copies.ComplexTypeCopier
+  href: PocoEmit.Copies.ComplexTypeCopier.html
+  name: ComplexTypeCopier
+  nameWithType: ComplexTypeCopier
+  fullName: PocoEmit.Copies.ComplexTypeCopier
+- uid: PocoEmit.Copies.CopierFactory
+  commentId: T:PocoEmit.Copies.CopierFactory
+  href: PocoEmit.Copies.CopierFactory.html
+  name: CopierFactory
+  nameWithType: CopierFactory
+  fullName: PocoEmit.Copies.CopierFactory
+- uid: PocoEmit.Copies.DelegateCopier`2
+  commentId: T:PocoEmit.Copies.DelegateCopier`2
+  href: PocoEmit.Copies.DelegateCopier-2.html
+  name: DelegateCopier<TSource, TDest>
+  nameWithType: DelegateCopier<TSource, TDest>
+  fullName: PocoEmit.Copies.DelegateCopier<TSource, TDest>
+  nameWithType.vb: DelegateCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.Copies.DelegateCopier(Of TSource, TDest)
+  name.vb: DelegateCopier(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Copies.DelegateCopier`2
+    name: DelegateCopier
+    href: PocoEmit.Copies.DelegateCopier-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Copies.DelegateCopier`2
+    name: DelegateCopier
+    href: PocoEmit.Copies.DelegateCopier-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Copies.ICompiledCopier`2
+  commentId: T:PocoEmit.Copies.ICompiledCopier`2
+  href: PocoEmit.Copies.ICompiledCopier-2.html
+  name: ICompiledCopier<TSource, TDest>
+  nameWithType: ICompiledCopier<TSource, TDest>
+  fullName: PocoEmit.Copies.ICompiledCopier<TSource, TDest>
+  nameWithType.vb: ICompiledCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.Copies.ICompiledCopier(Of TSource, TDest)
+  name.vb: ICompiledCopier(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Copies.ICompiledCopier`2
+    name: ICompiledCopier
+    href: PocoEmit.Copies.ICompiledCopier-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Copies.ICompiledCopier`2
+    name: ICompiledCopier
+    href: PocoEmit.Copies.ICompiledCopier-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Copies.IEmitCopier
+  commentId: T:PocoEmit.Copies.IEmitCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IEmitCopier.html
+  name: IEmitCopier
+  nameWithType: IEmitCopier
+  fullName: PocoEmit.Copies.IEmitCopier
+- uid: PocoEmit.Copies.IMemberConverter
+  commentId: T:PocoEmit.Copies.IMemberConverter
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IMemberConverter.html
+  name: IMemberConverter
+  nameWithType: IMemberConverter
+  fullName: PocoEmit.Copies.IMemberConverter
+- uid: PocoEmit.Copies.IObjectCopier
+  commentId: T:PocoEmit.Copies.IObjectCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IObjectCopier.html
+  name: IObjectCopier
+  nameWithType: IObjectCopier
+  fullName: PocoEmit.Copies.IObjectCopier
+- uid: PocoEmit.Copies.MemberConverter
+  commentId: T:PocoEmit.Copies.MemberConverter
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.MemberConverter.html
+  name: MemberConverter
+  nameWithType: MemberConverter
+  fullName: PocoEmit.Copies.MemberConverter
+- uid: PocoEmit.Copies.MemberCopier
+  commentId: T:PocoEmit.Copies.MemberCopier
+  href: PocoEmit.Copies.MemberCopier.html
+  name: MemberCopier
+  nameWithType: MemberCopier
+  fullName: PocoEmit.Copies.MemberCopier
+- uid: PocoEmit.Copies.MethodCopier
+  commentId: T:PocoEmit.Copies.MethodCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.MethodCopier.html
+  name: MethodCopier
+  nameWithType: MethodCopier
+  fullName: PocoEmit.Copies.MethodCopier
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html

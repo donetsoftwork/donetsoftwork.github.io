@@ -1,0 +1,435 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Members.MemberAccessor`1
+  commentId: T:PocoEmit.Members.MemberAccessor`1
+  id: MemberAccessor`1
+  parent: PocoEmit.Members
+  children:
+  - PocoEmit.Members.MemberAccessor`1.#ctor(System.Type,`0,System.String,System.Type)
+  - PocoEmit.Members.MemberAccessor`1.InstanceType
+  - PocoEmit.Members.MemberAccessor`1.Member
+  - PocoEmit.Members.MemberAccessor`1.Name
+  - PocoEmit.Members.MemberAccessor`1.ValueType
+  - PocoEmit.Members.MemberAccessor`1._member
+  - PocoEmit.Members.MemberAccessor`1._valueType
+  langs:
+  - csharp
+  - vb
+  name: MemberAccessor<TMemberType>
+  nameWithType: MemberAccessor<TMemberType>
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Members/MemberAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MemberAccessor
+    path: ../PocoEmit/Members/MemberAccessor.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 成员操作基类
+  example: []
+  syntax:
+    content: 'public abstract class MemberAccessor<TMemberType> : IMember where TMemberType : MemberInfo'
+    typeParameters:
+    - id: TMemberType
+      description: ''
+    content.vb: Public MustInherit Class MemberAccessor(Of TMemberType As MemberInfo) Implements IMember
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PocoEmit.Members.CompiledReader`2
+  - PocoEmit.Members.CompiledWriter`2
+  - PocoEmit.Members.ConstructorParameterMember
+  - PocoEmit.Members.FieldAccessor
+  - PocoEmit.Members.PropertyAccessor
+  implements:
+  - PocoEmit.Members.IMember
+  nameWithType.vb: MemberAccessor(Of TMemberType)
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType)
+  name.vb: MemberAccessor(Of TMemberType)
+- uid: PocoEmit.Members.MemberAccessor`1.#ctor(System.Type,`0,System.String,System.Type)
+  commentId: M:PocoEmit.Members.MemberAccessor`1.#ctor(System.Type,`0,System.String,System.Type)
+  id: '#ctor(System.Type,`0,System.String,System.Type)'
+  parent: PocoEmit.Members.MemberAccessor`1
+  langs:
+  - csharp
+  - vb
+  name: MemberAccessor(Type, TMemberType, string, Type)
+  nameWithType: MemberAccessor<TMemberType>.MemberAccessor(Type, TMemberType, string, Type)
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.MemberAccessor(System.Type, TMemberType, string, System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit/Members/MemberAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit/Members/MemberAccessor.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 成员操作基类
+  example: []
+  syntax:
+    content: protected MemberAccessor(Type instanceType, TMemberType member, string name, Type valueType)
+    parameters:
+    - id: instanceType
+      type: System.Type
+      description: ''
+    - id: member
+      type: '{TMemberType}'
+      description: ''
+    - id: name
+      type: System.String
+      description: ''
+    - id: valueType
+      type: System.Type
+      description: ''
+    content.vb: Protected Sub New(instanceType As Type, member As TMemberType, name As String, valueType As Type)
+  overload: PocoEmit.Members.MemberAccessor`1.#ctor*
+  nameWithType.vb: MemberAccessor(Of TMemberType).New(Type, TMemberType, String, Type)
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).New(System.Type, TMemberType, String, System.Type)
+  name.vb: New(Type, TMemberType, String, Type)
+- uid: PocoEmit.Members.MemberAccessor`1.InstanceType
+  commentId: P:PocoEmit.Members.MemberAccessor`1.InstanceType
+  id: InstanceType
+  parent: PocoEmit.Members.MemberAccessor`1
+  langs:
+  - csharp
+  - vb
+  name: InstanceType
+  nameWithType: MemberAccessor<TMemberType>.InstanceType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.InstanceType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/MemberAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: InstanceType
+    path: ../PocoEmit/Members/MemberAccessor.cs
+    startLine: 20
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 实体类型
+  example: []
+  syntax:
+    content: public Type InstanceType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property InstanceType As Type
+  overload: PocoEmit.Members.MemberAccessor`1.InstanceType*
+  implements:
+  - PocoEmit.Members.IMember.InstanceType
+  nameWithType.vb: MemberAccessor(Of TMemberType).InstanceType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).InstanceType
+- uid: PocoEmit.Members.MemberAccessor`1._member
+  commentId: F:PocoEmit.Members.MemberAccessor`1._member
+  id: _member
+  parent: PocoEmit.Members.MemberAccessor`1
+  langs:
+  - csharp
+  - vb
+  name: _member
+  nameWithType: MemberAccessor<TMemberType>._member
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>._member
+  type: Field
+  source:
+    remote:
+      path: PocoEmit/Members/MemberAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _member
+    path: ../PocoEmit/Members/MemberAccessor.cs
+    startLine: 25
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 成员
+  example: []
+  syntax:
+    content: protected readonly TMemberType _member
+    return:
+      type: '{TMemberType}'
+    content.vb: Protected ReadOnly _member As TMemberType
+  nameWithType.vb: MemberAccessor(Of TMemberType)._member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType)._member
+- uid: PocoEmit.Members.MemberAccessor`1._valueType
+  commentId: F:PocoEmit.Members.MemberAccessor`1._valueType
+  id: _valueType
+  parent: PocoEmit.Members.MemberAccessor`1
+  langs:
+  - csharp
+  - vb
+  name: _valueType
+  nameWithType: MemberAccessor<TMemberType>._valueType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>._valueType
+  type: Field
+  source:
+    remote:
+      path: PocoEmit/Members/MemberAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _valueType
+    path: ../PocoEmit/Members/MemberAccessor.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 值类型
+  example: []
+  syntax:
+    content: protected readonly Type _valueType
+    return:
+      type: System.Type
+    content.vb: Protected ReadOnly _valueType As Type
+  nameWithType.vb: MemberAccessor(Of TMemberType)._valueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType)._valueType
+- uid: PocoEmit.Members.MemberAccessor`1.Member
+  commentId: P:PocoEmit.Members.MemberAccessor`1.Member
+  id: Member
+  parent: PocoEmit.Members.MemberAccessor`1
+  langs:
+  - csharp
+  - vb
+  name: Member
+  nameWithType: MemberAccessor<TMemberType>.Member
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.Member
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/MemberAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Member
+    path: ../PocoEmit/Members/MemberAccessor.cs
+    startLine: 34
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 成员
+  example: []
+  syntax:
+    content: public TMemberType Member { get; }
+    parameters: []
+    return:
+      type: '{TMemberType}'
+    content.vb: Public ReadOnly Property Member As TMemberType
+  overload: PocoEmit.Members.MemberAccessor`1.Member*
+  nameWithType.vb: MemberAccessor(Of TMemberType).Member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).Member
+- uid: PocoEmit.Members.MemberAccessor`1.Name
+  commentId: P:PocoEmit.Members.MemberAccessor`1.Name
+  id: Name
+  parent: PocoEmit.Members.MemberAccessor`1
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: MemberAccessor<TMemberType>.Name
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.Name
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/MemberAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Name
+    path: ../PocoEmit/Members/MemberAccessor.cs
+    startLine: 37
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 成员名
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: PocoEmit.Members.MemberAccessor`1.Name*
+  implements:
+  - PocoEmit.Members.IMember.Name
+  nameWithType.vb: MemberAccessor(Of TMemberType).Name
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).Name
+- uid: PocoEmit.Members.MemberAccessor`1.ValueType
+  commentId: P:PocoEmit.Members.MemberAccessor`1.ValueType
+  id: ValueType
+  parent: PocoEmit.Members.MemberAccessor`1
+  langs:
+  - csharp
+  - vb
+  name: ValueType
+  nameWithType: MemberAccessor<TMemberType>.ValueType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.ValueType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Members/MemberAccessor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ValueType
+    path: ../PocoEmit/Members/MemberAccessor.cs
+    startLine: 40
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Members
+  summary: 值类型
+  example: []
+  syntax:
+    content: public Type ValueType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ValueType As Type
+  overload: PocoEmit.Members.MemberAccessor`1.ValueType*
+  implements:
+  - PocoEmit.Members.IMember.ValueType
+  nameWithType.vb: MemberAccessor(Of TMemberType).ValueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).ValueType
+references:
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Members.IMember
+  commentId: T:PocoEmit.Members.IMember
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IMember.html
+  name: IMember
+  nameWithType: IMember
+  fullName: PocoEmit.Members.IMember
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Members.MemberAccessor`1.#ctor*
+  commentId: Overload:PocoEmit.Members.MemberAccessor`1.#ctor
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1__ctor_System_Type__0_System_String_System_Type_
+  name: MemberAccessor
+  nameWithType: MemberAccessor<TMemberType>.MemberAccessor
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.MemberAccessor
+  nameWithType.vb: MemberAccessor(Of TMemberType).New
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: '{TMemberType}'
+  commentId: '!:TMemberType'
+  definition: TMemberType
+  name: TMemberType
+  nameWithType: TMemberType
+  fullName: TMemberType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TMemberType
+  name: TMemberType
+  nameWithType: TMemberType
+  fullName: TMemberType
+- uid: PocoEmit.Members.MemberAccessor`1.InstanceType*
+  commentId: Overload:PocoEmit.Members.MemberAccessor`1.InstanceType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_InstanceType
+  name: InstanceType
+  nameWithType: MemberAccessor<TMemberType>.InstanceType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.InstanceType
+  nameWithType.vb: MemberAccessor(Of TMemberType).InstanceType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).InstanceType
+- uid: PocoEmit.Members.IMember.InstanceType
+  commentId: P:PocoEmit.Members.IMember.InstanceType
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_InstanceType
+  name: InstanceType
+  nameWithType: IMember.InstanceType
+  fullName: PocoEmit.Members.IMember.InstanceType
+- uid: PocoEmit.Members.MemberAccessor`1.Member*
+  commentId: Overload:PocoEmit.Members.MemberAccessor`1.Member
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Member
+  name: Member
+  nameWithType: MemberAccessor<TMemberType>.Member
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.Member
+  nameWithType.vb: MemberAccessor(Of TMemberType).Member
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).Member
+- uid: PocoEmit.Members.MemberAccessor`1.Name*
+  commentId: Overload:PocoEmit.Members.MemberAccessor`1.Name
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_Name
+  name: Name
+  nameWithType: MemberAccessor<TMemberType>.Name
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.Name
+  nameWithType.vb: MemberAccessor(Of TMemberType).Name
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).Name
+- uid: PocoEmit.Members.IMember.Name
+  commentId: P:PocoEmit.Members.IMember.Name
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_Name
+  name: Name
+  nameWithType: IMember.Name
+  fullName: PocoEmit.Members.IMember.Name
+- uid: PocoEmit.Members.MemberAccessor`1.ValueType*
+  commentId: Overload:PocoEmit.Members.MemberAccessor`1.ValueType
+  href: PocoEmit.Members.MemberAccessor-1.html#PocoEmit_Members_MemberAccessor_1_ValueType
+  name: ValueType
+  nameWithType: MemberAccessor<TMemberType>.ValueType
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>.ValueType
+  nameWithType.vb: MemberAccessor(Of TMemberType).ValueType
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType).ValueType
+- uid: PocoEmit.Members.IMember.ValueType
+  commentId: P:PocoEmit.Members.IMember.ValueType
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_ValueType
+  name: ValueType
+  nameWithType: IMember.ValueType
+  fullName: PocoEmit.Members.IMember.ValueType

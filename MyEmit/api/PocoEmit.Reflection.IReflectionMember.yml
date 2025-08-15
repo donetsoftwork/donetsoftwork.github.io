@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Reflection.IReflectionMember
+  commentId: T:PocoEmit.Reflection.IReflectionMember
+  id: IReflectionMember
+  parent: PocoEmit.Reflection
+  children:
+  - PocoEmit.Reflection.IReflectionMember.GetMembers(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: IReflectionMember
+  nameWithType: IReflectionMember
+  fullName: PocoEmit.Reflection.IReflectionMember
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit/Reflection/IReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IReflectionMember
+    path: ../PocoEmit/Reflection/IReflectionMember.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 反射获取成员
+  example: []
+  syntax:
+    content: public interface IReflectionMember
+    content.vb: Public Interface IReflectionMember
+- uid: PocoEmit.Reflection.IReflectionMember.GetMembers(System.Type)
+  commentId: M:PocoEmit.Reflection.IReflectionMember.GetMembers(System.Type)
+  id: GetMembers(System.Type)
+  parent: PocoEmit.Reflection.IReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: GetMembers(Type)
+  nameWithType: IReflectionMember.GetMembers(Type)
+  fullName: PocoEmit.Reflection.IReflectionMember.GetMembers(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Reflection/IReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMembers
+    path: ../PocoEmit/Reflection/IReflectionMember.cs
+    startLine: 15
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 获取所有成员
+  example: []
+  syntax:
+    content: MemberBundle GetMembers(Type instanceType)
+    parameters:
+    - id: instanceType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Collections.MemberBundle
+      description: ''
+    content.vb: Function GetMembers(instanceType As Type) As MemberBundle
+  overload: PocoEmit.Reflection.IReflectionMember.GetMembers*
+references:
+- uid: PocoEmit.Reflection
+  commentId: N:PocoEmit.Reflection
+  href: PocoEmit.html
+  name: PocoEmit.Reflection
+  nameWithType: PocoEmit.Reflection
+  fullName: PocoEmit.Reflection
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Reflection
+    name: Reflection
+    href: PocoEmit.Reflection.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Reflection
+    name: Reflection
+    href: PocoEmit.Reflection.html
+- uid: PocoEmit.Reflection.IReflectionMember.GetMembers*
+  commentId: Overload:PocoEmit.Reflection.IReflectionMember.GetMembers
+  href: PocoEmit.Reflection.IReflectionMember.html#PocoEmit_Reflection_IReflectionMember_GetMembers_System_Type_
+  name: GetMembers
+  nameWithType: IReflectionMember.GetMembers
+  fullName: PocoEmit.Reflection.IReflectionMember.GetMembers
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Collections.MemberBundle
+  commentId: T:PocoEmit.Collections.MemberBundle
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.MemberBundle.html
+  name: MemberBundle
+  nameWithType: MemberBundle
+  fullName: PocoEmit.Collections.MemberBundle
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html

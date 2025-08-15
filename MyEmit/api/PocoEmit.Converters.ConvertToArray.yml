@@ -1,0 +1,500 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Converters.ConvertToArray
+  commentId: T:PocoEmit.Converters.ConvertToArray
+  id: ConvertToArray
+  parent: PocoEmit.Converters
+  children:
+  - PocoEmit.Converters.ConvertToArray.#ctor(PocoEmit.Configuration.IMapperOptions)
+  - PocoEmit.Converters.ConvertToArray.ArrayToArray(System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  - PocoEmit.Converters.ConvertToArray.DictionaryToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  - PocoEmit.Converters.ConvertToArray.EnumerableToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  - PocoEmit.Converters.ConvertToArray.ListToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  - PocoEmit.Converters.ConvertToArray.Options
+  - PocoEmit.Converters.ConvertToArray.ToArray(System.Type,System.Type)
+  langs:
+  - csharp
+  - vb
+  name: ConvertToArray
+  nameWithType: ConvertToArray
+  fullName: PocoEmit.Converters.ConvertToArray
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToArray.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConvertToArray
+    path: ../PocoEmit.Collections/Converters/ConvertToArray.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 转化为数组
+  example: []
+  syntax:
+    content: public class ConvertToArray
+    content.vb: Public Class ConvertToArray
+  inheritance:
+  - System.Object
+- uid: PocoEmit.Converters.ConvertToArray.#ctor(PocoEmit.Configuration.IMapperOptions)
+  commentId: M:PocoEmit.Converters.ConvertToArray.#ctor(PocoEmit.Configuration.IMapperOptions)
+  id: '#ctor(PocoEmit.Configuration.IMapperOptions)'
+  parent: PocoEmit.Converters.ConvertToArray
+  langs:
+  - csharp
+  - vb
+  name: ConvertToArray(IMapperOptions)
+  nameWithType: ConvertToArray.ConvertToArray(IMapperOptions)
+  fullName: PocoEmit.Converters.ConvertToArray.ConvertToArray(PocoEmit.Configuration.IMapperOptions)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToArray.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Converters/ConvertToArray.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 转化为数组
+  example: []
+  syntax:
+    content: public ConvertToArray(IMapperOptions options)
+    parameters:
+    - id: options
+      type: PocoEmit.Configuration.IMapperOptions
+      description: ''
+    content.vb: Public Sub New(options As IMapperOptions)
+  overload: PocoEmit.Converters.ConvertToArray.#ctor*
+  nameWithType.vb: ConvertToArray.New(IMapperOptions)
+  fullName.vb: PocoEmit.Converters.ConvertToArray.New(PocoEmit.Configuration.IMapperOptions)
+  name.vb: New(IMapperOptions)
+- uid: PocoEmit.Converters.ConvertToArray.Options
+  commentId: P:PocoEmit.Converters.ConvertToArray.Options
+  id: Options
+  parent: PocoEmit.Converters.ConvertToArray
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: ConvertToArray.Options
+  fullName: PocoEmit.Converters.ConvertToArray.Options
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToArray.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Options
+    path: ../PocoEmit.Collections/Converters/ConvertToArray.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 配置
+  example: []
+  syntax:
+    content: public IMapperOptions Options { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Configuration.IMapperOptions
+    content.vb: Public ReadOnly Property Options As IMapperOptions
+  overload: PocoEmit.Converters.ConvertToArray.Options*
+- uid: PocoEmit.Converters.ConvertToArray.ToArray(System.Type,System.Type)
+  commentId: M:PocoEmit.Converters.ConvertToArray.ToArray(System.Type,System.Type)
+  id: ToArray(System.Type,System.Type)
+  parent: PocoEmit.Converters.ConvertToArray
+  langs:
+  - csharp
+  - vb
+  name: ToArray(Type, Type)
+  nameWithType: ConvertToArray.ToArray(Type, Type)
+  fullName: PocoEmit.Converters.ConvertToArray.ToArray(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToArray.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ToArray
+    path: ../PocoEmit.Collections/Converters/ConvertToArray.cs
+    startLine: 28
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 转化为数组
+  example: []
+  syntax:
+    content: public IEmitConverter ToArray(Type sourceType, Type destType)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Public Function ToArray(sourceType As Type, destType As Type) As IEmitConverter
+  overload: PocoEmit.Converters.ConvertToArray.ToArray*
+- uid: PocoEmit.Converters.ConvertToArray.ArrayToArray(System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  commentId: M:PocoEmit.Converters.ConvertToArray.ArrayToArray(System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  id: ArrayToArray(System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  parent: PocoEmit.Converters.ConvertToArray
+  langs:
+  - csharp
+  - vb
+  name: ArrayToArray(Type, Type, IEmitConverter)
+  nameWithType: ConvertToArray.ArrayToArray(Type, Type, IEmitConverter)
+  fullName: PocoEmit.Converters.ConvertToArray.ArrayToArray(System.Type, System.Type, PocoEmit.Converters.IEmitConverter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToArray.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ArrayToArray
+    path: ../PocoEmit.Collections/Converters/ConvertToArray.cs
+    startLine: 63
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 数组转数组
+  example: []
+  syntax:
+    content: public static ArrayConverter ArrayToArray(Type destType, Type destElementType, IEmitConverter elementConverter)
+    parameters:
+    - id: destType
+      type: System.Type
+      description: ''
+    - id: destElementType
+      type: System.Type
+      description: ''
+    - id: elementConverter
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    return:
+      type: PocoEmit.Collections.Converters.ArrayConverter
+      description: ''
+    content.vb: Public Shared Function ArrayToArray(destType As Type, destElementType As Type, elementConverter As IEmitConverter) As ArrayConverter
+  overload: PocoEmit.Converters.ConvertToArray.ArrayToArray*
+- uid: PocoEmit.Converters.ConvertToArray.ListToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  commentId: M:PocoEmit.Converters.ConvertToArray.ListToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  id: ListToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  parent: PocoEmit.Converters.ConvertToArray
+  langs:
+  - csharp
+  - vb
+  name: ListToArray(Type, Type, Type, Type, IEmitConverter)
+  nameWithType: ConvertToArray.ListToArray(Type, Type, Type, Type, IEmitConverter)
+  fullName: PocoEmit.Converters.ConvertToArray.ListToArray(System.Type, System.Type, System.Type, System.Type, PocoEmit.Converters.IEmitConverter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToArray.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ListToArray
+    path: ../PocoEmit.Collections/Converters/ConvertToArray.cs
+    startLine: 74
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 列表转数组
+  example: []
+  syntax:
+    content: public static IndexArrayConverter ListToArray(Type sourceType, Type sourceElementType, Type destType, Type destElementType, IEmitConverter elementConverter)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: sourceElementType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    - id: destElementType
+      type: System.Type
+      description: ''
+    - id: elementConverter
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    return:
+      type: PocoEmit.Collections.Converters.IndexArrayConverter
+      description: ''
+    content.vb: Public Shared Function ListToArray(sourceType As Type, sourceElementType As Type, destType As Type, destElementType As Type, elementConverter As IEmitConverter) As IndexArrayConverter
+  overload: PocoEmit.Converters.ConvertToArray.ListToArray*
+- uid: PocoEmit.Converters.ConvertToArray.EnumerableToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  commentId: M:PocoEmit.Converters.ConvertToArray.EnumerableToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  id: EnumerableToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  parent: PocoEmit.Converters.ConvertToArray
+  langs:
+  - csharp
+  - vb
+  name: EnumerableToArray(Type, Type, Type, Type, IEmitConverter)
+  nameWithType: ConvertToArray.EnumerableToArray(Type, Type, Type, Type, IEmitConverter)
+  fullName: PocoEmit.Converters.ConvertToArray.EnumerableToArray(System.Type, System.Type, System.Type, System.Type, PocoEmit.Converters.IEmitConverter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToArray.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: EnumerableToArray
+    path: ../PocoEmit.Collections/Converters/ConvertToArray.cs
+    startLine: 90
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 迭代转数组
+  example: []
+  syntax:
+    content: public static CollectionArrayConverter EnumerableToArray(Type sourceType, Type sourceElementType, Type destType, Type destElementType, IEmitConverter elementConverter)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: sourceElementType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    - id: destElementType
+      type: System.Type
+      description: ''
+    - id: elementConverter
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    return:
+      type: PocoEmit.Collections.Converters.CollectionArrayConverter
+      description: ''
+    content.vb: Public Shared Function EnumerableToArray(sourceType As Type, sourceElementType As Type, destType As Type, destElementType As Type, elementConverter As IEmitConverter) As CollectionArrayConverter
+  overload: PocoEmit.Converters.ConvertToArray.EnumerableToArray*
+- uid: PocoEmit.Converters.ConvertToArray.DictionaryToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  commentId: M:PocoEmit.Converters.ConvertToArray.DictionaryToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  id: DictionaryToArray(System.Type,System.Type,System.Type,System.Type,PocoEmit.Converters.IEmitConverter)
+  parent: PocoEmit.Converters.ConvertToArray
+  langs:
+  - csharp
+  - vb
+  name: DictionaryToArray(Type, Type, Type, Type, IEmitConverter)
+  nameWithType: ConvertToArray.DictionaryToArray(Type, Type, Type, Type, IEmitConverter)
+  fullName: PocoEmit.Converters.ConvertToArray.DictionaryToArray(System.Type, System.Type, System.Type, System.Type, PocoEmit.Converters.IEmitConverter)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Converters/ConvertToArray.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: DictionaryToArray
+    path: ../PocoEmit.Collections/Converters/ConvertToArray.cs
+    startLine: 105
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Converters
+  summary: 字典转数组
+  example: []
+  syntax:
+    content: public static IEmitConverter DictionaryToArray(Type sourceType, Type sourceElementType, Type destType, Type destElementType, IEmitConverter elementConverter)
+    parameters:
+    - id: sourceType
+      type: System.Type
+    - id: sourceElementType
+      type: System.Type
+    - id: destType
+      type: System.Type
+    - id: destElementType
+      type: System.Type
+    - id: elementConverter
+      type: PocoEmit.Converters.IEmitConverter
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Public Shared Function DictionaryToArray(sourceType As Type, sourceElementType As Type, destType As Type, destElementType As Type, elementConverter As IEmitConverter) As IEmitConverter
+  overload: PocoEmit.Converters.ConvertToArray.DictionaryToArray*
+references:
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Converters.ConvertToArray.#ctor*
+  commentId: Overload:PocoEmit.Converters.ConvertToArray.#ctor
+  href: PocoEmit.Converters.ConvertToArray.html#PocoEmit_Converters_ConvertToArray__ctor_PocoEmit_Configuration_IMapperOptions_
+  name: ConvertToArray
+  nameWithType: ConvertToArray.ConvertToArray
+  fullName: PocoEmit.Converters.ConvertToArray.ConvertToArray
+  nameWithType.vb: ConvertToArray.New
+  fullName.vb: PocoEmit.Converters.ConvertToArray.New
+  name.vb: New
+- uid: PocoEmit.Configuration.IMapperOptions
+  commentId: T:PocoEmit.Configuration.IMapperOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.IMapperOptions.html
+  name: IMapperOptions
+  nameWithType: IMapperOptions
+  fullName: PocoEmit.Configuration.IMapperOptions
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Converters.ConvertToArray.Options*
+  commentId: Overload:PocoEmit.Converters.ConvertToArray.Options
+  href: PocoEmit.Converters.ConvertToArray.html#PocoEmit_Converters_ConvertToArray_Options
+  name: Options
+  nameWithType: ConvertToArray.Options
+  fullName: PocoEmit.Converters.ConvertToArray.Options
+- uid: PocoEmit.Converters.ConvertToArray.ToArray*
+  commentId: Overload:PocoEmit.Converters.ConvertToArray.ToArray
+  href: PocoEmit.Converters.ConvertToArray.html#PocoEmit_Converters_ConvertToArray_ToArray_System_Type_System_Type_
+  name: ToArray
+  nameWithType: ConvertToArray.ToArray
+  fullName: PocoEmit.Converters.ConvertToArray.ToArray
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Converters.IEmitConverter
+  commentId: T:PocoEmit.Converters.IEmitConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IEmitConverter.html
+  name: IEmitConverter
+  nameWithType: IEmitConverter
+  fullName: PocoEmit.Converters.IEmitConverter
+- uid: PocoEmit.Converters.ConvertToArray.ArrayToArray*
+  commentId: Overload:PocoEmit.Converters.ConvertToArray.ArrayToArray
+  href: PocoEmit.Converters.ConvertToArray.html#PocoEmit_Converters_ConvertToArray_ArrayToArray_System_Type_System_Type_PocoEmit_Converters_IEmitConverter_
+  name: ArrayToArray
+  nameWithType: ConvertToArray.ArrayToArray
+  fullName: PocoEmit.Converters.ConvertToArray.ArrayToArray
+- uid: PocoEmit.Collections.Converters.ArrayConverter
+  commentId: T:PocoEmit.Collections.Converters.ArrayConverter
+  parent: PocoEmit.Collections.Converters
+  href: PocoEmit.Collections.Converters.ArrayConverter.html
+  name: ArrayConverter
+  nameWithType: ArrayConverter
+  fullName: PocoEmit.Collections.Converters.ArrayConverter
+- uid: PocoEmit.Collections.Converters
+  commentId: N:PocoEmit.Collections.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Converters
+  nameWithType: PocoEmit.Collections.Converters
+  fullName: PocoEmit.Collections.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Converters
+    name: Converters
+    href: PocoEmit.Collections.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Converters
+    name: Converters
+    href: PocoEmit.Collections.Converters.html
+- uid: PocoEmit.Converters.ConvertToArray.ListToArray*
+  commentId: Overload:PocoEmit.Converters.ConvertToArray.ListToArray
+  href: PocoEmit.Converters.ConvertToArray.html#PocoEmit_Converters_ConvertToArray_ListToArray_System_Type_System_Type_System_Type_System_Type_PocoEmit_Converters_IEmitConverter_
+  name: ListToArray
+  nameWithType: ConvertToArray.ListToArray
+  fullName: PocoEmit.Converters.ConvertToArray.ListToArray
+- uid: PocoEmit.Collections.Converters.IndexArrayConverter
+  commentId: T:PocoEmit.Collections.Converters.IndexArrayConverter
+  parent: PocoEmit.Collections.Converters
+  href: PocoEmit.Collections.Converters.IndexArrayConverter.html
+  name: IndexArrayConverter
+  nameWithType: IndexArrayConverter
+  fullName: PocoEmit.Collections.Converters.IndexArrayConverter
+- uid: PocoEmit.Converters.ConvertToArray.EnumerableToArray*
+  commentId: Overload:PocoEmit.Converters.ConvertToArray.EnumerableToArray
+  href: PocoEmit.Converters.ConvertToArray.html#PocoEmit_Converters_ConvertToArray_EnumerableToArray_System_Type_System_Type_System_Type_System_Type_PocoEmit_Converters_IEmitConverter_
+  name: EnumerableToArray
+  nameWithType: ConvertToArray.EnumerableToArray
+  fullName: PocoEmit.Converters.ConvertToArray.EnumerableToArray
+- uid: PocoEmit.Collections.Converters.CollectionArrayConverter
+  commentId: T:PocoEmit.Collections.Converters.CollectionArrayConverter
+  parent: PocoEmit.Collections.Converters
+  href: PocoEmit.Collections.Converters.CollectionArrayConverter.html
+  name: CollectionArrayConverter
+  nameWithType: CollectionArrayConverter
+  fullName: PocoEmit.Collections.Converters.CollectionArrayConverter
+- uid: PocoEmit.Converters.ConvertToArray.DictionaryToArray*
+  commentId: Overload:PocoEmit.Converters.ConvertToArray.DictionaryToArray
+  href: PocoEmit.Converters.ConvertToArray.html#PocoEmit_Converters_ConvertToArray_DictionaryToArray_System_Type_System_Type_System_Type_System_Type_PocoEmit_Converters_IEmitConverter_
+  name: DictionaryToArray
+  nameWithType: ConvertToArray.DictionaryToArray
+  fullName: PocoEmit.Converters.ConvertToArray.DictionaryToArray

@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.ICollectionSaver`2
+  commentId: T:PocoEmit.Collections.ICollectionSaver`2
+  id: ICollectionSaver`2
+  parent: PocoEmit.Collections
+  children:
+  - PocoEmit.Collections.ICollectionSaver`2.Add(`0,`1)
+  langs:
+  - csharp
+  - vb
+  name: ICollectionSaver<TCollection, TElement>
+  nameWithType: ICollectionSaver<TCollection, TElement>
+  fullName: PocoEmit.Collections.ICollectionSaver<TCollection, TElement>
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/ICollectionSaver~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ICollectionSaver
+    path: ../PocoEmit.Collections/Collections/ICollectionSaver~2.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 集合元素保存器
+  example: []
+  syntax:
+    content: public interface ICollectionSaver<TCollection, TElement>
+    typeParameters:
+    - id: TCollection
+      description: ''
+    - id: TElement
+      description: ''
+    content.vb: Public Interface ICollectionSaver(Of TCollection, TElement)
+  nameWithType.vb: ICollectionSaver(Of TCollection, TElement)
+  fullName.vb: PocoEmit.Collections.ICollectionSaver(Of TCollection, TElement)
+  name.vb: ICollectionSaver(Of TCollection, TElement)
+- uid: PocoEmit.Collections.ICollectionSaver`2.Add(`0,`1)
+  commentId: M:PocoEmit.Collections.ICollectionSaver`2.Add(`0,`1)
+  id: Add(`0,`1)
+  parent: PocoEmit.Collections.ICollectionSaver`2
+  langs:
+  - csharp
+  - vb
+  name: Add(TCollection, TElement)
+  nameWithType: ICollectionSaver<TCollection, TElement>.Add(TCollection, TElement)
+  fullName: PocoEmit.Collections.ICollectionSaver<TCollection, TElement>.Add(TCollection, TElement)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/ICollectionSaver~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Add
+    path: ../PocoEmit.Collections/Collections/ICollectionSaver~2.cs
+    startLine: 14
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 添加
+  example: []
+  syntax:
+    content: void Add(TCollection collection, TElement item)
+    parameters:
+    - id: collection
+      type: '{TCollection}'
+      description: ''
+    - id: item
+      type: '{TElement}'
+      description: ''
+    content.vb: Sub Add(collection As TCollection, item As TElement)
+  overload: PocoEmit.Collections.ICollectionSaver`2.Add*
+  nameWithType.vb: ICollectionSaver(Of TCollection, TElement).Add(TCollection, TElement)
+  fullName.vb: PocoEmit.Collections.ICollectionSaver(Of TCollection, TElement).Add(TCollection, TElement)
+references:
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Collections.ICollectionSaver`2.Add*
+  commentId: Overload:PocoEmit.Collections.ICollectionSaver`2.Add
+  href: PocoEmit.Collections.ICollectionSaver-2.html#PocoEmit_Collections_ICollectionSaver_2_Add__0__1_
+  name: Add
+  nameWithType: ICollectionSaver<TCollection, TElement>.Add
+  fullName: PocoEmit.Collections.ICollectionSaver<TCollection, TElement>.Add
+  nameWithType.vb: ICollectionSaver(Of TCollection, TElement).Add
+  fullName.vb: PocoEmit.Collections.ICollectionSaver(Of TCollection, TElement).Add
+- uid: '{TCollection}'
+  commentId: '!:TCollection'
+  definition: TCollection
+  name: TCollection
+  nameWithType: TCollection
+  fullName: TCollection
+- uid: '{TElement}'
+  commentId: '!:TElement'
+  definition: TElement
+  name: TElement
+  nameWithType: TElement
+  fullName: TElement
+- uid: TCollection
+  name: TCollection
+  nameWithType: TCollection
+  fullName: TCollection
+- uid: TElement
+  name: TElement
+  nameWithType: TElement
+  fullName: TElement

@@ -1,0 +1,396 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Builders.EmitHelper
+  commentId: T:PocoEmit.Builders.EmitHelper
+  id: EmitHelper
+  parent: PocoEmit.Builders
+  children:
+  - PocoEmit.Builders.EmitHelper.CheckMethodCallInstance(System.Delegate)
+  - PocoEmit.Builders.EmitHelper.CheckMethodCallInstance(System.Object)
+  - PocoEmit.Builders.EmitHelper.For(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  - PocoEmit.Builders.EmitHelper.For(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  langs:
+  - csharp
+  - vb
+  name: EmitHelper
+  nameWithType: EmitHelper
+  fullName: PocoEmit.Builders.EmitHelper
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Builders/EmitHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: EmitHelper
+    path: ../PocoEmit/Builders/EmitHelper.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: Emit工具
+  example: []
+  syntax:
+    content: public static class EmitHelper
+    content.vb: Public Module EmitHelper
+  inheritance:
+  - System.Object
+- uid: PocoEmit.Builders.EmitHelper.CheckMethodCallInstance(System.Delegate)
+  commentId: M:PocoEmit.Builders.EmitHelper.CheckMethodCallInstance(System.Delegate)
+  id: CheckMethodCallInstance(System.Delegate)
+  parent: PocoEmit.Builders.EmitHelper
+  langs:
+  - csharp
+  - vb
+  name: CheckMethodCallInstance(Delegate)
+  nameWithType: EmitHelper.CheckMethodCallInstance(Delegate)
+  fullName: PocoEmit.Builders.EmitHelper.CheckMethodCallInstance(System.Delegate)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/EmitHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CheckMethodCallInstance
+    path: ../PocoEmit/Builders/EmitHelper.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 检查调用委托目标
+  example: []
+  syntax:
+    content: public static Expression CheckMethodCallInstance(Delegate @delegate)
+    parameters:
+    - id: delegate
+      type: System.Delegate
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Shared Function CheckMethodCallInstance([delegate] As [Delegate]) As Expression
+  overload: PocoEmit.Builders.EmitHelper.CheckMethodCallInstance*
+- uid: PocoEmit.Builders.EmitHelper.CheckMethodCallInstance(System.Object)
+  commentId: M:PocoEmit.Builders.EmitHelper.CheckMethodCallInstance(System.Object)
+  id: CheckMethodCallInstance(System.Object)
+  parent: PocoEmit.Builders.EmitHelper
+  langs:
+  - csharp
+  - vb
+  name: CheckMethodCallInstance(object)
+  nameWithType: EmitHelper.CheckMethodCallInstance(object)
+  fullName: PocoEmit.Builders.EmitHelper.CheckMethodCallInstance(object)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/EmitHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CheckMethodCallInstance
+    path: ../PocoEmit/Builders/EmitHelper.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 检查调用对象
+  example: []
+  syntax:
+    content: public static Expression CheckMethodCallInstance(object instance)
+    parameters:
+    - id: instance
+      type: System.Object
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Shared Function CheckMethodCallInstance(instance As Object) As Expression
+  overload: PocoEmit.Builders.EmitHelper.CheckMethodCallInstance*
+  nameWithType.vb: EmitHelper.CheckMethodCallInstance(Object)
+  fullName.vb: PocoEmit.Builders.EmitHelper.CheckMethodCallInstance(Object)
+  name.vb: CheckMethodCallInstance(Object)
+- uid: PocoEmit.Builders.EmitHelper.For(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  commentId: M:PocoEmit.Builders.EmitHelper.For(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  id: For(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  parent: PocoEmit.Builders.EmitHelper
+  langs:
+  - csharp
+  - vb
+  name: For(Expression, Func<Expression, Expression>)
+  nameWithType: EmitHelper.For(Expression, Func<Expression, Expression>)
+  fullName: PocoEmit.Builders.EmitHelper.For(System.Linq.Expressions.Expression, System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/EmitHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: For
+    path: ../PocoEmit/Builders/EmitHelper.cs
+    startLine: 37
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: for循环
+  example: []
+  syntax:
+    content: public static BlockExpression For(Expression count, Func<Expression, Expression> callBack)
+    parameters:
+    - id: count
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: callBack
+      type: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+      description: ''
+    return:
+      type: System.Linq.Expressions.BlockExpression
+      description: ''
+    content.vb: Public Shared Function [For](count As Expression, callBack As Func(Of Expression, Expression)) As BlockExpression
+  overload: PocoEmit.Builders.EmitHelper.For*
+  nameWithType.vb: EmitHelper.For(Expression, Func(Of Expression, Expression))
+  fullName.vb: PocoEmit.Builders.EmitHelper.For(System.Linq.Expressions.Expression, System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression))
+  name.vb: For(Expression, Func(Of Expression, Expression))
+- uid: PocoEmit.Builders.EmitHelper.For(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  commentId: M:PocoEmit.Builders.EmitHelper.For(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  id: For(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  parent: PocoEmit.Builders.EmitHelper
+  langs:
+  - csharp
+  - vb
+  name: For(Expression, Expression, Func<Expression, Expression>)
+  nameWithType: EmitHelper.For(Expression, Expression, Func<Expression, Expression>)
+  fullName: PocoEmit.Builders.EmitHelper.For(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression, System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/EmitHelper.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: For
+    path: ../PocoEmit/Builders/EmitHelper.cs
+    startLine: 53
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: for循环
+  example: []
+  syntax:
+    content: public static LoopExpression For(Expression index, Expression count, Func<Expression, Expression> callBack)
+    parameters:
+    - id: index
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: count
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: callBack
+      type: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+      description: ''
+    return:
+      type: System.Linq.Expressions.LoopExpression
+      description: ''
+    content.vb: Public Shared Function [For](index As Expression, count As Expression, callBack As Func(Of Expression, Expression)) As LoopExpression
+  overload: PocoEmit.Builders.EmitHelper.For*
+  nameWithType.vb: EmitHelper.For(Expression, Expression, Func(Of Expression, Expression))
+  fullName.vb: PocoEmit.Builders.EmitHelper.For(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression, System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression))
+  name.vb: For(Expression, Expression, Func(Of Expression, Expression))
+references:
+- uid: PocoEmit.Builders
+  commentId: N:PocoEmit.Builders
+  href: PocoEmit.html
+  name: PocoEmit.Builders
+  nameWithType: PocoEmit.Builders
+  fullName: PocoEmit.Builders
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Builders.EmitHelper.CheckMethodCallInstance*
+  commentId: Overload:PocoEmit.Builders.EmitHelper.CheckMethodCallInstance
+  href: PocoEmit.Builders.EmitHelper.html#PocoEmit_Builders_EmitHelper_CheckMethodCallInstance_System_Delegate_
+  name: CheckMethodCallInstance
+  nameWithType: EmitHelper.CheckMethodCallInstance
+  fullName: PocoEmit.Builders.EmitHelper.CheckMethodCallInstance
+- uid: System.Delegate
+  commentId: T:System.Delegate
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.delegate
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: PocoEmit.Builders.EmitHelper.For*
+  commentId: Overload:PocoEmit.Builders.EmitHelper.For
+  href: PocoEmit.Builders.EmitHelper.html#PocoEmit_Builders_EmitHelper_For_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression__
+  name: For
+  nameWithType: EmitHelper.For
+  fullName: PocoEmit.Builders.EmitHelper.For
+- uid: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+  commentId: T:System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<Expression, Expression>
+  nameWithType: Func<Expression, Expression>
+  fullName: System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>
+  nameWithType.vb: Func(Of Expression, Expression)
+  fullName.vb: System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  name.vb: Func(Of Expression, Expression)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.BlockExpression
+  commentId: T:System.Linq.Expressions.BlockExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.blockexpression
+  name: BlockExpression
+  nameWithType: BlockExpression
+  fullName: System.Linq.Expressions.BlockExpression
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Linq.Expressions.LoopExpression
+  commentId: T:System.Linq.Expressions.LoopExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.loopexpression
+  name: LoopExpression
+  nameWithType: LoopExpression
+  fullName: System.Linq.Expressions.LoopExpression

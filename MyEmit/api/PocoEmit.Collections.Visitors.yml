@@ -1,0 +1,91 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Visitors
+  commentId: N:PocoEmit.Collections.Visitors
+  id: PocoEmit.Collections.Visitors
+  children:
+  - PocoEmit.Collections.Visitors.ArrayVisitor
+  - PocoEmit.Collections.Visitors.EnumerableVisitor
+  - PocoEmit.Collections.Visitors.IElementIndexVisitor
+  - PocoEmit.Collections.Visitors.IEmitElementVisitor
+  - PocoEmit.Collections.Visitors.IIndexVisitor
+  - PocoEmit.Collections.Visitors.ListVisitor
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Collections.Visitors
+  nameWithType: PocoEmit.Collections.Visitors
+  fullName: PocoEmit.Collections.Visitors
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Collections.Visitors.ArrayVisitor
+  commentId: T:PocoEmit.Collections.Visitors.ArrayVisitor
+  href: PocoEmit.Collections.Visitors.ArrayVisitor.html
+  name: ArrayVisitor
+  nameWithType: ArrayVisitor
+  fullName: PocoEmit.Collections.Visitors.ArrayVisitor
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor
+  commentId: T:PocoEmit.Collections.Visitors.EnumerableVisitor
+  href: PocoEmit.Collections.Visitors.EnumerableVisitor.html
+  name: EnumerableVisitor
+  nameWithType: EnumerableVisitor
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor
+- uid: PocoEmit.Collections.Visitors.IEmitElementVisitor
+  commentId: T:PocoEmit.Collections.Visitors.IEmitElementVisitor
+  parent: PocoEmit.Collections.Visitors
+  href: PocoEmit.Collections.Visitors.IEmitElementVisitor.html
+  name: IEmitElementVisitor
+  nameWithType: IEmitElementVisitor
+  fullName: PocoEmit.Collections.Visitors.IEmitElementVisitor
+- uid: PocoEmit.Collections.Visitors.IElementIndexVisitor
+  commentId: T:PocoEmit.Collections.Visitors.IElementIndexVisitor
+  parent: PocoEmit.Collections.Visitors
+  href: PocoEmit.Collections.Visitors.IElementIndexVisitor.html
+  name: IElementIndexVisitor
+  nameWithType: IElementIndexVisitor
+  fullName: PocoEmit.Collections.Visitors.IElementIndexVisitor
+- uid: PocoEmit.Collections.Visitors.IIndexVisitor
+  commentId: T:PocoEmit.Collections.Visitors.IIndexVisitor
+  parent: PocoEmit.Collections.Visitors
+  href: PocoEmit.Collections.Visitors.IIndexVisitor.html
+  name: IIndexVisitor
+  nameWithType: IIndexVisitor
+  fullName: PocoEmit.Collections.Visitors.IIndexVisitor
+- uid: PocoEmit.Collections.Visitors.ListVisitor
+  commentId: T:PocoEmit.Collections.Visitors.ListVisitor
+  href: PocoEmit.Collections.Visitors.ListVisitor.html
+  name: ListVisitor
+  nameWithType: ListVisitor
+  fullName: PocoEmit.Collections.Visitors.ListVisitor
+- uid: PocoEmit.Collections.Visitors
+  commentId: N:PocoEmit.Collections.Visitors
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Visitors
+  nameWithType: PocoEmit.Collections.Visitors
+  fullName: PocoEmit.Collections.Visitors
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Visitors
+    name: Visitors
+    href: PocoEmit.Collections.Visitors.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Visitors
+    name: Visitors
+    href: PocoEmit.Collections.Visitors.html

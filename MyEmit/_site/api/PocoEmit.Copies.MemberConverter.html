@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>MemberConverter 类
+ | 简单对象Emit工具 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="MemberConverter 类
+ | 简单对象Emit工具 ">
+      
+      <meta name="description" content="成员转化">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyEmit/new/main/apiSpec/new?filename=PocoEmit_Copies_MemberConverter.md&amp;value=---%0Auid%3A%20PocoEmit.Copies.MemberConverter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MyEmit">
+            MyEmit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PocoEmit.Copies.MemberConverter">
+
+
+
+  <h1 id="PocoEmit_Copies_MemberConverter" data-uid="PocoEmit.Copies.MemberConverter" class="text-break">
+MemberConverter 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Copies/MemberConverter.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="PocoEmit.html">PocoEmit</a>.<a class="xref" href="PocoEmit.Copies.html">Copies</a></dd></dl>
+  <dl><dt>程序集</dt><dd>PocoEmit.Mapper.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>成员转化</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class MemberConverter : IMemberConverter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">MemberConverter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="PocoEmit.Copies.IMemberConverter.html">IMemberConverter</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="PocoEmit_Copies_MemberConverter__ctor_" data-uid="PocoEmit.Copies.MemberConverter.#ctor*"></a>
+
+  <h3 id="PocoEmit_Copies_MemberConverter__ctor_PocoEmit_Configuration_IMapperOptions_PocoEmit_Members_IEmitReader_PocoEmit_Members_IEmitWriter_" data-uid="PocoEmit.Copies.MemberConverter.#ctor(PocoEmit.Configuration.IMapperOptions,PocoEmit.Members.IEmitReader,PocoEmit.Members.IEmitWriter)">
+  MemberConverter(IMapperOptions, IEmitReader, IEmitWriter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Copies/MemberConverter.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>成员转化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemberConverter(IMapperOptions options, IEmitReader sourceReader, IEmitWriter destWriter)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="PocoEmit.Configuration.IMapperOptions.html">IMapperOptions</a></dt>
+    <dd></dd>
+    <dt><code>sourceReader</code> <a class="xref" href="PocoEmit.Members.IEmitReader.html">IEmitReader</a></dt>
+    <dd></dd>
+    <dt><code>destWriter</code> <a class="xref" href="PocoEmit.Members.IEmitWriter.html">IEmitWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="PocoEmit_Copies_MemberConverter_DestWriter_" data-uid="PocoEmit.Copies.MemberConverter.DestWriter*"></a>
+
+  <h3 id="PocoEmit_Copies_MemberConverter_DestWriter" data-uid="PocoEmit.Copies.MemberConverter.DestWriter">
+  DestWriter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Copies/MemberConverter.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>目标成员写入器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEmitWriter DestWriter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Members.IEmitWriter.html">IEmitWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Copies_MemberConverter_Options_" data-uid="PocoEmit.Copies.MemberConverter.Options*"></a>
+
+  <h3 id="PocoEmit_Copies_MemberConverter_Options" data-uid="PocoEmit.Copies.MemberConverter.Options">
+  Options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Copies/MemberConverter.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Emit配置</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMapperOptions Options { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Configuration.IMapperOptions.html">IMapperOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Copies_MemberConverter_SourceReader_" data-uid="PocoEmit.Copies.MemberConverter.SourceReader*"></a>
+
+  <h3 id="PocoEmit_Copies_MemberConverter_SourceReader" data-uid="PocoEmit.Copies.MemberConverter.SourceReader">
+  SourceReader
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Copies/MemberConverter.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>源成员读取器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEmitReader SourceReader { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Members.IEmitReader.html">IEmitReader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="PocoEmit_Copies_MemberConverter_Convert_" data-uid="PocoEmit.Copies.MemberConverter.Convert*"></a>
+
+  <h3 id="PocoEmit_Copies_MemberConverter_Convert_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_" data-uid="PocoEmit.Copies.MemberConverter.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)">
+  Convert(Expression, Expression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Copies/MemberConverter.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>转化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Expression Convert(Expression source, Expression dest)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+    <dt><code>dest</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Copies/MemberConverter.cs/#L17" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) MyEmit All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

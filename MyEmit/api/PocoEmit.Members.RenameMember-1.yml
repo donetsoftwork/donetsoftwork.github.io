@@ -1,0 +1,351 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Members.RenameMember`1
+  commentId: T:PocoEmit.Members.RenameMember`1
+  id: RenameMember`1
+  parent: PocoEmit.Members
+  children:
+  - PocoEmit.Members.RenameMember`1.#ctor(`0,System.String)
+  - PocoEmit.Members.RenameMember`1.InstanceType
+  - PocoEmit.Members.RenameMember`1.Name
+  - PocoEmit.Members.RenameMember`1.ValueType
+  - PocoEmit.Members.RenameMember`1._inner
+  langs:
+  - csharp
+  - vb
+  name: RenameMember<TMember>
+  nameWithType: RenameMember<TMember>
+  fullName: PocoEmit.Members.RenameMember<TMember>
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/RenameMember~1.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: RenameMember
+    path: ../PocoEmit.Mapper/Members/RenameMember~1.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 重命名成员
+  example: []
+  syntax:
+    content: 'public class RenameMember<TMember> : IMember where TMember : IMember'
+    typeParameters:
+    - id: TMember
+      description: ''
+    content.vb: Public Class RenameMember(Of TMember As IMember) Implements IMember
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PocoEmit.Members.RenameReader
+  implements:
+  - PocoEmit.Members.IMember
+  nameWithType.vb: RenameMember(Of TMember)
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember)
+  name.vb: RenameMember(Of TMember)
+- uid: PocoEmit.Members.RenameMember`1.#ctor(`0,System.String)
+  commentId: M:PocoEmit.Members.RenameMember`1.#ctor(`0,System.String)
+  id: '#ctor(`0,System.String)'
+  parent: PocoEmit.Members.RenameMember`1
+  langs:
+  - csharp
+  - vb
+  name: RenameMember(TMember, string)
+  nameWithType: RenameMember<TMember>.RenameMember(TMember, string)
+  fullName: PocoEmit.Members.RenameMember<TMember>.RenameMember(TMember, string)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/RenameMember~1.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Members/RenameMember~1.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 重命名成员
+  example: []
+  syntax:
+    content: public RenameMember(TMember inner, string name)
+    parameters:
+    - id: inner
+      type: '{TMember}'
+      description: ''
+    - id: name
+      type: System.String
+      description: ''
+    content.vb: Public Sub New(inner As TMember, name As String)
+  overload: PocoEmit.Members.RenameMember`1.#ctor*
+  nameWithType.vb: RenameMember(Of TMember).New(TMember, String)
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember).New(TMember, String)
+  name.vb: New(TMember, String)
+- uid: PocoEmit.Members.RenameMember`1._inner
+  commentId: F:PocoEmit.Members.RenameMember`1._inner
+  id: _inner
+  parent: PocoEmit.Members.RenameMember`1
+  langs:
+  - csharp
+  - vb
+  name: _inner
+  nameWithType: RenameMember<TMember>._inner
+  fullName: PocoEmit.Members.RenameMember<TMember>._inner
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/RenameMember~1.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _inner
+    path: ../PocoEmit.Mapper/Members/RenameMember~1.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 内部成员
+  example: []
+  syntax:
+    content: protected readonly TMember _inner
+    return:
+      type: '{TMember}'
+    content.vb: Protected ReadOnly _inner As TMember
+  nameWithType.vb: RenameMember(Of TMember)._inner
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember)._inner
+- uid: PocoEmit.Members.RenameMember`1.InstanceType
+  commentId: P:PocoEmit.Members.RenameMember`1.InstanceType
+  id: InstanceType
+  parent: PocoEmit.Members.RenameMember`1
+  langs:
+  - csharp
+  - vb
+  name: InstanceType
+  nameWithType: RenameMember<TMember>.InstanceType
+  fullName: PocoEmit.Members.RenameMember<TMember>.InstanceType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/RenameMember~1.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: InstanceType
+    path: ../PocoEmit.Mapper/Members/RenameMember~1.cs
+    startLine: 22
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 实体类型
+  example: []
+  syntax:
+    content: public Type InstanceType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property InstanceType As Type
+  overload: PocoEmit.Members.RenameMember`1.InstanceType*
+  implements:
+  - PocoEmit.Members.IMember.InstanceType
+  nameWithType.vb: RenameMember(Of TMember).InstanceType
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember).InstanceType
+- uid: PocoEmit.Members.RenameMember`1.Name
+  commentId: P:PocoEmit.Members.RenameMember`1.Name
+  id: Name
+  parent: PocoEmit.Members.RenameMember`1
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: RenameMember<TMember>.Name
+  fullName: PocoEmit.Members.RenameMember<TMember>.Name
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/RenameMember~1.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Name
+    path: ../PocoEmit.Mapper/Members/RenameMember~1.cs
+    startLine: 25
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 成员名
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: PocoEmit.Members.RenameMember`1.Name*
+  implements:
+  - PocoEmit.Members.IMember.Name
+  nameWithType.vb: RenameMember(Of TMember).Name
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember).Name
+- uid: PocoEmit.Members.RenameMember`1.ValueType
+  commentId: P:PocoEmit.Members.RenameMember`1.ValueType
+  id: ValueType
+  parent: PocoEmit.Members.RenameMember`1
+  langs:
+  - csharp
+  - vb
+  name: ValueType
+  nameWithType: RenameMember<TMember>.ValueType
+  fullName: PocoEmit.Members.RenameMember<TMember>.ValueType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Members/RenameMember~1.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ValueType
+    path: ../PocoEmit.Mapper/Members/RenameMember~1.cs
+    startLine: 28
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Members
+  summary: 值类型
+  example: []
+  syntax:
+    content: public Type ValueType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ValueType As Type
+  overload: PocoEmit.Members.RenameMember`1.ValueType*
+  implements:
+  - PocoEmit.Members.IMember.ValueType
+  nameWithType.vb: RenameMember(Of TMember).ValueType
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember).ValueType
+references:
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Members.IMember
+  commentId: T:PocoEmit.Members.IMember
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IMember.html
+  name: IMember
+  nameWithType: IMember
+  fullName: PocoEmit.Members.IMember
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Members.RenameMember`1.#ctor*
+  commentId: Overload:PocoEmit.Members.RenameMember`1.#ctor
+  href: PocoEmit.Members.RenameMember-1.html#PocoEmit_Members_RenameMember_1__ctor__0_System_String_
+  name: RenameMember
+  nameWithType: RenameMember<TMember>.RenameMember
+  fullName: PocoEmit.Members.RenameMember<TMember>.RenameMember
+  nameWithType.vb: RenameMember(Of TMember).New
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember).New
+  name.vb: New
+- uid: '{TMember}'
+  commentId: '!:TMember'
+  definition: TMember
+  name: TMember
+  nameWithType: TMember
+  fullName: TMember
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TMember
+  name: TMember
+  nameWithType: TMember
+  fullName: TMember
+- uid: PocoEmit.Members.RenameMember`1.InstanceType*
+  commentId: Overload:PocoEmit.Members.RenameMember`1.InstanceType
+  href: PocoEmit.Members.RenameMember-1.html#PocoEmit_Members_RenameMember_1_InstanceType
+  name: InstanceType
+  nameWithType: RenameMember<TMember>.InstanceType
+  fullName: PocoEmit.Members.RenameMember<TMember>.InstanceType
+  nameWithType.vb: RenameMember(Of TMember).InstanceType
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember).InstanceType
+- uid: PocoEmit.Members.IMember.InstanceType
+  commentId: P:PocoEmit.Members.IMember.InstanceType
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_InstanceType
+  name: InstanceType
+  nameWithType: IMember.InstanceType
+  fullName: PocoEmit.Members.IMember.InstanceType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Members.RenameMember`1.Name*
+  commentId: Overload:PocoEmit.Members.RenameMember`1.Name
+  href: PocoEmit.Members.RenameMember-1.html#PocoEmit_Members_RenameMember_1_Name
+  name: Name
+  nameWithType: RenameMember<TMember>.Name
+  fullName: PocoEmit.Members.RenameMember<TMember>.Name
+  nameWithType.vb: RenameMember(Of TMember).Name
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember).Name
+- uid: PocoEmit.Members.IMember.Name
+  commentId: P:PocoEmit.Members.IMember.Name
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_Name
+  name: Name
+  nameWithType: IMember.Name
+  fullName: PocoEmit.Members.IMember.Name
+- uid: PocoEmit.Members.RenameMember`1.ValueType*
+  commentId: Overload:PocoEmit.Members.RenameMember`1.ValueType
+  href: PocoEmit.Members.RenameMember-1.html#PocoEmit_Members_RenameMember_1_ValueType
+  name: ValueType
+  nameWithType: RenameMember<TMember>.ValueType
+  fullName: PocoEmit.Members.RenameMember<TMember>.ValueType
+  nameWithType.vb: RenameMember(Of TMember).ValueType
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember).ValueType
+- uid: PocoEmit.Members.IMember.ValueType
+  commentId: P:PocoEmit.Members.IMember.ValueType
+  parent: PocoEmit.Members.IMember
+  href: PocoEmit.Members.IMember.html#PocoEmit_Members_IMember_ValueType
+  name: ValueType
+  nameWithType: IMember.ValueType
+  fullName: PocoEmit.Members.IMember.ValueType

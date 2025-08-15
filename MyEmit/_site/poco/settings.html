@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>配置 | 简单对象Emit工具 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="配置 | 简单对象Emit工具 ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyEmit/blob/main/docs/poco/settings.md/#L1">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MyEmit">
+            MyEmit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="配置">配置</h1>
+
+<blockquote>
+<ul>
+<li>各项配置应该在程序启动时尽早配置</li>
+<li>已经生成的缓存修改相关配置不会生效</li>
+</ul>
+</blockquote>
+<h2 id="一配置类型转化器">一、配置类型转化器</h2>
+<blockquote>
+<p>通过IPoco配置</p>
+</blockquote>
+<h3 id="1-setconvertfunc">1. SetConvertFunc</h3>
+<blockquote>
+<ul>
+<li>配置类型转化委托</li>
+<li>配置后按此委托生成类型转化委托或类型转化接口对象</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">Poco.Global.SetConvertFunc&lt;string, bool&gt;(System.Convert.ToBoolean);
+</code></pre>
+<h3 id="2-addstaticconverter">2. AddStaticConverter</h3>
+<blockquote>
+<ul>
+<li>反射获取类型转化的静态方法</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">options.AddStaticConverter&lt;UserConverter&gt;();
+</code></pre>
+<h3 id="3-addconverter">3. AddConverter</h3>
+<blockquote>
+<ul>
+<li>反射获取类型转化的实例方法</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">TimeConverter timeConverter = new();
+options.AddConverter(timeConverter);
+</code></pre>
+<h2 id="二配置反射读写成员">二、配置反射读、写成员</h2>
+<h3 id="1-通过接口ireflectionmember配置">1. 通过接口IReflectionMember配置</h3>
+<h4 id="11-接口ireflectionmember">1.1 接口IReflectionMember</h4>
+<pre><code class="lang-csharp">interface IReflectionMember
+{
+    MemberBundle GetMembers(Type instanceType);
+}
+public record MemberBundle(
+    IDictionary&lt;string, MemberInfo&gt; ReadMembers, 
+    IDictionary&lt;string, IEmitMemberReader&gt; EmitReaders, 
+    IDictionary&lt;string, MemberInfo&gt; WriteMembers, 
+    IDictionary&lt;string, IEmitMemberWriter&gt; EmitWriters);
+</code></pre>
+<h4 id="12-defaultreflectionmember">1.2 DefaultReflectionMember</h4>
+<blockquote>
+<ul>
+<li>DefaultReflectionMember是IReflectionMember的默认实现</li>
+<li>comparer配置成员名匹配,默认忽略大小写</li>
+<li>includeField配置是否反射字段,默认反射字段</li>
+</ul>
+</blockquote>
+<pre><code class="lang-csharp">public class DefaultReflectionMember(IEqualityComparer&lt;string&gt; comparer, bool includeField = true)
+    : IReflectionMember
+{
+    public DefaultReflectionMember() : this(StringComparer.OrdinalIgnoreCase, true) {}
+    // ...
+}
+</code></pre>
+<h4 id="13-支持方法反射">1.3 支持方法反射</h4>
+<blockquote>
+<ul>
+<li>通过实现IReflectionMember可以支持方法反射作为读、写成员</li>
+</ul>
+</blockquote>
+<h3 id="2-通过poco构造函数配置">2. 通过Poco构造函数配置</h3>
+<pre><code class="lang-csharp">class Poco(IReflectionMember reflection);
+</code></pre>
+<h3 id="3-通过静态属性defaultreflectmember配置">3. 通过静态属性DefaultReflectMember配置</h3>
+<pre><code class="lang-csharp">class Poco
+{
+    public static IReflectionMember DefaultReflectMember { get; set; }
+}
+</code></pre>
+<h4 id="31-pocoglobal的reflectionmember">3.1 Poco.Global的ReflectionMember</h4>
+<blockquote>
+<ul>
+<li>修改静态属性Poco.DefaultReflectMember会同步修改Global的ReflectionMember</li>
+</ul>
+</blockquote>
+<h4 id="32-poco默认的reflectionmember">3.2 Poco默认的ReflectionMember</h4>
+<blockquote>
+<ul>
+<li>Poco无参构造函数调用的是Poco.DefaultReflectMember</li>
+</ul>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyEmit/blob/main/docs/poco/settings.md/#L1" class="edit-link">编辑本文</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) MyEmit All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

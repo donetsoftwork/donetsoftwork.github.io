@@ -1,0 +1,488 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Builders.ConvertBuilder
+  commentId: T:PocoEmit.Builders.ConvertBuilder
+  id: ConvertBuilder
+  parent: PocoEmit.Builders
+  children:
+  - PocoEmit.Builders.ConvertBuilder.#ctor
+  - PocoEmit.Builders.ConvertBuilder.Build(System.Type,System.Type)
+  - PocoEmit.Builders.ConvertBuilder.BuildByConstructor(System.Reflection.ConstructorInfo,System.Type)
+  - PocoEmit.Builders.ConvertBuilder.BuildForNullable(PocoEmit.Converters.IEmitConverter,System.Type,System.Type)
+  - PocoEmit.Builders.ConvertBuilder.BuildForObject(System.Type)
+  - PocoEmit.Builders.ConvertBuilder.BuildForSelf(System.Type)
+  - PocoEmit.Builders.ConvertBuilder.BuildForString(System.Type)
+  - PocoEmit.Builders.ConvertBuilder.Default
+  langs:
+  - csharp
+  - vb
+  name: ConvertBuilder
+  nameWithType: ConvertBuilder
+  fullName: PocoEmit.Builders.ConvertBuilder
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Builders/ConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConvertBuilder
+    path: ../PocoEmit/Builders/ConvertBuilder.cs
+    startLine: 9
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 默认转换构建器
+  example: []
+  syntax:
+    content: public class ConvertBuilder
+    content.vb: Public Class ConvertBuilder
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PocoEmit.Builders.ComplexConvertBuilder
+- uid: PocoEmit.Builders.ConvertBuilder.#ctor
+  commentId: M:PocoEmit.Builders.ConvertBuilder.#ctor
+  id: '#ctor'
+  parent: PocoEmit.Builders.ConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: ConvertBuilder()
+  nameWithType: ConvertBuilder.ConvertBuilder()
+  fullName: PocoEmit.Builders.ConvertBuilder.ConvertBuilder()
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit/Builders/ConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit/Builders/ConvertBuilder.cs
+    startLine: 14
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 默认转换构建器
+  example: []
+  syntax:
+    content: protected ConvertBuilder()
+    content.vb: Protected Sub New()
+  overload: PocoEmit.Builders.ConvertBuilder.#ctor*
+  nameWithType.vb: ConvertBuilder.New()
+  fullName.vb: PocoEmit.Builders.ConvertBuilder.New()
+  name.vb: New()
+- uid: PocoEmit.Builders.ConvertBuilder.Build(System.Type,System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.Build(System.Type,System.Type)
+  id: Build(System.Type,System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build(Type, Type)
+  nameWithType: ConvertBuilder.Build(Type, Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.Build(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/ConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Build
+    path: ../PocoEmit/Builders/ConvertBuilder.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 构建转换器
+  example: []
+  syntax:
+    content: public virtual IEmitConverter Build(Type sourceType, Type destType)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: 源类型
+    - id: destType
+      type: System.Type
+      description: 目标类型
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: 转换器
+    content.vb: Public Overridable Function Build(sourceType As Type, destType As Type) As IEmitConverter
+  overload: PocoEmit.Builders.ConvertBuilder.Build*
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForSelf(System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.BuildForSelf(System.Type)
+  id: BuildForSelf(System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildForSelf(Type)
+  nameWithType: ConvertBuilder.BuildForSelf(Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForSelf(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/ConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: BuildForSelf
+    path: ../PocoEmit/Builders/ConvertBuilder.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 构建同类型转换器
+  example: []
+  syntax:
+    content: public virtual IEmitConverter BuildForSelf(Type instanceType)
+    parameters:
+    - id: instanceType
+      type: System.Type
+      description: 类型
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: 转换器
+    content.vb: Public Overridable Function BuildForSelf(instanceType As Type) As IEmitConverter
+  overload: PocoEmit.Builders.ConvertBuilder.BuildForSelf*
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForObject(System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.BuildForObject(System.Type)
+  id: BuildForObject(System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildForObject(Type)
+  nameWithType: ConvertBuilder.BuildForObject(Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForObject(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/ConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: BuildForObject
+    path: ../PocoEmit/Builders/ConvertBuilder.cs
+    startLine: 37
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 构建object转换器
+  example: []
+  syntax:
+    content: public virtual IEmitConverter BuildForObject(Type sourceType)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Public Overridable Function BuildForObject(sourceType As Type) As IEmitConverter
+  overload: PocoEmit.Builders.ConvertBuilder.BuildForObject*
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForString(System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.BuildForString(System.Type)
+  id: BuildForString(System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildForString(Type)
+  nameWithType: ConvertBuilder.BuildForString(Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForString(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/ConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: BuildForString
+    path: ../PocoEmit/Builders/ConvertBuilder.cs
+    startLine: 44
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 构建字符串转换器
+  example: []
+  syntax:
+    content: public virtual IEmitConverter BuildForString(Type sourceType)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Public Overridable Function BuildForString(sourceType As Type) As IEmitConverter
+  overload: PocoEmit.Builders.ConvertBuilder.BuildForString*
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForNullable(PocoEmit.Converters.IEmitConverter,System.Type,System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.BuildForNullable(PocoEmit.Converters.IEmitConverter,System.Type,System.Type)
+  id: BuildForNullable(PocoEmit.Converters.IEmitConverter,System.Type,System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildForNullable(IEmitConverter, Type, Type)
+  nameWithType: ConvertBuilder.BuildForNullable(IEmitConverter, Type, Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForNullable(PocoEmit.Converters.IEmitConverter, System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/ConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: BuildForNullable
+    path: ../PocoEmit/Builders/ConvertBuilder.cs
+    startLine: 53
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 构建Nullable转换器
+  example: []
+  syntax:
+    content: public virtual IEmitConverter BuildForNullable(IEmitConverter original, Type originalSourceType, Type destType)
+    parameters:
+    - id: original
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    - id: originalSourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Public Overridable Function BuildForNullable(original As IEmitConverter, originalSourceType As Type, destType As Type) As IEmitConverter
+  overload: PocoEmit.Builders.ConvertBuilder.BuildForNullable*
+- uid: PocoEmit.Builders.ConvertBuilder.BuildByConstructor(System.Reflection.ConstructorInfo,System.Type)
+  commentId: M:PocoEmit.Builders.ConvertBuilder.BuildByConstructor(System.Reflection.ConstructorInfo,System.Type)
+  id: BuildByConstructor(System.Reflection.ConstructorInfo,System.Type)
+  parent: PocoEmit.Builders.ConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildByConstructor(ConstructorInfo, Type)
+  nameWithType: ConvertBuilder.BuildByConstructor(ConstructorInfo, Type)
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildByConstructor(System.Reflection.ConstructorInfo, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Builders/ConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: BuildByConstructor
+    path: ../PocoEmit/Builders/ConvertBuilder.cs
+    startLine: 61
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 构造函数转化器
+  example: []
+  syntax:
+    content: public virtual IEmitConverter BuildByConstructor(ConstructorInfo constructor, Type sourceType)
+    parameters:
+    - id: constructor
+      type: System.Reflection.ConstructorInfo
+      description: ''
+    - id: sourceType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Converters.IEmitConverter
+      description: ''
+    content.vb: Public Overridable Function BuildByConstructor(constructor As ConstructorInfo, sourceType As Type) As IEmitConverter
+  overload: PocoEmit.Builders.ConvertBuilder.BuildByConstructor*
+- uid: PocoEmit.Builders.ConvertBuilder.Default
+  commentId: F:PocoEmit.Builders.ConvertBuilder.Default
+  id: Default
+  parent: PocoEmit.Builders.ConvertBuilder
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: ConvertBuilder.Default
+  fullName: PocoEmit.Builders.ConvertBuilder.Default
+  type: Field
+  source:
+    remote:
+      path: PocoEmit/Builders/ConvertBuilder.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Default
+    path: ../PocoEmit/Builders/ConvertBuilder.cs
+    startLine: 66
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Builders
+  summary: 默认转换构建器实例
+  example: []
+  syntax:
+    content: public static readonly ConvertBuilder Default
+    return:
+      type: PocoEmit.Builders.ConvertBuilder
+    content.vb: Public Shared ReadOnly [Default] As ConvertBuilder
+references:
+- uid: PocoEmit.Builders
+  commentId: N:PocoEmit.Builders
+  href: PocoEmit.html
+  name: PocoEmit.Builders
+  nameWithType: PocoEmit.Builders
+  fullName: PocoEmit.Builders
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Builders.ConvertBuilder.#ctor*
+  commentId: Overload:PocoEmit.Builders.ConvertBuilder.#ctor
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder__ctor
+  name: ConvertBuilder
+  nameWithType: ConvertBuilder.ConvertBuilder
+  fullName: PocoEmit.Builders.ConvertBuilder.ConvertBuilder
+  nameWithType.vb: ConvertBuilder.New
+  fullName.vb: PocoEmit.Builders.ConvertBuilder.New
+  name.vb: New
+- uid: PocoEmit.Builders.ConvertBuilder.Build*
+  commentId: Overload:PocoEmit.Builders.ConvertBuilder.Build
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_Build_System_Type_System_Type_
+  name: Build
+  nameWithType: ConvertBuilder.Build
+  fullName: PocoEmit.Builders.ConvertBuilder.Build
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Converters.IEmitConverter
+  commentId: T:PocoEmit.Converters.IEmitConverter
+  parent: PocoEmit.Converters
+  href: PocoEmit.Converters.IEmitConverter.html
+  name: IEmitConverter
+  nameWithType: IEmitConverter
+  fullName: PocoEmit.Converters.IEmitConverter
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForSelf*
+  commentId: Overload:PocoEmit.Builders.ConvertBuilder.BuildForSelf
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForSelf_System_Type_
+  name: BuildForSelf
+  nameWithType: ConvertBuilder.BuildForSelf
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForSelf
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForObject*
+  commentId: Overload:PocoEmit.Builders.ConvertBuilder.BuildForObject
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForObject_System_Type_
+  name: BuildForObject
+  nameWithType: ConvertBuilder.BuildForObject
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForObject
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForString*
+  commentId: Overload:PocoEmit.Builders.ConvertBuilder.BuildForString
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForString_System_Type_
+  name: BuildForString
+  nameWithType: ConvertBuilder.BuildForString
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForString
+- uid: PocoEmit.Builders.ConvertBuilder.BuildForNullable*
+  commentId: Overload:PocoEmit.Builders.ConvertBuilder.BuildForNullable
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildForNullable_PocoEmit_Converters_IEmitConverter_System_Type_System_Type_
+  name: BuildForNullable
+  nameWithType: ConvertBuilder.BuildForNullable
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildForNullable
+- uid: PocoEmit.Builders.ConvertBuilder.BuildByConstructor*
+  commentId: Overload:PocoEmit.Builders.ConvertBuilder.BuildByConstructor
+  href: PocoEmit.Builders.ConvertBuilder.html#PocoEmit_Builders_ConvertBuilder_BuildByConstructor_System_Reflection_ConstructorInfo_System_Type_
+  name: BuildByConstructor
+  nameWithType: ConvertBuilder.BuildByConstructor
+  fullName: PocoEmit.Builders.ConvertBuilder.BuildByConstructor
+- uid: System.Reflection.ConstructorInfo
+  commentId: T:System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  name: ConstructorInfo
+  nameWithType: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.Builders.ConvertBuilder
+  commentId: T:PocoEmit.Builders.ConvertBuilder
+  parent: PocoEmit.Builders
+  href: PocoEmit.Builders.ConvertBuilder.html
+  name: ConvertBuilder
+  nameWithType: ConvertBuilder
+  fullName: PocoEmit.Builders.ConvertBuilder

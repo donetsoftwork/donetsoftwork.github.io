@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ConverterFactory 类
+ | 简单对象Emit工具 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ConverterFactory 类
+ | 简单对象Emit工具 ">
+      
+      <meta name="description" content="转化器工厂">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyEmit/new/main/apiSpec/new?filename=PocoEmit_Converters_ConverterFactory.md&amp;value=---%0Auid%3A%20PocoEmit.Converters.ConverterFactory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MyEmit">
+            MyEmit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PocoEmit.Converters.ConverterFactory">
+
+
+
+  <h1 id="PocoEmit_Converters_ConverterFactory" data-uid="PocoEmit.Converters.ConverterFactory" class="text-break">
+ConverterFactory 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Converters/ConverterFactory.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="PocoEmit.html">PocoEmit</a>.<a class="xref" href="PocoEmit.Converters.html">Converters</a></dd></dl>
+  <dl><dt>程序集</dt><dd>PocoEmit.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>转化器工厂</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ConverterFactory : CacheBase&lt;PairTypeKey, IEmitConverter&gt;, ICacher&lt;PairTypeKey, IEmitConverter&gt;, IStore&lt;PairTypeKey, IEmitConverter&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="PocoEmit.Collections.CacheBase-2.html">CacheBase</a>&lt;<a class="xref" href="PocoEmit.Configuration.PairTypeKey.html">PairTypeKey</a>, <a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a>&gt;</div>
+      <div><span class="xref">ConverterFactory</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>实现</dt>
+    <dd>
+      <div><a class="xref" href="PocoEmit.Collections.ICacher-2.html">ICacher</a>&lt;<a class="xref" href="PocoEmit.Configuration.PairTypeKey.html">PairTypeKey</a>, <a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a>&gt;</div>
+      <div><a class="xref" href="PocoEmit.Collections.IStore-2.html">IStore</a>&lt;<a class="xref" href="PocoEmit.Configuration.PairTypeKey.html">PairTypeKey</a>, <a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Get__0_">CacheBase&lt;PairTypeKey, IEmitConverter&gt;.Get(PairTypeKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_ContainsKey__0_">CacheBase&lt;PairTypeKey, IEmitConverter&gt;.ContainsKey(PairTypeKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_TryGetValue__0__1__">CacheBase&lt;PairTypeKey, IEmitConverter&gt;.TryGetValue(PairTypeKey, out IEmitConverter)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.CacheBase-2.html#PocoEmit_Collections_CacheBase_2_Set__0__1_">CacheBase&lt;PairTypeKey, IEmitConverter&gt;.Set(PairTypeKey, IEmitConverter)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">构造函数
+</h2>
+
+
+  <a id="PocoEmit_Converters_ConverterFactory__ctor_" data-uid="PocoEmit.Converters.ConverterFactory.#ctor*"></a>
+
+  <h3 id="PocoEmit_Converters_ConverterFactory__ctor_PocoEmit_Configuration_IPocoOptions_" data-uid="PocoEmit.Converters.ConverterFactory.#ctor(PocoEmit.Configuration.IPocoOptions)">
+  ConverterFactory(IPocoOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Converters/ConverterFactory.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>转化器工厂</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConverterFactory(IPocoOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="PocoEmit.Configuration.IPocoOptions.html">IPocoOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="PocoEmit_Converters_ConverterFactory_Options_" data-uid="PocoEmit.Converters.ConverterFactory.Options*"></a>
+
+  <h3 id="PocoEmit_Converters_ConverterFactory_Options" data-uid="PocoEmit.Converters.ConverterFactory.Options">
+  Options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Converters/ConverterFactory.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Emit配置</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPocoOptions Options { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Configuration.IPocoOptions.html">IPocoOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="PocoEmit_Converters_ConverterFactory_CreateNew_" data-uid="PocoEmit.Converters.ConverterFactory.CreateNew*"></a>
+
+  <h3 id="PocoEmit_Converters_ConverterFactory_CreateNew_PocoEmit_Configuration_PairTypeKey_" data-uid="PocoEmit.Converters.ConverterFactory.CreateNew(PocoEmit.Configuration.PairTypeKey)">
+  CreateNew(PairTypeKey)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Converters/ConverterFactory.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>构造新值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IEmitConverter CreateNew(PairTypeKey key)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="PocoEmit.Configuration.PairTypeKey.html">PairTypeKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Converters.IEmitConverter.html">IEmitConverter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/Converters/ConverterFactory.cs/#L10" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) MyEmit All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

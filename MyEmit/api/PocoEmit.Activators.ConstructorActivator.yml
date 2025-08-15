@@ -1,0 +1,436 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Activators.ConstructorActivator
+  commentId: T:PocoEmit.Activators.ConstructorActivator
+  id: ConstructorActivator
+  parent: PocoEmit.Activators
+  children:
+  - PocoEmit.Activators.ConstructorActivator.#ctor(System.Type,System.Reflection.ConstructorInfo)
+  - PocoEmit.Activators.ConstructorActivator.Constructor
+  - PocoEmit.Activators.ConstructorActivator.New(System.Linq.Expressions.Expression)
+  - PocoEmit.Activators.ConstructorActivator.ReturnType
+  - PocoEmit.Activators.ConstructorActivator._constructor
+  - PocoEmit.Activators.ConstructorActivator._returnType
+  langs:
+  - csharp
+  - vb
+  name: ConstructorActivator
+  nameWithType: ConstructorActivator
+  fullName: PocoEmit.Activators.ConstructorActivator
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ConstructorActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConstructorActivator
+    path: ../PocoEmit.Mapper/Activators/ConstructorActivator.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 构造函数激活
+  example: []
+  syntax:
+    content: 'public class ConstructorActivator : IEmitActivator'
+    content.vb: Public Class ConstructorActivator Implements IEmitActivator
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PocoEmit.Activators.ParameterConstructorActivator
+  implements:
+  - PocoEmit.Activators.IEmitActivator
+- uid: PocoEmit.Activators.ConstructorActivator.#ctor(System.Type,System.Reflection.ConstructorInfo)
+  commentId: M:PocoEmit.Activators.ConstructorActivator.#ctor(System.Type,System.Reflection.ConstructorInfo)
+  id: '#ctor(System.Type,System.Reflection.ConstructorInfo)'
+  parent: PocoEmit.Activators.ConstructorActivator
+  langs:
+  - csharp
+  - vb
+  name: ConstructorActivator(Type, ConstructorInfo)
+  nameWithType: ConstructorActivator.ConstructorActivator(Type, ConstructorInfo)
+  fullName: PocoEmit.Activators.ConstructorActivator.ConstructorActivator(System.Type, System.Reflection.ConstructorInfo)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ConstructorActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Activators/ConstructorActivator.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 构造函数激活
+  example: []
+  syntax:
+    content: public ConstructorActivator(Type returnType, ConstructorInfo constructor)
+    parameters:
+    - id: returnType
+      type: System.Type
+      description: 返回类型
+    - id: constructor
+      type: System.Reflection.ConstructorInfo
+      description: 构造函数
+    content.vb: Public Sub New(returnType As Type, constructor As ConstructorInfo)
+  overload: PocoEmit.Activators.ConstructorActivator.#ctor*
+  nameWithType.vb: ConstructorActivator.New(Type, ConstructorInfo)
+  fullName.vb: PocoEmit.Activators.ConstructorActivator.New(System.Type, System.Reflection.ConstructorInfo)
+  name.vb: New(Type, ConstructorInfo)
+- uid: PocoEmit.Activators.ConstructorActivator._returnType
+  commentId: F:PocoEmit.Activators.ConstructorActivator._returnType
+  id: _returnType
+  parent: PocoEmit.Activators.ConstructorActivator
+  langs:
+  - csharp
+  - vb
+  name: _returnType
+  nameWithType: ConstructorActivator._returnType
+  fullName: PocoEmit.Activators.ConstructorActivator._returnType
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ConstructorActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _returnType
+    path: ../PocoEmit.Mapper/Activators/ConstructorActivator.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 返回类型
+  example: []
+  syntax:
+    content: protected readonly Type _returnType
+    return:
+      type: System.Type
+    content.vb: Protected ReadOnly _returnType As Type
+- uid: PocoEmit.Activators.ConstructorActivator._constructor
+  commentId: F:PocoEmit.Activators.ConstructorActivator._constructor
+  id: _constructor
+  parent: PocoEmit.Activators.ConstructorActivator
+  langs:
+  - csharp
+  - vb
+  name: _constructor
+  nameWithType: ConstructorActivator._constructor
+  fullName: PocoEmit.Activators.ConstructorActivator._constructor
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ConstructorActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _constructor
+    path: ../PocoEmit.Mapper/Activators/ConstructorActivator.cs
+    startLine: 22
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 构造函数
+  example: []
+  syntax:
+    content: protected readonly ConstructorInfo _constructor
+    return:
+      type: System.Reflection.ConstructorInfo
+    content.vb: Protected ReadOnly _constructor As ConstructorInfo
+- uid: PocoEmit.Activators.ConstructorActivator.ReturnType
+  commentId: P:PocoEmit.Activators.ConstructorActivator.ReturnType
+  id: ReturnType
+  parent: PocoEmit.Activators.ConstructorActivator
+  langs:
+  - csharp
+  - vb
+  name: ReturnType
+  nameWithType: ConstructorActivator.ReturnType
+  fullName: PocoEmit.Activators.ConstructorActivator.ReturnType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ConstructorActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ReturnType
+    path: ../PocoEmit.Mapper/Activators/ConstructorActivator.cs
+    startLine: 24
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 返回类型
+  example: []
+  syntax:
+    content: public Type ReturnType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ReturnType As Type
+  overload: PocoEmit.Activators.ConstructorActivator.ReturnType*
+  implements:
+  - PocoEmit.Activators.IEmitActivator.ReturnType
+- uid: PocoEmit.Activators.ConstructorActivator.Constructor
+  commentId: P:PocoEmit.Activators.ConstructorActivator.Constructor
+  id: Constructor
+  parent: PocoEmit.Activators.ConstructorActivator
+  langs:
+  - csharp
+  - vb
+  name: Constructor
+  nameWithType: ConstructorActivator.Constructor
+  fullName: PocoEmit.Activators.ConstructorActivator.Constructor
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ConstructorActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Constructor
+    path: ../PocoEmit.Mapper/Activators/ConstructorActivator.cs
+    startLine: 29
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 构造函数
+  example: []
+  syntax:
+    content: public ConstructorInfo Constructor { get; }
+    parameters: []
+    return:
+      type: System.Reflection.ConstructorInfo
+    content.vb: Public ReadOnly Property Constructor As ConstructorInfo
+  overload: PocoEmit.Activators.ConstructorActivator.Constructor*
+- uid: PocoEmit.Activators.ConstructorActivator.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Activators.ConstructorActivator.New(System.Linq.Expressions.Expression)
+  id: New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Activators.ConstructorActivator
+  langs:
+  - csharp
+  - vb
+  name: New(Expression)
+  nameWithType: ConstructorActivator.New(Expression)
+  fullName: PocoEmit.Activators.ConstructorActivator.New(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/ConstructorActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: New
+    path: ../PocoEmit.Mapper/Activators/ConstructorActivator.cs
+    startLine: 33
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 激活
+  example: []
+  syntax:
+    content: public virtual Expression New(Expression argument)
+    parameters:
+    - id: argument
+      type: System.Linq.Expressions.Expression
+      description: 参数
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Overridable Function [New](argument As Expression) As Expression
+  overload: PocoEmit.Activators.ConstructorActivator.New*
+  implements:
+  - PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Activators
+  commentId: N:PocoEmit.Activators
+  href: PocoEmit.html
+  name: PocoEmit.Activators
+  nameWithType: PocoEmit.Activators
+  fullName: PocoEmit.Activators
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Activators.IEmitActivator
+  commentId: T:PocoEmit.Activators.IEmitActivator
+  parent: PocoEmit.Activators
+  href: PocoEmit.Activators.IEmitActivator.html
+  name: IEmitActivator
+  nameWithType: IEmitActivator
+  fullName: PocoEmit.Activators.IEmitActivator
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Activators.ConstructorActivator.#ctor*
+  commentId: Overload:PocoEmit.Activators.ConstructorActivator.#ctor
+  href: PocoEmit.Activators.ConstructorActivator.html#PocoEmit_Activators_ConstructorActivator__ctor_System_Type_System_Reflection_ConstructorInfo_
+  name: ConstructorActivator
+  nameWithType: ConstructorActivator.ConstructorActivator
+  fullName: PocoEmit.Activators.ConstructorActivator.ConstructorActivator
+  nameWithType.vb: ConstructorActivator.New
+  fullName.vb: PocoEmit.Activators.ConstructorActivator.New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Reflection.ConstructorInfo
+  commentId: T:System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  name: ConstructorInfo
+  nameWithType: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.Activators.ConstructorActivator.ReturnType*
+  commentId: Overload:PocoEmit.Activators.ConstructorActivator.ReturnType
+  href: PocoEmit.Activators.ConstructorActivator.html#PocoEmit_Activators_ConstructorActivator_ReturnType
+  name: ReturnType
+  nameWithType: ConstructorActivator.ReturnType
+  fullName: PocoEmit.Activators.ConstructorActivator.ReturnType
+- uid: PocoEmit.Activators.IEmitActivator.ReturnType
+  commentId: P:PocoEmit.Activators.IEmitActivator.ReturnType
+  parent: PocoEmit.Activators.IEmitActivator
+  href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_ReturnType
+  name: ReturnType
+  nameWithType: IEmitActivator.ReturnType
+  fullName: PocoEmit.Activators.IEmitActivator.ReturnType
+- uid: PocoEmit.Activators.ConstructorActivator.Constructor*
+  commentId: Overload:PocoEmit.Activators.ConstructorActivator.Constructor
+  href: PocoEmit.Activators.ConstructorActivator.html#PocoEmit_Activators_ConstructorActivator_Constructor
+  name: Constructor
+  nameWithType: ConstructorActivator.Constructor
+  fullName: PocoEmit.Activators.ConstructorActivator.Constructor
+- uid: PocoEmit.Activators.ConstructorActivator.New*
+  commentId: Overload:PocoEmit.Activators.ConstructorActivator.New
+  href: PocoEmit.Activators.ConstructorActivator.html#PocoEmit_Activators_ConstructorActivator_New_System_Linq_Expressions_Expression_
+  name: New
+  nameWithType: ConstructorActivator.New
+  fullName: PocoEmit.Activators.ConstructorActivator.New
+- uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Activators.IEmitActivator
+  isExternal: true
+  href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  name: New(Expression)
+  nameWithType: IEmitActivator.New(Expression)
+  fullName: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

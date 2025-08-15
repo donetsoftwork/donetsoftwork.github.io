@@ -1,0 +1,475 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Activators.MethodActivator
+  commentId: T:PocoEmit.Activators.MethodActivator
+  id: MethodActivator
+  parent: PocoEmit.Activators
+  children:
+  - PocoEmit.Activators.MethodActivator.#ctor(System.Linq.Expressions.Expression,System.Reflection.MethodInfo)
+  - PocoEmit.Activators.MethodActivator.Method
+  - PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression)
+  - PocoEmit.Activators.MethodActivator.ReturnType
+  - PocoEmit.Activators.MethodActivator.Target
+  - PocoEmit.Activators.MethodActivator._method
+  - PocoEmit.Activators.MethodActivator._target
+  langs:
+  - csharp
+  - vb
+  name: MethodActivator
+  nameWithType: MethodActivator
+  fullName: PocoEmit.Activators.MethodActivator
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MethodActivator
+    path: ../PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 方法激活类型
+  example: []
+  syntax:
+    content: 'public class MethodActivator : IEmitActivator'
+    content.vb: Public Class MethodActivator Implements IEmitActivator
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PocoEmit.Activators.ArgumentDelegateActivator`2
+  - PocoEmit.Activators.DelegateActivator`1
+  implements:
+  - PocoEmit.Activators.IEmitActivator
+- uid: PocoEmit.Activators.MethodActivator.#ctor(System.Linq.Expressions.Expression,System.Reflection.MethodInfo)
+  commentId: M:PocoEmit.Activators.MethodActivator.#ctor(System.Linq.Expressions.Expression,System.Reflection.MethodInfo)
+  id: '#ctor(System.Linq.Expressions.Expression,System.Reflection.MethodInfo)'
+  parent: PocoEmit.Activators.MethodActivator
+  langs:
+  - csharp
+  - vb
+  name: MethodActivator(Expression, MethodInfo)
+  nameWithType: MethodActivator.MethodActivator(Expression, MethodInfo)
+  fullName: PocoEmit.Activators.MethodActivator.MethodActivator(System.Linq.Expressions.Expression, System.Reflection.MethodInfo)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 方法激活类型
+  example: []
+  syntax:
+    content: public MethodActivator(Expression target, MethodInfo method)
+    parameters:
+    - id: target
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: ''
+    content.vb: Public Sub New(target As Expression, method As MethodInfo)
+  overload: PocoEmit.Activators.MethodActivator.#ctor*
+  nameWithType.vb: MethodActivator.New(Expression, MethodInfo)
+  fullName.vb: PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression, System.Reflection.MethodInfo)
+  name.vb: New(Expression, MethodInfo)
+- uid: PocoEmit.Activators.MethodActivator._target
+  commentId: F:PocoEmit.Activators.MethodActivator._target
+  id: _target
+  parent: PocoEmit.Activators.MethodActivator
+  langs:
+  - csharp
+  - vb
+  name: _target
+  nameWithType: MethodActivator._target
+  fullName: PocoEmit.Activators.MethodActivator._target
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _target
+    path: ../PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 实例
+  example: []
+  syntax:
+    content: protected readonly Expression _target
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Protected ReadOnly _target As Expression
+- uid: PocoEmit.Activators.MethodActivator.Target
+  commentId: P:PocoEmit.Activators.MethodActivator.Target
+  id: Target
+  parent: PocoEmit.Activators.MethodActivator
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: MethodActivator.Target
+  fullName: PocoEmit.Activators.MethodActivator.Target
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Target
+    path: ../PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+    startLine: 22
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 实例
+  example: []
+  syntax:
+    content: public Expression Target { get; }
+    parameters: []
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Public ReadOnly Property Target As Expression
+  overload: PocoEmit.Activators.MethodActivator.Target*
+- uid: PocoEmit.Activators.MethodActivator._method
+  commentId: F:PocoEmit.Activators.MethodActivator._method
+  id: _method
+  parent: PocoEmit.Activators.MethodActivator
+  langs:
+  - csharp
+  - vb
+  name: _method
+  nameWithType: MethodActivator._method
+  fullName: PocoEmit.Activators.MethodActivator._method
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _method
+    path: ../PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+    startLine: 27
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 方法
+  example: []
+  syntax:
+    content: protected readonly MethodInfo _method
+    return:
+      type: System.Reflection.MethodInfo
+    content.vb: Protected ReadOnly _method As MethodInfo
+- uid: PocoEmit.Activators.MethodActivator.ReturnType
+  commentId: P:PocoEmit.Activators.MethodActivator.ReturnType
+  id: ReturnType
+  parent: PocoEmit.Activators.MethodActivator
+  langs:
+  - csharp
+  - vb
+  name: ReturnType
+  nameWithType: MethodActivator.ReturnType
+  fullName: PocoEmit.Activators.MethodActivator.ReturnType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ReturnType
+    path: ../PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+    startLine: 29
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 返回类型
+  example: []
+  syntax:
+    content: public Type ReturnType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ReturnType As Type
+  overload: PocoEmit.Activators.MethodActivator.ReturnType*
+  implements:
+  - PocoEmit.Activators.IEmitActivator.ReturnType
+- uid: PocoEmit.Activators.MethodActivator.Method
+  commentId: P:PocoEmit.Activators.MethodActivator.Method
+  id: Method
+  parent: PocoEmit.Activators.MethodActivator
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: MethodActivator.Method
+  fullName: PocoEmit.Activators.MethodActivator.Method
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Method
+    path: ../PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+    startLine: 34
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 方法
+  example: []
+  syntax:
+    content: public MethodInfo Method { get; }
+    parameters: []
+    return:
+      type: System.Reflection.MethodInfo
+    content.vb: Public ReadOnly Property Method As MethodInfo
+  overload: PocoEmit.Activators.MethodActivator.Method*
+- uid: PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression)
+  id: New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Activators.MethodActivator
+  langs:
+  - csharp
+  - vb
+  name: New(Expression)
+  nameWithType: MethodActivator.New(Expression)
+  fullName: PocoEmit.Activators.MethodActivator.New(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: New
+    path: ../PocoEmit.Mapper/Activators/StaticMethodActivator.cs
+    startLine: 38
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Activators
+  summary: 激活
+  example: []
+  syntax:
+    content: public virtual Expression New(Expression argument)
+    parameters:
+    - id: argument
+      type: System.Linq.Expressions.Expression
+      description: 参数
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Overridable Function [New](argument As Expression) As Expression
+  overload: PocoEmit.Activators.MethodActivator.New*
+  implements:
+  - PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Activators
+  commentId: N:PocoEmit.Activators
+  href: PocoEmit.html
+  name: PocoEmit.Activators
+  nameWithType: PocoEmit.Activators
+  fullName: PocoEmit.Activators
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Activators.IEmitActivator
+  commentId: T:PocoEmit.Activators.IEmitActivator
+  parent: PocoEmit.Activators
+  href: PocoEmit.Activators.IEmitActivator.html
+  name: IEmitActivator
+  nameWithType: IEmitActivator
+  fullName: PocoEmit.Activators.IEmitActivator
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Activators.MethodActivator.#ctor*
+  commentId: Overload:PocoEmit.Activators.MethodActivator.#ctor
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator__ctor_System_Linq_Expressions_Expression_System_Reflection_MethodInfo_
+  name: MethodActivator
+  nameWithType: MethodActivator.MethodActivator
+  fullName: PocoEmit.Activators.MethodActivator.MethodActivator
+  nameWithType.vb: MethodActivator.New
+  fullName.vb: PocoEmit.Activators.MethodActivator.New
+  name.vb: New
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.Activators.MethodActivator.Target*
+  commentId: Overload:PocoEmit.Activators.MethodActivator.Target
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator_Target
+  name: Target
+  nameWithType: MethodActivator.Target
+  fullName: PocoEmit.Activators.MethodActivator.Target
+- uid: PocoEmit.Activators.MethodActivator.ReturnType*
+  commentId: Overload:PocoEmit.Activators.MethodActivator.ReturnType
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator_ReturnType
+  name: ReturnType
+  nameWithType: MethodActivator.ReturnType
+  fullName: PocoEmit.Activators.MethodActivator.ReturnType
+- uid: PocoEmit.Activators.IEmitActivator.ReturnType
+  commentId: P:PocoEmit.Activators.IEmitActivator.ReturnType
+  parent: PocoEmit.Activators.IEmitActivator
+  href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_ReturnType
+  name: ReturnType
+  nameWithType: IEmitActivator.ReturnType
+  fullName: PocoEmit.Activators.IEmitActivator.ReturnType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Activators.MethodActivator.Method*
+  commentId: Overload:PocoEmit.Activators.MethodActivator.Method
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator_Method
+  name: Method
+  nameWithType: MethodActivator.Method
+  fullName: PocoEmit.Activators.MethodActivator.Method
+- uid: PocoEmit.Activators.MethodActivator.New*
+  commentId: Overload:PocoEmit.Activators.MethodActivator.New
+  href: PocoEmit.Activators.MethodActivator.html#PocoEmit_Activators_MethodActivator_New_System_Linq_Expressions_Expression_
+  name: New
+  nameWithType: MethodActivator.New
+  fullName: PocoEmit.Activators.MethodActivator.New
+- uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Activators.IEmitActivator
+  isExternal: true
+  href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  name: New(Expression)
+  nameWithType: IEmitActivator.New(Expression)
+  fullName: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Activators.IEmitActivator.New(System.Linq.Expressions.Expression)
+    name: New
+    href: PocoEmit.Activators.IEmitActivator.html#PocoEmit_Activators_IEmitActivator_New_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )

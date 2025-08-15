@@ -1,0 +1,384 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  id: PocoEmit.Collections
+  children:
+  - PocoEmit.Collections.CacheBase`2
+  - PocoEmit.Collections.DictionaryStorage`2
+  - PocoEmit.Collections.EmitCollectionBase
+  - PocoEmit.Collections.ICacher`2
+  - PocoEmit.Collections.ICollectionSaver`2
+  - PocoEmit.Collections.IConfiguration`2
+  - PocoEmit.Collections.IConfigure`2
+  - PocoEmit.Collections.ICounter`1
+  - PocoEmit.Collections.IEmitCollection
+  - PocoEmit.Collections.ISettings`2
+  - PocoEmit.Collections.IStore`2
+  - PocoEmit.Collections.MemberBundle
+  - PocoEmit.Collections.MemberContainer
+  - PocoEmit.Collections.MemberReaderCacher
+  - PocoEmit.Collections.MemberWriterCacher
+  - PocoEmit.Collections.PocoEmitCollectionServices
+  - PocoEmit.Collections.TypeMemberCacher
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  type: Namespace
+  assemblies:
+  - PocoEmit
+references:
+- uid: PocoEmit.Collections.CacheBase`2
+  commentId: T:PocoEmit.Collections.CacheBase`2
+  href: PocoEmit.Collections.CacheBase-2.html
+  name: CacheBase<TKey, TValue>
+  nameWithType: CacheBase<TKey, TValue>
+  fullName: PocoEmit.Collections.CacheBase<TKey, TValue>
+  nameWithType.vb: CacheBase(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.CacheBase(Of TKey, TValue)
+  name.vb: CacheBase(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase
+    href: PocoEmit.Collections.CacheBase-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.CacheBase`2
+    name: CacheBase
+    href: PocoEmit.Collections.CacheBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.DictionaryStorage`2
+  commentId: T:PocoEmit.Collections.DictionaryStorage`2
+  href: PocoEmit.Collections.DictionaryStorage-2.html
+  name: DictionaryStorage<TKey, TValue>
+  nameWithType: DictionaryStorage<TKey, TValue>
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue)
+  name.vb: DictionaryStorage(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.DictionaryStorage`2
+    name: DictionaryStorage
+    href: PocoEmit.Collections.DictionaryStorage-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.DictionaryStorage`2
+    name: DictionaryStorage
+    href: PocoEmit.Collections.DictionaryStorage-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.ICacher`2
+  commentId: T:PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<TKey, TValue>
+  nameWithType: ICacher<TKey, TValue>
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>
+  nameWithType.vb: ICacher(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue)
+  name.vb: ICacher(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IConfiguration`2
+  commentId: T:PocoEmit.Collections.IConfiguration`2
+  href: PocoEmit.Collections.IConfiguration-2.html
+  name: IConfiguration<TKey, TValue>
+  nameWithType: IConfiguration<TKey, TValue>
+  fullName: PocoEmit.Collections.IConfiguration<TKey, TValue>
+  nameWithType.vb: IConfiguration(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IConfiguration(Of TKey, TValue)
+  name.vb: IConfiguration(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IConfiguration`2
+    name: IConfiguration
+    href: PocoEmit.Collections.IConfiguration-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IConfiguration`2
+    name: IConfiguration
+    href: PocoEmit.Collections.IConfiguration-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IConfigure`2
+  commentId: T:PocoEmit.Collections.IConfigure`2
+  href: PocoEmit.Collections.IConfigure-2.html
+  name: IConfigure<TKey, TValue>
+  nameWithType: IConfigure<TKey, TValue>
+  fullName: PocoEmit.Collections.IConfigure<TKey, TValue>
+  nameWithType.vb: IConfigure(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IConfigure(Of TKey, TValue)
+  name.vb: IConfigure(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IConfigure`2
+    name: IConfigure
+    href: PocoEmit.Collections.IConfigure-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IConfigure`2
+    name: IConfigure
+    href: PocoEmit.Collections.IConfigure-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.ISettings`2
+  commentId: T:PocoEmit.Collections.ISettings`2
+  href: PocoEmit.Collections.ISettings-2.html
+  name: ISettings<TKey, TValue>
+  nameWithType: ISettings<TKey, TValue>
+  fullName: PocoEmit.Collections.ISettings<TKey, TValue>
+  nameWithType.vb: ISettings(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.ISettings(Of TKey, TValue)
+  name.vb: ISettings(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ISettings`2
+    name: ISettings
+    href: PocoEmit.Collections.ISettings-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ISettings`2
+    name: ISettings
+    href: PocoEmit.Collections.ISettings-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IStore`2
+  commentId: T:PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<TKey, TValue>
+  nameWithType: IStore<TKey, TValue>
+  fullName: PocoEmit.Collections.IStore<TKey, TValue>
+  nameWithType.vb: IStore(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IStore(Of TKey, TValue)
+  name.vb: IStore(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.MemberBundle
+  commentId: T:PocoEmit.Collections.MemberBundle
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.MemberBundle.html
+  name: MemberBundle
+  nameWithType: MemberBundle
+  fullName: PocoEmit.Collections.MemberBundle
+- uid: PocoEmit.Collections.MemberContainer
+  commentId: T:PocoEmit.Collections.MemberContainer
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.MemberContainer.html
+  name: MemberContainer
+  nameWithType: MemberContainer
+  fullName: PocoEmit.Collections.MemberContainer
+- uid: PocoEmit.Collections.MemberReaderCacher
+  commentId: T:PocoEmit.Collections.MemberReaderCacher
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.MemberReaderCacher.html
+  name: MemberReaderCacher
+  nameWithType: MemberReaderCacher
+  fullName: PocoEmit.Collections.MemberReaderCacher
+- uid: PocoEmit.Collections.MemberWriterCacher
+  commentId: T:PocoEmit.Collections.MemberWriterCacher
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.MemberWriterCacher.html
+  name: MemberWriterCacher
+  nameWithType: MemberWriterCacher
+  fullName: PocoEmit.Collections.MemberWriterCacher
+- uid: PocoEmit.Collections.TypeMemberCacher
+  commentId: T:PocoEmit.Collections.TypeMemberCacher
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.TypeMemberCacher.html
+  name: TypeMemberCacher
+  nameWithType: TypeMemberCacher
+  fullName: PocoEmit.Collections.TypeMemberCacher
+- uid: PocoEmit.Collections.PocoEmitCollectionServices
+  commentId: T:PocoEmit.Collections.PocoEmitCollectionServices
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html
+  name: PocoEmitCollectionServices
+  nameWithType: PocoEmitCollectionServices
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices
+- uid: PocoEmit.Collections.EmitCollectionBase
+  commentId: T:PocoEmit.Collections.EmitCollectionBase
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.EmitCollectionBase.html
+  name: EmitCollectionBase
+  nameWithType: EmitCollectionBase
+  fullName: PocoEmit.Collections.EmitCollectionBase
+- uid: PocoEmit.Collections.ICounter`1
+  commentId: T:PocoEmit.Collections.ICounter`1
+  href: PocoEmit.Collections.ICounter-1.html
+  name: ICounter<TCollection>
+  nameWithType: ICounter<TCollection>
+  fullName: PocoEmit.Collections.ICounter<TCollection>
+  nameWithType.vb: ICounter(Of TCollection)
+  fullName.vb: PocoEmit.Collections.ICounter(Of TCollection)
+  name.vb: ICounter(Of TCollection)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICounter`1
+    name: ICounter
+    href: PocoEmit.Collections.ICounter-1.html
+  - name: <
+  - name: TCollection
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICounter`1
+    name: ICounter
+    href: PocoEmit.Collections.ICounter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: )
+- uid: PocoEmit.Collections.ICollectionSaver`2
+  commentId: T:PocoEmit.Collections.ICollectionSaver`2
+  href: PocoEmit.Collections.ICollectionSaver-2.html
+  name: ICollectionSaver<TCollection, TElement>
+  nameWithType: ICollectionSaver<TCollection, TElement>
+  fullName: PocoEmit.Collections.ICollectionSaver<TCollection, TElement>
+  nameWithType.vb: ICollectionSaver(Of TCollection, TElement)
+  fullName.vb: PocoEmit.Collections.ICollectionSaver(Of TCollection, TElement)
+  name.vb: ICollectionSaver(Of TCollection, TElement)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver
+    href: PocoEmit.Collections.ICollectionSaver-2.html
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver
+    href: PocoEmit.Collections.ICollectionSaver-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: PocoEmit.Collections.IEmitCollection
+  commentId: T:PocoEmit.Collections.IEmitCollection
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.IEmitCollection.html
+  name: IEmitCollection
+  nameWithType: IEmitCollection
+  fullName: PocoEmit.Collections.IEmitCollection
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html

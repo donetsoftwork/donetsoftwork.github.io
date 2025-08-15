@@ -1,0 +1,534 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Saves.ICompiledElementSaver`2
+  commentId: T:PocoEmit.Collections.Saves.ICompiledElementSaver`2
+  id: ICompiledElementSaver`2
+  parent: PocoEmit.Collections.Saves
+  children:
+  - PocoEmit.Collections.Saves.ICompiledElementSaver`2.SaveAction
+  langs:
+  - csharp
+  - vb
+  name: ICompiledElementSaver<TCollection, Element>
+  nameWithType: ICompiledElementSaver<TCollection, Element>
+  fullName: PocoEmit.Collections.Saves.ICompiledElementSaver<TCollection, Element>
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Saves/ICompiledElementSaver~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ICompiledElementSaver
+    path: ../PocoEmit.Collections/Collections/Saves/ICompiledElementSaver~2.cs
+    startLine: 9
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Saves
+  summary: 已编集合元素保存器
+  example: []
+  syntax:
+    content: 'public interface ICompiledElementSaver<TCollection, Element> : ICollectionSaver<TCollection, Element>, IEmitElementSaver, IEmitCollection, ICompileInfo'
+    typeParameters:
+    - id: TCollection
+      description: ''
+    - id: Element
+      description: ''
+    content.vb: Public Interface ICompiledElementSaver(Of TCollection, Element) Inherits ICollectionSaver(Of TCollection, Element), IEmitElementSaver, IEmitCollection, ICompileInfo
+  inheritedMembers:
+  - PocoEmit.Collections.ICollectionSaver{{TCollection},{Element}}.Add({TCollection},{Element})
+  - PocoEmit.Collections.Saves.IEmitElementSaver.Add(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  - PocoEmit.Collections.IEmitCollection.CollectionType
+  - PocoEmit.Collections.IEmitCollection.ElementType
+  - PocoEmit.Configuration.ICompileInfo.Compiled
+  extensionMethods:
+  - PocoEmit.Collections.Saves.IEmitElementSaver.PocoEmit.Collections.PocoEmitCollectionServices.Build``2
+  nameWithType.vb: ICompiledElementSaver(Of TCollection, Element)
+  fullName.vb: PocoEmit.Collections.Saves.ICompiledElementSaver(Of TCollection, Element)
+  name.vb: ICompiledElementSaver(Of TCollection, Element)
+- uid: PocoEmit.Collections.Saves.ICompiledElementSaver`2.SaveAction
+  commentId: P:PocoEmit.Collections.Saves.ICompiledElementSaver`2.SaveAction
+  id: SaveAction
+  parent: PocoEmit.Collections.Saves.ICompiledElementSaver`2
+  langs:
+  - csharp
+  - vb
+  name: SaveAction
+  nameWithType: ICompiledElementSaver<TCollection, Element>.SaveAction
+  fullName: PocoEmit.Collections.Saves.ICompiledElementSaver<TCollection, Element>.SaveAction
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Saves/ICompiledElementSaver~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: SaveAction
+    path: ../PocoEmit.Collections/Collections/Saves/ICompiledElementSaver~2.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Saves
+  summary: 保存子元素委托
+  example: []
+  syntax:
+    content: Action<TCollection, Element> SaveAction { get; }
+    parameters: []
+    return:
+      type: System.Action{{TCollection},{Element}}
+    content.vb: ReadOnly Property SaveAction As Action(Of TCollection, Element)
+  overload: PocoEmit.Collections.Saves.ICompiledElementSaver`2.SaveAction*
+  nameWithType.vb: ICompiledElementSaver(Of TCollection, Element).SaveAction
+  fullName.vb: PocoEmit.Collections.Saves.ICompiledElementSaver(Of TCollection, Element).SaveAction
+references:
+- uid: PocoEmit.Collections.Saves
+  commentId: N:PocoEmit.Collections.Saves
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Saves
+  nameWithType: PocoEmit.Collections.Saves
+  fullName: PocoEmit.Collections.Saves
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Saves
+    name: Saves
+    href: PocoEmit.Collections.Saves.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Saves
+    name: Saves
+    href: PocoEmit.Collections.Saves.html
+- uid: PocoEmit.Collections.ICollectionSaver{{TCollection},{Element}}.Add({TCollection},{Element})
+  commentId: M:PocoEmit.Collections.ICollectionSaver{`0,`1}.Add(`0,`1)
+  parent: PocoEmit.Collections.ICollectionSaver{{TCollection},{Element}}
+  definition: PocoEmit.Collections.ICollectionSaver`2.Add(`0,`1)
+  href: PocoEmit.Collections.ICollectionSaver-2.html#PocoEmit_Collections_ICollectionSaver_2_Add__0__1_
+  name: Add(TCollection, Element)
+  nameWithType: ICollectionSaver<TCollection, Element>.Add(TCollection, Element)
+  fullName: PocoEmit.Collections.ICollectionSaver<TCollection, Element>.Add(TCollection, Element)
+  nameWithType.vb: ICollectionSaver(Of TCollection, Element).Add(TCollection, Element)
+  fullName.vb: PocoEmit.Collections.ICollectionSaver(Of TCollection, Element).Add(TCollection, Element)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICollectionSaver{`0,`1}.Add(`0,`1)
+    name: Add
+    href: PocoEmit.Collections.ICollectionSaver-2.html#PocoEmit_Collections_ICollectionSaver_2_Add__0__1_
+  - name: (
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: Element
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.ICollectionSaver{`0,`1}.Add(`0,`1)
+    name: Add
+    href: PocoEmit.Collections.ICollectionSaver-2.html#PocoEmit_Collections_ICollectionSaver_2_Add__0__1_
+  - name: (
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: Element
+  - name: )
+- uid: PocoEmit.Collections.Saves.IEmitElementSaver.Add(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.Saves.IEmitElementSaver.Add(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.Saves.IEmitElementSaver
+  isExternal: true
+  href: PocoEmit.Collections.Saves.IEmitElementSaver.html#PocoEmit_Collections_Saves_IEmitElementSaver_Add_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Add(Expression, Expression)
+  nameWithType: IEmitElementSaver.Add(Expression, Expression)
+  fullName: PocoEmit.Collections.Saves.IEmitElementSaver.Add(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Collections.Saves.IEmitElementSaver.Add(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Add
+    href: PocoEmit.Collections.Saves.IEmitElementSaver.html#PocoEmit_Collections_Saves_IEmitElementSaver_Add_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.Saves.IEmitElementSaver.Add(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Add
+    href: PocoEmit.Collections.Saves.IEmitElementSaver.html#PocoEmit_Collections_Saves_IEmitElementSaver_Add_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: PocoEmit.Collections.IEmitCollection.CollectionType
+  commentId: P:PocoEmit.Collections.IEmitCollection.CollectionType
+  parent: PocoEmit.Collections.IEmitCollection
+  href: PocoEmit.Collections.IEmitCollection.html#PocoEmit_Collections_IEmitCollection_CollectionType
+  name: CollectionType
+  nameWithType: IEmitCollection.CollectionType
+  fullName: PocoEmit.Collections.IEmitCollection.CollectionType
+- uid: PocoEmit.Collections.IEmitCollection.ElementType
+  commentId: P:PocoEmit.Collections.IEmitCollection.ElementType
+  parent: PocoEmit.Collections.IEmitCollection
+  href: PocoEmit.Collections.IEmitCollection.html#PocoEmit_Collections_IEmitCollection_ElementType
+  name: ElementType
+  nameWithType: IEmitCollection.ElementType
+  fullName: PocoEmit.Collections.IEmitCollection.ElementType
+- uid: PocoEmit.Configuration.ICompileInfo.Compiled
+  commentId: P:PocoEmit.Configuration.ICompileInfo.Compiled
+  parent: PocoEmit.Configuration.ICompileInfo
+  href: PocoEmit.Configuration.ICompileInfo.html#PocoEmit_Configuration_ICompileInfo_Compiled
+  name: Compiled
+  nameWithType: ICompileInfo.Compiled
+  fullName: PocoEmit.Configuration.ICompileInfo.Compiled
+- uid: PocoEmit.Collections.Saves.IEmitElementSaver.PocoEmit.Collections.PocoEmitCollectionServices.Build``2
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  definition: PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__2_PocoEmit_Collections_Saves_IEmitElementSaver_
+  name: Build<TCollection, TElement>(IEmitElementSaver)
+  nameWithType: PocoEmitCollectionServices.Build<TCollection, TElement>(IEmitElementSaver)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Build<TCollection, TElement>(PocoEmit.Collections.Saves.IEmitElementSaver)
+  nameWithType.vb: PocoEmitCollectionServices.Build(Of TCollection, TElement)(IEmitElementSaver)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Build(Of TCollection, TElement)(PocoEmit.Collections.Saves.IEmitElementSaver)
+  name.vb: Build(Of TCollection, TElement)(IEmitElementSaver)
+  spec.csharp:
+  - uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+    name: Build
+    href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__2_PocoEmit_Collections_Saves_IEmitElementSaver_
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Collections.Saves.IEmitElementSaver
+    name: IEmitElementSaver
+    href: PocoEmit.Collections.Saves.IEmitElementSaver.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+    name: Build
+    href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__2_PocoEmit_Collections_Saves_IEmitElementSaver_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: (
+  - uid: PocoEmit.Collections.Saves.IEmitElementSaver
+    name: IEmitElementSaver
+    href: PocoEmit.Collections.Saves.IEmitElementSaver.html
+  - name: )
+- uid: PocoEmit.Collections.ICollectionSaver`2.Add(`0,`1)
+  commentId: M:PocoEmit.Collections.ICollectionSaver`2.Add(`0,`1)
+  href: PocoEmit.Collections.ICollectionSaver-2.html#PocoEmit_Collections_ICollectionSaver_2_Add__0__1_
+  name: Add(TCollection, TElement)
+  nameWithType: ICollectionSaver<TCollection, TElement>.Add(TCollection, TElement)
+  fullName: PocoEmit.Collections.ICollectionSaver<TCollection, TElement>.Add(TCollection, TElement)
+  nameWithType.vb: ICollectionSaver(Of TCollection, TElement).Add(TCollection, TElement)
+  fullName.vb: PocoEmit.Collections.ICollectionSaver(Of TCollection, TElement).Add(TCollection, TElement)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICollectionSaver`2.Add(`0,`1)
+    name: Add
+    href: PocoEmit.Collections.ICollectionSaver-2.html#PocoEmit_Collections_ICollectionSaver_2_Add__0__1_
+  - name: (
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.ICollectionSaver`2.Add(`0,`1)
+    name: Add
+    href: PocoEmit.Collections.ICollectionSaver-2.html#PocoEmit_Collections_ICollectionSaver_2_Add__0__1_
+  - name: (
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: PocoEmit.Collections.ICollectionSaver{{TCollection},{Element}}
+  commentId: T:PocoEmit.Collections.ICollectionSaver{`0,`1}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICollectionSaver`2
+  href: PocoEmit.Collections.ICollectionSaver-2.html
+  name: ICollectionSaver<TCollection, Element>
+  nameWithType: ICollectionSaver<TCollection, Element>
+  fullName: PocoEmit.Collections.ICollectionSaver<TCollection, Element>
+  nameWithType.vb: ICollectionSaver(Of TCollection, Element)
+  fullName.vb: PocoEmit.Collections.ICollectionSaver(Of TCollection, Element)
+  name.vb: ICollectionSaver(Of TCollection, Element)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver
+    href: PocoEmit.Collections.ICollectionSaver-2.html
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: Element
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver
+    href: PocoEmit.Collections.ICollectionSaver-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: Element
+  - name: )
+- uid: PocoEmit.Collections.Saves.IEmitElementSaver
+  commentId: T:PocoEmit.Collections.Saves.IEmitElementSaver
+  parent: PocoEmit.Collections.Saves
+  href: PocoEmit.Collections.Saves.IEmitElementSaver.html
+  name: IEmitElementSaver
+  nameWithType: IEmitElementSaver
+  fullName: PocoEmit.Collections.Saves.IEmitElementSaver
+- uid: PocoEmit.Collections.IEmitCollection
+  commentId: T:PocoEmit.Collections.IEmitCollection
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.IEmitCollection.html
+  name: IEmitCollection
+  nameWithType: IEmitCollection
+  fullName: PocoEmit.Collections.IEmitCollection
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__2_PocoEmit_Collections_Saves_IEmitElementSaver_
+  name: Build<TCollection, TElement>(IEmitElementSaver)
+  nameWithType: PocoEmitCollectionServices.Build<TCollection, TElement>(IEmitElementSaver)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Build<TCollection, TElement>(PocoEmit.Collections.Saves.IEmitElementSaver)
+  nameWithType.vb: PocoEmitCollectionServices.Build(Of TCollection, TElement)(IEmitElementSaver)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Build(Of TCollection, TElement)(PocoEmit.Collections.Saves.IEmitElementSaver)
+  name.vb: Build(Of TCollection, TElement)(IEmitElementSaver)
+  spec.csharp:
+  - uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+    name: Build
+    href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__2_PocoEmit_Collections_Saves_IEmitElementSaver_
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Collections.Saves.IEmitElementSaver
+    name: IEmitElementSaver
+    href: PocoEmit.Collections.Saves.IEmitElementSaver.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``2(PocoEmit.Collections.Saves.IEmitElementSaver)
+    name: Build
+    href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__2_PocoEmit_Collections_Saves_IEmitElementSaver_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: (
+  - uid: PocoEmit.Collections.Saves.IEmitElementSaver
+    name: IEmitElementSaver
+    href: PocoEmit.Collections.Saves.IEmitElementSaver.html
+  - name: )
+- uid: PocoEmit.Collections.PocoEmitCollectionServices
+  commentId: T:PocoEmit.Collections.PocoEmitCollectionServices
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html
+  name: PocoEmitCollectionServices
+  nameWithType: PocoEmitCollectionServices
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices
+- uid: PocoEmit.Collections.ICollectionSaver`2
+  commentId: T:PocoEmit.Collections.ICollectionSaver`2
+  href: PocoEmit.Collections.ICollectionSaver-2.html
+  name: ICollectionSaver<TCollection, TElement>
+  nameWithType: ICollectionSaver<TCollection, TElement>
+  fullName: PocoEmit.Collections.ICollectionSaver<TCollection, TElement>
+  nameWithType.vb: ICollectionSaver(Of TCollection, TElement)
+  fullName.vb: PocoEmit.Collections.ICollectionSaver(Of TCollection, TElement)
+  name.vb: ICollectionSaver(Of TCollection, TElement)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver
+    href: PocoEmit.Collections.ICollectionSaver-2.html
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICollectionSaver`2
+    name: ICollectionSaver
+    href: PocoEmit.Collections.ICollectionSaver-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Collections.Saves.ICompiledElementSaver`2.SaveAction*
+  commentId: Overload:PocoEmit.Collections.Saves.ICompiledElementSaver`2.SaveAction
+  href: PocoEmit.Collections.Saves.ICompiledElementSaver-2.html#PocoEmit_Collections_Saves_ICompiledElementSaver_2_SaveAction
+  name: SaveAction
+  nameWithType: ICompiledElementSaver<TCollection, Element>.SaveAction
+  fullName: PocoEmit.Collections.Saves.ICompiledElementSaver<TCollection, Element>.SaveAction
+  nameWithType.vb: ICompiledElementSaver(Of TCollection, Element).SaveAction
+  fullName.vb: PocoEmit.Collections.Saves.ICompiledElementSaver(Of TCollection, Element).SaveAction
+- uid: System.Action{{TCollection},{Element}}
+  commentId: T:System.Action{`0,`1}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TCollection, Element>
+  nameWithType: Action<TCollection, Element>
+  fullName: System.Action<TCollection, Element>
+  nameWithType.vb: Action(Of TCollection, Element)
+  fullName.vb: System.Action(Of TCollection, Element)
+  name.vb: Action(Of TCollection, Element)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: Element
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: Element
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

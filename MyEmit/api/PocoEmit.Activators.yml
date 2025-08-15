@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Activators
+  commentId: N:PocoEmit.Activators
+  id: PocoEmit.Activators
+  children:
+  - PocoEmit.Activators.ArgumentDelegateActivator`2
+  - PocoEmit.Activators.ConstructorActivator
+  - PocoEmit.Activators.DelegateActivator`1
+  - PocoEmit.Activators.IEmitActivator
+  - PocoEmit.Activators.IGenericActivator`1
+  - PocoEmit.Activators.MethodActivator
+  - PocoEmit.Activators.ParameterConstructorActivator
+  - PocoEmit.Activators.TypeActivator
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Activators
+  nameWithType: PocoEmit.Activators
+  fullName: PocoEmit.Activators
+  type: Namespace
+  assemblies:
+  - PocoEmit.Mapper
+references:
+- uid: PocoEmit.Activators.ArgumentDelegateActivator`2
+  commentId: T:PocoEmit.Activators.ArgumentDelegateActivator`2
+  href: PocoEmit.Activators.ArgumentDelegateActivator-2.html
+  name: ArgumentDelegateActivator<TSource, TDest>
+  nameWithType: ArgumentDelegateActivator<TSource, TDest>
+  fullName: PocoEmit.Activators.ArgumentDelegateActivator<TSource, TDest>
+  nameWithType.vb: ArgumentDelegateActivator(Of TSource, TDest)
+  fullName.vb: PocoEmit.Activators.ArgumentDelegateActivator(Of TSource, TDest)
+  name.vb: ArgumentDelegateActivator(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Activators.ArgumentDelegateActivator`2
+    name: ArgumentDelegateActivator
+    href: PocoEmit.Activators.ArgumentDelegateActivator-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Activators.ArgumentDelegateActivator`2
+    name: ArgumentDelegateActivator
+    href: PocoEmit.Activators.ArgumentDelegateActivator-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Activators.ConstructorActivator
+  commentId: T:PocoEmit.Activators.ConstructorActivator
+  parent: PocoEmit.Activators
+  href: PocoEmit.Activators.ConstructorActivator.html
+  name: ConstructorActivator
+  nameWithType: ConstructorActivator
+  fullName: PocoEmit.Activators.ConstructorActivator
+- uid: PocoEmit.Activators.DelegateActivator`1
+  commentId: T:PocoEmit.Activators.DelegateActivator`1
+  href: PocoEmit.Activators.DelegateActivator-1.html
+  name: DelegateActivator<TInstance>
+  nameWithType: DelegateActivator<TInstance>
+  fullName: PocoEmit.Activators.DelegateActivator<TInstance>
+  nameWithType.vb: DelegateActivator(Of TInstance)
+  fullName.vb: PocoEmit.Activators.DelegateActivator(Of TInstance)
+  name.vb: DelegateActivator(Of TInstance)
+  spec.csharp:
+  - uid: PocoEmit.Activators.DelegateActivator`1
+    name: DelegateActivator
+    href: PocoEmit.Activators.DelegateActivator-1.html
+  - name: <
+  - name: TInstance
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Activators.DelegateActivator`1
+    name: DelegateActivator
+    href: PocoEmit.Activators.DelegateActivator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: )
+- uid: PocoEmit.Activators.IEmitActivator
+  commentId: T:PocoEmit.Activators.IEmitActivator
+  parent: PocoEmit.Activators
+  href: PocoEmit.Activators.IEmitActivator.html
+  name: IEmitActivator
+  nameWithType: IEmitActivator
+  fullName: PocoEmit.Activators.IEmitActivator
+- uid: PocoEmit.Activators.IGenericActivator`1
+  commentId: T:PocoEmit.Activators.IGenericActivator`1
+  href: PocoEmit.Activators.IGenericActivator-1.html
+  name: IGenericActivator<TInstance>
+  nameWithType: IGenericActivator<TInstance>
+  fullName: PocoEmit.Activators.IGenericActivator<TInstance>
+  nameWithType.vb: IGenericActivator(Of TInstance)
+  fullName.vb: PocoEmit.Activators.IGenericActivator(Of TInstance)
+  name.vb: IGenericActivator(Of TInstance)
+  spec.csharp:
+  - uid: PocoEmit.Activators.IGenericActivator`1
+    name: IGenericActivator
+    href: PocoEmit.Activators.IGenericActivator-1.html
+  - name: <
+  - name: TInstance
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Activators.IGenericActivator`1
+    name: IGenericActivator
+    href: PocoEmit.Activators.IGenericActivator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: )
+- uid: PocoEmit.Activators.ParameterConstructorActivator
+  commentId: T:PocoEmit.Activators.ParameterConstructorActivator
+  href: PocoEmit.Activators.ParameterConstructorActivator.html
+  name: ParameterConstructorActivator
+  nameWithType: ParameterConstructorActivator
+  fullName: PocoEmit.Activators.ParameterConstructorActivator
+- uid: PocoEmit.Activators.MethodActivator
+  commentId: T:PocoEmit.Activators.MethodActivator
+  parent: PocoEmit.Activators
+  href: PocoEmit.Activators.MethodActivator.html
+  name: MethodActivator
+  nameWithType: MethodActivator
+  fullName: PocoEmit.Activators.MethodActivator
+- uid: PocoEmit.Activators.TypeActivator
+  commentId: T:PocoEmit.Activators.TypeActivator
+  href: PocoEmit.Activators.TypeActivator.html
+  name: TypeActivator
+  nameWithType: TypeActivator
+  fullName: PocoEmit.Activators.TypeActivator
+- uid: PocoEmit.Activators
+  commentId: N:PocoEmit.Activators
+  href: PocoEmit.html
+  name: PocoEmit.Activators
+  nameWithType: PocoEmit.Activators
+  fullName: PocoEmit.Activators
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Activators
+    name: Activators
+    href: PocoEmit.Activators.html

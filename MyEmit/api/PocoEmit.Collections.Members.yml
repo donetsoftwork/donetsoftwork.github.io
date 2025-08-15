@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Members
+  commentId: N:PocoEmit.Collections.Members
+  id: PocoEmit.Collections.Members
+  children:
+  - PocoEmit.Collections.Members.ArrayIndexMember
+  - PocoEmit.Collections.Members.IndexMemberReader
+  - PocoEmit.Collections.Members.IndexMemberWriter
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Collections.Members
+  nameWithType: PocoEmit.Collections.Members
+  fullName: PocoEmit.Collections.Members
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Collections.Members.ArrayIndexMember
+  commentId: T:PocoEmit.Collections.Members.ArrayIndexMember
+  href: PocoEmit.Collections.Members.ArrayIndexMember.html
+  name: ArrayIndexMember
+  nameWithType: ArrayIndexMember
+  fullName: PocoEmit.Collections.Members.ArrayIndexMember
+- uid: PocoEmit.Collections.Members.IndexMemberReader
+  commentId: T:PocoEmit.Collections.Members.IndexMemberReader
+  href: PocoEmit.Collections.Members.IndexMemberReader.html
+  name: IndexMemberReader
+  nameWithType: IndexMemberReader
+  fullName: PocoEmit.Collections.Members.IndexMemberReader
+- uid: PocoEmit.Collections.Members.IndexMemberWriter
+  commentId: T:PocoEmit.Collections.Members.IndexMemberWriter
+  href: PocoEmit.Collections.Members.IndexMemberWriter.html
+  name: IndexMemberWriter
+  nameWithType: IndexMemberWriter
+  fullName: PocoEmit.Collections.Members.IndexMemberWriter

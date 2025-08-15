@@ -1,0 +1,502 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Builders.CopierBuilderBase
+  commentId: T:PocoEmit.Builders.CopierBuilderBase
+  id: CopierBuilderBase
+  parent: PocoEmit.Builders
+  children:
+  - PocoEmit.Builders.CopierBuilderBase.#ctor(PocoEmit.Configuration.IMapperOptions)
+  - PocoEmit.Builders.CopierBuilderBase.Build(PocoEmit.Configuration.PairTypeKey)
+  - PocoEmit.Builders.CopierBuilderBase.CheckMembers(PocoEmit.Configuration.PairTypeKey,System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter},System.Collections.Generic.ICollection{PocoEmit.Copies.IMemberConverter})
+  - PocoEmit.Builders.CopierBuilderBase.Options
+  - PocoEmit.Builders.CopierBuilderBase._options
+  langs:
+  - csharp
+  - vb
+  name: CopierBuilderBase
+  nameWithType: CopierBuilderBase
+  fullName: PocoEmit.Builders.CopierBuilderBase
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CopierBuilderBase
+    path: ../PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 构建复制器基类
+  example: []
+  syntax:
+    content: public abstract class CopierBuilderBase
+    content.vb: Public MustInherit Class CopierBuilderBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - PocoEmit.Builders.CopierBuilder
+  - PocoEmit.Builders.CopyToSelf
+- uid: PocoEmit.Builders.CopierBuilderBase.#ctor(PocoEmit.Configuration.IMapperOptions)
+  commentId: M:PocoEmit.Builders.CopierBuilderBase.#ctor(PocoEmit.Configuration.IMapperOptions)
+  id: '#ctor(PocoEmit.Configuration.IMapperOptions)'
+  parent: PocoEmit.Builders.CopierBuilderBase
+  langs:
+  - csharp
+  - vb
+  name: CopierBuilderBase(IMapperOptions)
+  nameWithType: CopierBuilderBase.CopierBuilderBase(IMapperOptions)
+  fullName: PocoEmit.Builders.CopierBuilderBase.CopierBuilderBase(PocoEmit.Configuration.IMapperOptions)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 构建复制器基类
+  example: []
+  syntax:
+    content: protected CopierBuilderBase(IMapperOptions options)
+    parameters:
+    - id: options
+      type: PocoEmit.Configuration.IMapperOptions
+      description: ''
+    content.vb: Protected Sub New(options As IMapperOptions)
+  overload: PocoEmit.Builders.CopierBuilderBase.#ctor*
+  nameWithType.vb: CopierBuilderBase.New(IMapperOptions)
+  fullName.vb: PocoEmit.Builders.CopierBuilderBase.New(PocoEmit.Configuration.IMapperOptions)
+  name.vb: New(IMapperOptions)
+- uid: PocoEmit.Builders.CopierBuilderBase._options
+  commentId: F:PocoEmit.Builders.CopierBuilderBase._options
+  id: _options
+  parent: PocoEmit.Builders.CopierBuilderBase
+  langs:
+  - csharp
+  - vb
+  name: _options
+  nameWithType: CopierBuilderBase._options
+  fullName: PocoEmit.Builders.CopierBuilderBase._options
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _options
+    path: ../PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+    startLine: 19
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: Emit配置
+  example: []
+  syntax:
+    content: protected readonly IMapperOptions _options
+    return:
+      type: PocoEmit.Configuration.IMapperOptions
+    content.vb: Protected ReadOnly _options As IMapperOptions
+- uid: PocoEmit.Builders.CopierBuilderBase.Options
+  commentId: P:PocoEmit.Builders.CopierBuilderBase.Options
+  id: Options
+  parent: PocoEmit.Builders.CopierBuilderBase
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: CopierBuilderBase.Options
+  fullName: PocoEmit.Builders.CopierBuilderBase.Options
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Options
+    path: ../PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+    startLine: 24
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: Emit配置
+  example: []
+  syntax:
+    content: public IMapperOptions Options { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Configuration.IMapperOptions
+    content.vb: Public ReadOnly Property Options As IMapperOptions
+  overload: PocoEmit.Builders.CopierBuilderBase.Options*
+- uid: PocoEmit.Builders.CopierBuilderBase.Build(PocoEmit.Configuration.PairTypeKey)
+  commentId: M:PocoEmit.Builders.CopierBuilderBase.Build(PocoEmit.Configuration.PairTypeKey)
+  id: Build(PocoEmit.Configuration.PairTypeKey)
+  parent: PocoEmit.Builders.CopierBuilderBase
+  langs:
+  - csharp
+  - vb
+  name: Build(PairTypeKey)
+  nameWithType: CopierBuilderBase.Build(PairTypeKey)
+  fullName: PocoEmit.Builders.CopierBuilderBase.Build(PocoEmit.Configuration.PairTypeKey)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Build
+    path: ../PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+    startLine: 32
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 构建复制器
+  example: []
+  syntax:
+    content: public virtual IEmitCopier Build(PairTypeKey key)
+    parameters:
+    - id: key
+      type: PocoEmit.Configuration.PairTypeKey
+      description: ''
+    return:
+      type: PocoEmit.Copies.IEmitCopier
+      description: ''
+    content.vb: Public Overridable Function Build(key As PairTypeKey) As IEmitCopier
+  overload: PocoEmit.Builders.CopierBuilderBase.Build*
+- uid: PocoEmit.Builders.CopierBuilderBase.CheckMembers(PocoEmit.Configuration.PairTypeKey,System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter},System.Collections.Generic.ICollection{PocoEmit.Copies.IMemberConverter})
+  commentId: M:PocoEmit.Builders.CopierBuilderBase.CheckMembers(PocoEmit.Configuration.PairTypeKey,System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter},System.Collections.Generic.ICollection{PocoEmit.Copies.IMemberConverter})
+  id: CheckMembers(PocoEmit.Configuration.PairTypeKey,System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter},System.Collections.Generic.ICollection{PocoEmit.Copies.IMemberConverter})
+  parent: PocoEmit.Builders.CopierBuilderBase
+  langs:
+  - csharp
+  - vb
+  name: CheckMembers(PairTypeKey, IEnumerable<IEmitMemberWriter>, ICollection<IMemberConverter>)
+  nameWithType: CopierBuilderBase.CheckMembers(PairTypeKey, IEnumerable<IEmitMemberWriter>, ICollection<IMemberConverter>)
+  fullName: PocoEmit.Builders.CopierBuilderBase.CheckMembers(PocoEmit.Configuration.PairTypeKey, System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberWriter>, System.Collections.Generic.ICollection<PocoEmit.Copies.IMemberConverter>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CheckMembers
+    path: ../PocoEmit.Mapper/Builders/CopierBuilderBase.cs
+    startLine: 57
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Builders
+  summary: 处理成员
+  example: []
+  syntax:
+    content: public virtual void CheckMembers(PairTypeKey key, IEnumerable<IEmitMemberWriter> destMembers, ICollection<IMemberConverter> converters)
+    parameters:
+    - id: key
+      type: PocoEmit.Configuration.PairTypeKey
+      description: ''
+    - id: destMembers
+      type: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter}
+      description: ''
+    - id: converters
+      type: System.Collections.Generic.ICollection{PocoEmit.Copies.IMemberConverter}
+      description: ''
+    content.vb: Public Overridable Sub CheckMembers(key As PairTypeKey, destMembers As IEnumerable(Of IEmitMemberWriter), converters As ICollection(Of IMemberConverter))
+  overload: PocoEmit.Builders.CopierBuilderBase.CheckMembers*
+  nameWithType.vb: CopierBuilderBase.CheckMembers(PairTypeKey, IEnumerable(Of IEmitMemberWriter), ICollection(Of IMemberConverter))
+  fullName.vb: PocoEmit.Builders.CopierBuilderBase.CheckMembers(PocoEmit.Configuration.PairTypeKey, System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberWriter), System.Collections.Generic.ICollection(Of PocoEmit.Copies.IMemberConverter))
+  name.vb: CheckMembers(PairTypeKey, IEnumerable(Of IEmitMemberWriter), ICollection(Of IMemberConverter))
+references:
+- uid: PocoEmit.Builders
+  commentId: N:PocoEmit.Builders
+  href: PocoEmit.html
+  name: PocoEmit.Builders
+  nameWithType: PocoEmit.Builders
+  fullName: PocoEmit.Builders
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Builders
+    name: Builders
+    href: PocoEmit.Builders.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Builders.CopierBuilderBase.#ctor*
+  commentId: Overload:PocoEmit.Builders.CopierBuilderBase.#ctor
+  href: PocoEmit.Builders.CopierBuilderBase.html#PocoEmit_Builders_CopierBuilderBase__ctor_PocoEmit_Configuration_IMapperOptions_
+  name: CopierBuilderBase
+  nameWithType: CopierBuilderBase.CopierBuilderBase
+  fullName: PocoEmit.Builders.CopierBuilderBase.CopierBuilderBase
+  nameWithType.vb: CopierBuilderBase.New
+  fullName.vb: PocoEmit.Builders.CopierBuilderBase.New
+  name.vb: New
+- uid: PocoEmit.Configuration.IMapperOptions
+  commentId: T:PocoEmit.Configuration.IMapperOptions
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.IMapperOptions.html
+  name: IMapperOptions
+  nameWithType: IMapperOptions
+  fullName: PocoEmit.Configuration.IMapperOptions
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Builders.CopierBuilderBase.Options*
+  commentId: Overload:PocoEmit.Builders.CopierBuilderBase.Options
+  href: PocoEmit.Builders.CopierBuilderBase.html#PocoEmit_Builders_CopierBuilderBase_Options
+  name: Options
+  nameWithType: CopierBuilderBase.Options
+  fullName: PocoEmit.Builders.CopierBuilderBase.Options
+- uid: PocoEmit.Builders.CopierBuilderBase.Build*
+  commentId: Overload:PocoEmit.Builders.CopierBuilderBase.Build
+  href: PocoEmit.Builders.CopierBuilderBase.html#PocoEmit_Builders_CopierBuilderBase_Build_PocoEmit_Configuration_PairTypeKey_
+  name: Build
+  nameWithType: CopierBuilderBase.Build
+  fullName: PocoEmit.Builders.CopierBuilderBase.Build
+- uid: PocoEmit.Configuration.PairTypeKey
+  commentId: T:PocoEmit.Configuration.PairTypeKey
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.PairTypeKey.html
+  name: PairTypeKey
+  nameWithType: PairTypeKey
+  fullName: PocoEmit.Configuration.PairTypeKey
+- uid: PocoEmit.Copies.IEmitCopier
+  commentId: T:PocoEmit.Copies.IEmitCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IEmitCopier.html
+  name: IEmitCopier
+  nameWithType: IEmitCopier
+  fullName: PocoEmit.Copies.IEmitCopier
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+- uid: PocoEmit.Builders.CopierBuilderBase.CheckMembers*
+  commentId: Overload:PocoEmit.Builders.CopierBuilderBase.CheckMembers
+  href: PocoEmit.Builders.CopierBuilderBase.html#PocoEmit_Builders_CopierBuilderBase_CheckMembers_PocoEmit_Configuration_PairTypeKey_System_Collections_Generic_IEnumerable_PocoEmit_Members_IEmitMemberWriter__System_Collections_Generic_ICollection_PocoEmit_Copies_IMemberConverter__
+  name: CheckMembers
+  nameWithType: CopierBuilderBase.CheckMembers
+  fullName: PocoEmit.Builders.CopierBuilderBase.CheckMembers
+- uid: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter}
+  commentId: T:System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEmitMemberWriter>
+  nameWithType: IEnumerable<IEmitMemberWriter>
+  fullName: System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberWriter>
+  nameWithType.vb: IEnumerable(Of IEmitMemberWriter)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberWriter)
+  name.vb: IEnumerable(Of IEmitMemberWriter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: System.Collections.Generic.ICollection{PocoEmit.Copies.IMemberConverter}
+  commentId: T:System.Collections.Generic.ICollection{PocoEmit.Copies.IMemberConverter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<IMemberConverter>
+  nameWithType: ICollection<IMemberConverter>
+  fullName: System.Collections.Generic.ICollection<PocoEmit.Copies.IMemberConverter>
+  nameWithType.vb: ICollection(Of IMemberConverter)
+  fullName.vb: System.Collections.Generic.ICollection(Of PocoEmit.Copies.IMemberConverter)
+  name.vb: ICollection(Of IMemberConverter)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: PocoEmit.Copies.IMemberConverter
+    name: IMemberConverter
+    href: PocoEmit.Copies.IMemberConverter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Copies.IMemberConverter
+    name: IMemberConverter
+    href: PocoEmit.Copies.IMemberConverter.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Copies.MemberCopier
+  commentId: T:PocoEmit.Copies.MemberCopier
+  id: MemberCopier
+  parent: PocoEmit.Copies
+  children:
+  - PocoEmit.Copies.MemberCopier.#ctor(PocoEmit.Members.IEmitReader,PocoEmit.Members.IEmitReader,PocoEmit.Copies.IEmitCopier)
+  - PocoEmit.Copies.MemberCopier.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  - PocoEmit.Copies.MemberCopier.DestReader
+  - PocoEmit.Copies.MemberCopier.Inner
+  - PocoEmit.Copies.MemberCopier.SourceReader
+  langs:
+  - csharp
+  - vb
+  name: MemberCopier
+  nameWithType: MemberCopier
+  fullName: PocoEmit.Copies.MemberCopier
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/MemberCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MemberCopier
+    path: ../PocoEmit.Mapper/Copies/MemberCopier.cs
+    startLine: 19
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 成员复制器
+  example: []
+  syntax:
+    content: 'public class MemberCopier : IMemberConverter'
+    content.vb: Public Class MemberCopier Implements IMemberConverter
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Copies.IMemberConverter
+- uid: PocoEmit.Copies.MemberCopier.#ctor(PocoEmit.Members.IEmitReader,PocoEmit.Members.IEmitReader,PocoEmit.Copies.IEmitCopier)
+  commentId: M:PocoEmit.Copies.MemberCopier.#ctor(PocoEmit.Members.IEmitReader,PocoEmit.Members.IEmitReader,PocoEmit.Copies.IEmitCopier)
+  id: '#ctor(PocoEmit.Members.IEmitReader,PocoEmit.Members.IEmitReader,PocoEmit.Copies.IEmitCopier)'
+  parent: PocoEmit.Copies.MemberCopier
+  langs:
+  - csharp
+  - vb
+  name: MemberCopier(IEmitReader, IEmitReader, IEmitCopier)
+  nameWithType: MemberCopier.MemberCopier(IEmitReader, IEmitReader, IEmitCopier)
+  fullName: PocoEmit.Copies.MemberCopier.MemberCopier(PocoEmit.Members.IEmitReader, PocoEmit.Members.IEmitReader, PocoEmit.Copies.IEmitCopier)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/MemberCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Copies/MemberCopier.cs
+    startLine: 19
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 成员复制器
+  example: []
+  syntax:
+    content: public MemberCopier(IEmitReader sourceReader, IEmitReader destReader, IEmitCopier inner)
+    parameters:
+    - id: sourceReader
+      type: PocoEmit.Members.IEmitReader
+      description: ''
+    - id: destReader
+      type: PocoEmit.Members.IEmitReader
+      description: ''
+    - id: inner
+      type: PocoEmit.Copies.IEmitCopier
+      description: ''
+    content.vb: Public Sub New(sourceReader As IEmitReader, destReader As IEmitReader, inner As IEmitCopier)
+  overload: PocoEmit.Copies.MemberCopier.#ctor*
+  nameWithType.vb: MemberCopier.New(IEmitReader, IEmitReader, IEmitCopier)
+  fullName.vb: PocoEmit.Copies.MemberCopier.New(PocoEmit.Members.IEmitReader, PocoEmit.Members.IEmitReader, PocoEmit.Copies.IEmitCopier)
+  name.vb: New(IEmitReader, IEmitReader, IEmitCopier)
+- uid: PocoEmit.Copies.MemberCopier.SourceReader
+  commentId: P:PocoEmit.Copies.MemberCopier.SourceReader
+  id: SourceReader
+  parent: PocoEmit.Copies.MemberCopier
+  langs:
+  - csharp
+  - vb
+  name: SourceReader
+  nameWithType: MemberCopier.SourceReader
+  fullName: PocoEmit.Copies.MemberCopier.SourceReader
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/MemberCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: SourceReader
+    path: ../PocoEmit.Mapper/Copies/MemberCopier.cs
+    startLine: 29
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 源成员读取器
+  example: []
+  syntax:
+    content: public IEmitReader SourceReader { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Members.IEmitReader
+    content.vb: Public ReadOnly Property SourceReader As IEmitReader
+  overload: PocoEmit.Copies.MemberCopier.SourceReader*
+- uid: PocoEmit.Copies.MemberCopier.DestReader
+  commentId: P:PocoEmit.Copies.MemberCopier.DestReader
+  id: DestReader
+  parent: PocoEmit.Copies.MemberCopier
+  langs:
+  - csharp
+  - vb
+  name: DestReader
+  nameWithType: MemberCopier.DestReader
+  fullName: PocoEmit.Copies.MemberCopier.DestReader
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/MemberCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: DestReader
+    path: ../PocoEmit.Mapper/Copies/MemberCopier.cs
+    startLine: 34
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 目标成员写入器
+  example: []
+  syntax:
+    content: public IEmitReader DestReader { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Members.IEmitReader
+    content.vb: Public ReadOnly Property DestReader As IEmitReader
+  overload: PocoEmit.Copies.MemberCopier.DestReader*
+- uid: PocoEmit.Copies.MemberCopier.Inner
+  commentId: P:PocoEmit.Copies.MemberCopier.Inner
+  id: Inner
+  parent: PocoEmit.Copies.MemberCopier
+  langs:
+  - csharp
+  - vb
+  name: Inner
+  nameWithType: MemberCopier.Inner
+  fullName: PocoEmit.Copies.MemberCopier.Inner
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/MemberCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Inner
+    path: ../PocoEmit.Mapper/Copies/MemberCopier.cs
+    startLine: 39
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 内部复制器
+  example: []
+  syntax:
+    content: public IEmitCopier Inner { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Copies.IEmitCopier
+    content.vb: Public ReadOnly Property Inner As IEmitCopier
+  overload: PocoEmit.Copies.MemberCopier.Inner*
+- uid: PocoEmit.Copies.MemberCopier.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Copies.MemberCopier.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  id: Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Copies.MemberCopier
+  langs:
+  - csharp
+  - vb
+  name: Convert(Expression, Expression)
+  nameWithType: MemberCopier.Convert(Expression, Expression)
+  fullName: PocoEmit.Copies.MemberCopier.Convert(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Copies/MemberCopier.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Convert
+    path: ../PocoEmit.Mapper/Copies/MemberCopier.cs
+    startLine: 43
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Copies
+  summary: 转化
+  example: []
+  syntax:
+    content: public Expression Convert(Expression source, Expression dest)
+    parameters:
+    - id: source
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: dest
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+    content.vb: Public Function Convert(source As Expression, dest As Expression) As Expression
+  overload: PocoEmit.Copies.MemberCopier.Convert*
+  implements:
+  - PocoEmit.Copies.IMemberConverter.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+references:
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Copies.IMemberConverter
+  commentId: T:PocoEmit.Copies.IMemberConverter
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IMemberConverter.html
+  name: IMemberConverter
+  nameWithType: IMemberConverter
+  fullName: PocoEmit.Copies.IMemberConverter
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Copies.MemberCopier.#ctor*
+  commentId: Overload:PocoEmit.Copies.MemberCopier.#ctor
+  href: PocoEmit.Copies.MemberCopier.html#PocoEmit_Copies_MemberCopier__ctor_PocoEmit_Members_IEmitReader_PocoEmit_Members_IEmitReader_PocoEmit_Copies_IEmitCopier_
+  name: MemberCopier
+  nameWithType: MemberCopier.MemberCopier
+  fullName: PocoEmit.Copies.MemberCopier.MemberCopier
+  nameWithType.vb: MemberCopier.New
+  fullName.vb: PocoEmit.Copies.MemberCopier.New
+  name.vb: New
+- uid: PocoEmit.Members.IEmitReader
+  commentId: T:PocoEmit.Members.IEmitReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitReader.html
+  name: IEmitReader
+  nameWithType: IEmitReader
+  fullName: PocoEmit.Members.IEmitReader
+- uid: PocoEmit.Copies.IEmitCopier
+  commentId: T:PocoEmit.Copies.IEmitCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IEmitCopier.html
+  name: IEmitCopier
+  nameWithType: IEmitCopier
+  fullName: PocoEmit.Copies.IEmitCopier
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: PocoEmit.Copies.MemberCopier.SourceReader*
+  commentId: Overload:PocoEmit.Copies.MemberCopier.SourceReader
+  href: PocoEmit.Copies.MemberCopier.html#PocoEmit_Copies_MemberCopier_SourceReader
+  name: SourceReader
+  nameWithType: MemberCopier.SourceReader
+  fullName: PocoEmit.Copies.MemberCopier.SourceReader
+- uid: PocoEmit.Copies.MemberCopier.DestReader*
+  commentId: Overload:PocoEmit.Copies.MemberCopier.DestReader
+  href: PocoEmit.Copies.MemberCopier.html#PocoEmit_Copies_MemberCopier_DestReader
+  name: DestReader
+  nameWithType: MemberCopier.DestReader
+  fullName: PocoEmit.Copies.MemberCopier.DestReader
+- uid: PocoEmit.Copies.MemberCopier.Inner*
+  commentId: Overload:PocoEmit.Copies.MemberCopier.Inner
+  href: PocoEmit.Copies.MemberCopier.html#PocoEmit_Copies_MemberCopier_Inner
+  name: Inner
+  nameWithType: MemberCopier.Inner
+  fullName: PocoEmit.Copies.MemberCopier.Inner
+- uid: PocoEmit.Copies.MemberCopier.Convert*
+  commentId: Overload:PocoEmit.Copies.MemberCopier.Convert
+  href: PocoEmit.Copies.MemberCopier.html#PocoEmit_Copies_MemberCopier_Convert_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Convert
+  nameWithType: MemberCopier.Convert
+  fullName: PocoEmit.Copies.MemberCopier.Convert
+- uid: PocoEmit.Copies.IMemberConverter.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Copies.IMemberConverter.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Copies.IMemberConverter
+  isExternal: true
+  href: PocoEmit.Copies.IMemberConverter.html#PocoEmit_Copies_IMemberConverter_Convert_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Convert(Expression, Expression)
+  nameWithType: IMemberConverter.Convert(Expression, Expression)
+  fullName: PocoEmit.Copies.IMemberConverter.Convert(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Copies.IMemberConverter.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Convert
+    href: PocoEmit.Copies.IMemberConverter.html#PocoEmit_Copies_IMemberConverter_Convert_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Copies.IMemberConverter.Convert(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+    name: Convert
+    href: PocoEmit.Copies.IMemberConverter.html#PocoEmit_Copies_IMemberConverter_Convert_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

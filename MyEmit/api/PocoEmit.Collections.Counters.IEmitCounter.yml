@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Counters.IEmitCounter
+  commentId: T:PocoEmit.Collections.Counters.IEmitCounter
+  id: IEmitCounter
+  parent: PocoEmit.Collections.Counters
+  children:
+  - PocoEmit.Collections.Counters.IEmitCounter.Count(System.Linq.Expressions.Expression)
+  - PocoEmit.Collections.Counters.IEmitCounter.CountByProperty
+  langs:
+  - csharp
+  - vb
+  name: IEmitCounter
+  nameWithType: IEmitCounter
+  fullName: PocoEmit.Collections.Counters.IEmitCounter
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/IEmitCounter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IEmitCounter
+    path: ../PocoEmit.Collections/Collections/Counters/IEmitCounter.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 元素数量获取器
+  example: []
+  syntax:
+    content: public interface IEmitCounter
+    content.vb: Public Interface IEmitCounter
+- uid: PocoEmit.Collections.Counters.IEmitCounter.CountByProperty
+  commentId: P:PocoEmit.Collections.Counters.IEmitCounter.CountByProperty
+  id: CountByProperty
+  parent: PocoEmit.Collections.Counters.IEmitCounter
+  langs:
+  - csharp
+  - vb
+  name: CountByProperty
+  nameWithType: IEmitCounter.CountByProperty
+  fullName: PocoEmit.Collections.Counters.IEmitCounter.CountByProperty
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/IEmitCounter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CountByProperty
+    path: ../PocoEmit.Collections/Collections/Counters/IEmitCounter.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 是否按属性获取
+  example: []
+  syntax:
+    content: bool CountByProperty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CountByProperty As Boolean
+  overload: PocoEmit.Collections.Counters.IEmitCounter.CountByProperty*
+- uid: PocoEmit.Collections.Counters.IEmitCounter.Count(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.Counters.IEmitCounter.Count(System.Linq.Expressions.Expression)
+  id: Count(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.Counters.IEmitCounter
+  langs:
+  - csharp
+  - vb
+  name: Count(Expression)
+  nameWithType: IEmitCounter.Count(Expression)
+  fullName: PocoEmit.Collections.Counters.IEmitCounter.Count(System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/IEmitCounter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Count
+    path: ../PocoEmit.Collections/Collections/Counters/IEmitCounter.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 获取数量
+  example: []
+  syntax:
+    content: Expression Count(Expression collection)
+    parameters:
+    - id: collection
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Function Count(collection As Expression) As Expression
+  overload: PocoEmit.Collections.Counters.IEmitCounter.Count*
+references:
+- uid: PocoEmit.Collections.Counters
+  commentId: N:PocoEmit.Collections.Counters
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Counters
+  nameWithType: PocoEmit.Collections.Counters
+  fullName: PocoEmit.Collections.Counters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+- uid: PocoEmit.Collections.Counters.IEmitCounter.CountByProperty*
+  commentId: Overload:PocoEmit.Collections.Counters.IEmitCounter.CountByProperty
+  href: PocoEmit.Collections.Counters.IEmitCounter.html#PocoEmit_Collections_Counters_IEmitCounter_CountByProperty
+  name: CountByProperty
+  nameWithType: IEmitCounter.CountByProperty
+  fullName: PocoEmit.Collections.Counters.IEmitCounter.CountByProperty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections.Counters.IEmitCounter.Count*
+  commentId: Overload:PocoEmit.Collections.Counters.IEmitCounter.Count
+  href: PocoEmit.Collections.Counters.IEmitCounter.html#PocoEmit_Collections_Counters_IEmitCounter_Count_System_Linq_Expressions_Expression_
+  name: Count
+  nameWithType: IEmitCounter.Count
+  fullName: PocoEmit.Collections.Counters.IEmitCounter.Count
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

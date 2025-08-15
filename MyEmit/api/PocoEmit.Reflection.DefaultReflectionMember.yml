@@ -1,0 +1,1014 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Reflection.DefaultReflectionMember
+  commentId: T:PocoEmit.Reflection.DefaultReflectionMember
+  id: DefaultReflectionMember
+  parent: PocoEmit.Reflection
+  children:
+  - PocoEmit.Reflection.DefaultReflectionMember.#ctor
+  - PocoEmit.Reflection.DefaultReflectionMember.#ctor(System.StringComparer,System.Boolean)
+  - PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  - PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter})
+  - PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo})
+  - PocoEmit.Reflection.DefaultReflectionMember.Comparer
+  - PocoEmit.Reflection.DefaultReflectionMember.Default
+  - PocoEmit.Reflection.DefaultReflectionMember.GetFields(System.Type)
+  - PocoEmit.Reflection.DefaultReflectionMember.GetMembers(System.Type)
+  - PocoEmit.Reflection.DefaultReflectionMember.GetProperties(System.Type)
+  - PocoEmit.Reflection.DefaultReflectionMember.IncludeField
+  langs:
+  - csharp
+  - vb
+  name: DefaultReflectionMember
+  nameWithType: DefaultReflectionMember
+  fullName: PocoEmit.Reflection.DefaultReflectionMember
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: DefaultReflectionMember
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 17
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 默认反射成员
+  example: []
+  syntax:
+    content: 'public class DefaultReflectionMember : IReflectionMember'
+    content.vb: Public Class DefaultReflectionMember Implements IReflectionMember
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Reflection.IReflectionMember
+- uid: PocoEmit.Reflection.DefaultReflectionMember.#ctor(System.StringComparer,System.Boolean)
+  commentId: M:PocoEmit.Reflection.DefaultReflectionMember.#ctor(System.StringComparer,System.Boolean)
+  id: '#ctor(System.StringComparer,System.Boolean)'
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: DefaultReflectionMember(StringComparer, bool)
+  nameWithType: DefaultReflectionMember.DefaultReflectionMember(StringComparer, bool)
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.DefaultReflectionMember(System.StringComparer, bool)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 17
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 默认反射成员
+  example: []
+  syntax:
+    content: public DefaultReflectionMember(StringComparer comparer, bool includeField = true)
+    parameters:
+    - id: comparer
+      type: System.StringComparer
+    - id: includeField
+      type: System.Boolean
+    content.vb: Public Sub New(comparer As StringComparer, includeField As Boolean = True)
+  overload: PocoEmit.Reflection.DefaultReflectionMember.#ctor*
+  nameWithType.vb: DefaultReflectionMember.New(StringComparer, Boolean)
+  fullName.vb: PocoEmit.Reflection.DefaultReflectionMember.New(System.StringComparer, Boolean)
+  name.vb: New(StringComparer, Boolean)
+- uid: PocoEmit.Reflection.DefaultReflectionMember.#ctor
+  commentId: M:PocoEmit.Reflection.DefaultReflectionMember.#ctor
+  id: '#ctor'
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: DefaultReflectionMember()
+  nameWithType: DefaultReflectionMember.DefaultReflectionMember()
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.DefaultReflectionMember()
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 默认反射成员
+  example: []
+  syntax:
+    content: public DefaultReflectionMember()
+    content.vb: Public Sub New()
+  overload: PocoEmit.Reflection.DefaultReflectionMember.#ctor*
+  nameWithType.vb: DefaultReflectionMember.New()
+  fullName.vb: PocoEmit.Reflection.DefaultReflectionMember.New()
+  name.vb: New()
+- uid: PocoEmit.Reflection.DefaultReflectionMember.Comparer
+  commentId: P:PocoEmit.Reflection.DefaultReflectionMember.Comparer
+  id: Comparer
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: Comparer
+  nameWithType: DefaultReflectionMember.Comparer
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.Comparer
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Comparer
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 33
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 成员名比较器
+  example: []
+  syntax:
+    content: public StringComparer Comparer { get; }
+    parameters: []
+    return:
+      type: System.StringComparer
+    content.vb: Public ReadOnly Property Comparer As StringComparer
+  overload: PocoEmit.Reflection.DefaultReflectionMember.Comparer*
+- uid: PocoEmit.Reflection.DefaultReflectionMember.IncludeField
+  commentId: P:PocoEmit.Reflection.DefaultReflectionMember.IncludeField
+  id: IncludeField
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: IncludeField
+  nameWithType: DefaultReflectionMember.IncludeField
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.IncludeField
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IncludeField
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 38
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 是否包含字段
+  example: []
+  syntax:
+    content: public bool IncludeField { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IncludeField As Boolean
+  overload: PocoEmit.Reflection.DefaultReflectionMember.IncludeField*
+- uid: PocoEmit.Reflection.DefaultReflectionMember.GetMembers(System.Type)
+  commentId: M:PocoEmit.Reflection.DefaultReflectionMember.GetMembers(System.Type)
+  id: GetMembers(System.Type)
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: GetMembers(Type)
+  nameWithType: DefaultReflectionMember.GetMembers(Type)
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.GetMembers(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMembers
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 42
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 获取所有成员
+  example: []
+  syntax:
+    content: public MemberBundle GetMembers(Type instanceType)
+    parameters:
+    - id: instanceType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Collections.MemberBundle
+      description: ''
+    content.vb: Public Function GetMembers(instanceType As Type) As MemberBundle
+  overload: PocoEmit.Reflection.DefaultReflectionMember.GetMembers*
+  implements:
+  - PocoEmit.Reflection.IReflectionMember.GetMembers(System.Type)
+- uid: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo})
+  commentId: M:PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo})
+  id: CheckMembers(System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo})
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: CheckMembers(IEnumerable<MemberInfo>)
+  nameWithType: DefaultReflectionMember.CheckMembers(IEnumerable<MemberInfo>)
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable<System.Reflection.MemberInfo>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CheckMembers
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 102
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 检查成员
+  example: []
+  syntax:
+    content: protected virtual IDictionary<string, MemberInfo> CheckMembers(IEnumerable<MemberInfo> list)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+      description: ''
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo}
+      description: ''
+    content.vb: Protected Overridable Function CheckMembers(list As IEnumerable(Of MemberInfo)) As IDictionary(Of String, MemberInfo)
+  overload: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers*
+  nameWithType.vb: DefaultReflectionMember.CheckMembers(IEnumerable(Of MemberInfo))
+  fullName.vb: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable(Of System.Reflection.MemberInfo))
+  name.vb: CheckMembers(IEnumerable(Of MemberInfo))
+- uid: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  commentId: M:PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  id: CheckMembers(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: CheckMembers(IEnumerable<IEmitMemberReader>)
+  nameWithType: DefaultReflectionMember.CheckMembers(IEnumerable<IEmitMemberReader>)
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberReader>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CheckMembers
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 115
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 检查成员
+  example: []
+  syntax:
+    content: protected virtual IDictionary<string, IEmitMemberReader> CheckMembers(IEnumerable<IEmitMemberReader> list)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+      description: ''
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader}
+      description: ''
+    content.vb: Protected Overridable Function CheckMembers(list As IEnumerable(Of IEmitMemberReader)) As IDictionary(Of String, IEmitMemberReader)
+  overload: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers*
+  nameWithType.vb: DefaultReflectionMember.CheckMembers(IEnumerable(Of IEmitMemberReader))
+  fullName.vb: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberReader))
+  name.vb: CheckMembers(IEnumerable(Of IEmitMemberReader))
+- uid: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter})
+  commentId: M:PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter})
+  id: CheckMembers(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter})
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: CheckMembers(IEnumerable<IEmitMemberWriter>)
+  nameWithType: DefaultReflectionMember.CheckMembers(IEnumerable<IEmitMemberWriter>)
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberWriter>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CheckMembers
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 128
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 检查成员
+  example: []
+  syntax:
+    content: protected virtual IDictionary<string, IEmitMemberWriter> CheckMembers(IEnumerable<IEmitMemberWriter> list)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter}
+      description: ''
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter}
+      description: ''
+    content.vb: Protected Overridable Function CheckMembers(list As IEnumerable(Of IEmitMemberWriter)) As IDictionary(Of String, IEmitMemberWriter)
+  overload: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers*
+  nameWithType.vb: DefaultReflectionMember.CheckMembers(IEnumerable(Of IEmitMemberWriter))
+  fullName.vb: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers(System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberWriter))
+  name.vb: CheckMembers(IEnumerable(Of IEmitMemberWriter))
+- uid: PocoEmit.Reflection.DefaultReflectionMember.GetProperties(System.Type)
+  commentId: M:PocoEmit.Reflection.DefaultReflectionMember.GetProperties(System.Type)
+  id: GetProperties(System.Type)
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: GetProperties(Type)
+  nameWithType: DefaultReflectionMember.GetProperties(Type)
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.GetProperties(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetProperties
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 141
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 获取所有属性
+  example: []
+  syntax:
+    content: protected virtual IEnumerable<PropertyInfo> GetProperties(Type instanceType)
+    parameters:
+    - id: instanceType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+      description: ''
+    content.vb: Protected Overridable Function GetProperties(instanceType As Type) As IEnumerable(Of PropertyInfo)
+  overload: PocoEmit.Reflection.DefaultReflectionMember.GetProperties*
+- uid: PocoEmit.Reflection.DefaultReflectionMember.GetFields(System.Type)
+  commentId: M:PocoEmit.Reflection.DefaultReflectionMember.GetFields(System.Type)
+  id: GetFields(System.Type)
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: GetFields(Type)
+  nameWithType: DefaultReflectionMember.GetFields(Type)
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.GetFields(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetFields
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 148
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 获取所有字段
+  example: []
+  syntax:
+    content: protected virtual IEnumerable<FieldInfo> GetFields(Type instanceType)
+    parameters:
+    - id: instanceType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+      description: ''
+    content.vb: Protected Overridable Function GetFields(instanceType As Type) As IEnumerable(Of FieldInfo)
+  overload: PocoEmit.Reflection.DefaultReflectionMember.GetFields*
+- uid: PocoEmit.Reflection.DefaultReflectionMember.Default
+  commentId: F:PocoEmit.Reflection.DefaultReflectionMember.Default
+  id: Default
+  parent: PocoEmit.Reflection.DefaultReflectionMember
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: DefaultReflectionMember.Default
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.Default
+  type: Field
+  source:
+    remote:
+      path: PocoEmit/Reflection/DefaultReflectionMember.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Default
+    path: ../PocoEmit/Reflection/DefaultReflectionMember.cs
+    startLine: 153
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Reflection
+  summary: 默认反射成员实例
+  example: []
+  syntax:
+    content: public static readonly DefaultReflectionMember Default
+    return:
+      type: PocoEmit.Reflection.DefaultReflectionMember
+    content.vb: Public Shared ReadOnly [Default] As DefaultReflectionMember
+references:
+- uid: PocoEmit.Reflection
+  commentId: N:PocoEmit.Reflection
+  href: PocoEmit.html
+  name: PocoEmit.Reflection
+  nameWithType: PocoEmit.Reflection
+  fullName: PocoEmit.Reflection
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Reflection
+    name: Reflection
+    href: PocoEmit.Reflection.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Reflection
+    name: Reflection
+    href: PocoEmit.Reflection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Reflection.IReflectionMember
+  commentId: T:PocoEmit.Reflection.IReflectionMember
+  parent: PocoEmit.Reflection
+  href: PocoEmit.Reflection.IReflectionMember.html
+  name: IReflectionMember
+  nameWithType: IReflectionMember
+  fullName: PocoEmit.Reflection.IReflectionMember
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Reflection.DefaultReflectionMember.#ctor*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionMember.#ctor
+  href: PocoEmit.Reflection.DefaultReflectionMember.html#PocoEmit_Reflection_DefaultReflectionMember__ctor_System_StringComparer_System_Boolean_
+  name: DefaultReflectionMember
+  nameWithType: DefaultReflectionMember.DefaultReflectionMember
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.DefaultReflectionMember
+  nameWithType.vb: DefaultReflectionMember.New
+  fullName.vb: PocoEmit.Reflection.DefaultReflectionMember.New
+  name.vb: New
+- uid: System.StringComparer
+  commentId: T:System.StringComparer
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.stringcomparer
+  name: StringComparer
+  nameWithType: StringComparer
+  fullName: System.StringComparer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PocoEmit.Reflection.DefaultReflectionMember.Comparer*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionMember.Comparer
+  href: PocoEmit.Reflection.DefaultReflectionMember.html#PocoEmit_Reflection_DefaultReflectionMember_Comparer
+  name: Comparer
+  nameWithType: DefaultReflectionMember.Comparer
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.Comparer
+- uid: PocoEmit.Reflection.DefaultReflectionMember.IncludeField*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionMember.IncludeField
+  href: PocoEmit.Reflection.DefaultReflectionMember.html#PocoEmit_Reflection_DefaultReflectionMember_IncludeField
+  name: IncludeField
+  nameWithType: DefaultReflectionMember.IncludeField
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.IncludeField
+- uid: PocoEmit.Reflection.DefaultReflectionMember.GetMembers*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionMember.GetMembers
+  href: PocoEmit.Reflection.DefaultReflectionMember.html#PocoEmit_Reflection_DefaultReflectionMember_GetMembers_System_Type_
+  name: GetMembers
+  nameWithType: DefaultReflectionMember.GetMembers
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.GetMembers
+- uid: PocoEmit.Reflection.IReflectionMember.GetMembers(System.Type)
+  commentId: M:PocoEmit.Reflection.IReflectionMember.GetMembers(System.Type)
+  parent: PocoEmit.Reflection.IReflectionMember
+  isExternal: true
+  href: PocoEmit.Reflection.IReflectionMember.html#PocoEmit_Reflection_IReflectionMember_GetMembers_System_Type_
+  name: GetMembers(Type)
+  nameWithType: IReflectionMember.GetMembers(Type)
+  fullName: PocoEmit.Reflection.IReflectionMember.GetMembers(System.Type)
+  spec.csharp:
+  - uid: PocoEmit.Reflection.IReflectionMember.GetMembers(System.Type)
+    name: GetMembers
+    href: PocoEmit.Reflection.IReflectionMember.html#PocoEmit_Reflection_IReflectionMember_GetMembers_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Reflection.IReflectionMember.GetMembers(System.Type)
+    name: GetMembers
+    href: PocoEmit.Reflection.IReflectionMember.html#PocoEmit_Reflection_IReflectionMember_GetMembers_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Collections.MemberBundle
+  commentId: T:PocoEmit.Collections.MemberBundle
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.MemberBundle.html
+  name: MemberBundle
+  nameWithType: MemberBundle
+  fullName: PocoEmit.Collections.MemberBundle
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionMember.CheckMembers
+  href: PocoEmit.Reflection.DefaultReflectionMember.html#PocoEmit_Reflection_DefaultReflectionMember_CheckMembers_System_Collections_Generic_IEnumerable_System_Reflection_MemberInfo__
+  name: CheckMembers
+  nameWithType: DefaultReflectionMember.CheckMembers
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.CheckMembers
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MemberInfo>
+  nameWithType: IEnumerable<MemberInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MemberInfo>
+  nameWithType.vb: IEnumerable(Of MemberInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.MemberInfo)
+  name.vb: IEnumerable(Of MemberInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: )
+- uid: System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Reflection.MemberInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, MemberInfo>
+  nameWithType: IDictionary<string, MemberInfo>
+  fullName: System.Collections.Generic.IDictionary<string, System.Reflection.MemberInfo>
+  nameWithType.vb: IDictionary(Of String, MemberInfo)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, System.Reflection.MemberInfo)
+  name.vb: IDictionary(Of String, MemberInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+  commentId: T:System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEmitMemberReader>
+  nameWithType: IEnumerable<IEmitMemberReader>
+  fullName: System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberReader>
+  nameWithType.vb: IEnumerable(Of IEmitMemberReader)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberReader)
+  name.vb: IEnumerable(Of IEmitMemberReader)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberReader}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, IEmitMemberReader>
+  nameWithType: IDictionary<string, IEmitMemberReader>
+  fullName: System.Collections.Generic.IDictionary<string, PocoEmit.Members.IEmitMemberReader>
+  nameWithType.vb: IDictionary(Of String, IEmitMemberReader)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, PocoEmit.Members.IEmitMemberReader)
+  name.vb: IDictionary(Of String, IEmitMemberReader)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter}
+  commentId: T:System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEmitMemberWriter>
+  nameWithType: IEnumerable<IEmitMemberWriter>
+  fullName: System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberWriter>
+  nameWithType.vb: IEnumerable(Of IEmitMemberWriter)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberWriter)
+  name.vb: IEnumerable(Of IEmitMemberWriter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,PocoEmit.Members.IEmitMemberWriter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, IEmitMemberWriter>
+  nameWithType: IDictionary<string, IEmitMemberWriter>
+  fullName: System.Collections.Generic.IDictionary<string, PocoEmit.Members.IEmitMemberWriter>
+  nameWithType.vb: IDictionary(Of String, IEmitMemberWriter)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, PocoEmit.Members.IEmitMemberWriter)
+  name.vb: IDictionary(Of String, IEmitMemberWriter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: PocoEmit.Reflection.DefaultReflectionMember.GetProperties*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionMember.GetProperties
+  href: PocoEmit.Reflection.DefaultReflectionMember.html#PocoEmit_Reflection_DefaultReflectionMember_GetProperties_System_Type_
+  name: GetProperties
+  nameWithType: DefaultReflectionMember.GetProperties
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.GetProperties
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PropertyInfo>
+  nameWithType: IEnumerable<PropertyInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.PropertyInfo>
+  nameWithType.vb: IEnumerable(Of PropertyInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.PropertyInfo)
+  name.vb: IEnumerable(Of PropertyInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: )
+- uid: PocoEmit.Reflection.DefaultReflectionMember.GetFields*
+  commentId: Overload:PocoEmit.Reflection.DefaultReflectionMember.GetFields
+  href: PocoEmit.Reflection.DefaultReflectionMember.html#PocoEmit_Reflection_DefaultReflectionMember_GetFields_System_Type_
+  name: GetFields
+  nameWithType: DefaultReflectionMember.GetFields
+  fullName: PocoEmit.Reflection.DefaultReflectionMember.GetFields
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<FieldInfo>
+  nameWithType: IEnumerable<FieldInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.FieldInfo>
+  nameWithType.vb: IEnumerable(Of FieldInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.FieldInfo)
+  name.vb: IEnumerable(Of FieldInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: )
+- uid: PocoEmit.Reflection.DefaultReflectionMember
+  commentId: T:PocoEmit.Reflection.DefaultReflectionMember
+  parent: PocoEmit.Reflection
+  href: PocoEmit.Reflection.DefaultReflectionMember.html
+  name: DefaultReflectionMember
+  nameWithType: DefaultReflectionMember
+  fullName: PocoEmit.Reflection.DefaultReflectionMember

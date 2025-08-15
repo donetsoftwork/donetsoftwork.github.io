@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Converters.StringCompareConverter
+  commentId: T:PocoEmit.Converters.StringCompareConverter
+  id: StringCompareConverter
+  parent: PocoEmit.Converters
+  children:
+  - PocoEmit.Converters.StringCompareConverter.ToComparer(System.StringComparison)
+  - PocoEmit.Converters.StringCompareConverter.ToComparison(System.StringComparer)
+  langs:
+  - csharp
+  - vb
+  name: StringCompareConverter
+  nameWithType: StringCompareConverter
+  fullName: PocoEmit.Converters.StringCompareConverter
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Converters/StringCompareConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: StringCompareConverter
+    path: ../PocoEmit/Converters/StringCompareConverter.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Converters
+  summary: 字符比较器转化
+  example: []
+  syntax:
+    content: public static class StringCompareConverter
+    content.vb: Public Module StringCompareConverter
+  inheritance:
+  - System.Object
+- uid: PocoEmit.Converters.StringCompareConverter.ToComparer(System.StringComparison)
+  commentId: M:PocoEmit.Converters.StringCompareConverter.ToComparer(System.StringComparison)
+  id: ToComparer(System.StringComparison)
+  parent: PocoEmit.Converters.StringCompareConverter
+  langs:
+  - csharp
+  - vb
+  name: ToComparer(StringComparison)
+  nameWithType: StringCompareConverter.ToComparer(StringComparison)
+  fullName: PocoEmit.Converters.StringCompareConverter.ToComparer(System.StringComparison)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Converters/StringCompareConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ToComparer
+    path: ../PocoEmit/Converters/StringCompareConverter.cs
+    startLine: 14
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Converters
+  summary: 转化为StringComparer
+  example: []
+  syntax:
+    content: public static StringComparer ToComparer(StringComparison comparison)
+    parameters:
+    - id: comparison
+      type: System.StringComparison
+      description: ''
+    return:
+      type: System.StringComparer
+      description: ''
+    content.vb: Public Shared Function ToComparer(comparison As StringComparison) As StringComparer
+  overload: PocoEmit.Converters.StringCompareConverter.ToComparer*
+- uid: PocoEmit.Converters.StringCompareConverter.ToComparison(System.StringComparer)
+  commentId: M:PocoEmit.Converters.StringCompareConverter.ToComparison(System.StringComparer)
+  id: ToComparison(System.StringComparer)
+  parent: PocoEmit.Converters.StringCompareConverter
+  langs:
+  - csharp
+  - vb
+  name: ToComparison(StringComparer)
+  nameWithType: StringCompareConverter.ToComparison(StringComparer)
+  fullName: PocoEmit.Converters.StringCompareConverter.ToComparison(System.StringComparer)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Converters/StringCompareConverter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ToComparison
+    path: ../PocoEmit/Converters/StringCompareConverter.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Converters
+  summary: 转化为StringComparison
+  example: []
+  syntax:
+    content: public static StringComparison ToComparison(StringComparer comparer)
+    parameters:
+    - id: comparer
+      type: System.StringComparer
+      description: ''
+    return:
+      type: System.StringComparison
+      description: ''
+    content.vb: Public Shared Function ToComparison(comparer As StringComparer) As StringComparison
+  overload: PocoEmit.Converters.StringCompareConverter.ToComparison*
+references:
+- uid: PocoEmit.Converters
+  commentId: N:PocoEmit.Converters
+  href: PocoEmit.html
+  name: PocoEmit.Converters
+  nameWithType: PocoEmit.Converters
+  fullName: PocoEmit.Converters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Converters
+    name: Converters
+    href: PocoEmit.Converters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Converters.StringCompareConverter.ToComparer*
+  commentId: Overload:PocoEmit.Converters.StringCompareConverter.ToComparer
+  href: PocoEmit.Converters.StringCompareConverter.html#PocoEmit_Converters_StringCompareConverter_ToComparer_System_StringComparison_
+  name: ToComparer
+  nameWithType: StringCompareConverter.ToComparer
+  fullName: PocoEmit.Converters.StringCompareConverter.ToComparer
+- uid: System.StringComparison
+  commentId: T:System.StringComparison
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.stringcomparison
+  name: StringComparison
+  nameWithType: StringComparison
+  fullName: System.StringComparison
+- uid: System.StringComparer
+  commentId: T:System.StringComparer
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.stringcomparer
+  name: StringComparer
+  nameWithType: StringComparer
+  fullName: System.StringComparer
+- uid: PocoEmit.Converters.StringCompareConverter.ToComparison*
+  commentId: Overload:PocoEmit.Converters.StringCompareConverter.ToComparison
+  href: PocoEmit.Converters.StringCompareConverter.html#PocoEmit_Converters_StringCompareConverter_ToComparison_System_StringComparer_
+  name: ToComparison
+  nameWithType: StringCompareConverter.ToComparison
+  fullName: PocoEmit.Converters.StringCompareConverter.ToComparison

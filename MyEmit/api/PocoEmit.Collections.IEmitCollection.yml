@@ -1,0 +1,144 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.IEmitCollection
+  commentId: T:PocoEmit.Collections.IEmitCollection
+  id: IEmitCollection
+  parent: PocoEmit.Collections
+  children:
+  - PocoEmit.Collections.IEmitCollection.CollectionType
+  - PocoEmit.Collections.IEmitCollection.ElementType
+  langs:
+  - csharp
+  - vb
+  name: IEmitCollection
+  nameWithType: IEmitCollection
+  fullName: PocoEmit.Collections.IEmitCollection
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/IEmitCollection.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IEmitCollection
+    path: ../PocoEmit.Collections/Collections/IEmitCollection.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: Emit集合
+  example: []
+  syntax:
+    content: public interface IEmitCollection
+    content.vb: Public Interface IEmitCollection
+- uid: PocoEmit.Collections.IEmitCollection.CollectionType
+  commentId: P:PocoEmit.Collections.IEmitCollection.CollectionType
+  id: CollectionType
+  parent: PocoEmit.Collections.IEmitCollection
+  langs:
+  - csharp
+  - vb
+  name: CollectionType
+  nameWithType: IEmitCollection.CollectionType
+  fullName: PocoEmit.Collections.IEmitCollection.CollectionType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/IEmitCollection.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CollectionType
+    path: ../PocoEmit.Collections/Collections/IEmitCollection.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 集合类型
+  example: []
+  syntax:
+    content: Type CollectionType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property CollectionType As Type
+  overload: PocoEmit.Collections.IEmitCollection.CollectionType*
+- uid: PocoEmit.Collections.IEmitCollection.ElementType
+  commentId: P:PocoEmit.Collections.IEmitCollection.ElementType
+  id: ElementType
+  parent: PocoEmit.Collections.IEmitCollection
+  langs:
+  - csharp
+  - vb
+  name: ElementType
+  nameWithType: IEmitCollection.ElementType
+  fullName: PocoEmit.Collections.IEmitCollection.ElementType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/IEmitCollection.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ElementType
+    path: ../PocoEmit.Collections/Collections/IEmitCollection.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections
+  summary: 子元素类型
+  example: []
+  syntax:
+    content: Type ElementType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property ElementType As Type
+  overload: PocoEmit.Collections.IEmitCollection.ElementType*
+references:
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Collections.IEmitCollection.CollectionType*
+  commentId: Overload:PocoEmit.Collections.IEmitCollection.CollectionType
+  href: PocoEmit.Collections.IEmitCollection.html#PocoEmit_Collections_IEmitCollection_CollectionType
+  name: CollectionType
+  nameWithType: IEmitCollection.CollectionType
+  fullName: PocoEmit.Collections.IEmitCollection.CollectionType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections.IEmitCollection.ElementType*
+  commentId: Overload:PocoEmit.Collections.IEmitCollection.ElementType
+  href: PocoEmit.Collections.IEmitCollection.html#PocoEmit_Collections_IEmitCollection_ElementType
+  name: ElementType
+  nameWithType: IEmitCollection.ElementType
+  fullName: PocoEmit.Collections.IEmitCollection.ElementType

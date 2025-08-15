@@ -1,0 +1,815 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.DictionaryStorage`2
+  commentId: T:PocoEmit.Collections.DictionaryStorage`2
+  id: DictionaryStorage`2
+  parent: PocoEmit.Collections
+  children:
+  - PocoEmit.Collections.DictionaryStorage`2.#ctor
+  - PocoEmit.Collections.DictionaryStorage`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})
+  - PocoEmit.Collections.DictionaryStorage`2.ContainsKey(`0)
+  - PocoEmit.Collections.DictionaryStorage`2.Provider
+  - PocoEmit.Collections.DictionaryStorage`2.Set(`0,`1)
+  - PocoEmit.Collections.DictionaryStorage`2.TryGetValue(`0,`1@)
+  - PocoEmit.Collections.DictionaryStorage`2._provider
+  langs:
+  - csharp
+  - vb
+  name: DictionaryStorage<TKey, TValue>
+  nameWithType: DictionaryStorage<TKey, TValue>
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Collections/DictionaryStorage~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: DictionaryStorage
+    path: ../PocoEmit/Collections/DictionaryStorage~2.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 字典存储
+  example: []
+  syntax:
+    content: 'public class DictionaryStorage<TKey, TValue> : ICacher<TKey, TValue>, IStore<TKey, TValue> where TKey : notnull'
+    typeParameters:
+    - id: TKey
+      description: ''
+    - id: TValue
+      description: ''
+    content.vb: Public Class DictionaryStorage(Of TKey, TValue) Implements ICacher(Of TKey, TValue), IStore(Of TKey, TValue)
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Collections.ICacher{{TKey},{TValue}}
+  - PocoEmit.Collections.IStore{{TKey},{TValue}}
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue)
+  name.vb: DictionaryStorage(Of TKey, TValue)
+- uid: PocoEmit.Collections.DictionaryStorage`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})
+  commentId: M:PocoEmit.Collections.DictionaryStorage`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})
+  id: '#ctor(System.Collections.Generic.IDictionary{`0,`1})'
+  parent: PocoEmit.Collections.DictionaryStorage`2
+  langs:
+  - csharp
+  - vb
+  name: DictionaryStorage(IDictionary<TKey, TValue>)
+  nameWithType: DictionaryStorage<TKey, TValue>.DictionaryStorage(IDictionary<TKey, TValue>)
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.DictionaryStorage(System.Collections.Generic.IDictionary<TKey, TValue>)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit/Collections/DictionaryStorage~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit/Collections/DictionaryStorage~2.cs
+    startLine: 11
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 字典存储
+  example: []
+  syntax:
+    content: public DictionaryStorage(IDictionary<TKey, TValue> provider)
+    parameters:
+    - id: provider
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: ''
+    content.vb: Public Sub New(provider As IDictionary(Of TKey, TValue))
+  overload: PocoEmit.Collections.DictionaryStorage`2.#ctor*
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).New(IDictionary(Of TKey, TValue))
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).New(System.Collections.Generic.IDictionary(Of TKey, TValue))
+  name.vb: New(IDictionary(Of TKey, TValue))
+- uid: PocoEmit.Collections.DictionaryStorage`2.#ctor
+  commentId: M:PocoEmit.Collections.DictionaryStorage`2.#ctor
+  id: '#ctor'
+  parent: PocoEmit.Collections.DictionaryStorage`2
+  langs:
+  - csharp
+  - vb
+  name: DictionaryStorage()
+  nameWithType: DictionaryStorage<TKey, TValue>.DictionaryStorage()
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.DictionaryStorage()
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit/Collections/DictionaryStorage~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit/Collections/DictionaryStorage~2.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 字典存储
+  example: []
+  syntax:
+    content: public DictionaryStorage()
+    content.vb: Public Sub New()
+  overload: PocoEmit.Collections.DictionaryStorage`2.#ctor*
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).New()
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).New()
+  name.vb: New()
+- uid: PocoEmit.Collections.DictionaryStorage`2._provider
+  commentId: F:PocoEmit.Collections.DictionaryStorage`2._provider
+  id: _provider
+  parent: PocoEmit.Collections.DictionaryStorage`2
+  langs:
+  - csharp
+  - vb
+  name: _provider
+  nameWithType: DictionaryStorage<TKey, TValue>._provider
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>._provider
+  type: Field
+  source:
+    remote:
+      path: PocoEmit/Collections/DictionaryStorage~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: _provider
+    path: ../PocoEmit/Collections/DictionaryStorage~2.cs
+    startLine: 26
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 存储字典
+  example: []
+  syntax:
+    content: protected readonly IDictionary<TKey, TValue> _provider
+    return:
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+    content.vb: Protected ReadOnly _provider As IDictionary(Of TKey, TValue)
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue)._provider
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue)._provider
+- uid: PocoEmit.Collections.DictionaryStorage`2.Provider
+  commentId: P:PocoEmit.Collections.DictionaryStorage`2.Provider
+  id: Provider
+  parent: PocoEmit.Collections.DictionaryStorage`2
+  langs:
+  - csharp
+  - vb
+  name: Provider
+  nameWithType: DictionaryStorage<TKey, TValue>.Provider
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.Provider
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Collections/DictionaryStorage~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Provider
+    path: ../PocoEmit/Collections/DictionaryStorage~2.cs
+    startLine: 30
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 存储字典
+  example: []
+  syntax:
+    content: public IDictionary<TKey, TValue> Provider { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+    content.vb: Public ReadOnly Property Provider As IDictionary(Of TKey, TValue)
+  overload: PocoEmit.Collections.DictionaryStorage`2.Provider*
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).Provider
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).Provider
+- uid: PocoEmit.Collections.DictionaryStorage`2.ContainsKey(`0)
+  commentId: M:PocoEmit.Collections.DictionaryStorage`2.ContainsKey(`0)
+  id: ContainsKey(`0)
+  parent: PocoEmit.Collections.DictionaryStorage`2
+  langs:
+  - csharp
+  - vb
+  name: ContainsKey(TKey)
+  nameWithType: DictionaryStorage<TKey, TValue>.ContainsKey(TKey)
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.ContainsKey(TKey)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Collections/DictionaryStorage~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ContainsKey
+    path: ../PocoEmit/Collections/DictionaryStorage~2.cs
+    startLine: 35
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 判断是否存在
+  example: []
+  syntax:
+    content: public bool ContainsKey(TKey key)
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function ContainsKey(key As TKey) As Boolean
+  overload: PocoEmit.Collections.DictionaryStorage`2.ContainsKey*
+  implements:
+  - PocoEmit.Collections.ICacher{{TKey},{TValue}}.ContainsKey({TKey})
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).ContainsKey(TKey)
+- uid: PocoEmit.Collections.DictionaryStorage`2.TryGetValue(`0,`1@)
+  commentId: M:PocoEmit.Collections.DictionaryStorage`2.TryGetValue(`0,`1@)
+  id: TryGetValue(`0,`1@)
+  parent: PocoEmit.Collections.DictionaryStorage`2
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue(TKey, out TValue)
+  nameWithType: DictionaryStorage<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.TryGetValue(TKey, out TValue)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Collections/DictionaryStorage~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: TryGetValue
+    path: ../PocoEmit/Collections/DictionaryStorage~2.cs
+    startLine: 38
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 获取
+  example: []
+  syntax:
+    content: public bool TryGetValue(TKey key, out TValue value)
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: ''
+    - id: value
+      type: '{TValue}'
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function TryGetValue(key As TKey, value As TValue) As Boolean
+  overload: PocoEmit.Collections.DictionaryStorage`2.TryGetValue*
+  implements:
+  - PocoEmit.Collections.ICacher{{TKey},{TValue}}.TryGetValue({TKey},{TValue}@)
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).TryGetValue(TKey, TValue)
+  name.vb: TryGetValue(TKey, TValue)
+- uid: PocoEmit.Collections.DictionaryStorage`2.Set(`0,`1)
+  commentId: M:PocoEmit.Collections.DictionaryStorage`2.Set(`0,`1)
+  id: Set(`0,`1)
+  parent: PocoEmit.Collections.DictionaryStorage`2
+  langs:
+  - csharp
+  - vb
+  name: Set(TKey, TValue)
+  nameWithType: DictionaryStorage<TKey, TValue>.Set(TKey, TValue)
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.Set(TKey, TValue)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Collections/DictionaryStorage~2.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Set
+    path: ../PocoEmit/Collections/DictionaryStorage~2.cs
+    startLine: 41
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 设置
+  example: []
+  syntax:
+    content: public void Set(TKey key, TValue value)
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: ''
+    - id: value
+      type: '{TValue}'
+      description: ''
+    content.vb: Public Sub [Set](key As TKey, value As TValue)
+  overload: PocoEmit.Collections.DictionaryStorage`2.Set*
+  implements:
+  - PocoEmit.Collections.IStore{{TKey},{TValue}}.Set({TKey},{TValue})
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).Set(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).Set(TKey, TValue)
+references:
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.ICacher{{TKey},{TValue}}
+  commentId: T:PocoEmit.Collections.ICacher{`0,`1}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<TKey, TValue>
+  nameWithType: ICacher<TKey, TValue>
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>
+  nameWithType.vb: ICacher(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue)
+  name.vb: ICacher(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IStore{{TKey},{TValue}}
+  commentId: T:PocoEmit.Collections.IStore{`0,`1}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<TKey, TValue>
+  nameWithType: IStore<TKey, TValue>
+  fullName: PocoEmit.Collections.IStore<TKey, TValue>
+  nameWithType.vb: IStore(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IStore(Of TKey, TValue)
+  name.vb: IStore(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections.ICacher`2
+  commentId: T:PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<TKey, TValue>
+  nameWithType: ICacher<TKey, TValue>
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>
+  nameWithType.vb: ICacher(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue)
+  name.vb: ICacher(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IStore`2
+  commentId: T:PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<TKey, TValue>
+  nameWithType: IStore<TKey, TValue>
+  fullName: PocoEmit.Collections.IStore<TKey, TValue>
+  nameWithType.vb: IStore(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IStore(Of TKey, TValue)
+  name.vb: IStore(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.DictionaryStorage`2.#ctor*
+  commentId: Overload:PocoEmit.Collections.DictionaryStorage`2.#ctor
+  href: PocoEmit.Collections.DictionaryStorage-2.html#PocoEmit_Collections_DictionaryStorage_2__ctor_System_Collections_Generic_IDictionary__0__1__
+  name: DictionaryStorage
+  nameWithType: DictionaryStorage<TKey, TValue>.DictionaryStorage
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.DictionaryStorage
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).New
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).New
+  name.vb: New
+- uid: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+  commentId: T:System.Collections.Generic.IDictionary{`0,`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PocoEmit.Collections.DictionaryStorage`2.Provider*
+  commentId: Overload:PocoEmit.Collections.DictionaryStorage`2.Provider
+  href: PocoEmit.Collections.DictionaryStorage-2.html#PocoEmit_Collections_DictionaryStorage_2_Provider
+  name: Provider
+  nameWithType: DictionaryStorage<TKey, TValue>.Provider
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.Provider
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).Provider
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).Provider
+- uid: PocoEmit.Collections.DictionaryStorage`2.ContainsKey*
+  commentId: Overload:PocoEmit.Collections.DictionaryStorage`2.ContainsKey
+  href: PocoEmit.Collections.DictionaryStorage-2.html#PocoEmit_Collections_DictionaryStorage_2_ContainsKey__0_
+  name: ContainsKey
+  nameWithType: DictionaryStorage<TKey, TValue>.ContainsKey
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.ContainsKey
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).ContainsKey
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).ContainsKey
+- uid: PocoEmit.Collections.ICacher{{TKey},{TValue}}.ContainsKey({TKey})
+  commentId: M:PocoEmit.Collections.ICacher{`0,`1}.ContainsKey(`0)
+  parent: PocoEmit.Collections.ICacher{{TKey},{TValue}}
+  definition: PocoEmit.Collections.ICacher`2.ContainsKey(`0)
+  href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_ContainsKey__0_
+  name: ContainsKey(TKey)
+  nameWithType: ICacher<TKey, TValue>.ContainsKey(TKey)
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: ICacher(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher{`0,`1}.ContainsKey(`0)
+    name: ContainsKey
+    href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_ContainsKey__0_
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher{`0,`1}.ContainsKey(`0)
+    name: ContainsKey
+    href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_ContainsKey__0_
+  - name: (
+  - name: TKey
+  - name: )
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PocoEmit.Collections.ICacher`2.ContainsKey(`0)
+  commentId: M:PocoEmit.Collections.ICacher`2.ContainsKey(`0)
+  href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_ContainsKey__0_
+  name: ContainsKey(TKey)
+  nameWithType: ICacher<TKey, TValue>.ContainsKey(TKey)
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: ICacher(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2.ContainsKey(`0)
+    name: ContainsKey
+    href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_ContainsKey__0_
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2.ContainsKey(`0)
+    name: ContainsKey
+    href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_ContainsKey__0_
+  - name: (
+  - name: TKey
+  - name: )
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: PocoEmit.Collections.DictionaryStorage`2.TryGetValue*
+  commentId: Overload:PocoEmit.Collections.DictionaryStorage`2.TryGetValue
+  href: PocoEmit.Collections.DictionaryStorage-2.html#PocoEmit_Collections_DictionaryStorage_2_TryGetValue__0__1__
+  name: TryGetValue
+  nameWithType: DictionaryStorage<TKey, TValue>.TryGetValue
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.TryGetValue
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).TryGetValue
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).TryGetValue
+- uid: PocoEmit.Collections.ICacher{{TKey},{TValue}}.TryGetValue({TKey},{TValue}@)
+  commentId: M:PocoEmit.Collections.ICacher{`0,`1}.TryGetValue(`0,`1@)
+  parent: PocoEmit.Collections.ICacher{{TKey},{TValue}}
+  definition: PocoEmit.Collections.ICacher`2.TryGetValue(`0,`1@)
+  href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_TryGetValue__0__1__
+  name: TryGetValue(TKey, out TValue)
+  nameWithType: ICacher<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: ICacher(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue).TryGetValue(TKey, TValue)
+  name.vb: TryGetValue(TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher{`0,`1}.TryGetValue(`0,`1@)
+    name: TryGetValue
+    href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_TryGetValue__0__1__
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher{`0,`1}.TryGetValue(`0,`1@)
+    name: TryGetValue
+    href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_TryGetValue__0__1__
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: PocoEmit.Collections.ICacher`2.TryGetValue(`0,`1@)
+  commentId: M:PocoEmit.Collections.ICacher`2.TryGetValue(`0,`1@)
+  href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_TryGetValue__0__1__
+  name: TryGetValue(TKey, out TValue)
+  nameWithType: ICacher<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: ICacher(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue).TryGetValue(TKey, TValue)
+  name.vb: TryGetValue(TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_TryGetValue__0__1__
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    href: PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_TryGetValue__0__1__
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: PocoEmit.Collections.DictionaryStorage`2.Set*
+  commentId: Overload:PocoEmit.Collections.DictionaryStorage`2.Set
+  href: PocoEmit.Collections.DictionaryStorage-2.html#PocoEmit_Collections_DictionaryStorage_2_Set__0__1_
+  name: Set
+  nameWithType: DictionaryStorage<TKey, TValue>.Set
+  fullName: PocoEmit.Collections.DictionaryStorage<TKey, TValue>.Set
+  nameWithType.vb: DictionaryStorage(Of TKey, TValue).Set
+  fullName.vb: PocoEmit.Collections.DictionaryStorage(Of TKey, TValue).Set
+- uid: PocoEmit.Collections.IStore{{TKey},{TValue}}.Set({TKey},{TValue})
+  commentId: M:PocoEmit.Collections.IStore{`0,`1}.Set(`0,`1)
+  parent: PocoEmit.Collections.IStore{{TKey},{TValue}}
+  definition: PocoEmit.Collections.IStore`2.Set(`0,`1)
+  href: PocoEmit.Collections.IStore-2.html#PocoEmit_Collections_IStore_2_Set__0__1_
+  name: Set(TKey, TValue)
+  nameWithType: IStore<TKey, TValue>.Set(TKey, TValue)
+  fullName: PocoEmit.Collections.IStore<TKey, TValue>.Set(TKey, TValue)
+  nameWithType.vb: IStore(Of TKey, TValue).Set(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IStore(Of TKey, TValue).Set(TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore{`0,`1}.Set(`0,`1)
+    name: Set
+    href: PocoEmit.Collections.IStore-2.html#PocoEmit_Collections_IStore_2_Set__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore{`0,`1}.Set(`0,`1)
+    name: Set
+    href: PocoEmit.Collections.IStore-2.html#PocoEmit_Collections_IStore_2_Set__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IStore`2.Set(`0,`1)
+  commentId: M:PocoEmit.Collections.IStore`2.Set(`0,`1)
+  href: PocoEmit.Collections.IStore-2.html#PocoEmit_Collections_IStore_2_Set__0__1_
+  name: Set(TKey, TValue)
+  nameWithType: IStore<TKey, TValue>.Set(TKey, TValue)
+  fullName: PocoEmit.Collections.IStore<TKey, TValue>.Set(TKey, TValue)
+  nameWithType.vb: IStore(Of TKey, TValue).Set(TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IStore(Of TKey, TValue).Set(TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2.Set(`0,`1)
+    name: Set
+    href: PocoEmit.Collections.IStore-2.html#PocoEmit_Collections_IStore_2_Set__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2.Set(`0,`1)
+    name: Set
+    href: PocoEmit.Collections.IStore-2.html#PocoEmit_Collections_IStore_2_Set__0__1_
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )

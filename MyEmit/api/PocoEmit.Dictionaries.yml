@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Dictionaries
+  commentId: N:PocoEmit.Dictionaries
+  id: PocoEmit.Dictionaries
+  children:
+  - PocoEmit.Dictionaries.DictionaryConverter
+  - PocoEmit.Dictionaries.DictionaryCopier
+  - PocoEmit.Dictionaries.DictionaryIndexVisitor
+  - PocoEmit.Dictionaries.DictionaryValuesVisitor
+  - PocoEmit.Dictionaries.EmitDictionaryBase
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Dictionaries
+  nameWithType: PocoEmit.Dictionaries
+  fullName: PocoEmit.Dictionaries
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Dictionaries.DictionaryConverter
+  commentId: T:PocoEmit.Dictionaries.DictionaryConverter
+  href: PocoEmit.Dictionaries.DictionaryConverter.html
+  name: DictionaryConverter
+  nameWithType: DictionaryConverter
+  fullName: PocoEmit.Dictionaries.DictionaryConverter
+- uid: PocoEmit.Dictionaries.DictionaryCopier
+  commentId: T:PocoEmit.Dictionaries.DictionaryCopier
+  parent: PocoEmit.Dictionaries
+  href: PocoEmit.Dictionaries.DictionaryCopier.html
+  name: DictionaryCopier
+  nameWithType: DictionaryCopier
+  fullName: PocoEmit.Dictionaries.DictionaryCopier
+- uid: PocoEmit.Dictionaries.DictionaryIndexVisitor
+  commentId: T:PocoEmit.Dictionaries.DictionaryIndexVisitor
+  href: PocoEmit.Dictionaries.DictionaryIndexVisitor.html
+  name: DictionaryIndexVisitor
+  nameWithType: DictionaryIndexVisitor
+  fullName: PocoEmit.Dictionaries.DictionaryIndexVisitor
+- uid: PocoEmit.Dictionaries.DictionaryValuesVisitor
+  commentId: T:PocoEmit.Dictionaries.DictionaryValuesVisitor
+  href: PocoEmit.Dictionaries.DictionaryValuesVisitor.html
+  name: DictionaryValuesVisitor
+  nameWithType: DictionaryValuesVisitor
+  fullName: PocoEmit.Dictionaries.DictionaryValuesVisitor
+- uid: PocoEmit.Dictionaries.EmitDictionaryBase
+  commentId: T:PocoEmit.Dictionaries.EmitDictionaryBase
+  parent: PocoEmit.Dictionaries
+  href: PocoEmit.Dictionaries.EmitDictionaryBase.html
+  name: EmitDictionaryBase
+  nameWithType: EmitDictionaryBase
+  fullName: PocoEmit.Dictionaries.EmitDictionaryBase
+- uid: PocoEmit.Dictionaries
+  commentId: N:PocoEmit.Dictionaries
+  href: PocoEmit.html
+  name: PocoEmit.Dictionaries
+  nameWithType: PocoEmit.Dictionaries
+  fullName: PocoEmit.Dictionaries
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Dictionaries
+    name: Dictionaries
+    href: PocoEmit.Dictionaries.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Dictionaries
+    name: Dictionaries
+    href: PocoEmit.Dictionaries.html

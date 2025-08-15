@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Helpers
+  commentId: N:PocoEmit.Helpers
+  id: PocoEmit.Helpers
+  children:
+  - PocoEmit.Helpers.MapHelper`2
+  - PocoEmit.Helpers.MapHelper`2.DestHelper
+  - PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+  - PocoEmit.Helpers.MapHelper`2.SourceHelper
+  - PocoEmit.Helpers.MapHelper`2.SourceMemberHelper
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Helpers
+  nameWithType: PocoEmit.Helpers
+  fullName: PocoEmit.Helpers
+  type: Namespace
+  assemblies:
+  - PocoEmit.Mapper
+references:
+- uid: PocoEmit.Helpers.MapHelper`2
+  commentId: T:PocoEmit.Helpers.MapHelper`2
+  parent: PocoEmit.Helpers
+  href: PocoEmit.Helpers.MapHelper-2.html
+  name: MapHelper<TSource, TDest>
+  nameWithType: MapHelper<TSource, TDest>
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>
+  nameWithType.vb: MapHelper(Of TSource, TDest)
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest)
+  name.vb: MapHelper(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Helpers.MapHelper`2.DestHelper
+  commentId: T:PocoEmit.Helpers.MapHelper`2.DestHelper
+  parent: PocoEmit.Helpers
+  href: PocoEmit.Helpers.MapHelper-2.html
+  name: MapHelper<TSource, TDest>.DestHelper
+  nameWithType: MapHelper<TSource, TDest>.DestHelper
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestHelper
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestHelper
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestHelper
+  name.vb: MapHelper(Of TSource, TDest).DestHelper
+  spec.csharp:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.DestHelper
+    name: DestHelper
+    href: PocoEmit.Helpers.MapHelper-2.DestHelper.html
+  spec.vb:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.DestHelper
+    name: DestHelper
+    href: PocoEmit.Helpers.MapHelper-2.DestHelper.html
+- uid: PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+  commentId: T:PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+  parent: PocoEmit.Helpers
+  href: PocoEmit.Helpers.MapHelper-2.html
+  name: MapHelper<TSource, TDest>.DestMemberHelper
+  nameWithType: MapHelper<TSource, TDest>.DestMemberHelper
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.DestMemberHelper
+  nameWithType.vb: MapHelper(Of TSource, TDest).DestMemberHelper
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).DestMemberHelper
+  name.vb: MapHelper(Of TSource, TDest).DestMemberHelper
+  spec.csharp:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+    name: DestMemberHelper
+    href: PocoEmit.Helpers.MapHelper-2.DestMemberHelper.html
+  spec.vb:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.DestMemberHelper
+    name: DestMemberHelper
+    href: PocoEmit.Helpers.MapHelper-2.DestMemberHelper.html
+- uid: PocoEmit.Helpers.MapHelper`2.SourceHelper
+  commentId: T:PocoEmit.Helpers.MapHelper`2.SourceHelper
+  parent: PocoEmit.Helpers
+  href: PocoEmit.Helpers.MapHelper-2.html
+  name: MapHelper<TSource, TDest>.SourceHelper
+  nameWithType: MapHelper<TSource, TDest>.SourceHelper
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.SourceHelper
+  nameWithType.vb: MapHelper(Of TSource, TDest).SourceHelper
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).SourceHelper
+  name.vb: MapHelper(Of TSource, TDest).SourceHelper
+  spec.csharp:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.SourceHelper
+    name: SourceHelper
+    href: PocoEmit.Helpers.MapHelper-2.SourceHelper.html
+  spec.vb:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.SourceHelper
+    name: SourceHelper
+    href: PocoEmit.Helpers.MapHelper-2.SourceHelper.html
+- uid: PocoEmit.Helpers.MapHelper`2.SourceMemberHelper
+  commentId: T:PocoEmit.Helpers.MapHelper`2.SourceMemberHelper
+  parent: PocoEmit.Helpers
+  href: PocoEmit.Helpers.MapHelper-2.html
+  name: MapHelper<TSource, TDest>.SourceMemberHelper
+  nameWithType: MapHelper<TSource, TDest>.SourceMemberHelper
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>.SourceMemberHelper
+  nameWithType.vb: MapHelper(Of TSource, TDest).SourceMemberHelper
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest).SourceMemberHelper
+  name.vb: MapHelper(Of TSource, TDest).SourceMemberHelper
+  spec.csharp:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.SourceMemberHelper
+    name: SourceMemberHelper
+    href: PocoEmit.Helpers.MapHelper-2.SourceMemberHelper.html
+  spec.vb:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: .
+  - uid: PocoEmit.Helpers.MapHelper`2.SourceMemberHelper
+    name: SourceMemberHelper
+    href: PocoEmit.Helpers.MapHelper-2.SourceMemberHelper.html
+- uid: PocoEmit.Helpers
+  commentId: N:PocoEmit.Helpers
+  href: PocoEmit.html
+  name: PocoEmit.Helpers
+  nameWithType: PocoEmit.Helpers
+  fullName: PocoEmit.Helpers
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Helpers
+    name: Helpers
+    href: PocoEmit.Helpers.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Helpers
+    name: Helpers
+    href: PocoEmit.Helpers.html

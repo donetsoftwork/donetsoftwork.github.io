@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Saves
+  commentId: N:PocoEmit.Collections.Saves
+  id: PocoEmit.Collections.Saves
+  children:
+  - PocoEmit.Collections.Saves.CompiledElementSaver`2
+  - PocoEmit.Collections.Saves.EmitElementSaver
+  - PocoEmit.Collections.Saves.ICompiledElementSaver`2
+  - PocoEmit.Collections.Saves.IEmitElementSaver
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Collections.Saves
+  nameWithType: PocoEmit.Collections.Saves
+  fullName: PocoEmit.Collections.Saves
+  type: Namespace
+  assemblies:
+  - PocoEmit.Collections
+references:
+- uid: PocoEmit.Collections.Saves.CompiledElementSaver`2
+  commentId: T:PocoEmit.Collections.Saves.CompiledElementSaver`2
+  href: PocoEmit.Collections.Saves.CompiledElementSaver-2.html
+  name: CompiledElementSaver<TCollection, Element>
+  nameWithType: CompiledElementSaver<TCollection, Element>
+  fullName: PocoEmit.Collections.Saves.CompiledElementSaver<TCollection, Element>
+  nameWithType.vb: CompiledElementSaver(Of TCollection, Element)
+  fullName.vb: PocoEmit.Collections.Saves.CompiledElementSaver(Of TCollection, Element)
+  name.vb: CompiledElementSaver(Of TCollection, Element)
+  spec.csharp:
+  - uid: PocoEmit.Collections.Saves.CompiledElementSaver`2
+    name: CompiledElementSaver
+    href: PocoEmit.Collections.Saves.CompiledElementSaver-2.html
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: Element
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.Saves.CompiledElementSaver`2
+    name: CompiledElementSaver
+    href: PocoEmit.Collections.Saves.CompiledElementSaver-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: Element
+  - name: )
+- uid: PocoEmit.Collections.Saves.EmitElementSaver
+  commentId: T:PocoEmit.Collections.Saves.EmitElementSaver
+  href: PocoEmit.Collections.Saves.EmitElementSaver.html
+  name: EmitElementSaver
+  nameWithType: EmitElementSaver
+  fullName: PocoEmit.Collections.Saves.EmitElementSaver
+- uid: PocoEmit.Collections.Saves.ICompiledElementSaver`2
+  commentId: T:PocoEmit.Collections.Saves.ICompiledElementSaver`2
+  href: PocoEmit.Collections.Saves.ICompiledElementSaver-2.html
+  name: ICompiledElementSaver<TCollection, Element>
+  nameWithType: ICompiledElementSaver<TCollection, Element>
+  fullName: PocoEmit.Collections.Saves.ICompiledElementSaver<TCollection, Element>
+  nameWithType.vb: ICompiledElementSaver(Of TCollection, Element)
+  fullName.vb: PocoEmit.Collections.Saves.ICompiledElementSaver(Of TCollection, Element)
+  name.vb: ICompiledElementSaver(Of TCollection, Element)
+  spec.csharp:
+  - uid: PocoEmit.Collections.Saves.ICompiledElementSaver`2
+    name: ICompiledElementSaver
+    href: PocoEmit.Collections.Saves.ICompiledElementSaver-2.html
+  - name: <
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: Element
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.Saves.ICompiledElementSaver`2
+    name: ICompiledElementSaver
+    href: PocoEmit.Collections.Saves.ICompiledElementSaver-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - name: Element
+  - name: )
+- uid: PocoEmit.Collections.Saves.IEmitElementSaver
+  commentId: T:PocoEmit.Collections.Saves.IEmitElementSaver
+  parent: PocoEmit.Collections.Saves
+  href: PocoEmit.Collections.Saves.IEmitElementSaver.html
+  name: IEmitElementSaver
+  nameWithType: IEmitElementSaver
+  fullName: PocoEmit.Collections.Saves.IEmitElementSaver
+- uid: PocoEmit.Collections.Saves
+  commentId: N:PocoEmit.Collections.Saves
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Saves
+  nameWithType: PocoEmit.Collections.Saves
+  fullName: PocoEmit.Collections.Saves
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Saves
+    name: Saves
+    href: PocoEmit.Collections.Saves.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Saves
+    name: Saves
+    href: PocoEmit.Collections.Saves.html

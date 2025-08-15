@@ -1,0 +1,727 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Maping.IgnoreRecognizer
+  commentId: T:PocoEmit.Maping.IgnoreRecognizer
+  id: IgnoreRecognizer
+  parent: PocoEmit.Maping
+  children:
+  - PocoEmit.Maping.IgnoreRecognizer.#ctor(PocoEmit.Maping.IRecognizer)
+  - PocoEmit.Maping.IgnoreRecognizer.ClearPrefix
+  - PocoEmit.Maping.IgnoreRecognizer.Ignore(System.String)
+  - PocoEmit.Maping.IgnoreRecognizer.IgnoreNames
+  - PocoEmit.Maping.IgnoreRecognizer.Recognize(PocoEmit.Members.IMember)
+  - PocoEmit.Maping.IgnoreRecognizer.Recognize(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  langs:
+  - csharp
+  - vb
+  name: IgnoreRecognizer
+  nameWithType: IgnoreRecognizer
+  fullName: PocoEmit.Maping.IgnoreRecognizer
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IgnoreRecognizer
+    path: ../PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+    startLine: 9
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 可忽略识别器
+  example: []
+  syntax:
+    content: 'public class IgnoreRecognizer : InheritRecognizer, IRecognizer'
+    content.vb: Public Class IgnoreRecognizer Inherits InheritRecognizer Implements IRecognizer
+  inheritance:
+  - System.Object
+  - PocoEmit.Maping.Recognizer
+  - PocoEmit.Maping.InheritRecognizer
+  implements:
+  - PocoEmit.Maping.IRecognizer
+  inheritedMembers:
+  - PocoEmit.Maping.InheritRecognizer.Inner
+  - PocoEmit.Maping.InheritRecognizer.Prefixes
+  - PocoEmit.Maping.InheritRecognizer.Suffixes
+  - PocoEmit.Maping.Recognizer._prefixes
+  - PocoEmit.Maping.Recognizer._suffixes
+  - PocoEmit.Maping.Recognizer.Matcher
+  - PocoEmit.Maping.Recognizer.AddPrefix(System.String)
+  - PocoEmit.Maping.Recognizer.AddSuffix(System.String)
+- uid: PocoEmit.Maping.IgnoreRecognizer.#ctor(PocoEmit.Maping.IRecognizer)
+  commentId: M:PocoEmit.Maping.IgnoreRecognizer.#ctor(PocoEmit.Maping.IRecognizer)
+  id: '#ctor(PocoEmit.Maping.IRecognizer)'
+  parent: PocoEmit.Maping.IgnoreRecognizer
+  langs:
+  - csharp
+  - vb
+  name: IgnoreRecognizer(IRecognizer)
+  nameWithType: IgnoreRecognizer.IgnoreRecognizer(IRecognizer)
+  fullName: PocoEmit.Maping.IgnoreRecognizer.IgnoreRecognizer(PocoEmit.Maping.IRecognizer)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+    startLine: 9
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 可忽略识别器
+  example: []
+  syntax:
+    content: public IgnoreRecognizer(IRecognizer inner)
+    parameters:
+    - id: inner
+      type: PocoEmit.Maping.IRecognizer
+      description: ''
+    content.vb: Public Sub New(inner As IRecognizer)
+  overload: PocoEmit.Maping.IgnoreRecognizer.#ctor*
+  nameWithType.vb: IgnoreRecognizer.New(IRecognizer)
+  fullName.vb: PocoEmit.Maping.IgnoreRecognizer.New(PocoEmit.Maping.IRecognizer)
+  name.vb: New(IRecognizer)
+- uid: PocoEmit.Maping.IgnoreRecognizer.IgnoreNames
+  commentId: P:PocoEmit.Maping.IgnoreRecognizer.IgnoreNames
+  id: IgnoreNames
+  parent: PocoEmit.Maping.IgnoreRecognizer
+  langs:
+  - csharp
+  - vb
+  name: IgnoreNames
+  nameWithType: IgnoreRecognizer.IgnoreNames
+  fullName: PocoEmit.Maping.IgnoreRecognizer.IgnoreNames
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IgnoreNames
+    path: ../PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+    startLine: 17
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 忽略名
+  example: []
+  syntax:
+    content: public IEnumerable<string> IgnoreNames { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public ReadOnly Property IgnoreNames As IEnumerable(Of String)
+  overload: PocoEmit.Maping.IgnoreRecognizer.IgnoreNames*
+- uid: PocoEmit.Maping.IgnoreRecognizer.Ignore(System.String)
+  commentId: M:PocoEmit.Maping.IgnoreRecognizer.Ignore(System.String)
+  id: Ignore(System.String)
+  parent: PocoEmit.Maping.IgnoreRecognizer
+  langs:
+  - csharp
+  - vb
+  name: Ignore(string)
+  nameWithType: IgnoreRecognizer.Ignore(string)
+  fullName: PocoEmit.Maping.IgnoreRecognizer.Ignore(string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Ignore
+    path: ../PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+    startLine: 24
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 忽略
+  example: []
+  syntax:
+    content: public void Ignore(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    content.vb: Public Sub Ignore(name As String)
+  overload: PocoEmit.Maping.IgnoreRecognizer.Ignore*
+  nameWithType.vb: IgnoreRecognizer.Ignore(String)
+  fullName.vb: PocoEmit.Maping.IgnoreRecognizer.Ignore(String)
+  name.vb: Ignore(String)
+- uid: PocoEmit.Maping.IgnoreRecognizer.ClearPrefix
+  commentId: M:PocoEmit.Maping.IgnoreRecognizer.ClearPrefix
+  id: ClearPrefix
+  parent: PocoEmit.Maping.IgnoreRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ClearPrefix()
+  nameWithType: IgnoreRecognizer.ClearPrefix()
+  fullName: PocoEmit.Maping.IgnoreRecognizer.ClearPrefix()
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ClearPrefix
+    path: ../PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+    startLine: 33
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 清空前缀
+  example: []
+  syntax:
+    content: public void ClearPrefix()
+    content.vb: Public Sub ClearPrefix()
+  overload: PocoEmit.Maping.IgnoreRecognizer.ClearPrefix*
+- uid: PocoEmit.Maping.IgnoreRecognizer.Recognize(PocoEmit.Members.IMember)
+  commentId: M:PocoEmit.Maping.IgnoreRecognizer.Recognize(PocoEmit.Members.IMember)
+  id: Recognize(PocoEmit.Members.IMember)
+  parent: PocoEmit.Maping.IgnoreRecognizer
+  langs:
+  - csharp
+  - vb
+  name: Recognize(IMember)
+  nameWithType: IgnoreRecognizer.Recognize(IMember)
+  fullName: PocoEmit.Maping.IgnoreRecognizer.Recognize(PocoEmit.Members.IMember)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Recognize
+    path: ../PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+    startLine: 39
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 识别成员
+  example: []
+  syntax:
+    content: public override IEnumerable<IMember> Recognize(IMember member)
+    parameters:
+    - id: member
+      type: PocoEmit.Members.IMember
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{PocoEmit.Members.IMember}
+      description: ''
+    content.vb: Public Overrides Function Recognize(member As IMember) As IEnumerable(Of IMember)
+  overridden: PocoEmit.Maping.Recognizer.Recognize(PocoEmit.Members.IMember)
+  overload: PocoEmit.Maping.IgnoreRecognizer.Recognize*
+- uid: PocoEmit.Maping.IgnoreRecognizer.Recognize(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  commentId: M:PocoEmit.Maping.IgnoreRecognizer.Recognize(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  id: Recognize(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  parent: PocoEmit.Maping.IgnoreRecognizer
+  langs:
+  - csharp
+  - vb
+  name: Recognize(IEnumerable<IEmitMemberReader>)
+  nameWithType: IgnoreRecognizer.Recognize(IEnumerable<IEmitMemberReader>)
+  fullName: PocoEmit.Maping.IgnoreRecognizer.Recognize(System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberReader>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Recognize
+    path: ../PocoEmit.Mapper/Maping/IgnoreRecognizer.cs
+    startLine: 49
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 识别读取器
+  example: []
+  syntax:
+    content: public override IEnumerable<IEmitMemberReader> Recognize(IEnumerable<IEmitMemberReader> readers)
+    parameters:
+    - id: readers
+      type: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+      description: ''
+    content.vb: Public Overrides Function Recognize(readers As IEnumerable(Of IEmitMemberReader)) As IEnumerable(Of IEmitMemberReader)
+  overridden: PocoEmit.Maping.Recognizer.Recognize(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  overload: PocoEmit.Maping.IgnoreRecognizer.Recognize*
+  nameWithType.vb: IgnoreRecognizer.Recognize(IEnumerable(Of IEmitMemberReader))
+  fullName.vb: PocoEmit.Maping.IgnoreRecognizer.Recognize(System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberReader))
+  name.vb: Recognize(IEnumerable(Of IEmitMemberReader))
+references:
+- uid: PocoEmit.Maping
+  commentId: N:PocoEmit.Maping
+  href: PocoEmit.html
+  name: PocoEmit.Maping
+  nameWithType: PocoEmit.Maping
+  fullName: PocoEmit.Maping
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Maping
+    name: Maping
+    href: PocoEmit.Maping.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Maping
+    name: Maping
+    href: PocoEmit.Maping.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Maping.Recognizer
+  commentId: T:PocoEmit.Maping.Recognizer
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.Recognizer.html
+  name: Recognizer
+  nameWithType: Recognizer
+  fullName: PocoEmit.Maping.Recognizer
+- uid: PocoEmit.Maping.InheritRecognizer
+  commentId: T:PocoEmit.Maping.InheritRecognizer
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.InheritRecognizer.html
+  name: InheritRecognizer
+  nameWithType: InheritRecognizer
+  fullName: PocoEmit.Maping.InheritRecognizer
+- uid: PocoEmit.Maping.IRecognizer
+  commentId: T:PocoEmit.Maping.IRecognizer
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.IRecognizer.html
+  name: IRecognizer
+  nameWithType: IRecognizer
+  fullName: PocoEmit.Maping.IRecognizer
+- uid: PocoEmit.Maping.InheritRecognizer.Inner
+  commentId: P:PocoEmit.Maping.InheritRecognizer.Inner
+  parent: PocoEmit.Maping.InheritRecognizer
+  href: PocoEmit.Maping.InheritRecognizer.html#PocoEmit_Maping_InheritRecognizer_Inner
+  name: Inner
+  nameWithType: InheritRecognizer.Inner
+  fullName: PocoEmit.Maping.InheritRecognizer.Inner
+- uid: PocoEmit.Maping.InheritRecognizer.Prefixes
+  commentId: P:PocoEmit.Maping.InheritRecognizer.Prefixes
+  parent: PocoEmit.Maping.InheritRecognizer
+  href: PocoEmit.Maping.InheritRecognizer.html#PocoEmit_Maping_InheritRecognizer_Prefixes
+  name: Prefixes
+  nameWithType: InheritRecognizer.Prefixes
+  fullName: PocoEmit.Maping.InheritRecognizer.Prefixes
+- uid: PocoEmit.Maping.InheritRecognizer.Suffixes
+  commentId: P:PocoEmit.Maping.InheritRecognizer.Suffixes
+  parent: PocoEmit.Maping.InheritRecognizer
+  href: PocoEmit.Maping.InheritRecognizer.html#PocoEmit_Maping_InheritRecognizer_Suffixes
+  name: Suffixes
+  nameWithType: InheritRecognizer.Suffixes
+  fullName: PocoEmit.Maping.InheritRecognizer.Suffixes
+- uid: PocoEmit.Maping.Recognizer._prefixes
+  commentId: F:PocoEmit.Maping.Recognizer._prefixes
+  parent: PocoEmit.Maping.Recognizer
+  href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer__prefixes
+  name: _prefixes
+  nameWithType: Recognizer._prefixes
+  fullName: PocoEmit.Maping.Recognizer._prefixes
+- uid: PocoEmit.Maping.Recognizer._suffixes
+  commentId: F:PocoEmit.Maping.Recognizer._suffixes
+  parent: PocoEmit.Maping.Recognizer
+  href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer__suffixes
+  name: _suffixes
+  nameWithType: Recognizer._suffixes
+  fullName: PocoEmit.Maping.Recognizer._suffixes
+- uid: PocoEmit.Maping.Recognizer.Matcher
+  commentId: P:PocoEmit.Maping.Recognizer.Matcher
+  parent: PocoEmit.Maping.Recognizer
+  href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_Matcher
+  name: Matcher
+  nameWithType: Recognizer.Matcher
+  fullName: PocoEmit.Maping.Recognizer.Matcher
+- uid: PocoEmit.Maping.Recognizer.AddPrefix(System.String)
+  commentId: M:PocoEmit.Maping.Recognizer.AddPrefix(System.String)
+  parent: PocoEmit.Maping.Recognizer
+  isExternal: true
+  href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_AddPrefix_System_String_
+  name: AddPrefix(string)
+  nameWithType: Recognizer.AddPrefix(string)
+  fullName: PocoEmit.Maping.Recognizer.AddPrefix(string)
+  nameWithType.vb: Recognizer.AddPrefix(String)
+  fullName.vb: PocoEmit.Maping.Recognizer.AddPrefix(String)
+  name.vb: AddPrefix(String)
+  spec.csharp:
+  - uid: PocoEmit.Maping.Recognizer.AddPrefix(System.String)
+    name: AddPrefix
+    href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_AddPrefix_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Maping.Recognizer.AddPrefix(System.String)
+    name: AddPrefix
+    href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_AddPrefix_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: PocoEmit.Maping.Recognizer.AddSuffix(System.String)
+  commentId: M:PocoEmit.Maping.Recognizer.AddSuffix(System.String)
+  parent: PocoEmit.Maping.Recognizer
+  isExternal: true
+  href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_AddSuffix_System_String_
+  name: AddSuffix(string)
+  nameWithType: Recognizer.AddSuffix(string)
+  fullName: PocoEmit.Maping.Recognizer.AddSuffix(string)
+  nameWithType.vb: Recognizer.AddSuffix(String)
+  fullName.vb: PocoEmit.Maping.Recognizer.AddSuffix(String)
+  name.vb: AddSuffix(String)
+  spec.csharp:
+  - uid: PocoEmit.Maping.Recognizer.AddSuffix(System.String)
+    name: AddSuffix
+    href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_AddSuffix_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Maping.Recognizer.AddSuffix(System.String)
+    name: AddSuffix
+    href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_AddSuffix_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Maping.IgnoreRecognizer.#ctor*
+  commentId: Overload:PocoEmit.Maping.IgnoreRecognizer.#ctor
+  href: PocoEmit.Maping.IgnoreRecognizer.html#PocoEmit_Maping_IgnoreRecognizer__ctor_PocoEmit_Maping_IRecognizer_
+  name: IgnoreRecognizer
+  nameWithType: IgnoreRecognizer.IgnoreRecognizer
+  fullName: PocoEmit.Maping.IgnoreRecognizer.IgnoreRecognizer
+  nameWithType.vb: IgnoreRecognizer.New
+  fullName.vb: PocoEmit.Maping.IgnoreRecognizer.New
+  name.vb: New
+- uid: PocoEmit.Maping.IgnoreRecognizer.IgnoreNames*
+  commentId: Overload:PocoEmit.Maping.IgnoreRecognizer.IgnoreNames
+  href: PocoEmit.Maping.IgnoreRecognizer.html#PocoEmit_Maping_IgnoreRecognizer_IgnoreNames
+  name: IgnoreNames
+  nameWithType: IgnoreRecognizer.IgnoreNames
+  fullName: PocoEmit.Maping.IgnoreRecognizer.IgnoreNames
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PocoEmit.Maping.IgnoreRecognizer.Ignore*
+  commentId: Overload:PocoEmit.Maping.IgnoreRecognizer.Ignore
+  href: PocoEmit.Maping.IgnoreRecognizer.html#PocoEmit_Maping_IgnoreRecognizer_Ignore_System_String_
+  name: Ignore
+  nameWithType: IgnoreRecognizer.Ignore
+  fullName: PocoEmit.Maping.IgnoreRecognizer.Ignore
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PocoEmit.Maping.IgnoreRecognizer.ClearPrefix*
+  commentId: Overload:PocoEmit.Maping.IgnoreRecognizer.ClearPrefix
+  href: PocoEmit.Maping.IgnoreRecognizer.html#PocoEmit_Maping_IgnoreRecognizer_ClearPrefix
+  name: ClearPrefix
+  nameWithType: IgnoreRecognizer.ClearPrefix
+  fullName: PocoEmit.Maping.IgnoreRecognizer.ClearPrefix
+- uid: PocoEmit.Maping.Recognizer.Recognize(PocoEmit.Members.IMember)
+  commentId: M:PocoEmit.Maping.Recognizer.Recognize(PocoEmit.Members.IMember)
+  parent: PocoEmit.Maping.Recognizer
+  href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_Recognize_PocoEmit_Members_IMember_
+  name: Recognize(IMember)
+  nameWithType: Recognizer.Recognize(IMember)
+  fullName: PocoEmit.Maping.Recognizer.Recognize(PocoEmit.Members.IMember)
+  spec.csharp:
+  - uid: PocoEmit.Maping.Recognizer.Recognize(PocoEmit.Members.IMember)
+    name: Recognize
+    href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_Recognize_PocoEmit_Members_IMember_
+  - name: (
+  - uid: PocoEmit.Members.IMember
+    name: IMember
+    href: PocoEmit.Members.IMember.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Maping.Recognizer.Recognize(PocoEmit.Members.IMember)
+    name: Recognize
+    href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_Recognize_PocoEmit_Members_IMember_
+  - name: (
+  - uid: PocoEmit.Members.IMember
+    name: IMember
+    href: PocoEmit.Members.IMember.html
+  - name: )
+- uid: PocoEmit.Maping.IgnoreRecognizer.Recognize*
+  commentId: Overload:PocoEmit.Maping.IgnoreRecognizer.Recognize
+  href: PocoEmit.Maping.IgnoreRecognizer.html#PocoEmit_Maping_IgnoreRecognizer_Recognize_PocoEmit_Members_IMember_
+  name: Recognize
+  nameWithType: IgnoreRecognizer.Recognize
+  fullName: PocoEmit.Maping.IgnoreRecognizer.Recognize
+- uid: PocoEmit.Members.IMember
+  commentId: T:PocoEmit.Members.IMember
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IMember.html
+  name: IMember
+  nameWithType: IMember
+  fullName: PocoEmit.Members.IMember
+- uid: System.Collections.Generic.IEnumerable{PocoEmit.Members.IMember}
+  commentId: T:System.Collections.Generic.IEnumerable{PocoEmit.Members.IMember}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IMember>
+  nameWithType: IEnumerable<IMember>
+  fullName: System.Collections.Generic.IEnumerable<PocoEmit.Members.IMember>
+  nameWithType.vb: IEnumerable(Of IMember)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IMember)
+  name.vb: IEnumerable(Of IMember)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: PocoEmit.Members.IMember
+    name: IMember
+    href: PocoEmit.Members.IMember.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Members.IMember
+    name: IMember
+    href: PocoEmit.Members.IMember.html
+  - name: )
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+- uid: PocoEmit.Maping.Recognizer.Recognize(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  commentId: M:PocoEmit.Maping.Recognizer.Recognize(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+  parent: PocoEmit.Maping.Recognizer
+  isExternal: true
+  href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_Recognize_System_Collections_Generic_IEnumerable_PocoEmit_Members_IEmitMemberReader__
+  name: Recognize(IEnumerable<IEmitMemberReader>)
+  nameWithType: Recognizer.Recognize(IEnumerable<IEmitMemberReader>)
+  fullName: PocoEmit.Maping.Recognizer.Recognize(System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberReader>)
+  nameWithType.vb: Recognizer.Recognize(IEnumerable(Of IEmitMemberReader))
+  fullName.vb: PocoEmit.Maping.Recognizer.Recognize(System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberReader))
+  name.vb: Recognize(IEnumerable(Of IEmitMemberReader))
+  spec.csharp:
+  - uid: PocoEmit.Maping.Recognizer.Recognize(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+    name: Recognize
+    href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_Recognize_System_Collections_Generic_IEnumerable_PocoEmit_Members_IEmitMemberReader__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Maping.Recognizer.Recognize(System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader})
+    name: Recognize
+    href: PocoEmit.Maping.Recognizer.html#PocoEmit_Maping_Recognizer_Recognize_System_Collections_Generic_IEnumerable_PocoEmit_Members_IEmitMemberReader__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+  commentId: T:System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEmitMemberReader>
+  nameWithType: IEnumerable<IEmitMemberReader>
+  fullName: System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberReader>
+  nameWithType.vb: IEnumerable(Of IEmitMemberReader)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberReader)
+  name.vb: IEnumerable(Of IEmitMemberReader)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )

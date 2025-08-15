@@ -1,0 +1,733 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor
+  commentId: T:PocoEmit.Collections.Visitors.EnumerableVisitor
+  id: EnumerableVisitor
+  parent: PocoEmit.Collections.Visitors
+  children:
+  - PocoEmit.Collections.Visitors.EnumerableVisitor.#ctor(System.Type)
+  - PocoEmit.Collections.Visitors.EnumerableVisitor.GetCurrent(System.Type)
+  - PocoEmit.Collections.Visitors.EnumerableVisitor.GetEnumeratorMethod
+  - PocoEmit.Collections.Visitors.EnumerableVisitor.GetGetEnumerator(System.Type)
+  - PocoEmit.Collections.Visitors.EnumerableVisitor.GetMoveNext(System.Type)
+  - PocoEmit.Collections.Visitors.EnumerableVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  langs:
+  - csharp
+  - vb
+  name: EnumerableVisitor
+  nameWithType: EnumerableVisitor
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: EnumerableVisitor
+    path: ../PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 迭代器访问者
+  example: []
+  syntax:
+    content: 'public class EnumerableVisitor : EmitCollectionBase, ICompileInfo, IEmitElementVisitor, IEmitCollection'
+    content.vb: Public Class EnumerableVisitor Inherits EmitCollectionBase Implements ICompileInfo, IEmitElementVisitor, IEmitCollection
+  inheritance:
+  - System.Object
+  - PocoEmit.Collections.EmitCollectionBase
+  implements:
+  - PocoEmit.Configuration.ICompileInfo
+  - PocoEmit.Collections.Visitors.IEmitElementVisitor
+  - PocoEmit.Collections.IEmitCollection
+  inheritedMembers:
+  - PocoEmit.Collections.EmitCollectionBase._collectionType
+  - PocoEmit.Collections.EmitCollectionBase._elementType
+  - PocoEmit.Collections.EmitCollectionBase.ElementType
+  - PocoEmit.Collections.EmitCollectionBase.CollectionType
+  - PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.#ctor(System.Type)
+  commentId: M:PocoEmit.Collections.Visitors.EnumerableVisitor.#ctor(System.Type)
+  id: '#ctor(System.Type)'
+  parent: PocoEmit.Collections.Visitors.EnumerableVisitor
+  langs:
+  - csharp
+  - vb
+  name: EnumerableVisitor(Type)
+  nameWithType: EnumerableVisitor.EnumerableVisitor(Type)
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.EnumerableVisitor(System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+    startLine: 20
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 迭代器访问者
+  example: []
+  syntax:
+    content: public EnumerableVisitor(Type elementType)
+    parameters:
+    - id: elementType
+      type: System.Type
+      description: ''
+    content.vb: Public Sub New(elementType As Type)
+  overload: PocoEmit.Collections.Visitors.EnumerableVisitor.#ctor*
+  nameWithType.vb: EnumerableVisitor.New(Type)
+  fullName.vb: PocoEmit.Collections.Visitors.EnumerableVisitor.New(System.Type)
+  name.vb: New(Type)
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.GetEnumeratorMethod
+  commentId: P:PocoEmit.Collections.Visitors.EnumerableVisitor.GetEnumeratorMethod
+  id: GetEnumeratorMethod
+  parent: PocoEmit.Collections.Visitors.EnumerableVisitor
+  langs:
+  - csharp
+  - vb
+  name: GetEnumeratorMethod
+  nameWithType: EnumerableVisitor.GetEnumeratorMethod
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.GetEnumeratorMethod
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEnumeratorMethod
+    path: ../PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+    startLine: 36
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: GetEnumerator方法
+  example: []
+  syntax:
+    content: public MethodInfo GetEnumeratorMethod { get; }
+    parameters: []
+    return:
+      type: System.Reflection.MethodInfo
+    content.vb: Public ReadOnly Property GetEnumeratorMethod As MethodInfo
+  overload: PocoEmit.Collections.Visitors.EnumerableVisitor.GetEnumeratorMethod*
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  commentId: M:PocoEmit.Collections.Visitors.EnumerableVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  id: Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  parent: PocoEmit.Collections.Visitors.EnumerableVisitor
+  langs:
+  - csharp
+  - vb
+  name: Travel(Expression, Func<Expression, Expression>)
+  nameWithType: EnumerableVisitor.Travel(Expression, Func<Expression, Expression>)
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.Travel(System.Linq.Expressions.Expression, System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Travel
+    path: ../PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+    startLine: 40
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 集合遍历
+  example: []
+  syntax:
+    content: public Expression Travel(Expression collection, Func<Expression, Expression> callback)
+    parameters:
+    - id: collection
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: callback
+      type: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Public Function Travel(collection As Expression, callback As Func(Of Expression, Expression)) As Expression
+  overload: PocoEmit.Collections.Visitors.EnumerableVisitor.Travel*
+  implements:
+  - PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  nameWithType.vb: EnumerableVisitor.Travel(Expression, Func(Of Expression, Expression))
+  fullName.vb: PocoEmit.Collections.Visitors.EnumerableVisitor.Travel(System.Linq.Expressions.Expression, System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression))
+  name.vb: Travel(Expression, Func(Of Expression, Expression))
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.GetMoveNext(System.Type)
+  commentId: M:PocoEmit.Collections.Visitors.EnumerableVisitor.GetMoveNext(System.Type)
+  id: GetMoveNext(System.Type)
+  parent: PocoEmit.Collections.Visitors.EnumerableVisitor
+  langs:
+  - csharp
+  - vb
+  name: GetMoveNext(Type)
+  nameWithType: EnumerableVisitor.GetMoveNext(Type)
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.GetMoveNext(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMoveNext
+    path: ../PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+    startLine: 61
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 获取MoveNext方法
+  example: []
+  syntax:
+    content: public static MethodInfo GetMoveNext(Type enumeratorType)
+    parameters:
+    - id: enumeratorType
+      type: System.Type
+    return:
+      type: System.Reflection.MethodInfo
+    content.vb: Public Shared Function GetMoveNext(enumeratorType As Type) As MethodInfo
+  overload: PocoEmit.Collections.Visitors.EnumerableVisitor.GetMoveNext*
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.GetGetEnumerator(System.Type)
+  commentId: M:PocoEmit.Collections.Visitors.EnumerableVisitor.GetGetEnumerator(System.Type)
+  id: GetGetEnumerator(System.Type)
+  parent: PocoEmit.Collections.Visitors.EnumerableVisitor
+  langs:
+  - csharp
+  - vb
+  name: GetGetEnumerator(Type)
+  nameWithType: EnumerableVisitor.GetGetEnumerator(Type)
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.GetGetEnumerator(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetGetEnumerator
+    path: ../PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+    startLine: 70
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 获取GetEnumerator方法
+  example: []
+  syntax:
+    content: public static MethodInfo GetGetEnumerator(Type collectionType)
+    parameters:
+    - id: collectionType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Reflection.MethodInfo
+      description: ''
+    content.vb: Public Shared Function GetGetEnumerator(collectionType As Type) As MethodInfo
+  overload: PocoEmit.Collections.Visitors.EnumerableVisitor.GetGetEnumerator*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.GetCurrent(System.Type)
+  commentId: M:PocoEmit.Collections.Visitors.EnumerableVisitor.GetCurrent(System.Type)
+  id: GetCurrent(System.Type)
+  parent: PocoEmit.Collections.Visitors.EnumerableVisitor
+  langs:
+  - csharp
+  - vb
+  name: GetCurrent(Type)
+  nameWithType: EnumerableVisitor.GetCurrent(Type)
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.GetCurrent(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetCurrent
+    path: ../PocoEmit.Collections/Collections/Visitors/EnumerableVisitor.cs
+    startLine: 86
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 获取Current
+  example: []
+  syntax:
+    content: public static PropertyInfo GetCurrent(Type enumeratorType)
+    parameters:
+    - id: enumeratorType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Reflection.PropertyInfo
+      description: ''
+    content.vb: Public Shared Function GetCurrent(enumeratorType As Type) As PropertyInfo
+  overload: PocoEmit.Collections.Visitors.EnumerableVisitor.GetCurrent*
+references:
+- uid: PocoEmit.Collections.Visitors
+  commentId: N:PocoEmit.Collections.Visitors
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Visitors
+  nameWithType: PocoEmit.Collections.Visitors
+  fullName: PocoEmit.Collections.Visitors
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Visitors
+    name: Visitors
+    href: PocoEmit.Collections.Visitors.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Visitors
+    name: Visitors
+    href: PocoEmit.Collections.Visitors.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.EmitCollectionBase
+  commentId: T:PocoEmit.Collections.EmitCollectionBase
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.EmitCollectionBase.html
+  name: EmitCollectionBase
+  nameWithType: EmitCollectionBase
+  fullName: PocoEmit.Collections.EmitCollectionBase
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Collections.Visitors.IEmitElementVisitor
+  commentId: T:PocoEmit.Collections.Visitors.IEmitElementVisitor
+  parent: PocoEmit.Collections.Visitors
+  href: PocoEmit.Collections.Visitors.IEmitElementVisitor.html
+  name: IEmitElementVisitor
+  nameWithType: IEmitElementVisitor
+  fullName: PocoEmit.Collections.Visitors.IEmitElementVisitor
+- uid: PocoEmit.Collections.IEmitCollection
+  commentId: T:PocoEmit.Collections.IEmitCollection
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.IEmitCollection.html
+  name: IEmitCollection
+  nameWithType: IEmitCollection
+  fullName: PocoEmit.Collections.IEmitCollection
+- uid: PocoEmit.Collections.EmitCollectionBase._collectionType
+  commentId: F:PocoEmit.Collections.EmitCollectionBase._collectionType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase__collectionType
+  name: _collectionType
+  nameWithType: EmitCollectionBase._collectionType
+  fullName: PocoEmit.Collections.EmitCollectionBase._collectionType
+- uid: PocoEmit.Collections.EmitCollectionBase._elementType
+  commentId: F:PocoEmit.Collections.EmitCollectionBase._elementType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase__elementType
+  name: _elementType
+  nameWithType: EmitCollectionBase._elementType
+  fullName: PocoEmit.Collections.EmitCollectionBase._elementType
+- uid: PocoEmit.Collections.EmitCollectionBase.ElementType
+  commentId: P:PocoEmit.Collections.EmitCollectionBase.ElementType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_ElementType
+  name: ElementType
+  nameWithType: EmitCollectionBase.ElementType
+  fullName: PocoEmit.Collections.EmitCollectionBase.ElementType
+- uid: PocoEmit.Collections.EmitCollectionBase.CollectionType
+  commentId: P:PocoEmit.Collections.EmitCollectionBase.CollectionType
+  parent: PocoEmit.Collections.EmitCollectionBase
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CollectionType
+  name: CollectionType
+  nameWithType: EmitCollectionBase.CollectionType
+  fullName: PocoEmit.Collections.EmitCollectionBase.CollectionType
+- uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.EmitCollectionBase
+  isExternal: true
+  href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  name: CheckInstance(Expression)
+  nameWithType: EmitCollectionBase.CheckInstance(Expression)
+  fullName: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+    name: CheckInstance
+    href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.EmitCollectionBase.CheckInstance(System.Linq.Expressions.Expression)
+    name: CheckInstance
+    href: PocoEmit.Collections.EmitCollectionBase.html#PocoEmit_Collections_EmitCollectionBase_CheckInstance_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.#ctor*
+  commentId: Overload:PocoEmit.Collections.Visitors.EnumerableVisitor.#ctor
+  href: PocoEmit.Collections.Visitors.EnumerableVisitor.html#PocoEmit_Collections_Visitors_EnumerableVisitor__ctor_System_Type_
+  name: EnumerableVisitor
+  nameWithType: EnumerableVisitor.EnumerableVisitor
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.EnumerableVisitor
+  nameWithType.vb: EnumerableVisitor.New
+  fullName.vb: PocoEmit.Collections.Visitors.EnumerableVisitor.New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.GetEnumeratorMethod*
+  commentId: Overload:PocoEmit.Collections.Visitors.EnumerableVisitor.GetEnumeratorMethod
+  href: PocoEmit.Collections.Visitors.EnumerableVisitor.html#PocoEmit_Collections_Visitors_EnumerableVisitor_GetEnumeratorMethod
+  name: GetEnumeratorMethod
+  nameWithType: EnumerableVisitor.GetEnumeratorMethod
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.GetEnumeratorMethod
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.Travel*
+  commentId: Overload:PocoEmit.Collections.Visitors.EnumerableVisitor.Travel
+  href: PocoEmit.Collections.Visitors.EnumerableVisitor.html#PocoEmit_Collections_Visitors_EnumerableVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression__
+  name: Travel
+  nameWithType: EnumerableVisitor.Travel
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.Travel
+- uid: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  commentId: M:PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  parent: PocoEmit.Collections.Visitors.IEmitElementVisitor
+  isExternal: true
+  href: PocoEmit.Collections.Visitors.IEmitElementVisitor.html#PocoEmit_Collections_Visitors_IEmitElementVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression__
+  name: Travel(Expression, Func<Expression, Expression>)
+  nameWithType: IEmitElementVisitor.Travel(Expression, Func<Expression, Expression>)
+  fullName: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression, System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>)
+  nameWithType.vb: IEmitElementVisitor.Travel(Expression, Func(Of Expression, Expression))
+  fullName.vb: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression, System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression))
+  name.vb: Travel(Expression, Func(Of Expression, Expression))
+  spec.csharp:
+  - uid: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+    name: Travel
+    href: PocoEmit.Collections.Visitors.IEmitElementVisitor.html#PocoEmit_Collections_Visitors_IEmitElementVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression__
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+    name: Travel
+    href: PocoEmit.Collections.Visitors.IEmitElementVisitor.html#PocoEmit_Collections_Visitors_IEmitElementVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression__
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+  commentId: T:System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<Expression, Expression>
+  nameWithType: Func<Expression, Expression>
+  fullName: System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>
+  nameWithType.vb: Func(Of Expression, Expression)
+  fullName.vb: System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  name.vb: Func(Of Expression, Expression)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.GetMoveNext*
+  commentId: Overload:PocoEmit.Collections.Visitors.EnumerableVisitor.GetMoveNext
+  href: PocoEmit.Collections.Visitors.EnumerableVisitor.html#PocoEmit_Collections_Visitors_EnumerableVisitor_GetMoveNext_System_Type_
+  name: GetMoveNext
+  nameWithType: EnumerableVisitor.GetMoveNext
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.GetMoveNext
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.GetGetEnumerator*
+  commentId: Overload:PocoEmit.Collections.Visitors.EnumerableVisitor.GetGetEnumerator
+  href: PocoEmit.Collections.Visitors.EnumerableVisitor.html#PocoEmit_Collections_Visitors_EnumerableVisitor_GetGetEnumerator_System_Type_
+  name: GetGetEnumerator
+  nameWithType: EnumerableVisitor.GetGetEnumerator
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.GetGetEnumerator
+- uid: PocoEmit.Collections.Visitors.EnumerableVisitor.GetCurrent*
+  commentId: Overload:PocoEmit.Collections.Visitors.EnumerableVisitor.GetCurrent
+  href: PocoEmit.Collections.Visitors.EnumerableVisitor.html#PocoEmit_Collections_Visitors_EnumerableVisitor_GetCurrent_System_Type_
+  name: GetCurrent
+  nameWithType: EnumerableVisitor.GetCurrent
+  fullName: PocoEmit.Collections.Visitors.EnumerableVisitor.GetCurrent
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo

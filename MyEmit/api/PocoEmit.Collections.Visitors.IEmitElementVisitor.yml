@@ -1,0 +1,288 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Visitors.IEmitElementVisitor
+  commentId: T:PocoEmit.Collections.Visitors.IEmitElementVisitor
+  id: IEmitElementVisitor
+  parent: PocoEmit.Collections.Visitors
+  children:
+  - PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  langs:
+  - csharp
+  - vb
+  name: IEmitElementVisitor
+  nameWithType: IEmitElementVisitor
+  fullName: PocoEmit.Collections.Visitors.IEmitElementVisitor
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/ICollectionVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IEmitElementVisitor
+    path: ../PocoEmit.Collections/Collections/Visitors/ICollectionVisitor.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 集合元素访问者
+  example: []
+  syntax:
+    content: 'public interface IEmitElementVisitor : IEmitCollection'
+    content.vb: Public Interface IEmitElementVisitor Inherits IEmitCollection
+  inheritedMembers:
+  - PocoEmit.Collections.IEmitCollection.CollectionType
+  - PocoEmit.Collections.IEmitCollection.ElementType
+- uid: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  commentId: M:PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  id: Travel(System.Linq.Expressions.Expression,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  parent: PocoEmit.Collections.Visitors.IEmitElementVisitor
+  langs:
+  - csharp
+  - vb
+  name: Travel(Expression, Func<Expression, Expression>)
+  nameWithType: IEmitElementVisitor.Travel(Expression, Func<Expression, Expression>)
+  fullName: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression, System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Visitors/ICollectionVisitor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Travel
+    path: ../PocoEmit.Collections/Collections/Visitors/ICollectionVisitor.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Visitors
+  summary: 集合遍历
+  example: []
+  syntax:
+    content: Expression Travel(Expression collection, Func<Expression, Expression> callback)
+    parameters:
+    - id: collection
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: callback
+      type: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Function Travel(collection As Expression, callback As Func(Of Expression, Expression)) As Expression
+  overload: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel*
+  nameWithType.vb: IEmitElementVisitor.Travel(Expression, Func(Of Expression, Expression))
+  fullName.vb: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel(System.Linq.Expressions.Expression, System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression))
+  name.vb: Travel(Expression, Func(Of Expression, Expression))
+references:
+- uid: PocoEmit.Collections.Visitors
+  commentId: N:PocoEmit.Collections.Visitors
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Visitors
+  nameWithType: PocoEmit.Collections.Visitors
+  fullName: PocoEmit.Collections.Visitors
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Visitors
+    name: Visitors
+    href: PocoEmit.Collections.Visitors.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Visitors
+    name: Visitors
+    href: PocoEmit.Collections.Visitors.html
+- uid: PocoEmit.Collections.IEmitCollection.CollectionType
+  commentId: P:PocoEmit.Collections.IEmitCollection.CollectionType
+  parent: PocoEmit.Collections.IEmitCollection
+  href: PocoEmit.Collections.IEmitCollection.html#PocoEmit_Collections_IEmitCollection_CollectionType
+  name: CollectionType
+  nameWithType: IEmitCollection.CollectionType
+  fullName: PocoEmit.Collections.IEmitCollection.CollectionType
+- uid: PocoEmit.Collections.IEmitCollection.ElementType
+  commentId: P:PocoEmit.Collections.IEmitCollection.ElementType
+  parent: PocoEmit.Collections.IEmitCollection
+  href: PocoEmit.Collections.IEmitCollection.html#PocoEmit_Collections_IEmitCollection_ElementType
+  name: ElementType
+  nameWithType: IEmitCollection.ElementType
+  fullName: PocoEmit.Collections.IEmitCollection.ElementType
+- uid: PocoEmit.Collections.IEmitCollection
+  commentId: T:PocoEmit.Collections.IEmitCollection
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.IEmitCollection.html
+  name: IEmitCollection
+  nameWithType: IEmitCollection
+  fullName: PocoEmit.Collections.IEmitCollection
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel*
+  commentId: Overload:PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel
+  href: PocoEmit.Collections.Visitors.IEmitElementVisitor.html#PocoEmit_Collections_Visitors_IEmitElementVisitor_Travel_System_Linq_Expressions_Expression_System_Func_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression__
+  name: Travel
+  nameWithType: IEmitElementVisitor.Travel
+  fullName: PocoEmit.Collections.Visitors.IEmitElementVisitor.Travel
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+  commentId: T:System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<Expression, Expression>
+  nameWithType: Func<Expression, Expression>
+  fullName: System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>
+  nameWithType.vb: Func(Of Expression, Expression)
+  fullName.vb: System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  name.vb: Func(Of Expression, Expression)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

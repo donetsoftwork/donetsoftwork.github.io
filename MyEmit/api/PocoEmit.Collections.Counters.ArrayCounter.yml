@@ -1,0 +1,463 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.Counters.ArrayCounter
+  commentId: T:PocoEmit.Collections.Counters.ArrayCounter
+  id: ArrayCounter
+  parent: PocoEmit.Collections.Counters
+  children:
+  - PocoEmit.Collections.Counters.ArrayCounter.#ctor(System.Type)
+  - PocoEmit.Collections.Counters.ArrayCounter.#ctor(System.Type,System.Type)
+  - PocoEmit.Collections.Counters.ArrayCounter.ArrayType
+  - PocoEmit.Collections.Counters.ArrayCounter.ElementType
+  langs:
+  - csharp
+  - vb
+  name: ArrayCounter
+  nameWithType: ArrayCounter
+  fullName: PocoEmit.Collections.Counters.ArrayCounter
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/ArrayCounter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ArrayCounter
+    path: ../PocoEmit.Collections/Collections/Counters/ArrayCounter.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 数组长度获取
+  example: []
+  syntax:
+    content: 'public class ArrayCounter : ArrayLength, IEmitElementCounter, IEmitCollection, IEmitCounter, ICompileInfo'
+    content.vb: Public Class ArrayCounter Inherits ArrayLength Implements IEmitElementCounter, IEmitCollection, IEmitCounter, ICompileInfo
+  inheritance:
+  - System.Object
+  - PocoEmit.Collections.Counters.ArrayLength
+  derivedClasses:
+  - PocoEmit.Collections.Visitors.ArrayVisitor
+  implements:
+  - PocoEmit.Collections.Counters.IEmitElementCounter
+  - PocoEmit.Collections.IEmitCollection
+  - PocoEmit.Collections.Counters.IEmitCounter
+  - PocoEmit.Configuration.ICompileInfo
+  inheritedMembers:
+  - PocoEmit.Collections.Counters.ArrayLength.Count(System.Linq.Expressions.Expression)
+  - PocoEmit.Collections.Counters.ArrayLength.Length
+  extensionMethods:
+  - PocoEmit.Collections.Counters.IEmitElementCounter.PocoEmit.Collections.PocoEmitCollectionServices.Build``1
+- uid: PocoEmit.Collections.Counters.ArrayCounter.#ctor(System.Type,System.Type)
+  commentId: M:PocoEmit.Collections.Counters.ArrayCounter.#ctor(System.Type,System.Type)
+  id: '#ctor(System.Type,System.Type)'
+  parent: PocoEmit.Collections.Counters.ArrayCounter
+  langs:
+  - csharp
+  - vb
+  name: ArrayCounter(Type, Type)
+  nameWithType: ArrayCounter.ArrayCounter(Type, Type)
+  fullName: PocoEmit.Collections.Counters.ArrayCounter.ArrayCounter(System.Type, System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/ArrayCounter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Collections/Counters/ArrayCounter.cs
+    startLine: 10
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 数组长度获取
+  example: []
+  syntax:
+    content: public ArrayCounter(Type arrayType, Type elementType)
+    parameters:
+    - id: arrayType
+      type: System.Type
+      description: ''
+    - id: elementType
+      type: System.Type
+      description: ''
+    content.vb: Public Sub New(arrayType As Type, elementType As Type)
+  overload: PocoEmit.Collections.Counters.ArrayCounter.#ctor*
+  nameWithType.vb: ArrayCounter.New(Type, Type)
+  fullName.vb: PocoEmit.Collections.Counters.ArrayCounter.New(System.Type, System.Type)
+  name.vb: New(Type, Type)
+- uid: PocoEmit.Collections.Counters.ArrayCounter.#ctor(System.Type)
+  commentId: M:PocoEmit.Collections.Counters.ArrayCounter.#ctor(System.Type)
+  id: '#ctor(System.Type)'
+  parent: PocoEmit.Collections.Counters.ArrayCounter
+  langs:
+  - csharp
+  - vb
+  name: ArrayCounter(Type)
+  nameWithType: ArrayCounter.ArrayCounter(Type)
+  fullName: PocoEmit.Collections.Counters.ArrayCounter.ArrayCounter(System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/ArrayCounter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: .ctor
+    path: ../PocoEmit.Collections/Collections/Counters/ArrayCounter.cs
+    startLine: 18
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 数组长度获取
+  example: []
+  syntax:
+    content: public ArrayCounter(Type arrayType)
+    parameters:
+    - id: arrayType
+      type: System.Type
+      description: ''
+    content.vb: Public Sub New(arrayType As Type)
+  overload: PocoEmit.Collections.Counters.ArrayCounter.#ctor*
+  nameWithType.vb: ArrayCounter.New(Type)
+  fullName.vb: PocoEmit.Collections.Counters.ArrayCounter.New(System.Type)
+  name.vb: New(Type)
+- uid: PocoEmit.Collections.Counters.ArrayCounter.ArrayType
+  commentId: P:PocoEmit.Collections.Counters.ArrayCounter.ArrayType
+  id: ArrayType
+  parent: PocoEmit.Collections.Counters.ArrayCounter
+  langs:
+  - csharp
+  - vb
+  name: ArrayType
+  nameWithType: ArrayCounter.ArrayType
+  fullName: PocoEmit.Collections.Counters.ArrayCounter.ArrayType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/ArrayCounter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ArrayType
+    path: ../PocoEmit.Collections/Collections/Counters/ArrayCounter.cs
+    startLine: 27
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 数组类型
+  example: []
+  syntax:
+    content: public Type ArrayType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ArrayType As Type
+  overload: PocoEmit.Collections.Counters.ArrayCounter.ArrayType*
+- uid: PocoEmit.Collections.Counters.ArrayCounter.ElementType
+  commentId: P:PocoEmit.Collections.Counters.ArrayCounter.ElementType
+  id: ElementType
+  parent: PocoEmit.Collections.Counters.ArrayCounter
+  langs:
+  - csharp
+  - vb
+  name: ElementType
+  nameWithType: ArrayCounter.ElementType
+  fullName: PocoEmit.Collections.Counters.ArrayCounter.ElementType
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Collections/Collections/Counters/ArrayCounter.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ElementType
+    path: ../PocoEmit.Collections/Collections/Counters/ArrayCounter.cs
+    startLine: 31
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Collections.Counters
+  summary: 子元素类型
+  example: []
+  syntax:
+    content: public Type ElementType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property ElementType As Type
+  overload: PocoEmit.Collections.Counters.ArrayCounter.ElementType*
+  implements:
+  - PocoEmit.Collections.IEmitCollection.ElementType
+references:
+- uid: PocoEmit.Collections.Counters
+  commentId: N:PocoEmit.Collections.Counters
+  href: PocoEmit.html
+  name: PocoEmit.Collections.Counters
+  nameWithType: PocoEmit.Collections.Counters
+  fullName: PocoEmit.Collections.Counters
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  - name: .
+  - uid: PocoEmit.Collections.Counters
+    name: Counters
+    href: PocoEmit.Collections.Counters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.Counters.ArrayLength
+  commentId: T:PocoEmit.Collections.Counters.ArrayLength
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.ArrayLength.html
+  name: ArrayLength
+  nameWithType: ArrayLength
+  fullName: PocoEmit.Collections.Counters.ArrayLength
+- uid: PocoEmit.Collections.Counters.IEmitElementCounter
+  commentId: T:PocoEmit.Collections.Counters.IEmitElementCounter
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.IEmitElementCounter.html
+  name: IEmitElementCounter
+  nameWithType: IEmitElementCounter
+  fullName: PocoEmit.Collections.Counters.IEmitElementCounter
+- uid: PocoEmit.Collections.IEmitCollection
+  commentId: T:PocoEmit.Collections.IEmitCollection
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.IEmitCollection.html
+  name: IEmitCollection
+  nameWithType: IEmitCollection
+  fullName: PocoEmit.Collections.IEmitCollection
+- uid: PocoEmit.Collections.Counters.IEmitCounter
+  commentId: T:PocoEmit.Collections.Counters.IEmitCounter
+  parent: PocoEmit.Collections.Counters
+  href: PocoEmit.Collections.Counters.IEmitCounter.html
+  name: IEmitCounter
+  nameWithType: IEmitCounter
+  fullName: PocoEmit.Collections.Counters.IEmitCounter
+- uid: PocoEmit.Configuration.ICompileInfo
+  commentId: T:PocoEmit.Configuration.ICompileInfo
+  parent: PocoEmit.Configuration
+  href: PocoEmit.Configuration.ICompileInfo.html
+  name: ICompileInfo
+  nameWithType: ICompileInfo
+  fullName: PocoEmit.Configuration.ICompileInfo
+- uid: PocoEmit.Collections.Counters.ArrayLength.Count(System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Collections.Counters.ArrayLength.Count(System.Linq.Expressions.Expression)
+  parent: PocoEmit.Collections.Counters.ArrayLength
+  isExternal: true
+  href: PocoEmit.Collections.Counters.ArrayLength.html#PocoEmit_Collections_Counters_ArrayLength_Count_System_Linq_Expressions_Expression_
+  name: Count(Expression)
+  nameWithType: ArrayLength.Count(Expression)
+  fullName: PocoEmit.Collections.Counters.ArrayLength.Count(System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: PocoEmit.Collections.Counters.ArrayLength.Count(System.Linq.Expressions.Expression)
+    name: Count
+    href: PocoEmit.Collections.Counters.ArrayLength.html#PocoEmit_Collections_Counters_ArrayLength_Count_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.Counters.ArrayLength.Count(System.Linq.Expressions.Expression)
+    name: Count
+    href: PocoEmit.Collections.Counters.ArrayLength.html#PocoEmit_Collections_Counters_ArrayLength_Count_System_Linq_Expressions_Expression_
+  - name: (
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  - name: )
+- uid: PocoEmit.Collections.Counters.ArrayLength.Length
+  commentId: F:PocoEmit.Collections.Counters.ArrayLength.Length
+  parent: PocoEmit.Collections.Counters.ArrayLength
+  href: PocoEmit.Collections.Counters.ArrayLength.html#PocoEmit_Collections_Counters_ArrayLength_Length
+  name: Length
+  nameWithType: ArrayLength.Length
+  fullName: PocoEmit.Collections.Counters.ArrayLength.Length
+- uid: PocoEmit.Collections.Counters.IEmitElementCounter.PocoEmit.Collections.PocoEmitCollectionServices.Build``1
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  parent: PocoEmit.Collections.PocoEmitCollectionServices
+  definition: PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__1_PocoEmit_Collections_Counters_IEmitElementCounter_
+  name: Build<TCollection>(IEmitElementCounter)
+  nameWithType: PocoEmitCollectionServices.Build<TCollection>(IEmitElementCounter)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Build<TCollection>(PocoEmit.Collections.Counters.IEmitElementCounter)
+  nameWithType.vb: PocoEmitCollectionServices.Build(Of TCollection)(IEmitElementCounter)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Build(Of TCollection)(PocoEmit.Collections.Counters.IEmitElementCounter)
+  name.vb: Build(Of TCollection)(IEmitElementCounter)
+  spec.csharp:
+  - uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+    name: Build
+    href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__1_PocoEmit_Collections_Counters_IEmitElementCounter_
+  - name: <
+  - name: TCollection
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Collections.Counters.IEmitElementCounter
+    name: IEmitElementCounter
+    href: PocoEmit.Collections.Counters.IEmitElementCounter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+    name: Build
+    href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__1_PocoEmit_Collections_Counters_IEmitElementCounter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: )
+  - name: (
+  - uid: PocoEmit.Collections.Counters.IEmitElementCounter
+    name: IEmitElementCounter
+    href: PocoEmit.Collections.Counters.IEmitElementCounter.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  commentId: M:PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__1_PocoEmit_Collections_Counters_IEmitElementCounter_
+  name: Build<TCollection>(IEmitElementCounter)
+  nameWithType: PocoEmitCollectionServices.Build<TCollection>(IEmitElementCounter)
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices.Build<TCollection>(PocoEmit.Collections.Counters.IEmitElementCounter)
+  nameWithType.vb: PocoEmitCollectionServices.Build(Of TCollection)(IEmitElementCounter)
+  fullName.vb: PocoEmit.Collections.PocoEmitCollectionServices.Build(Of TCollection)(PocoEmit.Collections.Counters.IEmitElementCounter)
+  name.vb: Build(Of TCollection)(IEmitElementCounter)
+  spec.csharp:
+  - uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+    name: Build
+    href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__1_PocoEmit_Collections_Counters_IEmitElementCounter_
+  - name: <
+  - name: TCollection
+  - name: '>'
+  - name: (
+  - uid: PocoEmit.Collections.Counters.IEmitElementCounter
+    name: IEmitElementCounter
+    href: PocoEmit.Collections.Counters.IEmitElementCounter.html
+  - name: )
+  spec.vb:
+  - uid: PocoEmit.Collections.PocoEmitCollectionServices.Build``1(PocoEmit.Collections.Counters.IEmitElementCounter)
+    name: Build
+    href: PocoEmit.Collections.PocoEmitCollectionServices.html#PocoEmit_Collections_PocoEmitCollectionServices_Build__1_PocoEmit_Collections_Counters_IEmitElementCounter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCollection
+  - name: )
+  - name: (
+  - uid: PocoEmit.Collections.Counters.IEmitElementCounter
+    name: IEmitElementCounter
+    href: PocoEmit.Collections.Counters.IEmitElementCounter.html
+  - name: )
+- uid: PocoEmit.Collections.PocoEmitCollectionServices
+  commentId: T:PocoEmit.Collections.PocoEmitCollectionServices
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.PocoEmitCollectionServices.html
+  name: PocoEmitCollectionServices
+  nameWithType: PocoEmitCollectionServices
+  fullName: PocoEmit.Collections.PocoEmitCollectionServices
+- uid: PocoEmit.Collections.Counters.ArrayCounter.#ctor*
+  commentId: Overload:PocoEmit.Collections.Counters.ArrayCounter.#ctor
+  href: PocoEmit.Collections.Counters.ArrayCounter.html#PocoEmit_Collections_Counters_ArrayCounter__ctor_System_Type_System_Type_
+  name: ArrayCounter
+  nameWithType: ArrayCounter.ArrayCounter
+  fullName: PocoEmit.Collections.Counters.ArrayCounter.ArrayCounter
+  nameWithType.vb: ArrayCounter.New
+  fullName.vb: PocoEmit.Collections.Counters.ArrayCounter.New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.Collections.Counters.ArrayCounter.ArrayType*
+  commentId: Overload:PocoEmit.Collections.Counters.ArrayCounter.ArrayType
+  href: PocoEmit.Collections.Counters.ArrayCounter.html#PocoEmit_Collections_Counters_ArrayCounter_ArrayType
+  name: ArrayType
+  nameWithType: ArrayCounter.ArrayType
+  fullName: PocoEmit.Collections.Counters.ArrayCounter.ArrayType
+- uid: PocoEmit.Collections.Counters.ArrayCounter.ElementType*
+  commentId: Overload:PocoEmit.Collections.Counters.ArrayCounter.ElementType
+  href: PocoEmit.Collections.Counters.ArrayCounter.html#PocoEmit_Collections_Counters_ArrayCounter_ElementType
+  name: ElementType
+  nameWithType: ArrayCounter.ElementType
+  fullName: PocoEmit.Collections.Counters.ArrayCounter.ElementType
+- uid: PocoEmit.Collections.IEmitCollection.ElementType
+  commentId: P:PocoEmit.Collections.IEmitCollection.ElementType
+  parent: PocoEmit.Collections.IEmitCollection
+  href: PocoEmit.Collections.IEmitCollection.html#PocoEmit_Collections_IEmitCollection_ElementType
+  name: ElementType
+  nameWithType: IEmitCollection.ElementType
+  fullName: PocoEmit.Collections.IEmitCollection.ElementType

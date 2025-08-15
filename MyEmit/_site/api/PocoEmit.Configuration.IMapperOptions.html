@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>IMapperOptions 接口
+ | 简单对象Emit工具 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="IMapperOptions 接口
+ | 简单对象Emit工具 ">
+      
+      <meta name="description" content="映射配置接口">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyEmit/new/main/apiSpec/new?filename=PocoEmit_Configuration_IMapperOptions.md&amp;value=---%0Auid%3A%20PocoEmit.Configuration.IMapperOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MyEmit">
+            MyEmit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PocoEmit.Configuration.IMapperOptions">
+
+
+
+  <h1 id="PocoEmit_Configuration_IMapperOptions" data-uid="PocoEmit.Configuration.IMapperOptions" class="text-break">
+IMapperOptions 接口
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Configuration/IMapperOptions.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="PocoEmit.html">PocoEmit</a>.<a class="xref" href="PocoEmit.Configuration.html">Configuration</a></dd></dl>
+  <dl><dt>程序集</dt><dd>PocoEmit.Mapper.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>映射配置接口</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMapperOptions : IPocoOptions, ICacher&lt;PairTypeKey, IEmitConverter&gt;, ICacher&lt;Type, MemberBundle&gt;, IStore&lt;Type, MemberBundle&gt;, IMapper, IPoco, IStore&lt;PairTypeKey, IEmitConverter&gt;, IConfigure&lt;PairTypeKey, IEmitConverter&gt;, IConfigure&lt;PairTypeKey, IMemberMatch&gt;, IConfigure&lt;PairTypeKey, IEmitCopier&gt;, IConfigure&lt;Type, IEmitActivator&gt;, IConfigure&lt;PairTypeKey, IEmitActivator&gt;, IConfigure&lt;Type, bool&gt;, IConfigure&lt;Type, object&gt;, ICacher&lt;PairTypeKey, IEmitCopier&gt;, IStore&lt;PairTypeKey, IEmitCopier&gt;, ICacher&lt;Type, bool&gt;, IStore&lt;Type, bool&gt;, IReflectionConstructor</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>继承成员</dt>
+    <dd>
+    <div>
+      <a class="xref" href="PocoEmit.Configuration.IPocoOptions.html#PocoEmit_Configuration_IPocoOptions_ConvertBuilder">IPocoOptions.ConvertBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Configuration.IPocoOptions.html#PocoEmit_Configuration_IPocoOptions_Converters">IPocoOptions.Converters</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Configuration.IPocoOptions.html#PocoEmit_Configuration_IPocoOptions_ReflectionMember">IPocoOptions.ReflectionMember</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_ContainsKey__0_">ICacher&lt;PairTypeKey, IEmitConverter&gt;.ContainsKey(PairTypeKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_TryGetValue__0__1__">ICacher&lt;PairTypeKey, IEmitConverter&gt;.TryGetValue(PairTypeKey, out IEmitConverter)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_ContainsKey__0_">ICacher&lt;Type, MemberBundle&gt;.ContainsKey(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_TryGetValue__0__1__">ICacher&lt;Type, MemberBundle&gt;.TryGetValue(Type, out MemberBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IStore-2.html#PocoEmit_Collections_IStore_2_Set__0__1_">IStore&lt;Type, MemberBundle&gt;.Set(Type, MemberBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.IMapper.html#PocoEmit_IMapper_GetMemberMatch_PocoEmit_Configuration_PairTypeKey_">IMapper.GetMemberMatch(PairTypeKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.IMapper.html#PocoEmit_IMapper_Recognizer">IMapper.Recognizer</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.IMapper.html#PocoEmit_IMapper_GetEmitCopier_PocoEmit_Configuration_PairTypeKey_">IMapper.GetEmitCopier(PairTypeKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.IPoco.html#PocoEmit_IPoco_MemberCacher">IPoco.MemberCacher</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.IPoco.html#PocoEmit_IPoco_GetReadFunc_System_Reflection_MemberInfo_">IPoco.GetReadFunc(MemberInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.IPoco.html#PocoEmit_IPoco_GetWriteAction_System_Reflection_MemberInfo_">IPoco.GetWriteAction(MemberInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.IPoco.html#PocoEmit_IPoco_GetEmitConverter_PocoEmit_Configuration_PairTypeKey_">IPoco.GetEmitConverter(PairTypeKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IStore-2.html#PocoEmit_Collections_IStore_2_Set__0__1_">IStore&lt;PairTypeKey, IEmitConverter&gt;.Set(PairTypeKey, IEmitConverter)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_">IConfigure&lt;PairTypeKey, IEmitConverter&gt;.Configure(PairTypeKey, IEmitConverter)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_">IConfigure&lt;PairTypeKey, IMemberMatch&gt;.Configure(PairTypeKey, IMemberMatch)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_">IConfigure&lt;PairTypeKey, IEmitCopier&gt;.Configure(PairTypeKey, IEmitCopier)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_">IConfigure&lt;Type, IEmitActivator&gt;.Configure(Type, IEmitActivator)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_">IConfigure&lt;PairTypeKey, IEmitActivator&gt;.Configure(PairTypeKey, IEmitActivator)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_">IConfigure&lt;Type, bool&gt;.Configure(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IConfigure-2.html#PocoEmit_Collections_IConfigure_2_Configure__0__1_">IConfigure&lt;Type, object&gt;.Configure(Type, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_ContainsKey__0_">ICacher&lt;PairTypeKey, IEmitCopier&gt;.ContainsKey(PairTypeKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_TryGetValue__0__1__">ICacher&lt;PairTypeKey, IEmitCopier&gt;.TryGetValue(PairTypeKey, out IEmitCopier)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IStore-2.html#PocoEmit_Collections_IStore_2_Set__0__1_">IStore&lt;PairTypeKey, IEmitCopier&gt;.Set(PairTypeKey, IEmitCopier)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_ContainsKey__0_">ICacher&lt;Type, bool&gt;.ContainsKey(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.ICacher-2.html#PocoEmit_Collections_ICacher_2_TryGetValue__0__1__">ICacher&lt;Type, bool&gt;.TryGetValue(Type, out bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Collections.IStore-2.html#PocoEmit_Collections_IStore_2_Set__0__1_">IStore&lt;Type, bool&gt;.Set(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="PocoEmit.Reflection.IReflectionConstructor.html#PocoEmit_Reflection_IReflectionConstructor_GetConstructor_System_Type_">IReflectionConstructor.GetConstructor(Type)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>扩展方法</dt>
+    <dd>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_SetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__">MapperServices.SetCopy&lt;TSource, TDest&gt;(ICacher&lt;PairTypeKey, IEmitCopier&gt;, Action&lt;TSource, TDest&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_TrySetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__">MapperServices.TrySetCopy&lt;TSource, TDest&gt;(ICacher&lt;PairTypeKey, IEmitCopier&gt;, Action&lt;TSource, TDest&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_SetStringConvert__1___0_">PocoEmitServices.SetStringConvert&lt;TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseConverter__1___0_System_Object_">PocoEmitServices.UseConverter&lt;TConfiguration&gt;(TConfiguration, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseStaticConverter__1___0_System_Type_">PocoEmitServices.UseStaticConverter&lt;TConfiguration&gt;(TConfiguration, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseSystemConvert__1___0_">PocoEmitServices.UseSystemConvert&lt;TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.CollectionConfigureServices.html#PocoEmit_CollectionConfigureServices_UseCollection_PocoEmit_IMapper_">CollectionConfigureServices.UseCollection(IMapper)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_ConfigureMap__2_PocoEmit_IMapper_">MapperServices.ConfigureMap&lt;TSource, TDest&gt;(IMapper)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_ConfigureMap__2_PocoEmit_IMapper_System_StringComparison_">MapperServices.ConfigureMap&lt;TSource, TDest&gt;(IMapper, StringComparison)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_Copy__2_PocoEmit_IMapper___0___1_">MapperServices.Copy&lt;TSource, TDest&gt;(IMapper, TSource, TDest)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_GetCopier__2_PocoEmit_IMapper_">MapperServices.GetCopier&lt;TSource, TDest&gt;(IMapper)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_GetCopyAction__2_PocoEmit_IMapper_">MapperServices.GetCopyAction&lt;TSource, TDest&gt;(IMapper)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_GetEmitCopier_PocoEmit_IMapper_System_Type_System_Type_">MapperServices.GetEmitCopier(IMapper, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_GetMemberMatch_PocoEmit_IMapper_System_Type_System_Type_">MapperServices.GetMemberMatch(IMapper, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_GetObjectCopier_PocoEmit_IMapper_System_Type_System_Type_">MapperServices.GetObjectCopier(IMapper, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseActivator__1_PocoEmit_IMapper_">MapperServices.UseActivator&lt;TInstance&gt;(IMapper)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseActivator__1_PocoEmit_IMapper_System_Func___0__">MapperServices.UseActivator&lt;TInstance&gt;(IMapper, Func&lt;TInstance&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseActivator__2_PocoEmit_IMapper_System_Func___1__">MapperServices.UseActivator&lt;TSource, TDest&gt;(IMapper, Func&lt;TDest&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseActivator__2_PocoEmit_IMapper_System_Func___0___1__">MapperServices.UseActivator&lt;TSource, TDest&gt;(IMapper, Func&lt;TSource, TDest&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseCopier_PocoEmit_IMapper_System_Object_">MapperServices.UseCopier(IMapper, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseCopyAction__2_PocoEmit_IMapper_System_Action___0___1__">MapperServices.UseCopyAction&lt;TSource, TDest&gt;(IMapper, Action&lt;TSource, TDest&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseDefault__1_PocoEmit_IMapper_System_Func___0__">MapperServices.UseDefault&lt;TValue&gt;(IMapper, Func&lt;TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseDefault__1_PocoEmit_IMapper___0_">MapperServices.UseDefault&lt;TValue&gt;(IMapper, TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseStaticCopier_PocoEmit_IMapper_System_Type_">MapperServices.UseStaticCopier(IMapper, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseStaticCopier__1_PocoEmit_IMapper_">MapperServices.UseStaticCopier&lt;TCopier&gt;(IMapper)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckInstanceType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter__System_Type_">PocoEmitServices.CheckInstanceType(IPoco, ref IEmitMemberWriter, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter__System_Type_System_Type_">PocoEmitServices.CheckType(IPoco, ref IEmitMemberWriter, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_CheckValueType_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter__System_Type_">PocoEmitServices.CheckValueType(IPoco, ref IEmitMemberWriter, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_Convert__2_PocoEmit_IPoco___0_">PocoEmitServices.Convert&lt;TSource, TDest&gt;(IPoco, TSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetConvertFunc__2_PocoEmit_IPoco_">PocoEmitServices.GetConvertFunc&lt;TSource, TDest&gt;(IPoco)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetConverter__2_PocoEmit_IPoco_">PocoEmitServices.GetConverter&lt;TSource, TDest&gt;(IPoco)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetEmitConverter_PocoEmit_IPoco_System_Type_System_Type_">PocoEmitServices.GetEmitConverter(IPoco, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetEmitConverter__2_PocoEmit_IPoco_">PocoEmitServices.GetEmitConverter&lt;TSource, TDest&gt;(IPoco)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberReader__2_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberReader_">PocoEmitServices.GetMemberReader&lt;TInstance, TValue&gt;(IPoco, IEmitMemberReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberReader__2_PocoEmit_IPoco_System_Reflection_MemberInfo_">PocoEmitServices.GetMemberReader&lt;TInstance, TValue&gt;(IPoco, MemberInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberReader__2_PocoEmit_IPoco_System_String_">PocoEmitServices.GetMemberReader&lt;TInstance, TValue&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberWriter__2_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter_">PocoEmitServices.GetMemberWriter&lt;TInstance, TValue&gt;(IPoco, IEmitMemberWriter)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberWriter__2_PocoEmit_IPoco_System_Reflection_MemberInfo_">PocoEmitServices.GetMemberWriter&lt;TInstance, TValue&gt;(IPoco, MemberInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetMemberWriter__2_PocoEmit_IPoco_System_String_">PocoEmitServices.GetMemberWriter&lt;TInstance, TValue&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetObjectConverter_PocoEmit_IPoco_System_Type_System_Type_">PocoEmitServices.GetObjectConverter(IPoco, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetReadFunc__2_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberReader_">PocoEmitServices.GetReadFunc&lt;TInstance, TValue&gt;(IPoco, IEmitMemberReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetReadFunc__2_PocoEmit_IPoco_System_Reflection_MemberInfo_">PocoEmitServices.GetReadFunc&lt;TInstance, TValue&gt;(IPoco, MemberInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetReadFunc__2_PocoEmit_IPoco_System_String_">PocoEmitServices.GetReadFunc&lt;TInstance, TValue&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetWriteAction__2_PocoEmit_IPoco_PocoEmit_Members_IEmitMemberWriter_">PocoEmitServices.GetWriteAction&lt;TInstance, TValue&gt;(IPoco, IEmitMemberWriter)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetWriteAction__2_PocoEmit_IPoco_System_Reflection_MemberInfo_">PocoEmitServices.GetWriteAction&lt;TInstance, TValue&gt;(IPoco, MemberInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_GetWriteAction__2_PocoEmit_IPoco_System_String_">PocoEmitServices.GetWriteAction&lt;TInstance, TValue&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseConvertFunc__2_PocoEmit_IPoco_System_Func___0___1__">PocoEmitServices.UseConvertFunc&lt;TSource, TDest&gt;(IPoco, Func&lt;TSource, TDest&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.PocoEmitServices.html#PocoEmit_PocoEmitServices_UseStaticConverter__1_PocoEmit_IPoco_">PocoEmitServices.UseStaticConverter&lt;TConverter&gt;(IPoco)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_IPoco_System_Type_System_String_">ReflectionHelper.GetEmitReader(IPoco, Type, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitReader__1_PocoEmit_IPoco_System_String_">ReflectionHelper.GetEmitReader&lt;TInstance&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_IPoco_System_Type_System_String_">ReflectionHelper.GetEmitWriter(IPoco, Type, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetEmitWriter__1_PocoEmit_IPoco_System_String_">ReflectionHelper.GetEmitWriter&lt;TInstance&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_IPoco_System_Type_System_String_">ReflectionHelper.GetReadMember(IPoco, Type, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetReadMember__1_PocoEmit_IPoco_System_String_">ReflectionHelper.GetReadMember&lt;TInstance&gt;(IPoco, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetTypeMembers_PocoEmit_IPoco_System_Type_">ReflectionHelper.GetTypeMembers(IPoco, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetTypeMembers__1_PocoEmit_IPoco_">ReflectionHelper.GetTypeMembers&lt;TInstance&gt;(IPoco)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_IPoco_System_Type_System_String_">ReflectionHelper.GetWriteMember(IPoco, Type, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="PocoEmit.ReflectionHelper.html#PocoEmit_ReflectionHelper_GetWriteMember__1_PocoEmit_IPoco_System_String_">ReflectionHelper.GetWriteMember&lt;TInstance&gt;(IPoco, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">属性
+</h2>
+
+
+  <a id="PocoEmit_Configuration_IMapperOptions_CopierBuilder_" data-uid="PocoEmit.Configuration.IMapperOptions.CopierBuilder*"></a>
+
+  <h3 id="PocoEmit_Configuration_IMapperOptions_CopierBuilder" data-uid="PocoEmit.Configuration.IMapperOptions.CopierBuilder">
+  CopierBuilder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Configuration/IMapperOptions.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>复制器构造器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CopierBuilder CopierBuilder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Builders.CopierBuilder.html">CopierBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Configuration_IMapperOptions_DefaultMatcher_" data-uid="PocoEmit.Configuration.IMapperOptions.DefaultMatcher*"></a>
+
+  <h3 id="PocoEmit_Configuration_IMapperOptions_DefaultMatcher" data-uid="PocoEmit.Configuration.IMapperOptions.DefaultMatcher">
+  DefaultMatcher
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Configuration/IMapperOptions.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>默认成员匹配</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IMemberMatch DefaultMatcher { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">属性值</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Maping.IMemberMatch.html">IMemberMatch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="PocoEmit_Configuration_IMapperOptions_CheckPrimitive_" data-uid="PocoEmit.Configuration.IMapperOptions.CheckPrimitive*"></a>
+
+  <h3 id="PocoEmit_Configuration_IMapperOptions_CheckPrimitive_System_Type_" data-uid="PocoEmit.Configuration.IMapperOptions.CheckPrimitive(System.Type)">
+  CheckPrimitive(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Configuration/IMapperOptions.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否基础类型</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CheckPrimitive(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Configuration_IMapperOptions_CreateDefault_" data-uid="PocoEmit.Configuration.IMapperOptions.CreateDefault*"></a>
+
+  <h3 id="PocoEmit_Configuration_IMapperOptions_CreateDefault_System_Type_" data-uid="PocoEmit.Configuration.IMapperOptions.CreateDefault(System.Type)">
+  CreateDefault(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Configuration/IMapperOptions.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>构造默认值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Expression CreateDefault(Type destType)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>destType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_Configuration_IMapperOptions_GetEmitActivator_" data-uid="PocoEmit.Configuration.IMapperOptions.GetEmitActivator*"></a>
+
+  <h3 id="PocoEmit_Configuration_IMapperOptions_GetEmitActivator_PocoEmit_Configuration_PairTypeKey_" data-uid="PocoEmit.Configuration.IMapperOptions.GetEmitActivator(PocoEmit.Configuration.PairTypeKey)">
+  GetEmitActivator(PairTypeKey)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Configuration/IMapperOptions.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取Emit类型激活器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEmitActivator GetEmitActivator(PairTypeKey key)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="PocoEmit.Configuration.PairTypeKey.html">PairTypeKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Activators.IEmitActivator.html">IEmitActivator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit.Mapper/Configuration/IMapperOptions.cs/#L15" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) MyEmit All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

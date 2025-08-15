@@ -1,0 +1,226 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Maping.INameMatch
+  commentId: T:PocoEmit.Maping.INameMatch
+  id: INameMatch
+  parent: PocoEmit.Maping
+  children:
+  - PocoEmit.Maping.INameMatch.EndsWith(System.String,System.String)
+  - PocoEmit.Maping.INameMatch.Match(System.String,System.String)
+  - PocoEmit.Maping.INameMatch.StartsWith(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: INameMatch
+  nameWithType: INameMatch
+  fullName: PocoEmit.Maping.INameMatch
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/INameMatch.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: INameMatch
+    path: ../PocoEmit.Mapper/Maping/INameMatch.cs
+    startLine: 5
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 名称匹配接口
+  example: []
+  syntax:
+    content: public interface INameMatch
+    content.vb: Public Interface INameMatch
+- uid: PocoEmit.Maping.INameMatch.Match(System.String,System.String)
+  commentId: M:PocoEmit.Maping.INameMatch.Match(System.String,System.String)
+  id: Match(System.String,System.String)
+  parent: PocoEmit.Maping.INameMatch
+  langs:
+  - csharp
+  - vb
+  name: Match(string, string)
+  nameWithType: INameMatch.Match(string, string)
+  fullName: PocoEmit.Maping.INameMatch.Match(string, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/INameMatch.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Match
+    path: ../PocoEmit.Mapper/Maping/INameMatch.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 匹配
+  example: []
+  syntax:
+    content: bool Match(string sourceName, string destName)
+    parameters:
+    - id: sourceName
+      type: System.String
+      description: ''
+    - id: destName
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Function Match(sourceName As String, destName As String) As Boolean
+  overload: PocoEmit.Maping.INameMatch.Match*
+  nameWithType.vb: INameMatch.Match(String, String)
+  fullName.vb: PocoEmit.Maping.INameMatch.Match(String, String)
+  name.vb: Match(String, String)
+- uid: PocoEmit.Maping.INameMatch.StartsWith(System.String,System.String)
+  commentId: M:PocoEmit.Maping.INameMatch.StartsWith(System.String,System.String)
+  id: StartsWith(System.String,System.String)
+  parent: PocoEmit.Maping.INameMatch
+  langs:
+  - csharp
+  - vb
+  name: StartsWith(string, string)
+  nameWithType: INameMatch.StartsWith(string, string)
+  fullName: PocoEmit.Maping.INameMatch.StartsWith(string, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/INameMatch.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: StartsWith
+    path: ../PocoEmit.Mapper/Maping/INameMatch.cs
+    startLine: 20
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 前缀匹配
+  example: []
+  syntax:
+    content: bool StartsWith(string name, string prefix)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    - id: prefix
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Function StartsWith(name As String, prefix As String) As Boolean
+  overload: PocoEmit.Maping.INameMatch.StartsWith*
+  nameWithType.vb: INameMatch.StartsWith(String, String)
+  fullName.vb: PocoEmit.Maping.INameMatch.StartsWith(String, String)
+  name.vb: StartsWith(String, String)
+- uid: PocoEmit.Maping.INameMatch.EndsWith(System.String,System.String)
+  commentId: M:PocoEmit.Maping.INameMatch.EndsWith(System.String,System.String)
+  id: EndsWith(System.String,System.String)
+  parent: PocoEmit.Maping.INameMatch
+  langs:
+  - csharp
+  - vb
+  name: EndsWith(string, string)
+  nameWithType: INameMatch.EndsWith(string, string)
+  fullName: PocoEmit.Maping.INameMatch.EndsWith(string, string)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/INameMatch.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: EndsWith
+    path: ../PocoEmit.Mapper/Maping/INameMatch.cs
+    startLine: 27
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 后缀匹配
+  example: []
+  syntax:
+    content: bool EndsWith(string name, string suffix)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    - id: suffix
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Function EndsWith(name As String, suffix As String) As Boolean
+  overload: PocoEmit.Maping.INameMatch.EndsWith*
+  nameWithType.vb: INameMatch.EndsWith(String, String)
+  fullName.vb: PocoEmit.Maping.INameMatch.EndsWith(String, String)
+  name.vb: EndsWith(String, String)
+references:
+- uid: PocoEmit.Maping
+  commentId: N:PocoEmit.Maping
+  href: PocoEmit.html
+  name: PocoEmit.Maping
+  nameWithType: PocoEmit.Maping
+  fullName: PocoEmit.Maping
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Maping
+    name: Maping
+    href: PocoEmit.Maping.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Maping
+    name: Maping
+    href: PocoEmit.Maping.html
+- uid: PocoEmit.Maping.INameMatch.Match*
+  commentId: Overload:PocoEmit.Maping.INameMatch.Match
+  href: PocoEmit.Maping.INameMatch.html#PocoEmit_Maping_INameMatch_Match_System_String_System_String_
+  name: Match
+  nameWithType: INameMatch.Match
+  fullName: PocoEmit.Maping.INameMatch.Match
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Maping.INameMatch.StartsWith*
+  commentId: Overload:PocoEmit.Maping.INameMatch.StartsWith
+  href: PocoEmit.Maping.INameMatch.html#PocoEmit_Maping_INameMatch_StartsWith_System_String_System_String_
+  name: StartsWith
+  nameWithType: INameMatch.StartsWith
+  fullName: PocoEmit.Maping.INameMatch.StartsWith
+- uid: PocoEmit.Maping.INameMatch.EndsWith*
+  commentId: Overload:PocoEmit.Maping.INameMatch.EndsWith
+  href: PocoEmit.Maping.INameMatch.html#PocoEmit_Maping_INameMatch_EndsWith_System_String_System_String_
+  name: EndsWith
+  nameWithType: INameMatch.EndsWith
+  fullName: PocoEmit.Maping.INameMatch.EndsWith

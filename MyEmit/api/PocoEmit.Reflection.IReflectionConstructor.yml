@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Reflection.IReflectionConstructor
+  commentId: T:PocoEmit.Reflection.IReflectionConstructor
+  id: IReflectionConstructor
+  parent: PocoEmit.Reflection
+  children:
+  - PocoEmit.Reflection.IReflectionConstructor.GetConstructor(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: IReflectionConstructor
+  nameWithType: IReflectionConstructor
+  fullName: PocoEmit.Reflection.IReflectionConstructor
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Mapper/Reflection/IReflectionConstructor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IReflectionConstructor
+    path: ../PocoEmit.Mapper/Reflection/IReflectionConstructor.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Reflection
+  summary: 反射构造函数
+  example: []
+  syntax:
+    content: public interface IReflectionConstructor
+    content.vb: Public Interface IReflectionConstructor
+- uid: PocoEmit.Reflection.IReflectionConstructor.GetConstructor(System.Type)
+  commentId: M:PocoEmit.Reflection.IReflectionConstructor.GetConstructor(System.Type)
+  id: GetConstructor(System.Type)
+  parent: PocoEmit.Reflection.IReflectionConstructor
+  langs:
+  - csharp
+  - vb
+  name: GetConstructor(Type)
+  nameWithType: IReflectionConstructor.GetConstructor(Type)
+  fullName: PocoEmit.Reflection.IReflectionConstructor.GetConstructor(System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Reflection/IReflectionConstructor.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetConstructor
+    path: ../PocoEmit.Mapper/Reflection/IReflectionConstructor.cs
+    startLine: 15
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Reflection
+  summary: 获取构造函数
+  example: []
+  syntax:
+    content: ConstructorInfo GetConstructor(Type instanceType)
+    parameters:
+    - id: instanceType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Reflection.ConstructorInfo
+      description: ''
+    content.vb: Function GetConstructor(instanceType As Type) As ConstructorInfo
+  overload: PocoEmit.Reflection.IReflectionConstructor.GetConstructor*
+references:
+- uid: PocoEmit.Reflection
+  commentId: N:PocoEmit.Reflection
+  href: PocoEmit.html
+  name: PocoEmit.Reflection
+  nameWithType: PocoEmit.Reflection
+  fullName: PocoEmit.Reflection
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Reflection
+    name: Reflection
+    href: PocoEmit.Reflection.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Reflection
+    name: Reflection
+    href: PocoEmit.Reflection.html
+- uid: PocoEmit.Reflection.IReflectionConstructor.GetConstructor*
+  commentId: Overload:PocoEmit.Reflection.IReflectionConstructor.GetConstructor
+  href: PocoEmit.Reflection.IReflectionConstructor.html#PocoEmit_Reflection_IReflectionConstructor_GetConstructor_System_Type_
+  name: GetConstructor
+  nameWithType: IReflectionConstructor.GetConstructor
+  fullName: PocoEmit.Reflection.IReflectionConstructor.GetConstructor
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Reflection.ConstructorInfo
+  commentId: T:System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  name: ConstructorInfo
+  nameWithType: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection

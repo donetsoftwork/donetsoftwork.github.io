@@ -1,0 +1,1953 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.MapperServices
+  commentId: T:PocoEmit.MapperServices
+  id: MapperServices
+  parent: PocoEmit
+  children:
+  - PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  - PocoEmit.MapperServices.Compile``2(PocoEmit.Copies.IEmitCopier)
+  - PocoEmit.MapperServices.ConfigureMap``2(PocoEmit.IMapper)
+  - PocoEmit.MapperServices.ConfigureMap``2(PocoEmit.IMapper,System.StringComparison)
+  - PocoEmit.MapperServices.Copy``2(PocoEmit.IMapper,``0,``1)
+  - PocoEmit.MapperServices.GetCopier``2(PocoEmit.IMapper)
+  - PocoEmit.MapperServices.GetCopyAction``2(PocoEmit.IMapper)
+  - PocoEmit.MapperServices.GetEmitCopier(PocoEmit.IMapper,System.Type,System.Type)
+  - PocoEmit.MapperServices.GetMemberMatch(PocoEmit.IMapper,System.Type,System.Type)
+  - PocoEmit.MapperServices.GetObjectCopier(PocoEmit.IMapper,System.Type,System.Type)
+  - PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  - PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  - PocoEmit.MapperServices.UseActivator``1(PocoEmit.IMapper)
+  - PocoEmit.MapperServices.UseActivator``1(PocoEmit.IMapper,System.Func{``0})
+  - PocoEmit.MapperServices.UseActivator``2(PocoEmit.IMapper,System.Func{``0,``1})
+  - PocoEmit.MapperServices.UseActivator``2(PocoEmit.IMapper,System.Func{``1})
+  - PocoEmit.MapperServices.UseCopier(PocoEmit.IMapper,System.Object)
+  - PocoEmit.MapperServices.UseCopyAction``2(PocoEmit.IMapper,System.Action{``0,``1})
+  - PocoEmit.MapperServices.UseDefault``1(PocoEmit.IMapper,System.Func{``0})
+  - PocoEmit.MapperServices.UseDefault``1(PocoEmit.IMapper,``0)
+  - PocoEmit.MapperServices.UseStaticCopier(PocoEmit.IMapper,System.Type)
+  - PocoEmit.MapperServices.UseStaticCopier``1(PocoEmit.IMapper)
+  langs:
+  - csharp
+  - vb
+  name: MapperServices
+  nameWithType: MapperServices
+  fullName: PocoEmit.MapperServices
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Mapper/MapperServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MapperServices
+    path: ../PocoEmit.Mapper/MapperServices.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 复制配置扩展方法
+  example: []
+  syntax:
+    content: public static class MapperServices
+    content.vb: Public Module MapperServices
+  inheritance:
+  - System.Object
+- uid: PocoEmit.MapperServices.UseCopyAction``2(PocoEmit.IMapper,System.Action{``0,``1})
+  commentId: M:PocoEmit.MapperServices.UseCopyAction``2(PocoEmit.IMapper,System.Action{``0,``1})
+  id: UseCopyAction``2(PocoEmit.IMapper,System.Action{``0,``1})
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: UseCopyAction<TSource, TDest>(IMapper, Action<TSource, TDest>)
+  nameWithType: MapperServices.UseCopyAction<TSource, TDest>(IMapper, Action<TSource, TDest>)
+  fullName: PocoEmit.MapperServices.UseCopyAction<TSource, TDest>(PocoEmit.IMapper, System.Action<TSource, TDest>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyConfigureServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseCopyAction
+    path: ../PocoEmit.Mapper/CopyConfigureServices.cs
+    startLine: 24
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 设置委托来复制
+  example: []
+  syntax:
+    content: public static IPoco UseCopyAction<TSource, TDest>(this IMapper mapper, Action<TSource, TDest> copyAction)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: copyAction
+      type: System.Action{{TSource},{TDest}}
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: PocoEmit.IPoco
+      description: ''
+    content.vb: Public Shared Function UseCopyAction(Of TSource, TDest)(mapper As IMapper, copyAction As Action(Of TSource, TDest)) As IPoco
+  overload: PocoEmit.MapperServices.UseCopyAction*
+  nameWithType.vb: MapperServices.UseCopyAction(Of TSource, TDest)(IMapper, Action(Of TSource, TDest))
+  fullName.vb: PocoEmit.MapperServices.UseCopyAction(Of TSource, TDest)(PocoEmit.IMapper, System.Action(Of TSource, TDest))
+  name.vb: UseCopyAction(Of TSource, TDest)(IMapper, Action(Of TSource, TDest))
+- uid: PocoEmit.MapperServices.UseStaticCopier``1(PocoEmit.IMapper)
+  commentId: M:PocoEmit.MapperServices.UseStaticCopier``1(PocoEmit.IMapper)
+  id: UseStaticCopier``1(PocoEmit.IMapper)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: UseStaticCopier<TCopier>(IMapper)
+  nameWithType: MapperServices.UseStaticCopier<TCopier>(IMapper)
+  fullName: PocoEmit.MapperServices.UseStaticCopier<TCopier>(PocoEmit.IMapper)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyConfigureServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseStaticCopier
+    path: ../PocoEmit.Mapper/CopyConfigureServices.cs
+    startLine: 36
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 添加静态复制方法
+  example: []
+  syntax:
+    content: public static IMapper UseStaticCopier<TCopier>(this IMapper mapper)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    typeParameters:
+    - id: TCopier
+      description: ''
+    return:
+      type: PocoEmit.IMapper
+      description: ''
+    content.vb: Public Shared Function UseStaticCopier(Of TCopier)(mapper As IMapper) As IMapper
+  overload: PocoEmit.MapperServices.UseStaticCopier*
+  nameWithType.vb: MapperServices.UseStaticCopier(Of TCopier)(IMapper)
+  fullName.vb: PocoEmit.MapperServices.UseStaticCopier(Of TCopier)(PocoEmit.IMapper)
+  name.vb: UseStaticCopier(Of TCopier)(IMapper)
+- uid: PocoEmit.MapperServices.UseStaticCopier(PocoEmit.IMapper,System.Type)
+  commentId: M:PocoEmit.MapperServices.UseStaticCopier(PocoEmit.IMapper,System.Type)
+  id: UseStaticCopier(PocoEmit.IMapper,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: UseStaticCopier(IMapper, Type)
+  nameWithType: MapperServices.UseStaticCopier(IMapper, Type)
+  fullName: PocoEmit.MapperServices.UseStaticCopier(PocoEmit.IMapper, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyConfigureServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseStaticCopier
+    path: ../PocoEmit.Mapper/CopyConfigureServices.cs
+    startLine: 44
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 添加静态复制方法
+  example: []
+  syntax:
+    content: public static IMapper UseStaticCopier(this IMapper mapper, Type converterType)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: converterType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.IMapper
+      description: ''
+    content.vb: Public Shared Function UseStaticCopier(mapper As IMapper, converterType As Type) As IMapper
+  overload: PocoEmit.MapperServices.UseStaticCopier*
+- uid: PocoEmit.MapperServices.UseCopier(PocoEmit.IMapper,System.Object)
+  commentId: M:PocoEmit.MapperServices.UseCopier(PocoEmit.IMapper,System.Object)
+  id: UseCopier(PocoEmit.IMapper,System.Object)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: UseCopier(IMapper, object)
+  nameWithType: MapperServices.UseCopier(IMapper, object)
+  fullName: PocoEmit.MapperServices.UseCopier(PocoEmit.IMapper, object)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyConfigureServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseCopier
+    path: ../PocoEmit.Mapper/CopyConfigureServices.cs
+    startLine: 69
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 添加实例复制方法
+  example: []
+  syntax:
+    content: public static IMapper UseCopier(this IMapper mapper, object instance)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: instance
+      type: System.Object
+      description: ''
+    return:
+      type: PocoEmit.IMapper
+      description: ''
+    content.vb: Public Shared Function UseCopier(mapper As IMapper, instance As Object) As IMapper
+  overload: PocoEmit.MapperServices.UseCopier*
+  nameWithType.vb: MapperServices.UseCopier(IMapper, Object)
+  fullName.vb: PocoEmit.MapperServices.UseCopier(PocoEmit.IMapper, Object)
+  name.vb: UseCopier(IMapper, Object)
+- uid: PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  commentId: M:PocoEmit.MapperServices.SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  id: SetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: SetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  nameWithType: MapperServices.SetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  fullName: PocoEmit.MapperServices.SetCopy<TSource, TDest>(PocoEmit.Collections.ICacher<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>, System.Action<TSource, TDest>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyConfigureServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: SetCopy
+    path: ../PocoEmit.Mapper/CopyConfigureServices.cs
+    startLine: 99
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 设置委托来复制
+  example: []
+  syntax:
+    content: 'public static DelegateCopier<TSource, TDest> SetCopy<TSource, TDest>(this ICacher<PairTypeKey, IEmitCopier> settings, Action<TSource, TDest> copy) where TDest : class'
+    parameters:
+    - id: settings
+      type: PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+      description: ''
+    - id: copy
+      type: System.Action{{TSource},{TDest}}
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: PocoEmit.Copies.DelegateCopier{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Shared Function SetCopy(Of TSource, TDest As Class)(settings As ICacher(Of PairTypeKey, IEmitCopier), copy As Action(Of TSource, TDest)) As DelegateCopier(Of TSource, TDest)
+  overload: PocoEmit.MapperServices.SetCopy*
+  nameWithType.vb: MapperServices.SetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+  fullName.vb: PocoEmit.MapperServices.SetCopy(Of TSource, TDest)(PocoEmit.Collections.ICacher(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier), System.Action(Of TSource, TDest))
+  name.vb: SetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+- uid: PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  commentId: M:PocoEmit.MapperServices.TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  id: TrySetCopy``2(PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier},System.Action{``0,``1})
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: TrySetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  nameWithType: MapperServices.TrySetCopy<TSource, TDest>(ICacher<PairTypeKey, IEmitCopier>, Action<TSource, TDest>)
+  fullName: PocoEmit.MapperServices.TrySetCopy<TSource, TDest>(PocoEmit.Collections.ICacher<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>, System.Action<TSource, TDest>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyConfigureServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: TrySetCopy
+    path: ../PocoEmit.Mapper/CopyConfigureServices.cs
+    startLine: 115
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 尝试设置委托来复制不覆盖
+  example: []
+  syntax:
+    content: 'public static IEmitCopier TrySetCopy<TSource, TDest>(this ICacher<PairTypeKey, IEmitCopier> settings, Action<TSource, TDest> copy) where TDest : class'
+    parameters:
+    - id: settings
+      type: PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+      description: ''
+    - id: copy
+      type: System.Action{{TSource},{TDest}}
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: PocoEmit.Copies.IEmitCopier
+      description: ''
+    content.vb: Public Shared Function TrySetCopy(Of TSource, TDest As Class)(settings As ICacher(Of PairTypeKey, IEmitCopier), copy As Action(Of TSource, TDest)) As IEmitCopier
+  overload: PocoEmit.MapperServices.TrySetCopy*
+  nameWithType.vb: MapperServices.TrySetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+  fullName.vb: PocoEmit.MapperServices.TrySetCopy(Of TSource, TDest)(PocoEmit.Collections.ICacher(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier), System.Action(Of TSource, TDest))
+  name.vb: TrySetCopy(Of TSource, TDest)(ICacher(Of PairTypeKey, IEmitCopier), Action(Of TSource, TDest))
+- uid: PocoEmit.MapperServices.GetCopier``2(PocoEmit.IMapper)
+  commentId: M:PocoEmit.MapperServices.GetCopier``2(PocoEmit.IMapper)
+  id: GetCopier``2(PocoEmit.IMapper)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: GetCopier<TSource, TDest>(IMapper)
+  nameWithType: MapperServices.GetCopier<TSource, TDest>(IMapper)
+  fullName: PocoEmit.MapperServices.GetCopier<TSource, TDest>(PocoEmit.IMapper)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetCopier
+    path: ../PocoEmit.Mapper/CopyServices.cs
+    startLine: 23
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 获取复制器
+  example: []
+  syntax:
+    content: 'public static IPocoCopier<TSource, TDest> GetCopier<TSource, TDest>(this IMapper mapper) where TDest : class'
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: PocoEmit.IPocoCopier{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Shared Function GetCopier(Of TSource, TDest As Class)(mapper As IMapper) As IPocoCopier(Of TSource, TDest)
+  overload: PocoEmit.MapperServices.GetCopier*
+  nameWithType.vb: MapperServices.GetCopier(Of TSource, TDest)(IMapper)
+  fullName.vb: PocoEmit.MapperServices.GetCopier(Of TSource, TDest)(PocoEmit.IMapper)
+  name.vb: GetCopier(Of TSource, TDest)(IMapper)
+- uid: PocoEmit.MapperServices.GetObjectCopier(PocoEmit.IMapper,System.Type,System.Type)
+  commentId: M:PocoEmit.MapperServices.GetObjectCopier(PocoEmit.IMapper,System.Type,System.Type)
+  id: GetObjectCopier(PocoEmit.IMapper,System.Type,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: GetObjectCopier(IMapper, Type, Type)
+  nameWithType: MapperServices.GetObjectCopier(IMapper, Type, Type)
+  fullName: PocoEmit.MapperServices.GetObjectCopier(PocoEmit.IMapper, System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetObjectCopier
+    path: ../PocoEmit.Mapper/CopyServices.cs
+    startLine: 47
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 获取弱类型复制器(IObjectCopier)
+  example: []
+  syntax:
+    content: public static object GetObjectCopier(this IMapper mapper, Type sourceType, Type destType)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Function GetObjectCopier(mapper As IMapper, sourceType As Type, destType As Type) As Object
+  overload: PocoEmit.MapperServices.GetObjectCopier*
+- uid: PocoEmit.MapperServices.GetCopyAction``2(PocoEmit.IMapper)
+  commentId: M:PocoEmit.MapperServices.GetCopyAction``2(PocoEmit.IMapper)
+  id: GetCopyAction``2(PocoEmit.IMapper)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: GetCopyAction<TSource, TDest>(IMapper)
+  nameWithType: MapperServices.GetCopyAction<TSource, TDest>(IMapper)
+  fullName: PocoEmit.MapperServices.GetCopyAction<TSource, TDest>(PocoEmit.IMapper)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetCopyAction
+    path: ../PocoEmit.Mapper/CopyServices.cs
+    startLine: 69
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 获取复制委托
+  example: []
+  syntax:
+    content: 'public static Action<TSource, TDest> GetCopyAction<TSource, TDest>(this IMapper mapper) where TDest : class'
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: System.Action{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Shared Function GetCopyAction(Of TSource, TDest As Class)(mapper As IMapper) As Action(Of TSource, TDest)
+  overload: PocoEmit.MapperServices.GetCopyAction*
+  nameWithType.vb: MapperServices.GetCopyAction(Of TSource, TDest)(IMapper)
+  fullName.vb: PocoEmit.MapperServices.GetCopyAction(Of TSource, TDest)(PocoEmit.IMapper)
+  name.vb: GetCopyAction(Of TSource, TDest)(IMapper)
+- uid: PocoEmit.MapperServices.GetEmitCopier(PocoEmit.IMapper,System.Type,System.Type)
+  commentId: M:PocoEmit.MapperServices.GetEmitCopier(PocoEmit.IMapper,System.Type,System.Type)
+  id: GetEmitCopier(PocoEmit.IMapper,System.Type,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: GetEmitCopier(IMapper, Type, Type)
+  nameWithType: MapperServices.GetEmitCopier(IMapper, Type, Type)
+  fullName: PocoEmit.MapperServices.GetEmitCopier(PocoEmit.IMapper, System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetEmitCopier
+    path: ../PocoEmit.Mapper/CopyServices.cs
+    startLine: 93
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 获取Emit类型复制器
+  example: []
+  syntax:
+    content: public static IEmitCopier GetEmitCopier(this IMapper mapper, Type sourceType, Type destType)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Copies.IEmitCopier
+      description: ''
+    content.vb: Public Shared Function GetEmitCopier(mapper As IMapper, sourceType As Type, destType As Type) As IEmitCopier
+  overload: PocoEmit.MapperServices.GetEmitCopier*
+- uid: PocoEmit.MapperServices.Copy``2(PocoEmit.IMapper,``0,``1)
+  commentId: M:PocoEmit.MapperServices.Copy``2(PocoEmit.IMapper,``0,``1)
+  id: Copy``2(PocoEmit.IMapper,``0,``1)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: Copy<TSource, TDest>(IMapper, TSource, TDest)
+  nameWithType: MapperServices.Copy<TSource, TDest>(IMapper, TSource, TDest)
+  fullName: PocoEmit.MapperServices.Copy<TSource, TDest>(PocoEmit.IMapper, TSource, TDest)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Copy
+    path: ../PocoEmit.Mapper/CopyServices.cs
+    startLine: 106
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 复制
+  example: []
+  syntax:
+    content: 'public static void Copy<TSource, TDest>(this IMapper mapper, TSource source, TDest dest) where TDest : class'
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: source
+      type: '{TSource}'
+      description: ''
+    - id: dest
+      type: '{TDest}'
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    content.vb: Public Shared Sub Copy(Of TSource, TDest As Class)(mapper As IMapper, source As TSource, dest As TDest)
+  overload: PocoEmit.MapperServices.Copy*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: ''
+  nameWithType.vb: MapperServices.Copy(Of TSource, TDest)(IMapper, TSource, TDest)
+  fullName.vb: PocoEmit.MapperServices.Copy(Of TSource, TDest)(PocoEmit.IMapper, TSource, TDest)
+  name.vb: Copy(Of TSource, TDest)(IMapper, TSource, TDest)
+- uid: PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  commentId: M:PocoEmit.MapperServices.Build``2(PocoEmit.Copies.IEmitCopier)
+  id: Build``2(PocoEmit.Copies.IEmitCopier)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: Build<TSource, TDest>(IEmitCopier)
+  nameWithType: MapperServices.Build<TSource, TDest>(IEmitCopier)
+  fullName: PocoEmit.MapperServices.Build<TSource, TDest>(PocoEmit.Copies.IEmitCopier)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Build
+    path: ../PocoEmit.Mapper/CopyServices.cs
+    startLine: 122
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 转换委托
+  example: []
+  syntax:
+    content: 'public static Expression<Action<TSource, TDest>> Build<TSource, TDest>(this IEmitCopier emit) where TDest : class'
+    parameters:
+    - id: emit
+      type: PocoEmit.Copies.IEmitCopier
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression{System.Action{{TSource},{TDest}}}
+      description: ''
+    content.vb: Public Shared Function Build(Of TSource, TDest As Class)(emit As IEmitCopier) As Expression(Of Action(Of TSource, TDest))
+  overload: PocoEmit.MapperServices.Build*
+  nameWithType.vb: MapperServices.Build(Of TSource, TDest)(IEmitCopier)
+  fullName.vb: PocoEmit.MapperServices.Build(Of TSource, TDest)(PocoEmit.Copies.IEmitCopier)
+  name.vb: Build(Of TSource, TDest)(IEmitCopier)
+- uid: PocoEmit.MapperServices.Compile``2(PocoEmit.Copies.IEmitCopier)
+  commentId: M:PocoEmit.MapperServices.Compile``2(PocoEmit.Copies.IEmitCopier)
+  id: Compile``2(PocoEmit.Copies.IEmitCopier)
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: Compile<TSource, TDest>(IEmitCopier)
+  nameWithType: MapperServices.Compile<TSource, TDest>(IEmitCopier)
+  fullName: PocoEmit.MapperServices.Compile<TSource, TDest>(PocoEmit.Copies.IEmitCopier)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/CopyServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Compile
+    path: ../PocoEmit.Mapper/CopyServices.cs
+    startLine: 139
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 编译复制器
+  example: []
+  syntax:
+    content: 'public static Action<TSource, TDest> Compile<TSource, TDest>(IEmitCopier copier) where TDest : class'
+    parameters:
+    - id: copier
+      type: PocoEmit.Copies.IEmitCopier
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: System.Action{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Shared Function Compile(Of TSource, TDest As Class)(copier As IEmitCopier) As Action(Of TSource, TDest)
+  overload: PocoEmit.MapperServices.Compile*
+  nameWithType.vb: MapperServices.Compile(Of TSource, TDest)(IEmitCopier)
+  fullName.vb: PocoEmit.MapperServices.Compile(Of TSource, TDest)(PocoEmit.Copies.IEmitCopier)
+  name.vb: Compile(Of TSource, TDest)(IEmitCopier)
+- uid: PocoEmit.MapperServices.UseActivator``1(PocoEmit.IMapper,System.Func{``0})
+  commentId: M:PocoEmit.MapperServices.UseActivator``1(PocoEmit.IMapper,System.Func{``0})
+  id: UseActivator``1(PocoEmit.IMapper,System.Func{``0})
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: UseActivator<TInstance>(IMapper, Func<TInstance>)
+  nameWithType: MapperServices.UseActivator<TInstance>(IMapper, Func<TInstance>)
+  fullName: PocoEmit.MapperServices.UseActivator<TInstance>(PocoEmit.IMapper, System.Func<TInstance>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/MapperServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseActivator
+    path: ../PocoEmit.Mapper/MapperServices.cs
+    startLine: 22
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 设置委托来激活
+  example: []
+  syntax:
+    content: public static IMapper UseActivator<TInstance>(this IMapper mapper, Func<TInstance> activatorFunc)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: activatorFunc
+      type: System.Func{{TInstance}}
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    return:
+      type: PocoEmit.IMapper
+      description: ''
+    content.vb: Public Shared Function UseActivator(Of TInstance)(mapper As IMapper, activatorFunc As Func(Of TInstance)) As IMapper
+  overload: PocoEmit.MapperServices.UseActivator*
+  nameWithType.vb: MapperServices.UseActivator(Of TInstance)(IMapper, Func(Of TInstance))
+  fullName.vb: PocoEmit.MapperServices.UseActivator(Of TInstance)(PocoEmit.IMapper, System.Func(Of TInstance))
+  name.vb: UseActivator(Of TInstance)(IMapper, Func(Of TInstance))
+- uid: PocoEmit.MapperServices.UseActivator``2(PocoEmit.IMapper,System.Func{``0,``1})
+  commentId: M:PocoEmit.MapperServices.UseActivator``2(PocoEmit.IMapper,System.Func{``0,``1})
+  id: UseActivator``2(PocoEmit.IMapper,System.Func{``0,``1})
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: UseActivator<TSource, TDest>(IMapper, Func<TSource, TDest>)
+  nameWithType: MapperServices.UseActivator<TSource, TDest>(IMapper, Func<TSource, TDest>)
+  fullName: PocoEmit.MapperServices.UseActivator<TSource, TDest>(PocoEmit.IMapper, System.Func<TSource, TDest>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/MapperServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseActivator
+    path: ../PocoEmit.Mapper/MapperServices.cs
+    startLine: 36
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 设置带参委托来激活
+  example: []
+  syntax:
+    content: public static IMapper UseActivator<TSource, TDest>(this IMapper mapper, Func<TSource, TDest> activatorFunc)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: activatorFunc
+      type: System.Func{{TSource},{TDest}}
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: PocoEmit.IMapper
+      description: ''
+    content.vb: Public Shared Function UseActivator(Of TSource, TDest)(mapper As IMapper, activatorFunc As Func(Of TSource, TDest)) As IMapper
+  overload: PocoEmit.MapperServices.UseActivator*
+  nameWithType.vb: MapperServices.UseActivator(Of TSource, TDest)(IMapper, Func(Of TSource, TDest))
+  fullName.vb: PocoEmit.MapperServices.UseActivator(Of TSource, TDest)(PocoEmit.IMapper, System.Func(Of TSource, TDest))
+  name.vb: UseActivator(Of TSource, TDest)(IMapper, Func(Of TSource, TDest))
+- uid: PocoEmit.MapperServices.UseActivator``2(PocoEmit.IMapper,System.Func{``1})
+  commentId: M:PocoEmit.MapperServices.UseActivator``2(PocoEmit.IMapper,System.Func{``1})
+  id: UseActivator``2(PocoEmit.IMapper,System.Func{``1})
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: UseActivator<TSource, TDest>(IMapper, Func<TDest>)
+  nameWithType: MapperServices.UseActivator<TSource, TDest>(IMapper, Func<TDest>)
+  fullName: PocoEmit.MapperServices.UseActivator<TSource, TDest>(PocoEmit.IMapper, System.Func<TDest>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/MapperServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseActivator
+    path: ../PocoEmit.Mapper/MapperServices.cs
+    startLine: 50
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 设置带参委托来激活
+  example: []
+  syntax:
+    content: public static IMapper UseActivator<TSource, TDest>(this IMapper mapper, Func<TDest> activatorFunc)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: activatorFunc
+      type: System.Func{{TDest}}
+      description: ''
+    typeParameters:
+    - id: TSource
+      description: ''
+    - id: TDest
+      description: ''
+    return:
+      type: PocoEmit.IMapper
+      description: ''
+    content.vb: Public Shared Function UseActivator(Of TSource, TDest)(mapper As IMapper, activatorFunc As Func(Of TDest)) As IMapper
+  overload: PocoEmit.MapperServices.UseActivator*
+  nameWithType.vb: MapperServices.UseActivator(Of TSource, TDest)(IMapper, Func(Of TDest))
+  fullName.vb: PocoEmit.MapperServices.UseActivator(Of TSource, TDest)(PocoEmit.IMapper, System.Func(Of TDest))
+  name.vb: UseActivator(Of TSource, TDest)(IMapper, Func(Of TDest))
+- uid: PocoEmit.MapperServices.UseActivator``1(PocoEmit.IMapper)
+  commentId: M:PocoEmit.MapperServices.UseActivator``1(PocoEmit.IMapper)
+  id: UseActivator``1(PocoEmit.IMapper)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: UseActivator<TInstance>(IMapper)
+  nameWithType: MapperServices.UseActivator<TInstance>(IMapper)
+  fullName: PocoEmit.MapperServices.UseActivator<TInstance>(PocoEmit.IMapper)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/MapperServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseActivator
+    path: ../PocoEmit.Mapper/MapperServices.cs
+    startLine: 63
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 设置new来激活
+  example: []
+  syntax:
+    content: 'public static IMapper UseActivator<TInstance>(this IMapper mapper) where TInstance : new()'
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    typeParameters:
+    - id: TInstance
+      description: ''
+    return:
+      type: PocoEmit.IMapper
+      description: ''
+    content.vb: Public Shared Function UseActivator(Of TInstance As New)(mapper As IMapper) As IMapper
+  overload: PocoEmit.MapperServices.UseActivator*
+  nameWithType.vb: MapperServices.UseActivator(Of TInstance)(IMapper)
+  fullName.vb: PocoEmit.MapperServices.UseActivator(Of TInstance)(PocoEmit.IMapper)
+  name.vb: UseActivator(Of TInstance)(IMapper)
+- uid: PocoEmit.MapperServices.UseDefault``1(PocoEmit.IMapper,``0)
+  commentId: M:PocoEmit.MapperServices.UseDefault``1(PocoEmit.IMapper,``0)
+  id: UseDefault``1(PocoEmit.IMapper,``0)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: UseDefault<TValue>(IMapper, TValue)
+  nameWithType: MapperServices.UseDefault<TValue>(IMapper, TValue)
+  fullName: PocoEmit.MapperServices.UseDefault<TValue>(PocoEmit.IMapper, TValue)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/MapperServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseDefault
+    path: ../PocoEmit.Mapper/MapperServices.cs
+    startLine: 75
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 配置类型默认值
+  example: []
+  syntax:
+    content: public static IMapper UseDefault<TValue>(this IMapper mapper, TValue value)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: value
+      type: '{TValue}'
+      description: ''
+    typeParameters:
+    - id: TValue
+      description: ''
+    return:
+      type: PocoEmit.IMapper
+      description: ''
+    content.vb: Public Shared Function UseDefault(Of TValue)(mapper As IMapper, value As TValue) As IMapper
+  overload: PocoEmit.MapperServices.UseDefault*
+  nameWithType.vb: MapperServices.UseDefault(Of TValue)(IMapper, TValue)
+  fullName.vb: PocoEmit.MapperServices.UseDefault(Of TValue)(PocoEmit.IMapper, TValue)
+  name.vb: UseDefault(Of TValue)(IMapper, TValue)
+- uid: PocoEmit.MapperServices.UseDefault``1(PocoEmit.IMapper,System.Func{``0})
+  commentId: M:PocoEmit.MapperServices.UseDefault``1(PocoEmit.IMapper,System.Func{``0})
+  id: UseDefault``1(PocoEmit.IMapper,System.Func{``0})
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: UseDefault<TValue>(IMapper, Func<TValue>)
+  nameWithType: MapperServices.UseDefault<TValue>(IMapper, Func<TValue>)
+  fullName: PocoEmit.MapperServices.UseDefault<TValue>(PocoEmit.IMapper, System.Func<TValue>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/MapperServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: UseDefault
+    path: ../PocoEmit.Mapper/MapperServices.cs
+    startLine: 88
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 配置类型默认值
+  example: []
+  syntax:
+    content: public static IMapper UseDefault<TValue>(this IMapper mapper, Func<TValue> valueFunc)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: valueFunc
+      type: System.Func{{TValue}}
+      description: ''
+    typeParameters:
+    - id: TValue
+      description: ''
+    return:
+      type: PocoEmit.IMapper
+      description: ''
+    content.vb: Public Shared Function UseDefault(Of TValue)(mapper As IMapper, valueFunc As Func(Of TValue)) As IMapper
+  overload: PocoEmit.MapperServices.UseDefault*
+  nameWithType.vb: MapperServices.UseDefault(Of TValue)(IMapper, Func(Of TValue))
+  fullName.vb: PocoEmit.MapperServices.UseDefault(Of TValue)(PocoEmit.IMapper, System.Func(Of TValue))
+  name.vb: UseDefault(Of TValue)(IMapper, Func(Of TValue))
+- uid: PocoEmit.MapperServices.GetMemberMatch(PocoEmit.IMapper,System.Type,System.Type)
+  commentId: M:PocoEmit.MapperServices.GetMemberMatch(PocoEmit.IMapper,System.Type,System.Type)
+  id: GetMemberMatch(PocoEmit.IMapper,System.Type,System.Type)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: GetMemberMatch(IMapper, Type, Type)
+  nameWithType: MapperServices.GetMemberMatch(IMapper, Type, Type)
+  fullName: PocoEmit.MapperServices.GetMemberMatch(PocoEmit.IMapper, System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/MapperServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: GetMemberMatch
+    path: ../PocoEmit.Mapper/MapperServices.cs
+    startLine: 102
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 获取成员匹配
+  example: []
+  syntax:
+    content: public static IMemberMatch GetMemberMatch(this IMapper mapper, Type sourceType, Type destType)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: ''
+    - id: sourceType
+      type: System.Type
+      description: ''
+    - id: destType
+      type: System.Type
+      description: ''
+    return:
+      type: PocoEmit.Maping.IMemberMatch
+      description: ''
+    content.vb: Public Shared Function GetMemberMatch(mapper As IMapper, sourceType As Type, destType As Type) As IMemberMatch
+  overload: PocoEmit.MapperServices.GetMemberMatch*
+- uid: PocoEmit.MapperServices.ConfigureMap``2(PocoEmit.IMapper,System.StringComparison)
+  commentId: M:PocoEmit.MapperServices.ConfigureMap``2(PocoEmit.IMapper,System.StringComparison)
+  id: ConfigureMap``2(PocoEmit.IMapper,System.StringComparison)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: ConfigureMap<TSource, TDest>(IMapper, StringComparison)
+  nameWithType: MapperServices.ConfigureMap<TSource, TDest>(IMapper, StringComparison)
+  fullName: PocoEmit.MapperServices.ConfigureMap<TSource, TDest>(PocoEmit.IMapper, System.StringComparison)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/MapperServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConfigureMap
+    path: ../PocoEmit.Mapper/MapperServices.cs
+    startLine: 112
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 配置类型映射
+  example: []
+  syntax:
+    content: public static MapHelper<TSource, TDest> ConfigureMap<TSource, TDest>(this IMapper mapper, StringComparison comparison)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: 映射配置
+    - id: comparison
+      type: System.StringComparison
+      description: 比较器
+    typeParameters:
+    - id: TSource
+      description: 源类型
+    - id: TDest
+      description: 目标类型
+    return:
+      type: PocoEmit.Helpers.MapHelper{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Shared Function ConfigureMap(Of TSource, TDest)(mapper As IMapper, comparison As StringComparison) As MapHelper(Of TSource, TDest)
+  overload: PocoEmit.MapperServices.ConfigureMap*
+  nameWithType.vb: MapperServices.ConfigureMap(Of TSource, TDest)(IMapper, StringComparison)
+  fullName.vb: PocoEmit.MapperServices.ConfigureMap(Of TSource, TDest)(PocoEmit.IMapper, System.StringComparison)
+  name.vb: ConfigureMap(Of TSource, TDest)(IMapper, StringComparison)
+- uid: PocoEmit.MapperServices.ConfigureMap``2(PocoEmit.IMapper)
+  commentId: M:PocoEmit.MapperServices.ConfigureMap``2(PocoEmit.IMapper)
+  id: ConfigureMap``2(PocoEmit.IMapper)
+  isExtensionMethod: true
+  parent: PocoEmit.MapperServices
+  langs:
+  - csharp
+  - vb
+  name: ConfigureMap<TSource, TDest>(IMapper)
+  nameWithType: MapperServices.ConfigureMap<TSource, TDest>(IMapper)
+  fullName: PocoEmit.MapperServices.ConfigureMap<TSource, TDest>(PocoEmit.IMapper)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/MapperServices.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConfigureMap
+    path: ../PocoEmit.Mapper/MapperServices.cs
+    startLine: 121
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit
+  summary: 配置类型映射
+  example: []
+  syntax:
+    content: public static MapHelper<TSource, TDest> ConfigureMap<TSource, TDest>(this IMapper mapper)
+    parameters:
+    - id: mapper
+      type: PocoEmit.IMapper
+      description: 映射配置
+    typeParameters:
+    - id: TSource
+      description: 源类型
+    - id: TDest
+      description: 目标类型
+    return:
+      type: PocoEmit.Helpers.MapHelper{{TSource},{TDest}}
+      description: ''
+    content.vb: Public Shared Function ConfigureMap(Of TSource, TDest)(mapper As IMapper) As MapHelper(Of TSource, TDest)
+  overload: PocoEmit.MapperServices.ConfigureMap*
+  nameWithType.vb: MapperServices.ConfigureMap(Of TSource, TDest)(IMapper)
+  fullName.vb: PocoEmit.MapperServices.ConfigureMap(Of TSource, TDest)(PocoEmit.IMapper)
+  name.vb: ConfigureMap(Of TSource, TDest)(IMapper)
+references:
+- uid: PocoEmit
+  commentId: N:PocoEmit
+  href: PocoEmit.html
+  name: PocoEmit
+  nameWithType: PocoEmit
+  fullName: PocoEmit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.MapperServices.UseCopyAction*
+  commentId: Overload:PocoEmit.MapperServices.UseCopyAction
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseCopyAction__2_PocoEmit_IMapper_System_Action___0___1__
+  name: UseCopyAction
+  nameWithType: MapperServices.UseCopyAction
+  fullName: PocoEmit.MapperServices.UseCopyAction
+- uid: PocoEmit.IMapper
+  commentId: T:PocoEmit.IMapper
+  parent: PocoEmit
+  href: PocoEmit.IMapper.html
+  name: IMapper
+  nameWithType: IMapper
+  fullName: PocoEmit.IMapper
+- uid: System.Action{{TSource},{TDest}}
+  commentId: T:System.Action{``0,``1}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TSource, TDest>
+  nameWithType: Action<TSource, TDest>
+  fullName: System.Action<TSource, TDest>
+  nameWithType.vb: Action(Of TSource, TDest)
+  fullName.vb: System.Action(Of TSource, TDest)
+  name.vb: Action(Of TSource, TDest)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.IPoco
+  commentId: T:PocoEmit.IPoco
+  parent: PocoEmit
+  href: PocoEmit.IPoco.html
+  name: IPoco
+  nameWithType: IPoco
+  fullName: PocoEmit.IPoco
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: PocoEmit.MapperServices.UseStaticCopier*
+  commentId: Overload:PocoEmit.MapperServices.UseStaticCopier
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseStaticCopier__1_PocoEmit_IMapper_
+  name: UseStaticCopier
+  nameWithType: MapperServices.UseStaticCopier
+  fullName: PocoEmit.MapperServices.UseStaticCopier
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: PocoEmit.MapperServices.UseCopier*
+  commentId: Overload:PocoEmit.MapperServices.UseCopier
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseCopier_PocoEmit_IMapper_System_Object_
+  name: UseCopier
+  nameWithType: MapperServices.UseCopier
+  fullName: PocoEmit.MapperServices.UseCopier
+- uid: PocoEmit.MapperServices.SetCopy*
+  commentId: Overload:PocoEmit.MapperServices.SetCopy
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_SetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  name: SetCopy
+  nameWithType: MapperServices.SetCopy
+  fullName: PocoEmit.MapperServices.SetCopy
+- uid: PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  commentId: T:PocoEmit.Collections.ICacher{PocoEmit.Configuration.PairTypeKey,PocoEmit.Copies.IEmitCopier}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<PairTypeKey, IEmitCopier>
+  nameWithType: ICacher<PairTypeKey, IEmitCopier>
+  fullName: PocoEmit.Collections.ICacher<PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier>
+  nameWithType.vb: ICacher(Of PairTypeKey, IEmitCopier)
+  fullName.vb: PocoEmit.Collections.ICacher(Of PocoEmit.Configuration.PairTypeKey, PocoEmit.Copies.IEmitCopier)
+  name.vb: ICacher(Of PairTypeKey, IEmitCopier)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Configuration.PairTypeKey
+    name: PairTypeKey
+    href: PocoEmit.Configuration.PairTypeKey.html
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Copies.IEmitCopier
+    name: IEmitCopier
+    href: PocoEmit.Copies.IEmitCopier.html
+  - name: )
+- uid: PocoEmit.Copies.DelegateCopier{{TSource},{TDest}}
+  commentId: T:PocoEmit.Copies.DelegateCopier{``0,``1}
+  parent: PocoEmit.Copies
+  definition: PocoEmit.Copies.DelegateCopier`2
+  href: PocoEmit.Copies.DelegateCopier-2.html
+  name: DelegateCopier<TSource, TDest>
+  nameWithType: DelegateCopier<TSource, TDest>
+  fullName: PocoEmit.Copies.DelegateCopier<TSource, TDest>
+  nameWithType.vb: DelegateCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.Copies.DelegateCopier(Of TSource, TDest)
+  name.vb: DelegateCopier(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Copies.DelegateCopier`2
+    name: DelegateCopier
+    href: PocoEmit.Copies.DelegateCopier-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Copies.DelegateCopier`2
+    name: DelegateCopier
+    href: PocoEmit.Copies.DelegateCopier-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Collections.ICacher`2
+  commentId: T:PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<TKey, TValue>
+  nameWithType: ICacher<TKey, TValue>
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>
+  nameWithType.vb: ICacher(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue)
+  name.vb: ICacher(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: PocoEmit.Copies.DelegateCopier`2
+  commentId: T:PocoEmit.Copies.DelegateCopier`2
+  href: PocoEmit.Copies.DelegateCopier-2.html
+  name: DelegateCopier<TSource, TDest>
+  nameWithType: DelegateCopier<TSource, TDest>
+  fullName: PocoEmit.Copies.DelegateCopier<TSource, TDest>
+  nameWithType.vb: DelegateCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.Copies.DelegateCopier(Of TSource, TDest)
+  name.vb: DelegateCopier(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Copies.DelegateCopier`2
+    name: DelegateCopier
+    href: PocoEmit.Copies.DelegateCopier-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Copies.DelegateCopier`2
+    name: DelegateCopier
+    href: PocoEmit.Copies.DelegateCopier-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Copies
+  commentId: N:PocoEmit.Copies
+  href: PocoEmit.html
+  name: PocoEmit.Copies
+  nameWithType: PocoEmit.Copies
+  fullName: PocoEmit.Copies
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Copies
+    name: Copies
+    href: PocoEmit.Copies.html
+- uid: PocoEmit.MapperServices.TrySetCopy*
+  commentId: Overload:PocoEmit.MapperServices.TrySetCopy
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_TrySetCopy__2_PocoEmit_Collections_ICacher_PocoEmit_Configuration_PairTypeKey_PocoEmit_Copies_IEmitCopier__System_Action___0___1__
+  name: TrySetCopy
+  nameWithType: MapperServices.TrySetCopy
+  fullName: PocoEmit.MapperServices.TrySetCopy
+- uid: PocoEmit.Copies.IEmitCopier
+  commentId: T:PocoEmit.Copies.IEmitCopier
+  parent: PocoEmit.Copies
+  href: PocoEmit.Copies.IEmitCopier.html
+  name: IEmitCopier
+  nameWithType: IEmitCopier
+  fullName: PocoEmit.Copies.IEmitCopier
+- uid: PocoEmit.MapperServices.GetCopier*
+  commentId: Overload:PocoEmit.MapperServices.GetCopier
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_GetCopier__2_PocoEmit_IMapper_
+  name: GetCopier
+  nameWithType: MapperServices.GetCopier
+  fullName: PocoEmit.MapperServices.GetCopier
+- uid: PocoEmit.IPocoCopier{{TSource},{TDest}}
+  commentId: T:PocoEmit.IPocoCopier{``0,``1}
+  parent: PocoEmit
+  definition: PocoEmit.IPocoCopier`2
+  href: PocoEmit.IPocoCopier-2.html
+  name: IPocoCopier<TSource, TDest>
+  nameWithType: IPocoCopier<TSource, TDest>
+  fullName: PocoEmit.IPocoCopier<TSource, TDest>
+  nameWithType.vb: IPocoCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoCopier(Of TSource, TDest)
+  name.vb: IPocoCopier(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier
+    href: PocoEmit.IPocoCopier-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier
+    href: PocoEmit.IPocoCopier-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.IPocoCopier`2
+  commentId: T:PocoEmit.IPocoCopier`2
+  href: PocoEmit.IPocoCopier-2.html
+  name: IPocoCopier<TSource, TDest>
+  nameWithType: IPocoCopier<TSource, TDest>
+  fullName: PocoEmit.IPocoCopier<TSource, TDest>
+  nameWithType.vb: IPocoCopier(Of TSource, TDest)
+  fullName.vb: PocoEmit.IPocoCopier(Of TSource, TDest)
+  name.vb: IPocoCopier(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier
+    href: PocoEmit.IPocoCopier-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.IPocoCopier`2
+    name: IPocoCopier
+    href: PocoEmit.IPocoCopier-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.MapperServices.GetObjectCopier*
+  commentId: Overload:PocoEmit.MapperServices.GetObjectCopier
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_GetObjectCopier_PocoEmit_IMapper_System_Type_System_Type_
+  name: GetObjectCopier
+  nameWithType: MapperServices.GetObjectCopier
+  fullName: PocoEmit.MapperServices.GetObjectCopier
+- uid: PocoEmit.MapperServices.GetCopyAction*
+  commentId: Overload:PocoEmit.MapperServices.GetCopyAction
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_GetCopyAction__2_PocoEmit_IMapper_
+  name: GetCopyAction
+  nameWithType: MapperServices.GetCopyAction
+  fullName: PocoEmit.MapperServices.GetCopyAction
+- uid: PocoEmit.MapperServices.GetEmitCopier*
+  commentId: Overload:PocoEmit.MapperServices.GetEmitCopier
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_GetEmitCopier_PocoEmit_IMapper_System_Type_System_Type_
+  name: GetEmitCopier
+  nameWithType: MapperServices.GetEmitCopier
+  fullName: PocoEmit.MapperServices.GetEmitCopier
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: PocoEmit.MapperServices.Copy*
+  commentId: Overload:PocoEmit.MapperServices.Copy
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Copy__2_PocoEmit_IMapper___0___1_
+  name: Copy
+  nameWithType: MapperServices.Copy
+  fullName: PocoEmit.MapperServices.Copy
+- uid: '{TSource}'
+  commentId: '!:TSource'
+  definition: TSource
+  name: TSource
+  nameWithType: TSource
+  fullName: TSource
+- uid: '{TDest}'
+  commentId: '!:TDest'
+  definition: TDest
+  name: TDest
+  nameWithType: TDest
+  fullName: TDest
+- uid: TSource
+  name: TSource
+  nameWithType: TSource
+  fullName: TSource
+- uid: TDest
+  name: TDest
+  nameWithType: TDest
+  fullName: TDest
+- uid: PocoEmit.MapperServices.Build*
+  commentId: Overload:PocoEmit.MapperServices.Build
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Build__2_PocoEmit_Copies_IEmitCopier_
+  name: Build
+  nameWithType: MapperServices.Build
+  fullName: PocoEmit.MapperServices.Build
+- uid: System.Linq.Expressions.Expression{System.Action{{TSource},{TDest}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Action{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Action<TSource, TDest>>
+  nameWithType: Expression<Action<TSource, TDest>>
+  fullName: System.Linq.Expressions.Expression<System.Action<TSource, TDest>>
+  nameWithType.vb: Expression(Of Action(Of TSource, TDest))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Action(Of TSource, TDest))
+  name.vb: Expression(Of Action(Of TSource, TDest))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: PocoEmit.MapperServices.Compile*
+  commentId: Overload:PocoEmit.MapperServices.Compile
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_Compile__2_PocoEmit_Copies_IEmitCopier_
+  name: Compile
+  nameWithType: MapperServices.Compile
+  fullName: PocoEmit.MapperServices.Compile
+- uid: PocoEmit.MapperServices.UseActivator*
+  commentId: Overload:PocoEmit.MapperServices.UseActivator
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseActivator__1_PocoEmit_IMapper_System_Func___0__
+  name: UseActivator
+  nameWithType: MapperServices.UseActivator
+  fullName: PocoEmit.MapperServices.UseActivator
+- uid: System.Func{{TInstance}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TInstance>
+  nameWithType: Func<TInstance>
+  fullName: System.Func<TInstance>
+  nameWithType.vb: Func(Of TInstance)
+  fullName.vb: System.Func(Of TInstance)
+  name.vb: Func(Of TInstance)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TInstance
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{TSource},{TDest}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TSource, TDest>
+  nameWithType: Func<TSource, TDest>
+  fullName: System.Func<TSource, TDest>
+  nameWithType.vb: Func(Of TSource, TDest)
+  fullName.vb: System.Func(Of TSource, TDest)
+  name.vb: Func(Of TSource, TDest)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{TDest}}
+  commentId: T:System.Func{``1}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TDest>
+  nameWithType: Func<TDest>
+  fullName: System.Func<TDest>
+  nameWithType.vb: Func(Of TDest)
+  fullName.vb: System.Func(Of TDest)
+  name.vb: Func(Of TDest)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.MapperServices.UseDefault*
+  commentId: Overload:PocoEmit.MapperServices.UseDefault
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_UseDefault__1_PocoEmit_IMapper___0_
+  name: UseDefault
+  nameWithType: MapperServices.UseDefault
+  fullName: PocoEmit.MapperServices.UseDefault
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: System.Func{{TValue}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TValue>
+  nameWithType: Func<TValue>
+  fullName: System.Func<TValue>
+  nameWithType.vb: Func(Of TValue)
+  fullName.vb: System.Func(Of TValue)
+  name.vb: Func(Of TValue)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.MapperServices.GetMemberMatch*
+  commentId: Overload:PocoEmit.MapperServices.GetMemberMatch
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_GetMemberMatch_PocoEmit_IMapper_System_Type_System_Type_
+  name: GetMemberMatch
+  nameWithType: MapperServices.GetMemberMatch
+  fullName: PocoEmit.MapperServices.GetMemberMatch
+- uid: PocoEmit.Maping.IMemberMatch
+  commentId: T:PocoEmit.Maping.IMemberMatch
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.IMemberMatch.html
+  name: IMemberMatch
+  nameWithType: IMemberMatch
+  fullName: PocoEmit.Maping.IMemberMatch
+- uid: PocoEmit.Maping
+  commentId: N:PocoEmit.Maping
+  href: PocoEmit.html
+  name: PocoEmit.Maping
+  nameWithType: PocoEmit.Maping
+  fullName: PocoEmit.Maping
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Maping
+    name: Maping
+    href: PocoEmit.Maping.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Maping
+    name: Maping
+    href: PocoEmit.Maping.html
+- uid: PocoEmit.MapperServices.ConfigureMap*
+  commentId: Overload:PocoEmit.MapperServices.ConfigureMap
+  href: PocoEmit.MapperServices.html#PocoEmit_MapperServices_ConfigureMap__2_PocoEmit_IMapper_System_StringComparison_
+  name: ConfigureMap
+  nameWithType: MapperServices.ConfigureMap
+  fullName: PocoEmit.MapperServices.ConfigureMap
+- uid: System.StringComparison
+  commentId: T:System.StringComparison
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.stringcomparison
+  name: StringComparison
+  nameWithType: StringComparison
+  fullName: System.StringComparison
+- uid: PocoEmit.Helpers.MapHelper{{TSource},{TDest}}
+  commentId: T:PocoEmit.Helpers.MapHelper{``0,``1}
+  parent: PocoEmit.Helpers
+  definition: PocoEmit.Helpers.MapHelper`2
+  href: PocoEmit.Helpers.MapHelper-2.html
+  name: MapHelper<TSource, TDest>
+  nameWithType: MapHelper<TSource, TDest>
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>
+  nameWithType.vb: MapHelper(Of TSource, TDest)
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest)
+  name.vb: MapHelper(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Helpers.MapHelper`2
+  commentId: T:PocoEmit.Helpers.MapHelper`2
+  parent: PocoEmit.Helpers
+  href: PocoEmit.Helpers.MapHelper-2.html
+  name: MapHelper<TSource, TDest>
+  nameWithType: MapHelper<TSource, TDest>
+  fullName: PocoEmit.Helpers.MapHelper<TSource, TDest>
+  nameWithType.vb: MapHelper(Of TSource, TDest)
+  fullName.vb: PocoEmit.Helpers.MapHelper(Of TSource, TDest)
+  name.vb: MapHelper(Of TSource, TDest)
+  spec.csharp:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Helpers.MapHelper`2
+    name: MapHelper
+    href: PocoEmit.Helpers.MapHelper-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TDest
+  - name: )
+- uid: PocoEmit.Helpers
+  commentId: N:PocoEmit.Helpers
+  href: PocoEmit.html
+  name: PocoEmit.Helpers
+  nameWithType: PocoEmit.Helpers
+  fullName: PocoEmit.Helpers
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Helpers
+    name: Helpers
+    href: PocoEmit.Helpers.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Helpers
+    name: Helpers
+    href: PocoEmit.Helpers.html

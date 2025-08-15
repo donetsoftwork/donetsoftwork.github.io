@@ -1,0 +1,930 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Collections.MemberContainer
+  commentId: T:PocoEmit.Collections.MemberContainer
+  id: MemberContainer
+  parent: PocoEmit.Collections
+  children:
+  - PocoEmit.Collections.MemberContainer.Configure(System.Action{PocoEmit.Configuration.MemberContainerOptions})
+  - PocoEmit.Collections.MemberContainer.Instance
+  - PocoEmit.Collections.MemberContainer.MemberReaderCacher
+  - PocoEmit.Collections.MemberContainer.MemberWriterCacher
+  - PocoEmit.Collections.MemberContainer.Readers
+  - PocoEmit.Collections.MemberContainer.Writers
+  langs:
+  - csharp
+  - vb
+  name: MemberContainer
+  nameWithType: MemberContainer
+  fullName: PocoEmit.Collections.MemberContainer
+  type: Class
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberContainer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MemberContainer
+    path: ../PocoEmit/Collections/MemberContainer.cs
+    startLine: 17
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 成员容器
+  example: []
+  syntax:
+    content: 'public class MemberContainer : ICacher<FieldInfo, FieldAccessor>, IStore<FieldInfo, FieldAccessor>, ICacher<PropertyInfo, PropertyAccessor>, IStore<PropertyInfo, PropertyAccessor>, ICacher<MemberInfo, IEmitMemberReader>, IStore<MemberInfo, IEmitMemberReader>, ICacher<MemberInfo, IEmitMemberWriter>, IStore<MemberInfo, IEmitMemberWriter>'
+    content.vb: Public Class MemberContainer Implements ICacher(Of FieldInfo, FieldAccessor), IStore(Of FieldInfo, FieldAccessor), ICacher(Of PropertyInfo, PropertyAccessor), IStore(Of PropertyInfo, PropertyAccessor), ICacher(Of MemberInfo, IEmitMemberReader), IStore(Of MemberInfo, IEmitMemberReader), ICacher(Of MemberInfo, IEmitMemberWriter), IStore(Of MemberInfo, IEmitMemberWriter)
+  inheritance:
+  - System.Object
+  implements:
+  - PocoEmit.Collections.ICacher{System.Reflection.FieldInfo,PocoEmit.Members.FieldAccessor}
+  - PocoEmit.Collections.IStore{System.Reflection.FieldInfo,PocoEmit.Members.FieldAccessor}
+  - PocoEmit.Collections.ICacher{System.Reflection.PropertyInfo,PocoEmit.Members.PropertyAccessor}
+  - PocoEmit.Collections.IStore{System.Reflection.PropertyInfo,PocoEmit.Members.PropertyAccessor}
+  - PocoEmit.Collections.ICacher{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberReader}
+  - PocoEmit.Collections.IStore{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberReader}
+  - PocoEmit.Collections.ICacher{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberWriter}
+  - PocoEmit.Collections.IStore{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberWriter}
+- uid: PocoEmit.Collections.MemberContainer.Readers
+  commentId: P:PocoEmit.Collections.MemberContainer.Readers
+  id: Readers
+  parent: PocoEmit.Collections.MemberContainer
+  langs:
+  - csharp
+  - vb
+  name: Readers
+  nameWithType: MemberContainer.Readers
+  fullName: PocoEmit.Collections.MemberContainer.Readers
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberContainer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Readers
+    path: ../PocoEmit/Collections/MemberContainer.cs
+    startLine: 71
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 读取器
+  example: []
+  syntax:
+    content: public IEnumerable<IEmitMemberReader> Readers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+    content.vb: Public ReadOnly Property Readers As IEnumerable(Of IEmitMemberReader)
+  overload: PocoEmit.Collections.MemberContainer.Readers*
+- uid: PocoEmit.Collections.MemberContainer.Writers
+  commentId: P:PocoEmit.Collections.MemberContainer.Writers
+  id: Writers
+  parent: PocoEmit.Collections.MemberContainer
+  langs:
+  - csharp
+  - vb
+  name: Writers
+  nameWithType: MemberContainer.Writers
+  fullName: PocoEmit.Collections.MemberContainer.Writers
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberContainer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Writers
+    path: ../PocoEmit/Collections/MemberContainer.cs
+    startLine: 76
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 写入器
+  example: []
+  syntax:
+    content: public IEnumerable<IEmitMemberWriter> Writers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter}
+    content.vb: Public ReadOnly Property Writers As IEnumerable(Of IEmitMemberWriter)
+  overload: PocoEmit.Collections.MemberContainer.Writers*
+- uid: PocoEmit.Collections.MemberContainer.MemberReaderCacher
+  commentId: P:PocoEmit.Collections.MemberContainer.MemberReaderCacher
+  id: MemberReaderCacher
+  parent: PocoEmit.Collections.MemberContainer
+  langs:
+  - csharp
+  - vb
+  name: MemberReaderCacher
+  nameWithType: MemberContainer.MemberReaderCacher
+  fullName: PocoEmit.Collections.MemberContainer.MemberReaderCacher
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberContainer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MemberReaderCacher
+    path: ../PocoEmit/Collections/MemberContainer.cs
+    startLine: 79
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  example: []
+  syntax:
+    content: public MemberReaderCacher MemberReaderCacher { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Collections.MemberReaderCacher
+    content.vb: Public ReadOnly Property MemberReaderCacher As MemberReaderCacher
+  overload: PocoEmit.Collections.MemberContainer.MemberReaderCacher*
+- uid: PocoEmit.Collections.MemberContainer.MemberWriterCacher
+  commentId: P:PocoEmit.Collections.MemberContainer.MemberWriterCacher
+  id: MemberWriterCacher
+  parent: PocoEmit.Collections.MemberContainer
+  langs:
+  - csharp
+  - vb
+  name: MemberWriterCacher
+  nameWithType: MemberContainer.MemberWriterCacher
+  fullName: PocoEmit.Collections.MemberContainer.MemberWriterCacher
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberContainer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: MemberWriterCacher
+    path: ../PocoEmit/Collections/MemberContainer.cs
+    startLine: 82
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  example: []
+  syntax:
+    content: public MemberWriterCacher MemberWriterCacher { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Collections.MemberWriterCacher
+    content.vb: Public ReadOnly Property MemberWriterCacher As MemberWriterCacher
+  overload: PocoEmit.Collections.MemberContainer.MemberWriterCacher*
+- uid: PocoEmit.Collections.MemberContainer.Configure(System.Action{PocoEmit.Configuration.MemberContainerOptions})
+  commentId: M:PocoEmit.Collections.MemberContainer.Configure(System.Action{PocoEmit.Configuration.MemberContainerOptions})
+  id: Configure(System.Action{PocoEmit.Configuration.MemberContainerOptions})
+  parent: PocoEmit.Collections.MemberContainer
+  langs:
+  - csharp
+  - vb
+  name: Configure(Action<MemberContainerOptions>)
+  nameWithType: MemberContainer.Configure(Action<MemberContainerOptions>)
+  fullName: PocoEmit.Collections.MemberContainer.Configure(System.Action<PocoEmit.Configuration.MemberContainerOptions>)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberContainer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Configure
+    path: ../PocoEmit/Collections/MemberContainer.cs
+    startLine: 150
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 配置(在第一次调用Instance之前配置才能生效)
+  example: []
+  syntax:
+    content: public static void Configure(Action<MemberContainerOptions> options)
+    parameters:
+    - id: options
+      type: System.Action{PocoEmit.Configuration.MemberContainerOptions}
+      description: ''
+    content.vb: Public Shared Sub Configure(options As Action(Of MemberContainerOptions))
+  overload: PocoEmit.Collections.MemberContainer.Configure*
+  nameWithType.vb: MemberContainer.Configure(Action(Of MemberContainerOptions))
+  fullName.vb: PocoEmit.Collections.MemberContainer.Configure(System.Action(Of PocoEmit.Configuration.MemberContainerOptions))
+  name.vb: Configure(Action(Of MemberContainerOptions))
+- uid: PocoEmit.Collections.MemberContainer.Instance
+  commentId: P:PocoEmit.Collections.MemberContainer.Instance
+  id: Instance
+  parent: PocoEmit.Collections.MemberContainer
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: MemberContainer.Instance
+  fullName: PocoEmit.Collections.MemberContainer.Instance
+  type: Property
+  source:
+    remote:
+      path: PocoEmit/Collections/MemberContainer.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Instance
+    path: ../PocoEmit/Collections/MemberContainer.cs
+    startLine: 163
+  assemblies:
+  - PocoEmit
+  namespace: PocoEmit.Collections
+  summary: 成员容器实例
+  example: []
+  syntax:
+    content: public static MemberContainer Instance { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Collections.MemberContainer
+    content.vb: Public Shared ReadOnly Property Instance As MemberContainer
+  overload: PocoEmit.Collections.MemberContainer.Instance*
+references:
+- uid: PocoEmit.Collections
+  commentId: N:PocoEmit.Collections
+  href: PocoEmit.html
+  name: PocoEmit.Collections
+  nameWithType: PocoEmit.Collections
+  fullName: PocoEmit.Collections
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Collections
+    name: Collections
+    href: PocoEmit.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PocoEmit.Collections.ICacher{System.Reflection.FieldInfo,PocoEmit.Members.FieldAccessor}
+  commentId: T:PocoEmit.Collections.ICacher{System.Reflection.FieldInfo,PocoEmit.Members.FieldAccessor}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<FieldInfo, FieldAccessor>
+  nameWithType: ICacher<FieldInfo, FieldAccessor>
+  fullName: PocoEmit.Collections.ICacher<System.Reflection.FieldInfo, PocoEmit.Members.FieldAccessor>
+  nameWithType.vb: ICacher(Of FieldInfo, FieldAccessor)
+  fullName.vb: PocoEmit.Collections.ICacher(Of System.Reflection.FieldInfo, PocoEmit.Members.FieldAccessor)
+  name.vb: ICacher(Of FieldInfo, FieldAccessor)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.FieldAccessor
+    name: FieldAccessor
+    href: PocoEmit.Members.FieldAccessor.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.FieldAccessor
+    name: FieldAccessor
+    href: PocoEmit.Members.FieldAccessor.html
+  - name: )
+- uid: PocoEmit.Collections.IStore{System.Reflection.FieldInfo,PocoEmit.Members.FieldAccessor}
+  commentId: T:PocoEmit.Collections.IStore{System.Reflection.FieldInfo,PocoEmit.Members.FieldAccessor}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<FieldInfo, FieldAccessor>
+  nameWithType: IStore<FieldInfo, FieldAccessor>
+  fullName: PocoEmit.Collections.IStore<System.Reflection.FieldInfo, PocoEmit.Members.FieldAccessor>
+  nameWithType.vb: IStore(Of FieldInfo, FieldAccessor)
+  fullName.vb: PocoEmit.Collections.IStore(Of System.Reflection.FieldInfo, PocoEmit.Members.FieldAccessor)
+  name.vb: IStore(Of FieldInfo, FieldAccessor)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.FieldAccessor
+    name: FieldAccessor
+    href: PocoEmit.Members.FieldAccessor.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.FieldAccessor
+    name: FieldAccessor
+    href: PocoEmit.Members.FieldAccessor.html
+  - name: )
+- uid: PocoEmit.Collections.ICacher{System.Reflection.PropertyInfo,PocoEmit.Members.PropertyAccessor}
+  commentId: T:PocoEmit.Collections.ICacher{System.Reflection.PropertyInfo,PocoEmit.Members.PropertyAccessor}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<PropertyInfo, PropertyAccessor>
+  nameWithType: ICacher<PropertyInfo, PropertyAccessor>
+  fullName: PocoEmit.Collections.ICacher<System.Reflection.PropertyInfo, PocoEmit.Members.PropertyAccessor>
+  nameWithType.vb: ICacher(Of PropertyInfo, PropertyAccessor)
+  fullName.vb: PocoEmit.Collections.ICacher(Of System.Reflection.PropertyInfo, PocoEmit.Members.PropertyAccessor)
+  name.vb: ICacher(Of PropertyInfo, PropertyAccessor)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.PropertyAccessor
+    name: PropertyAccessor
+    href: PocoEmit.Members.PropertyAccessor.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.PropertyAccessor
+    name: PropertyAccessor
+    href: PocoEmit.Members.PropertyAccessor.html
+  - name: )
+- uid: PocoEmit.Collections.IStore{System.Reflection.PropertyInfo,PocoEmit.Members.PropertyAccessor}
+  commentId: T:PocoEmit.Collections.IStore{System.Reflection.PropertyInfo,PocoEmit.Members.PropertyAccessor}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<PropertyInfo, PropertyAccessor>
+  nameWithType: IStore<PropertyInfo, PropertyAccessor>
+  fullName: PocoEmit.Collections.IStore<System.Reflection.PropertyInfo, PocoEmit.Members.PropertyAccessor>
+  nameWithType.vb: IStore(Of PropertyInfo, PropertyAccessor)
+  fullName.vb: PocoEmit.Collections.IStore(Of System.Reflection.PropertyInfo, PocoEmit.Members.PropertyAccessor)
+  name.vb: IStore(Of PropertyInfo, PropertyAccessor)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.PropertyAccessor
+    name: PropertyAccessor
+    href: PocoEmit.Members.PropertyAccessor.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.PropertyAccessor
+    name: PropertyAccessor
+    href: PocoEmit.Members.PropertyAccessor.html
+  - name: )
+- uid: PocoEmit.Collections.ICacher{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberReader}
+  commentId: T:PocoEmit.Collections.ICacher{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberReader}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<MemberInfo, IEmitMemberReader>
+  nameWithType: ICacher<MemberInfo, IEmitMemberReader>
+  fullName: PocoEmit.Collections.ICacher<System.Reflection.MemberInfo, PocoEmit.Members.IEmitMemberReader>
+  nameWithType.vb: ICacher(Of MemberInfo, IEmitMemberReader)
+  fullName.vb: PocoEmit.Collections.ICacher(Of System.Reflection.MemberInfo, PocoEmit.Members.IEmitMemberReader)
+  name.vb: ICacher(Of MemberInfo, IEmitMemberReader)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: PocoEmit.Collections.IStore{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberReader}
+  commentId: T:PocoEmit.Collections.IStore{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberReader}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<MemberInfo, IEmitMemberReader>
+  nameWithType: IStore<MemberInfo, IEmitMemberReader>
+  fullName: PocoEmit.Collections.IStore<System.Reflection.MemberInfo, PocoEmit.Members.IEmitMemberReader>
+  nameWithType.vb: IStore(Of MemberInfo, IEmitMemberReader)
+  fullName.vb: PocoEmit.Collections.IStore(Of System.Reflection.MemberInfo, PocoEmit.Members.IEmitMemberReader)
+  name.vb: IStore(Of MemberInfo, IEmitMemberReader)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: PocoEmit.Collections.ICacher{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberWriter}
+  commentId: T:PocoEmit.Collections.ICacher{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberWriter}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<MemberInfo, IEmitMemberWriter>
+  nameWithType: ICacher<MemberInfo, IEmitMemberWriter>
+  fullName: PocoEmit.Collections.ICacher<System.Reflection.MemberInfo, PocoEmit.Members.IEmitMemberWriter>
+  nameWithType.vb: ICacher(Of MemberInfo, IEmitMemberWriter)
+  fullName.vb: PocoEmit.Collections.ICacher(Of System.Reflection.MemberInfo, PocoEmit.Members.IEmitMemberWriter)
+  name.vb: ICacher(Of MemberInfo, IEmitMemberWriter)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: PocoEmit.Collections.IStore{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberWriter}
+  commentId: T:PocoEmit.Collections.IStore{System.Reflection.MemberInfo,PocoEmit.Members.IEmitMemberWriter}
+  parent: PocoEmit.Collections
+  definition: PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<MemberInfo, IEmitMemberWriter>
+  nameWithType: IStore<MemberInfo, IEmitMemberWriter>
+  fullName: PocoEmit.Collections.IStore<System.Reflection.MemberInfo, PocoEmit.Members.IEmitMemberWriter>
+  nameWithType.vb: IStore(Of MemberInfo, IEmitMemberWriter)
+  fullName.vb: PocoEmit.Collections.IStore(Of System.Reflection.MemberInfo, PocoEmit.Members.IEmitMemberWriter)
+  name.vb: IStore(Of MemberInfo, IEmitMemberWriter)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: ','
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PocoEmit.Collections.ICacher`2
+  commentId: T:PocoEmit.Collections.ICacher`2
+  href: PocoEmit.Collections.ICacher-2.html
+  name: ICacher<TKey, TValue>
+  nameWithType: ICacher<TKey, TValue>
+  fullName: PocoEmit.Collections.ICacher<TKey, TValue>
+  nameWithType.vb: ICacher(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.ICacher(Of TKey, TValue)
+  name.vb: ICacher(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.ICacher`2
+    name: ICacher
+    href: PocoEmit.Collections.ICacher-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.IStore`2
+  commentId: T:PocoEmit.Collections.IStore`2
+  href: PocoEmit.Collections.IStore-2.html
+  name: IStore<TKey, TValue>
+  nameWithType: IStore<TKey, TValue>
+  fullName: PocoEmit.Collections.IStore<TKey, TValue>
+  nameWithType.vb: IStore(Of TKey, TValue)
+  fullName.vb: PocoEmit.Collections.IStore(Of TKey, TValue)
+  name.vb: IStore(Of TKey, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Collections.IStore`2
+    name: IStore
+    href: PocoEmit.Collections.IStore-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Collections.MemberContainer.Readers*
+  commentId: Overload:PocoEmit.Collections.MemberContainer.Readers
+  href: PocoEmit.Collections.MemberContainer.html#PocoEmit_Collections_MemberContainer_Readers
+  name: Readers
+  nameWithType: MemberContainer.Readers
+  fullName: PocoEmit.Collections.MemberContainer.Readers
+- uid: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+  commentId: T:System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEmitMemberReader>
+  nameWithType: IEnumerable<IEmitMemberReader>
+  fullName: System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberReader>
+  nameWithType.vb: IEnumerable(Of IEmitMemberReader)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberReader)
+  name.vb: IEnumerable(Of IEmitMemberReader)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PocoEmit.Collections.MemberContainer.Writers*
+  commentId: Overload:PocoEmit.Collections.MemberContainer.Writers
+  href: PocoEmit.Collections.MemberContainer.html#PocoEmit_Collections_MemberContainer_Writers
+  name: Writers
+  nameWithType: MemberContainer.Writers
+  fullName: PocoEmit.Collections.MemberContainer.Writers
+- uid: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter}
+  commentId: T:System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberWriter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEmitMemberWriter>
+  nameWithType: IEnumerable<IEmitMemberWriter>
+  fullName: System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberWriter>
+  nameWithType.vb: IEnumerable(Of IEmitMemberWriter)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberWriter)
+  name.vb: IEnumerable(Of IEmitMemberWriter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberWriter
+    name: IEmitMemberWriter
+    href: PocoEmit.Members.IEmitMemberWriter.html
+  - name: )
+- uid: PocoEmit.Collections.MemberContainer.MemberReaderCacher*
+  commentId: Overload:PocoEmit.Collections.MemberContainer.MemberReaderCacher
+  href: PocoEmit.Collections.MemberContainer.html#PocoEmit_Collections_MemberContainer_MemberReaderCacher
+  name: MemberReaderCacher
+  nameWithType: MemberContainer.MemberReaderCacher
+  fullName: PocoEmit.Collections.MemberContainer.MemberReaderCacher
+- uid: PocoEmit.Collections.MemberReaderCacher
+  commentId: T:PocoEmit.Collections.MemberReaderCacher
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.MemberReaderCacher.html
+  name: MemberReaderCacher
+  nameWithType: MemberReaderCacher
+  fullName: PocoEmit.Collections.MemberReaderCacher
+- uid: PocoEmit.Collections.MemberContainer.MemberWriterCacher*
+  commentId: Overload:PocoEmit.Collections.MemberContainer.MemberWriterCacher
+  href: PocoEmit.Collections.MemberContainer.html#PocoEmit_Collections_MemberContainer_MemberWriterCacher
+  name: MemberWriterCacher
+  nameWithType: MemberContainer.MemberWriterCacher
+  fullName: PocoEmit.Collections.MemberContainer.MemberWriterCacher
+- uid: PocoEmit.Collections.MemberWriterCacher
+  commentId: T:PocoEmit.Collections.MemberWriterCacher
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.MemberWriterCacher.html
+  name: MemberWriterCacher
+  nameWithType: MemberWriterCacher
+  fullName: PocoEmit.Collections.MemberWriterCacher
+- uid: PocoEmit.Collections.MemberContainer.Configure*
+  commentId: Overload:PocoEmit.Collections.MemberContainer.Configure
+  href: PocoEmit.Collections.MemberContainer.html#PocoEmit_Collections_MemberContainer_Configure_System_Action_PocoEmit_Configuration_MemberContainerOptions__
+  name: Configure
+  nameWithType: MemberContainer.Configure
+  fullName: PocoEmit.Collections.MemberContainer.Configure
+- uid: System.Action{PocoEmit.Configuration.MemberContainerOptions}
+  commentId: T:System.Action{PocoEmit.Configuration.MemberContainerOptions}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<MemberContainerOptions>
+  nameWithType: Action<MemberContainerOptions>
+  fullName: System.Action<PocoEmit.Configuration.MemberContainerOptions>
+  nameWithType.vb: Action(Of MemberContainerOptions)
+  fullName.vb: System.Action(Of PocoEmit.Configuration.MemberContainerOptions)
+  name.vb: Action(Of MemberContainerOptions)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: PocoEmit.Configuration.MemberContainerOptions
+    name: MemberContainerOptions
+    href: PocoEmit.Configuration.MemberContainerOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Configuration.MemberContainerOptions
+    name: MemberContainerOptions
+    href: PocoEmit.Configuration.MemberContainerOptions.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: PocoEmit.Collections.MemberContainer.Instance*
+  commentId: Overload:PocoEmit.Collections.MemberContainer.Instance
+  href: PocoEmit.Collections.MemberContainer.html#PocoEmit_Collections_MemberContainer_Instance
+  name: Instance
+  nameWithType: MemberContainer.Instance
+  fullName: PocoEmit.Collections.MemberContainer.Instance
+- uid: PocoEmit.Collections.MemberContainer
+  commentId: T:PocoEmit.Collections.MemberContainer
+  parent: PocoEmit.Collections
+  href: PocoEmit.Collections.MemberContainer.html
+  name: MemberContainer
+  nameWithType: MemberContainer
+  fullName: PocoEmit.Collections.MemberContainer

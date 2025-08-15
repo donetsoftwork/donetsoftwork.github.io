@@ -1,0 +1,314 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  id: PocoEmit.Members
+  children:
+  - PocoEmit.Members.CompiledReader`2
+  - PocoEmit.Members.CompiledWriter`2
+  - PocoEmit.Members.ConstructorParameterMember
+  - PocoEmit.Members.ConvertInstanceReader
+  - PocoEmit.Members.ConvertInstanceWriter
+  - PocoEmit.Members.ConvertValueReader
+  - PocoEmit.Members.ConvertValueWriter
+  - PocoEmit.Members.FieldAccessor
+  - PocoEmit.Members.ICompiledReader`2
+  - PocoEmit.Members.ICompiledWriter`2
+  - PocoEmit.Members.IEmitMemberReader
+  - PocoEmit.Members.IEmitMemberWriter
+  - PocoEmit.Members.IEmitReader
+  - PocoEmit.Members.IEmitWriter
+  - PocoEmit.Members.IMember
+  - PocoEmit.Members.MemberAccessor`1
+  - PocoEmit.Members.PropertyAccessor
+  - PocoEmit.Members.RenameMember`1
+  - PocoEmit.Members.RenameReader
+  langs:
+  - csharp
+  - vb
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  type: Namespace
+  assemblies:
+  - PocoEmit
+references:
+- uid: PocoEmit.Members.CompiledReader`2
+  commentId: T:PocoEmit.Members.CompiledReader`2
+  href: PocoEmit.Members.CompiledReader-2.html
+  name: CompiledReader<TInstance, TValue>
+  nameWithType: CompiledReader<TInstance, TValue>
+  fullName: PocoEmit.Members.CompiledReader<TInstance, TValue>
+  nameWithType.vb: CompiledReader(Of TInstance, TValue)
+  fullName.vb: PocoEmit.Members.CompiledReader(Of TInstance, TValue)
+  name.vb: CompiledReader(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Members.CompiledReader`2
+    name: CompiledReader
+    href: PocoEmit.Members.CompiledReader-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Members.CompiledReader`2
+    name: CompiledReader
+    href: PocoEmit.Members.CompiledReader-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Members.CompiledWriter`2
+  commentId: T:PocoEmit.Members.CompiledWriter`2
+  href: PocoEmit.Members.CompiledWriter-2.html
+  name: CompiledWriter<TInstance, TValue>
+  nameWithType: CompiledWriter<TInstance, TValue>
+  fullName: PocoEmit.Members.CompiledWriter<TInstance, TValue>
+  nameWithType.vb: CompiledWriter(Of TInstance, TValue)
+  fullName.vb: PocoEmit.Members.CompiledWriter(Of TInstance, TValue)
+  name.vb: CompiledWriter(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Members.CompiledWriter`2
+    name: CompiledWriter
+    href: PocoEmit.Members.CompiledWriter-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Members.CompiledWriter`2
+    name: CompiledWriter
+    href: PocoEmit.Members.CompiledWriter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Members.ConvertInstanceReader
+  commentId: T:PocoEmit.Members.ConvertInstanceReader
+  href: PocoEmit.Members.ConvertInstanceReader.html
+  name: ConvertInstanceReader
+  nameWithType: ConvertInstanceReader
+  fullName: PocoEmit.Members.ConvertInstanceReader
+- uid: PocoEmit.Members.ConvertInstanceWriter
+  commentId: T:PocoEmit.Members.ConvertInstanceWriter
+  href: PocoEmit.Members.ConvertInstanceWriter.html
+  name: ConvertInstanceWriter
+  nameWithType: ConvertInstanceWriter
+  fullName: PocoEmit.Members.ConvertInstanceWriter
+- uid: PocoEmit.Members.ConvertValueReader
+  commentId: T:PocoEmit.Members.ConvertValueReader
+  href: PocoEmit.Members.ConvertValueReader.html
+  name: ConvertValueReader
+  nameWithType: ConvertValueReader
+  fullName: PocoEmit.Members.ConvertValueReader
+- uid: PocoEmit.Members.ConvertValueWriter
+  commentId: T:PocoEmit.Members.ConvertValueWriter
+  href: PocoEmit.Members.ConvertValueWriter.html
+  name: ConvertValueWriter
+  nameWithType: ConvertValueWriter
+  fullName: PocoEmit.Members.ConvertValueWriter
+- uid: PocoEmit.Members.FieldAccessor
+  commentId: T:PocoEmit.Members.FieldAccessor
+  href: PocoEmit.Members.FieldAccessor.html
+  name: FieldAccessor
+  nameWithType: FieldAccessor
+  fullName: PocoEmit.Members.FieldAccessor
+- uid: PocoEmit.Members.ICompiledReader`2
+  commentId: T:PocoEmit.Members.ICompiledReader`2
+  href: PocoEmit.Members.ICompiledReader-2.html
+  name: ICompiledReader<TInstance, TValue>
+  nameWithType: ICompiledReader<TInstance, TValue>
+  fullName: PocoEmit.Members.ICompiledReader<TInstance, TValue>
+  nameWithType.vb: ICompiledReader(Of TInstance, TValue)
+  fullName.vb: PocoEmit.Members.ICompiledReader(Of TInstance, TValue)
+  name.vb: ICompiledReader(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Members.ICompiledReader`2
+    name: ICompiledReader
+    href: PocoEmit.Members.ICompiledReader-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Members.ICompiledReader`2
+    name: ICompiledReader
+    href: PocoEmit.Members.ICompiledReader-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Members.ICompiledWriter`2
+  commentId: T:PocoEmit.Members.ICompiledWriter`2
+  href: PocoEmit.Members.ICompiledWriter-2.html
+  name: ICompiledWriter<TInstance, TValue>
+  nameWithType: ICompiledWriter<TInstance, TValue>
+  fullName: PocoEmit.Members.ICompiledWriter<TInstance, TValue>
+  nameWithType.vb: ICompiledWriter(Of TInstance, TValue)
+  fullName.vb: PocoEmit.Members.ICompiledWriter(Of TInstance, TValue)
+  name.vb: ICompiledWriter(Of TInstance, TValue)
+  spec.csharp:
+  - uid: PocoEmit.Members.ICompiledWriter`2
+    name: ICompiledWriter
+    href: PocoEmit.Members.ICompiledWriter-2.html
+  - name: <
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Members.ICompiledWriter`2
+    name: ICompiledWriter
+    href: PocoEmit.Members.ICompiledWriter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInstance
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: PocoEmit.Members.IEmitReader
+  commentId: T:PocoEmit.Members.IEmitReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitReader.html
+  name: IEmitReader
+  nameWithType: IEmitReader
+  fullName: PocoEmit.Members.IEmitReader
+- uid: PocoEmit.Members.IEmitWriter
+  commentId: T:PocoEmit.Members.IEmitWriter
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitWriter.html
+  name: IEmitWriter
+  nameWithType: IEmitWriter
+  fullName: PocoEmit.Members.IEmitWriter
+- uid: PocoEmit.Members.IMember
+  commentId: T:PocoEmit.Members.IMember
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IMember.html
+  name: IMember
+  nameWithType: IMember
+  fullName: PocoEmit.Members.IMember
+- uid: PocoEmit.Members.IEmitMemberWriter
+  commentId: T:PocoEmit.Members.IEmitMemberWriter
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberWriter.html
+  name: IEmitMemberWriter
+  nameWithType: IEmitMemberWriter
+  fullName: PocoEmit.Members.IEmitMemberWriter
+- uid: PocoEmit.Members.IEmitMemberReader
+  commentId: T:PocoEmit.Members.IEmitMemberReader
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IEmitMemberReader.html
+  name: IEmitMemberReader
+  nameWithType: IEmitMemberReader
+  fullName: PocoEmit.Members.IEmitMemberReader
+- uid: PocoEmit.Members.MemberAccessor`1
+  commentId: T:PocoEmit.Members.MemberAccessor`1
+  href: PocoEmit.Members.MemberAccessor-1.html
+  name: MemberAccessor<TMemberType>
+  nameWithType: MemberAccessor<TMemberType>
+  fullName: PocoEmit.Members.MemberAccessor<TMemberType>
+  nameWithType.vb: MemberAccessor(Of TMemberType)
+  fullName.vb: PocoEmit.Members.MemberAccessor(Of TMemberType)
+  name.vb: MemberAccessor(Of TMemberType)
+  spec.csharp:
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor
+    href: PocoEmit.Members.MemberAccessor-1.html
+  - name: <
+  - name: TMemberType
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Members.MemberAccessor`1
+    name: MemberAccessor
+    href: PocoEmit.Members.MemberAccessor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMemberType
+  - name: )
+- uid: PocoEmit.Members.PropertyAccessor
+  commentId: T:PocoEmit.Members.PropertyAccessor
+  href: PocoEmit.Members.PropertyAccessor.html
+  name: PropertyAccessor
+  nameWithType: PropertyAccessor
+  fullName: PocoEmit.Members.PropertyAccessor
+- uid: PocoEmit.Members.ConstructorParameterMember
+  commentId: T:PocoEmit.Members.ConstructorParameterMember
+  href: PocoEmit.Members.ConstructorParameterMember.html
+  name: ConstructorParameterMember
+  nameWithType: ConstructorParameterMember
+  fullName: PocoEmit.Members.ConstructorParameterMember
+- uid: PocoEmit.Members.RenameMember`1
+  commentId: T:PocoEmit.Members.RenameMember`1
+  href: PocoEmit.Members.RenameMember-1.html
+  name: RenameMember<TMember>
+  nameWithType: RenameMember<TMember>
+  fullName: PocoEmit.Members.RenameMember<TMember>
+  nameWithType.vb: RenameMember(Of TMember)
+  fullName.vb: PocoEmit.Members.RenameMember(Of TMember)
+  name.vb: RenameMember(Of TMember)
+  spec.csharp:
+  - uid: PocoEmit.Members.RenameMember`1
+    name: RenameMember
+    href: PocoEmit.Members.RenameMember-1.html
+  - name: <
+  - name: TMember
+  - name: '>'
+  spec.vb:
+  - uid: PocoEmit.Members.RenameMember`1
+    name: RenameMember
+    href: PocoEmit.Members.RenameMember-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMember
+  - name: )
+- uid: PocoEmit.Members.RenameReader
+  commentId: T:PocoEmit.Members.RenameReader
+  href: PocoEmit.Members.RenameReader.html
+  name: RenameReader
+  nameWithType: RenameReader
+  fullName: PocoEmit.Members.RenameReader
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html

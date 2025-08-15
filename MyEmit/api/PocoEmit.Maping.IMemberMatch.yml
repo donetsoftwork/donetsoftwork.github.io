@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Maping.IMemberMatch
+  commentId: T:PocoEmit.Maping.IMemberMatch
+  id: IMemberMatch
+  parent: PocoEmit.Maping
+  children:
+  - PocoEmit.Maping.IMemberMatch.NameMatch
+  - PocoEmit.Maping.IMemberMatch.Select(PocoEmit.Maping.IRecognizer,System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader},PocoEmit.Members.IMember)
+  langs:
+  - csharp
+  - vb
+  name: IMemberMatch
+  nameWithType: IMemberMatch
+  fullName: PocoEmit.Maping.IMemberMatch
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/IMemberMatch.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IMemberMatch
+    path: ../PocoEmit.Mapper/Maping/IMemberMatch.cs
+    startLine: 8
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 成员匹配
+  example: []
+  syntax:
+    content: public interface IMemberMatch
+    content.vb: Public Interface IMemberMatch
+- uid: PocoEmit.Maping.IMemberMatch.NameMatch
+  commentId: P:PocoEmit.Maping.IMemberMatch.NameMatch
+  id: NameMatch
+  parent: PocoEmit.Maping.IMemberMatch
+  langs:
+  - csharp
+  - vb
+  name: NameMatch
+  nameWithType: IMemberMatch.NameMatch
+  fullName: PocoEmit.Maping.IMemberMatch.NameMatch
+  type: Property
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/IMemberMatch.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: NameMatch
+    path: ../PocoEmit.Mapper/Maping/IMemberMatch.cs
+    startLine: 13
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 名称匹配规则
+  example: []
+  syntax:
+    content: INameMatch NameMatch { get; }
+    parameters: []
+    return:
+      type: PocoEmit.Maping.INameMatch
+    content.vb: ReadOnly Property NameMatch As INameMatch
+  overload: PocoEmit.Maping.IMemberMatch.NameMatch*
+- uid: PocoEmit.Maping.IMemberMatch.Select(PocoEmit.Maping.IRecognizer,System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader},PocoEmit.Members.IMember)
+  commentId: M:PocoEmit.Maping.IMemberMatch.Select(PocoEmit.Maping.IRecognizer,System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader},PocoEmit.Members.IMember)
+  id: Select(PocoEmit.Maping.IRecognizer,System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader},PocoEmit.Members.IMember)
+  parent: PocoEmit.Maping.IMemberMatch
+  langs:
+  - csharp
+  - vb
+  name: Select(IRecognizer, IEnumerable<IEmitMemberReader>, IMember)
+  nameWithType: IMemberMatch.Select(IRecognizer, IEnumerable<IEmitMemberReader>, IMember)
+  fullName: PocoEmit.Maping.IMemberMatch.Select(PocoEmit.Maping.IRecognizer, System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberReader>, PocoEmit.Members.IMember)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Mapper/Maping/IMemberMatch.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Select
+    path: ../PocoEmit.Mapper/Maping/IMemberMatch.cs
+    startLine: 21
+  assemblies:
+  - PocoEmit.Mapper
+  namespace: PocoEmit.Maping
+  summary: 筛选
+  example: []
+  syntax:
+    content: IEnumerable<IEmitMemberReader> Select(IRecognizer recognizer, IEnumerable<IEmitMemberReader> sources, IMember dest)
+    parameters:
+    - id: recognizer
+      type: PocoEmit.Maping.IRecognizer
+      description: ''
+    - id: sources
+      type: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+      description: ''
+    - id: dest
+      type: PocoEmit.Members.IMember
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+      description: ''
+    content.vb: Function [Select](recognizer As IRecognizer, sources As IEnumerable(Of IEmitMemberReader), dest As IMember) As IEnumerable(Of IEmitMemberReader)
+  overload: PocoEmit.Maping.IMemberMatch.Select*
+  nameWithType.vb: IMemberMatch.Select(IRecognizer, IEnumerable(Of IEmitMemberReader), IMember)
+  fullName.vb: PocoEmit.Maping.IMemberMatch.Select(PocoEmit.Maping.IRecognizer, System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberReader), PocoEmit.Members.IMember)
+  name.vb: Select(IRecognizer, IEnumerable(Of IEmitMemberReader), IMember)
+references:
+- uid: PocoEmit.Maping
+  commentId: N:PocoEmit.Maping
+  href: PocoEmit.html
+  name: PocoEmit.Maping
+  nameWithType: PocoEmit.Maping
+  fullName: PocoEmit.Maping
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Maping
+    name: Maping
+    href: PocoEmit.Maping.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Maping
+    name: Maping
+    href: PocoEmit.Maping.html
+- uid: PocoEmit.Maping.IMemberMatch.NameMatch*
+  commentId: Overload:PocoEmit.Maping.IMemberMatch.NameMatch
+  href: PocoEmit.Maping.IMemberMatch.html#PocoEmit_Maping_IMemberMatch_NameMatch
+  name: NameMatch
+  nameWithType: IMemberMatch.NameMatch
+  fullName: PocoEmit.Maping.IMemberMatch.NameMatch
+- uid: PocoEmit.Maping.INameMatch
+  commentId: T:PocoEmit.Maping.INameMatch
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.INameMatch.html
+  name: INameMatch
+  nameWithType: INameMatch
+  fullName: PocoEmit.Maping.INameMatch
+- uid: PocoEmit.Maping.IMemberMatch.Select*
+  commentId: Overload:PocoEmit.Maping.IMemberMatch.Select
+  href: PocoEmit.Maping.IMemberMatch.html#PocoEmit_Maping_IMemberMatch_Select_PocoEmit_Maping_IRecognizer_System_Collections_Generic_IEnumerable_PocoEmit_Members_IEmitMemberReader__PocoEmit_Members_IMember_
+  name: Select
+  nameWithType: IMemberMatch.Select
+  fullName: PocoEmit.Maping.IMemberMatch.Select
+- uid: PocoEmit.Maping.IRecognizer
+  commentId: T:PocoEmit.Maping.IRecognizer
+  parent: PocoEmit.Maping
+  href: PocoEmit.Maping.IRecognizer.html
+  name: IRecognizer
+  nameWithType: IRecognizer
+  fullName: PocoEmit.Maping.IRecognizer
+- uid: System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+  commentId: T:System.Collections.Generic.IEnumerable{PocoEmit.Members.IEmitMemberReader}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEmitMemberReader>
+  nameWithType: IEnumerable<IEmitMemberReader>
+  fullName: System.Collections.Generic.IEnumerable<PocoEmit.Members.IEmitMemberReader>
+  nameWithType.vb: IEnumerable(Of IEmitMemberReader)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of PocoEmit.Members.IEmitMemberReader)
+  name.vb: IEnumerable(Of IEmitMemberReader)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PocoEmit.Members.IEmitMemberReader
+    name: IEmitMemberReader
+    href: PocoEmit.Members.IEmitMemberReader.html
+  - name: )
+- uid: PocoEmit.Members.IMember
+  commentId: T:PocoEmit.Members.IMember
+  parent: PocoEmit.Members
+  href: PocoEmit.Members.IMember.html
+  name: IMember
+  nameWithType: IMember
+  fullName: PocoEmit.Members.IMember
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PocoEmit.Members
+  commentId: N:PocoEmit.Members
+  href: PocoEmit.html
+  name: PocoEmit.Members
+  nameWithType: PocoEmit.Members
+  fullName: PocoEmit.Members
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Members
+    name: Members
+    href: PocoEmit.Members.html

@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Indexs.IEmitIndexMemberWriter
+  commentId: T:PocoEmit.Indexs.IEmitIndexMemberWriter
+  id: IEmitIndexMemberWriter
+  parent: PocoEmit.Indexs
+  children:
+  - PocoEmit.Indexs.IEmitIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  langs:
+  - csharp
+  - vb
+  name: IEmitIndexMemberWriter
+  nameWithType: IEmitIndexMemberWriter
+  fullName: PocoEmit.Indexs.IEmitIndexMemberWriter
+  type: Interface
+  source:
+    remote:
+      path: PocoEmit.Collections/Indexs/IEmitMemberIndex.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IEmitIndexMemberWriter
+    path: ../PocoEmit.Collections/Indexs/IEmitMemberIndex.cs
+    startLine: 24
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Indexs
+  summary: 成员索引写入器
+  example: []
+  syntax:
+    content: public interface IEmitIndexMemberWriter
+    content.vb: Public Interface IEmitIndexMemberWriter
+- uid: PocoEmit.Indexs.IEmitIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  commentId: M:PocoEmit.Indexs.IEmitIndexMemberWriter.Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  id: Write(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+  parent: PocoEmit.Indexs.IEmitIndexMemberWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Expression, Expression, Expression)
+  nameWithType: IEmitIndexMemberWriter.Write(Expression, Expression, Expression)
+  fullName: PocoEmit.Indexs.IEmitIndexMemberWriter.Write(System.Linq.Expressions.Expression, System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote:
+      path: PocoEmit.Collections/Indexs/IEmitMemberIndex.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: Write
+    path: ../PocoEmit.Collections/Indexs/IEmitMemberIndex.cs
+    startLine: 33
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Indexs
+  summary: 写入
+  example: []
+  syntax:
+    content: Expression Write(Expression instance, Expression index, Expression value)
+    parameters:
+    - id: instance
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: index
+      type: System.Linq.Expressions.Expression
+      description: ''
+    - id: value
+      type: System.Linq.Expressions.Expression
+      description: ''
+    return:
+      type: System.Linq.Expressions.Expression
+      description: ''
+    content.vb: Function Write(instance As Expression, index As Expression, value As Expression) As Expression
+  overload: PocoEmit.Indexs.IEmitIndexMemberWriter.Write*
+references:
+- uid: PocoEmit.Indexs
+  commentId: N:PocoEmit.Indexs
+  href: PocoEmit.html
+  name: PocoEmit.Indexs
+  nameWithType: PocoEmit.Indexs
+  fullName: PocoEmit.Indexs
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Indexs
+    name: Indexs
+    href: PocoEmit.Indexs.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Indexs
+    name: Indexs
+    href: PocoEmit.Indexs.html
+- uid: PocoEmit.Indexs.IEmitIndexMemberWriter.Write*
+  commentId: Overload:PocoEmit.Indexs.IEmitIndexMemberWriter.Write
+  href: PocoEmit.Indexs.IEmitIndexMemberWriter.html#PocoEmit_Indexs_IEmitIndexMemberWriter_Write_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_
+  name: Write
+  nameWithType: IEmitIndexMemberWriter.Write
+  fullName: PocoEmit.Indexs.IEmitIndexMemberWriter.Write
+- uid: System.Linq.Expressions.Expression
+  commentId: T:System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression
+  name: Expression
+  nameWithType: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

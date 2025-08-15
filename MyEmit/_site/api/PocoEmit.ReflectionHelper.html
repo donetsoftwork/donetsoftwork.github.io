@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ReflectionHelper 类
+ | 简单对象Emit工具 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ReflectionHelper 类
+ | 简单对象Emit工具 ">
+      
+      <meta name="description" content="反射帮助类">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/donetsoftwork/MyEmit/new/main/apiSpec/new?filename=PocoEmit_ReflectionHelper.md&amp;value=---%0Auid%3A%20PocoEmit.ReflectionHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="本文内容">
+      <meta name="loc:searchResultsCount" content="找到{count}个“{query}”的搜索结果">
+      <meta name="loc:searchNoResults" content="没有找到“{query}”的搜索结果">
+      <meta name="loc:tocFilter" content="按标题筛选">
+      <meta name="loc:nextArticle" content="下一篇">
+      <meta name="loc:prevArticle" content="上一篇">
+      <meta name="loc:themeLight" content="白天">
+      <meta name="loc:themeDark" content="夜晚">
+      <meta name="loc:themeAuto" content="自动">
+      <meta name="loc:changeTheme" content="切换主题">
+      <meta name="loc:copy" content="复制">
+      <meta name="loc:downloadPdf" content="下载 PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MyEmit">
+            MyEmit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PocoEmit.ReflectionHelper">
+
+
+
+  <h1 id="PocoEmit_ReflectionHelper" data-uid="PocoEmit.ReflectionHelper" class="text-break">
+ReflectionHelper 类
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>命名空间</dt><dd><a class="xref" href="PocoEmit.html">PocoEmit</a></dd></dl>
+  <dl><dt>程序集</dt><dd>PocoEmit.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>反射帮助类</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ReflectionHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>继承</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">ReflectionHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">方法
+</h2>
+
+
+  <a id="PocoEmit_ReflectionHelper_CheckValueType_" data-uid="PocoEmit.ReflectionHelper.CheckValueType*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_CheckValueType_System_Type_System_Type_" data-uid="PocoEmit.ReflectionHelper.CheckValueType(System.Type,System.Type)">
+  CheckValueType(Type, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>判断是否兼容值类型</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckValueType(Type fromType, Type toType)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>fromType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>toType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetConstructor_" data-uid="PocoEmit.ReflectionHelper.GetConstructor*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetConstructor_System_Type_System_Func_System_Reflection_ParameterInfo___System_Boolean__" data-uid="PocoEmit.ReflectionHelper.GetConstructor(System.Type,System.Func{System.Reflection.ParameterInfo[],System.Boolean})">
+  GetConstructor(Type, Func&lt;ParameterInfo[], bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取构造函数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ConstructorInfo GetConstructor(Type declaringType, Func&lt;ParameterInfo[], bool&gt; filter)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>declaringType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo">ParameterInfo</a>[], <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo">ConstructorInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetConstructorByParameterType_" data-uid="PocoEmit.ReflectionHelper.GetConstructorByParameterType*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetConstructorByParameterType_System_Type_System_Type_" data-uid="PocoEmit.ReflectionHelper.GetConstructorByParameterType(System.Type,System.Type)">
+  GetConstructorByParameterType(Type, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取构造函数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ConstructorInfo GetConstructorByParameterType(Type declaringType, Type parameterType)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>declaringType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>parameterType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo">ConstructorInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetConstructors_" data-uid="PocoEmit.ReflectionHelper.GetConstructors*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetConstructors_System_Type_" data-uid="PocoEmit.ReflectionHelper.GetConstructors(System.Type)">
+  GetConstructors(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取所有构造函数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ConstructorInfo&gt; GetConstructors(Type declaringType)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>declaringType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo">ConstructorInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetElementType_" data-uid="PocoEmit.ReflectionHelper.GetElementType*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetElementType_System_Type_" data-uid="PocoEmit.ReflectionHelper.GetElementType(System.Type)">
+  GetElementType(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取子元素类型</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetElementType(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetEmitReader_" data-uid="PocoEmit.ReflectionHelper.GetEmitReader*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_Collections_MemberBundle_System_String_" data-uid="PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.Collections.MemberBundle,System.String)">
+  GetEmitReader(MemberBundle, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可读成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEmitMemberReader GetEmitReader(this MemberBundle bundle, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>bundle</code> <a class="xref" href="PocoEmit.Collections.MemberBundle.html">MemberBundle</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Members.IEmitMemberReader.html">IEmitMemberReader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetEmitReader_" data-uid="PocoEmit.ReflectionHelper.GetEmitReader*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetEmitReader_PocoEmit_IPoco_System_Type_System_String_" data-uid="PocoEmit.ReflectionHelper.GetEmitReader(PocoEmit.IPoco,System.Type,System.String)">
+  GetEmitReader(IPoco, Type, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可读成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEmitMemberReader GetEmitReader(this IPoco poco, Type instanceType, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>poco</code> <a class="xref" href="PocoEmit.IPoco.html">IPoco</a></dt>
+    <dd></dd>
+    <dt><code>instanceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Members.IEmitMemberReader.html">IEmitMemberReader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetEmitReader_" data-uid="PocoEmit.ReflectionHelper.GetEmitReader*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetEmitReader__1_PocoEmit_IPoco_System_String_" data-uid="PocoEmit.ReflectionHelper.GetEmitReader``1(PocoEmit.IPoco,System.String)">
+  GetEmitReader&lt;TInstance&gt;(IPoco, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可读成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEmitMemberReader GetEmitReader&lt;TInstance&gt;(this IPoco poco, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>poco</code> <a class="xref" href="PocoEmit.IPoco.html">IPoco</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Members.IEmitMemberReader.html">IEmitMemberReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TInstance</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetEmitWriter_" data-uid="PocoEmit.ReflectionHelper.GetEmitWriter*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_Collections_MemberBundle_System_String_" data-uid="PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.Collections.MemberBundle,System.String)">
+  GetEmitWriter(MemberBundle, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可读成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEmitMemberWriter GetEmitWriter(this MemberBundle bundle, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>bundle</code> <a class="xref" href="PocoEmit.Collections.MemberBundle.html">MemberBundle</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Members.IEmitMemberWriter.html">IEmitMemberWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetEmitWriter_" data-uid="PocoEmit.ReflectionHelper.GetEmitWriter*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetEmitWriter_PocoEmit_IPoco_System_Type_System_String_" data-uid="PocoEmit.ReflectionHelper.GetEmitWriter(PocoEmit.IPoco,System.Type,System.String)">
+  GetEmitWriter(IPoco, Type, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可写成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEmitMemberWriter GetEmitWriter(this IPoco poco, Type instanceType, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>poco</code> <a class="xref" href="PocoEmit.IPoco.html">IPoco</a></dt>
+    <dd></dd>
+    <dt><code>instanceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Members.IEmitMemberWriter.html">IEmitMemberWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetEmitWriter_" data-uid="PocoEmit.ReflectionHelper.GetEmitWriter*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetEmitWriter__1_PocoEmit_IPoco_System_String_" data-uid="PocoEmit.ReflectionHelper.GetEmitWriter``1(PocoEmit.IPoco,System.String)">
+  GetEmitWriter&lt;TInstance&gt;(IPoco, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可写成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEmitMemberWriter GetEmitWriter&lt;TInstance&gt;(this IPoco poco, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>poco</code> <a class="xref" href="PocoEmit.IPoco.html">IPoco</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Members.IEmitMemberWriter.html">IEmitMemberWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TInstance</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetFields_" data-uid="PocoEmit.ReflectionHelper.GetFields*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetFields_System_Type_" data-uid="PocoEmit.ReflectionHelper.GetFields(System.Type)">
+  GetFields(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取所有字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;FieldInfo&gt; GetFields(Type declaringType)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>declaringType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo">FieldInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetFields_" data-uid="PocoEmit.ReflectionHelper.GetFields*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetFields__1" data-uid="PocoEmit.ReflectionHelper.GetFields``1">
+  GetFields&lt;TStructuralType&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取所有字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;FieldInfo&gt; GetFields&lt;TStructuralType&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo">FieldInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TStructuralType</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetGenericArguments_" data-uid="PocoEmit.ReflectionHelper.GetGenericArguments*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetGenericArguments_System_Type_" data-uid="PocoEmit.ReflectionHelper.GetGenericArguments(System.Type)">
+  GetGenericArguments(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取泛型参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type[] GetGenericArguments(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetMethod_" data-uid="PocoEmit.ReflectionHelper.GetMethod*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetMethod_System_Type_System_Func_System_Reflection_MethodInfo_System_Boolean__" data-uid="PocoEmit.ReflectionHelper.GetMethod(System.Type,System.Func{System.Reflection.MethodInfo,System.Boolean})">
+  GetMethod(Type, Func&lt;MethodInfo, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取函数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MethodInfo GetMethod(Type type, Func&lt;MethodInfo, bool&gt; filter)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetMethods_" data-uid="PocoEmit.ReflectionHelper.GetMethods*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetMethods_System_Type_" data-uid="PocoEmit.ReflectionHelper.GetMethods(System.Type)">
+  GetMethods(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取所有函数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;MethodInfo&gt; GetMethods(Type declaringType)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>declaringType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetProperties_" data-uid="PocoEmit.ReflectionHelper.GetProperties*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetProperties_System_Type_" data-uid="PocoEmit.ReflectionHelper.GetProperties(System.Type)">
+  GetProperties(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取所有属性</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;PropertyInfo&gt; GetProperties(Type declaringType)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>declaringType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetPropery_" data-uid="PocoEmit.ReflectionHelper.GetPropery*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetPropery_System_Type_System_Func_System_Reflection_PropertyInfo_System_Boolean__" data-uid="PocoEmit.ReflectionHelper.GetPropery(System.Type,System.Func{System.Reflection.PropertyInfo,System.Boolean})">
+  GetPropery(Type, Func&lt;PropertyInfo, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>筛选属性</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PropertyInfo GetPropery(Type declaringType, Func&lt;PropertyInfo, bool&gt; filter)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>declaringType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetReadMember_" data-uid="PocoEmit.ReflectionHelper.GetReadMember*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_Collections_MemberBundle_System_String_" data-uid="PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.Collections.MemberBundle,System.String)">
+  GetReadMember(MemberBundle, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可读成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemberInfo GetReadMember(this MemberBundle bundle, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>bundle</code> <a class="xref" href="PocoEmit.Collections.MemberBundle.html">MemberBundle</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetReadMember_" data-uid="PocoEmit.ReflectionHelper.GetReadMember*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetReadMember_PocoEmit_IPoco_System_Type_System_String_" data-uid="PocoEmit.ReflectionHelper.GetReadMember(PocoEmit.IPoco,System.Type,System.String)">
+  GetReadMember(IPoco, Type, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可读成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemberInfo GetReadMember(this IPoco poco, Type instanceType, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>poco</code> <a class="xref" href="PocoEmit.IPoco.html">IPoco</a></dt>
+    <dd></dd>
+    <dt><code>instanceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetReadMember_" data-uid="PocoEmit.ReflectionHelper.GetReadMember*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetReadMember__1_PocoEmit_IPoco_System_String_" data-uid="PocoEmit.ReflectionHelper.GetReadMember``1(PocoEmit.IPoco,System.String)">
+  GetReadMember&lt;TInstance&gt;(IPoco, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可读成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemberInfo GetReadMember&lt;TInstance&gt;(this IPoco poco, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>poco</code> <a class="xref" href="PocoEmit.IPoco.html">IPoco</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TInstance</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetTypeMembers_" data-uid="PocoEmit.ReflectionHelper.GetTypeMembers*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetTypeMembers_PocoEmit_IPoco_System_Type_" data-uid="PocoEmit.ReflectionHelper.GetTypeMembers(PocoEmit.IPoco,System.Type)">
+  GetTypeMembers(IPoco, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取类型所有成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemberBundle GetTypeMembers(this IPoco poco, Type instanceType)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>poco</code> <a class="xref" href="PocoEmit.IPoco.html">IPoco</a></dt>
+    <dd></dd>
+    <dt><code>instanceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Collections.MemberBundle.html">MemberBundle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetTypeMembers_" data-uid="PocoEmit.ReflectionHelper.GetTypeMembers*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetTypeMembers__1_PocoEmit_IPoco_" data-uid="PocoEmit.ReflectionHelper.GetTypeMembers``1(PocoEmit.IPoco)">
+  GetTypeMembers&lt;TInstance&gt;(IPoco)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取类型所有成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemberBundle GetTypeMembers&lt;TInstance&gt;(this IPoco poco)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>poco</code> <a class="xref" href="PocoEmit.IPoco.html">IPoco</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PocoEmit.Collections.MemberBundle.html">MemberBundle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TInstance</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetWriteMember_" data-uid="PocoEmit.ReflectionHelper.GetWriteMember*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_Collections_MemberBundle_System_String_" data-uid="PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.Collections.MemberBundle,System.String)">
+  GetWriteMember(MemberBundle, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可读成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemberInfo GetWriteMember(this MemberBundle bundle, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>bundle</code> <a class="xref" href="PocoEmit.Collections.MemberBundle.html">MemberBundle</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetWriteMember_" data-uid="PocoEmit.ReflectionHelper.GetWriteMember*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetWriteMember_PocoEmit_IPoco_System_Type_System_String_" data-uid="PocoEmit.ReflectionHelper.GetWriteMember(PocoEmit.IPoco,System.Type,System.String)">
+  GetWriteMember(IPoco, Type, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可写成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemberInfo GetWriteMember(this IPoco poco, Type instanceType, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>poco</code> <a class="xref" href="PocoEmit.IPoco.html">IPoco</a></dt>
+    <dd></dd>
+    <dt><code>instanceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_GetWriteMember_" data-uid="PocoEmit.ReflectionHelper.GetWriteMember*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_GetWriteMember__1_PocoEmit_IPoco_System_String_" data-uid="PocoEmit.ReflectionHelper.GetWriteMember``1(PocoEmit.IPoco,System.String)">
+  GetWriteMember&lt;TInstance&gt;(IPoco, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取可写成员</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemberInfo GetWriteMember&lt;TInstance&gt;(this IPoco poco, string memberName)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>poco</code> <a class="xref" href="PocoEmit.IPoco.html">IPoco</a></dt>
+    <dd></dd>
+    <dt><code>memberName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">类型参数</h4>
+  <dl class="parameters">
+    <dt><code>TInstance</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_HasGenericType_" data-uid="PocoEmit.ReflectionHelper.HasGenericType*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_HasGenericType_System_Type_System_Type_" data-uid="PocoEmit.ReflectionHelper.HasGenericType(System.Type,System.Type)">
+  HasGenericType(Type, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>判断是否包含泛型定义</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasGenericType(Type type, Type genericType)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>genericType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_IsGenericType_" data-uid="PocoEmit.ReflectionHelper.IsGenericType*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_IsGenericType_System_Type_System_Type_" data-uid="PocoEmit.ReflectionHelper.IsGenericType(System.Type,System.Type)">
+  IsGenericType(Type, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否泛型定义</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsGenericType(Type type, Type genericType)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>genericType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>泛型</p>
+</dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PocoEmit_ReflectionHelper_IsNullable_" data-uid="PocoEmit.ReflectionHelper.IsNullable*"></a>
+
+  <h3 id="PocoEmit_ReflectionHelper_IsNullable_System_Type_" data-uid="PocoEmit.ReflectionHelper.IsNullable(System.Type)">
+  IsNullable(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否可空类型</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNullable(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">参数</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">返回</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/donetsoftwork/MyEmit/blob/main/PocoEmit/ReflectionHelper.cs/#L13" class="edit-link">编辑本文</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright (c) MyEmit All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

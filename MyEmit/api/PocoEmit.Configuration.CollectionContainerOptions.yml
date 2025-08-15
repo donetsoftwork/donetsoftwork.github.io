@@ -1,0 +1,263 @@
+### YamlMime:ManagedReference
+items:
+- uid: PocoEmit.Configuration.CollectionContainerOptions
+  commentId: T:PocoEmit.Configuration.CollectionContainerOptions
+  id: CollectionContainerOptions
+  parent: PocoEmit.Configuration
+  children:
+  - PocoEmit.Configuration.CollectionContainerOptions.ConcurrencyLevel
+  - PocoEmit.Configuration.CollectionContainerOptions.CounterCapacity
+  - PocoEmit.Configuration.CollectionContainerOptions.IndexVisitorCapacity
+  - PocoEmit.Configuration.CollectionContainerOptions.ReadIndexCapacity
+  - PocoEmit.Configuration.CollectionContainerOptions.SaverCapacity
+  - PocoEmit.Configuration.CollectionContainerOptions.VisitorCapacity
+  langs:
+  - csharp
+  - vb
+  name: CollectionContainerOptions
+  nameWithType: CollectionContainerOptions
+  fullName: PocoEmit.Configuration.CollectionContainerOptions
+  type: Class
+  source:
+    remote:
+      path: PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CollectionContainerOptions
+    path: ../PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+    startLine: 7
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Configuration
+  summary: 集合容器配置
+  example: []
+  syntax:
+    content: public class CollectionContainerOptions
+    content.vb: Public Class CollectionContainerOptions
+  inheritance:
+  - System.Object
+- uid: PocoEmit.Configuration.CollectionContainerOptions.ConcurrencyLevel
+  commentId: F:PocoEmit.Configuration.CollectionContainerOptions.ConcurrencyLevel
+  id: ConcurrencyLevel
+  parent: PocoEmit.Configuration.CollectionContainerOptions
+  langs:
+  - csharp
+  - vb
+  name: ConcurrencyLevel
+  nameWithType: CollectionContainerOptions.ConcurrencyLevel
+  fullName: PocoEmit.Configuration.CollectionContainerOptions.ConcurrencyLevel
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ConcurrencyLevel
+    path: ../PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+    startLine: 12
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Configuration
+  summary: 并发
+  example: []
+  syntax:
+    content: public int ConcurrencyLevel
+    return:
+      type: System.Int32
+    content.vb: Public ConcurrencyLevel As Integer
+- uid: PocoEmit.Configuration.CollectionContainerOptions.CounterCapacity
+  commentId: F:PocoEmit.Configuration.CollectionContainerOptions.CounterCapacity
+  id: CounterCapacity
+  parent: PocoEmit.Configuration.CollectionContainerOptions
+  langs:
+  - csharp
+  - vb
+  name: CounterCapacity
+  nameWithType: CollectionContainerOptions.CounterCapacity
+  fullName: PocoEmit.Configuration.CollectionContainerOptions.CounterCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: CounterCapacity
+    path: ../PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+    startLine: 16
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Configuration
+  summary: 集合数量
+  example: []
+  syntax:
+    content: public int CounterCapacity
+    return:
+      type: System.Int32
+    content.vb: Public CounterCapacity As Integer
+- uid: PocoEmit.Configuration.CollectionContainerOptions.VisitorCapacity
+  commentId: F:PocoEmit.Configuration.CollectionContainerOptions.VisitorCapacity
+  id: VisitorCapacity
+  parent: PocoEmit.Configuration.CollectionContainerOptions
+  langs:
+  - csharp
+  - vb
+  name: VisitorCapacity
+  nameWithType: CollectionContainerOptions.VisitorCapacity
+  fullName: PocoEmit.Configuration.CollectionContainerOptions.VisitorCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: VisitorCapacity
+    path: ../PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+    startLine: 20
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Configuration
+  summary: 集合访问者数量
+  example: []
+  syntax:
+    content: public int VisitorCapacity
+    return:
+      type: System.Int32
+    content.vb: Public VisitorCapacity As Integer
+- uid: PocoEmit.Configuration.CollectionContainerOptions.ReadIndexCapacity
+  commentId: F:PocoEmit.Configuration.CollectionContainerOptions.ReadIndexCapacity
+  id: ReadIndexCapacity
+  parent: PocoEmit.Configuration.CollectionContainerOptions
+  langs:
+  - csharp
+  - vb
+  name: ReadIndexCapacity
+  nameWithType: CollectionContainerOptions.ReadIndexCapacity
+  fullName: PocoEmit.Configuration.CollectionContainerOptions.ReadIndexCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: ReadIndexCapacity
+    path: ../PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+    startLine: 24
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Configuration
+  summary: 索引读取器数量
+  example: []
+  syntax:
+    content: public int ReadIndexCapacity
+    return:
+      type: System.Int32
+    content.vb: Public ReadIndexCapacity As Integer
+- uid: PocoEmit.Configuration.CollectionContainerOptions.IndexVisitorCapacity
+  commentId: F:PocoEmit.Configuration.CollectionContainerOptions.IndexVisitorCapacity
+  id: IndexVisitorCapacity
+  parent: PocoEmit.Configuration.CollectionContainerOptions
+  langs:
+  - csharp
+  - vb
+  name: IndexVisitorCapacity
+  nameWithType: CollectionContainerOptions.IndexVisitorCapacity
+  fullName: PocoEmit.Configuration.CollectionContainerOptions.IndexVisitorCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: IndexVisitorCapacity
+    path: ../PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+    startLine: 28
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Configuration
+  summary: 索引访问者数量
+  example: []
+  syntax:
+    content: public int IndexVisitorCapacity
+    return:
+      type: System.Int32
+    content.vb: Public IndexVisitorCapacity As Integer
+- uid: PocoEmit.Configuration.CollectionContainerOptions.SaverCapacity
+  commentId: F:PocoEmit.Configuration.CollectionContainerOptions.SaverCapacity
+  id: SaverCapacity
+  parent: PocoEmit.Configuration.CollectionContainerOptions
+  langs:
+  - csharp
+  - vb
+  name: SaverCapacity
+  nameWithType: CollectionContainerOptions.SaverCapacity
+  fullName: PocoEmit.Configuration.CollectionContainerOptions.SaverCapacity
+  type: Field
+  source:
+    remote:
+      path: PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+      branch: main
+      repo: https://github.com/donetsoftwork/MyEmit.git
+    id: SaverCapacity
+    path: ../PocoEmit.Collections/Configuration/CollectionContainerOptions.cs
+    startLine: 32
+  assemblies:
+  - PocoEmit.Collections
+  namespace: PocoEmit.Configuration
+  summary: 元素保存器数量
+  example: []
+  syntax:
+    content: public int SaverCapacity
+    return:
+      type: System.Int32
+    content.vb: Public SaverCapacity As Integer
+references:
+- uid: PocoEmit.Configuration
+  commentId: N:PocoEmit.Configuration
+  href: PocoEmit.html
+  name: PocoEmit.Configuration
+  nameWithType: PocoEmit.Configuration
+  fullName: PocoEmit.Configuration
+  spec.csharp:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+  spec.vb:
+  - uid: PocoEmit
+    name: PocoEmit
+    href: PocoEmit.html
+  - name: .
+  - uid: PocoEmit.Configuration
+    name: Configuration
+    href: PocoEmit.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
